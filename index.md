@@ -1,5 +1,6 @@
 ---
+layout: default
 title: Hello World
 ---
 
-Hello World html!
+Hello World from markdown!
