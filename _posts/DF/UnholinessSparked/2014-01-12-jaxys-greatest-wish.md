@@ -11,6 +11,8 @@ It all began with Addie MenacedCluster reporting that great dingoes had been spo
 
 Given what happened the last time warlock merchants were in camp, I feel justified in being very cautious about the approach of *any* wild animal. Our front-line squads are put on high alert, and not a moment too soon, as while the dingoes keep their distance, a much more terrifying threat appears:
 
+<!--more-->
+
 ![](http://i.imgur.com/q0SxkzC.png)
 
 Forest nymphs, moving with uncanny speed, and *straight towards the trading depot*. While no threat by themselves, they're more than an excuse for the warlocks to unlock madness once more upon our home.
