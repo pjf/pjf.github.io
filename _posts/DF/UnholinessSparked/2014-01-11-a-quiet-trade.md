@@ -1,6 +1,6 @@
 ---
 date: 2014-01-11 18:17:49 +1100
-layout: default
+layout: post
 ---
 
 **26th Timber, 101, Late Autumn**

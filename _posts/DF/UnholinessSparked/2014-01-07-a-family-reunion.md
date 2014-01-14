@@ -1,6 +1,6 @@
 ---
 date: 2014-01-07 19:44:41 +1100
-layout: default
+layout: post
 ---
 
 **9th Sandstone, 101 (mid-Autumn)**

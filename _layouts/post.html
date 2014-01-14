@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+{% unless post %}
+    {% assign post = page %}
+{% endunless %}
+
+<article class="is-post">
+    {% include header.html %}
+    {% include info.html %}
+
+    <!-- <a href="#" class="image image-full"><img src="/images/n33-robot-invader.jpg" alt="" /></a> -->
+
+    {{content}}
+</article>

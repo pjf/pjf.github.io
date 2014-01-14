@@ -1,6 +1,6 @@
 ---
 date: 2014-01-06 08:47:23 +1100
-layout: default
+layout: post
 title: A home in the wilderness
 ---
 

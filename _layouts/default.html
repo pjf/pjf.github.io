@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--
-	Based upon Striped 2.5 by HTML5 Up!
-        html5up.net | @n33co
-        Updated for Jekyll by Paul Fenwick | @pjf
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Based upon Striped 2.5 by HTML5 Up!
+    html5up.net | @n33co
+    Updated for Jekyll by Paul Fenwick | @pjf
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html lang="en">
     <head>
@@ -37,18 +37,7 @@
         <div id="wrapper">
             <div id="content">
                 <div id="content-inner">
-                    {% if post %}
-                        <article class="is-post">
-                            {% include header.html %}
-                            {% include info.html %}
-
-                            <!-- <a href="#" class="image image-full"><img src="/images/n33-robot-invader.jpg" alt="" /></a> -->
-
-                            {{content}}
-                        </article>
-                    {% else %}
-                        {{ content }}
-                    {% endif %}
+                    {{content}}
 
                     {% include pager.html %}
                 </div>

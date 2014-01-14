@@ -1,6 +1,6 @@
 ---
 date: 2014-01-07 03:54:15 +1100
-layout: default
+layout: post
 ---
 
 **19th Limestone, 101 (early autumn)**
