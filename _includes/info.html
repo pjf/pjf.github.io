@@ -1,3 +1,9 @@
+{% if post %}
+    {% assign this = post %}
+{% else %}
+    {% assign this = page %}
+{% endif %}
+
 <div class="info">
     <!--
             Note: The date should be formatted exactly as it's shown below. In particular, the
@@ -9,9 +15,9 @@
     -->
     <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
     <span class="date">
-        <span class="month">{{ page.date | date: "%b" }}</span>
-        <span class="day">{{ page.date | date: "%e" }}</span>
-        <span class="year">, {{ page.date | date: "%Y" }}</span>
+        <span class="month">{{ this.date | date: "%b" }}</span>
+        <span class="day">{{ this.date | date: "%e" }}</span>
+        <span class="year">, {{ this.date | date: "%Y" }}</span>
     </span>
 
 

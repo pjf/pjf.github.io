@@ -37,14 +37,18 @@
         <div id="wrapper">
             <div id="content">
                 <div id="content-inner">
-                    <article class="is-post is-post-excerpt">
-                        {% include header.html %}
-                        {% include info.html %}
+                    {% if post %}
+                        <article class="is-post">
+                            {% include header.html %}
+                            {% include info.html %}
 
-                        <!-- <a href="#" class="image image-full"><img src="/images/n33-robot-invader.jpg" alt="" /></a> -->
+                            <!-- <a href="#" class="image image-full"><img src="/images/n33-robot-invader.jpg" alt="" /></a> -->
 
-                        {{content}}
-                    </article>
+                            {{content}}
+                        </article>
+                    {% else %}
+                        {{ content }}
+                    {% endif %}
 
                     {% include pager.html %}
                 </div>
