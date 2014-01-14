@@ -10,6 +10,8 @@ I know all this, and I know that many—nay, most—of those who head into the w
 
 But I speak none of this to the others. Despite our homelands being shattered, they are eager and believe they will be the stuff of legends. I look across the barren wilderness and our meagre supplies, and I hope that they are right.
 
+<!--more-->
+
 Ours is a band of misfits. No families, no homes, and nothing to lose. There's Vyctryx, an impressive olog, rarely seen, and twice the size of any other in our band; pure muscle and strength, she is the most fearsome thing I've ever seen. In our journey through the wilderness we raided a village for supplies, and she flattened the helm—and the head—of a human warrior with a single strike of her maul. She has appointed herself as warchief, and none dare argue with her decision.
 
 CptCrunchy and Mahrgell are proficient bow-snagas, quick on their feet, and quick with their wits. Once upon a time some tribes regarded snaga poorly, but all of those tribes have since fallen from their beliefs. While not as fearsome with an axe, most snaga seem to have an agility that still makes them deadly foes. Alas, they seem to suffer from the mental affliction that plagues bow-orcs everywhere; I know not why archers choose to forget their arrows, and I know it's not ours. I've walked the dreams of the leaders of the dwarves, and seen their frustration as crossbow-dwarves use their weapon as if it were a mere club. Mahrgell has proven to be handy with a pick, and CptCrunchy with a pen, or so he claims.

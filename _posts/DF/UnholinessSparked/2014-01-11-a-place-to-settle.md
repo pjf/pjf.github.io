@@ -11,6 +11,8 @@ layout: default
 
 "Yes, they do seem to be making a name for themselves. I wonder how Talthra's children are doing back home? Little TortureSold and GreaterCursed. Such lovely names."
 
+<!--more-->
+
 "We might be able to ask after them; it seems to be the season for traders, and goodness knows everyone must have seen that smoke plume, just as we did. I expect we'll have half the continent here before long."
 
 "Might have some elves turn up. Been a while since we've had a bit of bloodshed."

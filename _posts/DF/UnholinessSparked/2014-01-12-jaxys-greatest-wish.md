@@ -5,7 +5,7 @@ layout: default
 
 **17th Moonstone, 101, Early Winter**
 
-It all began with Addie MenacedCluster reporting that great dingoes had been spotted out in the woods. This truly seems to be a land of giants, and these beastsare no exception:
+It all began with Addie MenacedCluster reporting that great dingoes had been spotted out in the woods. This truly seems to be a land of giants, and these beasts are no exception:
 
 ![](http://i.imgur.com/l9acNaC.png)
 

@@ -6,8 +6,12 @@ layout: default
 **8th Sandstone, 101 (mid-autumn)**
 
 "Clanleader, I don't think the warlocks took kindly to you refusing to trade."
+
 "Whatever makes you think that?"
+
 "Sir, *the world is on fire*..."
+
+<!--more-->
 
 ![](http://i.imgur.com/R6xtSWr.png)
 
