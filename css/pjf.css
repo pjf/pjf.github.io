@@ -1,0 +1,12 @@
+/* Stop images from being too big */
+
+img {
+    max-width: 100%;
+}
+
+/* Don't underline our logo */
+/* The second selector is for the mobile version */
+
+#logo h1 a, .title h1 a {
+    text-decoration: none;
+}

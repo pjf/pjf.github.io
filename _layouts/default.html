@@ -1,40 +1,62 @@
 <!DOCTYPE html>
+<!--
+	Based upon Striped 2.5 by HTML5 Up!
+        html5up.net | @n33co
+        Updated for Jekyll by Paul Fenwick | @pjf
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <title>{{ page.title }}</title>
-        <link rel="stylesheet" href="/stylesheets/stylesheet.css" />
-        <link rel="stylesheet" href="/stylesheets/pjf.css" />
+        <title>{{page.title}}</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Open+Sans+Condensed:300,700" rel="stylesheet" />
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/skel.min.js"></script>
+        <script src="/js/skel-panels.min.js"></script>
+        <script src="/js/init.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="/css/skel-noscript.css" />
+            <link rel="stylesheet" href="/css/style.css" />
+            <link rel="stylesheet" href="/css/style-desktop.css" />
+            <link rel="stylesheet" href="/css/style-wide.css" />
+        </noscript>
+        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+        <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+        <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
 
-        <script src="/javascripts/jquery-1.10.2.min.js" ></script>
-
-        <!-- Get IE to act like a standards-compliant browser. -->
-
-        <!--[if lt IE 9]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-        <![endif]-->
+        <link rel="stylesheet" href="/css/pjf.css" />
 
     </head>
-    <body>
-        <div id="header_wrap" class="outer">
-            <header class="inner">
-                <h1>{{ page.title }}</h1>
-            </header>
-        </div>
+    <!--
+        Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
+        Set it to "right-sidebar" to, you guessed it, position it on the right.
+    -->
+    <body class="left-sidebar">
+        <div id="wrapper">
+            <div id="content">
+                <div id="content-inner">
+                    {% if post %}
+                        <article class="is-post">
+                            {% include header.html %}
+                            {% include info.html %}
 
-        <div id="main_content_wrap" class="outer">
-            <section id="main_content" class="inner">
-                {{ content }}
-            </section>
-        </div>
+                            <!-- <a href="#" class="image image-full"><img src="/images/n33-robot-invader.jpg" alt="" /></a> -->
 
-        <div id="footer_wrap" class="outer">
-            <footer>
-            </footer>
-        </div>
+                            {{content}}
+                        </article>
+                    {% else %}
+                        {{ content }}
+                    {% endif %}
 
-        <script src="/javascripts/pjf.js"></script>
+                    {% include pager.html %}
+                </div>
+            </div>
+
+            {%include sidebar.html %}
+
+        </div>
     </body>
 </html>
 

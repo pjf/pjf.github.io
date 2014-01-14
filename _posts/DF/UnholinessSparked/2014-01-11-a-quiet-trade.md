@@ -9,6 +9,8 @@ Despite us being far from our homes in this frozen waste, it appears that not on
 
 ![](http://i.imgur.com/3284MWM.png)
 
+<!--more-->
+
 Luckily, we had re-built the depot entirely from stone after last season's incident, and since the land around is nothing but ash and snow, there was little else to catch fire. We are singed, surprised, but not harmed. It does appear that the blast melted the traders' entire stocks of cheese. When I asked if their caused them dismay, they pretended to not know what I was talking about and say that cheese that was dripping off their cart *was not theirs*. I do not understand our hill orc cousins, but when I pointed out that melted cheese is delicious, and they could purchase it in exchange for some of the old chests they were carrying, they readily agreed.
 
 ![](http://i.imgur.com/lQkI13o.png)

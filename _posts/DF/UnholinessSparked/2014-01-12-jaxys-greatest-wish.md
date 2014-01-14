@@ -5,11 +5,13 @@ layout: default
 
 **17th Moonstone, 101, Early Winter**
 
-It all began with Addie MenacedCluster reporting that great dingoes had been spotted out in the woods. This truly seems to be a land of giants, and these beastsare no exception:
+It all began with Addie MenacedCluster reporting that great dingoes had been spotted out in the woods. This truly seems to be a land of giants, and these beasts are no exception:
 
 ![](http://i.imgur.com/l9acNaC.png)
 
 Given what happened the last time warlock merchants were in camp, I feel justified in being very cautious about the approach of *any* wild animal. Our front-line squads are put on high alert, and not a moment too soon, as while the dingoes keep their distance, a much more terrifying threat appears:
+
+<!--more-->
 
 ![](http://i.imgur.com/q0SxkzC.png)
 
