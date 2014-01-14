@@ -1,6 +1,8 @@
 ---
 date: 2014-01-08 02:26:00 +1100
+layout: default
 ---
+
 **8th Sandstone, 101 (mid-autumn)**
 
 "Clanleader, I don't think the warlocks took kindly to you refusing to trade."

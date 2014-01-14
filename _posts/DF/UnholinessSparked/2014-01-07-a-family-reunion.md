@@ -1,6 +1,8 @@
 ---
 date: 2014-01-07 19:44:41 +1100
+layout: default
 ---
+
 **9th Sandstone, 101 (mid-Autumn)**
 
 CptCrunchy sat by the smoking remains of a lynx bone table. As tribe scribe, he took his duties very seriously. While he insisted that to properly account for the tribe's possessions he needed a better dining room, and living quaters, and study, and maybe a few trophies, he knew all of those would come in time. Right now, he had rolled by the sleve of his cotton fibre shirt to best show off his scars to their new guests.
