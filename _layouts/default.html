@@ -56,12 +56,13 @@
                             <!--
                                     Note: You can change the number of list items in "stats" to whatever you want.
                             -->
-                            <ul class="stats">
+
+                            <!-- <ul class="stats">
                                 <li><a href="#" class="fa fa-comment">16</a></li>
                                 <li><a href="#" class="fa fa-heart">32</a></li>
                                 <li><a href="#" class="fa fa-twitter">64</a></li>
                                 <li><a href="#" class="fa fa-facebook">128</a></li>
-                            </ul>
+                            </ul> -->
                         </div>
                         <a href="#" class="image image-full"><img src="/images/n33-robot-invader.jpg" alt="" /></a>
 
@@ -89,7 +90,7 @@
 
                 <!-- Logo -->
                 <div id="logo">
-                        <h1>STRIPED</h1>
+                        <h1>PJF</h1>
                 </div>
 
                 <!-- Nav -->
@@ -113,40 +114,39 @@
                 <section class="is-text-style1">
                     <div class="inner">
                         <p>
-                            <strong>Striped:</strong> A free and fully responsive HTML5 site
-                            template designed by <a href="http://n33.co/">AJ</a> for <a href="http://html5up.net/">HTML5 up!</a>
+                            <strong>PJF:</strong> Some guy from the internet.
                         </p>
                     </div>
                 </section>
 
                 <!-- Recent Posts -->
                 <section class="is-recent-posts">
-                        <header>
-                                <h2>Recent Posts</h2>
-                        </header>
-                        <ul>
-                            <li><a href="#">Nothing happened</a></li>
-                            <li><a href="#">My Dearest Cthulhu</a></li>
-                            <li><a href="#">The Meme Meme</a></li>
-                            <li><a href="#">Now Full Cyborg</a></li>
-                            <li><a href="#">Temporal Flux</a></li>
-                        </ul>
+                    <header>
+                        <h2>Recent Posts</h2>
+                    </header>
+
+                    <ul>
+                    {% for post in site.posts %}
+                        <li><a href="{{ post.url }}">{{ post.title}}</a>
+                    {% endfor %}
+                    </ul>
                 </section>
 
                 <!-- Recent Comments -->
                 <section class="is-recent-comments">
-                        <header>
-                            <h2>Recent Comments</h2>
-                        </header>
-                        <ul>
-                            <li>case on <a href="#">Now Full Cyborg</a></li>
-                            <li>molly on <a href="#">Untitled Post</a></li>
-                            <li>case on <a href="#">Temporal Flux</a></li>
-                        </ul>
+                    <header>
+                        <h2>Recent Comments</h2>
+                    </header>
+                    <ul>
+                        <li>case on <a href="#">Now Full Cyborg</a></li>
+                        <li>molly on <a href="#">Untitled Post</a></li>
+                        <li>case on <a href="#">Temporal Flux</a></li>
+                    </ul>
                 </section>
 
                 <!-- Calendar -->
-                <section class="is-calendar">
+
+                <!-- <section class="is-calendar">
                     <div class="inner">
                             <table>
                                     <caption>February 2013</caption>
@@ -205,12 +205,12 @@
                                     </tbody>
                             </table>
                     </div>
-                </section>
+                </section> -->
         
                 <!-- Copyright -->
                 <div id="copyright">
                     <p>
-                        &copy; 2013 An Untitled Site.<br />
+                        &copy; 2014 Paul Fenwick<br />
                         Images: <a href="http://n33.co">n33</a>, <a href="http://fotogrph.com">fotogrph</a><br />
                         Design: <a href="http://html5up.net/">HTML5 UP</a>
                     </p>
