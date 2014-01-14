@@ -1,6 +1,5 @@
 ---
 date: 2014-01-11 14:02:15 +1100
-layout: post
 ---
 
 **25th Timber, 101, Late Autumn**

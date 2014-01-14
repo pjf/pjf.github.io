@@ -1,6 +1,5 @@
 ---
 date: 2014-01-08 02:26:00 +1100
-layout: post
 ---
 
 **8th Sandstone, 101 (mid-autumn)**

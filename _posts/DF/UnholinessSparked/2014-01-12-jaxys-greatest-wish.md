@@ -1,6 +1,5 @@
 ---
 date: 2014-01-12 03:47:44 +1100
-layout: post
 ---
 
 **17th Moonstone, 101, Early Winter**

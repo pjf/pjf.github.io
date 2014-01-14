@@ -1,7 +1,5 @@
 ---
 date: 2014-01-06 08:47:23 +1100
-layout: post
-title: A home in the wilderness
 ---
 
 Ours is the story of many of the great tribes. The legends tell of inspired leaders, striking their own in the wilderness, building their fledging clan to glory and conquest. The legends tell of heroic acts and great deeds, or bravery and cunning. But I know that many of the great clans started because of fractured tribes, regrouping after the great enemies beset them with steel and cannon. There is much honour in the old ways, but I fear that the glory of the orcish crafters—leather and ironbone, obsidian and raw strength—has met its match against the industry of the dwarves and humans. We fight to bring glory to those who have fought before us, but the humans and dwarves do not fight for honour; they clad themselves in metals that were not from glory in combat, and while it shames them to do so, I cannot argue its effectiveness.
