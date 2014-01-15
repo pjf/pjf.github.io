@@ -17,6 +17,8 @@ software, but also community management. They've seen a lot of the same
 problems arise many times, and so they have a good idea on how to get code, and
 people, to work together productively.
 
+<!--more-->
+
 One thing that we see, again and again, in both software and the community, is
 that giving people agency and discretion is fundamental in having a highly
 successful project. Wikis lowered the barrier to contribution immensely when it
