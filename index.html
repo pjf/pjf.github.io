@@ -24,7 +24,22 @@ title: paul.j.fenwick
 
 </article>
 
-{% for post in site.categories.advogato limit:5 %}
+{% assign count = 0 %}
+
+{% for post in site.posts %}
+
+    {% comment %} Only show five posts, and skip DF ones {% endcomment %}
+
+    {% if post.categories contains 'df' %}
+        {% continue %}
+    {% endif %}
+
+    {% assign count = count|plus:1 %}
+
+    {% if count > 5 %}
+        {% break %}
+    {% endif %}
+
     <article class="is-post is-post-excerpt">
 
         <header>
