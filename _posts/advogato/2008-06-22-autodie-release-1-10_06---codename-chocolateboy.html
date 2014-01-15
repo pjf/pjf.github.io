@@ -1,0 +1,30 @@
+---
+title: autodie release 1.10_06 - Codename chocolateboy
+date: 2008-06-22 12:26:20 +0000
+orig_url: http://advogato.org/person/pjf/diary/540.html
+---
+<p><b>autodie release 1.10_06 - Codename chocolateboy</b><br>
+I'm very pleased to say that the next release of <a href="http://search.cpan.org/perldoc?autodie">autodie</a> is making its way to CPAN.  The release's codename is "chocolateboy", after the wonderful author of <a href="http://search.cpan.org/perldoc?autobox">autobox</a> who spent many hours discussing the inner workings of pragmas, provided thousands of words of advice, and who allowed me to use him as a sounding-board when I had far too many ideas and not enough implementation.
+<p>
+The new version provides massive improvements in Perl 5.8 support, including:
+
+<ul>
+<li>User subroutines can be lexicalised
+<li>Fatal and autodie can be used together
+<li>Fatal backwards compatibility mode fixed
+<li>autodie will no longer cause weird interactions with autobox
+<li>Better error messages
+<li>Lower memory overheads
+<li>Faster loading
+</ul>
+<p>
+I've still got a huge list of things left to do, but this release is a major stepping stone since it contains code that can lexicalise arbitrary subroutines, with many thanks to <a href="http://perlmonks.org/?node_id=693338">ikegami for help in debugging</a>.
+<p>
+My next big tasks are:
+<ul>
+<li>Moving the Perl 5.10 implementation to use the Perl 5.8 code, which is actually faster and has less side-effects.
+<li>Writing a whole stack of documentation on how to use it, why you'd want to, and what bugs exist.
+<li>Having a really good think about the <a href="http://search.cpan.org/perldoc?autodie::exception">autodie::exception</a> interface.  I'm planning to bounce ideas off the <a href="http://moose.perl.org/">Moose</a> crowd for this one.
+</ul>
+<p>
+If you're interested in learning more about the project, you can read <a href="http://pjf.id.au/blog/toc.html?tag=autodie">my previous blog posts</a>, or track the project <a href="http://github.com/pfenwick/autodie/tree/master">on github</a> or <a href="http://www.ohloh.net/projects/autodie">ohloh</a>.  I also welcome any questions, feedback, and especially patches at <a href="mailto:pjf@cpan.org">pjf@cpan.org</a>.

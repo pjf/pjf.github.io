@@ -1,0 +1,17 @@
+---
+title: Australia gets the DMCA
+date: 2004-08-04 00:04:27 +0000
+orig_url: http://advogato.org/person/pjf/diary/299.html
+---
+<p>
+<b>Australia gets the DMCA</b><br/>
+Last night, the US-Australia Free Trade Agreement went through.  Along with many other things, this will include "harmonization" with US intellectual property laws, including trademarks, copyright, and patents.
+<p>
+Somehow I fail to see this being of benefit to Australia.
+<p>
+<b>Sick hardware</b><br/>
+A rather important machine of ours went through a number of unexplained reboots a number of months ago.  We thought we had diagnosed it as a problem with the UPS, as removing it from the system resulted in sable operation.
+<p>
+Last night, the same machine experienced another set of reboots without any apparent reason.  However this morning I discovered the culprit, after disabling the watchdog that was running.  It appears that the IDE controller (or the kernel, talking to the IDE controller) completely dies, with many 'lost interrupt' messages on the console for three of the four drives in the machine.
+<p>
+Looks like I'll need to schedule downtime and replace its guts.  Dealing with hardware is probably my second least favourite of all sysadmin tasks.  (Restoring from tape is my least favourite)

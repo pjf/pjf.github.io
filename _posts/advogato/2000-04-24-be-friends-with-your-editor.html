@@ -1,0 +1,58 @@
+---
+title: Be friends with your editor
+date: 2000-04-24 00:52:19 +0000
+orig_url: http://advogato.org/person/pjf/diary/31.html
+---
+<B>Be friends with your editor</b><BR>
+<A HREF=http://www.vim.org/>Vim</a> is just wonderful.  As
+my most used tool, it does an admirable job in letting me do
+what I want with a minimum of fuss.  It's great being able
+to re-format quoted text in mail messages (using "gq}") and
+knowing that vim will understand that the &gt;'s should be
+prefixed to each line, and shouldn't be reformatted with the
+rest of the text.
+<P>
+I don't think that the youth of today truly understand how
+important it is to become friends with your editor.  I still
+see people who want to do their work in pico.
+<P>
+I suppose I had an easy transition to vi.  Whereas other
+students were used to point-and-drool editors, I'd spent
+many years on local BBSs using line editors, and my
+favourite game at the time was Hack, which used vi keys for
+movement.  All that made the move to vi quite natural.
+<P>
+<B>Writing code on Advogato</b><BR>
+To answer <A
+HREF=http://www.advogato.net/person/alisdair>alisdair's</a>
+question about displaying code on Advogato, I'd personally
+make use of the &lt;pre&gt; tags, like this:
+<P>
+&lt;PRE&gt;
+<PRE>
+#!/usr/bin/perl -w
+use strict;
+use lib '../lib';
+use Finance::Quote;
+use Data::Dumper;
+
+<p> # A very very simple script.  Takes a source and a symbol,
+# looks it up, and dumps it to STDOUT.  Useful for 
+# debugging.
+
+<p> die "Usage: $0 source symbol\n" unless (defined $ARGV[1]);
+
+<p> my $q = Finance::Quote-&gt;new;
+
+<p> my %quotes = $q-&gt;fetch(@ARGV);
+
+<p> print Dumper(\%quotes);
+</pre>
+&lt;/PRE&gt;
+<P>
+Mind you, I've also found that <tt>&lt;TT&gt;works just
+fine&lt;/TT&gt;</tt> for small snippets of code.
+<P>
+Unfortuately, if you go back an edit your diary entry which
+used the &lt;pre&gt; tags, you'll find that a whole bunch of
+&lt;p&gt; tags have been inserted as well.  Bad Advogato.

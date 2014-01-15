@@ -1,0 +1,11 @@
+---
+title: svchost and nvsvc32
+date: 2007-08-25 03:38:37 +0000
+orig_url: http://advogato.org/person/pjf/diary/508.html
+---
+<p><b>svchost and nvsvc32</b><br />
+This will be dull and boring to most people, so I'll keep it short and sweet.  If you're not using Windows, nvidia drivers, and svchost.exe process running RPC services is consuming more CPU than you'd expect, then rejoice, this post is not for you.
+<p>
+If you <i>are</i> having those problems, then try killing your nvsvc32.exe process, which is an nvidia driver "helper".  If that provides relief, and you experience no problems because of it, you can disable it entirely from Control Panel -&gt; Administrative Tools -&gt; Services -&gt; Nvidia Display Driver Service -&gt; Properties -&gt; Manual.
+<p>
+For me, I've had no almost ill effects whatsoever.  I can still run fullscreen games.  I can still run Windowed games.  I can still nvidia's incredibly cool keystoning software so I can project slides onto really oddly shaped surfaces.  The only thing I can't seem to do is apply a custom gamma to individual screens; oh, my poor heart bleeds.

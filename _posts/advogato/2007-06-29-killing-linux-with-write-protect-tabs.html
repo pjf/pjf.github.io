@@ -1,0 +1,32 @@
+---
+title: Killing linux with write-protect tabs
+date: 2007-06-29 08:30:50 +0000
+orig_url: http://advogato.org/person/pjf/diary/499.html
+---
+<p><b>Killing linux with write-protect tabs</b><br />
+One of our servers is backed up to a 35/70 <a href="http://www.en.wikipedia.org/wiki/Digital_Linear_Tape">DLT drive</a>.  The other week it started giving us problems, and the drive stopped responding.  I obtained a new drive (second-hand ones are cheap), replaced the old one, and everything worked fine... for about a week.
+<p>
+Then the second drive stopped responding.  Same symptoms as the first, not showing up on the controller, and all the lights down the left hand side remaining lit after power-up.  I'll spare you the details, but after a bit of investigative work I had reason to believe that perhaps our SCSI controller was having difficulty, and not the drive itself.
+<p>
+So, I shell out for a new controller, a sparkly new AHA-29160.  These usually sell for $100+ retail, but using the wonders of eBay I picked one up for $20 including express delivery.
+<p>
+Drop in the card, attach the drive, power-up... The DLT drive still shows its lights all down the left-hand side.  Damn.  Then I notice the SCSI card isn't being recognised during boot.  <i>Re-seat</i> the card (it's big!), power cycle.  Everything comes up fine.
+<p>
+Boot into single user mode.  Linux detects the new card and drive.  Drop in an old tape in write-protect mode.  Yup, reads it fine.  Old data is still there.  Happy happy day!
+<p>
+Wanting to perform a backup immediately, and the tape in the drive being the next one due for being overwritten, I wonder if I can flip the write-protect tab <i>while the tape is in the drive</i>... I can!
+<p>
+Sure enough, the light on the DLT panel extinguishes to indicate the tape is available for writing.  Sweet.  Time to rewind the tape and back-up.
+<p>
+<pre>
+# mt rewind
+ 
+(scsi0:A:6:0): parity error detected in Data-in phase. SEQADDR(0x1a5) SCSIRATE(0x98)
+(scsi0:A:6:0): parity error detected in Data-in phase. SEQADDR(0x1a6) SCSIRATE(0x98)
+(scsi0:A:6:0): parity error detected in Data-in phase. SEQADDR(0x1a6) SCSIRATE(0x98)
+(scsi0:A:6:0): parity error detected in Data-in phase. SEQADDR(0x1a6) SCSIRATE(0x98)
+</pre>
+<p>
+Oh bugger.
+<p>
+I guess I really <i>do</i> need to eject the tape before changing its write-protect status.

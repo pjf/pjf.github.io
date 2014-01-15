@@ -1,0 +1,52 @@
+---
+title: Slideshare
+date: 2008-06-11 04:24:46 +0000
+orig_url: http://advogato.org/person/pjf/diary/537.html
+---
+<p>
+<tt>brian d foy</tt> asked in <a href="http://use.perl.org/~brian_d_foy/journal/36646">his use.perl blog</a>:
+
+<blockquote><i>I haven't had time to figure out how to put the slides and audio together in one package. Has anyone done that before?</i></blockquote>
+<p>
+<a href="http://pjf.id.au/blog/?position=520">That</a> <a href="http://pjf.id.au/blog/?position=525">would</a> <a href="http://sweeperbot.org/">be</a> <a href="http://pjf.id.au/blog/?position=540">me</a>.
+<p>
+I've even had <a href="http://pjf.id.au/blog/?position=523">a good rant</a> about how hard it is.
+<p>
+<b>Slideshare</b><br>
+Put simply, if you're using slideshare, <i>and</i> your talk is short, <i>and</i> you move through your slides relatively slowly, <i>and</i> you have somewhere to host the audio, then using slideshare's "slidecasting" options is fine.  I've got an example with one of my own <a href="http://www.slideshare.net/pjf/effective-procrastination-with-hiveminder">talks on hiveminder</a>.
+<p>
+If <i>any</i> of those conditions aren't true, then unless SlideShare's slidecasting software has become significantly better, avoid them.  SlideShare is particularly bad if you have lots of fast slide transitions, because it only tries to cache "one frame ahead", and depending upon network conditions whoever is watching your slidecast may hit that frame before it's fully loaded, in which case it just gets dropped.  I only really consider SlideShare suitable for death-by-powerpoint.
+<p>
+<b>YouTube</b><br>
+These days I do videos, and upload them to <a href="http://www.youtube.com/user/pjfenwick">youtube</a>.  The resolution sucks, and there's a 10 minute time limit, but <i>everyone</i> knows how it works, and it doesn't drop frames.
+<p>
+If you've gone to the effort of putting together a decent movie for youtube, then you can always place the full-resolution copy somewhere for people who care.
+<p>
+<b>Video Production</b><br>
+So, how do you put together the video?  For me, it's usually three steps:
+<p>
+<i>1. Record the audio.</i>  If you've done this at a life presentation, great, having a real audience laugh at your jokes is fantastic.  If not, then sit down with a mike and your slides, and pretend you have an audience.  Give yourself a few seconds of complete silence at the start, you'll thank yourself when it comes to doing noise-removal later on.
+<p>
+If you flub while doing the recording, that's fine.  Wait to get a few seconds of silence, then count back in with a "one, two, three".  This makes it easy to see the flub when editing the soundtrack.
+<p>
+For sound editing, I recommend using <a href="http://audacity.sourceforge.net/">audacity</a>.  It's free, open source, cross platform, and totally awesome.  Edit out your flubs and any other sounds you don't want in your final cut.  Do a noise removal and a normalisation on the whole soundtrack if it needs it.
+<p>
+<i>2. Dump the slides as images.</i>  This can be really frustrating.  I use <a href="http://www.openoffice.org/">OpenOffice.org</a> (OOo), which has an "export as png/jpg/etc" feature.  However it only exports the <i>current</i> slide, and my talks usually have hundreds.  There are some OOo macros about that apparently do the job for you, but I haven't tried them.  I don't know why "Export entire document as png/jpg/etc" isn't built into the software.
+<p>
+Instead of using OOo's image export, I use OOo's "Export as PDF" function.  It works really well.  I then convert the PDF into images, since there are lots of PDF-&gt;image converters out there.  I personally use ghostscript for this job.  Make sure all your images sort correctly in <i>asciibetical</i> order; so the images should be called <tt>slide-001.png</tt>, <tt>slide-002.png</tt>.  If you just call your images <tt>slide-1.png</tt> and <tt>slide-2.png</tt> you'll hit sorting issues once you get to ten slides or more.
+<p>
+<i>3. Make the movie.</i>  If you have decent movie-making software, this should be a matter of importing the slides, importing the audio, and moving the slides back and forth until they match the timing you want.  This can take a lot of time if you have a lot of slides, audio, or both.
+<p>
+<b>Production Software</b><br>
+If you're using a Mac, you probably have some awesome video editing software installed which does the job for you; Macs seem to be good at that.  If you're using Linux, there seems to be a huge number of FOSS video editing solutions with great reviews.
+<p>
+If you're using Windows, then <i>don't</i> use <i>Windows Movie Maker</i>.  You'll get about half way through your editing process, and it will die horribly.  Really, it's awful.
+<p>
+I use <i>CyberLink Power Director</i>, because it came bundled with a camera I purchased a while ago.  It's more suited to taking the video of your child riding a bike, adding some music and titles and burning onto DVD, but it does an <i>okay</i> job with talks production.
+<p>
+The export features on Power Director are <i>awful</i>, they all produce massively huge files (because that's what DVDs want), or crappy resolution files (designed for mobile devices), or produce audio artefacts when encoding(!), or want to use a widescreen aspect ratio (because you'll be playing your DVDs on your TV), or run incredibly slowly.  With enough screwing around I found I could get it to use the xVid encoders which I probably installed from the <a href="http://www.cccp-project.net/">Combined Community Codec Pack</a>, which are fast and awesome and let me specify exactly what I want.
+<p>
+<b>Now what?</b><br>
+Once your talk is exported, upload it to youtube, and publicise it.  I recommend embedding it into one of your own pages, and then at the very least submitting <i>that</i> page to digg and stumbleupon.  I recommend this over publicising the youtube page directly because it gives you more control over your content.  It's <i>much</i> easier to provide a link to your other presentations, a download link, a list of further resources, or anything else when you control the page your viewers will be going to.
+<p>
+And that ends my not very brief write-up on how to put a talk on-line.  If you want to see some that I've done myself, you can find an index on <a href="http://pjf.id.au/talks/">my talks page</a>.  My most popular so far (with over 100,000 views) has been <a href="http://pjf.id.au/blog/?position=525">fixing the web with greasemonkey</a>.

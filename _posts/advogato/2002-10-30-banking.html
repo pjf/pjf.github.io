@@ -1,0 +1,27 @@
+---
+title: Banking
+date: 2002-10-30 11:13:22 +0000
+orig_url: http://advogato.org/person/pjf/diary/185.html
+---
+<b>Banking</b><BR>
+Went to a different branch, and it only took 30 minutes of the teller explaining to me that it what I was asking was completely and utterly impossible (beyond all possible doubt), before the manager was called and immediately approved the deposit.  I spend another five minutes pretending to be incredibly interested in their home loan options, so the bank staff could have warm fuzzies when I left.
+<p>
+Unfortunately, the bank <i>still</i> managed to win, as I left my credit card in the branch.  It seems that the home loan discussion was so engrossing that the teller forgot to hand back my card, and I was so exhausted from having to listen to all the excuses and blame-shifting, that I forgot to check that I had it.
+<p>
+I get to call the bank tomorrow and see if they have it.  They <i>should</i>, since it was left on the staff side of the counter, but I'm expecting I'll probably have to go through all the joy of reporting the card lost.  Wheee!
+<p>
+<b>Accounting</b><br>
+Snipped the last ties with the accounting package I used for the 2001-2002 financial year -- an amusing little program called Erecord.  Erecord is a free (as in beer) software package provided by the Australian Taxation Office.  As an account packing, it stinks.  No double-entry, support for only one account if you want to reconile statements, no sorting of transactions, and no linking of invoices to payments, and nothing even approaching useful reports.  It's also incredibly, mind-numbingly slow.  It's only up-side is that it will try to fill out the quarterly Business Activity Statements (BAS), and that also has its share of problems.  It only runs under Windows.
+<p>
+For the 2002-2003 financial year, I'm using GnuCash.  It doesn't do BAS statements automatically, which means a few more splits, and a little reporting configuration.  However, it's a <i>real</i> accounting package, and handles my multiple accounts, variety of assets, multi-currency income streams, and statement reconciling with ease.  It even generates the numbers to put on my BAS statement (with a little work).  There's no way I'm going back.
+<p>
+GnuCash is even happy for me to deposit foreign cheques to my credit card without having to make up lame excuses why it's not possible.
+<p>
+<B>Invoicing</b><BR>
+The final tie I had with Erecord was the invoice printing.  Erecord would print reasonable looking tax invoices, although there was no good way to record if an invoice has been paid or is overdue.  During periods of heavy invoicing, it can be difficult to keep track of what's going on.
+<p>
+My new system involves a bit of custom programming onto the side of <a href="http://www.bestpractical.com/rt/">RT</a>, which I use as my job-tracking system.  My invoicing program locates resolved jobs with the appropriate keyword, takes the time spent on each, scales that by my hourly rate for that customer, and itemises the results onto an invoice.  A few more improvements will have it generate a ticket for the invoice, linking each job to the invoice ticket, and marking each job as successfully invoiced.  It will also include an attachment of the invoice on the new ticket.
+<p>
+This is great for me, since RT will gladly show me which invoices are open (unpaid), and which are overdue.  It's also good for my customers, as they can just drop the invoice number into the system, and it will come up with all the details of the jobs on their invoice.  Very nice.
+<p>
+It also has financial benefit because I'm running an RT system for a particular client, and they may wish to make use of the new invoicing features.  It's almost certain they'll want customisations so their invoices look extra specially pretty.  I love customers who want their software customised.

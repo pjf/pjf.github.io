@@ -1,0 +1,66 @@
+---
+title: autodie works under Perl 5.8
+date: 2008-06-15 11:48:08 +0000
+orig_url: http://advogato.org/person/pjf/diary/539.html
+---
+<p><b>autodie works under Perl 5.8</b><br>
+After applying a very different paradigm to the code, I have <a href="http://search.cpan.org/perldoc?autodie">autodie working under Perl 5.8</a>!  For anyone who's missed my <a href="http://pjf.id.au/blog/toc.html?tag=autodie">earlier posts</a> on the subject, autodie allows Perl's built-ins (and your own code, if you like) to 'succeed-or-die' with <i>lexical scope</i>.  This means you can write code like this:
+
+<pre>
+
+if ($filename) {
+    use autodie;  # Turns on all common built-ins by default.
+
+    open(my $fh, '&lt;', $filename);  # This opens or dies
+
+    # Do things with my file.
+
+    close($fh);                    # This closes or dies
+}
+
+# This open merely returns false on failure.
+open(my $fh2, '&lt;', $file2);
+
+</pre>
+<p>
+It gets even better, because unlike the old Fatal.pm, autodie also allows you to enable succeed-or-die semantics with <tt>system()</tt>, by hooking into <a href="http://search.cpan.org/perldoc?IPC::System::Simple">IPC::System::Simple</a> under the hood:
+
+<pre>
+
+eval {
+    use autodie qw(system);
+
+    # Perform the commands below in order, but
+    # if any fails, we automatically skip to
+    # the end of the 'eval' block.
+
+    system($mount_tape);
+    system($check_tape_label);
+    system($backup_files);
+    system($unmount_tape);
+    system($delete_old_files);
+};
+
+if (my $error = $@) {
+    # Something went wrong.  Recover/handle it here.
+
+    system($unmount_tape);  # autodie not in effect, this fails silently.
+
+    wake_sysadmin_from_slumber();
+
+    # $error / $@ stringifies into a helpful error message.  What
+    # command failed, which script, which line, what did it return,
+    # what signal name/number killed it, etc.
+
+    die "Backup failed - $error";
+
+}
+</pre>
+<p>
+If an autodying built-in fails, it doesn't just die with an ugly error (like Fatal does), it throws a <a href="http://search.cpan.org/perldoc?autodie::exception">well-formed exception object</a>.  You can catch that, inspect it to discover where the error occurred, what called the code that caused the error, what the arguments were, and almost all the things you'd want to discover during exception handling.  If you use it as a string, it becomes a helpful error, which can depend upon the function that threw the exception.  You can even register your own message handlers, making localisation easier.
+<p>
+Of course, the code isn't complete, I've got a big <a href="http://github.com/pfenwick/autodie/tree/master/TODO">TODO list</a> that's far from complete, but the <i>hardest</i> part of getting it working under 5.8 is done.
+<p>
+You can grab the latest version of autodie <a href="http://search.cpan.org/perldoc?autodie">from the CPAN</a>.  I'd also like to say a special thank-you to <a href="http://github.com/pfenwick/autodie/tree/master/AUTHORS">all the people who have contributed so far</a>, especially to Matt Trout for pointing me at <a href="http://search.cpan.org/perldoc?namespace::clean">namespace::clean</a>, and Robert 'phaylon' Sedlacek for writing it; the heart of namespace::clean was twisted to my dark will to make autodie work under Perl 5.8.
+<p>
+If you want to play with the bleeding edge code, you can <a href="http://github.com/pfenwick/autodie/tree/master">grab the code from git</a> (or use the download button on that page for a tarball); let me know if you'd like a commit-bit.  If you have bugs, comments, suggestions, praise or encouragement, feel free to <a href="mailto:pjf@cpan.org">e-mail me</a> until the <a href="http://rt.cpan.org/NoAuth/Bugs.html?Dist=autodie">autodie bugtracker</a> finds its feet.

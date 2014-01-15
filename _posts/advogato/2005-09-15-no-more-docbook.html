@@ -1,0 +1,13 @@
+---
+title: No more docbook
+date: 2005-09-15 03:47:02 +0000
+orig_url: http://advogato.org/person/pjf/diary/425.html
+---
+<p><b>No more docbook</b><br />
+For historical reasons, our build environment for our course materials has been <i>docbook</i>, and it's never really agreed with me.  Sure, it's open, free, and powerful, but I've never considered it to be at all human friendly.  All those tags just get in the way.
+<p>
+Having said that, we still want to use docbook as our build platform; it produces good looking books and we have literally hundreds of thousands of words already written in docbook.  I just don't want to have to write any more.
+<p>
+Luckily, <a href="http://search.cpan.org/search?query=Pod%3A%3ADocbook">Pod::Docbook</a> appears to do a pretty good job of converting POD into docbook.  That's a good thing, because POD is what I use for writing articles, program documentation, <a href="http://perltraining.com.au/tips/">Perl Tips</a>, and just about everything else except for web content.
+<p>
+The most lovely thing is that I don't lose any power by writing in POD.  If I need to jam in some docbook-specific tags, I can do so with <tt>=for docbook</tt> for a little bit, or <tt>=begin docbook</tt> for a big chunk.  Now I can have my cake and eat it too.

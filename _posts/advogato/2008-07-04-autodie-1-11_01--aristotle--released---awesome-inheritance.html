@@ -1,0 +1,89 @@
+---
+title: autodie 1.11_01 "Aristotle" released - Awesome inheritance
+date: 2008-07-04 03:54:49 +0000
+orig_url: http://advogato.org/person/pjf/diary/543.html
+---
+<p><b>autodie 1.11_01 "Aristotle" released - Awesome inheritance</b><br>
+<tt>autodie</tt> version 1.11_01, codename "Aristotle", is now making its way <a href="http://search.cpan.org/perldoc?autodie">through the CPAN</a>.  The new version contains quite a few exciting <a href="http://github.com/pfenwick/autodie/tree/master/Changes">changes</a>.  You should be able to make and install the new version just like any other module, without having to muck around with <tt>@INC</tt>.  Do be warned it will overpower your existing <tt>Fatal.pm</tt>, and while it should be completely backwards compatible, there's always the small risk of bugs that I've missed.
+<p>
+In this post, I want to show you why <tt>autodie</tt> is so cool, particularly with this new release.
+<p>
+Because <tt>autodie</tt> is smarter than <tt>Fatal</tt>, a whole bunch of things which are normally bugs start being correct if you're using <tt>autodie</tt>.  As an example, take the following code:
+<pre>
+if ( fork() ) {
+   # This is the parent process.
+} else {
+   # This is the child process.
+}
+</pre><p>
+Normally, that code involving <tt>fork</tt> contains a bug, because <tt>fork</tt> could return an <i>undefined</i> value to indicate the fork failed.  Since we're not checking for undef, our parent would act as a child process, and things are likely to go very badly from there.
+<p>
+However, with <tt>autodie</tt> we can write:
+<pre>
+use autodie qw(fork);
+
+if ( fork() ) {
+   # This is the parent process.
+} else {
+   # This is the child process.
+}
+</pre><p>
+And now the code is correct!  <tt>autodie</tt> knows that <tt>fork</tt> is allowed to return zero to the child, but returning undef is an error.  This is <i>much</i> easier than checking the return values manually.
+<p>
+However in my opinion the best thing about the new release is that we can now cleanly subclass both <tt>autodie</tt> and <tt>autodie::exception</tt>, which means we now have a very easy way to slot in our own exceptions frameworks.
+<p>
+Let's start with a trivial example, and pretend we think the old name <tt>lethal</tt> was a better name for the module.  We can just write inside a new <tt>lethal.pm</tt>:
+<pre>
+package lethal;
+
+use base qw(autodie);
+
+1;
+</pre><p>
+And now, we can <tt>use lethal</tt> the same way we would <tt>use autodie</tt>.
+<p>
+As a more complex example, let's say that we want to do a bit of localisation.  I want an Australian version of <tt>autodie</tt> that caters to our strong cultural identity.  I can write inside <tt>bludging.pm</tt>:
+<pre>
+package bludging;
+
+use base qw(autodie);
+
+sub throw {
+   my ($class, @args) = @_;
+
+   return bludging::exception-&gt;new(@args);
+}
+
+package bludging::exception;
+
+use base qw(autodie::exception);
+
+# Mate, it's always a good time for a beer in Australia!
+sub time_for_a_beer {
+    return "Now's a good time for a beer.";
+}
+
+sub stringify {
+    my ($this) = @_;
+
+    my $original_string = $this-&gt;SUPER::stringify;
+
+    return "$original_string\n" . $this-&gt;time_for_a_beer;
+}
+
+1;
+</pre><p>
+I can now write:
+<pre>
+use bludging qw(open);
+
+open(my $fh, "&lt;", "fair_dinkum.txt");
+</pre><p>
+If <tt>fair_dinkum.txt</tt> doesn't exist, I get the Australian-friendly error message:
+<pre>
+Can't open 'fair_dinkum.txt' for reading: "No such file or directory" at australia.pl line 1
+Now's a good time for a beer.
+</pre><p>
+Of course, one could instead extend the exceptions to <a href="http://moose.perl.org/">use your favourite object framework</a>, wake your sysadmins up in the wee hours of the morning, provide extra diagnostics and stack back-traces, or do anything else you consider worthwhile.
+<p>
+So, what are you waiting for?  Grab yourself <tt>autodie</tt> 1.11_01 from <a href="http://search.cpan.org/perldoc?autodie">the CPAN</a> now, or (if your mirror is a little behind) you can <a href="http://perltraining.com.au/~pjf/autodie/autodie-1.11_01.tar.gz">download the release directly from my server</a>.

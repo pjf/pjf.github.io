@@ -1,0 +1,26 @@
+---
+title: Lunchtime Code
+date: 2004-10-20 08:51:23 +0000
+orig_url: http://advogato.org/person/pjf/diary/324.html
+---
+<p>
+<b>Lunchtime Code</b><br/>
+This lunchtime over a salad roll I put together code to generate <b><a href="http://perltraining.com.au/">Perl Training Australia</a> Brand Fairy Dust</b>(TM).  These are the little squares that appear on our letterhead, course covers, logo, and other corporate branding.
+<p>
+The code allows for variable density and colour saturation, the creation of different sized areas, and various scaling factors.  This means that it's very easy to generate some very cool looking special effects.  It's good to have a well-behaved logo.
+
+<p>
+<b>Browser Compatibility</b><br/>
+I'm looking at sprucing up the look, feel, and auto-generation of the <a href="http://perltraining.com.au/">Perl Training Australia</a> website, hence the fairy-dust generator.  The current site uses lots of HTML 4.01 transitional code for layout and formatting, and a splash of CSS to make things look nicer.
+<p>
+The result is a website that works in everything, and even degrades nicely in browsers that don't yet grok tables or stylesheets.  However looking at the code makes me feel uncomfortable -- standards are important, and HTML 4.01 Transitional isn't as standard as I would like.  Everything could be made much more simple using strict XHTML and CSS.  Sure enough, creating a fully standards-compliant mock-up was a quick and simple operation.
+<p>
+Except for the browser compatibility.
+<p>
+MSIE doesn't support fixed positioning.  Netscape 4.7 has different ideas about the transparency of coloured div backgrounds.  w3m and lynx don't do much with stylsheets at all.
+<p>
+Of people looking at our website, 48% use MSIE 6, 23% use Mozilla, and 6% use MSIE 5.x.  I want our site to degrade nicely in MSIE 5.x, as I'm certain some of that 6% are honest-to-goodness paying customers.  The question, of course, is how do I test it?
+<p>
+A bit of googling later and I discovered instructions on <a href="http://www.webmasterworld.com/forum21/6561.htm">how to install multiple versions of MSIE</a> on a single Windows install.   Don't know if it will work, but I'm giving it a go.
+<p>
+If all tests well, then we can expect to see a prettier, XHTML/CSS Perl Training Australia website in the near future.  Auto-generated fairy dust and all.

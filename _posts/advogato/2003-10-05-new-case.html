@@ -1,0 +1,22 @@
+---
+title: New Case
+date: 2003-10-05 07:46:13 +0000
+orig_url: http://advogato.org/person/pjf/diary/240.html
+---
+<B>New Case</b><BR>
+Machine transfer to new case went fine.  Small problem of the SCSI controller not wanting to talk for a bit, solved by moving its PCI slot.  The new case is both smaller and better designed.  Fans sit directly in front of the drive bays, and rear and side fans help move a lot of air through the case.  The result is a very cool machine, which makes me happy.  Oh yeah, it's also got a clear plastic side, bright coloured LEDs, and rounded cables.
+<p>
+It still looks like a mess of cables inside.
+<p>
+Like most cases, it has plenty of bays to place things, and never enough power connectors to power them.  Good thing I have plenty of splitters.
+<p>
+<B>RAID</b><br>
+Re-inserted drive into array.  Reconstruction occured quickly (2 hrs) and painlessly.  No problems whatsoever.  Wrote proceedures documentation on what to do in a similar situation  if I'm not around, and left the spare drive in the machine to act as a failover disk, although it needs to be manually added  rather than automatically.
+<p>
+I'd love to add some agressive drive testing to the server's normal health checks.  Currently a bad sector is only found if we hit it by accident.  I want to perform progressive badblock scans (on timed intervals, during periods of low-load) to find badblocks sooner rather than later.
+<p>
+<B>Nagios</b><BR>
+As part of my recreational time today, I wrote a small Nagios plugin to grab hard-drive temperatures, ambient temperature, and CPU temperature, test them for being too hot, etc. etc.  I'm almost reinventing the wheel, but these things are so quick'n'easy to write that I don't mind a great deal.
+<p>
+<B>Garden</b><BR>
+Lots of harvesting from the garden today.  Potatoes, peas, rhubarb, lettuce, turnips, peas and assorted fresh greens were our reward.  I wish I had more time for gardening.

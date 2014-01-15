@@ -1,0 +1,13 @@
+---
+title: E-mail and privacy
+date: 2003-03-19 01:54:11 +0000
+orig_url: http://advogato.org/person/pjf/diary/202.html
+---
+<B>E-mail and privacy</b><BR>
+I still find it incredible how many people believe that e-mail is somehow inheritantly private.  I have clients, they have PGP installed (some for many years), and they have my keys.  Yet somehow the effort of hitting the "encrypt" button is too much for them, even if the e-mail contains sensitive or confidential information.  People don't write credit card details, medical history, or other private information on postcards, yet people do the electronic equivalent every day.
+<p>
+What's even more disturbing is the number of "e-commerce" systems which are little more than a copy of formmail running on a SSL server.  The results are then dropped into a plain-text e-mail, transmitted in the clear over SMTP, stored unencrypted on a hard-drive somewhere, and then again grabbed using clear POP/IMAP (with passwords easily sniffable), and again stored on what's often a frighteningly insecure workstation or home machine.
+<p>
+People are big on using SSL for websites, but seem completely ignorant that the same level of security needs to be used from end-to-end to make an entire process secure.  I blame much of this on the fact that Certificate Authorities (and indirectly, browser manufacturers) can make money from people purchasing signatures on their SSL certs, but nobody makes money when you generate a PGP key, or pick up your mail using APOP.
+<p>
+Unfortunately the matter of securing communications is not  a technical one, but rather a social one.  I fear that the public in general will only become aware of how insecure their communications are once someone finds a way of making money by securing them.

@@ -1,0 +1,30 @@
+---
+title: Finance::Quote
+date: 2000-06-23 14:27:49 +0000
+orig_url: http://advogato.org/person/pjf/diary/75.html
+---
+<B>Finance::Quote</b><BR>
+Awright!  Finance::Quote now does automatic currency
+conversion, and makes it dead-simple to use:
+<P>
+<BLOCKQUOTE>
+<TT>
+use Finance::Quote;<BR>
+my $quoter = Finance::Quote-&gt;new;<BR>
+$quoter-&gt;set_currency("AUD");<BR>
+my %info = $quoter-&gt;fetch("nasdaq","LNUX");<BR>
+</tt>
+</blockquote>
+<P>
+<TT>%info</tt> will now contain information about <I>VA
+Linux Systems</i>, except all information will be in
+Australian dollars, rather than the US dollars which
+<I>Yahoo</i>
+supplies it in.  This makes me very happy indeed, and means
+that it's now very very very easy to write stock tickers and
+the like which show information in your local currency.
+<P>
+<B>Work</b><BR>
+We have very sweet people at work, especially Tim from the
+Support team.  Tim hasn't thrown any bugs my way in weeks,
+for which I'm very grateful.

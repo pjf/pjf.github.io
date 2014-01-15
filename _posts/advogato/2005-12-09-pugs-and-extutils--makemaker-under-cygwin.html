@@ -1,0 +1,13 @@
+---
+title: Pugs and ExtUtils::MakeMaker under Cygwin
+date: 2005-12-09 02:08:59 +0000
+orig_url: http://advogato.org/person/pjf/diary/447.html
+---
+<p><b>Pugs and ExtUtils::MakeMaker under Cygwin</b><br />
+Decided to have a play with <a href="http://www.pugscode.org/">PUGS</a> and immediately discovered that it wouldn't recognise my Haskell compiler (<tt>ghc</tt>).  I'm using Cygwin, but <tt>ghc</tt> lives in Windows-land.
+<p>
+After a bit of digging, I discovered that Perl under Cygwin never thinks that a windows command (in <tt>/cygdrive/...</tt>) is executable, and so <tt>ExtUtils::MakeMaker</tt> simply thinks my Haskell compiler is an ordinary file, not something that can be executed.
+<p>
+After a little hacking, I raised <a href="https://rt.cpan.org/NoAuth/Bug.html?id=16375">bug #16375</a>, which includes a patch that fixes the problem.
+<p>
+I still don't know whether or not I can get pugs to compile, but at least it now recognises my Haskell environment.

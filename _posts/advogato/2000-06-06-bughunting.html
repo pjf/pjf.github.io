@@ -1,0 +1,33 @@
+---
+title: Bughunting
+date: 2000-06-06 08:20:18 +0000
+orig_url: http://advogato.org/person/pjf/diary/64.html
+---
+<B>Bughunting</b><BR>
+<A HREF=http://www.advogato.net/person/sw>Sam</a> managed to
+find the REAL bug-of-doom that I had spent so long looking
+for.  It ended up that our daemon had opened a couple of
+unix-domain sockets before forking, and the children
+inherited and used the open file descriptors.  Due to the
+nature of the code this was okay during quiet periods, but
+caused huge problems during load.  Sam was presented with
+the Bugfinder's Beer and everyone is happy.  Good work Sam!
+<P>
+<B>Diplomacy</b><BR>
+Very interesting turn.  It seemed that everyone lied to
+everyone, and a very messy turn was had by all.  What fun! 
+I'm looking forward to see how it all turns out.
+<P>
+<B>Finance::Quote</b><BR>
+I'm very thankful to Jacinta for her work.  She's spent a
+lot of time cleaning up code, making sure things are
+consistant, and reviewing my hacker's guide and other
+documentation.
+<P>
+I'm playing with Debianising Finance::Quote, although it
+will probably be a while before I get the proper hang of
+it.  I've got some examples to work by, so I'm using them.
+<P>
+<B>Cartooning</b><BR>
+I'm once again walking the fine line and have restarted my
+cartoons.
