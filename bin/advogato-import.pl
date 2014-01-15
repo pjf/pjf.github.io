@@ -4,15 +4,13 @@ use strict;
 use warnings;
 use autodie;
 use XMLRPC::Lite;
+use Getopt::Std;
 
-# Import pjf's blog entries from advogato into jekyll.
-# This may be a useful starting point if you want to do an
-# advogato import of your own data.
-#
-# Paul '@pjf' Fenwick, January 2014
-#
-# You can use, modify, and redistribute this code under the same
-# terms as perl itself.
+my %opts= (
+    i => 0,  # Individual post
+);
+
+getopts('i', \%opts);
 
 my $user = 'pjf';
 
@@ -22,11 +20,17 @@ say "Importing $posts posts\n";
 
 # Posts-1 because advogato counts from zero
 
-foreach my $post (0..$posts-1) {
+my ($start) = @ARGV;
+
+$start ||= 0;
+
+foreach my $post ($start..$posts-1) {
     my $entry = advogato('diary.get',$user,$post);
     my ($posted, $updated) = @{ advogato('diary.getDates',$user,$post) };
 
     write_entry($posted, $entry, $post);
+
+    last if $opts{i};   # Break if this was a single fetch.
 }
 
 sub write_entry {
@@ -90,11 +94,11 @@ sub advogato {
     return $server->call(@_)->result;
 }
 
-# The first thing in bold with a <br> or <p> is what we consider our header
+# The first thing in bold is what we consider our header
 sub extract_title {
     my ($text) = @_;
 
-    $text =~ m{<b>(.*?)</b><(?:br|p)/?>}i;
+    $text =~ m{<b>(.*?)</b>}i;
 
     my $raw_title = $1 || "untitled";
 
