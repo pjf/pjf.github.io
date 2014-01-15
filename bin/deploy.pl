@@ -24,8 +24,11 @@ remove_tree(keys %files);
 # Move everything in site up a level
 system("mv _site/* .");
 
+my $time = localtime();
+
 # And send to githb.
 system("git add -A");
+system(qq{git commit -m"Site update at $time"});
 system("git push");
 
 # Finally, return home
