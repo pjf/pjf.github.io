@@ -1,0 +1,1 @@
+../../jekyll-plugins/generate_categories.rb
