@@ -90,9 +90,15 @@
 				display: block;
 				font-size: 1.5em;
 				color: #999;
-				border-bottom: solid 1px #ddd;
-				padding: 0 0 1em 0;
-				margin: 0 0 0.75em 0;
+				/*
+                                 * These are needed if we're putting
+                                 * info buttons back in...
+                                 *
+                                 * border-bottom: solid 1px #ddd;
+				 * padding: 0 0 1em 0;
+				 * margin: 0 0 0.75em 0;
+                                 *
+                                 */
 			}
 
 				/* .is-post .info .date .year, */
@@ -109,6 +115,11 @@
 					font-size: 1.5em;
 					font-weight: 700;
 					color: #1b252a;
+
+                                        /* These give us a nice looking
+                                         * line before the year */
+                                        border-bottom: solid 1px #ddd;
+				        padding: 0 0 0.25em 0;
 				}
 		
 			.is-post .info .stats
