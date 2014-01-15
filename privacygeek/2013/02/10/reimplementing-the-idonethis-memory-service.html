@@ -84,23 +84,23 @@
 
     <!-- <a href="#" class="image image-full"><img src="/images/n33-robot-invader.jpg" alt="" /></a> -->
 
-    <p>There&#8217;s an excellent website called <a href='http://idonethis.com/'>iDoneThis.com</a> which implements the most simple yet brilliant of services. Every day, you record the list of things you&#8217;ve done, and it gives you a check-mark for that day. This was motivating in two ways: firstly, the desire to keep that chain of check-marks running (what&#8217;s known as a &#8216;chain calendar&#8217; or a &#8216;Seinfeld calendar&#8217;), and secondly by emailing you your memories of what you were doing a year (or a week, or a month) ago.</p>
+    <p>There’s an excellent website called <a href="http://idonethis.com/">iDoneThis.com</a> which implements the most simple yet brilliant of services. Every day, you record the list of things you’ve done, and it gives you a check-mark for that day. This was motivating in two ways: firstly, the desire to keep that chain of check-marks running (what’s known as a ‘chain calendar’ or a ‘Seinfeld calendar’), and secondly by emailing you your memories of what you were doing a year (or a week, or a month) ago.</p>
 
-<p>For me, knowing what I was doing a year ago was <em>really</em> good. I loved waking up each morning to be reminding of something I might otherwise not think of again. The good memories I was emailed would make me feel good again, and bad memories? Well, they&#8217;d often make me feel good that I wasn&#8217;t going through <em>that</em> anymore, or they&#8217;d be <em>insightful</em> if I was encountering similar issues now.</p>
+<p>For me, knowing what I was doing a year ago was <em>really</em> good. I loved waking up each morning to be reminding of something I might otherwise not think of again. The good memories I was emailed would make me feel good again, and bad memories? Well, they’d often make me feel good that I wasn’t going through <em>that</em> anymore, or they’d be <em>insightful</em> if I was encountering similar issues now.</p>
 
-<p>I <em>loved</em> the memory service, and so did my friends, even if they didn&#8217;t use it. I&#8217;d often send them messages about what awesome adventures we were up to a year ago, and that would often make their day.</p>
+<p>I <em>loved</em> the memory service, and so did my friends, even if they didn’t use it. I’d often send them messages about what awesome adventures we were up to a year ago, and that would often make their day.</p>
 
-<p>Unfortunately, a few months ago, iDoneThis discontinued their memory-posting service. I don&#8217;t know why; I can only assume they&#8217;re focusing on the more corporate part of their service, and the network costs of all the personal emails wasn&#8217;t worth it.</p>
+<p>Unfortunately, a few months ago, iDoneThis discontinued their memory-posting service. I don’t know why; I can only assume they’re focusing on the more corporate part of their service, and the network costs of all the personal emails wasn’t worth it.</p>
 
-<p>Today, as part of a <a href='http://lesswrong.com/lw/3w3/how_to_beat_procrastination/'>productivity spiral</a>, I reimplemented the old memories service. The code isn&#8217;t pretty—unfortunately iDoneThis doesn&#8217;t (yet) provide an API—but I have a bot that can log-in and fetch a day&#8217;s worth of data. Best of all, that code is open source, and <a href='href=&quot;https://metacpan.org/module/WebService::Idonethis'>available from the CPAN</a>, so you can download and use it yourself.</p>
+<p>Today, as part of a <a href="http://lesswrong.com/lw/3w3/how_to_beat_procrastination/">productivity spiral</a>, I reimplemented the old memories service. The code isn’t pretty—unfortunately iDoneThis doesn’t (yet) provide an API—but I have a bot that can log-in and fetch a day’s worth of data. Best of all, that code is open source, and <a href="href="https://metacpan.org/module/WebService::Idonethis">available from the CPAN</a>, so you can download and use it yourself.</p>
 <!--more-->
-<p>Even if you&#8217;re not a Perl person, then it&#8217;s pretty easy to install. Simply follow my <a href='http://privacygeek.blogspot.com.au/2013/03/the-worlds-easiest-guide-to-installing.html'>world&#8217;s simplest guide to installing cpanm</a>.</p>
+<p>Even if you’re not a Perl person, then it’s pretty easy to install. Simply follow my <a href="http://privacygeek.blogspot.com.au/2013/03/the-worlds-easiest-guide-to-installing.html">world’s simplest guide to installing cpanm</a>.</p>
 
-<p>Now just install the <a href='https://metacpan.org/module/WebService::Idonethis&quot;&gt;WebService::Idonethis'>WebService::Idonethis</a> module:</p>
+<p>Now just install the <a href="https://metacpan.org/module/WebService::Idonethis">WebService::Idonethis">WebService::Idonethis</a> module:</p>
 
 <pre><code>cpanm WebService::Idonethis</code></pre>
 
-<p>To use it, you&#8217;ll first need to create an <code>~/.idonethisrc</code> file with your auth details:</p>
+<p>To use it, you’ll first need to create an <code>~/.idonethisrc</code> file with your auth details:</p>
 
 <pre><code>[auth]
 user=someuser
@@ -110,20 +110,20 @@ pass=somepass</code></pre>
 
 <pre><code>$ idonethis-memories
 
-Here&#39;s what you were doing on 2012-02-11:
+Here's what you were doing on 2012-02-11:
 
 * Built a robotic dinosaur with lasers with Claudine.
 * Played stepmania with Deanna (Spice Girls rock!)
 * Invoiced ALL the clients.
 * Drank six billion cups of coffee.</code></pre>
 
-<p>It&#8217;s perfect for putting into a cron job.</p>
+<p>It’s perfect for putting into a cron job.</p>
 
 <p><em>Edit:</em> As of v0.03, you can now submit done items directly from the command line using the <code>idone</code> tool:</p>
 
 <pre><code>$ idone &quot;Read a great blog by Paul Fenwick&quot;</code></pre>
 
-<p><em>Edit:</em> As of v0.04, you can also get a list of what you&#8217;ve done today:</p>
+<p><em>Edit:</em> As of v0.04, you can also get a list of what you’ve done today:</p>
 
 <pre><code>$ idone -l
 
@@ -131,9 +131,9 @@ Here&#39;s what you were doing on 2012-02-11:
 * Looked at pictures of cats on the Internet
 * Defended against a goblin siege in Dwarf Fortress</code></pre>
 
-<p>If you&#8217;re handy with Perl, or just want to look at the code, there&#8217;s a <a href='https://github.com/pjf/idonethis-perl'>github repository</a>. Patches are extremely welcome!</p>
+<p>If you’re handy with Perl, or just want to look at the code, there’s a <a href="https://github.com/pjf/idonethis-perl">github repository</a>. Patches are extremely welcome!</p>
 
-<p>Edit: As of v0.08, the <code>idone -lc</code> command is the best thing ever. It will list the things you&#8217;ve done today, and allow you to add new things by entering them on stdin. It also has less than one third of the previous dependencies.</p>
+<p>Edit: As of v0.08, the <code>idone -lc</code> command is the best thing ever. It will list the things you’ve done today, and allow you to add new things by entering them on stdin. It also has less than one third of the previous dependencies.</p>
 
     
 
@@ -192,25 +192,25 @@ Here&#39;s what you were doing on 2012-02-11:
 
         <ul>
         
-            <li><a href="/DF/UnholinessSparked/2014/01/12/jaxys-greatest-wish.html">Jaxy's Greatest Wish</a>
+            <li><a href="/df/unholinesssparked/2014/01/11/jaxys-greatest-wish.html">Jaxy's Greatest Wish</a>
         
-            <li><a href="/DF/UnholinessSparked/2014/01/11/a-quiet-trade.html">A Quiet Trade</a>
+            <li><a href="/df/unholinesssparked/2014/01/11/a-quiet-trade.html">A Quiet Trade</a>
         
-            <li><a href="/DF/UnholinessSparked/2014/01/11/a-place-to-settle.html">A Place To Settle</a>
+            <li><a href="/df/unholinesssparked/2014/01/11/a-place-to-settle.html">A Place To Settle</a>
         
-            <li><a href="/DF/UnholinessSparked/2014/01/08/the-fickleness-of-warlocks.html">The Fickleness Of Warlocks</a>
+            <li><a href="/df/unholinesssparked/2014/01/07/the-fickleness-of-warlocks.html">The Fickleness Of Warlocks</a>
         
-            <li><a href="/DF/UnholinessSparked/2014/01/07/a-family-reunion.html">A Family Reunion</a>
+            <li><a href="/df/unholinesssparked/2014/01/07/a-family-reunion.html">A Family Reunion</a>
         
-            <li><a href="/DF/UnholinessSparked/2014/01/07/a-matter-of-trade.html">A Matter Of Trade</a>
+            <li><a href="/df/unholinesssparked/2014/01/06/a-matter-of-trade.html">A Matter Of Trade</a>
         
-            <li><a href="/DF/UnholinessSparked/2014/01/06/a-home-in-the-wilderness.html">A Home In The Wilderness</a>
+            <li><a href="/df/unholinesssparked/2014/01/05/a-home-in-the-wilderness.html">A Home In The Wilderness</a>
+        
+            <li><a href="/longpost/2013/12/28/on-open-source-software-and-communities.html">On Open Source Software And Communities</a>
         
             <li><a href="/privacygeek/2013/02/10/reimplementing-the-idonethis-memory-service.html">Reimplementing the iDoneThis Memory Service</a>
         
-            <li><a href="/privacygeek/2012/06/18/banking-vigilance-fail-unlocking-a-card-with-only-a-surname.html">Banking Vigilance Fail - Unlocking A Card With Only A Surname</a>
-        
-            <li><a href="/privacygeek/2011/09/24/facebook-friends-lists-are-now-less-private.html">Facebook Friends Lists Are Now Less Private</a>
+            <li><a href="/privacygeek/2012/06/17/banking-vigilance-fail-unlocking-a-card-with-only-a-surname.html">Banking Vigilance Fail - Unlocking A Card With Only A Surname</a>
         
         </ul>
     </section>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--
+    Based upon Striped 2.5 by HTML5 Up!
+    html5up.net | @n33co
+    Updated for Jekyll by Paul Fenwick | @pjf
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+    <head>
+        <title>The most frustrating work</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Open+Sans+Condensed:300,700" rel="stylesheet" />
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/skel.min.js"></script>
+        <script src="/js/skel-panels.min.js"></script>
+        <script src="/js/init.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="/css/skel-noscript.css" />
+            <link rel="stylesheet" href="/css/style.css" />
+            <link rel="stylesheet" href="/css/style-desktop.css" />
+            <link rel="stylesheet" href="/css/style-wide.css" />
+        </noscript>
+        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+        <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+        <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
+
+        <link rel="stylesheet" href="/css/pjf.css" />
+
+    </head>
+    <!--
+        Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
+        Set it to "right-sidebar" to, you guessed it, position it on the right.
+    -->
+    <body class="left-sidebar">
+        <div id="wrapper">
+            <div id="content">
+                <div id="content-inner">
+                    
+    
+
+
+<article class="is-post">
+    <header>
+    <!--
+            Note: Titles and bylines will wrap automatically when necessary, so don't worry
+            if they get too long. You can also remove the "byline" span entirely if you don't
+            need a byline.
+    -->
+    <h2><a href="#">The most frustrating work</a></h2>
+    <!-- <span class="byline">A free, fully responsive HTML5 site template by AJ for HTML5 UP</span> -->
+</header>
+
+    <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">Jul</span>
+        <span class="day"> 6</span>
+        <span class="year"><span>,</span> 2005</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+    <!-- <a href="#" class="image image-full"><img src="/images/n33-robot-invader.jpg" alt="" /></a> -->
+
+    <p><b>The most frustrating work</b><br/>
+Running a small business exposes one to a wide range of hurdles.  Work can range from the very good (presenting at conferences/user groups) to the downright awful (being recalled from holidays to fix critically dead machines at 2am).  The main compenstation is that the bad work tends to pay extremely well.
+<p>
+Throw into that a whole lot of conflict resolution, government regulation, taxation requirements, travel, and plenty of human interaction, and you have a pretty good range of learning experiences.  Some people hate their jobs, but I love mine.  I just hate certain particular aspects of it.
+<p>
+Recently, one of our office desktops started developing bad sectors on the hard-drive.  This isn't a big deal, all the important data is stored on a central server with RAID and tape backups.  We also have a drawer full of hard-drives (somehow we keep winning these, or getting them back under warrantee), so replacing the failing drive should be easy, right?
+<p>
+Well, for Linux it is.  Fire up <a href="http://www.knoppix.org/">Knoppix</a>, and use <a href="http://www.gnu.org/software/parted/">parted</a> to copy the old partitions across.  A little bit of magic with your choice of bootloader, and you have a transferred Linux system onto a fresh, new, bigger hard-drive.
+<p>
+If you've got bad sectors involved, then parted may not be able to do the deeds, as it tries a block-for-block copy.  However for an ext2/ext3 filesystem, you can simply partition, make a new filesystem (mke2fs), and use one of the hundreds of different ways of copying an ext2 filesystem, in my case <tt>cd /path/to/new/filesystem; dump -0 /dev/hdXX | restore -r</tt>.  Easy
+<p>
+Now comes the most frustrating part of all.  This machine also occasionally runs Windows 2000.  We don't actually use Windows for anything except for games, but I'm very fond of my games, and unfortunately there are still a couple that only run under Windows.  Unfortunately, transferring Windows across was not quite as easy.
+<p>
+Parted would happily copy and extend the partition, great!  However upon trying to boot Windows, I get a whole lot of nothing.  After going round-and-round with recovery consoles and boot records, it still won't boot.  Hmmm...
+<p>
+I decide to see if I can get a fresh install of Windows to boot.  If that fails, I know my other attempts are hopeless.  If it succeeds, then I know as a worst-case I can simply re-install Windows and the games.
+<p>
+The fresh install, onto a freshly partitioned hard-drive, fails.  It chugs along quite happily until it needs its first reboot, and then then issues the dreaded words <tt>"Error Loading Operating System"</tt>.
+<p>
+A quick search reveals a <a href="http://support.microsoft.com/?kbid=326676&sd=RMVP">fix from Microsoft</a> for the problem.  Upgrade your machine's BIOS &mdash;  not <i>quite</i> what I had in mind.  Given that Google reveals about <a href="http://www.google.com/search?q=%22Error+Loading+Operating+System%22">11,000</a> other pages which contain this exact phrase, and given most seem to recommend fiddling the disk geometery from CHS to LBA, I'm not going to try and flash a working BIOS just yet.
+<p>
+It looks like the problem is fundamentally with windows installing onto large partitions on big drives.  This isn't unique to windows, due to some real legacy reasons most machines have troubles booting something that isn't close to the start of the disk.  It's also been solved in a variety of ways, including itty-bitty boot partitions for Linux, and intermediate stages for <a href="http://www.gnu.org/software/grub/">grub</a>.  Those systems also give much more precise errors when something goes wrong.
+<p>
+So, for this machine I know the master boot record is fine, and because the Windows partition is right at the start of the disk, I know that its boot-sector can be reached, but things go wrong from there.  Perhaps I can start with an installation onto a small partition, and then try growing things from there.  Clearly I have an exciting time in repartitioning and re-installing ahead of me.
+<p>
+The ironic thing is isn't my workstation, and Windows is completely unrequired for our business.  Fundamentally its costing only $0.50/day in opportunity costs in not being able to play a MMROPG, yet it's the most frustrating issue that I've encountered in the last month.  Damn my strong beliefs that if you have a computer you should be using it to provide the maximum entertainment value.
+<p>
+On reflection, if I consider <i>this</i> to be my most troublesome problem, then I really don't have that much to complain about, do I?
+
+
+    
+
+</article>
+
+
+                    
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+<div id="sidebar">
+    <!-- Logo -->
+    <div id="logo"><h1><a href="/">pjf</a></h1></div>
+
+    <section class="find_me">
+        <a href="http://twitter.com/pjf"><i class="fa fa-twitter-square  fa-3x"  ></i></a>
+        <a href="http://facebook.com/paul.fenwick"><i class="fa fa-facebook-square fa-3x"  ></i></a>
+        <a href="http://github.com/pjf"><i class="fa fa-github-square   fa-3x"  ></i></a>
+    </section>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul>
+            <li class="current_page_item"><a href="/">Latest Post</a></li>
+            <li><a href="/DF">Dwarf Fortress</a></li>
+            <li><a href="/advogato">Older Posts</a></li>
+            <li><a href="#">Archives</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search -->
+    <!-- <section class="is-search">
+        <form method="post" action="#">
+            <input type="text" class="text" name="search" placeholder="Search" />
+        </form>
+    </section> -->
+
+    <!-- Text -->
+    <!-- <section class="is-text-style1">
+        <div class="inner">
+            <p>
+                <strong>PJF:</strong> Some guy from the internet.
+            </p>
+        </div>
+    </section> -->
+
+    <!-- Recent Posts -->
+    <section class="is-recent-posts">
+        <header>
+            <h2>Recent Posts</h2>
+        </header>
+
+        <ul>
+        
+            <li><a href="/df/unholinesssparked/2014/01/11/jaxys-greatest-wish.html">Jaxy's Greatest Wish</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/11/a-quiet-trade.html">A Quiet Trade</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/11/a-place-to-settle.html">A Place To Settle</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/07/the-fickleness-of-warlocks.html">The Fickleness Of Warlocks</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/07/a-family-reunion.html">A Family Reunion</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/06/a-matter-of-trade.html">A Matter Of Trade</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/05/a-home-in-the-wilderness.html">A Home In The Wilderness</a>
+        
+            <li><a href="/longpost/2013/12/28/on-open-source-software-and-communities.html">On Open Source Software And Communities</a>
+        
+            <li><a href="/privacygeek/2013/02/10/reimplementing-the-idonethis-memory-service.html">Reimplementing the iDoneThis Memory Service</a>
+        
+            <li><a href="/privacygeek/2012/06/17/banking-vigilance-fail-unlocking-a-card-with-only-a-surname.html">Banking Vigilance Fail - Unlocking A Card With Only A Surname</a>
+        
+        </ul>
+    </section>
+
+    <!-- Recent Comments -->
+    <!-- <section class="is-recent-comments">
+        <header>
+            <h2>Recent Comments</h2>
+        </header>
+        <ul>
+            <li>case on <a href="#">Now Full Cyborg</a></li>
+            <li>molly on <a href="#">Untitled Post</a></li>
+            <li>case on <a href="#">Temporal Flux</a></li>
+        </ul>
+    </section> -->
+
+    <!-- Calendar -->
+
+    <!-- <section class="is-calendar">
+        <div class="inner">
+            <table>
+                <caption>February 2013</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" title="Monday">M</th>
+                        <th scope="col" title="Tuesday">T</th>
+                        <th scope="col" title="Wednesday">W</th>
+                        <th scope="col" title="Thursday">T</th>
+                        <th scope="col" title="Friday">F</th>
+                        <th scope="col" title="Saturday">S</th>
+                        <th scope="col" title="Sunday">S</th>
+                    </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td colspan="4" class="pad"><span>&nbsp;</span></td>
+                        <td><span>1</span></td>
+                        <td><span>2</span></td>
+                        <td><span>3</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>4</span></td>
+                        <td><span>5</span></td>
+                        <td><a href="#">6</a></td>
+                        <td><span>7</span></td>
+                        <td><span>8</span></td>
+                        <td><span>9</span></td>
+                        <td><a href="#">10</a></td>
+                    </tr>
+                    <tr>
+                        <td><span>11</span></td>
+                        <td><span>12</span></td>
+                        <td><span>13</span></td>
+                        <td class="today"><a href="#">14</a></td>
+                        <td><span>15</span></td>
+                        <td><span>16</span></td>
+                        <td><span>17</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>18</span></td>
+                        <td><span>19</span></td>
+                        <td><span>20</span></td>
+                        <td><span>21</span></td>
+                        <td><span>22</span></td>
+                        <td><a href="#">23</a></td>
+                        <td><span>24</span></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">25</a></td>
+                        <td><span>26</span></td>
+                        <td><span>27</span></td>
+                        <td><span>28</span></td>
+                        <td class="pad" colspan="3"><span>&nbsp;</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section> -->
+
+    <!-- Copyright -->
+    <div id="copyright">
+        <p>
+            &copy; 2014 Paul Fenwick<br />
+            Design: <a href="http://html5up.net/">HTML5 UP</a>
+        </p>
+    </div>
+</div>
+
+
+        </div>
+    </body>
+</html>
+
