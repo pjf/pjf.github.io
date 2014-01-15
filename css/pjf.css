@@ -1,3 +1,23 @@
+/* Make code look nicer */
+pre, code {
+    font-family: "Lucidia Console", monospace;
+    color: #333;
+}
+
+pre {
+    border-radius: 0.4em;
+    background-color: rgba(230,230,230,0.75);
+    box-shadow: 0.1em 0.1em 0.05em 0.05em #888;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    max-width: 80em;
+    display: inline-block;
+}
+
 /* Stop images from being too big */
 
 img {

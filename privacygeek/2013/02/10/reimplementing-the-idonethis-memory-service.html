@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!--
+    Based upon Striped 2.5 by HTML5 Up!
+    html5up.net | @n33co
+    Updated for Jekyll by Paul Fenwick | @pjf
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+    <head>
+        <title>Reimplementing the iDoneThis Memory Service</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Open+Sans+Condensed:300,700" rel="stylesheet" />
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/skel.min.js"></script>
+        <script src="/js/skel-panels.min.js"></script>
+        <script src="/js/init.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="/css/skel-noscript.css" />
+            <link rel="stylesheet" href="/css/style.css" />
+            <link rel="stylesheet" href="/css/style-desktop.css" />
+            <link rel="stylesheet" href="/css/style-wide.css" />
+        </noscript>
+        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+        <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+        <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
+
+        <link rel="stylesheet" href="/css/pjf.css" />
+
+    </head>
+    <!--
+        Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
+        Set it to "right-sidebar" to, you guessed it, position it on the right.
+    -->
+    <body class="left-sidebar">
+        <div id="wrapper">
+            <div id="content">
+                <div id="content-inner">
+                    
+    
+
+
+<article class="is-post">
+    <header>
+    <!--
+            Note: Titles and bylines will wrap automatically when necessary, so don't worry
+            if they get too long. You can also remove the "byline" span entirely if you don't
+            need a byline.
+    -->
+    <h2><a href="#">Reimplementing the iDoneThis Memory Service</a></h2>
+    <!-- <span class="byline">A free, fully responsive HTML5 site template by AJ for HTML5 UP</span> -->
+</header>
+
+    <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">Feb</span>
+        <span class="day">10</span>
+        <span class="year"><span>,</span> 2013</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+    <!-- <a href="#" class="image image-full"><img src="/images/n33-robot-invader.jpg" alt="" /></a> -->
+
+    <p>There&#8217;s an excellent website called <a href='http://idonethis.com/'>iDoneThis.com</a> which implements the most simple yet brilliant of services. Every day, you record the list of things you&#8217;ve done, and it gives you a check-mark for that day. This was motivating in two ways: firstly, the desire to keep that chain of check-marks running (what&#8217;s known as a &#8216;chain calendar&#8217; or a &#8216;Seinfeld calendar&#8217;), and secondly by emailing you your memories of what you were doing a year (or a week, or a month) ago.</p>
+
+<p>For me, knowing what I was doing a year ago was <em>really</em> good. I loved waking up each morning to be reminding of something I might otherwise not think of again. The good memories I was emailed would make me feel good again, and bad memories? Well, they&#8217;d often make me feel good that I wasn&#8217;t going through <em>that</em> anymore, or they&#8217;d be <em>insightful</em> if I was encountering similar issues now.</p>
+
+<p>I <em>loved</em> the memory service, and so did my friends, even if they didn&#8217;t use it. I&#8217;d often send them messages about what awesome adventures we were up to a year ago, and that would often make their day.</p>
+
+<p>Unfortunately, a few months ago, iDoneThis discontinued their memory-posting service. I don&#8217;t know why; I can only assume they&#8217;re focusing on the more corporate part of their service, and the network costs of all the personal emails wasn&#8217;t worth it.</p>
+
+<p>Today, as part of a <a href='http://lesswrong.com/lw/3w3/how_to_beat_procrastination/'>productivity spiral</a>, I reimplemented the old memories service. The code isn&#8217;t pretty—unfortunately iDoneThis doesn&#8217;t (yet) provide an API—but I have a bot that can log-in and fetch a day&#8217;s worth of data. Best of all, that code is open source, and <a href='href=&quot;https://metacpan.org/module/WebService::Idonethis'>available from the CPAN</a>, so you can download and use it yourself.</p>
+<!--more-->
+<p>Even if you&#8217;re not a Perl person, then it&#8217;s pretty easy to install. Simply follow my <a href='http://privacygeek.blogspot.com.au/2013/03/the-worlds-easiest-guide-to-installing.html'>world&#8217;s simplest guide to installing cpanm</a>.</p>
+
+<p>Now just install the <a href='https://metacpan.org/module/WebService::Idonethis&quot;&gt;WebService::Idonethis'>WebService::Idonethis</a> module:</p>
+
+<pre><code>cpanm WebService::Idonethis</code></pre>
+
+<p>To use it, you&#8217;ll first need to create an <code>~/.idonethisrc</code> file with your auth details:</p>
+
+<pre><code>[auth]
+user=someuser
+pass=somepass</code></pre>
+
+<p>If all has gone well, you can now use the <code>idonethis-memories</code> command!</p>
+
+<pre><code>$ idonethis-memories
+
+Here&#39;s what you were doing on 2012-02-11:
+
+* Built a robotic dinosaur with lasers with Claudine.
+* Played stepmania with Deanna (Spice Girls rock!)
+* Invoiced ALL the clients.
+* Drank six billion cups of coffee.</code></pre>
+
+<p>It&#8217;s perfect for putting into a cron job.</p>
+
+<p><em>Edit:</em> As of v0.03, you can now submit done items directly from the command line using the <code>idone</code> tool:</p>
+
+<pre><code>$ idone &quot;Read a great blog by Paul Fenwick&quot;</code></pre>
+
+<p><em>Edit:</em> As of v0.04, you can also get a list of what you&#8217;ve done today:</p>
+
+<pre><code>$ idone -l
+
+* Flossed my teeth
+* Looked at pictures of cats on the Internet
+* Defended against a goblin siege in Dwarf Fortress</code></pre>
+
+<p>If you&#8217;re handy with Perl, or just want to look at the code, there&#8217;s a <a href='https://github.com/pjf/idonethis-perl'>github repository</a>. Patches are extremely welcome!</p>
+
+<p>Edit: As of v0.08, the <code>idone -lc</code> command is the best thing ever. It will list the things you&#8217;ve done today, and allow you to add new things by entering them on stdin. It also has less than one third of the previous dependencies.</p>
+
+    
+
+</article>
+
+
+                    
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+<div id="sidebar">
+    <!-- Logo -->
+    <div id="logo"><h1><a href="/">pjf</a></h1></div>
+
+    <section class="find_me">
+        <a href="http://twitter.com/pjf"><i class="fa fa-twitter-square  fa-3x"  ></i></a>
+        <a href="http://facebook.com/paul.fenwick"><i class="fa fa-facebook-square fa-3x"  ></i></a>
+        <a href="http://github.com/pjf"><i class="fa fa-github-square   fa-3x"  ></i></a>
+    </section>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul>
+            <li class="current_page_item"><a href="/">Latest Post</a></li>
+            <li><a href="/DF">Dwarf Fortress</a></li>
+            <li><a href="/advogato">Older Posts</a></li>
+            <li><a href="#">Archives</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search -->
+    <!-- <section class="is-search">
+        <form method="post" action="#">
+            <input type="text" class="text" name="search" placeholder="Search" />
+        </form>
+    </section> -->
+
+    <!-- Text -->
+    <!-- <section class="is-text-style1">
+        <div class="inner">
+            <p>
+                <strong>PJF:</strong> Some guy from the internet.
+            </p>
+        </div>
+    </section> -->
+
+    <!-- Recent Posts -->
+    <section class="is-recent-posts">
+        <header>
+            <h2>Recent Posts</h2>
+        </header>
+
+        <ul>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/12/jaxys-greatest-wish.html">Jaxy's Greatest Wish</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/11/a-quiet-trade.html">A Quiet Trade</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/11/a-place-to-settle.html">A Place To Settle</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/08/the-fickleness-of-warlocks.html">The Fickleness Of Warlocks</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/07/a-family-reunion.html">A Family Reunion</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/07/a-matter-of-trade.html">A Matter Of Trade</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/06/a-home-in-the-wilderness.html">A Home In The Wilderness</a>
+        
+            <li><a href="/privacygeek/2013/02/10/reimplementing-the-idonethis-memory-service.html">Reimplementing the iDoneThis Memory Service</a>
+        
+            <li><a href="/privacygeek/2012/06/18/banking-vigilance-fail-unlocking-a-card-with-only-a-surname.html">Banking Vigilance Fail - Unlocking A Card With Only A Surname</a>
+        
+            <li><a href="/privacygeek/2011/09/24/facebook-friends-lists-are-now-less-private.html">Facebook Friends Lists Are Now Less Private</a>
+        
+        </ul>
+    </section>
+
+    <!-- Recent Comments -->
+    <!-- <section class="is-recent-comments">
+        <header>
+            <h2>Recent Comments</h2>
+        </header>
+        <ul>
+            <li>case on <a href="#">Now Full Cyborg</a></li>
+            <li>molly on <a href="#">Untitled Post</a></li>
+            <li>case on <a href="#">Temporal Flux</a></li>
+        </ul>
+    </section> -->
+
+    <!-- Calendar -->
+
+    <!-- <section class="is-calendar">
+        <div class="inner">
+            <table>
+                <caption>February 2013</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" title="Monday">M</th>
+                        <th scope="col" title="Tuesday">T</th>
+                        <th scope="col" title="Wednesday">W</th>
+                        <th scope="col" title="Thursday">T</th>
+                        <th scope="col" title="Friday">F</th>
+                        <th scope="col" title="Saturday">S</th>
+                        <th scope="col" title="Sunday">S</th>
+                    </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td colspan="4" class="pad"><span>&nbsp;</span></td>
+                        <td><span>1</span></td>
+                        <td><span>2</span></td>
+                        <td><span>3</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>4</span></td>
+                        <td><span>5</span></td>
+                        <td><a href="#">6</a></td>
+                        <td><span>7</span></td>
+                        <td><span>8</span></td>
+                        <td><span>9</span></td>
+                        <td><a href="#">10</a></td>
+                    </tr>
+                    <tr>
+                        <td><span>11</span></td>
+                        <td><span>12</span></td>
+                        <td><span>13</span></td>
+                        <td class="today"><a href="#">14</a></td>
+                        <td><span>15</span></td>
+                        <td><span>16</span></td>
+                        <td><span>17</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>18</span></td>
+                        <td><span>19</span></td>
+                        <td><span>20</span></td>
+                        <td><span>21</span></td>
+                        <td><span>22</span></td>
+                        <td><a href="#">23</a></td>
+                        <td><span>24</span></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">25</a></td>
+                        <td><span>26</span></td>
+                        <td><span>27</span></td>
+                        <td><span>28</span></td>
+                        <td class="pad" colspan="3"><span>&nbsp;</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section> -->
+
+    <!-- Copyright -->
+    <div id="copyright">
+        <p>
+            &copy; 2014 Paul Fenwick<br />
+            Design: <a href="http://html5up.net/">HTML5 UP</a>
+        </p>
+    </div>
+</div>
+
+
+        </div>
+    </body>
+</html>
+
