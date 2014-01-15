@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<!--
+    Based upon Striped 2.5 by HTML5 Up!
+    html5up.net | @n33co
+    Updated for Jekyll by Paul Fenwick | @pjf
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+    <head>
+        <title>autodie status update</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Open+Sans+Condensed:300,700" rel="stylesheet" />
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/skel.min.js"></script>
+        <script src="/js/skel-panels.min.js"></script>
+        <script src="/js/init.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="/css/skel-noscript.css" />
+            <link rel="stylesheet" href="/css/style.css" />
+            <link rel="stylesheet" href="/css/style-desktop.css" />
+            <link rel="stylesheet" href="/css/style-wide.css" />
+        </noscript>
+        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+        <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+        <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
+
+        <link rel="stylesheet" href="/css/pjf.css" />
+
+    </head>
+    <!--
+        Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
+        Set it to "right-sidebar" to, you guessed it, position it on the right.
+    -->
+    <body class="left-sidebar">
+        <div id="wrapper">
+            <div id="content">
+                <div id="content-inner">
+                    
+    
+
+
+<article class="is-post">
+    <header>
+    <!--
+            Note: Titles and bylines will wrap automatically when necessary, so don't worry
+            if they get too long. You can also remove the "byline" span entirely if you don't
+            need a byline.
+    -->
+    <h2><a href="#">autodie status update</a></h2>
+    <!-- <span class="byline">A free, fully responsive HTML5 site template by AJ for HTML5 UP</span> -->
+</header>
+
+    <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">May</span>
+        <span class="day"> 1</span>
+        <span class="year"><span>,</span> 2009</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+    <!-- <a href="#" class="image image-full"><img src="/images/n33-robot-invader.jpg" alt="" /></a> -->
+
+    <p><b>autodie status update</b><br>
+I just looked through my blog history, and discovered the last release of <a href="http://search.cpan.org/perldoc?autodie">autodie</a>, I've blogged about was version 1.99!  Since then, there's been nine releases!  For those of you new to my blog, autodie is a lexical pragma that allows Perl's built-ins to throw exceptions on failure, which can take your error-handling from cumbersome to simple.
+<p>
+There's been a lot of changes in those nine releases, and the <a href="http://github.com/pfenwick/autodie/tree/master/Changes">Changes</a> file documents all the significant ones.  There are nicer error messages, better coverage of Perl's core functions, fewer rough edges, and lots more tests.  If you're not one to go reading Changes files, I can assure you that upgrading to 1.999 is pleasant and surprise-free.
+<p>
+I've had a few people tease me about the silly version number, 1.999 threatens to have 1.9991 as a next release, but this will not happen.  The next version of autodie will be 2.000, and this actually represents a significant change.  There's no backwardly incompatible changes, but there is a new feature which greatly extends autodie's ability to detect failures in non-core subroutines.
+<p>
+Presently, one can write:
+
+<pre>
+    use File::Copy qw(copy);
+    use autodie qw(copy);
+
+    copy($src, $dst);
+</pre>
+<p>
+If anything goes wrong, autodie spots it, throws an exception, and tells you file, line-number, source and destination files, and the error that occurred.  Brilliant.  However, one day, someone tried this:
+
+<pre>
+    my @array = copy($src,$dst);
+</pre>
+<p>
+Given that <tt>copy</tt> is going to succeed or die, I don't know why one would want to examine its return value as a list, but they did.  The surprise here is that it <i>didn't</i> die on failure.  It just silently ignored them.
+<p>
+The problem is in how autodie 1.9x currently determines failure from a user subroutine.  In a scalar context, it considers a false value to be a failure, and in a list context it considers failure to be an empty list, or a list consisting of a single undefined value.  The problem was that <tt>copy</tt> would return a list consisting of a single zero when called in list context[1], and that looked like a perfectly normal (success) value to autodie.
+<p>
+This is actually symptomatic of a deeper problem, which is that except when an exception is thrown, there are too many ways people try to signal failure in Perl.  Why, just last week I saw code that did this:
+
+<pre>
+    return( undef, "1.21 jigawatts needed for operation" );
+</pre>
+<p>
+Yes, errors were signalled by returning a two-element list, the first of which was always undef, and the second of which was the error message.  The function could <i>also</i> return a list of values which you were interested in, and there may only be two of those, but the first <i>wouldn't</i> be undef.  To make things more fun, I've seen almost exactly the same signalling mechanism at a <i>different</i> client a few years back.
+<p>
+The only thing I haven't seen is anyone try to <i>handle</i> these failures, because they're such a pain in the arse to detect, nobody ever to tries.  That means that then when things go wrong, they go <i>badly</i> wrong.
+<p>
+So, autodie 2.00 will have a "hinting interface", whereby you can say that <i>these</i> subroutines signal failure by doing <i>this</i>.  The idea of hints are very simple: autodie smart-matches the return value against them, and if the result is true, a failure is considered to have occurred.  Since it's possible to smart-match against subroutines, you can check for anything you want.  The hint for the failure signalling shown above would look something like this:
+
+<pre>
+    sub { @_ == 2 and not defined $_[0] }
+</pre>
+<p>
+I owe <a href="http://damian.conway.org/">Damian Conway</a> a particular thank-you for spending a great deal of his time discussing hinting interfaces with me, and convincing me that there are just so many different ways people try to signal errors, that autodie really has to be ready for anything.
+<p>
+The other change is that when we build our exception (which doesn't need to be of the default <a href="http://search.cpan.org/perldoc?autodie::exception">autodie::exception</a> class), it will also be passed the return value from the failing subroutine, which is useful not only for creating good-looking error messages, but which may also prove useful in logging and testing.
+<p>
+The actual hinting interface is described in more detail in <a href="http://www.xray.mpe.mpg.de/mailing-lists/perl5-porters/2009-04/msg00482.html">my post to p5p</a> and the accompanying thread.  In brief, most end-users will <i>never</i> need to see nor worry about the hints, they'll Just Work.
+<p>
+All these changes will work on 5.8.x as well as 5.10.x, although there'll be a few minor limitations in 5.8.x, since I can't use a native smart-match under the hood.
+<p>
+The only thing I have to do now is finish writing the code, although there's a basic (but not yet final) working implementation on the <a href="http://github.com/pfenwick/autodie/tree/hints">hints branch</a> of my git repo.  The changes aren't actually that hard, I've just had lots of people throwing money at me recently to work on other projects.  Luckily, I've got four flights in the next two weeks, and for me travel time is usually coding time.
+<p>
+[1]<i>Actually, on Windows, File::Copy sometimes returns an empty string to signal failure, which makes things not only wrong, but inconsistently wrong!  I've written <a href="http://www.xray.mpe.mpg.de/mailing-lists/perl5-porters/2009-04/msg00471.html">a patch for this</a>, but as I suspect I'm the only person this century to have noticed or cared, it hasn't been applied.</i>
+
+
+    
+
+</article>
+
+
+                    
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+<div id="sidebar">
+    <!-- Logo -->
+    <div id="logo"><h1><a href="/">pjf</a></h1></div>
+
+    <section class="find_me">
+        <a href="http://twitter.com/pjf"><i class="fa fa-twitter-square  fa-3x"  ></i></a>
+        <a href="http://facebook.com/paul.fenwick"><i class="fa fa-facebook-square fa-3x"  ></i></a>
+        <a href="http://github.com/pjf"><i class="fa fa-github-square   fa-3x"  ></i></a>
+    </section>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul>
+            <li class="current_page_item"><a href="#">Latest Post</a></li>
+            <li><a href="/DF">Dwarf Fortress</a></li>
+            <li><a href="/advogato">Older Posts</a></li>
+            <li><a href="#">Archives</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search -->
+    <!-- <section class="is-search">
+        <form method="post" action="#">
+            <input type="text" class="text" name="search" placeholder="Search" />
+        </form>
+    </section> -->
+
+    <!-- Text -->
+    <!-- <section class="is-text-style1">
+        <div class="inner">
+            <p>
+                <strong>PJF:</strong> Some guy from the internet.
+            </p>
+        </div>
+    </section> -->
+
+    <!-- Recent Posts -->
+    <section class="is-recent-posts">
+        <header>
+            <h2>Recent Posts</h2>
+        </header>
+
+        <ul>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/12/jaxys-greatest-wish.html">Jaxy's Greatest Wish</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/11/a-quiet-trade.html">A Quiet Trade</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/11/a-place-to-settle.html">A Place To Settle</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/08/the-fickleness-of-warlocks.html">The Fickleness Of Warlocks</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/07/a-family-reunion.html">A Family Reunion</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/07/a-matter-of-trade.html">A Matter Of Trade</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/06/a-home-in-the-wilderness.html">A Home In The Wilderness</a>
+        
+            <li><a href="/advogato/2010/12/15/on-money--and-missing-the-point.html">On money, and missing the point</a>
+        
+            <li><a href="/advogato/2010/04/23/facebook-privacy---instant-personalisation-and-connections.html">Facebook privacy - Instant personalisation and connections</a>
+        
+            <li><a href="/advogato/2010/03/26/ada-lovelace-day--part-2-.html">Ada Lovelace Day (Part 2)</a>
+        
+        </ul>
+    </section>
+
+    <!-- Recent Comments -->
+    <!-- <section class="is-recent-comments">
+        <header>
+            <h2>Recent Comments</h2>
+        </header>
+        <ul>
+            <li>case on <a href="#">Now Full Cyborg</a></li>
+            <li>molly on <a href="#">Untitled Post</a></li>
+            <li>case on <a href="#">Temporal Flux</a></li>
+        </ul>
+    </section> -->
+
+    <!-- Calendar -->
+
+    <!-- <section class="is-calendar">
+        <div class="inner">
+            <table>
+                <caption>February 2013</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" title="Monday">M</th>
+                        <th scope="col" title="Tuesday">T</th>
+                        <th scope="col" title="Wednesday">W</th>
+                        <th scope="col" title="Thursday">T</th>
+                        <th scope="col" title="Friday">F</th>
+                        <th scope="col" title="Saturday">S</th>
+                        <th scope="col" title="Sunday">S</th>
+                    </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td colspan="4" class="pad"><span>&nbsp;</span></td>
+                        <td><span>1</span></td>
+                        <td><span>2</span></td>
+                        <td><span>3</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>4</span></td>
+                        <td><span>5</span></td>
+                        <td><a href="#">6</a></td>
+                        <td><span>7</span></td>
+                        <td><span>8</span></td>
+                        <td><span>9</span></td>
+                        <td><a href="#">10</a></td>
+                    </tr>
+                    <tr>
+                        <td><span>11</span></td>
+                        <td><span>12</span></td>
+                        <td><span>13</span></td>
+                        <td class="today"><a href="#">14</a></td>
+                        <td><span>15</span></td>
+                        <td><span>16</span></td>
+                        <td><span>17</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>18</span></td>
+                        <td><span>19</span></td>
+                        <td><span>20</span></td>
+                        <td><span>21</span></td>
+                        <td><span>22</span></td>
+                        <td><a href="#">23</a></td>
+                        <td><span>24</span></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">25</a></td>
+                        <td><span>26</span></td>
+                        <td><span>27</span></td>
+                        <td><span>28</span></td>
+                        <td class="pad" colspan="3"><span>&nbsp;</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section> -->
+
+    <!-- Copyright -->
+    <div id="copyright">
+        <p>
+            &copy; 2014 Paul Fenwick<br />
+            Design: <a href="http://html5up.net/">HTML5 UP</a>
+        </p>
+    </div>
+</div>
+
+
+        </div>
+    </body>
+</html>
+

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--
+    Based upon Striped 2.5 by HTML5 Up!
+    html5up.net | @n33co
+    Updated for Jekyll by Paul Fenwick | @pjf
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+    <head>
+        <title>Dark Stalking on Facebook</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Open+Sans+Condensed:300,700" rel="stylesheet" />
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/skel.min.js"></script>
+        <script src="/js/skel-panels.min.js"></script>
+        <script src="/js/init.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="/css/skel-noscript.css" />
+            <link rel="stylesheet" href="/css/style.css" />
+            <link rel="stylesheet" href="/css/style-desktop.css" />
+            <link rel="stylesheet" href="/css/style-wide.css" />
+        </noscript>
+        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+        <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+        <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
+
+        <link rel="stylesheet" href="/css/pjf.css" />
+
+    </head>
+    <!--
+        Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
+        Set it to "right-sidebar" to, you guessed it, position it on the right.
+    -->
+    <body class="left-sidebar">
+        <div id="wrapper">
+            <div id="content">
+                <div id="content-inner">
+                    
+    
+
+
+<article class="is-post">
+    <header>
+    <!--
+            Note: Titles and bylines will wrap automatically when necessary, so don't worry
+            if they get too long. You can also remove the "byline" span entirely if you don't
+            need a byline.
+    -->
+    <h2><a href="#">Dark Stalking on Facebook</a></h2>
+    <!-- <span class="byline">A free, fully responsive HTML5 site template by AJ for HTML5 UP</span> -->
+</header>
+
+    <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">Sep</span>
+        <span class="day">10</span>
+        <span class="year"><span>,</span> 2009</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+    <!-- <a href="#" class="image image-full"><img src="/images/n33-robot-invader.jpg" alt="" /></a> -->
+
+    <p><b>Dark Stalking on Facebook</b><br>
+For a while I've been using Facebook's API and <a href="http://wiki.developers.facebook.com/index.php/FQL">Facebook Query Language</a> (FQL) via Perl's <a href="http://search.cpan.org/perldoc?WWW::Facebook::API">WWW::Facebook::API</a> module to run fairly innocent queries on my friends.  If I visit a town, I'd like a reminder of who lives there.  If I want to go rock-climbing, it helps if I can easily search to see which of my friends share that hobby.  This is good, innocent stuff, and makes me glad to be a developer.
+<p>
+Last week I decided to play with event searches.  If a large number of my friends are attending an event, there's a good chance I'll find it interesting, and I'd like to know about it.  FQL makes this sort of thing really easy; in fact, finding all your friends' events is on their <a href="http://wiki.developers.facebook.com/index.php/Sample_FQL_Queries">Sample FQL Queries</a> page.
+<p>
+Using the example provided by Facebook, I dropped the query into my sandbox, and looked at the results which came back.  The results were disturbing.  I didn't just get back future events my friends were attending.  I got <i>everything</i> they had been invited to: past and present, attending or not.
+<p>
+I didn't sleep well that night.  I didn't expect Facebook to share past event info.  I didn't expect it to share info when people had <i>declined</i> those events.  I haven't found any way of retrieving friends' past events using Facebook's website, but using FQL made it easy.  Somehow, implicitly, I thought old events would fade away, only viewable to those who already knew about them.  I didn't expect them to stick around for my code to harvest, potentially years into the future.
+<p>
+Finding my friends' old events crossed a moral boundary I honestly didn't expect to encounter.  Without intending, I really felt like I was snooping.  It didn't matter that these friends had agreed to share this information under the Facebook <a href="http://www.facebook.com/terms.php">terms and conditions</a>.  <i>I</i> would personally feel uncomfortable with this much information being so readily available, and assume my friends would feel the same.
+<p>
+However my accidental crossing of moral boundaries wasn't the only thing that kept me awake last night.  I was also kept awake by wondering just <i>how much</i> information could I tease out of the Facebook API.  What could I discover?  What if I were evil?
+<p>
+However I'm <i>not</i> evil, so I put my code on hold for a while and made a call for volunteers.  I'd be restricting myself to just using the Facebook API, and without them installing any additional applications.  I wouldn't share their data in any way, but I'd be able to inspect and use it, and would try to provide them with a copy when I was done.  To be honest, I was surprised by the response; I now have almost two dozen people who have agreed to participate, covering a wide range of lifestyles and privacy settings.
+<p>
+The results have been very interesting.  I expected to be able to obtain personal information, including things like events, photographs, and friends; it doesn't take much imagination with the <a href="http://wiki.developers.facebook.com/index.php/Category:FQL_Tables">FQL tables</a> to find those.  What was most interesting are some of the more creative queries I was able to run.
+<p>
+Most recently, I've been able to obtain status feeds, even for users who have <i>very</i> tight privacy settings, although I had to tweak my own application's privileges to do so.  I don't know how far into the past these go, but they also come with <i>likes</i> information, and <i>comments</i>.  This gives me a wealth of information on the strength and types of relationships people have.  A person who comments a lot on another user's posts probably finds that user interesting.  If I descended into keyword and text analysis, I may even be able to determine <i>how</i> they find that user interesting.
+<p>
+But by far the most interesting part of all of this have been <i>dark users</i>.  Like <a href="http://en.wikipedia.org/wiki/Dark_matter">dark matter</a>, these users are not directly observable, usually because they've completely disabled API access.  In fact, some of these users are <i>completely</i> dark unless you're a friend.  They don't show up in search results.  They don't show up on friends' lists.  You can't send them messages.  If you try to navigate to their user page (assuming you know it exists), you get redirected back to your homepage.  These users have their privacy settings turned up real high, and are <i>supposed</i> to be hard to find.
+<p>
+However like dark matter, dark users <i>are</i> observable due to their effects on the rest of the universe.  If a dark user comments on a stream entry, I can see that comment.  More importantly, I can <i>see their user-ID</i>, and I can generate a URL to a page that will contain their name.  I can then watch for their activities elsewhere.  Granted, I can't <i>directly</i> search for their activity, but I can observe their effects on my friends.  For want of a better term, I've been calling this "dark stalking".
+<p>
+What makes this all rather chilling is that I'm doing all of this via the application API.  If your <i>friend</i> has installed an application, then it can access quite a lot of information about you, <a href="http://www.facebook.com/privacy/?view=platform&tab=other">unless you turn it off</a>.  If your <i>friend</i> has granted the application the <tt>read_stream</tt> privilege, then it can read <i>your</i> status stream.  Even if a <i>friend of a friend</i> has done this, and you comment on your friend's status entries, it's possible to infer your existence and retrieve those discussions through dark stalking.
+<p>
+While I've always considered people's own carelessness to be the biggest threats to their own privacy, in the social 2.0 world it seems we need to be increasingly worried about our friends, too!
+<p>
+I'm preparing a detailed paper with the results of my research (which is still ongoing), but I will be presenting my preliminary findings at <a href="http://barcampmelbourne.org/">BarCampMelbourne</a>, this weekend (11-12th September 2009), with a further update at the <a href="http://www.tucs.org.au/">University of Tasmania Computing Society (TUCS)</a> on the 2nd October.  A conference talk will invariably follow.
+<p>
+If you want to keep track of my research, then you can <a href="http://www.facebook.com/group.php?gid=145076327240">join the facebook group</a>, or the <a href="http://groups.google.com/group/facebook-privacy">facebook privacy group</a>.  I prefer comments and questions to directly to the <a href="http://groups.google.com/group/facebook-privacy">facebook privacy group</a>, or <a href="mailto:pjf@perltraining.com.au">to me directly</a>.
+
+
+    
+
+</article>
+
+
+                    
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+<div id="sidebar">
+    <!-- Logo -->
+    <div id="logo"><h1><a href="/">pjf</a></h1></div>
+
+    <section class="find_me">
+        <a href="http://twitter.com/pjf"><i class="fa fa-twitter-square  fa-3x"  ></i></a>
+        <a href="http://facebook.com/paul.fenwick"><i class="fa fa-facebook-square fa-3x"  ></i></a>
+        <a href="http://github.com/pjf"><i class="fa fa-github-square   fa-3x"  ></i></a>
+    </section>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul>
+            <li class="current_page_item"><a href="#">Latest Post</a></li>
+            <li><a href="/DF">Dwarf Fortress</a></li>
+            <li><a href="/advogato">Older Posts</a></li>
+            <li><a href="#">Archives</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search -->
+    <!-- <section class="is-search">
+        <form method="post" action="#">
+            <input type="text" class="text" name="search" placeholder="Search" />
+        </form>
+    </section> -->
+
+    <!-- Text -->
+    <!-- <section class="is-text-style1">
+        <div class="inner">
+            <p>
+                <strong>PJF:</strong> Some guy from the internet.
+            </p>
+        </div>
+    </section> -->
+
+    <!-- Recent Posts -->
+    <section class="is-recent-posts">
+        <header>
+            <h2>Recent Posts</h2>
+        </header>
+
+        <ul>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/12/jaxys-greatest-wish.html">Jaxy's Greatest Wish</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/11/a-quiet-trade.html">A Quiet Trade</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/11/a-place-to-settle.html">A Place To Settle</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/08/the-fickleness-of-warlocks.html">The Fickleness Of Warlocks</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/07/a-family-reunion.html">A Family Reunion</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/07/a-matter-of-trade.html">A Matter Of Trade</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/06/a-home-in-the-wilderness.html">A Home In The Wilderness</a>
+        
+            <li><a href="/advogato/2010/12/15/on-money--and-missing-the-point.html">On money, and missing the point</a>
+        
+            <li><a href="/advogato/2010/04/23/facebook-privacy---instant-personalisation-and-connections.html">Facebook privacy - Instant personalisation and connections</a>
+        
+            <li><a href="/advogato/2010/03/26/ada-lovelace-day--part-2-.html">Ada Lovelace Day (Part 2)</a>
+        
+        </ul>
+    </section>
+
+    <!-- Recent Comments -->
+    <!-- <section class="is-recent-comments">
+        <header>
+            <h2>Recent Comments</h2>
+        </header>
+        <ul>
+            <li>case on <a href="#">Now Full Cyborg</a></li>
+            <li>molly on <a href="#">Untitled Post</a></li>
+            <li>case on <a href="#">Temporal Flux</a></li>
+        </ul>
+    </section> -->
+
+    <!-- Calendar -->
+
+    <!-- <section class="is-calendar">
+        <div class="inner">
+            <table>
+                <caption>February 2013</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" title="Monday">M</th>
+                        <th scope="col" title="Tuesday">T</th>
+                        <th scope="col" title="Wednesday">W</th>
+                        <th scope="col" title="Thursday">T</th>
+                        <th scope="col" title="Friday">F</th>
+                        <th scope="col" title="Saturday">S</th>
+                        <th scope="col" title="Sunday">S</th>
+                    </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td colspan="4" class="pad"><span>&nbsp;</span></td>
+                        <td><span>1</span></td>
+                        <td><span>2</span></td>
+                        <td><span>3</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>4</span></td>
+                        <td><span>5</span></td>
+                        <td><a href="#">6</a></td>
+                        <td><span>7</span></td>
+                        <td><span>8</span></td>
+                        <td><span>9</span></td>
+                        <td><a href="#">10</a></td>
+                    </tr>
+                    <tr>
+                        <td><span>11</span></td>
+                        <td><span>12</span></td>
+                        <td><span>13</span></td>
+                        <td class="today"><a href="#">14</a></td>
+                        <td><span>15</span></td>
+                        <td><span>16</span></td>
+                        <td><span>17</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>18</span></td>
+                        <td><span>19</span></td>
+                        <td><span>20</span></td>
+                        <td><span>21</span></td>
+                        <td><span>22</span></td>
+                        <td><a href="#">23</a></td>
+                        <td><span>24</span></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">25</a></td>
+                        <td><span>26</span></td>
+                        <td><span>27</span></td>
+                        <td><span>28</span></td>
+                        <td class="pad" colspan="3"><span>&nbsp;</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section> -->
+
+    <!-- Copyright -->
+    <div id="copyright">
+        <p>
+            &copy; 2014 Paul Fenwick<br />
+            Design: <a href="http://html5up.net/">HTML5 UP</a>
+        </p>
+    </div>
+</div>
+
+
+        </div>
+    </body>
+</html>
+

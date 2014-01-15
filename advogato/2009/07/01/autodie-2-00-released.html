@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<!--
+    Based upon Striped 2.5 by HTML5 Up!
+    html5up.net | @n33co
+    Updated for Jekyll by Paul Fenwick | @pjf
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+    <head>
+        <title>Autodie 2.00 released</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Open+Sans+Condensed:300,700" rel="stylesheet" />
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/skel.min.js"></script>
+        <script src="/js/skel-panels.min.js"></script>
+        <script src="/js/init.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="/css/skel-noscript.css" />
+            <link rel="stylesheet" href="/css/style.css" />
+            <link rel="stylesheet" href="/css/style-desktop.css" />
+            <link rel="stylesheet" href="/css/style-wide.css" />
+        </noscript>
+        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+        <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+        <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
+
+        <link rel="stylesheet" href="/css/pjf.css" />
+
+    </head>
+    <!--
+        Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
+        Set it to "right-sidebar" to, you guessed it, position it on the right.
+    -->
+    <body class="left-sidebar">
+        <div id="wrapper">
+            <div id="content">
+                <div id="content-inner">
+                    
+    
+
+
+<article class="is-post">
+    <header>
+    <!--
+            Note: Titles and bylines will wrap automatically when necessary, so don't worry
+            if they get too long. You can also remove the "byline" span entirely if you don't
+            need a byline.
+    -->
+    <h2><a href="#">Autodie 2.00 released</a></h2>
+    <!-- <span class="byline">A free, fully responsive HTML5 site template by AJ for HTML5 UP</span> -->
+</header>
+
+    <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">Jul</span>
+        <span class="day"> 1</span>
+        <span class="year"><span>,</span> 2009</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+    <!-- <a href="#" class="image image-full"><img src="/images/n33-robot-invader.jpg" alt="" /></a> -->
+
+    <p><b>Autodie 2.00 released</b><br>
+This weekend the long awaited <a href="http://search.cpan.org/perldoc?autodie">autodie 2.00</a> for
+Perl was released to the CPAN, which was almost immediately replaced
+by 2.02, which fixes some oopsed tests and which adds a couple more features to
+give us a really sweet experience.  This blog entry assumes you're
+using 2.02.
+<p>
+Observant viewers will notice that the major version number has
+changed.  I've taken the great leap from 1.999 to 2.00.  Clearly,
+something is different, and you might be wondering what.
+<p>
+Well, autodie 2.0 now supports a <a href="http://search.cpan.org/perldoc?autodie::hints">hinting
+interface</a> for user-defined subroutines.  Put simply, if you have a
+user-defined subroutine that does something funny to signify failure,
+you can now tell autodie about that.  Once it knows, it can Do The
+Right Thing when checking your subroutine.  You can even put the hints
+into the same file as those subs, and if someone is using autodie
+2.00, it will find the hints and use them.
+<p>
+This may not sound very exciting, but it is.  It means that a lot of
+really ugly error-checking code, both on the CPAN and the DarkPAN, can
+go away.  Lexically.  Still not convinced this will change your life?
+Let's look a little more closely; trust me, you'll like it.
+<p>
+Let's pretend you're working on a piece of legacy code.  For some
+reason, the people who wrote this code decided the best way to
+signal errors is by returning the list <tt>(undef, "Error
+message")</tt>.  I don't know why, but I've seen this anti-pattern
+emerge independently in <i>three</i> 100k+ line projects I've been
+involved in.
+
+<pre>
+sub some_sub {
+    if ( not batteries_full() ) {
+        return ( undef, "insufficient energy" );
+    }
+
+    if ( not coin_inserted() ) {
+        return ( undef, "insufficient credit" );
+    }
+
+    my @results = some_calculation();
+
+    return @results;
+}
+</pre>
+<p>
+If you want to check to see if <tt>some_sub()</tt> returns an error,
+you need to capture its return values, look at the first one to see if
+it's undefined, and if it's not, use the second one as your error.
+At least, that's what you're <i>supposed</i> to do.
+<p>
+What actually happens is most developers decide that's way too hard,
+and don't bother checking for errors.  Then one day, the batteries on
+your doomsday-asteroid-destroying-satellite go flat, nobody notices,
+and through an ironic twist of fate you're left as the last known human
+survivor, and there are zombie hordes and walking killer plants
+outside.
+<p>
+So, how can <a href="http://search.cpan.org/perldoc?autodie">autodie</a> help us?
+Well, before version 2.00, it couldn't.  But now, with
+<a href="http://search.cpan.org/perldoc?autodie::hints">autodie::hints</a>,
+it can!  We can give autodie hints about how the return values are
+checked.  They look like this:
+
+<pre>
+use autodie::hints;
+
+autodie::hints-&gt;set_hints_for(
+    'Some::Package::some_sub' =&gt; {
+        scalar =&gt; sub { 1 },
+        list   =&gt; sub { @_ == 2 and not defined $_[0] },
+    },
+);
+</pre>
+<p>
+Our hints here are simple subroutines.  If they return true, our
+subroutine has failed.  If they return false, it's executed
+successfully.  Notice that our scalar hint always returns true.
+That's because we consider any call of our subroutine in scalar
+context to be a mistake.  It's returning a list of values, and
+you should be checking that list.
+<p>
+Once we've set our hints, we can then use autodie to automatically
+check if we're successful:
+
+<pre>
+use Some::Module qw(some_sub);
+
+sub target_asteroid {
+
+    use autodie qw( ! some_sub );
+
+    # autodie has lexical scope, so only calls to some_sub inside
+    # the target_asteroid subroutine are affected.
+
+    my @results = some_sub();     # Succeeds or dies
+}
+
+sub target_ufo {
+    my @results = some_sub();
+
+    # autodie is out of lexical scope, so we have to manually
+    # process @results here.
+}
+
+</pre>
+<p>
+If you're wondering what that exclamation mark means, it means "insist
+on hints", and is a new piece of syntax with autodie 2.00.  If for any
+reason autodie can't find the hints for <tt>some_sub</tt>, our code
+won't compile.  That's a very good thing, and avoids us having a false
+sense of security if we use autodie on an unhinted sub.
+<p>
+However the error messages from autodie aren't really that useful.
+They're going to be things like <tt>"Can't some_sub() at
+space_defense.pl line 53"</tt>.  There's a noticable lack of
+explanation as to why <tt>some_sub()</tt> failed.
+<p>
+Luckily, since the way early versions of autodie, we've been able
+to register message handlers.  And with the new features in autodie
+2.02, we can produce very rich messages.  Let's see how!
+
+<pre>
+use autodie::exception;
+
+autodie::exception-&gt;register(
+    'Some::Module::some_sub' =&gt; sub {
+        my ($error) = @_;
+
+        if ($error-&gt;context eq "scalar") {
+             return "some_sub() can't be called in a scalar context";
+        }
+
+        # $error-&gt;return gives a list of everything our failed sub
+        # returned.  We know this particular sub puts the error
+        # message the second argument (index 1).
+
+        my $error_msg = $error-&gt;return-&gt;[1];
+
+        return "some_sub() failed: $error_msg";
+    }
+);
+</pre>
+<p>
+Now, whenever <tt>some_sub()</tt> fails, it'll print a genuinely
+useful message, like <tt>"some_sub() failed: Insufficient energy at
+space_defense.pl line 53"</tt>.  Yes, autodie automatically adds the
+file and line number for you.  Nice!
+<p>
+But wait, there's more!  We don't want to see this sort of code
+floating around in your programs.  You may be dealing
+with other people's modules that you can't modify, so we can't hide
+all this configuration in there.  So, we can <i>write our own
+pragma</i> that contains all this info.  Here's the full
+code for a theoretical <tt>my::autodie</tt> pragma, and is the exact
+same code used by the <tt>t/blog_hints.t</tt> file in autodie's
+test suite.
+
+<pre>
+package my::autodie;
+use strict;
+use warnings;
+
+use base qw(autodie);
+use autodie::exception;
+use autodie::hints;
+
+autodie::hints-&gt;set_hints_for(
+    'Some::Module::some_sub' =&gt; {
+        scalar =&gt; sub { 1 },
+        list   =&gt; sub { @_ == 2 and not defined $_[0] }
+    },
+);
+
+autodie::exception-&gt;register(
+    'Some::Module::some_sub' =&gt; sub {
+        my ($E) = @_;
+
+        if ($E-&gt;context eq "scalar") {
+            return "some_sub() can't be called in scalar context";
+        }
+
+        my $error = $E-&gt;return-&gt;[1];
+
+        return "some_sub() failed: $error";
+    }
+);
+
+1;
+</pre>
+<p>
+It works exactly the same as regular autodie, except it also knows
+how to handle <tt>some_sub()</tt>, and display good looking error
+messages.  Here's how we'd use it:
+
+<pre>
+use Some::Module qw(some_sub);
+use my::autodie qw( ! some_sub );
+
+my @results = some_sub();  # Succeeds or dies with a useful error!
+</pre>
+<p>
+There's a lot more you can do with autodie, and if you want to learn
+more, I'd suggest coming to my talk at <a href="http://en.oreilly.com/oscon2009/public/schedule/detail/8165">OSCON</a> or <a href="http://yapceurope2009.org/ye2009/talk/2063">YAPC::EU</a>, where I'll be covering all this and more, with a distinctive Star Trek twist. ;)
+
+
+
+    
+
+</article>
+
+
+                    
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+<div id="sidebar">
+    <!-- Logo -->
+    <div id="logo"><h1><a href="/">pjf</a></h1></div>
+
+    <section class="find_me">
+        <a href="http://twitter.com/pjf"><i class="fa fa-twitter-square  fa-3x"  ></i></a>
+        <a href="http://facebook.com/paul.fenwick"><i class="fa fa-facebook-square fa-3x"  ></i></a>
+        <a href="http://github.com/pjf"><i class="fa fa-github-square   fa-3x"  ></i></a>
+    </section>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul>
+            <li class="current_page_item"><a href="#">Latest Post</a></li>
+            <li><a href="/DF">Dwarf Fortress</a></li>
+            <li><a href="/advogato">Older Posts</a></li>
+            <li><a href="#">Archives</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search -->
+    <!-- <section class="is-search">
+        <form method="post" action="#">
+            <input type="text" class="text" name="search" placeholder="Search" />
+        </form>
+    </section> -->
+
+    <!-- Text -->
+    <!-- <section class="is-text-style1">
+        <div class="inner">
+            <p>
+                <strong>PJF:</strong> Some guy from the internet.
+            </p>
+        </div>
+    </section> -->
+
+    <!-- Recent Posts -->
+    <section class="is-recent-posts">
+        <header>
+            <h2>Recent Posts</h2>
+        </header>
+
+        <ul>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/12/jaxys-greatest-wish.html">Jaxy's Greatest Wish</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/11/a-quiet-trade.html">A Quiet Trade</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/11/a-place-to-settle.html">A Place To Settle</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/08/the-fickleness-of-warlocks.html">The Fickleness Of Warlocks</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/07/a-family-reunion.html">A Family Reunion</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/07/a-matter-of-trade.html">A Matter Of Trade</a>
+        
+            <li><a href="/DF/UnholinessSparked/2014/01/06/a-home-in-the-wilderness.html">A Home In The Wilderness</a>
+        
+            <li><a href="/advogato/2010/12/15/on-money--and-missing-the-point.html">On money, and missing the point</a>
+        
+            <li><a href="/advogato/2010/04/23/facebook-privacy---instant-personalisation-and-connections.html">Facebook privacy - Instant personalisation and connections</a>
+        
+            <li><a href="/advogato/2010/03/26/ada-lovelace-day--part-2-.html">Ada Lovelace Day (Part 2)</a>
+        
+        </ul>
+    </section>
+
+    <!-- Recent Comments -->
+    <!-- <section class="is-recent-comments">
+        <header>
+            <h2>Recent Comments</h2>
+        </header>
+        <ul>
+            <li>case on <a href="#">Now Full Cyborg</a></li>
+            <li>molly on <a href="#">Untitled Post</a></li>
+            <li>case on <a href="#">Temporal Flux</a></li>
+        </ul>
+    </section> -->
+
+    <!-- Calendar -->
+
+    <!-- <section class="is-calendar">
+        <div class="inner">
+            <table>
+                <caption>February 2013</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" title="Monday">M</th>
+                        <th scope="col" title="Tuesday">T</th>
+                        <th scope="col" title="Wednesday">W</th>
+                        <th scope="col" title="Thursday">T</th>
+                        <th scope="col" title="Friday">F</th>
+                        <th scope="col" title="Saturday">S</th>
+                        <th scope="col" title="Sunday">S</th>
+                    </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td colspan="4" class="pad"><span>&nbsp;</span></td>
+                        <td><span>1</span></td>
+                        <td><span>2</span></td>
+                        <td><span>3</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>4</span></td>
+                        <td><span>5</span></td>
+                        <td><a href="#">6</a></td>
+                        <td><span>7</span></td>
+                        <td><span>8</span></td>
+                        <td><span>9</span></td>
+                        <td><a href="#">10</a></td>
+                    </tr>
+                    <tr>
+                        <td><span>11</span></td>
+                        <td><span>12</span></td>
+                        <td><span>13</span></td>
+                        <td class="today"><a href="#">14</a></td>
+                        <td><span>15</span></td>
+                        <td><span>16</span></td>
+                        <td><span>17</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>18</span></td>
+                        <td><span>19</span></td>
+                        <td><span>20</span></td>
+                        <td><span>21</span></td>
+                        <td><span>22</span></td>
+                        <td><a href="#">23</a></td>
+                        <td><span>24</span></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">25</a></td>
+                        <td><span>26</span></td>
+                        <td><span>27</span></td>
+                        <td><span>28</span></td>
+                        <td class="pad" colspan="3"><span>&nbsp;</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section> -->
+
+    <!-- Copyright -->
+    <div id="copyright">
+        <p>
+            &copy; 2014 Paul Fenwick<br />
+            Design: <a href="http://html5up.net/">HTML5 UP</a>
+        </p>
+    </div>
+</div>
+
+
+        </div>
+    </body>
+</html>
+

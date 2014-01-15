@@ -10,3 +10,23 @@ img {
 #logo h1 a, .title h1 a {
     text-decoration: none;
 }
+
+.find_me {
+    text-align: center;
+}
+
+.find_me i {
+    padding: 0.1em;
+}
+
+.find_me a {
+    text-decoration: none;
+}
+
+/* Make the pic of me look nice */
+
+img.me {
+    float: right;
+    max-width: 20%;
+    border-radius: 10%;
+}
