@@ -35,7 +35,9 @@ module DefaultTopMatter
         super(base, name)
 
         # Finally, merge the defaults into our data
-        self.data = defaults.merge(self.data)
+        if defaults
+            self.data = defaults.merge(self.data)
+        end
         
     end
 end
