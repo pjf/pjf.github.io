@@ -8,7 +8,7 @@ use FindBin qw($Bin);
 
 chdir("$Bin/..");
 
-system("jekyll");
+system("jekyll build");
 system("git checkout master");
 
 # Make a hash of all our (non-dot) files
