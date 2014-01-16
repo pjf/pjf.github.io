@@ -1,5 +1,6 @@
 # Based upon https://gist.github.com/joelverhagen/1805814
 # With suggested updates from @patrickfuller and @jiguang
+# Updated for html5 by @pjf
 #
 # Usage: {% youtube dQw4w9WgXcQ %}
 #        {% youtube dQw4w9WgXcQ 800 600 %}  (width and height)
@@ -26,7 +27,7 @@ class YouTube < Liquid::Tag
   end
 
   def render(context)
-    "<iframe width=\"#{@width}\" height=\"#{@height}\" src=\"http://www.youtube.com/embed/#{@id}\"> </iframe>"
+    "<iframe width=\"#{@width}\" height=\"#{@height}\" src=\"http://www.youtube.com/embed/#{@id}?html5=1\"> </iframe>"
   end
 
   Liquid::Template.register_tag "youtube", self
