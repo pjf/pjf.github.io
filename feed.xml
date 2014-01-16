@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>paul.j.fenwick</title>
+		<description>Some guy from the internet who loves freedom.</description>
+		<link>http://pjf.id.au/</link>
+		<atom:link href="http://pjf.id.au//feed.xml" rel="self" type="application/rss+xml" />
+                
+
+                    
+                    
+                    
+
+			<item>
+				<title>Use Markdown Instead Of BBCode With Vimperator</title>
+				<description>&lt;p&gt;I really love the Dwarf Fortress community, and a lot of it is centred around the &lt;a href=&quot;http://www.bay12forums.com/smf/index.php&quot;&gt;bay12 forums&lt;/a&gt;. Unfortunately, I don’t love BBCode (aka phpBB syntax), which is what the bay12 forums require me to write posts in. I’d much rather use &lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;markdown&lt;/a&gt;. So I decided to fix that with the help of vimperator, and by writing my own markdown to BBcode parser.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;If you install the &lt;a href=&quot;https://metacpan.org/pod/Markdown::phpBB&quot;&gt;Markdown::phpBB&lt;/a&gt; module from the CPAN, you’ll find a nifty little program named &lt;code&gt;md2phpbb&lt;/code&gt;. This is a filter; it takes input in markdown, and emits output in BBcode.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cpanm Markdown::phpBB     # install using cpanm
+$ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you’re editing in vim, you can run &lt;code&gt;:%!md2phpbb&lt;/code&gt; to replace your current buffer (written in markdown) with the equivalent text in BBcode. You can even bind it to a key, as I’ve done in my &lt;code&gt;~/.vimrc&lt;/code&gt; file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:nmap &amp;lt;F5&amp;gt; :%!md2phpbb&amp;lt;CR&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you’ve installed md2phpbb into a user (rather than system) directory, then you may find that vimperator won’t have your perl-specific environment variables in place. In that case you can use full paths in your &lt;code&gt;~/.vimrc&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:nmap &amp;lt;F5&amp;gt; :%!perl -I/home/pjf/perl5/lib/perl5 /home/pjf/perl5/bin/md2phpbb&amp;lt;CR&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you’re using &lt;a href=&quot;http://www.vimperator.org/vimperator&quot;&gt;vimperator&lt;/a&gt; then you can already invoke vim from any textarea by pressing &lt;code&gt;ctrl-i&lt;/code&gt;. However BBcode websites usually bind this to &lt;em&gt;italics&lt;/em&gt;, so you’ll probably want to add an additional key for editing to your &lt;code&gt;~/.vimperatorrc&lt;/code&gt; file. I use &lt;code&gt;ctrl-e&lt;/code&gt;, for edit:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:inoremap &amp;lt;C-e&amp;gt; &amp;lt;C-i&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now you can use &lt;code&gt;ctrl-e&lt;/code&gt; to open a vim window, write your response in markdown, and then just hit &lt;code&gt;F5&lt;/code&gt; to turn it into BBCode. Best of all, the filter doesn’t change existing BBCode at all, so you can hit &lt;code&gt;F5&lt;/code&gt; as many times as you like, to refresh your text after edits.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;md2phpbb&lt;/code&gt; and supporting libraries are completely free and open source, and can be found on &lt;a href=&quot;https://github.com/pjf/Markdown-phpBB&quot;&gt;github&lt;/a&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;See also: &lt;a href=&quot;http://privacygeek.blogspot.com.au/2013/03/the-worlds-easiest-guide-to-installing.html&quot;&gt;The world’s easiest guide to installing cpanm&lt;/a&gt;&lt;/p&gt;</description>
+				<pubDate>Thu, 16 Jan 2014 00:00:00 +1100</pubDate>
+				<link>http://pjf.id.au///tech/2014/01/16/use-markdown-rather-than-bbcode-with-vimperator.html</link>
+				<guid isPermaLink="true">http://pjf.id.au///tech/2014/01/16/use-markdown-rather-than-bbcode-with-vimperator.html</guid>
+			</item>
+		
+
+                     
+
+                     
+
+                     
+
+                     
+
+                     
+
+                     
+
+                     
+
+                    
+                    
+                    
+
+			<item>
+				<title>On Open Source Software And Communities</title>
+				<description>&lt;p&gt;Open source software is great. You don’t have to worry about the owner deciding to discontinue it, because someone else can always take over. If there’s a bug that really annoys you—or a feature you really want—you can add it. If you’re concerned about what the software might be doing, you can open it up and take a look. And even if you don’t have the skills or inclination to do all these things, other people will.&lt;/p&gt;
+
+&lt;p&gt;While I’ve always known open source software is great, I’m increasingly starting to appreciate that open source &lt;em&gt;developers&lt;/em&gt; are also great. Many people in open source not only have a tremendous amount of experience with software, but also community management. They’ve seen a lot of the same problems arise many times, and so they have a good idea on how to get code, and people, to work together productively.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;One thing that we see, again and again, in both software and the community, is that giving people agency and discretion is fundamental in having a highly successful project. Wikis lowered the barrier to contribution immensely when it came to collating knowledge, Wikipedia wouldn’t exist if it wasn’t so easy to edit. Many of the most successful software projects have been extremely generous with their commit bits, and with distributed version control, the barriers to contribution have been lowered even further.&lt;/p&gt;
+
+&lt;p&gt;The reason this is so essential for success is simple. The vast majority of intelligent, motivated people &lt;em&gt;want&lt;/em&gt; to make the world a better place; putting barriers in their way simply means they’ll go elsewhere. Every permission form that needs to be filled in, every registration process that needs to be jumped through, every legal framework that encumbers creation, every strict power hierarchy that needs to be worked through, they all run the risk of taking someone who may done something great instead deciding it was “too hard”.&lt;/p&gt;
+
+&lt;p&gt;That’s not to say that we won’t need a way to deal with mishaps; even if nobody is malevolent, some people will still be learning, and everyone will make mistakes. Wikis and distributed version control strike a good balance here, they’re designed around the ability to undo changes, or revert to previous revisions if need be. Much of the software that lower the barriers to contribution also lower the risks associated with it.&lt;/p&gt;
+
+&lt;p&gt;And that’s the key here. If you can give people a way of doing something, and that process comes with low or negligible risks, then &lt;em&gt;let them do it&lt;/em&gt;. Even if you think nobody will care, even if you think it’s a terrible idea, &lt;em&gt;let them&lt;/em&gt;. Many great ideas start as terrible ones that are refined over time, and you may be surprised at just how popular some ideas can be.&lt;/p&gt;
+
+&lt;p&gt;But this doesn’t just apply to your software, or your documentation; this applies to the your culture, and the society in which you live.&lt;/p&gt;
+
+&lt;p&gt;Encourage others to be bold. Be generous in what you accept.&lt;/p&gt;
+
+&lt;p&gt;Do not stifle innovation. Do not get in the way of people being great.&lt;/p&gt;
+
+&lt;p&gt;And I know that sometimes it can feel like two steps forward, and one step back; but please, please, don’t stop contributing.&lt;/p&gt;
+
+&lt;p&gt;Thank you.&lt;/p&gt;</description>
+				<pubDate>Sat, 28 Dec 2013 00:00:00 +1100</pubDate>
+				<link>http://pjf.id.au///longpost/2013/12/28/on-open-source-software-and-communities.html</link>
+				<guid isPermaLink="true">http://pjf.id.au///longpost/2013/12/28/on-open-source-software-and-communities.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
+				<title>Fear, Uncertainty, and Dopamine</title>
+				<description>&lt;div class='video-container'&gt;&lt;iframe height='420' src='http://www.youtube.com/embed/e0H0BKrF4HY?html5=1' width='560'&gt; &lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&lt;a href='http://www.youtube.com/watch?v=e0H0BKrF4HY'&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A discussion of community building from a psychological perspective. How to recruit people into your project, external and internal motivations, what people regret, self-fulfilling prophecies, confirmation bias, and more.&lt;/p&gt;
+&lt;!--more--&gt;</description>
+				<pubDate>Fri, 26 Jul 2013 00:00:00 +1000</pubDate>
+				<link>http://pjf.id.au///talks/2013/07/26/fear-uncertainty-and-dopamine.html</link>
+				<guid isPermaLink="true">http://pjf.id.au///talks/2013/07/26/fear-uncertainty-and-dopamine.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
+				<title>Depression: Bugs In Your Brain</title>
+				<description>&lt;div class='video-container'&gt;&lt;iframe height='420' src='http://www.youtube.com/embed/H8e4rQZPmQ?html5=1' width='560'&gt; &lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&lt;a href='http://www.youtube.com/watch?v=H8e4rQZPmQ'&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Internationally acclaimed public speaker Paul Fenwick talks about depression: What it is, why it sucks, and his own personal experiences in battling it. Drawing from a diverse range of fields, Paul provides insights into the bugs that may exist in your brain, and how some aspects of digital society may even make them worse.&lt;/p&gt;
+&lt;!--more--&gt;</description>
+				<pubDate>Wed, 24 Jul 2013 00:00:00 +1000</pubDate>
+				<link>http://pjf.id.au///talks/2013/07/24/depression-bugs-in-your-brain.html</link>
+				<guid isPermaLink="true">http://pjf.id.au///talks/2013/07/24/depression-bugs-in-your-brain.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
+				<title>Reimplementing the iDoneThis Memory Service</title>
+				<description>&lt;p&gt;There’s an excellent website called &lt;a href=&quot;http://idonethis.com/&quot;&gt;iDoneThis.com&lt;/a&gt; which implements the most simple yet brilliant of services. Every day, you record the list of things you’ve done, and it gives you a check-mark for that day. This was motivating in two ways: firstly, the desire to keep that chain of check-marks running (what’s known as a ‘chain calendar’ or a ‘Seinfeld calendar’), and secondly by emailing you your memories of what you were doing a year (or a week, or a month) ago.&lt;/p&gt;
+
+&lt;p&gt;For me, knowing what I was doing a year ago was &lt;em&gt;really&lt;/em&gt; good. I loved waking up each morning to be reminding of something I might otherwise not think of again. The good memories I was emailed would make me feel good again, and bad memories? Well, they’d often make me feel good that I wasn’t going through &lt;em&gt;that&lt;/em&gt; anymore, or they’d be &lt;em&gt;insightful&lt;/em&gt; if I was encountering similar issues now.&lt;/p&gt;
+
+&lt;p&gt;I &lt;em&gt;loved&lt;/em&gt; the memory service, and so did my friends, even if they didn’t use it. I’d often send them messages about what awesome adventures we were up to a year ago, and that would often make their day.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, a few months ago, iDoneThis discontinued their memory-posting service. I don’t know why; I can only assume they’re focusing on the more corporate part of their service, and the network costs of all the personal emails wasn’t worth it.&lt;/p&gt;
+
+&lt;p&gt;Today, as part of a &lt;a href=&quot;http://lesswrong.com/lw/3w3/how_to_beat_procrastination/&quot;&gt;productivity spiral&lt;/a&gt;, I reimplemented the old memories service. The code isn’t pretty—unfortunately iDoneThis doesn’t (yet) provide an API—but I have a bot that can log-in and fetch a day’s worth of data. Best of all, that code is open source, and &lt;a href=&quot;href=&quot;https://metacpan.org/module/WebService::Idonethis&quot;&gt;available from the CPAN&lt;/a&gt;, so you can download and use it yourself.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;Even if you’re not a Perl person, then it’s pretty easy to install. Simply follow my &lt;a href=&quot;http://privacygeek.blogspot.com.au/2013/03/the-worlds-easiest-guide-to-installing.html&quot;&gt;world’s simplest guide to installing cpanm&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now just install the &lt;a href=&quot;https://metacpan.org/module/WebService::Idonethis&quot;&gt;WebService::Idonethis&quot;&gt;WebService::Idonethis&lt;/a&gt; module:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cpanm WebService::Idonethis&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To use it, you’ll first need to create an &lt;code&gt;~/.idonethisrc&lt;/code&gt; file with your auth details:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[auth]
+user=someuser
+pass=somepass&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If all has gone well, you can now use the &lt;code&gt;idonethis-memories&lt;/code&gt; command!&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ idonethis-memories
+
+Here's what you were doing on 2012-02-11:
+
+* Built a robotic dinosaur with lasers with Claudine.
+* Played stepmania with Deanna (Spice Girls rock!)
+* Invoiced ALL the clients.
+* Drank six billion cups of coffee.&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It’s perfect for putting into a cron job.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Edit:&lt;/em&gt; As of v0.03, you can now submit done items directly from the command line using the &lt;code&gt;idone&lt;/code&gt; tool:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ idone &amp;quot;Read a great blog by Paul Fenwick&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Edit:&lt;/em&gt; As of v0.04, you can also get a list of what you’ve done today:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ idone -l
+
+* Flossed my teeth
+* Looked at pictures of cats on the Internet
+* Defended against a goblin siege in Dwarf Fortress&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you’re handy with Perl, or just want to look at the code, there’s a &lt;a href=&quot;https://github.com/pjf/idonethis-perl&quot;&gt;github repository&lt;/a&gt;. Patches are extremely welcome!&lt;/p&gt;
+
+&lt;p&gt;Edit: As of v0.08, the &lt;code&gt;idone -lc&lt;/code&gt; command is the best thing ever. It will list the things you’ve done today, and allow you to add new things by entering them on stdin. It also has less than one third of the previous dependencies.&lt;/p&gt;</description>
+				<pubDate>Sun, 10 Feb 2013 04:31:00 +0000</pubDate>
+				<link>http://pjf.id.au///privacygeek/2013/02/10/reimplementing-the-idonethis-memory-service.html</link>
+				<guid isPermaLink="true">http://pjf.id.au///privacygeek/2013/02/10/reimplementing-the-idonethis-memory-service.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
+				<title>The Perl Renaissance</title>
+				<description>&lt;div class='video-container'&gt;&lt;iframe height='420' src='http://www.youtube.com/embed/oZ5xTI1QRTA?html5=1' width='560'&gt; &lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&lt;a href='http://www.youtube.com/watch?v=oZ5xTI1QRTA'&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Perl Renaissance is in full swing. Object frameworks and syntax have been undated, web frameworks are easy and powerful, and modules are easy to manage and install.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;ul&gt;
+&lt;li&gt;Overhauling Perl’s Object Oriented framework with Moose.&lt;/li&gt;
+
+&lt;li&gt;Using MooseX::Method::Signatures for beautiful classes.&lt;/li&gt;
+
+&lt;li&gt;Building web applications using Dancer&lt;/li&gt;
+
+&lt;li&gt;Not worrying about web servers by using Plack.&lt;/li&gt;
+
+&lt;li&gt;Critiquing your code with Perl::Critic&lt;/li&gt;
+
+&lt;li&gt;Write amazing regexps with named captures.&lt;/li&gt;
+
+&lt;li&gt;Install new modules quickly and easily with cpanminus&lt;/li&gt;
+
+&lt;li&gt;Manage Perl installations easily with perlbrew&lt;/li&gt;
+
+&lt;li&gt;A whole swag of new features with perl 5.10–5.16&lt;/li&gt;
+
+&lt;li&gt;Much, much more!&lt;/li&gt;
+&lt;/ul&gt;</description>
+				<pubDate>Wed, 30 Jan 2013 00:00:00 +1100</pubDate>
+				<link>http://pjf.id.au///talks/2013/01/30/the-perl-renaissance.html</link>
+				<guid isPermaLink="true">http://pjf.id.au///talks/2013/01/30/the-perl-renaissance.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
+				<title>Banking Vigilance Fail - Unlocking A Card With Only A Surname</title>
+				<description>&lt;p&gt;Every year I go travelling, and every year my bank suspends my credit card due to “suspicious behaviour”. Luckily, it’s easy to get the stops removed… too easy, in fact.&lt;/p&gt;
+
+&lt;p&gt;Today, when calling the bank to confirm that I had purchased a US phone service, I was asked only a single piece of identifying information, and that was my surname.  The bank’s representative revealed—without my prompting—the last four digits of my credit card, and the full details of the transaction that was considered suspicious.&lt;/p&gt;
+
+&lt;p&gt;The thing is, if you’re the one making fraudulent transactions on a card, then you probably already know the cardholder’s surname, and you definitely know some recent suspicious transactions.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;Better still, I assured my bank that I was travelling for the next few months, and even that the other cardholder was travelling as well.  Still no verification except for my name.&lt;/p&gt;
+
+&lt;p&gt;To the bank’s credit, this is the first time I’ve encountered them being so lax with security. Every other time has involved me needing to provide a variety of information to verify my identity.  If I were to guess a reason why things were different this time, it would be because I was calling at 7am on a Monday, and the vocal characteristics of the person I was speaking to suggested that he would really rather be in bed.&lt;/p&gt;
+
+&lt;p&gt;If you are a fraudster, then calling the client’s bank and trying to have the stops removed sounds like a low-risk, high-gain proposition; especially if you do it at crazy o’clock on a Monday morning.&lt;/p&gt;
+
+&lt;p&gt;In other news, I was reminded last week as to how easy it is to gain access to hotel rooms with swipe cards. After my card stopped working at a conference I was attending, all I needed to get a new card was my room number, and surname.  For some of my friends that I spoke to, they didn’t even need to provide a surname.&lt;/p&gt;
+
+&lt;p&gt;Admittedly, one does need to hand over a hotel swipe card to give legitimacy to the “my card has stopped working trick”. If I didn’t have horrible jetlag, I probably would have tried the “I’ve locked my card in my room” line to see what response would have been given. I think there’s an excellent chance I would have been issued with a new card.&lt;/p&gt;
+
+&lt;p&gt;I have little doubt that a lot of this lax security is due to ”&lt;em&gt;operational complacency&lt;/em&gt;”. The vast majority of people who call reporting their card has been suspended, or their hotel key has stopped working, are legitimate: consequently, we’re trained into feeling that everything is working fine.  It’s the same reason why we stop testing our backups, or checking to see if the GPS antenna in one’s cruise ship is actually connected¹.&lt;/p&gt;
+
+&lt;p&gt;Of course, the cure for operational complacency is well-known.  You perform &lt;em&gt;vigilance tests&lt;/em&gt;. In the same way a retailer can use &lt;a href=&quot;https://en.wikipedia.org/wiki/Mystery_shopper&quot;&gt;mystery shoppers&lt;/a&gt; to test if staff are asking customers if they’d like to supersize that meal, organisations can employ &lt;em&gt;mystery fraudsters&lt;/em&gt; to make sure appropriate security procedures are being followed.&lt;/p&gt;
+
+&lt;p&gt;Even recording calls “for training and quality assurance purposes” gives one the ability to randomly audit interactions to ensure procedures are being followed.&lt;/p&gt;
+
+&lt;p&gt;Discovering my bank’s fraud department doesn’t record their calls? Priceless.&lt;/p&gt;
+
+&lt;p&gt;¹ “Grounding of the Panamanian Passenger Ship Royal Majesty on Rose and Crown Shoal Near Nantucket, Massachusetts”. National Transportation Safety Board, June 10, 1995. http://www.ntsb.gov/doclib/reports/1997/MAR9701.pdf See pages 34–35 in particular.&lt;/p&gt;</description>
+				<pubDate>Sun, 17 Jun 2012 23:32:00 +0000</pubDate>
+				<link>http://pjf.id.au///privacygeek/2012/06/17/banking-vigilance-fail-unlocking-a-card-with-only-a-surname.html</link>
+				<guid isPermaLink="true">http://pjf.id.au///privacygeek/2012/06/17/banking-vigilance-fail-unlocking-a-card-with-only-a-surname.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
+				<title>More Awesome Things You've Missed in Perl</title>
+				<description>&lt;div class='video-container'&gt;&lt;iframe height='420' src='http://www.youtube.com/embed/vgvMd4nuHTg?html5=1' width='560'&gt; &lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&lt;a href='http://www.youtube.com/watch?v=vgvMd4nuHTg'&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Awesome things have been happening in Perl recently; so many that even if you’ve been paying close attention, you may have missed a few. In this talk we’ll examine some of the coolest recent technologies for Perl programmers, including:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Overhauling Perl’s Object Oriented framework with Moose.&lt;/li&gt;
+
+&lt;li&gt;Making everything a first-class object with autobox.&lt;/li&gt;
+
+&lt;li&gt;Slashing your error handling code with autodie.&lt;/li&gt;
+
+&lt;li&gt;Building fast, readable and reusable regular expressions with Perl 5.10.&lt;/li&gt;
+
+&lt;li&gt;Bundling and building stand-alone applications using PAR, the Perl Archiver.&lt;/li&gt;
+
+&lt;li&gt;Astonishingly good profiling with Devel::NYTProf.&lt;/li&gt;
+
+&lt;li&gt;Playing MineSweeper automatically with App::SweeperBot.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--more--&gt;</description>
+				<pubDate>Tue, 01 May 2012 00:00:00 +1000</pubDate>
+				<link>http://pjf.id.au///talks/2012/05/01/more-awesome-things-you%27ve-missed-in-perl.html</link>
+				<guid isPermaLink="true">http://pjf.id.au///talks/2012/05/01/more-awesome-things-you%27ve-missed-in-perl.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
+				<title>Facebook Friends Lists Are Now Less Private</title>
+				<description>&lt;!-- In the original post there was an image here. Meh. --&gt;
+&lt;p&gt;Today started with breakfast. A breakfast so good that I decided to tell my friends on Facebook about it. Rather than telling everyone about my breakfast habits, I have a &lt;a href=&quot;https://www.facebook.com/help/?faq=200538509990389&amp;amp;ref_query=friends+lists&quot;&gt;friends list&lt;/a&gt; that I use for the purpose. Actually, I have dozens of lists, with people categorised by interests, social circle, location, shared experiences, personality type, programming language, and all manner of other criteria.&lt;/p&gt;
+
+&lt;p&gt;Telling my friends about my breakfast shouldn’t have been a big deal, except when I selected my breakfast list, Facebook informed me that posting to lists has changed, and now &lt;a href=&quot;https://www.facebook.com/help/?faq=196729973725708&quot;&gt;users will be able to see who else can see a given post&lt;/a&gt;. The pop-up cheerfully informed me that they won’t be told the &lt;em&gt;name&lt;/em&gt; of the list they’re on, so everything’s okay, right?&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;Well, no… Firstly, I don’t &lt;em&gt;need&lt;/em&gt; to know the name of the list, I can &lt;em&gt;infer&lt;/em&gt; it. Let’s say I’m reading one of your posts: are you talking about a very personal experience? That’s probably your list of close friends. Is your post in Klingon? These are probably your Klingon-speaking friends. Is everyone else in your list a family member? I’m guessing this is your family list. Sometimes you might be sharing your most private and intimate fantasies and details&lt;/p&gt;
+&lt;!-- Guess who need a plugin with image captions? --&gt;
+&lt;p&gt;&lt;img src=&quot;/images/privacygeek/jarjar-share-list.png&quot; alt=&quot;Hovering over the cog gives the view above. Clicking on it reveals a complete list.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So, why is this a big deal? Well, I’m blessed with a fabulously diverse selection of friends, and many of them feel safe about sharing an awful lot of their life with me. Consequently, one of my biggest uses for lists is to record my friends’ health and lifestyle choices. Cancer survivor? Sexual minority? Circus freak? Transgendered? Member of the Jarjar Binks appreciation society? Ethically flexible geneticist? Emacs user? Incurable stigmatising disease? Useful in a zombie attack? Illegitimate child? Chances are, I have you on a list.&lt;/p&gt;
+
+&lt;p&gt;In the past, I could cheerfully post relevant information to these lists, without fear of outing anyone. Of course, my friends could always out themselves, by commenting or liking a post, but those who chose to just observe remained private. That’s no longer the case. To post to a list means outing everyone on that list, at least to each other.&lt;/p&gt;
+
+&lt;p&gt;It’s not going to take long before the typical user starts encountering these issues. Am I in your list of close friends? Now, when you share a post with them, not only will I know that I’m special, but I’ll know everyone else on that list, too. In fact, I can write a bot to regularly look at the audience of your posts, and see when you add a new person to your close friends list. More interestingly still, I can spot when you remove someone. You wanted me to have that information, right?&lt;/p&gt;
+
+&lt;p&gt;Amazingly, I &lt;em&gt;don’t&lt;/em&gt; want to share my list of close friends, not even with my close friends themselves. I consider my list of friends, but &lt;em&gt;especially&lt;/em&gt; my list of close friends, to be pretty darn private.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, the workarounds for this change are pitifully few. Reading the &lt;a href=&quot;https://www.facebook.com/help/?faq=196729973725708&quot;&gt;documentation&lt;/a&gt; we can see that &lt;em&gt;smart lists&lt;/em&gt; reveal their names, but not their members. However they’re primarily focused on clumping people by geography, and are automatically updated by Facebook, so the opportunity for surprise is rife. The only thing I’ve found which works is &lt;em&gt;negative&lt;/em&gt; inclusion.&lt;/p&gt;
+
+&lt;p&gt;Put simply, if you post to friends, but &lt;em&gt;exclude&lt;/em&gt; certain lists, it still shows up as being posted to “friends”. So you can still retain privacy by posting to friends, and excluding all the ones &lt;em&gt;without&lt;/em&gt; a Jarjar Binks fetish. There might be other ways to hide the audience, but I’m yet to find them.&lt;/p&gt;
+
+&lt;p&gt;Needless to say, this isn’t a good workaround, and it requires some seriously heavy-duty list management. If you have dozens of lists, you’re going to have to produce the inverse of all them.  What’s more, every time you get a new friend, you’ll need to add them to all the inverted lists, too. That either means you need to be very patient and thorough, or have some sort of code assisting.&lt;/p&gt;
+
+&lt;p&gt;If you feel like writing your own bot, so you can watch to see which lists you happen to be on, then I suggest using the &lt;a href=&quot;http://graph.facebook.com/&quot;&gt;Graph API&lt;/a&gt; to monitor your friends’ activities. To actually get the audience, you’ll need to call &lt;code&gt;https://www.facebook.com/browse/audience/?fbid=&lt;/code&gt; as a logged in user (or clever bot) to see it, with the Facebook ID of the post attached to the end.&lt;/p&gt;
+
+&lt;p&gt;I’m hoping Facebook will decide this was a mistake and reverse the changes, otherwise I look forward to harvesting any friends lists you put me on. ;)&lt;/p&gt;</description>
+				<pubDate>Sat, 24 Sep 2011 06:59:00 +0000</pubDate>
+				<link>http://pjf.id.au///privacygeek/2011/09/24/facebook-friends-lists-are-now-less-private.html</link>
+				<guid isPermaLink="true">http://pjf.id.au///privacygeek/2011/09/24/facebook-friends-lists-are-now-less-private.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
+				<title>All Your Brains Suck</title>
+				<description>&lt;div class='video-container'&gt;&lt;iframe height='420' src='http://www.youtube.com/embed/OnX5v0uwNjc?html5=1' width='560'&gt; &lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&lt;a href='http://www.youtube.com/watch?v=OnX5v0uwNjc'&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Our brains are not-at-all suited for modern life, and are plagued by a raft of bugs and unwanted features that we’ve been unable to remove. Join us in a tour of some of the most amusing bugs and exploits wetware has to offer.&lt;/p&gt;
+&lt;!--more--&gt;</description>
+				<pubDate>Fri, 29 Jul 2011 00:00:00 +1000</pubDate>
+				<link>http://pjf.id.au///talks/2011/07/29/all-your-brains-suck.html</link>
+				<guid isPermaLink="true">http://pjf.id.au///talks/2011/07/29/all-your-brains-suck.html</guid>
+			</item>
+		
+
+                    
+                    
+                     
+	</channel>
+</rss>
