@@ -1,3 +1,7 @@
 timezone: Australia/Melbourne
 excerpt_separator: <!--more-->
 exclude: [ 'Rakefile.rb', 'bin', 'README.md', 'CNAME' ]
+
+name: paul.j.fenwick
+description: Some guy from the internet who loves freedom.
+url: http://pjf.id.au/
