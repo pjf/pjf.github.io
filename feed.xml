@@ -125,6 +125,118 @@ $ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt
                     
 
 			<item>
+				<title>Gamify Your Command Line With Habitrpg</title>
+				<description>&lt;p&gt;&lt;img src=&quot;/images/privacygeek/hrpg-screenshot.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So, you’re using &lt;a href=&quot;http://habitrpg.com&quot;&gt;HabitRPG&lt;/a&gt; to gamify your life, right? You should be; what could be better than collecting XP and gold for fixing bugs and doing chores and flossing your teeth, and developing a totally kick-arse character you’d want to show off to all your friends?&lt;/p&gt;
+
+&lt;p&gt;Oh yeah, doing all that &lt;em&gt;from the command-line&lt;/em&gt;. ;)&lt;/p&gt;
+
+&lt;p&gt;So, I present to you &lt;code&gt;&lt;a href='https://metacpan.org/module/hrpg'&gt;hrpg&lt;/a&gt;&lt;/code&gt;, a command-line tool to integrate with HabitRPG. It’s still new, but it’s very full featured.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
+
+&lt;p&gt;To begin with, you’ll need a HabitRPG account. Just head over to &lt;a href=&quot;http://habitrpg.com/&quot;&gt;HabitRPG&lt;/a&gt; and make an account using whatever method you like. If you’ve already got a HabitRPG account, that’s excellent!&lt;/p&gt;
+
+&lt;p&gt;You’ll also need to install &lt;a href=&quot;https://metacpan.org/module/WebService::HabitRPG&quot;&gt;WebService::HabitRPG&lt;/a&gt; which the &lt;code&gt;hrpg&lt;/code&gt; client is bundled with. The easiest way to do this is with &lt;a href=&quot;http://cpanmin.us&quot;&gt;cpanm&lt;/a&gt;. If you don’t have &lt;code&gt;cpanm&lt;/code&gt; installed, I have a &lt;a href=&quot;http://privacygeek.blogspot.com.au/2013/03/the-worlds-easiest-guide-to-installing.html&quot;&gt;super-easy guide for you&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cpanm WebService::HabitRPG&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On HabitRPG, head over to Settings, and navigate to the API tab. There’ll be a user-id and an API-key here. Use your favourite editor to open a &lt;code&gt;.habitrpgrc&lt;/code&gt; file in your home directory with the following format:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[auth]
+user_id   = xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+api_token = xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&amp;lt;/pre&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Replace the long strings of ‘x’s with your user id and API token from the HabitRPG website, and we’re ready to go!&lt;/p&gt;
+
+&lt;h3 id=&quot;using_hrpg&quot;&gt;Using hrpg&lt;/h3&gt;
+
+&lt;p&gt;The easiest way to get started with hrpg is to run it with no arguments. This will provide you with a help display:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hrpg
+
+Usage:
+
+hrpg status                  : Show current HP/XP/GP
+hrpg tasks                   : Show current tasks
+hrpg habit|daily|reward|todo : Show tasks of current type
+hrpg new                     : Create new task 'hrpg new' for help.
+hrpg [+-] task               : Increment/decrement a task or habit
+
+Debugging commands:
+
+hrpg dump                    : Dump entire user info
+hrpg dump tasks              : Dump task info&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Most of these commands are pretty straightforward. For example, if I type hrpg status I’ll get some basic info about my character:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hrpg status
+
+Hark, Paul Fenwick! (Lv 3)
+
+HP: 45.7 / 50
+XP: 25 / 170
+GP: 30 | SP: 54 | CP: 18&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;However there are a few things which require a little more explanation, and will make your HabitRPG experience much nicer! Firstly, let’s find out how to make a task:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hrpg new
+
+Usage: hrpg new [habit|todo|daily] +- &amp;quot;name&amp;quot; [&amp;quot;note&amp;quot;]&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There are three different tasks we can make. Daily tasks are things we want to do every day, like brush our teeth, practice our anki cards, or fill in our idonethis log. They give us XP and coins when we complete them, and will damage our HP if we neglect them.&lt;/p&gt;
+
+&lt;p&gt;Todo items are things which need to be done, but only once. Something like paying a bill, or booking a flight.&lt;/p&gt;
+
+&lt;p&gt;Habits are things which we want to get into—or out of—the habit of doing. For example, we might want to get penalised whenever we eat junk food or smoke a cigarette, or rewarded whenever we exercise or respond to a client email. Habits can be triggered multiple times per day.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;+&lt;/code&gt; and &lt;code&gt;-&lt;/code&gt; modifiers tell HabitRPG if something is good, bad, or potentially both. For example, you might have a ‘pomodoro’ habit which rewards you for working solidly for a period of time, or penalises you if you get distracted when you’re supposed to be working solidly.&lt;/p&gt;
+
+&lt;p&gt;Finally, all tasks need a name. This is what shows up in the web interface, but most importantly for us any unique abbreviation of this name is how we’ll refer to our tasks in hrpg.&lt;/p&gt;
+
+&lt;p&gt;Notes are entirely optional, and will show up as tool-tips in the web interface if you use it.&lt;/p&gt;
+
+&lt;p&gt;So, let’s make a few tasks. We’ll have one that rewards us for drinking water, and penalises us for drinking unhealthy drinks. We’ll have another one for responding to email (something I personally suck at), and another daily goal to floss our teeth.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hrpg new habit +- &amp;quot;Drink healthily&amp;quot;
+hrpg new habit + &amp;quot;Respond to email&amp;quot;
+hrpg new daily + &amp;quot;Floss teeth&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once we’ve set up tasks, we can tell HabitRPG that we’ve completed them. For example, if we drank a refreshing but unhealthy drink, and then flossed our teeth, we could use:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hrpg - drink
+$ hrpg + floss&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note that any unique abbreviation of our task name is acceptable. If we try an abbreviation that isn’t unique, hrpg will provide us with a list of options, along with their unique task IDs:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hrpg + pomodoro
+
+Did you mean...
+
+* Pomodoro of paid work (12fb2922-74be-45d3-b9ed-11e2fa1721c9)
+* Pomodoro of anything useful (424e327c-9738-4743-ac74-b9f5c528b555)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As an added bonus, if you’re already a user for the &lt;a href=&quot;http://pjf.id.au/privacygeek/2013/02/10/reimplementing-the-idonethis-memory-service.html&quot;&gt;idone command line client&lt;/a&gt; for &lt;a href=&quot;http://idonethis.com/&quot;&gt;http://idonethis.com/&lt;/a&gt;, then you can mark a habit as done, and record a note in idonethis &lt;em&gt;at the same time&lt;/em&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hrpg + email &amp;quot;Sent quote on flux capacitors to Dr Brown&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the future, if HabitRPG supports logging tasks with notes, these will also be appended to your HabitRPG log.&lt;/p&gt;
+
+&lt;h2 id=&quot;under_the_hood&quot;&gt;Under the hood&lt;/h2&gt;
+
+&lt;p&gt;hrpg sits on top of the &lt;a href=&quot;https://metacpan.org/module/WebService::HabitRPG&quot;&gt;WebService::HabitRPG&lt;/a&gt; module for &lt;a href=&quot;http://perl.org&quot;&gt;Perl&lt;/a&gt;. If you’re interested in reporting bugs, suggesting features, improving the docs, or even contributing code yourself, you can find the &lt;a href=&quot;https://github.com/pjf/WebService-HabitRPG&quot;&gt;repository on github&lt;/a&gt;.&lt;/p&gt;</description>
+				<pubDate>Sat, 23 Mar 2013 05:22:00 +0000</pubDate>
+				<link>http://pjf.id.au///privacygeek/2013/03/23/gamify-your-command-line-with-HabitRPG.html</link>
+				<guid isPermaLink="true">http://pjf.id.au///privacygeek/2013/03/23/gamify-your-command-line-with-HabitRPG.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>Reimplementing the iDoneThis Memory Service</title>
 				<description>&lt;p&gt;There’s an excellent website called &lt;a href=&quot;http://idonethis.com/&quot;&gt;iDoneThis.com&lt;/a&gt; which implements the most simple yet brilliant of services. Every day, you record the list of things you’ve done, and it gives you a check-mark for that day. This was motivating in two ways: firstly, the desire to keep that chain of check-marks running (what’s known as a ‘chain calendar’ or a ‘Seinfeld calendar’), and secondly by emailing you your memories of what you were doing a year (or a week, or a month) ago.&lt;/p&gt;
 
@@ -321,21 +433,6 @@ Here's what you were doing on 2012-02-11:
 				<pubDate>Sat, 24 Sep 2011 06:59:00 +0000</pubDate>
 				<link>http://pjf.id.au///privacygeek/2011/09/24/facebook-friends-lists-are-now-less-private.html</link>
 				<guid isPermaLink="true">http://pjf.id.au///privacygeek/2011/09/24/facebook-friends-lists-are-now-less-private.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>All Your Brains Suck</title>
-				<description>&lt;div class='video-container'&gt;&lt;iframe height='420' src='http://www.youtube.com/embed/OnX5v0uwNjc?html5=1' width='560'&gt; &lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&lt;a href='http://www.youtube.com/watch?v=OnX5v0uwNjc'&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Our brains are not-at-all suited for modern life, and are plagued by a raft of bugs and unwanted features that we’ve been unable to remove. Join us in a tour of some of the most amusing bugs and exploits wetware has to offer.&lt;/p&gt;
-&lt;!--more--&gt;</description>
-				<pubDate>Fri, 29 Jul 2011 00:00:00 +1000</pubDate>
-				<link>http://pjf.id.au///talks/2011/07/29/all-your-brains-suck.html</link>
-				<guid isPermaLink="true">http://pjf.id.au///talks/2011/07/29/all-your-brains-suck.html</guid>
 			</item>
 		
 
