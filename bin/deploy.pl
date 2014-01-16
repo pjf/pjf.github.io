@@ -30,8 +30,8 @@ say {$fh} "pjf.id.au";
 close($fh);
 
 # Tell github it shouldn't run jekyll a second time.
-open(my $fh, '>', '.nojekyll');
-close($fh);
+open(my $nojekyll, '>', '.nojekyll');
+close($nojekyll);
 
 # Take a timestamp, and send everything to github.
 
