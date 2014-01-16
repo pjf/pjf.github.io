@@ -67,3 +67,23 @@ img.me {
 .tip-box i {
     margin-bottom: 2em;
 }
+
+/* Responsive video containers, courtesy
+ * http://avexdesigns.com/responsive-youtube-embed/ 
+ */
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
