@@ -24,6 +24,11 @@ remove_tree(keys %files);
 # Move everything in site up a level
 system("mv _site/* .");
 
+# Add domain info
+open(my $fh, '>', 'CNAME');
+say {$fh} "pjf.id.au";
+close($fh);
+
 my $time = localtime();
 
 # And send to githb.
