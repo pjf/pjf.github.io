@@ -51,17 +51,19 @@ img.me {
     border-radius: 10%;
 }
 
-/* Article footer */
+/* Tip box */
 
-#footer {
-    border-top: 1px solid #bbb;
-    padding-top: 2em;
+.tip-box {
+    border-top:    1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    padding-top:    2em;
+    padding-bottom: 2em;
 }
 
-#footer p {
+.tip-box p {
     margin-bottom: 0.5em;
 }
 
-#footer .gittip {
-    margin-bottom: 4em;
+.tip-box i {
+    margin-bottom: 2em;
 }
