@@ -50,3 +50,18 @@ img.me {
     max-width: 20%;
     border-radius: 10%;
 }
+
+/* Article footer */
+
+#footer {
+    border-top: 1px solid #bbb;
+    padding-top: 2em;
+}
+
+#footer p {
+    margin-bottom: 0.5em;
+}
+
+#footer .gittip {
+    margin-bottom: 4em;
+}
