@@ -1,0 +1,42 @@
+---
+layout: default
+title: Paul Fenwick's Talks
+---
+
+<article class="is-post">
+
+    <img class="me" src="/images/pjf_square.jpg" />
+
+    <header>
+        <h2>{{ page.title }}</h2>
+    </header>
+
+    <p>Below are some of the many talks that I've given.  If you're
+    interested in having me talk at your conference, event, or
+    user group, then please <a href="mailto:paul.j.fenwick@gmail.com">email
+    me</a> and let me know!</p>
+
+</article>
+
+{% assign count = 0 %}
+
+{% for post in site.categories.talks %}
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        </header>
+
+        {% include info.html %}
+
+        <!-- DIY excerpts; not sure why I can't get jekyll to do them -->
+
+        {% if post.content contains '<!--more-->' %}
+            {{ post.content | split:'<!--more-->' | first }}
+        {% endif %}
+
+        <a href="{{ post.url }}">(read more...)</a>
+
+    </article>
+{% endfor %}
