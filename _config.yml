@@ -1,3 +1,3 @@
 timezone: Australia/Melbourne
 excerpt_separator: <!--more-->
-exclude: [ 'Rakefile.rb', 'bin' ]
+exclude: [ 'Rakefile.rb', 'bin', 'README.md' ]
