@@ -29,9 +29,14 @@ open(my $fh, '>', 'CNAME');
 say {$fh} "pjf.id.au";
 close($fh);
 
+# Tell github it shouldn't run jekyll a second time.
+open(my $fh, '>', '.nojekyll');
+close($fh);
+
+# Take a timestamp, and send everything to github.
+
 my $time = localtime();
 
-# And send to githb.
 system("git add -A");
 system(qq{git commit -m"Site update at $time"});
 system("git push");
