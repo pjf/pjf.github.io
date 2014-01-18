@@ -7,6 +7,7 @@ Parameters:
     * limit   - default 5
     * cat     - only include this category
     * exclude - exclude this category
+    * tag     - only include this tag
 
 {% endcomment %}
 
@@ -26,6 +27,11 @@ Parameters:
         {% endunless %}
     {% endif %}
 
+    {% if include.tag %}
+        {% unless post.tags contains include.tag %}
+            {% continue %}
+        {% endunless %}
+    {% endif %}
 
 
     {% comment %} Skip post if in our excluded list {% endcomment %}
