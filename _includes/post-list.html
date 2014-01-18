@@ -1,0 +1,61 @@
+{% comment %}
+
+Post listing for pjf.id.au
+
+Parameters:
+
+    * limit   - default 5
+    * cat     - only include this category
+    * exclude - exclude this category
+
+{% endcomment %}
+
+{% if include.limit %} {% assign limit = include.limit %}
+{% else %}             {% assign limit = 5             %}
+{% endif %}
+
+{% assign count = 0 %}
+
+{% for post in site.posts %}
+
+    {% comment %} Skip this post if not in our category {% endcomment %}
+
+    {% if include.cat %}
+        {% unless post.categories contains include.cat %}
+            {% continue %}
+        {% endunless %}
+    {% endif %}
+
+
+
+    {% comment %} Skip post if in our excluded list {% endcomment %}
+
+    {% if include.exclude %}
+        {% if post.categories contains include.exclude %}
+            {% continue %}
+        {% endif %}
+    {% endif %}
+
+
+
+    {% assign count = count|plus:1 %}
+
+    {% if count > limit %}
+        {% break %}
+    {% endif %}
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        </header>
+
+        {% include info.html %}
+
+        {% if post.content contains '<!--more-->' %}
+            {{ post.content | split:'<!--more-->' | first }}
+            <a href="{{ post.url }}">(read more...)</a>
+        {% endif %}
+
+    </article>
+{% endfor %}
