@@ -1,6 +1,6 @@
 ---
 title: Use Markdown Instead Of BBCode With Vimperator
-tags: vimperator phpBB BBCode markdown perl
+tags: vimperator phpBB BBCode markdown perl tech
 ---
 
 I really love the Dwarf Fortress community, and a lot of it is centred

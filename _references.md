@@ -1,3 +1,5 @@
+[laputa]: http://en.wikipedia.org/wiki/Castle_in_the_Sky "Wikipedia: Laputa—Castle in the Sky"
+
 # From the ethics of everyday people
 
 [katrina-funding]: http://www.washingtonpost.com/wp-dyn/content/article/2005/09/08/AR2005090801081.html "Washington Post: Congress approves $51.8 Billion for Victims"

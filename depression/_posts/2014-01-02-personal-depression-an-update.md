@@ -1,5 +1,5 @@
 ---
-title: "Personal: Depression—An Update"
+title: "Depression—An Update"
 tags: depression personal longpost misanthropy longpost
 orig_url: https://www.facebook.com/paul.fenwick/posts/10151911141249611
 ---
