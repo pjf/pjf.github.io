@@ -5,3 +5,8 @@ exclude: [ 'Rakefile.rb', 'bin', 'README.md', 'CNAME', '_assets' ]
 name: paul.j.fenwick
 description: Some guy from the internet who loves freedom.
 url: http://pjf.id.au/
+
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/feed.xml"
