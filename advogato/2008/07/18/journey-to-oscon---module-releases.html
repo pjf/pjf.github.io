@@ -133,6 +133,22 @@ For those hoping to meet me at OSCON, I'll be landing Saturday, but I won't be v
     var disqus_identifier = '/advogato/2008/07/18/journey-to-oscon---module-releases.html';
     var disqus_title      = 'Journey to OSCON / Module releases';
 
+    /* Make sure that once disqus renders, we trigger any events that
+     * need to happen on page resize. Otherwise our left-bar looks funny. */
+
+    function disqus_config() {
+        this.callbacks.onReady = [function() {
+            var $sc = $('#sidebar, #content');
+
+if (skel.isActive('mobile') || skel.isActive('narrower'))
+    $sc.css('min-height', '0').css('height', 'auto');
+else
+    $sc.css('min-height', $(window).height()).css('height', $(document).height());
+
+
+        }];
+    }
+
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

@@ -123,6 +123,22 @@ An excellent read for anyone interested in financial mathematics and modern port
     var disqus_identifier = '/advogato/2005/02/21/financial-mathematics.html';
     var disqus_title      = 'Financial Mathematics';
 
+    /* Make sure that once disqus renders, we trigger any events that
+     * need to happen on page resize. Otherwise our left-bar looks funny. */
+
+    function disqus_config() {
+        this.callbacks.onReady = [function() {
+            var $sc = $('#sidebar, #content');
+
+if (skel.isActive('mobile') || skel.isActive('narrower'))
+    $sc.css('min-height', '0').css('height', 'auto');
+else
+    $sc.css('min-height', $(window).height()).css('height', $(document).height());
+
+
+        }];
+    }
+
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

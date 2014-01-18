@@ -138,6 +138,22 @@ I can't believe we eat the eggs of these birds.  On the other hand, I have an ov
     var disqus_identifier = '/advogato/2003/05/09/chicken-behavior.html';
     var disqus_title      = 'Chicken Behavior';
 
+    /* Make sure that once disqus renders, we trigger any events that
+     * need to happen on page resize. Otherwise our left-bar looks funny. */
+
+    function disqus_config() {
+        this.callbacks.onReady = [function() {
+            var $sc = $('#sidebar, #content');
+
+if (skel.isActive('mobile') || skel.isActive('narrower'))
+    $sc.css('min-height', '0').css('height', 'auto');
+else
+    $sc.css('min-height', $(window).height()).css('height', $(document).height());
+
+
+        }];
+    }
+
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

@@ -124,6 +124,22 @@ Shiver me timbers!  <a href="http://www.puzzlepirates.com/">Puzzle Pirates</a> i
     var disqus_identifier = '/advogato/2005/10/24/chickens----4.html';
     var disqus_title      = 'Chickens += 4';
 
+    /* Make sure that once disqus renders, we trigger any events that
+     * need to happen on page resize. Otherwise our left-bar looks funny. */
+
+    function disqus_config() {
+        this.callbacks.onReady = [function() {
+            var $sc = $('#sidebar, #content');
+
+if (skel.isActive('mobile') || skel.isActive('narrower'))
+    $sc.css('min-height', '0').css('height', 'auto');
+else
+    $sc.css('min-height', $(window).height()).css('height', $(document).height());
+
+
+        }];
+    }
+
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

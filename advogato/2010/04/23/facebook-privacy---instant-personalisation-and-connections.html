@@ -157,6 +157,22 @@ I'll be <a href="http://opensourcebridge.org/proposals/425">talking more about F
     var disqus_identifier = '/advogato/2010/04/23/facebook-privacy---instant-personalisation-and-connections.html';
     var disqus_title      = 'Facebook privacy - Instant personalisation and connections';
 
+    /* Make sure that once disqus renders, we trigger any events that
+     * need to happen on page resize. Otherwise our left-bar looks funny. */
+
+    function disqus_config() {
+        this.callbacks.onReady = [function() {
+            var $sc = $('#sidebar, #content');
+
+if (skel.isActive('mobile') || skel.isActive('narrower'))
+    $sc.css('min-height', '0').css('height', 'auto');
+else
+    $sc.css('min-height', $(window).height()).css('height', $(document).height());
+
+
+        }];
+    }
+
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
