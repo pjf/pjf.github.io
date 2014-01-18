@@ -1,12 +1,14 @@
 ---
 title: "Obviously, they're a jerk"
-tags: longpost cognitive-bias introspection fundamental-attribution-error personal
+tags: longpost cognitive-bias introspection fundamental-attribution-error personal ethics
 ---
 
 People are so completely incomprehensible sometimes. We look at the actions of
 others, and think "why would they do that?" and "what were they thinking?".
 Often we explain their behaviour by ascribing them traits. Someone cuts you off
 and runs a red light? They're obviously a jerk.
+
+<!--more-->
 
 What we so often forgetting is that inside everyone's head is a consistent
 story. They're doing what they're doing because it makes sense to them at the

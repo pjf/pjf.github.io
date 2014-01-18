@@ -1,6 +1,6 @@
 ---
 title: "Personal: Depression—An Update"
-tags: depression personal longpost misanthropy
+tags: depression personal longpost misanthropy longpost
 orig_url: https://www.facebook.com/paul.fenwick/posts/10151911141249611
 ---
 In late 2012 I had a depressive episode. This is well documented; [I wrote about it on-line](2012-11-29-i-have-depression-an-open-letter-by-paul-fenwick.html), and I even [gave a talk at OSCON](http://pjf.id.au/talks/2013/07/24/depression-bugs-in-your-brain.html). My thought processes during that

@@ -1,7 +1,7 @@
 ---
 title: "Admission: I'm a hypocrite"
 orig_url: https://www.facebook.com/paul.fenwick/posts/10151876802739611
-tags: ethics hypocrisy
+tags: ethics hypocrisy longpost
 ---
 
 I'm going to admit something awful. I'm a hypocrite. I don't try to hide that.

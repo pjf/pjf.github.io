@@ -1,5 +1,5 @@
 ---
-tags: open-source foss community freedome creativity
+tags: open-source foss community freedom creativity longpost ethics
 orig_url: https://www.facebook.com/paul.fenwick/posts/10151900792149611
 ---
 

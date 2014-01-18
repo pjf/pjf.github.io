@@ -1,6 +1,6 @@
 ---
 title: I Have Depression—An Open Letter by Paul Fenwick
-tags: depression featured personal
+tags: depression featured personal longpost
 ---
 
 Dear Everyone,

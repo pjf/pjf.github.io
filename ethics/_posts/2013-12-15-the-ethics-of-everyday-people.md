@@ -1,6 +1,6 @@
 ---
 title: The ethics of everyday people
-tags: ethics truth morality
+tags: ethics truth morality longpost
 orig_post: https://www.facebook.com/paul.fenwick/posts/10151875254259611
 ---
 I seem to regularly find myself horrified by the ethics of everyday people.
