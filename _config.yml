@@ -1,6 +1,6 @@
 timezone: Australia/Melbourne
 excerpt_separator: <!--more-->
-exclude: [ 'Rakefile.rb', 'bin', 'README.md', 'CNAME' ]
+exclude: [ 'Rakefile.rb', 'bin', 'README.md', 'CNAME', '_assets' ]
 
 name: paul.j.fenwick
 description: Some guy from the internet who loves freedom.
