@@ -12,6 +12,8 @@ comfortable about.
 
 And really, that's the point.
 
+<!--more-->
+
 It would be simple for me to find a reason why I don't care about the suffering
 of others. Overpopulation is an easy excuse, and it's one I've reached for in
 the past. There are an endless number of excuses I can reach for to justify
