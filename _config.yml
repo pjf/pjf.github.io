@@ -1,10 +1,18 @@
 timezone: Australia/Melbourne
 excerpt_separator: <!--more-->
-exclude: [ 'Rakefile.rb', 'bin', 'README.md', 'CNAME', '_assets' ]
-
 name: paul.j.fenwick
-description: Some guy from the internet who loves freedom.
+description: "Some guy from the internet who loves freedom."
 url: http://pjf.id.au/
+
+exclude: 
+    - '_assets'
+    - 'bin'
+    - 'CNAME'
+    - 'Gemfile'
+    - 'Gemfile.lock'
+    - 'Rakefile.rb'
+    - 'README.md'
+
 
 # addthis:
 #    publisher: ra-52daa5464f2c1c4b
