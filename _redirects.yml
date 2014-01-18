@@ -1,0 +1,9 @@
+# You can add redirects here. Eg:
+#
+# initial-page   : /destination-page
+# other-page     : http://example.org/destination-page
+# "another/page" : /destination-page
+#
+# See https://github.com/nquinlan/jekyll-pageless-redirects
+
+example : http://example.com/
