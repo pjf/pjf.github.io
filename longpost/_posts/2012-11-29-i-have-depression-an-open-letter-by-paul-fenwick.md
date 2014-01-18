@@ -1,6 +1,6 @@
 ---
 title: I Have Depression—An Open Letter by Paul Fenwick
-tags: depression featured
+tags: depression featured personal
 ---
 
 Dear Everyone,
@@ -12,6 +12,8 @@ away. It’s not the sort of thing that even has a good reason, although there
 might have been one originally. It’s the sort of thing that can stick with you
 for months or even years, is a recognised illness, and is one of the worst
 possible states a human can experience.
+
+<!--more-->
 
 I know this news will surprise some of you. To many people reading this letter,
 I’m the guy who’s always happy. I’m the guy who’s always having a good time,
