@@ -5,6 +5,15 @@
     var disqus_identifier = '{{ post.url   }}';
     var disqus_title      = '{{ post.title }}';
 
+    /* Make sure that once disqus renders, we trigger any events that
+     * need to happen on page resize. Otherwise our left-bar looks funny. */
+
+    function disqus_config() {
+        this.callbacks.onReady = [function() {
+            {% include on_resize.js %}
+        }];
+    }
+
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

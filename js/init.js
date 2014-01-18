@@ -1,3 +1,5 @@
+---
+---
 /*
 	Striped 2.5 by HTML5 Up!
 	html5up.net | @n33co
@@ -76,20 +78,17 @@ skel.init(
 
 $(function() {
 
-	var $window = $(window), $document = $(document), $sc = $('#sidebar, #content'), tid;
-	
-	$window.load(function() {
+    var $window = $(window), $document = $(document), $sc = $('#sidebar, #content'), tid;
+    
+    $window.load(function() {
 
-		$window.resize(function() {
-			window.clearTimeout(tid);
-			tid = window.setTimeout(function() {
-				if (skel.isActive('mobile') || skel.isActive('narrower'))
-					$sc.css('min-height', '0').css('height', 'auto');
-				else
-					$sc.css('min-height', $window.height()).css('height', $document.height());
-			}, 100);
-		}).trigger('resize');
-		
-	});
+        $window.resize(function() {
+            window.clearTimeout(tid);
+            tid = window.setTimeout(function() {
+                {% include on_resize.js %}
+            }, 100);
+        }).trigger('resize');
+        
+    });
 
 });
