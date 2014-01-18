@@ -6,6 +6,9 @@ name: paul.j.fenwick
 description: Some guy from the internet who loves freedom.
 url: http://pjf.id.au/
 
+# addthis:
+#    publisher: ra-52daa5464f2c1c4b
+
 sitemap:
     file: "/sitemap.xml"
     exclude:
