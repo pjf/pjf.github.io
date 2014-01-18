@@ -1,6 +1,7 @@
 ---
 tags: open-source foss community freedom creativity longpost ethics tech
 orig_url: https://www.facebook.com/paul.fenwick/posts/10151900792149611
+alias: /longpost/2013/12/28/on-open-source-software-and-communities.html
 ---
 
 Open source software is great. You don't have to worry about the owner deciding
