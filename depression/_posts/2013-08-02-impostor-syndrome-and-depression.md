@@ -4,17 +4,17 @@ tags: impostor-syndrome depression personal
 orig_url: https://www.facebook.com/paul.fenwick/posts/10151600213599611
 ---
 
-You might have encountered the term Impostor Syndrome¹, where people feel that
-they're somehow "faking it". This is common with programmers, artists, public
-speakers, and I suspect anyone who is able to see the faults in their own work,
-despite others judging that work on its merits.
+You might have encountered the term [Impostor Syndrome][impostor-syndrome],
+where people feel that they're somehow "faking it". This is common with
+programmers, artists, public speakers, and I suspect anyone who is able to see
+the faults in their own work, despite others judging that work on its merits.
 
 If you've ever started a thought with "You may be impressed now, but if you
 only knew I was just making it up/not doing it the right way/not really that
 cool/lucky/had good timing/have no idea what I'm doing", then you may know what
 impostor syndrome is like. If you've been feeling that way a lot—and I know
 people with years of experience who still don't consider themselves "a *real*
-programmer/artist/performer/badass—then you might actually have impostor
+programmer/artist/performer/badass"—then you might actually have impostor
 syndrome.
 
 <!--more-->
@@ -23,8 +23,9 @@ Impostor syndrome is problematic on many levels. It not only denies the value
 of your own work, but it also invalidates others who appreciate your
 accomplishments. It stops others from using you as a role model. It gets in the
 way of everyone being able to multiply the good that you're doing in the world.
-Denise Paolucci from Dreamwidth has a fantastic talk on Impostor Syndrome which
-I strongly encourage you to watch².
+Denise Paolucci from Dreamwidth has a
+[fantastic talk on Impostor Syndrome][impostor-denise] which I strongly
+encourage you to watch.
 
 And so this brings me to my admission for the day. For a while now I've been
 experiencing a very odd form of impostor syndrome. Rather than not feeling like
@@ -42,7 +43,7 @@ I've learnt, and I'm great at faking it.
 I've not always felt this way. Go back a few years and that enthusiasm you saw
 was absolutely 85% genuine. Now it feels like it's more 35% genuine. I'm
 enthusiastic out of habit and expectation, because that's the character I play,
-but it's not because of how I really feel³.
+but it's not because of how I really feel¹.
 
 If you're me, then this a fascinating position to be in. I don't want to say
 "this is just how I am now", because those qualities that I'm "faking" are all
@@ -88,7 +89,7 @@ days each, and so my plan is to head north next week.
 However there are things which I know I'm likely to be poor at, and would
 definitely appreciate some help. Ones which immediately spring to mind include:
 
-* Exercise. Without going fully neuro on you, some extra BDNF⁴ isn't going to
+* Exercise. Without going fully neuro on you, some extra [BDNF][BDNF] isn't going to
 hurt. If you're in Portland and having a work bike that I can borrow, that
 would probably do wonders for raising my incidental exercise levels.
 
@@ -114,14 +115,8 @@ Thanks for reading. Thoughts, comments, and discussion quite welcome.
 depressive episode, but because the lack of motivation and ruminating thoughts
 feel like hangovers from my episode last year.
 
-¹ https://en.wikipedia.org/wiki/Impostor_syndrome
-
-² https://www.youtube.com/watch?v=zZg9rax-ky4
-
-³ Of course, my response to reduced enthusiasm was to go researching dopamine
+¹ Of course, my response to reduced enthusiasm was to go researching dopamine
 and reward seeking behaviours as they relate to neuropsychology. If I had more
 than 35% enthusiasm I'd have written an article on this by now. There's also a
 cognitive bias known as rosy retrospection, so I probably view my past
 enthusiasm as being greater than it really was.
-
-⁴ https://en.wikipedia.org/wiki/BDNF

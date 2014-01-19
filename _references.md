@@ -7,3 +7,9 @@
 [malaria-death-toll]: http://www.telegraph.co.uk/health/healthnews/9058283/Malaria-death-toll-far-higher-than-previously-thought.html "Telegraph: Malaria death toll far higher than previously thought"
 [semmelweis-conflict]: http://en.wikipedia.org/wiki/Ignaz_Semmelweis#Conflict_with_established_medical_opinions "Ignaz Semmelweis - Conflict with established medical opinions"
 [reactance]: http://en.wikipedia.org/wiki/Reactance_(psychology) "Wikipedia: Reactance (psychology)"
+
+# On impostor syndrome and depression
+
+[impostor-syndrome]: https://en.wikipedia.org/wiki/Impostor_syndrome "Wikipedia: Impostor Syndrome"
+[impostor-denise]: https://www.youtube.com/watch?v=zZg9rax-ky4 "Denise Paolucci: Overcoming Impostor Syndrome (YouTube)"
+[BDNF]: https://en.wikipedia.org/wiki/BDNF "Wikipedia: Brain-derived neurotrophic factor"
