@@ -14,8 +14,8 @@ exclude:
     - 'README.md'
 
 
-# addthis:
-#    publisher: ra-52daa5464f2c1c4b
+addthis:
+    publisher: ra-52daa5464f2c1c4b
 
 sitemap:
     file: "/sitemap.xml"
