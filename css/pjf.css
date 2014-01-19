@@ -101,3 +101,25 @@ img.me {
     list-style: decimal;
     padding-left: 1em;
 }
+
+/* AddThis */
+
+div.addthis_container {
+    padding-top:    1em;
+    padding-bottom: 1em;
+}
+
+.addthis_container p {
+    float: left;
+    font-weight: bold;
+    padding-right: 1em;
+}
+
+div.addthis {
+    display: inline-block;
+}
+
+/* Rounded corners on the buttons, please */
+.addthis_32x32_style span {
+    border-radius: 10%;
+}

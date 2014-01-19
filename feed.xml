@@ -62,7 +62,7 @@ $ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt
                     
 
 			<item>
-				<title>Personal: Depression—An Update</title>
+				<title>Depression—An Update</title>
 				<description>&lt;p&gt;In late 2012 I had a depressive episode. This is well documented; &lt;a href=&quot;2012-11-29-i-have-depression-an-open-letter-by-paul-fenwick.html&quot;&gt;I wrote about it on-line&lt;/a&gt;, and I even &lt;a href=&quot;http://pjf.id.au/talks/2013/07/24/depression-bugs-in-your-brain.html&quot;&gt;gave a talk at OSCON&lt;/a&gt;. My thought processes during that time were broken and cyclical; cognitively I knew that people were great, but emotionally I found myself intensely disliking them. As someone who’s long derived joy and energy from those around me, I seemed to spend all my energy arguing with the emotional part of myself that people &lt;em&gt;were&lt;/em&gt; great… and yet it wouldn’t listen. The situation was exhausting, and I didn’t get anywhere.&lt;/p&gt;
 
 &lt;p&gt;Eventually, I struck a deal. I would admit that perhaps people aren’t as great as I once thought, and that emotional monkey-brain would quieten down and let me think again. It worked, and I’d joke with my role-playing friends I recovered by taking a point in misanthropy.&lt;/p&gt;
@@ -97,8 +97,8 @@ $ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt
 
 &lt;p&gt;² Amongst other things, my talk ”&lt;a href=&quot;http://pjf.id.au/talks/2011/07/29/all-your-brains-suck.html&quot;&gt;All Your Brains Suck&lt;/a&gt;” discusses how we use environmental queues to rationalise thoughts and emotions.&lt;/p&gt;</description>
 				<pubDate>Thu, 02 Jan 2014 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au///longpost/2014/01/02/personal-depression-an-update.html</link>
-				<guid isPermaLink="true">http://pjf.id.au///longpost/2014/01/02/personal-depression-an-update.html</guid>
+				<link>http://pjf.id.au///depression/2014/01/02/personal-depression-an-update.html</link>
+				<guid isPermaLink="true">http://pjf.id.au///depression/2014/01/02/personal-depression-an-update.html</guid>
 			</item>
 		
 
@@ -130,8 +130,8 @@ $ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt
 
 &lt;p&gt;Thank you.&lt;/p&gt;</description>
 				<pubDate>Sat, 28 Dec 2013 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au///longpost/2013/12/28/on-open-source-software-and-communities.html</link>
-				<guid isPermaLink="true">http://pjf.id.au///longpost/2013/12/28/on-open-source-software-and-communities.html</guid>
+				<link>http://pjf.id.au///ethics/2013/12/28/on-open-source-software-and-communities.html</link>
+				<guid isPermaLink="true">http://pjf.id.au///ethics/2013/12/28/on-open-source-software-and-communities.html</guid>
 			</item>
 		
 
@@ -157,8 +157,8 @@ $ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt
 &lt;hr /&gt;
 &lt;p&gt;This post was originally made as a comment on &lt;a href=&quot;https://www.facebook.com/paul.fenwick/posts/10151875254259611&quot;&gt;another thread regarding ethics&lt;/a&gt;. I’ve posted it here—with minor edits—for a wider audience.&lt;/p&gt;</description>
 				<pubDate>Mon, 16 Dec 2013 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au///longpost/2013/12/16/im-a-hypocrite.html</link>
-				<guid isPermaLink="true">http://pjf.id.au///longpost/2013/12/16/im-a-hypocrite.html</guid>
+				<link>http://pjf.id.au///ethics/2013/12/16/im-a-hypocrite.html</link>
+				<guid isPermaLink="true">http://pjf.id.au///ethics/2013/12/16/im-a-hypocrite.html</guid>
 			</item>
 		
 
@@ -198,8 +198,81 @@ $ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt
 
 &lt;p&gt;~ Paul&lt;/p&gt;</description>
 				<pubDate>Sun, 15 Dec 2013 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au///longpost/2013/12/15/the-ethics-of-everyday-people.html</link>
-				<guid isPermaLink="true">http://pjf.id.au///longpost/2013/12/15/the-ethics-of-everyday-people.html</guid>
+				<link>http://pjf.id.au///ethics/2013/12/15/the-ethics-of-everyday-people.html</link>
+				<guid isPermaLink="true">http://pjf.id.au///ethics/2013/12/15/the-ethics-of-everyday-people.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
+				<title>Obviously, they're a jerk</title>
+				<description>&lt;p&gt;People are so completely incomprehensible sometimes. We look at the actions of others, and think “why would they do that?” and “what were they thinking?”. Often we explain their behaviour by ascribing them traits. Someone cuts you off and runs a red light? They’re obviously a jerk.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;What we so often forgetting is that inside everyone’s head is a consistent story. They’re doing what they’re doing because it makes sense to them at the time. If the person who cut you off at the lights has someone bleeding out in the back-seat and is speeding to the hospital, then their actions seem heroic, not jerky. But to us, the outside observer, we come to the wrong conclusions for their actions.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, we misattribute people’s behaviour all the time, even when those people are close to us. For me personally, October has been incredibly stressful. My father’s in hospital, I’ve spent weeks on divorce negotiations, I’ve been travelling far more than has been comfortable, there’s been tax, housemates moving out, housemates moving in, conference talks to write, work deadlines to meet, and my todo list is full to bursting. And that’s just the things I’m willing to talk about publicly.&lt;/p&gt;
+
+&lt;p&gt;I know for certain during this time that I’ve come across to some people as unreliable, uncaring, unresponsive, or unfriendly. That’s not been my intent, and I’ve tried to explain as best where I can, but sometimes explanations are not always possible. The best I can hope for is that others give me the benefit of the doubt.&lt;/p&gt;
+
+&lt;p&gt;So, I have a request for you, and it has nothing to do with me. The next time you think that someone’s uncaring or rude, the next time you think someone’s unreliable or inconsistent; the next time you think someone must dislike you because they’re not responding to your communication; then please think for a moment. That person has an internal story where their behaviour makes sense. If their behaviour seems puzzling to you, it may well be because you don’t know that story. So please, give them the benefit of the doubt. They may not be as big a jerk as you think.&lt;/p&gt;</description>
+				<pubDate>Tue, 29 Oct 2013 00:00:00 +1100</pubDate>
+				<link>http://pjf.id.au///ethics/2013/10/29/obviously-theyre-a-jerk.html</link>
+				<guid isPermaLink="true">http://pjf.id.au///ethics/2013/10/29/obviously-theyre-a-jerk.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
+				<title>Remembering better times</title>
+				<description>&lt;p&gt;One of the most frustrating thing about humans is that we’ll feel a particular way—happy, sad, angry, annoyed—and then we’ll find excuses as to &lt;em&gt;why&lt;/em&gt; we’re feeling that way. If we’re feeling sad, it’s &lt;em&gt;really&lt;/em&gt; hard to remember times when you were happy. If we’re feeling annoyed, then the most minor things can cause us to lose our cool, even if they’re things we’d hardly notice on better days.&lt;/p&gt;
+
+&lt;p&gt;It’s pretty clear that for whatever you’re feeling, that’s what you’ll be good at remembering. If you’re having a great time, you’ll be better at remembering similar happy memories. If you’re hitting a particular difficulty, it’s much too easy to remember all the other times you’ve hit the same difficulty.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;Sometimes we recognise our feelings are transient. When we’re feeling hungry, we know that’s a temporary state, even if it causes us to buy half the supermarket when we go shopping. But if we’re feeling sad or lonely, then it’s way too easy to think those are somehow permanent, because all the other similar occasions are what easily spring to mind.&lt;/p&gt;
+
+&lt;p&gt;One of the real struggles here is that there’s an actual block in being able to conjure up those other feelings. You might say, “I know I was feeling happy last Thursday”, but if you’re feeling rotten right now, then you’re just stuck with “knowing”, rather than “feeling”. That abstract knowledge might not make you feel any better—in fact unless you’ve actually sat down to honestly remember how you felt each day—you might not even remember that you were happy last Thursday in the first place.&lt;/p&gt;
+
+&lt;p&gt;This, more than anything else, is why I track my moods. It’s why I journal my experiences. My memory is biased, and records and journals are one of the few ways of seeing how I actually felt at any given time. My challenge is to keep them up to date; if I’m having a great time—and sometimes if I’m having an awful time—then often they don’t get recorded, and I miss what are arguably some of my most important records.&lt;/p&gt;
+
+&lt;p&gt;But even if you don’t track your moods and experiences, then at least remember that if you’re feeling down, or angry, or frustrated, then your brain—and your memory in particular—is going to actively mess with you. You may not be able to stop that from happening, but having knowledge and insight may at least help you make better choices than what you may have otherwise made.&lt;/p&gt;</description>
+				<pubDate>Tue, 29 Oct 2013 00:00:00 +1100</pubDate>
+				<link>http://pjf.id.au///depression/2013/10/29/feels-influence-perception.html</link>
+				<guid isPermaLink="true">http://pjf.id.au///depression/2013/10/29/feels-influence-perception.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
+				<title>A hope for humanity</title>
+				<description>&lt;p&gt;It’s fascinating how some feelings can hit you entirely out of the blue, when you’d least expect them, but that’s what happened yesterday to me in Japan.&lt;/p&gt;
+
+&lt;p&gt;I was exploring the local markets at Asasuka, and I’d found the Studio Ghibli store. There were all the things you’d expect: towels, handbags, keyrings, stickers, purses; nothing that I hadn’t really seen before, and certainly nothing that I thought would change how I feel.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;Except there was. In a display cabinet, at the back of the store, there was a model of one of the robots from &lt;a href=&quot;http://en.wikipedia.org/wiki/Castle_in_the_Sky&quot; title=&quot;Wikipedia: Laputa—Castle in the Sky&quot;&gt;Laputa: Castle in the Sky&lt;/a&gt;. A light layer of moss, bird’s nest on its shoulder, holding a flower. And, as a complete surprise to myself, I almost cried.&lt;/p&gt;
+
+&lt;p&gt;Laputa has long been one of my favourite films. I probably watched it a dozen times while growing up. The imagery in it is striking, but the most moving part for me was its portrayal of technology. The robots that tend Laputa are kind and gentle; they are immortal caretakers and protectors of nature and humanity alike.&lt;/p&gt;
+
+&lt;p&gt;Of course, when things start to go wrong, we discover the robots also have the capacity for destruction. That’s unfortunately true for technology in general; almost anything can be weaponised. But ultimately, technology allows us to make our lives better. We’ve never had such an amazing capacity to ease suffering, cure disease, travel distances, communicate, share, explore and discover as we have now.&lt;/p&gt;
+
+&lt;p&gt;Our understanding of modern science is still very much in its infancy. A hundred years ago we were only just getting started with electricity, and the results have been incredible. Right now, we’re still just getting started with microbiology and genetics. I think we have a future where we don’t just cure cancer, but a future where we &lt;em&gt;eliminate disease&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;In many ways, the robotic caretakers of Laputa symbolise my hopes for humanity. Technology is already our caretaker; modern cities simply couldn’t exist without automation, and for someone with a pacemaker or insulin pump, technology is a central part of simply being alive. I know that we’re going to get things wrong along the way—technology is already used for warfare and oppression—but it’s my most sincere hope that our relationship with technology will allow us to become more compassionate, more creative, more inquisitive, and more &lt;em&gt;human&lt;/em&gt; than we’ve ever been before. There is a nurturing and caring future for humanity, we just need to reach it.&lt;/p&gt;
+
+&lt;p&gt;It’s very rare for me to ever purchase something as a memento of my travels, but yesterday I did.&lt;/p&gt;
+
+&lt;p&gt;~ Paul&lt;/p&gt;</description>
+				<pubDate>Mon, 30 Sep 2013 00:00:00 +1000</pubDate>
+				<link>http://pjf.id.au///ethics/2013/09/30/a-hope-for-humanity.html</link>
+				<guid isPermaLink="true">http://pjf.id.au///ethics/2013/09/30/a-hope-for-humanity.html</guid>
 			</item>
 		
 
@@ -225,221 +298,22 @@ $ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt
 			<item>
 				<title>Depression: Bugs In Your Brain</title>
 				<description>&lt;div class='video-container'&gt;&lt;iframe height='420' src='http://www.youtube.com/embed/H8e4rQZPmQ?html5=1' width='560'&gt; &lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&lt;a href='http://www.youtube.com/watch?v=H8e4rQZPmQ'&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Internationally acclaimed public speaker Paul Fenwick talks about depression: What it is, why it sucks, and his own personal experiences in battling it. Drawing from a diverse range of fields, Paul provides insights into the bugs that may exist in your brain, and how some aspects of digital society may even make them worse.&lt;/p&gt;
-&lt;!--more--&gt;</description>
+&lt;p&gt;Earlier this year, I gave a presentation at OSCON on both my experiences with and the science of depression. The video of that presentation is above.&lt;/p&gt;
+
+&lt;p&gt;This isn’t a video of hope. It’s not a video of “everything is going to be okay”, because there’s no way I can say that. It’s a video discussing what it’s like, and some of the research as to what’s going on in your brain.&lt;/p&gt;
+
+&lt;p&gt;It’s a video that says that you are not alone.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;Depression is terrible. It makes it hard to look forward to anything. Decisions are difficult, because none of them seem worthwhile. It can make you lonely, and at the same time make the thought of seeing other people unpalatable. It can make you frustrated, but nothing seems to relieve that frustration, nothing seems to have meaning any more. And it can continue, all by itself. Once it starts, you can be depressed &lt;em&gt;because&lt;/em&gt; you’re depressed.&lt;/p&gt;
+
+&lt;p&gt;Depression has taken some of the best and brightest people in Open Source. I’m deeply grateful that the OSCON chairs agreed—on short notice—for me to have a location and film crew for this talk.&lt;/p&gt;
+
+&lt;p&gt;I’ve been sitting on the video for a while. I’ve been meaning to watch it—but for my own personal reasons—I haven’t been able to do so. If you’re the sort who &lt;em&gt;just&lt;/em&gt; want the science, skip forward to minute 12. If you only want my personal experiences, you can stop watching at the same point.&lt;/p&gt;
+
+&lt;p&gt;Thank you very much for your time, and especially thank you to everyone who has been so supportive and caring when I’ve struggled. Please don’t hesitate to share this talk widely. If you wish for me to speak on depression at your conference or event—and can find a way for me to get there—I’ll be happy to oblige.&lt;/p&gt;</description>
 				<pubDate>Wed, 24 Jul 2013 00:00:00 +1000</pubDate>
 				<link>http://pjf.id.au///talks/2013/07/24/depression-bugs-in-your-brain.html</link>
 				<guid isPermaLink="true">http://pjf.id.au///talks/2013/07/24/depression-bugs-in-your-brain.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>Gamify Your Command Line With Habitrpg</title>
-				<description>&lt;p&gt;&lt;img src=&quot;/images/privacygeek/hrpg-screenshot.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;So, you’re using &lt;a href=&quot;http://habitrpg.com&quot;&gt;HabitRPG&lt;/a&gt; to gamify your life, right? You should be; what could be better than collecting XP and gold for fixing bugs and doing chores and flossing your teeth, and developing a totally kick-arse character you’d want to show off to all your friends?&lt;/p&gt;
-
-&lt;p&gt;Oh yeah, doing all that &lt;em&gt;from the command-line&lt;/em&gt;. ;)&lt;/p&gt;
-
-&lt;p&gt;So, I present to you &lt;code&gt;&lt;a href='https://metacpan.org/module/hrpg'&gt;hrpg&lt;/a&gt;&lt;/code&gt;, a command-line tool to integrate with HabitRPG. It’s still new, but it’s very full featured.&lt;/p&gt;
-&lt;!--more--&gt;
-&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
-
-&lt;p&gt;To begin with, you’ll need a HabitRPG account. Just head over to &lt;a href=&quot;http://habitrpg.com/&quot;&gt;HabitRPG&lt;/a&gt; and make an account using whatever method you like. If you’ve already got a HabitRPG account, that’s excellent!&lt;/p&gt;
-
-&lt;p&gt;You’ll also need to install &lt;a href=&quot;https://metacpan.org/module/WebService::HabitRPG&quot;&gt;WebService::HabitRPG&lt;/a&gt; which the &lt;code&gt;hrpg&lt;/code&gt; client is bundled with. The easiest way to do this is with &lt;a href=&quot;http://cpanmin.us&quot;&gt;cpanm&lt;/a&gt;. If you don’t have &lt;code&gt;cpanm&lt;/code&gt; installed, I have a &lt;a href=&quot;http://privacygeek.blogspot.com.au/2013/03/the-worlds-easiest-guide-to-installing.html&quot;&gt;super-easy guide for you&lt;/a&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cpanm WebService::HabitRPG&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;On HabitRPG, head over to Settings, and navigate to the API tab. There’ll be a user-id and an API-key here. Use your favourite editor to open a &lt;code&gt;.habitrpgrc&lt;/code&gt; file in your home directory with the following format:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[auth]
-user_id   = xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-api_token = xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&amp;lt;/pre&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Replace the long strings of ‘x’s with your user id and API token from the HabitRPG website, and we’re ready to go!&lt;/p&gt;
-
-&lt;h3 id=&quot;using_hrpg&quot;&gt;Using hrpg&lt;/h3&gt;
-
-&lt;p&gt;The easiest way to get started with hrpg is to run it with no arguments. This will provide you with a help display:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ hrpg
-
-Usage:
-
-hrpg status                  : Show current HP/XP/GP
-hrpg tasks                   : Show current tasks
-hrpg habit|daily|reward|todo : Show tasks of current type
-hrpg new                     : Create new task 'hrpg new' for help.
-hrpg [+-] task               : Increment/decrement a task or habit
-
-Debugging commands:
-
-hrpg dump                    : Dump entire user info
-hrpg dump tasks              : Dump task info&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Most of these commands are pretty straightforward. For example, if I type hrpg status I’ll get some basic info about my character:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ hrpg status
-
-Hark, Paul Fenwick! (Lv 3)
-
-HP: 45.7 / 50
-XP: 25 / 170
-GP: 30 | SP: 54 | CP: 18&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;However there are a few things which require a little more explanation, and will make your HabitRPG experience much nicer! Firstly, let’s find out how to make a task:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ hrpg new
-
-Usage: hrpg new [habit|todo|daily] +- &amp;quot;name&amp;quot; [&amp;quot;note&amp;quot;]&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;There are three different tasks we can make. Daily tasks are things we want to do every day, like brush our teeth, practice our anki cards, or fill in our idonethis log. They give us XP and coins when we complete them, and will damage our HP if we neglect them.&lt;/p&gt;
-
-&lt;p&gt;Todo items are things which need to be done, but only once. Something like paying a bill, or booking a flight.&lt;/p&gt;
-
-&lt;p&gt;Habits are things which we want to get into—or out of—the habit of doing. For example, we might want to get penalised whenever we eat junk food or smoke a cigarette, or rewarded whenever we exercise or respond to a client email. Habits can be triggered multiple times per day.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code&gt;+&lt;/code&gt; and &lt;code&gt;-&lt;/code&gt; modifiers tell HabitRPG if something is good, bad, or potentially both. For example, you might have a ‘pomodoro’ habit which rewards you for working solidly for a period of time, or penalises you if you get distracted when you’re supposed to be working solidly.&lt;/p&gt;
-
-&lt;p&gt;Finally, all tasks need a name. This is what shows up in the web interface, but most importantly for us any unique abbreviation of this name is how we’ll refer to our tasks in hrpg.&lt;/p&gt;
-
-&lt;p&gt;Notes are entirely optional, and will show up as tool-tips in the web interface if you use it.&lt;/p&gt;
-
-&lt;p&gt;So, let’s make a few tasks. We’ll have one that rewards us for drinking water, and penalises us for drinking unhealthy drinks. We’ll have another one for responding to email (something I personally suck at), and another daily goal to floss our teeth.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hrpg new habit +- &amp;quot;Drink healthily&amp;quot;
-hrpg new habit + &amp;quot;Respond to email&amp;quot;
-hrpg new daily + &amp;quot;Floss teeth&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Once we’ve set up tasks, we can tell HabitRPG that we’ve completed them. For example, if we drank a refreshing but unhealthy drink, and then flossed our teeth, we could use:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ hrpg - drink
-$ hrpg + floss&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Note that any unique abbreviation of our task name is acceptable. If we try an abbreviation that isn’t unique, hrpg will provide us with a list of options, along with their unique task IDs:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ hrpg + pomodoro
-
-Did you mean...
-
-* Pomodoro of paid work (12fb2922-74be-45d3-b9ed-11e2fa1721c9)
-* Pomodoro of anything useful (424e327c-9738-4743-ac74-b9f5c528b555)&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;As an added bonus, if you’re already a user for the &lt;a href=&quot;http://pjf.id.au/privacygeek/2013/02/10/reimplementing-the-idonethis-memory-service.html&quot;&gt;idone command line client&lt;/a&gt; for &lt;a href=&quot;http://idonethis.com/&quot;&gt;http://idonethis.com/&lt;/a&gt;, then you can mark a habit as done, and record a note in idonethis &lt;em&gt;at the same time&lt;/em&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hrpg + email &amp;quot;Sent quote on flux capacitors to Dr Brown&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In the future, if HabitRPG supports logging tasks with notes, these will also be appended to your HabitRPG log.&lt;/p&gt;
-
-&lt;h2 id=&quot;under_the_hood&quot;&gt;Under the hood&lt;/h2&gt;
-
-&lt;p&gt;hrpg sits on top of the &lt;a href=&quot;https://metacpan.org/module/WebService::HabitRPG&quot;&gt;WebService::HabitRPG&lt;/a&gt; module for &lt;a href=&quot;http://perl.org&quot;&gt;Perl&lt;/a&gt;. If you’re interested in reporting bugs, suggesting features, improving the docs, or even contributing code yourself, you can find the &lt;a href=&quot;https://github.com/pjf/WebService-HabitRPG&quot;&gt;repository on github&lt;/a&gt;.&lt;/p&gt;</description>
-				<pubDate>Sat, 23 Mar 2013 05:22:00 +0000</pubDate>
-				<link>http://pjf.id.au///privacygeek/2013/03/23/gamify-your-command-line-with-HabitRPG.html</link>
-				<guid isPermaLink="true">http://pjf.id.au///privacygeek/2013/03/23/gamify-your-command-line-with-HabitRPG.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>Reimplementing the iDoneThis Memory Service</title>
-				<description>&lt;p&gt;There’s an excellent website called &lt;a href=&quot;http://idonethis.com/&quot;&gt;iDoneThis.com&lt;/a&gt; which implements the most simple yet brilliant of services. Every day, you record the list of things you’ve done, and it gives you a check-mark for that day. This was motivating in two ways: firstly, the desire to keep that chain of check-marks running (what’s known as a ‘chain calendar’ or a ‘Seinfeld calendar’), and secondly by emailing you your memories of what you were doing a year (or a week, or a month) ago.&lt;/p&gt;
-
-&lt;p&gt;For me, knowing what I was doing a year ago was &lt;em&gt;really&lt;/em&gt; good. I loved waking up each morning to be reminding of something I might otherwise not think of again. The good memories I was emailed would make me feel good again, and bad memories? Well, they’d often make me feel good that I wasn’t going through &lt;em&gt;that&lt;/em&gt; anymore, or they’d be &lt;em&gt;insightful&lt;/em&gt; if I was encountering similar issues now.&lt;/p&gt;
-
-&lt;p&gt;I &lt;em&gt;loved&lt;/em&gt; the memory service, and so did my friends, even if they didn’t use it. I’d often send them messages about what awesome adventures we were up to a year ago, and that would often make their day.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately, a few months ago, iDoneThis discontinued their memory-posting service. I don’t know why; I can only assume they’re focusing on the more corporate part of their service, and the network costs of all the personal emails wasn’t worth it.&lt;/p&gt;
-
-&lt;p&gt;Today, as part of a &lt;a href=&quot;http://lesswrong.com/lw/3w3/how_to_beat_procrastination/&quot;&gt;productivity spiral&lt;/a&gt;, I reimplemented the old memories service. The code isn’t pretty—unfortunately iDoneThis doesn’t (yet) provide an API—but I have a bot that can log-in and fetch a day’s worth of data. Best of all, that code is open source, and &lt;a href=&quot;href=&quot;https://metacpan.org/module/WebService::Idonethis&quot;&gt;available from the CPAN&lt;/a&gt;, so you can download and use it yourself.&lt;/p&gt;
-&lt;!--more--&gt;
-&lt;p&gt;Even if you’re not a Perl person, then it’s pretty easy to install. Simply follow my &lt;a href=&quot;http://privacygeek.blogspot.com.au/2013/03/the-worlds-easiest-guide-to-installing.html&quot;&gt;world’s simplest guide to installing cpanm&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Now just install the &lt;a href=&quot;https://metacpan.org/module/WebService::Idonethis&quot;&gt;WebService::Idonethis&quot;&gt;WebService::Idonethis&lt;/a&gt; module:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cpanm WebService::Idonethis&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To use it, you’ll first need to create an &lt;code&gt;~/.idonethisrc&lt;/code&gt; file with your auth details:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[auth]
-user=someuser
-pass=somepass&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If all has gone well, you can now use the &lt;code&gt;idonethis-memories&lt;/code&gt; command!&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ idonethis-memories
-
-Here's what you were doing on 2012-02-11:
-
-* Built a robotic dinosaur with lasers with Claudine.
-* Played stepmania with Deanna (Spice Girls rock!)
-* Invoiced ALL the clients.
-* Drank six billion cups of coffee.&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It’s perfect for putting into a cron job.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Edit:&lt;/em&gt; As of v0.03, you can now submit done items directly from the command line using the &lt;code&gt;idone&lt;/code&gt; tool:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ idone &amp;quot;Read a great blog by Paul Fenwick&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;Edit:&lt;/em&gt; As of v0.04, you can also get a list of what you’ve done today:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ idone -l
-
-* Flossed my teeth
-* Looked at pictures of cats on the Internet
-* Defended against a goblin siege in Dwarf Fortress&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you’re handy with Perl, or just want to look at the code, there’s a &lt;a href=&quot;https://github.com/pjf/idonethis-perl&quot;&gt;github repository&lt;/a&gt;. Patches are extremely welcome!&lt;/p&gt;
-
-&lt;p&gt;Edit: As of v0.08, the &lt;code&gt;idone -lc&lt;/code&gt; command is the best thing ever. It will list the things you’ve done today, and allow you to add new things by entering them on stdin. It also has less than one third of the previous dependencies.&lt;/p&gt;</description>
-				<pubDate>Sun, 10 Feb 2013 04:31:00 +0000</pubDate>
-				<link>http://pjf.id.au///privacygeek/2013/02/10/reimplementing-the-idonethis-memory-service.html</link>
-				<guid isPermaLink="true">http://pjf.id.au///privacygeek/2013/02/10/reimplementing-the-idonethis-memory-service.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>The Perl Renaissance</title>
-				<description>&lt;div class='video-container'&gt;&lt;iframe height='420' src='http://www.youtube.com/embed/oZ5xTI1QRTA?html5=1' width='560'&gt; &lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&lt;a href='http://www.youtube.com/watch?v=oZ5xTI1QRTA'&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The Perl Renaissance is in full swing. Object frameworks and syntax have been undated, web frameworks are easy and powerful, and modules are easy to manage and install.&lt;/p&gt;
-&lt;!--more--&gt;
-&lt;ul&gt;
-&lt;li&gt;Overhauling Perl’s Object Oriented framework with Moose.&lt;/li&gt;
-
-&lt;li&gt;Using MooseX::Method::Signatures for beautiful classes.&lt;/li&gt;
-
-&lt;li&gt;Building web applications using Dancer&lt;/li&gt;
-
-&lt;li&gt;Not worrying about web servers by using Plack.&lt;/li&gt;
-
-&lt;li&gt;Critiquing your code with Perl::Critic&lt;/li&gt;
-
-&lt;li&gt;Write amazing regexps with named captures.&lt;/li&gt;
-
-&lt;li&gt;Install new modules quickly and easily with cpanminus&lt;/li&gt;
-
-&lt;li&gt;Manage Perl installations easily with perlbrew&lt;/li&gt;
-
-&lt;li&gt;A whole swag of new features with perl 5.10–5.16&lt;/li&gt;
-
-&lt;li&gt;Much, much more!&lt;/li&gt;
-&lt;/ul&gt;</description>
-				<pubDate>Wed, 30 Jan 2013 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au///talks/2013/01/30/the-perl-renaissance.html</link>
-				<guid isPermaLink="true">http://pjf.id.au///talks/2013/01/30/the-perl-renaissance.html</guid>
 			</item>
 		
 
