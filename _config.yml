@@ -1,8 +1,20 @@
 timezone: Australia/Melbourne
 excerpt_separator: <!--more-->
 name: paul.j.fenwick
+shortname: pjf
 description: "Some guy from the internet who loves freedom."
+github_repo: https://github.com/pjf/pjf.github.io
+avatar: pjf_square.jpg
+
+# Site URL
 url: http://pjf.id.au/
+
+# Comment out if not wanted, change if wanted.
+twitter: http://twitter.com/pjf
+facebook: http://facebook.com/paul.fenwick
+# googleplus: https://plus.google.com/
+github: https://github.com/pjf
+gittip: https://gittip.com/pjf
 
 exclude: 
     - '_assets'
@@ -13,9 +25,31 @@ exclude:
     - 'Rakefile.rb'
     - 'README.md'
 
-
 addthis:
-    publisher: ra-52daa5464f2c1c4b
+  publisher: ra-52daa5464f2c1c4b
+
+analytics:
+  id: UA-47199716-1
+
+disqus:
+  shortname: pjf
+
+sidebar:
+  - talks:
+    title: "Talks"
+    url: "/talks"
+  - ethics:
+    title: "Ethics"
+    url: "/ethics"
+  - depression:
+    title: "Depression"
+    url: "/depression"
+  - df:
+    title: "Dwarf Fortress"
+    url: "/DF"
+  - advogato:
+    title: "Older Posts"
+    url: "/advogato"
 
 sitemap:
     file: "/sitemap.xml"
