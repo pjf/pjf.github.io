@@ -188,7 +188,7 @@ module Jekyll
     # back on the default if no dir is provided.
     def self.category_dir(base_dir, category)
       base_dir = (base_dir || CATEGORY_DIR).gsub(/^\/*(.*)\/*$/, '\1')
-      category = category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase
+      category = URI::encode(category).downcase
       File.join(base_dir, category)
     end
 
