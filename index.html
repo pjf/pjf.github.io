@@ -1,26 +1,18 @@
 ---
 layout: default
-title: paul.j.fenwick
 ---
 
 <article class="is-post">
 
-    <img class="me" src="/images/pjf_square.jpg" />
+    <img class="me" src="/images/avatar_square.jpg" />
 
     <header>
-        <h2>{{ page.title }}</h2>
-        <span class="byline">Some guy from the internet who loves freedom.</span>
+        <h2>{{ site.name }}</h2>
+        <span class="byline">{{ site.description }}</span>
     </header>
 
-    <p>Welcome to my home on the internet! Everything here is free
-    under the Creative Commons Attribution 3.0 license unless marked
-    otherwise.</p>
-
-    <p>This site contains various pieces of writing across my various
-    interests, and spanning several years. You can
-    <a href="https://github.com/pjf/pjf.github.io">fork this site
-    on github</a> if you wish.</p>
-
+    <p>{{ site.intro }}</p>
+    <p><a href=""{{ site.github_repo }}"">Fork this site on github</a> if you wish.</p>
 </article>
 
 {% include post-list.html exclude="df" %}
