@@ -27,6 +27,8 @@ exclude:
     - 'Gemfile.lock'
     - 'Rakefile.rb'
     - 'README.md'
+    - 'personal_example'
+    - 'youtube_example'
 
 # Uncomment and Add your publisher ID here. https://www.addthis.com/
 #addthis:
