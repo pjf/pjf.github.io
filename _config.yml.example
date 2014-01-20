@@ -1,6 +1,7 @@
 timezone: Australia/Perth
 name: Name Here!
 shortname: site
+copyright: 2014 your name
 avatar: avatar_square.jpg
 description: "Tagline description."
 github_repo: https://github.com/techman83/techman83.github.io
