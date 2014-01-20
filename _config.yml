@@ -47,7 +47,7 @@ sidebar:
     url: "/depression"
   - df:
     title: "Dwarf Fortress"
-    url: "/DF"
+    url: "/df"
   - advogato:
     title: "Older Posts"
     url: "/advogato"
