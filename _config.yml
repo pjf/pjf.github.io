@@ -1,5 +1,4 @@
 timezone: Australia/Melbourne
-excerpt_separator: <!--more-->
 name: paul.j.fenwick
 shortname: pjf
 description: "Some guy from the internet who loves freedom."
@@ -15,6 +14,8 @@ facebook: http://facebook.com/paul.fenwick
 # googleplus: https://plus.google.com/
 github: https://github.com/pjf
 gittip: https://gittip.com/pjf
+
+paginate: 5
 
 exclude: 
     - '_assets'
