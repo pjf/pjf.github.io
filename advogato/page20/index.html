@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<!--
+    Based upon Striped 2.5 by HTML5 Up!
+    html5up.net | @n33co
+    Updated for Jekyll by Paul Fenwick | @pjf
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+    <head>
+        <title>Posts tagged with advogato</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="icon" type="image/png" href="/images/favicon.png" />
+
+        <!-- This tells social media which image to use -->
+        <link rel="image_src" href="/images/pjf_square.jpg" />
+
+        <link rel="alternative" type="application/rss+xml" title="RSS" href="/feed.xml"/>
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Open+Sans+Condensed:300,700" rel="stylesheet" />
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/skel.min.js"></script>
+        <script src="/js/skel-panels.min.js"></script>
+        <script src="/js/init.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="/css/skel-noscript.css" />
+            <link rel="stylesheet" href="/css/style.css" />
+            <link rel="stylesheet" href="/css/style-desktop.css" />
+            <link rel="stylesheet" href="/css/style-wide.css" />
+        </noscript>
+        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+        <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+        <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
+
+        <link rel="stylesheet" href="/css/pjf.css" />
+
+    </head>
+    <!--
+        Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
+        Set it to "right-sidebar" to, you guessed it, position it on the right.
+    -->
+    <body class="left-sidebar">
+    
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-47199716-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+        <div id="wrapper">
+            <div id="content">
+                <div id="content-inner">
+                    
+
+ 
+
+
+ 
+
+
+
+
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2007/08/20/building-a-stepmania-machine.html">Building a StepMania machine</a></h2>
+        </header>
+
+        <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">Aug</span>
+        <span class="day">20</span>
+        <span class="year"><span>,</span> 2007</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+            <p><b>Building a StepMania machine</b><br />
+My social demographic consists almost entirely of <a href="http://en.wikipedia.org/wiki/Geeks">geeks</a>.  When I go to parties, activities intend to include <a href="http://en.wikipedia.org/wiki/Wii_sports">Wii Tennis</a>, boardgames, and <a href="http://pjf.id.au/blog/?position=176&count=1">physics debates</a>.  They usually don't involve much in the way of dancing.  Overall, that's a good thing, because if I were to dance then anyone nearby with a camera is likely to record the moment in an attempt to squeeze $500 out of <a href="http://en.wikipedia.org/wiki/Australia's_Funniest_Home_Videos">Australia's Funniest Home Videos</a>.  That's why I love the <a href="http://en.wikipedia.org/wiki/Dance_Dance_Revolution">Dance Dance Revolution</a> (DDR) style games so much; I can still look like a fool, <i>but I can get points for doing so</i>.
+<p>
+The simple addition of a couple of dance mats and a scoring system results in an amazing behavioural change.  Songs which would previously had one silence the radio with a sledgehammer suddenly become "cool" and "groovy" with "interesting footwork" and "awesome combos".  As such, I've been putting together my own <a href="http://www.stepmania.com/">StepMania</a> setup.  This post is primarily to record two painful experiences that I'd rather not have anyone else encounter.
+<p>
+The first involves video drivers.  I'm using a mobile GeForce 7800 Go graphics card, and all the official drivers are <i>ancient</i>.  Using drivers from <a href="http://www.laptopvideo2go.com/">Laptop Video 2 Go</a> have always provided me with some relief here, however the more recent versions would install fine, but break the control panel.  It seems this is a well-known problem, and <a href="http://forums.nvidia.com/index.php?showtopic=39715&pid=236019&mode=threaded&show=&st=&#entry236019">an .ini fix</a> is available for those wishing to try it.  It didn't help me with all versions, but it helped me enough to get the control panel happening in 9424 release, which made stepmania happy to run on my TV's native resolution in fullscreen.
+<p>
+The second involves my purchase of a <a href="http://www.mayflash.com/pc/pc039/pc039-1.htm">Super Joy Box 5 Pro</a>, which are readily available on eBay, and sound awesome, allowing four playstation controllers to be converted to USB using a single box.
+<p>
+<b>Do not buy the Super Joy Box 5 Pro</b>.  It is not awesome.  It allows only a <i>single</i> controller to be attached; any more and they start interfering with each other, which makes all controllers but one effectively unusable.  It appears that this isn't unique to this particular device; a number of the items from MayFlash have similar problems.  I'd be <i>very</i> cautious before buying anything in the <i>Super Joy Box</i> series.
+<p>
+Instead of paying for some crapola from eBay that doesn't work, go read the <a href="http://www.stepmania.com/wiki/USB_Adapters">StepMania page on USB adaptors</a> and <i>ignore the ticks</i>.  The ticks lie.  Read the user comments; all USB adaptors suck, but some of them suck less.  <a href="http://www.play-asia.com/SOap-23-83-7uq3-49-en.html">Play-Asia</a> delivers to Australia and seems to have reasonable prices and postage.  I've just ordered a <a href="http://www.play-asia.com/SOap-23-83-7uq3-71-6m-49-en-15-EMS-84-j-70-1b5.html">EMS dual shooter</a> from them, which seem to be highly recommended.
+
+
+
+        
+
+        <a href="/advogato/2007/08/20/building-a-stepmania-machine.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2007/08/13/pjf-id-au-atom-enabled.html">pjf.id.au ATOM enabled</a></h2>
+        </header>
+
+        <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">Aug</span>
+        <span class="day">13</span>
+        <span class="year"><span>,</span> 2007</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+            <p><b>pjf.id.au ATOM enabled</b><br />
+In an attempt to make <a href="http://technorati.com/blogs/pjf.id.au/blog">technorati</a> hate my blog less, I've added an <a href="http://en.wikipedia.org/wiki/ATOM_(standard)">ATOM</a> feed to <a href="http://pjf.id.au/blog/">pjf.id.au</a>.  This was reasonably easy using <a href="http://search.cpan.org/perldoc?XML::Atom::SimpleFeed">XML::Atom::SimpleFeed</a> once I realised that despite the fact that lots the fields in ATOM are optional, most readers <i>really</i> want them to be there.
+<p>
+The ATOM feed is also allegedly exporting tags, although I haven't seen any reader currently pick up on them.  Either I'm using the wrong readers, or I'm doing something wrong in the export.  I don't know yet.
+<p>
+The ironic thing is that despite this making my blog extra swishy in every other reader, technorati still seems to think it has only one post, and links that to the wrong page.  I'm hoping that the posting of new content (and a ping) will help it realise things are different now.
+
+
+
+        
+
+        <a href="/advogato/2007/08/13/pjf-id-au-atom-enabled.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2007/08/09/open-source-developers-club.html">Open Source Developers Club</a></h2>
+        </header>
+
+        <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">Aug</span>
+        <span class="day"> 9</span>
+        <span class="year"><span>,</span> 2007</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+            <p><b>Open Source Developers Club</b><br />
+Last night we had another <a href="http://www.osdc.com.au/osdclub/">Open
+Source Developers Club</a> (OSDClub) meeting.  I had volunteered
+my talk on <a href="http://www.osdc.com.au/osdclub/200708/history_of_failure.html">An Illustrated History of Failure</a>, and
+Simon Hildebrant had volunteered a talk on <a href="http://www.osdc.com.au/osdclub/200708/selenium.html">Selenium</a>.
+<p>
+The night seemed to go well, but I can't help but be disappointed
+with my performance.  I've been teaching all this week, and this
+is extremely time consuming.  Waking up very early and then standing
+in front of a class for eight hours can sure be tiring, but that's not
+the real problem.  After a full day of teaching, the last thing I want
+to be doing is spending an hour or more rehearsing my talk.  I'd much
+rather be playing <a href="http://en.wikipedia.org/wiki/Pikmin">Pikmin</a> (thanks Ian!), or mucking
+with <a href="http://technorati.com/people/technorati/pfenwick">technorati</a>, or even watching commercial TV.
+This is especially the case when I've been teaching roughly every
+second week for the last two months.
+<p>
+I hold myself to a particularly high standard when it comes to
+presentations.  Presenting is my job, and if I flub my lines or
+forget my slide order, then I'm extremely unhappy.  For anyone
+who noticed my errors last night, I apologise.  For anyone who
+didn't notice, thank-you.  You're a great audience.
+<p>
+Simon's presentation last night was on testing the web with
+<a href="http://www.openqa.org/selenium/">Selenium</a>, which is an awesome tool, and which has lots of ways
+to plug into TAP and other testing frameworks.  There were some
+interesting ideas being thrown around about how one can use
+Selenium to provide repeatable test cases for web applications,
+the same way that one would provide test cases when submitting
+a bug report for a traditional application.
+<p>
+The discussion got me thinking more about what if one finds a bug, but can't get it fixed.  It's a good introduction to my next talk, which is
+<i>Fixing the web with <a href="http://en.wikipedia.org/wiki/Greasemonkey">Greasemonkey</a></i>.  
+
+
+        
+
+        <a href="/advogato/2007/08/09/open-source-developers-club.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2007/08/01/sage-au-2007.html">SAGE-AU 2007</a></h2>
+        </header>
+
+        <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">Aug</span>
+        <span class="day"> 1</span>
+        <span class="year"><span>,</span> 2007</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+            <p><b>SAGE-AU 2007</b><br />
+Last week was the <a
+href="http://www.sage-au.org.au/display/SAGEAU/Home">Fifteenth
+Annual Australian System Administration Conference</a>, aka
+SAGE-AU 2007.
+<p>
+Before I say more about the conference, let me mention the
+conference dinner.  SAGE-AU conference dinners come with an
+open bar; and not just beer and wine, either.  If you're
+willing to go to the effort of walking to the bar you can
+get some quite snazzy (and strong) drinks.  As you can
+imagine, there's a tendency for the conference delegates to
+get quite happy as part of the evening festivities.  The
+reason why this is important is due to my role in the
+conference each year.
+<p>
+Each year, for the last three years, I have been given
+<i>the first talk after the conference dinner</i>.  Out of
+all the talks at the conference, mine is the one conference
+delegates are most looking for an excuse to miss.  I need to
+have a talk that a room filled with hung-over sysadmins can
+grasp and find entertaining.
+<p>
+This by itself is not a great challenge.  Where things
+become really tough is that I'm invariably presenting the
+talk with a hangover myself.  As can be seen from the <a
+href="http://www.sage-au.org.au/download/attachments/2669/SAGE-AU-07-Day5-01.jpg">conference
+photographs</a>, I've never got the habit of leaving the
+dinner early.  It doesn't help that I feel compelled to rise
+before the sun to do dry runs of my talk, either.
+<p>
+Despite all this, I'm very happy with the arrangement.  Not
+because of the honour of being deemed worthy of dragging the
+conference out of bed.  Not because of the invariable praise
+and invitations that comes from a successful presentation. 
+Not because of the perks that come with being a speaker, or
+the feeling that I've imparted valuable knowledge to the
+audience.
+<p>
+No.  The thing that really, really makes me feel wonderful
+is watching the pain and anguish suffered by the delegates
+who slept in and missed <a
+href="http://www.sage-au.org.au/display/conf/An+Illustrated+History+of+Failure">the
+talk</a>, and then are repeatedly told by their colleagues
+how good it was.  There's something about getting up before
+the sun with a hangover that really improves one's
+appreciation of <a
+href="http://en.wikipedia.org/wiki/Schadenfreude">schadenfreude</a>.
+
+
+
+        
+
+        <a href="/advogato/2007/08/01/sage-au-2007.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2007/07/11/perlnet-and-the-perl-5-wiki.html">PerlNet and The Perl 5 Wiki</a></h2>
+        </header>
+
+        <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">Jul</span>
+        <span class="day">11</span>
+        <span class="year"><span>,</span> 2007</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+            <p><b>PerlNet and The Perl 5 Wiki</b><br />
+A couple of days ago Schwern posted an announcement unveiling <a href="http://perlfoundation.org/perl5">The Perl 5 Wiki</a>.  There's been <a href="http://perl.net.au/wiki/Official_Perl_5_wiki_discussion">a lot of discussions</a> regarding this, including on <a href="http://mail.pm.org/pipermail/pdx-pm-list/2007-July/004522.html">mailing</a> <a href="http://www.xray.mpe.mpg.de/mailing-lists/perl5-porters/2007-07/msg00477.html">lists</a>, <a href="http://use.perl.org/~schwern/journal/33765">use.perl</a> and <a href="http://perl.net.au/wiki/IRC_transcripts_regarding_Perl_5_wiki">IRC</a>.  Throughout the discussions <a href="http://perl.net.au/">PerlNet</a> is mentioned regularly.  As PerlNet was my initial creation, I'm sure that some of you may be wondering what my thoughts are about all this.  To be honest, so have I.  ;)
+<p>
+PerlNet was founded in the spirit of openness and sharing.  I wanted a place where members of the Perl community, in particular the Australia/New Zealand (ANZ) Perl community, could interact.  I wanted businesses to show off what they were doing with Perl.  I wanted individuals to talk about what they were creating.  I wanted those just taking their first steps into Perl to able to find people they could ask for help, communities they could feel comfortable entering.  Fundamentally, I wanted, and still want, the ANZ Perl community to grow.
+<p>
+In this regard, I feel that PerlNet has been a modest success.  We host the content for <a href="http://sydney.pm.org/">Sydney.pm</a>, and <a href="http://perl.net.au/wiki/Melbourne_Perl_Mongers">much of the content for Melbourne.pm</a>.  We've got <a href="http://perl.net.au/wiki/Business_directory">a short list of businesses that offer Perl services</a>, although it's not as big as <a href="http://perltraining.com.au/whyperl.html#who">the list of businesses who I know are using Perl</a>.  We get bunch of contributions after most Melb/Syd.pm meetings, depending upon the eagerness of the individuals present to do summaries and take notes.
+<p>
+PerlNet has also been successful in developing content on other topics.  We've got <a href="http://perl.net.au/wiki/Catalyst">a great page on Catalyst</a>, an <a href="http://perl.net.au/wiki/Testing">excellent page on testing</a>, and a <a href="http://perl.net.au/wiki/Perl_developer_tools">a list of IDEs and editors</a>.  I refer to these all the time, and refer my students to them as well.
+<p>
+Unfortunately, these pages aren't seeing much activity anymore.  There still <a href="http://perl.net.au/wiki/Category:Stubs">many stubs</a> that have never grown, and are unlikely to do so any time soon.  Having a wiki is about having a community, and about the <i>creation</i> of content.  I think that PerlNet is still doing well with the creation of ANZ content, but it's stalled for material beyond that.
+<p>
+As such, I welcome the new Perl 5 Wiki.  It's a chance to develop content that PerlNet's not been successful in creating, and a chance of taking existing good content and turn it into something really great.  PerlNet was founded in the spirit of sharing, and sharing with The Perl 5 Wiki is a logical and natural continuation of PerlNet's ideals.
+<p>
+Schwern has <a href="http://use.perl.org/~schwern/journal/33765">given me enough reasons</a> to believe that The Perl 5 Wiki will succeed, and I know from many years of working on wikis that the initial growth phase is critically important.  I've had discussions with many of the more active contributors, and there seems to be almost universal support in the relocation of non-ANZ content to The Perl 5 Wiki where appropriate.
+<p>
+Our last real stumbling block actually deals with licensing.  PerlNet and The Perl 5 Wiki solicit contributions under different conditions, and there are some incompatibilities between the two.  We've got some good people working on the best way to overcome this, and I hope to soon have a way that PerlNet contributors can easily mark their content as Perl 5 Wiki friendly.
+<p>
+If anybody does wish to discuss this matter with me further, then I invite you to do so by getting in touch with me at <a href="mailto:pjf@cpan.org">pjf@cpan.org</a> or catching me (pfenwick) on <a href="irc://irc.freenode.net#PerlNet">irc.freenode.net #PerlNet</a>.
+<p>
+
+
+        
+
+        <a href="/advogato/2007/07/11/perlnet-and-the-perl-5-wiki.html">(read more...)</a>
+
+    </article>
+
+
+
+
+<div class="tip-box">
+    <p>
+        <a href="https://gittip.com/pjf"><i class="fa fa-gittip fa-3x pull-left"></i></a>
+        This content is available for you to use for free,
+        even commercially, under a <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 license</a>.
+    </p><p>
+        If you wish to support my work,
+        please <a href="https://gittip.com/pjf">tip me on gittip</a>.
+    </p>
+</div>
+
+
+
+
+
+                    
+
+<div class="pager">
+    
+        <a href="/advogato/page19" class="button previous">Previous Page</a>
+    
+
+    <!-- These numbers look really cool if we we them.
+       - just a simple matter of code, right?
+
+        <div class="pages">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <span>&hellip;</span>
+            <a href="#">20</a>
+        </div>
+
+    -->
+
+    
+        <a href="/advogato/page21" class="button next">Next Page</a>
+    
+
+</div>
+
+
+
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+<div id="sidebar">
+    <!-- Logo -->
+    <div id="logo"><h1><a href="/">pjf</a></h1></div>
+
+    <section class="find_me">
+    
+        <a href="http://twitter.com/pjf"><i class="fa fa-twitter-square  fa-3x"  ></i></a>
+    
+    
+        <a href="http://facebook.com/paul.fenwick"><i class="fa fa-facebook-square fa-3x"  ></i></a>
+    
+    
+    
+        <a href="https://github.com/pjf"><i class="fa fa-github-square   fa-3x"  ></i></a>
+    
+    </section>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul>
+            <!-- <li class="current_page_item"><a href="/"></a></li> -->
+            <li><a href="/">Latest Posts</a></li>
+        
+            <li><a href="/talks">Talks</a></li>
+        
+            <li><a href="/ethics">Ethics</a></li>
+        
+            <li><a href="/depression">Depression</a></li>
+        
+            <li><a href="/DF">Dwarf Fortress</a></li>
+        
+            <li><a href="/advogato">Older Posts</a></li>
+        
+        </ul>
+    </nav>
+
+    <!-- Search -->
+    <!-- <section class="is-search">
+        <form method="post" action="#">
+            <input type="text" class="text" name="search" placeholder="Search" />
+        </form>
+    </section> -->
+
+    <!-- Text -->
+    <section class="is-text-style1">
+        <div class="inner">
+            <p>
+            
+                <a href="https://gittip.com/pjf">
+                    <i class="fa fa-gittip fa-3x pull-left"></i>
+                </a>
+            
+                Everything on this site is free for you to use
+                under the <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a> license.
+            </p>
+        </div>
+    </section>
+
+    <!-- Recent Posts -->
+    <section class="is-recent-posts">
+        <header>
+            <h2>Recent Posts</h2>
+        </header>
+
+        <ul>
+        
+            <li><a href="/tech/2014/01/16/use-markdown-rather-than-bbcode-with-vimperator.html">Use Markdown Instead Of BBCode With Vimperator</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/11/jaxys-greatest-wish.html">Jaxy's Greatest Wish</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/11/a-quiet-trade.html">A Quiet Trade</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/11/a-place-to-settle.html">A Place To Settle</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/07/the-fickleness-of-warlocks.html">The Fickleness Of Warlocks</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/07/a-family-reunion.html">A Family Reunion</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/06/a-matter-of-trade.html">A Matter Of Trade</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/05/a-home-in-the-wilderness.html">A Home In The Wilderness</a>
+        
+            <li><a href="/depression/2014/01/02/personal-depression-an-update.html">Depression—An Update</a>
+        
+            <li><a href="/ethics/2013/12/28/on-open-source-software-and-communities.html">On Open Source Software And Communities</a>
+        
+        </ul>
+    </section>
+
+    <!-- Recent Comments -->
+    <!-- <section class="is-recent-comments">
+        <header>
+            <h2>Recent Comments</h2>
+        </header>
+        <ul>
+            <li>case on <a href="#">Now Full Cyborg</a></li>
+            <li>molly on <a href="#">Untitled Post</a></li>
+            <li>case on <a href="#">Temporal Flux</a></li>
+        </ul>
+    </section> -->
+
+    <!-- Calendar -->
+
+    <!-- <section class="is-calendar">
+        <div class="inner">
+            <table>
+                <caption>February 2013</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" title="Monday">M</th>
+                        <th scope="col" title="Tuesday">T</th>
+                        <th scope="col" title="Wednesday">W</th>
+                        <th scope="col" title="Thursday">T</th>
+                        <th scope="col" title="Friday">F</th>
+                        <th scope="col" title="Saturday">S</th>
+                        <th scope="col" title="Sunday">S</th>
+                    </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td colspan="4" class="pad"><span>&nbsp;</span></td>
+                        <td><span>1</span></td>
+                        <td><span>2</span></td>
+                        <td><span>3</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>4</span></td>
+                        <td><span>5</span></td>
+                        <td><a href="#">6</a></td>
+                        <td><span>7</span></td>
+                        <td><span>8</span></td>
+                        <td><span>9</span></td>
+                        <td><a href="#">10</a></td>
+                    </tr>
+                    <tr>
+                        <td><span>11</span></td>
+                        <td><span>12</span></td>
+                        <td><span>13</span></td>
+                        <td class="today"><a href="#">14</a></td>
+                        <td><span>15</span></td>
+                        <td><span>16</span></td>
+                        <td><span>17</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>18</span></td>
+                        <td><span>19</span></td>
+                        <td><span>20</span></td>
+                        <td><span>21</span></td>
+                        <td><span>22</span></td>
+                        <td><a href="#">23</a></td>
+                        <td><span>24</span></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">25</a></td>
+                        <td><span>26</span></td>
+                        <td><span>27</span></td>
+                        <td><span>28</span></td>
+                        <td class="pad" colspan="3"><span>&nbsp;</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section> -->
+
+    <!-- Copyright -->
+    <div id="copyright">
+        <p>
+            &copy; 2014 Paul Fenwick<br />
+            Design: <a href="http://html5up.net/">HTML5 UP</a><br />
+            Site Based On: <a href="https://github.com/pjf/pjf.github.io">pjf.github.io</a>
+        </p>
+    </div>
+</div>
+
+            
+        </div>
+    </body>
+</html>
+

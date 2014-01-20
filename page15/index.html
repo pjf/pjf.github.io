@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<!--
+    Based upon Striped 2.5 by HTML5 Up!
+    html5up.net | @n33co
+    Updated for Jekyll by Paul Fenwick | @pjf
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+    <head>
+        <title>paul.j.fenwick</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="icon" type="image/png" href="/images/favicon.png" />
+
+        <!-- This tells social media which image to use -->
+        <link rel="image_src" href="/images/pjf_square.jpg" />
+
+        <link rel="alternative" type="application/rss+xml" title="RSS" href="/feed.xml"/>
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Open+Sans+Condensed:300,700" rel="stylesheet" />
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/skel.min.js"></script>
+        <script src="/js/skel-panels.min.js"></script>
+        <script src="/js/init.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="/css/skel-noscript.css" />
+            <link rel="stylesheet" href="/css/style.css" />
+            <link rel="stylesheet" href="/css/style-desktop.css" />
+            <link rel="stylesheet" href="/css/style-wide.css" />
+        </noscript>
+        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+        <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+        <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
+
+        <link rel="stylesheet" href="/css/pjf.css" />
+
+    </head>
+    <!--
+        Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
+        Set it to "right-sidebar" to, you guessed it, position it on the right.
+    -->
+    <body class="left-sidebar">
+    
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-47199716-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+        <div id="wrapper">
+            <div id="content">
+                <div id="content-inner">
+                    <article class="is-post">
+
+    <img class="me" src="/images/pjf_square.jpg" />
+
+    <header>
+        <h2>paul.j.fenwick</h2>
+        <span class="byline">Some guy from the internet who loves freedom.</span>
+    </header>
+
+    <p>Welcome to my home on the internet! Everything here is free
+    under the Creative Commons Attribution 3.0 license unless marked
+    otherwise.</p>
+ 
+    <p>This site contains various pieces of writing across my various
+    interests, and spanning several years. You can
+    <a href="https://github.com/pjf/pjf.github.io">fork this site
+    on github</a> if you wish.</p>
+
+
+</article>
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2009/05/16/perl-for-geoscience.html">Perl for Geoscience</a></h2>
+        </header>
+
+        <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">May</span>
+        <span class="day">16</span>
+        <span class="year"><span>,</span> 2009</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+            <p><b>Perl for Geoscience</b><br>
+Traditionally our <a href="http://perltraining.com.au/">Perl courses</a> have been targeted at people who work with computers as a job.  Developers, software QA, sysadmins, database admins (DBAs), and the like.  However, recently I've noticed a sharp increase in course bookings from people who <i>don't</i> have computers as their primary job.  In particular, we've been seeing a lot of bookings from people who work in geoscience, and hydrology in particular.  These bookings aren't just from within Australia, I'm seeing international interest as well.
+<p>
+It seems that Perl has gained a reputation as being a good cross-platform language for when you have a big hunk of data in one format, and you need to get that data into another format.  Geoscience folks deal with lots of data, and they seem to be perpetually massaging it (often by hand, or in a spreadsheet) to get it into the format they need.
+<p>
+Perl is certainly well-suited for this task, and people learning Perl for the purposes of data transformation have been a mainstay on our courses since we first started running them.  However I've found our new wave of interest particularly challenging to teach.  They don't have any programming backgrounds, so I can't draw analogies to other languages, or even assume they'd know why subroutines are a good idea.  They may have never used a command-line before, so the concept of providing command-line arguments is completely foreign.  Even the way they think about data is different; for many students in my last class, the idea of hierarchical data (such as a tree) was a completely new concept; in their world, data had always been tabular in nature.
+<p>
+I'm thrilled that I'm able to teach people new skills, and I'm sure some of the students from my classes will be going back to their workplaces and replacing some of their colleagues with very small Perl scripts.  However I'm deeply worried that their understanding will be too incomplete.  I teach a very <i>modern</i> Perl course, with a lot of focus on best practices, maintainability, validation, and theory.  While I know some of my students can grasp this a little, others are still struggling with consistent indentation, and can't grok the long-term concepts at all.  I fear they'll under-use the CPAN, reinvent the wheel, copy-and-paste from bad examples, fail to use revision control, fail to document their code, pile on technical debt, and do all the other things that inexperienced programmers do.
+<p>
+I don't know what to do about this.  For this group of people, I think I'd get great feedback (and more bookings and money!) if I taught a class that focused on short-cuts and quick'n'dirty programming, since my students can grasp those short-term gains; they can't as easily grasp the long-term ones of maintainability, testing, source control, and correctness.  One could argue those long-term goals aren't important for my new clients, since they're writing code for "once-off" tasks, but as most of us know, there's an awful lot of <i>once-off</i> code that's still being used decades after it was written.  I feel the concepts of code quality and maintainability are <i>more</i> important for inexperienced programmers than anyone else, since they're the ones most likely to make these mistakes.  I'd rather not teach at all than teach bad practices.
+<p>
+I think we'll probably extend our most popular course to five days, and slow down the material; I've got enough cool bonus material to fill an extra day if we have a class of more computer-oriented students.  I've also found myself dropping entirely some of the more foreign concepts like pipes, buffering, file locking, and running external commands; students can look these up if they ever need them.
+<p>
+What I <i>really</i> wish I could do is sit down with my new classes for a week and teach them basic programming and computer science concepts, <a href="http://www.csunplugged.com/">preferably without computers getting involved at all</a>.
+
+
+
+        
+
+        <a href="/advogato/2009/05/16/perl-for-geoscience.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2009/05/08/the-social-life-of-a-perl-trainer.html">The social life of a Perl trainer</a></h2>
+        </header>
+
+        <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">May</span>
+        <span class="day"> 8</span>
+        <span class="year"><span>,</span> 2009</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+            <p><b>The social life of a Perl trainer</b><br>
+I'm blogging every week about Perl, not least due to the presence of
+a <a href="http://www.enlightenedperl.org/ironman.html">competition</a> that encourages me to do so.  However this week I'm not
+dealing with technical matters, I'm dealing with personal and social ones.
+<p>
+There's a common perception that I have a massively social job.  I
+travel around the world and teach people Perl.  I speak at many conferences
+each year.  I attend a multitude of user-groups.  Sometimes I do consulting, and
+when I do, the things I'm fixing are often people related: internal education,
+politics, and culture.  In any given year I meet work closely with <i>hundreds</i> of new people.  People are my life and my job.
+<p>
+Despite that, sometimes it feels very lonely.
+<p>
+The problem isn't with the quantity of people I meet, but the quality of
+my relationships with them.  When I meet course attendees we spend a lot
+of time together, but it's one-to-many time.  At conferences I have
+more quality social time, but it's only for a couple of days, and my
+talk preparations often get in the way.  Often there are <i>so
+many</i> people at conferences I want to meet or catch up with that I
+only spend at most a few hours with each person, regardless of how
+much I like them.
+<p>
+Due to my lifestyle, I meet many wonderful people who I would <i>love</i> to spend more time with.  The problem is that so many of them live in other cities, or other countries, or have travelling or lifestyle schedules similar to me.  In fact, my travel schedule can really screw things up.  Last night there was a gathering of four of my most favourite people in the whole world, and in my home town.  I wasn't there, because I was on an yet another airplane.
+<p>
+Back when I had a "real job", or even when I did regular consulting, I didn't
+have these problems.  I'd see the same people each week at work.  I'd go
+to the same places for lunch.  There'd be regular social activities
+that I could attend, because I wasn't changing city every week.  While
+having a regular job may not help with the breadth of friendships, it
+certainly helps with the depth of them.
+<p>
+I've been teaching and living this lifestyle for many years, so why am
+I noticing this just now?  Well, it's partially because I'm so busy
+right now.  The global financial crisis has kicked our business into
+overdrive.  A combination of hiring-freezes, and the need to do more
+with less, has caused Perl courses and consulting to be very popular.  Sometimes I joke about being in a different city every week, but recently it's been the norm.
+<p>
+However the big wake-up was that how I've been associating with my students
+has changed.  Years ago they were learning Perl because it was cool, and
+fun, and because doing things in Perl was so much easier than doing things
+in almost any other language.  Those students were were bright, eager to learn,
+and full of questions.  That almost always meant that I got along extremely well with them socially, as well as academically.  These days we still get those
+students, but many people are on our courses because programming is their job,
+not their passion.  They don't always self-identify as geeks, and I find that I have an awkward time relating to them socially.
+<p>
+Having good students is one of the most rewarding parts of being a teacher,
+and is what got me hooked on teaching before I even graduated from
+University.  I'm unlikely to give up the teaching any time soon; I enjoy
+the travel, the freedom, and it's certainly hard to argue with the money, but I do find that ephemeral socialisation is really starting to tick me off.
+Sometimes I wonder if I should actually go back and teach at University,
+purely for the social highs associated with doing so.
+
+
+
+        
+
+        <a href="/advogato/2009/05/08/the-social-life-of-a-perl-trainer.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2009/05/01/autodie-status-update.html">autodie status update</a></h2>
+        </header>
+
+        <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">May</span>
+        <span class="day"> 1</span>
+        <span class="year"><span>,</span> 2009</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+            <p><b>autodie status update</b><br>
+I just looked through my blog history, and discovered the last release of <a href="http://search.cpan.org/perldoc?autodie">autodie</a>, I've blogged about was version 1.99!  Since then, there's been nine releases!  For those of you new to my blog, autodie is a lexical pragma that allows Perl's built-ins to throw exceptions on failure, which can take your error-handling from cumbersome to simple.
+<p>
+There's been a lot of changes in those nine releases, and the <a href="http://github.com/pfenwick/autodie/tree/master/Changes">Changes</a> file documents all the significant ones.  There are nicer error messages, better coverage of Perl's core functions, fewer rough edges, and lots more tests.  If you're not one to go reading Changes files, I can assure you that upgrading to 1.999 is pleasant and surprise-free.
+<p>
+I've had a few people tease me about the silly version number, 1.999 threatens to have 1.9991 as a next release, but this will not happen.  The next version of autodie will be 2.000, and this actually represents a significant change.  There's no backwardly incompatible changes, but there is a new feature which greatly extends autodie's ability to detect failures in non-core subroutines.
+<p>
+Presently, one can write:
+
+
+        
+
+        <a href="/advogato/2009/05/01/autodie-status-update.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2009/04/22/kiwifoo--stixcamp--minifest--sydney-pm--and-more.html">KiwiFoo, StixCamp, Minifest, Sydney.pm, and more</a></h2>
+        </header>
+
+        <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">Apr</span>
+        <span class="day">22</span>
+        <span class="year"><span>,</span> 2009</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+            <p><b>KiwiFoo, StixCamp, Minifest, Sydney.pm, and more</b><br>
+I have 9,000 unread messages in p5p.  I'm months behind on my blogging.  Some rapid catch-up is needed, so here it is for my blog... in executive bullet point style.
+
+
+        
+
+        <a href="/advogato/2009/04/22/kiwifoo--stixcamp--minifest--sydney-pm--and-more.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2009/03/17/rotorua.html">Rotorua</a></h2>
+        </header>
+
+        <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">Mar</span>
+        <span class="day">17</span>
+        <span class="year"><span>,</span> 2009</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+            <p><b>Rotorua</b><br>
+In February as part of my New Zealand adventure I made it to KiwiFoo (aka BaaCamp).  The trip to KiwiFoo was an adventure in itself, with Jacinta and myself giving talks at Wellington Perl Mongers and Waikato LUG, and spending a short time in Rotorua (our "tourist day").
+<p>
+Rotorua was unfortunately heavily touristified, and I noticed a few of the locals calling it "RotorVegas".  It wasn't hard to see why; there were lots of ways to separate the tourists from their cash, and many of the local attractions felt very artificial as a result.  It didn't help that I knew the local geysers were so "reliable" due to an ample addition of soap powder at the times they're supposed to blow.
+<p>
+Somewhat repulsed by the highly commercial offerings, we went looking for some more authentic experiences off the beaten track.  Some time walking around one of the geothermal areas revealed a brightly coloured steaming pool behind a "No Entry" sign.  I wondered just how hot the water could be, and my scalded finger assured me it was almost at boiling point.  Pipes from a nearby hotel snaked their way into the pool, obviously making use of the ample heat it provided.
+<p>
+After a much longer walk, Jacinta and myself found our way to the Redwoods, which made for an excellent few hours hiking.  With sore feet, and a <a href="http://en.wikipedia.org/wiki/Case_Closed">Conan the Detective</a> drink bottle we discovered along the walk, we returned to the hotel.
+<p>
+Our hotel had the rather tacky name of "GeyserLand", but true to its name we had an excellent view of a mud pool and geyser directly outside our hotel window.  The heat in Rotorua was oppressive; the air was humid, we were experiencing a "heat wave", and the local geothermal activity naturally added to both.  The hotel room didn't have air conditioning, so staying in didn't appeal.
+<p>
+The hotel had a swimming pool for guests, which seemed attractive, but it didn't remain open particularly late.  It also had "spout pools" which could be hired for a modest fee, but the hotel services guide contained no information about these might be.  I figured they were some sort of geothermally heated bath.
+<p>
+Jacinta and I went to the desk to find out a little more and potentially hire a pool, and were told we couldn't hire one, because they were just about to close.  "Oh no," I cried with my best pout, "We've travelled all the way from Australia, and this is our only night in Rotorua...  I had <i>so</i> hoped to enjoy a thermal pool before I left."
+<p>
+A few minutes later we had access to a "spout pool", free of charge, because the hotel couldn't monitor our usage after they'd closed up reception for the night.  Consequently, we also had access to the pool for as long as we wanted.
+<p>
+The pool ended up being the highlight of the entire day.  Rather than a tiny thing that would only fit two people, this would have comfortably fit six unfriendly people, or almost twice that in friendly people.  Hot water (presumably heated underground) falls from a spout into the pool, which would be waist-deep if you stood up, but which contains seats at just the right level to bring the water to neck height.  It was clear that the water wasn't being recycled, it was just pumped in fresh 24 hours a day.  I felt rather jealous of New Zealand's ample water supplies; in Melbourne it hadn't rained for two months, and water usage came with tight restrictions.
+<p>
+My dive computer (which I routinely wear instead of a wristwatch) told me the water was about 36'C, which made it <i>lovely</i> to relax in.  If I ever return to the hotel, I'll be sure to bring a number of friends and a bottle of <a href="http://en.wikipedia.org/wiki/Sake">sake</a>.
+<p>
+The next day we were off to Waikato (Cambridge and Hamilton) en route to Auckland and then Warkworth.  We went and visited a local nature park (with an obligatory kiwi tour) and had a nice lunch in town.  Everything looked pretty good until we got onto the bus, where I had discovered we'd booked our tickets for the wrong week.  After a little pleading and cajoling with the bus driver and assurances that we wouldn't even be in the country the next week, we were allowed on anyway, despite our tickets being invalid.
+<p>
+Waikato was another adventure again, and one I hope to discuss in my next journal entry.
+
+
+
+        
+
+        <a href="/advogato/2009/03/17/rotorua.html">(read more...)</a>
+
+    </article>
+
+
+
+
+<div class="tip-box">
+    <p>
+        <a href="https://gittip.com/pjf"><i class="fa fa-gittip fa-3x pull-left"></i></a>
+        This content is available for you to use for free,
+        even commercially, under a <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 license</a>.
+    </p><p>
+        If you wish to support my work,
+        please <a href="https://gittip.com/pjf">tip me on gittip</a>.
+    </p>
+</div>
+
+
+
+
+                    
+
+<div class="pager">
+    
+        <a href="/page14" class="button previous">Previous Page</a>
+    
+
+    <!-- These numbers look really cool if we we them.
+       - just a simple matter of code, right?
+
+        <div class="pages">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <span>&hellip;</span>
+            <a href="#">20</a>
+        </div>
+
+    -->
+
+    
+        <a href="/page16" class="button next">Next Page</a>
+    
+
+</div>
+
+
+
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+<div id="sidebar">
+    <!-- Logo -->
+    <div id="logo"><h1><a href="/">pjf</a></h1></div>
+
+    <section class="find_me">
+    
+        <a href="http://twitter.com/pjf"><i class="fa fa-twitter-square  fa-3x"  ></i></a>
+    
+    
+        <a href="http://facebook.com/paul.fenwick"><i class="fa fa-facebook-square fa-3x"  ></i></a>
+    
+    
+    
+        <a href="https://github.com/pjf"><i class="fa fa-github-square   fa-3x"  ></i></a>
+    
+    </section>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul>
+            <!-- <li class="current_page_item"><a href="/"></a></li> -->
+            <li><a href="/">Latest Posts</a></li>
+        
+            <li><a href="/talks">Talks</a></li>
+        
+            <li><a href="/ethics">Ethics</a></li>
+        
+            <li><a href="/depression">Depression</a></li>
+        
+            <li><a href="/DF">Dwarf Fortress</a></li>
+        
+            <li><a href="/advogato">Older Posts</a></li>
+        
+        </ul>
+    </nav>
+
+    <!-- Search -->
+    <!-- <section class="is-search">
+        <form method="post" action="#">
+            <input type="text" class="text" name="search" placeholder="Search" />
+        </form>
+    </section> -->
+
+    <!-- Text -->
+    <section class="is-text-style1">
+        <div class="inner">
+            <p>
+            
+                <a href="https://gittip.com/pjf">
+                    <i class="fa fa-gittip fa-3x pull-left"></i>
+                </a>
+            
+                Everything on this site is free for you to use
+                under the <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a> license.
+            </p>
+        </div>
+    </section>
+
+    <!-- Recent Posts -->
+    <section class="is-recent-posts">
+        <header>
+            <h2>Recent Posts</h2>
+        </header>
+
+        <ul>
+        
+            <li><a href="/tech/2014/01/16/use-markdown-rather-than-bbcode-with-vimperator.html">Use Markdown Instead Of BBCode With Vimperator</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/11/jaxys-greatest-wish.html">Jaxy's Greatest Wish</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/11/a-quiet-trade.html">A Quiet Trade</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/11/a-place-to-settle.html">A Place To Settle</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/07/the-fickleness-of-warlocks.html">The Fickleness Of Warlocks</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/07/a-family-reunion.html">A Family Reunion</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/06/a-matter-of-trade.html">A Matter Of Trade</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/05/a-home-in-the-wilderness.html">A Home In The Wilderness</a>
+        
+            <li><a href="/depression/2014/01/02/personal-depression-an-update.html">Depression—An Update</a>
+        
+            <li><a href="/ethics/2013/12/28/on-open-source-software-and-communities.html">On Open Source Software And Communities</a>
+        
+        </ul>
+    </section>
+
+    <!-- Recent Comments -->
+    <!-- <section class="is-recent-comments">
+        <header>
+            <h2>Recent Comments</h2>
+        </header>
+        <ul>
+            <li>case on <a href="#">Now Full Cyborg</a></li>
+            <li>molly on <a href="#">Untitled Post</a></li>
+            <li>case on <a href="#">Temporal Flux</a></li>
+        </ul>
+    </section> -->
+
+    <!-- Calendar -->
+
+    <!-- <section class="is-calendar">
+        <div class="inner">
+            <table>
+                <caption>February 2013</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" title="Monday">M</th>
+                        <th scope="col" title="Tuesday">T</th>
+                        <th scope="col" title="Wednesday">W</th>
+                        <th scope="col" title="Thursday">T</th>
+                        <th scope="col" title="Friday">F</th>
+                        <th scope="col" title="Saturday">S</th>
+                        <th scope="col" title="Sunday">S</th>
+                    </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td colspan="4" class="pad"><span>&nbsp;</span></td>
+                        <td><span>1</span></td>
+                        <td><span>2</span></td>
+                        <td><span>3</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>4</span></td>
+                        <td><span>5</span></td>
+                        <td><a href="#">6</a></td>
+                        <td><span>7</span></td>
+                        <td><span>8</span></td>
+                        <td><span>9</span></td>
+                        <td><a href="#">10</a></td>
+                    </tr>
+                    <tr>
+                        <td><span>11</span></td>
+                        <td><span>12</span></td>
+                        <td><span>13</span></td>
+                        <td class="today"><a href="#">14</a></td>
+                        <td><span>15</span></td>
+                        <td><span>16</span></td>
+                        <td><span>17</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>18</span></td>
+                        <td><span>19</span></td>
+                        <td><span>20</span></td>
+                        <td><span>21</span></td>
+                        <td><span>22</span></td>
+                        <td><a href="#">23</a></td>
+                        <td><span>24</span></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">25</a></td>
+                        <td><span>26</span></td>
+                        <td><span>27</span></td>
+                        <td><span>28</span></td>
+                        <td class="pad" colspan="3"><span>&nbsp;</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section> -->
+
+    <!-- Copyright -->
+    <div id="copyright">
+        <p>
+            &copy; 2014 Paul Fenwick<br />
+            Design: <a href="http://html5up.net/">HTML5 UP</a><br />
+            Site Based On: <a href="https://github.com/pjf/pjf.github.io">pjf.github.io</a>
+        </p>
+    </div>
+</div>
+
+            
+        </div>
+    </body>
+</html>
+

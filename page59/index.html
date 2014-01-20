@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<!--
+    Based upon Striped 2.5 by HTML5 Up!
+    html5up.net | @n33co
+    Updated for Jekyll by Paul Fenwick | @pjf
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+    <head>
+        <title>paul.j.fenwick</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="icon" type="image/png" href="/images/favicon.png" />
+
+        <!-- This tells social media which image to use -->
+        <link rel="image_src" href="/images/pjf_square.jpg" />
+
+        <link rel="alternative" type="application/rss+xml" title="RSS" href="/feed.xml"/>
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Open+Sans+Condensed:300,700" rel="stylesheet" />
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/skel.min.js"></script>
+        <script src="/js/skel-panels.min.js"></script>
+        <script src="/js/init.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="/css/skel-noscript.css" />
+            <link rel="stylesheet" href="/css/style.css" />
+            <link rel="stylesheet" href="/css/style-desktop.css" />
+            <link rel="stylesheet" href="/css/style-wide.css" />
+        </noscript>
+        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+        <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+        <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
+
+        <link rel="stylesheet" href="/css/pjf.css" />
+
+    </head>
+    <!--
+        Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
+        Set it to "right-sidebar" to, you guessed it, position it on the right.
+    -->
+    <body class="left-sidebar">
+    
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-47199716-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+        <div id="wrapper">
+            <div id="content">
+                <div id="content-inner">
+                    <article class="is-post">
+
+    <img class="me" src="/images/pjf_square.jpg" />
+
+    <header>
+        <h2>paul.j.fenwick</h2>
+        <span class="byline">Some guy from the internet who loves freedom.</span>
+    </header>
+
+    <p>Welcome to my home on the internet! Everything here is free
+    under the Creative Commons Attribution 3.0 license unless marked
+    otherwise.</p>
+ 
+    <p>This site contains various pieces of writing across my various
+    interests, and spanning several years. You can
+    <a href="https://github.com/pjf/pjf.github.io">fork this site
+    on github</a> if you wish.</p>
+
+
+</article>
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2005/01/04/happy-new-rootkit.html">Happy New Rootkit</a></h2>
+        </header>
+
+        <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">Jan</span>
+        <span class="day"> 4</span>
+        <span class="year"><span>,</span> 2005</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+            <p><b>Happy New Rootkit</b><br/>
+I'm back from holidays, and had intended to write about all the interesting diving I had managed to get done.
+<p>
+Unfortunately, the machine of one of our clients was compromised this afternoon, so instead I'm currently in the process of cleaning things up.  I know how the attackers got in, and I have clean backups that verify without an issue.  The main thing now is gaining physical access to the machine and the dull dull task of cleaning the disks and initiating a restore.  There's reason to believe that the kernel has been modified by a direct write to /dev/kmem, so <i>nothing</i> the machine tells me can possibly be trusted.
+<p>
+This particular compromise falls into the "What?  I didn't know we had that installed (outside of the packaging system)" category.
+
+
+
+        
+
+        <a href="/advogato/2005/01/04/happy-new-rootkit.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2004/12/26/more-diving.html">More Diving</a></h2>
+        </header>
+
+        <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">Dec</span>
+        <span class="day">26</span>
+        <span class="year"><span>,</span> 2004</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+            <p><b>More Diving</b><br/>
+Leaving soon for my dive trip.  While performing pre-flight checks on all my equipment, I discovered a pressure gauge that rattled.  Now, most pressure gauges do rattle when they're not pressurized, but this one rattles noticably more.  It was working fine last time I dived, but maybe it got damaged in transport, or got dropped when it was in for servicing?  Maybe it's fine, and has always rattled like that.
+<p>
+Normally I would just cycle down to the nearest dive shop, have a chat to the staff there, pop the gauge onto a tank of air and make sure it gives a good reading.  Unfortunately, it's holiday season, and all the dive shops I could possibly reach are closed before I take off for a few days on a boat.
+<p>
+I'm going to contact the boat operator and ask if they can bring an extra set of regs, or just another pressure gauge, just in case this one is having problems.
+<p>
+Going to be a pain if the gauge is broken, luckily I believe I still have all the warranty papers to go with it.
+
+
+
+        
+
+        <a href="/advogato/2004/12/26/more-diving.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2004/12/20/approaching-holidays.html">Approaching Holidays</a></h2>
+        </header>
+
+        <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">Dec</span>
+        <span class="day">20</span>
+        <span class="year"><span>,</span> 2004</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+            <p><b>Approaching Holidays</b><br/>
+The holiday season is upon us.  Jacinta has gone interstate to visit her sister, and so come Sunday I've found myself along and with a day free with no social commitments.  Hurrah!  That means that I can satisfy my inner-gamer.
+<p>
+What's interesting is what game I settled upon.  Not a networked game with beautiful graphics, and engrossing gameplay, and the opportunity to be called a 'lame n00b' like <a href="http://www.alleg.net/">Allegiance</a>.  Not a beautifully crafted atmospheric game like <a href="http://www.sshock2.com/">System Shock 2</a>, or a strategy classic like X-COM, or even entertainment at its FPS-best like Halo or Half-Life.
+<p>
+No, I have a souped up machine with dual monitors, acclerated graphics card, and pounding sub-woofer so I can play <a href="http://www.thangorodrim.net/">Angband</a>; without those silly tiles -- only ascii characters for me, thanks.  Specially, I played a variant called <a href="http://t-o-m-e.net/">Troubles of Middle Earth</a> (ToME).
+<p>
+ToME is pretty good.  It's got a lot of ideas that are very similar to <a href="http://adom.de/">ADOM</a>, like skill systems and overland travel.  It also has some very unique things -- a class that can befriend and enter symbiotic relationships with molds and slimes, 'unbelievers' who are able to suppress the manifestation of magic, and alchemists who are able to extract essences and craft new items.  The Tolkienesque aspects have been enhanced on top of that from vanilla Angband, which I've found to be a real treat.
+
+
+
+        
+
+        <a href="/advogato/2004/12/20/approaching-holidays.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2004/12/16/business-shuts-down-in-december.html">Business shuts down in December</a></h2>
+        </header>
+
+        <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">Dec</span>
+        <span class="day">16</span>
+        <span class="year"><span>,</span> 2004</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+            <p>
+<b>Business shuts down in December</b><br/>
+I don't know where it myth came from, but it's certainly not true when it comes to training and IT consultancy in Australia.  December has been insane, and continues to be so.  Every couple of days we seem to have a new business appearing out of the ether to need work done urgently.
+<p>
+Recent jobs have included training for yet another bank, diaster recovery planning for a retail hardware store, changes to management software for caravan parks, and some requests for really big training packages (5-20 days) from big business and government, both in Australia and overseas.  It's been a real mixed bag of work.
+<p>
+All of these combined with Jacinta going on leave soon, and a huge backlog of work that I'm still clearing after the conference, means that I'll probably be getting very little sleep until I also go on leave.
+
+
+
+        
+
+        <a href="/advogato/2004/12/16/business-shuts-down-in-december.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2004/12/12/scuba--table--nodeco-0-02.html">SCUBA::Table::NoDeco 0.02</a></h2>
+        </header>
+
+        <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">Dec</span>
+        <span class="day">12</span>
+        <span class="year"><span>,</span> 2004</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+            <p>
+<b>SCUBA::Table::NoDeco 0.02</b><br/>
+SCUBA::Table::NoDeco version 0.02 has been released, and will be arriving at a CPAN mirror near you.
+<p>
+The new version has new functions for finding your maximum time and depth given current nitrogen loading, as well as the PADI no-deco tables.  The PADI tables need more testing, as the risks of transcription errors do exist, so treat with caution.
+<p>
+The <a href="http://pjf.id.au/dive/calc.html">online dive calculator</a> has also been updated with the new module.
+
+
+
+        
+
+        <a href="/advogato/2004/12/12/scuba--table--nodeco-0-02.html">(read more...)</a>
+
+    </article>
+
+
+
+
+<div class="tip-box">
+    <p>
+        <a href="https://gittip.com/pjf"><i class="fa fa-gittip fa-3x pull-left"></i></a>
+        This content is available for you to use for free,
+        even commercially, under a <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 license</a>.
+    </p><p>
+        If you wish to support my work,
+        please <a href="https://gittip.com/pjf">tip me on gittip</a>.
+    </p>
+</div>
+
+
+
+
+                    
+
+<div class="pager">
+    
+        <a href="/page58" class="button previous">Previous Page</a>
+    
+
+    <!-- These numbers look really cool if we we them.
+       - just a simple matter of code, right?
+
+        <div class="pages">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <span>&hellip;</span>
+            <a href="#">20</a>
+        </div>
+
+    -->
+
+    
+        <a href="/page60" class="button next">Next Page</a>
+    
+
+</div>
+
+
+
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+<div id="sidebar">
+    <!-- Logo -->
+    <div id="logo"><h1><a href="/">pjf</a></h1></div>
+
+    <section class="find_me">
+    
+        <a href="http://twitter.com/pjf"><i class="fa fa-twitter-square  fa-3x"  ></i></a>
+    
+    
+        <a href="http://facebook.com/paul.fenwick"><i class="fa fa-facebook-square fa-3x"  ></i></a>
+    
+    
+    
+        <a href="https://github.com/pjf"><i class="fa fa-github-square   fa-3x"  ></i></a>
+    
+    </section>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul>
+            <!-- <li class="current_page_item"><a href="/"></a></li> -->
+            <li><a href="/">Latest Posts</a></li>
+        
+            <li><a href="/talks">Talks</a></li>
+        
+            <li><a href="/ethics">Ethics</a></li>
+        
+            <li><a href="/depression">Depression</a></li>
+        
+            <li><a href="/DF">Dwarf Fortress</a></li>
+        
+            <li><a href="/advogato">Older Posts</a></li>
+        
+        </ul>
+    </nav>
+
+    <!-- Search -->
+    <!-- <section class="is-search">
+        <form method="post" action="#">
+            <input type="text" class="text" name="search" placeholder="Search" />
+        </form>
+    </section> -->
+
+    <!-- Text -->
+    <section class="is-text-style1">
+        <div class="inner">
+            <p>
+            
+                <a href="https://gittip.com/pjf">
+                    <i class="fa fa-gittip fa-3x pull-left"></i>
+                </a>
+            
+                Everything on this site is free for you to use
+                under the <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a> license.
+            </p>
+        </div>
+    </section>
+
+    <!-- Recent Posts -->
+    <section class="is-recent-posts">
+        <header>
+            <h2>Recent Posts</h2>
+        </header>
+
+        <ul>
+        
+            <li><a href="/tech/2014/01/16/use-markdown-rather-than-bbcode-with-vimperator.html">Use Markdown Instead Of BBCode With Vimperator</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/11/jaxys-greatest-wish.html">Jaxy's Greatest Wish</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/11/a-quiet-trade.html">A Quiet Trade</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/11/a-place-to-settle.html">A Place To Settle</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/07/the-fickleness-of-warlocks.html">The Fickleness Of Warlocks</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/07/a-family-reunion.html">A Family Reunion</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/06/a-matter-of-trade.html">A Matter Of Trade</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/05/a-home-in-the-wilderness.html">A Home In The Wilderness</a>
+        
+            <li><a href="/depression/2014/01/02/personal-depression-an-update.html">Depression—An Update</a>
+        
+            <li><a href="/ethics/2013/12/28/on-open-source-software-and-communities.html">On Open Source Software And Communities</a>
+        
+        </ul>
+    </section>
+
+    <!-- Recent Comments -->
+    <!-- <section class="is-recent-comments">
+        <header>
+            <h2>Recent Comments</h2>
+        </header>
+        <ul>
+            <li>case on <a href="#">Now Full Cyborg</a></li>
+            <li>molly on <a href="#">Untitled Post</a></li>
+            <li>case on <a href="#">Temporal Flux</a></li>
+        </ul>
+    </section> -->
+
+    <!-- Calendar -->
+
+    <!-- <section class="is-calendar">
+        <div class="inner">
+            <table>
+                <caption>February 2013</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" title="Monday">M</th>
+                        <th scope="col" title="Tuesday">T</th>
+                        <th scope="col" title="Wednesday">W</th>
+                        <th scope="col" title="Thursday">T</th>
+                        <th scope="col" title="Friday">F</th>
+                        <th scope="col" title="Saturday">S</th>
+                        <th scope="col" title="Sunday">S</th>
+                    </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td colspan="4" class="pad"><span>&nbsp;</span></td>
+                        <td><span>1</span></td>
+                        <td><span>2</span></td>
+                        <td><span>3</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>4</span></td>
+                        <td><span>5</span></td>
+                        <td><a href="#">6</a></td>
+                        <td><span>7</span></td>
+                        <td><span>8</span></td>
+                        <td><span>9</span></td>
+                        <td><a href="#">10</a></td>
+                    </tr>
+                    <tr>
+                        <td><span>11</span></td>
+                        <td><span>12</span></td>
+                        <td><span>13</span></td>
+                        <td class="today"><a href="#">14</a></td>
+                        <td><span>15</span></td>
+                        <td><span>16</span></td>
+                        <td><span>17</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>18</span></td>
+                        <td><span>19</span></td>
+                        <td><span>20</span></td>
+                        <td><span>21</span></td>
+                        <td><span>22</span></td>
+                        <td><a href="#">23</a></td>
+                        <td><span>24</span></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">25</a></td>
+                        <td><span>26</span></td>
+                        <td><span>27</span></td>
+                        <td><span>28</span></td>
+                        <td class="pad" colspan="3"><span>&nbsp;</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section> -->
+
+    <!-- Copyright -->
+    <div id="copyright">
+        <p>
+            &copy; 2014 Paul Fenwick<br />
+            Design: <a href="http://html5up.net/">HTML5 UP</a><br />
+            Site Based On: <a href="https://github.com/pjf/pjf.github.io">pjf.github.io</a>
+        </p>
+    </div>
+</div>
+
+            
+        </div>
+    </body>
+</html>
+
