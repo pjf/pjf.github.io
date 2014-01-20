@@ -4,20 +4,27 @@ Post listing for pjf.id.au
 
 Parameters:
 
-    * limit   - default 5
+    * limit   - defaults to site.paginate, or 5
     * cat     - only include this category
     * exclude - exclude this category
     * tag     - only include this tag
+    * posts   - Alternative list of posts to process
+                (defaults to site.posts)
 
 {% endcomment %}
 
-{% if include.limit %} {% assign limit = include.limit %}
-{% else %}             {% assign limit = 5             %}
+{% if include.limit    %} {% assign limit = include.limit %}
+{% elsif site.paginate %} {% assign limit = site.paginate %}
+{% else %}                {% assign limit = 5             %}
+{% endif %}
+
+{% if    include.posts  %} {% assign posts = include.posts   %}
+{% else %}                 {% assign posts = site.posts      %}
 {% endif %}
 
 {% assign count = 0 %}
 
-{% for post in site.posts %}
+{% for post in posts %}
 
     {% comment %} Skip this post if not in our category {% endcomment %}
 
@@ -60,8 +67,11 @@ Parameters:
 
         {% if post.content contains '<!--more-->' %}
             {{ post.content | split:'<!--more-->' | first }}
-            <a href="{{ post.url }}">(read more...)</a>
+        {% else %}
+            {{ post.excerpt }}
         {% endif %}
+
+        <a href="{{ post.url }}">(read more...)</a>
 
     </article>
 {% endfor %}

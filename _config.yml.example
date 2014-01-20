@@ -1,5 +1,4 @@
 timezone: Australia/Perth
-excerpt_separator: <!--more-->
 name: Name Here!
 shortname: site
 avatar: avatar_square.jpg
@@ -29,6 +28,9 @@ exclude:
     - 'README.md'
     - 'personal_example'
     - 'youtube_example'
+
+# Uncomment this to enable pagination, including tag pagination.
+# paginate: 5
 
 # Uncomment and Add your publisher ID here. https://www.addthis.com/
 #addthis:
