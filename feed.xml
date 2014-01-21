@@ -3,8 +3,8 @@
 	<channel>
 		<title>paul.j.fenwick</title>
 		<description>Some guy from the internet who loves freedom.</description>
-		<link>http://pjf.id.au/</link>
-		<atom:link href="http://pjf.id.au//feed.xml" rel="self" type="application/rss+xml" />
+		<link>http://pjf.id.au</link>
+		<atom:link href="http://pjf.id.au/feed.xml" rel="self" type="application/rss+xml" />
                 
 
                     
@@ -43,8 +43,8 @@
 
 &lt;p&gt;~ Paul&lt;/p&gt;</description>
 				<pubDate>Tue, 21 Jan 2014 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au///tech/2014/01/21/a-new-website-a-new-philosophy.html</link>
-				<guid isPermaLink="true">http://pjf.id.au///tech/2014/01/21/a-new-website-a-new-philosophy.html</guid>
+				<link>http://pjf.id.au//tech/2014/01/21/a-new-website-a-new-philosophy.html</link>
+				<guid isPermaLink="true">http://pjf.id.au//tech/2014/01/21/a-new-website-a-new-philosophy.html</guid>
 			</item>
 		
 
@@ -79,8 +79,8 @@ $ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt
 &lt;hr /&gt;
 &lt;p&gt;See also: &lt;a href=&quot;http://privacygeek.blogspot.com.au/2013/03/the-worlds-easiest-guide-to-installing.html&quot;&gt;The world’s easiest guide to installing cpanm&lt;/a&gt;&lt;/p&gt;</description>
 				<pubDate>Thu, 16 Jan 2014 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au///tech/2014/01/16/use-markdown-rather-than-bbcode-with-vimperator.html</link>
-				<guid isPermaLink="true">http://pjf.id.au///tech/2014/01/16/use-markdown-rather-than-bbcode-with-vimperator.html</guid>
+				<link>http://pjf.id.au//tech/2014/01/16/use-markdown-rather-than-bbcode-with-vimperator.html</link>
+				<guid isPermaLink="true">http://pjf.id.au//tech/2014/01/16/use-markdown-rather-than-bbcode-with-vimperator.html</guid>
 			</item>
 		
 
@@ -138,8 +138,8 @@ $ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt
 
 &lt;p&gt;² Amongst other things, my talk ”&lt;a href=&quot;http://pjf.id.au/talks/2011/07/29/all-your-brains-suck.html&quot;&gt;All Your Brains Suck&lt;/a&gt;” discusses how we use environmental queues to rationalise thoughts and emotions.&lt;/p&gt;</description>
 				<pubDate>Thu, 02 Jan 2014 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au///depression/2014/01/02/personal-depression-an-update.html</link>
-				<guid isPermaLink="true">http://pjf.id.au///depression/2014/01/02/personal-depression-an-update.html</guid>
+				<link>http://pjf.id.au//depression/2014/01/02/personal-depression-an-update.html</link>
+				<guid isPermaLink="true">http://pjf.id.au//depression/2014/01/02/personal-depression-an-update.html</guid>
 			</item>
 		
 
@@ -171,8 +171,8 @@ $ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt
 
 &lt;p&gt;Thank you.&lt;/p&gt;</description>
 				<pubDate>Sat, 28 Dec 2013 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au///ethics/2013/12/28/on-open-source-software-and-communities.html</link>
-				<guid isPermaLink="true">http://pjf.id.au///ethics/2013/12/28/on-open-source-software-and-communities.html</guid>
+				<link>http://pjf.id.au//ethics/2013/12/28/on-open-source-software-and-communities.html</link>
+				<guid isPermaLink="true">http://pjf.id.au//ethics/2013/12/28/on-open-source-software-and-communities.html</guid>
 			</item>
 		
 
@@ -198,8 +198,8 @@ $ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt
 &lt;hr /&gt;
 &lt;p&gt;This post was originally made as a comment on &lt;a href=&quot;https://www.facebook.com/paul.fenwick/posts/10151875254259611&quot;&gt;another thread regarding ethics&lt;/a&gt;. I’ve posted it here—with minor edits—for a wider audience.&lt;/p&gt;</description>
 				<pubDate>Mon, 16 Dec 2013 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au///ethics/2013/12/16/im-a-hypocrite.html</link>
-				<guid isPermaLink="true">http://pjf.id.au///ethics/2013/12/16/im-a-hypocrite.html</guid>
+				<link>http://pjf.id.au//ethics/2013/12/16/im-a-hypocrite.html</link>
+				<guid isPermaLink="true">http://pjf.id.au//ethics/2013/12/16/im-a-hypocrite.html</guid>
 			</item>
 		
 
@@ -239,8 +239,8 @@ $ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt
 
 &lt;p&gt;~ Paul&lt;/p&gt;</description>
 				<pubDate>Sun, 15 Dec 2013 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au///ethics/2013/12/15/the-ethics-of-everyday-people.html</link>
-				<guid isPermaLink="true">http://pjf.id.au///ethics/2013/12/15/the-ethics-of-everyday-people.html</guid>
+				<link>http://pjf.id.au//ethics/2013/12/15/the-ethics-of-everyday-people.html</link>
+				<guid isPermaLink="true">http://pjf.id.au//ethics/2013/12/15/the-ethics-of-everyday-people.html</guid>
 			</item>
 		
 
@@ -260,8 +260,8 @@ $ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt
 
 &lt;p&gt;So, I have a request for you, and it has nothing to do with me. The next time you think that someone’s uncaring or rude, the next time you think someone’s unreliable or inconsistent; the next time you think someone must dislike you because they’re not responding to your communication; then please think for a moment. That person has an internal story where their behaviour makes sense. If their behaviour seems puzzling to you, it may well be because you don’t know that story. So please, give them the benefit of the doubt. They may not be as big a jerk as you think.&lt;/p&gt;</description>
 				<pubDate>Tue, 29 Oct 2013 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au///ethics/2013/10/29/obviously-theyre-a-jerk.html</link>
-				<guid isPermaLink="true">http://pjf.id.au///ethics/2013/10/29/obviously-theyre-a-jerk.html</guid>
+				<link>http://pjf.id.au//ethics/2013/10/29/obviously-theyre-a-jerk.html</link>
+				<guid isPermaLink="true">http://pjf.id.au//ethics/2013/10/29/obviously-theyre-a-jerk.html</guid>
 			</item>
 		
 
@@ -283,8 +283,8 @@ $ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt
 
 &lt;p&gt;But even if you don’t track your moods and experiences, then at least remember that if you’re feeling down, or angry, or frustrated, then your brain—and your memory in particular—is going to actively mess with you. You may not be able to stop that from happening, but having knowledge and insight may at least help you make better choices than what you may have otherwise made.&lt;/p&gt;</description>
 				<pubDate>Tue, 29 Oct 2013 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au///depression/2013/10/29/feels-influence-perception.html</link>
-				<guid isPermaLink="true">http://pjf.id.au///depression/2013/10/29/feels-influence-perception.html</guid>
+				<link>http://pjf.id.au//depression/2013/10/29/feels-influence-perception.html</link>
+				<guid isPermaLink="true">http://pjf.id.au//depression/2013/10/29/feels-influence-perception.html</guid>
 			</item>
 		
 
@@ -302,8 +302,8 @@ $ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt
 
 &lt;p&gt;On the upside, if you’re questioning and re-examining your own ethics and behaviour, if you’re working and progressing towards being more compassionate and caring, and if you’re somehow able to convince others to do the same, then I’m &lt;em&gt;seriously&lt;/em&gt; proud of you right now; because your neurobiology makes that a challenging task indeed.&lt;/p&gt;</description>
 				<pubDate>Sat, 12 Oct 2013 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au///ethics/2013/10/12/the-more-nueroscience-i-learn.html</link>
-				<guid isPermaLink="true">http://pjf.id.au///ethics/2013/10/12/the-more-nueroscience-i-learn.html</guid>
+				<link>http://pjf.id.au//ethics/2013/10/12/the-more-nueroscience-i-learn.html</link>
+				<guid isPermaLink="true">http://pjf.id.au//ethics/2013/10/12/the-more-nueroscience-i-learn.html</guid>
 			</item>
 		
 
@@ -331,8 +331,8 @@ $ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt
 
 &lt;p&gt;~ Paul&lt;/p&gt;</description>
 				<pubDate>Mon, 30 Sep 2013 00:00:00 +1000</pubDate>
-				<link>http://pjf.id.au///ethics/2013/09/30/a-hope-for-humanity.html</link>
-				<guid isPermaLink="true">http://pjf.id.au///ethics/2013/09/30/a-hope-for-humanity.html</guid>
+				<link>http://pjf.id.au//ethics/2013/09/30/a-hope-for-humanity.html</link>
+				<guid isPermaLink="true">http://pjf.id.au//ethics/2013/09/30/a-hope-for-humanity.html</guid>
 			</item>
 		
 
