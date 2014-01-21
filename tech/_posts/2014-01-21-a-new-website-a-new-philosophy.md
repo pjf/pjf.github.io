@@ -16,8 +16,8 @@ about is the technology and philosophy of how the new site is constructed.
 <!--more-->
 
 I do a [lot of writing][ethics] on how I feel the world could be a better
-place, and much of that comes down to changing the way in which we think
-We're society teach us odd values; we're told sharing and generosity are good,
+place, and much of that comes down to changing the way in which we think.
+Our society teaches us odd values; we're told sharing and generosity are good,
 and they are *exceptional* traits to have. Literally; they are
 something which is an exception or deviation from expected behaviour.
 
