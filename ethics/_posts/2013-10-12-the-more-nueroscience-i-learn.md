@@ -1,5 +1,5 @@
 ---
-title: The more neuroscience I learn, the more horrified I am
+title: The more neuroscience I learn...
 tags: science neuroscience ethics neuroethics
 orig_url: https://www.facebook.com/paul.fenwick/posts/10151733581169611
 ---
