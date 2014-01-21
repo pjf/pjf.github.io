@@ -1,0 +1,29 @@
+{% comment %}
+
+metainfo.html - Provides meta-info for the head of the document
+for search engines, social media, and the like.
+
+{% endcomment %}
+
+{% comment %}
+
+image_src tells social media which image to use for previews.
+TODO: Allow articles to specify this in top-matter.
+
+{% endcomment %}
+
+<link rel="image_src" href="/images/{{site.avatar}}" / >
+
+{% if page.description %}
+<meta name="description" content="{{ page.description | escape }}" />
+
+    {% comment %} We'd like the below to work, but it doesn't yet 
+        {- elsif content contains '<!--more-->' -}
+        <meta name="description" content="{{ content | split:'<!--more-->' | first | markdownify | strip_html | escape }}" />
+    {% endcomment %}
+
+{% endif %}
+
+{% if page.tags %}
+    <meta name="keywords" content="{{ page.tags | join: ', ' | escape }}" />
+{% endif %}
