@@ -9,13 +9,19 @@
     <head>
         <title>Posts tagged with advogato</title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
+
+        
+
+
+
+<link rel="image_src" href="/images/pjf_square.jpg" / >
+
+
+
+
+
+
         <link rel="icon" type="image/png" href="/images/favicon.png" />
-
-        <!-- This tells social media which image to use -->
-        <link rel="image_src" href="/images/pjf_square.jpg" />
-
         <link rel="alternative" type="application/rss+xml" title="RSS" href="/feed.xml"/>
         <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Open+Sans+Condensed:300,700" rel="stylesheet" />
         <script src="/js/jquery.min.js"></script>
@@ -91,306 +97,6 @@
     <article class="is-post is-post-excerpt">
 
         <header>
-            <h2><a href="/advogato/2003/05/08/interesting-perl-bug.html">Interesting Perl Bug</a></h2>
-        </header>
-
-        <div class="info">
-    <!--
-            Note: The date should be formatted exactly as it's shown below. In particular, the
-            "least significant" characters of the month should be encapsulated in a <span>
-            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
-            Oh, and if you don't need a date for a particular page or post you can simply delete
-            the entire "date" element.
-            
-    -->
-    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
-    <span class="date">
-        <span class="month">May</span>
-        <span class="day"> 8</span>
-        <span class="year"><span>,</span> 2003</span>
-    </span>
-
-
-    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
-
-    <!--
-        <ul class="stats">
-            <li><a href="#" class="fa fa-comment">16</a></li>
-            <li><a href="#" class="fa fa-heart">32</a></li>
-            <li><a href="#" class="fa fa-twitter">64</a></li>
-            <li><a href="#" class="fa fa-facebook">128</a></li>
-        </ul>
-    -->
-</div>
-
-
-        
-            <B>Interesting Perl Bug</b><BR>
-To see an interesting bug which caused me many headaches, enter the following script, and mark it setuid.  Then run it as any other user except the owner.
-<pre>
-#!/usr/bin/perl -wT
-$ENV{PATH} = "";
-print "Hello World\n";
-system($0,"1") unless @ARGV;
-</pre>
-<p>
-The result is a delightful message about how your kernel has a setuid script bug which is rather dangerous and easy to exploit... except that you don't
-<p>
-Perl is just getting confused because it looks like the interpretor has been started setuid before it's had a chance to do sanity checking and invoke suidperl.  The result is the inability to have a setuid script invoke itself.  Very bothersome.
-<p>
-The solution is to drop setuid privileges before the script calls itself again.  Conveniently enough, Perl allows us to localise <tt>$&gt;</tt> (effective UID), so the following program <i>does</i> work as intended:
-<p>
-<pre>
-#!/usr/bin/perl -wT
-$ENV{PATH} = "";
-print "Hello World\n";
-unless (@ARGV) {local $&gt; = $&lt;; system($0,"1");}
-</pre>
-<p>
-Because of the use of <tt>local</tt>, setuid privileges are only dropped for the duration of the call to <tt>system</tt>.  Of course, it's usually a good idea to drop setuid privileges as soon as possible, or only invoke them when you absolutely have to.
-
-
-        
-
-        <a href="/advogato/2003/05/08/interesting-perl-bug.html">(read more...)</a>
-
-    </article>
-
-
-    
-
-    
-
-    
-
-
-    
-
-    
-
-
-
-    
-
-    
-
-    <article class="is-post is-post-excerpt">
-
-        <header>
-            <h2><a href="/advogato/2003/05/05/more-weddings-.html">More Weddings!</a></h2>
-        </header>
-
-        <div class="info">
-    <!--
-            Note: The date should be formatted exactly as it's shown below. In particular, the
-            "least significant" characters of the month should be encapsulated in a <span>
-            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
-            Oh, and if you don't need a date for a particular page or post you can simply delete
-            the entire "date" element.
-            
-    -->
-    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
-    <span class="date">
-        <span class="month">May</span>
-        <span class="day"> 5</span>
-        <span class="year"><span>,</span> 2003</span>
-    </span>
-
-
-    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
-
-    <!--
-        <ul class="stats">
-            <li><a href="#" class="fa fa-comment">16</a></li>
-            <li><a href="#" class="fa fa-heart">32</a></li>
-            <li><a href="#" class="fa fa-twitter">64</a></li>
-            <li><a href="#" class="fa fa-facebook">128</a></li>
-        </ul>
-    -->
-</div>
-
-
-        
-            <B>More Weddings!</b><BR>
-Congratulations to Dan and Tomoko, who are also engaged.  I've been holding my tongue a little regarding this, hence my rather cryptic entry on the 28th April.
-<p>
-<B>Mushrooming</b><BR>
-On Saturday we went mushrooming with Dan and Tomoko out in Emerald (an outer "suburb" of Melbourne).  Dan's family regularly goes out to a very scenic golf-course every year to pick mushrooms.  There's an incredible variety of fungi growing on and around the course, although there were only two types that we were picking.  We ended up taking home a huge box of them, and spent the evening preserving and cooking with them.
-<p>
-Dan only knew the mushrooms by their Russian names, although he provided us with English translations for our benefit.  However, I was curious to learn more about these fungi which (except in the pantry of Dan's family) I had never seen before.  It ends up that we were collecting <a href="http://www.bluewillowpages.com/mushroomexpert/cantharellus_cibarius.html">
-chanterelles</a> and <a href="http://www.bluewillowpages.com/mushroomexpert/suillus_luteus.html"> Slippery Jacks</a>.  I've been chomping down on the <i>chanterelles</i> both during the preserving activities, and now again today.  I haven't yet tried the <i>slippery jacks</i> -- we don't have as many, and I'm leaving them in the jars longer to soak up some of the flavour of the spices and herbs we added.
-<p>
-<b>Diplomacy</b><br>
-We actually succeeded in organising and running a 7-player Diplomacy game, with (most) players arriving on-time, (most) turns taking a fixed amount of time, and actually having the game run to completion (five-way draw, with Italy holding 17 centres).  I was the first player to be eliminated, and Ross the second.  Despite this, we were both instrumental in planning and holding a stalemate line to force the draw.
-
-
-        
-
-        <a href="/advogato/2003/05/05/more-weddings-.html">(read more...)</a>
-
-    </article>
-
-
-    
-
-    
-
-    
-
-
-    
-
-    
-
-
-
-    
-
-    
-
-    <article class="is-post is-post-excerpt">
-
-        <header>
-            <h2><a href="/advogato/2003/05/01/no-more-flash-ads-.html">No more flash ads!</a></h2>
-        </header>
-
-        <div class="info">
-    <!--
-            Note: The date should be formatted exactly as it's shown below. In particular, the
-            "least significant" characters of the month should be encapsulated in a <span>
-            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
-            Oh, and if you don't need a date for a particular page or post you can simply delete
-            the entire "date" element.
-            
-    -->
-    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
-    <span class="date">
-        <span class="month">May</span>
-        <span class="day"> 1</span>
-        <span class="year"><span>,</span> 2003</span>
-    </span>
-
-
-    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
-
-    <!--
-        <ul class="stats">
-            <li><a href="#" class="fa fa-comment">16</a></li>
-            <li><a href="#" class="fa fa-heart">32</a></li>
-            <li><a href="#" class="fa fa-twitter">64</a></li>
-            <li><a href="#" class="fa fa-facebook">128</a></li>
-        </ul>
-    -->
-</div>
-
-
-        
-            <B>No more flash ads!</b><BR>
-I've loved <a href="http://www.mozilla.org/">Mozilla</a> for its ability to disable pop-ups, block ads, and generally be incredibly useful.  However it's always bothered me that I can't block flash-ads in the same way that I can block normal images.
-<p>
-However, thanks to a helpful comment on <a href="http://slashdot.org/">slashdot</a> today, I discovered there is a way to block flash ads!  My web-browsing experience has now become a whole lot nicer.  For instructions, you can visit <a href="http://dion.swamp.dk/stuff.html">Dion's stuff</a>.
-
-
-        
-
-        <a href="/advogato/2003/05/01/no-more-flash-ads-.html">(read more...)</a>
-
-    </article>
-
-
-    
-
-    
-
-    
-
-
-    
-
-    
-
-
-
-    
-
-    
-
-    <article class="is-post is-post-excerpt">
-
-        <header>
-            <h2><a href="/advogato/2003/04/29/weddings-.html">Weddings!</a></h2>
-        </header>
-
-        <div class="info">
-    <!--
-            Note: The date should be formatted exactly as it's shown below. In particular, the
-            "least significant" characters of the month should be encapsulated in a <span>
-            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
-            Oh, and if you don't need a date for a particular page or post you can simply delete
-            the entire "date" element.
-            
-    -->
-    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
-    <span class="date">
-        <span class="month">Apr</span>
-        <span class="day">29</span>
-        <span class="year"><span>,</span> 2003</span>
-    </span>
-
-
-    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
-
-    <!--
-        <ul class="stats">
-            <li><a href="#" class="fa fa-comment">16</a></li>
-            <li><a href="#" class="fa fa-heart">32</a></li>
-            <li><a href="#" class="fa fa-twitter">64</a></li>
-            <li><a href="#" class="fa fa-facebook">128</a></li>
-        </ul>
-    -->
-</div>
-
-
-        
-            <B>Weddings!</b><BR>
-Oh wow!  My friends are all getting engaged.  Congratulations to Ian and Sofie who got engaged last weekend!  There's even more exciting news that I'm not allowed to say, so I won't say that here.
-<p>
-<B>Chickens</b><BR>
-The chook that was having problems with her vent appears to be much better after her adjustment, and has made a full recovery.
-<p>
-Alas, the chicken that lays broken eggs is still laying broken eggs.
-<p>
-<B>Perl Courses</b><BR>
-Our <a href="http://perltraining.com.au/bookings.html">public courses</a> are filling up.  Hurrah.
-
-
-        
-
-        <a href="/advogato/2003/04/29/weddings-.html">(read more...)</a>
-
-    </article>
-
-
-    
-
-    
-
-    
-
-
-    
-
-    
-
-
-
-    
-
-    
-
-    <article class="is-post is-post-excerpt">
-
-        <header>
             <h2><a href="/advogato/2003/04/22/chickens.html">Chickens</a></h2>
         </header>
 
@@ -432,6 +138,306 @@ One of our chooks (not the broken one) appeared to have the chicken equivalent o
         
 
         <a href="/advogato/2003/04/22/chickens.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2003/04/07/audio-visual-entertainment.html">Audio-Visual Entertainment</a></h2>
+        </header>
+
+        <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">Apr</span>
+        <span class="day"> 7</span>
+        <span class="year"><span>,</span> 2003</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+            <B>Audio-Visual Entertainment</b><BR>
+After having a DVD drive installed in <I>cube</i> (a tiny machine about the size of a shoebox) for a while, I actually used it to watch a movie.  Jacinta received a copy of <I>Spirited Away</i> for her birthday, and I was surprised at how easy it was to get everything running under Linux.
+<P>
+I spent about 15 minutes upgrading the drive's firmware, apt-get installed <a href="http://www.dtek.chalmers.se/groups/dvd/">Ogle</a>, dropped in the disk, and it played.  Woo-hoo!
+<P>
+Having a open-source operting system with an open-source DVD player work "out of the box" was deeply satisfying.  The only thing that didn't work was the TV output, but our 17" LCDs give a pretty nice picture, and are easily relocated to the lounge-room.
+<P>
+As it so happens, I remember getting the TV output working for a course I ran the other year where my only "projector" was a TV.  I'd just forgotten I needed to run the appropriate utility.  Oops.
+<p>
+In any case, I'm chuffed that our little shoebox performed its first test as an A/V machine admirably.  Now if I can only replace the fan in the power-supply that sounds like a failing lawn-mower, we might use it more often for home entertainment.
+
+
+        
+
+        <a href="/advogato/2003/04/07/audio-visual-entertainment.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2003/03/28/such-a-busy-week.html">Such a busy week</a></h2>
+        </header>
+
+        <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">Mar</span>
+        <span class="day">28</span>
+        <span class="year"><span>,</span> 2003</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+            <B>Such a busy week</b><BR>
+My goodness, this last week has certainly been busy.  Much of my work involved working for a client with a tight deadline.  They had the usual problems involved with a large project, but also had their technical lead relapse with gandular half-way through.
+<p>
+Yesterday was my last day there -- already well past the project deadline.  Hardly what one would call a relaxing final day at work.
+<p>
+<B>SCSI Pain</b><BR>
+I learnt far too much about SCSI this week.  I recommended to a client they order in a SCSI card for their server, so it could talk to the appropriate SCSI tape drive.  I rather foolishly <i>did not</i> check the drive to see if it was using narrow SCSI, or wide SCSI.  It uses wide SCSI, and we got a narrow controller.
+<P>
+While apparently all wide SCSI devices are supposed to be able to drop back into narrow SCSI mode, it needs odd cabling and special termination.  I was once told that a ritual sacrifice will improve many SCSI problems, but unfortunately I had left all my chickens at home that day.
+<P>
+In any case, I'm eating humble pie for a bit, and have arranged for an appropriate wide, dual-channel, SCSI controller, since it's cheaper than the special high-line terminators.
+<P>
+<B>Busy week, continued</b><BR>
+Met with a new client today, 9:30am meeting, went for about three hours.  They want a whole lot of software development work done.  Still at the quotation stage, but they seem very eager.  That will keep both Jacinta and myself very busy for a while.
+<P>
+Yesterday, I discovered from <a href="/person/scottp/">scottp</a> that the big Melbourne user's group convention is on <i>tomorrow</i>, and <a href="http://melbourne.pm.org/">Melb.pm</a> is short on people.  I'd been missing the mails about it because I wasn't subscribed to the regular mailing list, and is there any chance that I could possibly help out?  So, that's what I'm doing tomorrow, instead of watching movies with Jacinta and <a href="/person/jenni/">jenni</a>.
+<p>
+Oh, and just then I had a call from the client with the tight deadlines, asking if I felt that coming in to debug code in Sunday was more enjoyable than sleeping.  They were very understanding when I declined.  I'll probably still be visiting them on Tuesday, though.
+<p>
+<b>Backup weirdness</b><br>
+I appear to have one client where the presence of a directory named backtick (`) is interfering with dump(8).  The directory itself gets stored fine, but not anything after it (in asciibetical order).  We're not doing anything odd with passing in a list of files to dump -- just good ol' regular, "here's a filesystem, put it on the tape".  It may actually be that it's dumping fine, but restore can't handle it.
+<p>
+In any case, I'd expect such weirdness from fancy new backup software, but when your program states that "A dump command appeared in Version 6 AT&amp;T UNIX", you'd expect it to be pretty stable by now.
+<p>
+We're running a series of tests to try and locate where the problem is occuring (in either dump or restore), and the smallest case needed to reproduce it.  Very disturbing stuff.  Luckily, it only seems to be affecting one directory, and we found the problem before anything in that directory was needed, but it's still disturbing nonetheless.
+
+
+
+        
+
+        <a href="/advogato/2003/03/28/such-a-busy-week.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2003/03/19/e-mail-and-privacy.html">E-mail and privacy</a></h2>
+        </header>
+
+        <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">Mar</span>
+        <span class="day">19</span>
+        <span class="year"><span>,</span> 2003</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+            <B>E-mail and privacy</b><BR>
+I still find it incredible how many people believe that e-mail is somehow inheritantly private.  I have clients, they have PGP installed (some for many years), and they have my keys.  Yet somehow the effort of hitting the "encrypt" button is too much for them, even if the e-mail contains sensitive or confidential information.  People don't write credit card details, medical history, or other private information on postcards, yet people do the electronic equivalent every day.
+<p>
+What's even more disturbing is the number of "e-commerce" systems which are little more than a copy of formmail running on a SSL server.  The results are then dropped into a plain-text e-mail, transmitted in the clear over SMTP, stored unencrypted on a hard-drive somewhere, and then again grabbed using clear POP/IMAP (with passwords easily sniffable), and again stored on what's often a frighteningly insecure workstation or home machine.
+<p>
+People are big on using SSL for websites, but seem completely ignorant that the same level of security needs to be used from end-to-end to make an entire process secure.  I blame much of this on the fact that Certificate Authorities (and indirectly, browser manufacturers) can make money from people purchasing signatures on their SSL certs, but nobody makes money when you generate a PGP key, or pick up your mail using APOP.
+<p>
+Unfortunately the matter of securing communications is not  a technical one, but rather a social one.  I fear that the public in general will only become aware of how insecure their communications are once someone finds a way of making money by securing them.
+
+
+        
+
+        <a href="/advogato/2003/03/19/e-mail-and-privacy.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2003/03/07/hangover.html">Hangover</a></h2>
+        </header>
+
+        <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">Mar</span>
+        <span class="day"> 7</span>
+        <span class="year"><span>,</span> 2003</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+            <B>Hangover</b><BR>
+David (my future brother-in-law-in-law) had his Buck's night last evening.  Tremendous fun, and a great way to relax after a hard working week, but with only one flaw.  Today's Friday, so the working week isn't over.  While I don't have a real hangover per se (drank plenty of water during the evening), I'm certainly functioning far below my usual mental capacity.
+<p>
+For some reason, my desire to listen to loud and repetitive techno is reduced.
+
+
+        
+
+        <a href="/advogato/2003/03/07/hangover.html">(read more...)</a>
 
     </article>
 
@@ -553,6 +559,8 @@ One of our chooks (not the broken one) appeared to have the chicken equivalent o
 
         <ul>
         
+            <li><a href="/tech/2014/01/21/a-new-website-a-new-philosophy.html">A new website, a new philosophy</a>
+        
             <li><a href="/tech/2014/01/16/use-markdown-rather-than-bbcode-with-vimperator.html">Use Markdown Instead Of BBCode With Vimperator</a>
         
             <li><a href="/df/unholinesssparked/2014/01/11/jaxys-greatest-wish.html">Jaxy's Greatest Wish</a>
@@ -570,8 +578,6 @@ One of our chooks (not the broken one) appeared to have the chicken equivalent o
             <li><a href="/df/unholinesssparked/2014/01/05/a-home-in-the-wilderness.html">A Home In The Wilderness</a>
         
             <li><a href="/depression/2014/01/02/personal-depression-an-update.html">Depression—An Update</a>
-        
-            <li><a href="/ethics/2013/12/28/on-open-source-software-and-communities.html">On Open Source Software And Communities</a>
         
         </ul>
     </section>
