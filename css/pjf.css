@@ -102,6 +102,20 @@ img.me {
     padding-left: 1em;
 }
 
+
+/* Edit this post */
+
+.edit-post {
+    text-align: right;
+    font-size: smaller;
+    opacity: .5;
+    float: right;
+}
+
+.edit-post:hover {
+    opacity: 1.0;
+}
+
 /* AddThis */
 
 div.addthis_container {
