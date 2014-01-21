@@ -27,8 +27,11 @@
 [semmelweis-conflict]: http://en.wikipedia.org/wiki/Ignaz_Semmelweis#Conflict_with_established_medical_opinions "Ignaz Semmelweis - Conflict with established medical opinions (Wikipedia)"
 [reactance]: http://en.wikipedia.org/wiki/Reactance_(psychology) "Reactance (Wikipedia)"
 
-# On impostor syndrome and depression
+# Depression
 
 [impostor-syndrome]: https://en.wikipedia.org/wiki/Impostor_syndrome "Impostor Syndrome (Wikipedia)"
 [impostor-denise]: https://www.youtube.com/watch?v=zZg9rax-ky4 "Denise Paolucci: Overcoming Impostor Syndrome (YouTube)"
 [BDNF]: https://en.wikipedia.org/wiki/BDNF "Brain-derived neurotrophic factor (Wikipedia)"
+[depression-letter]: http://pjf.id.au/depression/2012/11/29/i-have-depression-an-open-letter-by-paul-fenwick.html "I have depression—An open letter by Paul Fenwick"
+[anhedonia]: https://en.wikipedia.org/wiki/Anhedonia "Anhedonia (Wikipedia)"
+[psychomotor-retardation]: https://en.wikipedia.org/wiki/Psychomotor_retardation "Psychomotor retardation (Wikipedia)"
