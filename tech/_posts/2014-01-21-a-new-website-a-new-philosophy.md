@@ -81,3 +81,8 @@ So please, share and enjoy, and if you like my work I'd love to hear about it
 below.
 
 ~ Paul
+
+*Edit*: Within a couple of ours of posting this, the amazing
+{% gh rhunter Rob Hunter %}
+[supplied a patch](https://github.com/pjf/pjf.github.io/pull/14)
+adding edit links to the top of all articles! Thanks Rob, you totally rock! ;)
