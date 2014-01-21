@@ -1,5 +1,11 @@
 [laputa]: http://en.wikipedia.org/wiki/Castle_in_the_Sky "Laputa: Castle in the Sky (Wikipedia)"
 
+# From "Wear Sunscreen"
+
+[sunscreen]: http://www.chicagotribune.com/news/columnists/chi-schmich-sunscreen-column,0,4054576.column "Advice, like youth, probably just wasted on the young (Mary Schmich, Chicago Tribune)"
+[sparkpeople]: http://sparkpeople.com/ "SparkPeople"
+[utility]: http://en.wikipedia.org/wiki/Utility "Utility (Wikipedia)"
+
 # From the ethics of everyday people
 
 [katrina-funding]: http://www.washingtonpost.com/wp-dyn/content/article/2005/09/08/AR2005090801081.html "Congress approves $51.8 Billion for Victims (Washington Post)"

@@ -2,6 +2,7 @@
 title: "On money, and missing the point"
 date: 2010-12-15 01:21:34 +0000
 orig_url: http://advogato.org/person/pjf/diary/600.html
+tags: money ethics 
 ---
 
 There are oftentimes when I talk enthusiastically about sharing my skills,
