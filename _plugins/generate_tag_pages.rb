@@ -43,46 +43,6 @@ encouraged.
 
 module Jekyll
 
-  class Site
-
-    attr_accessor :articles
-
-    def reset
-      self.articles = Array.new
-    end
-    
-    alias_method :site_payload_articles, :site_payload
-
-    def site_payload
-      p = site_payload_articles
-      p['site']['articles'] = self.articles
-      p
-    end
-
-    alias_method :read_posts_articles, :read_posts
-
-    def read_posts(dir)
-    
-      self.articles = Array.new
-
-      read_posts_articles dir
-
-      self.posts.each do |p| 
-        self.articles << p
-      end
-      
-      self.articles.sort_by! { |p| -p.date.to_f }
-    
-    end
-  end
-
-  # XXX: Why is this here? It looks like it does nothing.
-
-  class Pagination < Generator
-    def generate(site)
-    end
-  end
-
   class TagPages < Generator
   
     safe true
