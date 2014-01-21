@@ -1,4 +1,17 @@
+# Internal links
+[ethics]: /ethics "Paul Fenwick's writings on ethics and philosophy"
+
+# Misc
+
 [laputa]: http://en.wikipedia.org/wiki/Castle_in_the_Sky "Laputa: Castle in the Sky (Wikipedia)"
+[old-pjf]: https://web.archive.org/web/20110216060633/http://www.pjf.id.au/ "pjf.id.au in 2011"
+[cc-by]: https://creativecommons.org/licenses/by/3.0/ "Creative Commons Attribution 3.0 License"
+[octopress]: http://octopress.org/ "Octopress: A blogging framework for hackers"
+[html5up]: http://html5up.net/ "HTML5 UP! Responsive HTML5 and CSS3 Site Templates"
+[jekyll]: http://jekyllrb.com/ "Jekyll: Simple, blog aware, static sites"
+[ruby]: https://www.ruby-lang.org/ "Ruby Programming Language"
+[github]: https://github.com/ "GitHub: Build software better, together"
+[techman83]: http://techman83.me/ "techman83: Leon Wright"
 
 # From "Wear Sunscreen"
 
