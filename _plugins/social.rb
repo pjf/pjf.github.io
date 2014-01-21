@@ -72,5 +72,7 @@ class Social < Liquid::Tag
 
   Liquid::Template.register_tag "t",  self
   Liquid::Template.register_tag "fb", self
+  Liquid::Template.register_tag "gh", self
+  Liquid::Template.register_tag "gt", self
 
 end
