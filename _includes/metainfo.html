@@ -3,24 +3,34 @@
 metainfo.html - Provides meta-info for the head of the document
 for search engines, social media, and the like.
 
-{% endcomment %}
-
-{% comment %}
-
 image_src tells social media which image to use for previews.
 TODO: Allow articles to specify this in top-matter.
 
 {% endcomment %}
 
-<link rel="image_src" href="/images/{{site.avatar}}" / >
+<link rel="image_src"        href="{{site.url}}/images/{{site.avatar}}"  />
+
+<!-- These four properties are mandatory -->
+
+<meta property="og:image" content="{{site.url}}/images/{{site.avatar}}"  />
+<meta property="og:title" content="{{page.title | escape}}"  />
+<meta property="og:url"   content="{{site.url}}{{page.url}}" />
+
+<!-- This should be expanded to allow for 'article' types -->
+<meta property="og:type"  content="website" />
 
 {% if page.description %}
-<meta name="description" content="{{ page.description | escape }}" />
 
-    {% comment %} We'd like the below to work, but it doesn't yet 
-        {- elsif content contains '<!--more-->' -}
-        <meta name="description" content="{{ content | split:'<!--more-->' | first | markdownify | strip_html | escape }}" />
-    {% endcomment %}
+    <meta name="description"        content="{{ page.description | escape }}" />
+    <meta property="og:description" content="{{ page.description | escape }}" />
+
+{% comment %}
+
+        <!-- I wish these would work -->
+        <meta name="description"       content="{{ post.output | strip_html | truncatewords:40 | escape }}" />
+        <meta propety="og:description" content="{{ post.output | strip_html | truncatewords:40 | escape}}" />
+
+{% endcomment %}
 
 {% endif %}
 
