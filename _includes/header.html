@@ -1,10 +1,7 @@
 <header>
-    <!--
-            Note: Titles and bylines will wrap automatically when necessary, so don't worry
-            if they get too long. You can also remove the "byline" span entirely if you don't
-            need a byline.
-    -->
-    <h2><a href="#">{{ post.title }}</a></h2>
-    <!-- <span class="byline">A free, fully responsive HTML5 site template by AJ for HTML5 UP</span> -->
+    <h2>{{ post.title }}</h2>
+    {% if post.byline %}
+        <span class="byline">{{ post.byline }}</span>
+    {% endif %}
     {% include edit-post.html %}
 </header>
