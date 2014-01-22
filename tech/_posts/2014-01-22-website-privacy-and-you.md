@@ -2,7 +2,7 @@
 title: Website Privacy and You
 byline: Opt-out of everything, please.
 tags: privacy security opt-out google addthis disqus
-description: "Too many entities want to know too much about you, and one of the sneakiest ways they do this is to get website author to add third-party tracking information to their own site. The value to the website operator is often a service, feature, or even revenue, but that doesn't change the fact that having third parties track your information sure *feels* skeezy to me."
+description: "Website operators often add third-party tracking information to their own sites. The value to the website operator is often a service, feature, or even revenue, but that doesn't change the fact that having third parties track your information sure *feels* skeezy to me."
 ---
 
 Too many entities want to know too much about you, and one of the sneakiest
