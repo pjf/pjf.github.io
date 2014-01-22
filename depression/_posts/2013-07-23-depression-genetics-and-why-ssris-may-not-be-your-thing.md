@@ -1,7 +1,7 @@
 ---
 title: Depression, genetics, and why SSRIs may not be your thing
 tags: depression science neuroscience citations research oscon ssri
-description: "SSRIs are commonly prescribed for depression, but depending upon your genetics, they "
+description: "SSRIs are commonly prescribed for depression, but depending upon your genetics, they may actually suck."
 orig_url: https://www.facebook.com/paul.fenwick/posts/10151583751289611
 ---
 
