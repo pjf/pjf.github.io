@@ -34,6 +34,7 @@
 [anhedonia]: https://en.wikipedia.org/wiki/Anhedonia "Anhedonia (Wikipedia)"
 [BDNF]: https://en.wikipedia.org/wiki/BDNF "Brain-derived neurotrophic factor (Wikipedia)"
 [depression-letter]: http://pjf.id.au/depression/2012/11/29/i-have-depression-an-open-letter-by-paul-fenwick.html "I have depression—An open letter by Paul Fenwick"
+[depression-talk]: http://pjf.id.au/talks/2013/07/24/depression-bugs-in-your-brain.html "Depression: Bugs in your brain (OSCON 2013)"
 [impostor-denise]: https://www.youtube.com/watch?v=zZg9rax-ky4 "Denise Paolucci: Overcoming Impostor Syndrome (YouTube)"
 [impostor-syndrome]: https://en.wikipedia.org/wiki/Impostor_syndrome "Impostor Syndrome (Wikipedia)"
 [psychomotor-retardation]: https://en.wikipedia.org/wiki/Psychomotor_retardation "Psychomotor retardation (Wikipedia)"
