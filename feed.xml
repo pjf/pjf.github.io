@@ -12,6 +12,57 @@
                     
 
 			<item>
+				<title>Website Privacy and You</title>
+				<description>&lt;p&gt;Too many entities want to know too much about you, and one of the sneakiest ways they do this is to get website author to add third-party tracking information to their own site. The value to the website operator is often a service, feature, or even revenue, but that doesn’t change the fact that having third parties track your information sure &lt;em&gt;feels&lt;/em&gt; skeezy to me.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;On &lt;a href=&quot;http://pjf.id.au/&quot; title=&quot;Paul Fenwick's personal website&quot;&gt;pjf.id.au&lt;/a&gt; I use three third-party services: AddThis, Google Analytics, and Disqus.&lt;/p&gt;
+
+&lt;h3 id=&quot;addthis&quot;&gt;AddThis&lt;/h3&gt;
+
+&lt;p&gt;AddThis provides an easy way to add sharing links to content. They integrate with just about everything, and they provide the content author with information as to how content is being shared, and how many views are because of that sharing.&lt;/p&gt;
+
+&lt;p&gt;AddThis provide a simple &lt;a href=&quot;http://www.addthis.com/privacy/opt-out&quot; title=&quot;AddThis opt-out&quot;&gt;opt-out button&lt;/a&gt; to prevent them from collecting and sharing information about you. Opting-out doesn’t stop you from using the share buttons, it just protects your privacy. I recommend you use it.&lt;/p&gt;
+
+&lt;h3 id=&quot;google_analytics&quot;&gt;Google Analytics&lt;/h3&gt;
+
+&lt;p&gt;I use Google Analytics to get an overview of who’s visiting my site. By default, Analytics receives your entire IP address, but I feel that Google already knows too much about you, so I ask them to collect &lt;a href=&quot;https://support.google.com/analytics/answer/2763052?hl=en&amp;ref_topic=2919631&quot;&gt;less information&lt;/a&gt; by partially anonymising your IP address.&lt;/p&gt;
+
+&lt;p&gt;Google would also love to &lt;a href=&quot;https://support.google.com/analytics/answer/2700409&quot;&gt;cross-reference your data&lt;/a&gt; with existing advertising cookies to determine demographics such as age, gender and intrests. I have that firmly turned off, but you can be pretty sure most everywhere else on the web has it turned on.&lt;/p&gt;
+
+&lt;p&gt;Google gives you a way to &lt;a href=&quot;https://support.google.com/analytics/answer/181881&quot;&gt;permanently opting out of analytics&lt;/a&gt; by using an open-source browser add-on.&lt;/p&gt;
+
+&lt;p&gt;Google also provides a way to &lt;a href=&quot;https://www.google.com/settings/ads/plugin&quot;&gt;permanently opt-out of targetted advertising&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;disqus&quot;&gt;Disqus&lt;/h3&gt;
+
+&lt;p&gt;Disqus provides a pretty excellent way of adding comments and discussions to articles. However they also make their money from advertising, and have no opt-out button when it comes to collecting your information.&lt;/p&gt;
+
+&lt;p&gt;I don’t want to require that you identify yourself to a third party to comment on my writings, so I’ve enabled anonymous comments This is also likely to increase the number of spam and junk comments a little, so I’d appreciate you flagging those if you see them.&lt;/p&gt;
+
+&lt;h3 id=&quot;opting_out_of_everything_at_aboutads&quot;&gt;Opting out of everything at AboutAds&lt;/h3&gt;
+
+&lt;p&gt;There are hundreds of advertising agencies out there who keep personalised information about you. Some of them participate in a self-regulatory program to make it easier for users to opt-out.&lt;/p&gt;
+
+&lt;p&gt;I &lt;em&gt;strongly&lt;/em&gt; recommend you visit the &lt;a href=&quot;http://www.aboutads.info/choices/&quot;&gt;Opt Out page&lt;/a&gt; at AboutAds, which provides an interface to opt-out from over a hundred advertising services.&lt;/p&gt;
+
+&lt;h3 id=&quot;fixing_everything_with_noscript&quot;&gt;Fixing everything with NoScript&lt;/h3&gt;
+
+&lt;p&gt;One excellent solution to opt-out of &lt;em&gt;everything&lt;/em&gt; is to use the &lt;a href=&quot;http://noscript.net/&quot; title=&quot;NoScript: JavaScript/Java/Flash blocker for a safer Firefox experience&quot;&gt;NoScript&lt;/a&gt; extension for Firefox. While modestly inconvenient to use at first, NoScript makes it very easy to temporarily or permanently block domains and features you don’t want, which results in a much cleaner, faster, and more private web experience.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, NoScript only exists for Firefox-based browsers. Recommendations for other browsers are welcome.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://www.torproject.org/&quot;&gt;Tor Project&lt;/a&gt; also provides pretty serious anonymity functionality that works with any browser.&lt;/p&gt;</description>
+				<pubDate>Wed, 22 Jan 2014 00:00:00 +1100</pubDate>
+				<link>http://pjf.id.au//tech/2014/01/22/website-privacy-and-you.html</link>
+				<guid isPermaLink="true">http://pjf.id.au//tech/2014/01/22/website-privacy-and-you.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>A new website, a new philosophy</title>
 				<description>&lt;p&gt;A few years ago, the server on which I hosted my personal website suffered a hardware failure and died. It had been running for over a decade and the design had &lt;a href=&quot;https://web.archive.org/web/20110216060633/http://www.pjf.id.au/&quot;&gt;not changed once&lt;/a&gt; during that time.&lt;/p&gt;
 
@@ -306,35 +357,6 @@ $ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt
 				<pubDate>Sat, 12 Oct 2013 00:00:00 +1100</pubDate>
 				<link>http://pjf.id.au//ethics/2013/10/12/the-more-nueroscience-i-learn.html</link>
 				<guid isPermaLink="true">http://pjf.id.au//ethics/2013/10/12/the-more-nueroscience-i-learn.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>A hope for humanity</title>
-				<description>&lt;p&gt;It’s fascinating how some feelings can hit you entirely out of the blue, when you’d least expect them, but that’s what happened yesterday to me in Japan.&lt;/p&gt;
-
-&lt;p&gt;I was exploring the local markets at Asasuka, and I’d found the Studio Ghibli store. There were all the things you’d expect: towels, handbags, keyrings, stickers, purses; nothing that I hadn’t really seen before, and certainly nothing that I thought would change how I feel.&lt;/p&gt;
-&lt;!--more--&gt;
-&lt;p&gt;Except there was. In a display cabinet, at the back of the store, there was a model of one of the robots from &lt;a href=&quot;http://en.wikipedia.org/wiki/Castle_in_the_Sky&quot; title=&quot;Laputa: Castle in the Sky (Wikipedia)&quot;&gt;Laputa: Castle in the Sky&lt;/a&gt;. A light layer of moss, bird’s nest on its shoulder, holding a flower. And, as a complete surprise to myself, I almost cried.&lt;/p&gt;
-
-&lt;p&gt;Laputa has long been one of my favourite films. I probably watched it a dozen times while growing up. The imagery in it is striking, but the most moving part for me was its portrayal of technology. The robots that tend Laputa are kind and gentle; they are immortal caretakers and protectors of nature and humanity alike.&lt;/p&gt;
-
-&lt;p&gt;Of course, when things start to go wrong, we discover the robots also have the capacity for destruction. That’s unfortunately true for technology in general; almost anything can be weaponised. But ultimately, technology allows us to make our lives better. We’ve never had such an amazing capacity to ease suffering, cure disease, travel distances, communicate, share, explore and discover as we have now.&lt;/p&gt;
-
-&lt;p&gt;Our understanding of modern science is still very much in its infancy. A hundred years ago we were only just getting started with electricity, and the results have been incredible. Right now, we’re still just getting started with microbiology and genetics. I think we have a future where we don’t just cure cancer, but a future where we &lt;em&gt;eliminate disease&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;In many ways, the robotic caretakers of Laputa symbolise my hopes for humanity. Technology is already our caretaker; modern cities simply couldn’t exist without automation, and for someone with a pacemaker or insulin pump, technology is a central part of simply being alive. I know that we’re going to get things wrong along the way—technology is already used for warfare and oppression—but it’s my most sincere hope that our relationship with technology will allow us to become more compassionate, more creative, more inquisitive, and more &lt;em&gt;human&lt;/em&gt; than we’ve ever been before. There is a nurturing and caring future for humanity, we just need to reach it.&lt;/p&gt;
-
-&lt;p&gt;It’s very rare for me to ever purchase something as a memento of my travels, but yesterday I did.&lt;/p&gt;
-
-&lt;p&gt;~ Paul&lt;/p&gt;</description>
-				<pubDate>Mon, 30 Sep 2013 00:00:00 +1000</pubDate>
-				<link>http://pjf.id.au//ethics/2013/09/30/a-hope-for-humanity.html</link>
-				<guid isPermaLink="true">http://pjf.id.au//ethics/2013/09/30/a-hope-for-humanity.html</guid>
 			</item>
 		
 

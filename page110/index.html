@@ -51,6 +51,7 @@
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-47199716-1']);
+  _gaq.push(['_gat._anonymizeIp']); // Better user privacy
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -118,7 +119,85 @@
     <article class="is-post is-post-excerpt">
 
         <header>
+            <h2><a href="/advogato/2000/08/24/tpj.html">TPJ</a></h2>
+            
+        </header>
+
+        <div class="info">
+    <!--
+            Note: The date should be formatted exactly as it's shown below. In particular, the
+            "least significant" characters of the month should be encapsulated in a <span>
+            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+            Oh, and if you don't need a date for a particular page or post you can simply delete
+            the entire "date" element.
+            
+    -->
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
+    <span class="date">
+        <span class="month">Aug</span>
+        <span class="day">24</span>
+        <span class="year"><span>,</span> 2000</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+            <B>TPJ</b><BR>
+Jon seems quite happy with my draft, and has given me a
+green-light to go ahead with a second article.  I'm most
+pleased.
+<P>
+In true perl hacker's fashion, my journal article is also
+its own formatting program.  Running perl over it turns it
+into editor-in-chief friendly format, whereas leaving it
+as-is turns it into author-preferred format.  :)
+<P>
+<B>Advogato</b><BR>
+Alan Cox on a chip?  Alumni of some weird organisation?  Are
+we being hijacked here?
+
+
+        
+
+        <a href="/advogato/2000/08/24/tpj.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
             <h2><a href="/advogato/2000/08/23/dogs-and-sleep.html">Dogs and Sleep</a></h2>
+            
         </header>
 
         <div class="info">
@@ -217,6 +296,7 @@ coding time, damnit.  :)
 
         <header>
             <h2><a href="/advogato/2000/08/23/x-com-iii-under-linux----denied.html">X-COM III under Linux -- denied</a></h2>
+            
         </header>
 
         <div class="info">
@@ -294,6 +374,7 @@ buy a copy.  Alas, this is not currently the case.  :(
 
         <header>
             <h2><a href="/advogato/2000/08/22/tpj.html">TPJ</a></h2>
+            
         </header>
 
         <div class="info">
@@ -376,6 +457,7 @@ I'm interested to see how it turns out.
 
         <header>
             <h2><a href="/advogato/2000/08/19/gnucash.html">GnuCash</a></h2>
+            
         </header>
 
         <div class="info">
@@ -419,93 +501,6 @@ be too difficult to add.
         
 
         <a href="/advogato/2000/08/19/gnucash.html">(read more...)</a>
-
-    </article>
-
-
-    
-
-    
-
-    
-
-
-    
-
-    
-
-
-
-    
-
-    
-
-    <article class="is-post is-post-excerpt">
-
-        <header>
-            <h2><a href="/advogato/2000/08/18/house.html">House</a></h2>
-        </header>
-
-        <div class="info">
-    <!--
-            Note: The date should be formatted exactly as it's shown below. In particular, the
-            "least significant" characters of the month should be encapsulated in a <span>
-            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
-            Oh, and if you don't need a date for a particular page or post you can simply delete
-            the entire "date" element.
-            
-    -->
-    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
-    <span class="date">
-        <span class="month">Aug</span>
-        <span class="day">18</span>
-        <span class="year"><span>,</span> 2000</span>
-    </span>
-
-
-    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
-
-    <!--
-        <ul class="stats">
-            <li><a href="#" class="fa fa-comment">16</a></li>
-            <li><a href="#" class="fa fa-heart">32</a></li>
-            <li><a href="#" class="fa fa-twitter">64</a></li>
-            <li><a href="#" class="fa fa-facebook">128</a></li>
-        </ul>
-    -->
-</div>
-
-
-        
-            <B>House</b><BR>
-Vendor isn't selling. At least we have a straight answer
-now.  Guess I'll have to wait until Ian and Sofie find me
-another house.  :)
-<P>
-<B>Blooper of the Week</b><BR>
-It would appear that our phone system depends upon our DNS
-functioning correctly.  Broken DNS = Broken phones.  Utterly
-weird.
-<P>
-<B>Finance::Quote</b><BR>
-Volker Stuerzl has been kind enough to write and contribute
-a Deutsche Bank Gruppe module for Finance::Quote.  We can
-expect it to be released with version 1.02.
-<P>
-Unfortunately the ASX have re-butchered their site, and so
-the ASX module is broken.  This sucks because the 1.01 test
-suite takes FOREVER to run, because it results in timeouts
-rather than unreachable host/refused connection.  Guess I'll
-have to rewrite the ASX module properly so that it batches
-requests.
-<P>
-I intend to roll F::Q 1.01 into GnuCash this weekend. 
-Promise.
-
-
-        
-
-        <a href="/advogato/2000/08/18/house.html">(read more...)</a>
 
     </article>
 
@@ -626,6 +621,8 @@ Promise.
 
         <ul>
         
+            <li><a href="/tech/2014/01/22/website-privacy-and-you.html">Website Privacy and You</a>
+        
             <li><a href="/tech/2014/01/21/a-new-website-a-new-philosophy.html">A new website, a new philosophy</a>
         
             <li><a href="/tech/2014/01/16/use-markdown-rather-than-bbcode-with-vimperator.html">Use Markdown Instead Of BBCode With Vimperator</a>
@@ -643,8 +640,6 @@ Promise.
             <li><a href="/df/unholinesssparked/2014/01/06/a-matter-of-trade.html">A Matter Of Trade</a>
         
             <li><a href="/df/unholinesssparked/2014/01/05/a-home-in-the-wilderness.html">A Home In The Wilderness</a>
-        
-            <li><a href="/depression/2014/01/02/personal-depression-an-update.html">Depression—An Update</a>
         
         </ul>
     </section>
