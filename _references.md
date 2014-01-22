@@ -24,19 +24,20 @@
 # From the ethics of everyday people
 
 [katrina-funding]: http://www.washingtonpost.com/wp-dyn/content/article/2005/09/08/AR2005090801081.html "Congress approves $51.8 Billion for Victims (Washington Post)"
-[malaria-funding]: http://www.impatientoptimists.org/Posts/2013/12/World-Malaria-Report "World Makes Major Gains in Fight Against Malaria (Impatient Optimists)"
 [malaria-death-toll]: http://www.telegraph.co.uk/health/healthnews/9058283/Malaria-death-toll-far-higher-than-previously-thought.html "Malaria death toll far higher than previously thought (Telegraph)"
-[semmelweis-conflict]: http://en.wikipedia.org/wiki/Ignaz_Semmelweis#Conflict_with_established_medical_opinions "Ignaz Semmelweis - Conflict with established medical opinions (Wikipedia)"
+[malaria-funding]: http://www.impatientoptimists.org/Posts/2013/12/World-Malaria-Report "World Makes Major Gains in Fight Against Malaria (Impatient Optimists)"
 [reactance]: http://en.wikipedia.org/wiki/Reactance_(psychology) "Reactance (Wikipedia)"
+[semmelweis-conflict]: http://en.wikipedia.org/wiki/Ignaz_Semmelweis#Conflict_with_established_medical_opinions "Ignaz Semmelweis - Conflict with established medical opinions (Wikipedia)"
 
 # Depression
 
-[impostor-syndrome]: https://en.wikipedia.org/wiki/Impostor_syndrome "Impostor Syndrome (Wikipedia)"
-[impostor-denise]: https://www.youtube.com/watch?v=zZg9rax-ky4 "Denise Paolucci: Overcoming Impostor Syndrome (YouTube)"
+[anhedonia]: https://en.wikipedia.org/wiki/Anhedonia "Anhedonia (Wikipedia)"
 [BDNF]: https://en.wikipedia.org/wiki/BDNF "Brain-derived neurotrophic factor (Wikipedia)"
 [depression-letter]: http://pjf.id.au/depression/2012/11/29/i-have-depression-an-open-letter-by-paul-fenwick.html "I have depression—An open letter by Paul Fenwick"
-[anhedonia]: https://en.wikipedia.org/wiki/Anhedonia "Anhedonia (Wikipedia)"
+[impostor-denise]: https://www.youtube.com/watch?v=zZg9rax-ky4 "Denise Paolucci: Overcoming Impostor Syndrome (YouTube)"
+[impostor-syndrome]: https://en.wikipedia.org/wiki/Impostor_syndrome "Impostor Syndrome (Wikipedia)"
 [psychomotor-retardation]: https://en.wikipedia.org/wiki/Psychomotor_retardation "Psychomotor retardation (Wikipedia)"
+[serotonin-syndrome]: https://en.wikipedia.org/wiki/Serotonin_syndrome "Serotonin Syndrome (Wikipedia)"
 
 # Privacy
 [addthis-optout]: http://www.addthis.com/privacy/opt-out "AddThis opt-out"
