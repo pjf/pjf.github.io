@@ -4,7 +4,7 @@ pre, code {
     color: #333;
 }
 
-pre {
+pre, figure {
     border-radius: 0.4em;
     background-color: rgba(230,230,230,0.75);
     box-shadow: 0.1em 0.1em 0.05em 0.05em #888;
@@ -14,8 +14,18 @@ pre {
     padding-bottom: 0.5em;
     margin-bottom: 1em;
     margin-left: 2em;
-    max-width: 80em;
     display: inline-block;
+}
+
+/* Y'know, regular screen size */
+pre {
+    max-width: 80em;
+}
+
+/* Pull-right figures. */
+figure.right {
+    float: right;
+    max-width: 50%;
 }
 
 /* Stop images from being too big */
