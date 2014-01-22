@@ -159,11 +159,9 @@
 	{
 		/*
 			This sets an upper limit on your page content to prevent it
-			from looking insane on really wide displays. It's currently set
-			to the width of the sample post images, but you can change it to
-			whatever you like (or remove it entirely).
+			from looking insane on really wide displays.
 		*/
-		max-width: 800px;
+		max-width: 50em;
 	}
 
 /*********************************************************************************/
