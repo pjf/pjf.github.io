@@ -129,10 +129,6 @@ div.addthis_container {
     padding-right: 1em;
 }
 
-div.addthis {
-    display: inline-block;
-}
-
 /* Rounded corners on the buttons, please */
 .addthis_32x32_style span {
     border-radius: 10%;
