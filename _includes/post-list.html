@@ -61,6 +61,9 @@ Parameters:
 
         <header>
             <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            {% if post.byline %}
+                <span class="byline">{{ post.byline }}</span>
+            {% endif %}
         </header>
 
         {% include info.html %}
