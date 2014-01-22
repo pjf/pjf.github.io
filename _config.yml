@@ -21,6 +21,9 @@ flattr: _pjf
 
 paginate: 5
 
+scholar:
+    style: ieee
+
 exclude: 
     - '_assets'
     - 'bin'
