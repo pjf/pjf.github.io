@@ -1,5 +1,6 @@
 # Internal links
 [ethics]: /ethics "Paul Fenwick's writings on ethics and philosophy"
+[pjf]: http://pjf.id.au/ "Paul Fenwick's personal website"
 
 # Misc
 
@@ -12,6 +13,7 @@
 [ruby]: https://www.ruby-lang.org/ "Ruby Programming Language"
 [github]: https://github.com/ "GitHub: Build software better, together"
 [techman83]: http://techman83.me/ "techman83: Leon Wright"
+[noscript]: http://noscript.net/ "NoScript: JavaScript/Java/Flash blocker for a safer Firefox experience"
 
 # From "Wear Sunscreen"
 
@@ -35,3 +37,6 @@
 [depression-letter]: http://pjf.id.au/depression/2012/11/29/i-have-depression-an-open-letter-by-paul-fenwick.html "I have depression—An open letter by Paul Fenwick"
 [anhedonia]: https://en.wikipedia.org/wiki/Anhedonia "Anhedonia (Wikipedia)"
 [psychomotor-retardation]: https://en.wikipedia.org/wiki/Psychomotor_retardation "Psychomotor retardation (Wikipedia)"
+
+# Privacy
+[addthis-optout]: http://www.addthis.com/privacy/opt-out "AddThis opt-out"
