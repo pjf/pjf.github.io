@@ -3,9 +3,9 @@
 <div id="disqus_thread"></div>
 <script type="text/javascript">
 
-    var disqus_shortname  = '{{ site.disqus.shortname }}'; 
-    var disqus_identifier = '{{ post.url   }}';
-    var disqus_title      = '{{ post.title }}';
+    var disqus_shortname  = "{{ site.disqus.shortname | escape }}"; 
+    var disqus_identifier = "{{ post.url              | escape }}";
+    var disqus_title      = "{{ post.title            | escape }}";
 
     /* Make sure that once disqus renders, we trigger any events that
      * need to happen on page resize. Otherwise our left-bar looks funny. */
