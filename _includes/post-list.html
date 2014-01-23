@@ -68,6 +68,12 @@ Parameters:
 
         {% include info.html %}
 
+        {% if post.wide_image %}
+        <a href="{{ post.url }}">
+            <img src="{{ post.wide_image }}" alt="" />
+        </a>
+        {% endif %}
+
         {% if post.content contains '<!--more-->' %}
             {{ post.content | split:'<!--more-->' | first }}
         {% else %}
