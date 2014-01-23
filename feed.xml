@@ -12,6 +12,35 @@
                     
 
 			<item>
+				<title>Don't read articles, listen to them</title>
+				<description>&lt;p&gt;This morning I pottered around the kitchen. I made toast and coffee, I washed the dishes. I sorted by groceries in the fridge. And I absorbed a lengthy article on AIDS in China at the same time. In fact, I’ve been reading more than ever now that I’ve given up on actually &lt;em&gt;reading&lt;/em&gt;.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;I don’t hide the fact that I want to learn everything. I have &lt;a href=&quot;http://ankisrs.net/&quot; title=&quot;Anki: Powerful, intelligent flashcards&quot;&gt;flashcards&lt;/a&gt; that I practice every day, I’m enrolled in more &lt;a href=&quot;https://coursera.org/&quot; title=&quot;Coursera: Take free online classes from 80+ top universities and organisations&quot;&gt;coursera&lt;/a&gt; courses than I can poke a stick at, and my most favourite thing in the world is to find someone with specialised knowledge and enthusiasm and talk to them about it in depth. Consequently, I do a lot of thinking about how to learn efficiently.&lt;/p&gt;
+
+&lt;p&gt;One thing which is very apparent to me is that I have limited resources when it comes to concentration. If I’m having a conversation, or writing an article, or hacking code, then that concentration slot is full; I can’t do anything else that requires much cognition at the same time. It’s this limited concentration that’s my limited resource when it comes to learning and creating.&lt;/p&gt;
+
+&lt;p&gt;And yet, there are so many times each day when I’m &lt;em&gt;not&lt;/em&gt; concentrating on something, and yet have the capacity to do so. Public transport, making coffee, even sitting on the loo. Sometimes those times are used for serious thinking, but often they’re just filled with frivolous or even anxious thoughts.&lt;/p&gt;
+
+&lt;p&gt;I have a good solution to this. And for me, it’s been game-changing.&lt;/p&gt;
+
+&lt;p&gt;There’s a free app called &lt;a href=&quot;http://getpocket.com/&quot; title=&quot;Pocket: Save for later. Put articles, videos or pretty much anything into Pocket.&quot;&gt;Pocket&lt;/a&gt;, which was previously known as “Read It Later”. This takes articles, turns them into a format that looks great on mobile devices, and syncs them so you can read them anywhere. That’s nice, but by itself that still means I need to have my phone out to read.&lt;/p&gt;
+
+&lt;p&gt;The clincher is that Pocket for Android comes with built-in text-to-speech (TTS) capabilities. If you combine that with a TTS engine that doesn’t suck—and &lt;a href=&quot;http://ivona.com/&quot; title=&quot;IVONA: Award winning, natural text-to-speech for desktop, mobile, server and web.&quot;&gt;Ivona&lt;/a&gt; springs to mind here—then you have a &lt;em&gt;much&lt;/em&gt; easier way of “reading” articles.&lt;/p&gt;
+
+&lt;p&gt;The combination is so nice that I read articles almost exclusively via Pocket and Ivona now. I’m even adding &lt;a href=&quot;http://github.com/pjf/exobrain&quot; title=&quot;Exobrain: A collection of agents which collect, classify, and act upon data&quot;&gt;exobrain&lt;/a&gt; capabilities sending me an article on social media will automatically add it to my reading queues. And all my writing on &lt;a href=&quot;http://pjf.id.au/&quot; title=&quot;Paul Fenwick's personal website&quot;&gt;pjf.id.au&lt;/a&gt; sounds great in Pocket, too!&lt;/p&gt;
+
+&lt;p&gt;Alas, Pocket for iOS lacks the built-in TTS capabilities; I’ve been told iOS lacks an easy-to-use speech interface for developers. However many third-party apps seem to have sprung up to fill this niche. If you have any good experiences with them, I’d love to hear about it.&lt;/p&gt;</description>
+				<pubDate>Thu, 23 Jan 2014 00:00:00 +1100</pubDate>
+				<link>http://pjf.id.au//tech/2014/01/23/dont-read-articles--listen-to-them.html</link>
+				<guid isPermaLink="true">http://pjf.id.au//tech/2014/01/23/dont-read-articles--listen-to-them.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>Website Privacy and You</title>
 				<description>&lt;p&gt;Too many entities want to know too much about you, and one of the sneakiest ways they do this is to get website author to add third-party tracking information to their own site. The value to the website operator is often a service, feature, or even revenue, but that doesn’t change the fact that having third parties track your information sure &lt;em&gt;feels&lt;/em&gt; skeezy to me.&lt;/p&gt;
 &lt;!--more--&gt;
@@ -338,25 +367,6 @@ $ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt
 				<pubDate>Tue, 29 Oct 2013 00:00:00 +1100</pubDate>
 				<link>http://pjf.id.au//depression/2013/10/29/feels-influence-perception.html</link>
 				<guid isPermaLink="true">http://pjf.id.au//depression/2013/10/29/feels-influence-perception.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>The more neuroscience I learn...</title>
-				<description>&lt;p&gt;The more neuroscience I learn, the more I am horrified I am. We have specialised neural circuitry to find certain acts to be repugnant, even though from a purely ethical standpoint they may be fine. We have lots of wiring to pick up on hostility, and we have lots of wiring to view people as “us” or “them”. There’s been articles recently on how people become unable to do maths or read graphs if they’re depicting data which goes against one’s political beliefs. Far too many of our thoughts seem to be automatic rationalisation of what our limbic system is telling us, rather than honest-to-goodness rational and ethic thought.&lt;/p&gt;
-&lt;!--more--&gt;
-&lt;p&gt;A huge chunk of our mental health (happiness, loneliness, bipolar, depression risk) has genetic influences. Environmental influences (eg, you were in a Romanian orphanage), can result in marked neurological differences (lower amounts of white and grey matter).&lt;/p&gt;
-
-&lt;p&gt;My favourite parts of the brain—responsible for memory (the hippocampus) and executive function (the frontal cortex)—are the parts most easily damaged, and atrophy the most quickly. It’s worse—in some cases much worse—if you’re stressed. Congratulations if you’re 25; your executive function only goes downhill from here.&lt;/p&gt;
-
-&lt;p&gt;On the upside, if you’re questioning and re-examining your own ethics and behaviour, if you’re working and progressing towards being more compassionate and caring, and if you’re somehow able to convince others to do the same, then I’m &lt;em&gt;seriously&lt;/em&gt; proud of you right now; because your neurobiology makes that a challenging task indeed.&lt;/p&gt;</description>
-				<pubDate>Sat, 12 Oct 2013 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au//ethics/2013/10/12/the-more-nueroscience-i-learn.html</link>
-				<guid isPermaLink="true">http://pjf.id.au//ethics/2013/10/12/the-more-nueroscience-i-learn.html</guid>
 			</item>
 		
 
