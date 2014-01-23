@@ -129,7 +129,7 @@ to this post.)
 <!--more-->
 <p>Everything in this guide needs to be done as root, so we might as well start a root-shell now:</p>
 
-<pre><code>$ sudo su</code></pre>
+<pre><code>$ sudo -i</code></pre>
 
 <h3 id="preparing_our_disk">Preparing our disk</h3>
 
@@ -196,6 +196,10 @@ SUBSYSTEM==&quot;block&quot;, ENV{ID_FS_LABEL}==&quot;backup&quot;, ACTION==&quo
 <p><code>Snapback</code> is pretty heavily customised to work on my laptop, but you’re welcome to adapt it to your own purposes if you like.</p>
 
 <p>You can <a href="https://github.com/pjf/snapback" title="Snapback: Automatically backup your machine to btrfs when a disk is plugged in (GitHub)">find snapback on github</a>.</p>
+
+<h3 id="credits">Credits</h3>
+
+<p>Thanks to <a class='social-link' href='https://twitter.com/jeremyvisser'>Jeremy Visser</a> for pointing out <code>sudo -i</code> as a more comfortable way to get a root shell.</p>
 
     
 

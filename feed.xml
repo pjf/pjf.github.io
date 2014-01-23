@@ -48,7 +48,7 @@
 &lt;!--more--&gt;
 &lt;p&gt;Everything in this guide needs to be done as root, so we might as well start a root-shell now:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ sudo su&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo -i&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&quot;preparing_our_disk&quot;&gt;Preparing our disk&lt;/h3&gt;
 
@@ -114,7 +114,11 @@ SUBSYSTEM==&amp;quot;block&amp;quot;, ENV{ID_FS_LABEL}==&amp;quot;backup&amp;quo
 
 &lt;p&gt;&lt;code&gt;Snapback&lt;/code&gt; is pretty heavily customised to work on my laptop, but you’re welcome to adapt it to your own purposes if you like.&lt;/p&gt;
 
-&lt;p&gt;You can &lt;a href=&quot;https://github.com/pjf/snapback&quot; title=&quot;Snapback: Automatically backup your machine to btrfs when a disk is plugged in (GitHub)&quot;&gt;find snapback on github&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;You can &lt;a href=&quot;https://github.com/pjf/snapback&quot; title=&quot;Snapback: Automatically backup your machine to btrfs when a disk is plugged in (GitHub)&quot;&gt;find snapback on github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;credits&quot;&gt;Credits&lt;/h3&gt;
+
+&lt;p&gt;Thanks to &lt;a class='social-link' href='https://twitter.com/jeremyvisser'&gt;Jeremy Visser&lt;/a&gt; for pointing out &lt;code&gt;sudo -i&lt;/code&gt; as a more comfortable way to get a root shell.&lt;/p&gt;</description>
 				<pubDate>Thu, 23 Jan 2014 00:00:00 +1100</pubDate>
 				<link>http://pjf.id.au//tech/2014/01/23/automated-backups-with-udev-and-btrfs.html</link>
 				<guid isPermaLink="true">http://pjf.id.au//tech/2014/01/23/automated-backups-with-udev-and-btrfs.html</guid>
