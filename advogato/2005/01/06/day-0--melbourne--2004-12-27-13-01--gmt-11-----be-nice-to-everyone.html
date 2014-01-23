@@ -216,12 +216,13 @@ var addthis_config = {
     var disqus_shortname  = "pjf"; 
     var disqus_identifier = "/advogato/2005/01/06/day-0--melbourne--2004-12-27-13-01--gmt-11-----be-nice-to-everyone.html";
     var disqus_title      = "Day 0, Melbourne, 2004-12-27 13:01 (GMT+11) -- Be nice to everyone";
+    var disqus_url        = "http://pjf.id.au/advogato/2005/01/06/day-0--melbourne--2004-12-27-13-01--gmt-11-----be-nice-to-everyone.html";
 
     /* Make sure that once disqus renders, we trigger any events that
      * need to happen on page resize. Otherwise our left-bar looks funny. */
 
     function disqus_config() {
-        this.callbacks.onReady = [function() {
+        this.callbacks.onReady.push(function() {
             var $sc = $('#sidebar, #content');
 
 if (skel.isActive('mobile') || skel.isActive('narrower'))
@@ -230,9 +231,9 @@ else
     $sc.css('min-height', $(window).height()).css('height', $(document).height());
 
 
-        }];
+        });
 
-        this.callbacks.onNewComment = [function() {
+        this.callbacks.onNewComment.push(function() {
             var $sc = $('#sidebar, #content');
 
 if (skel.isActive('mobile') || skel.isActive('narrower'))
@@ -241,7 +242,7 @@ else
     $sc.css('min-height', $(window).height()).css('height', $(document).height());
 
 
-        }];
+        });
     }
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
