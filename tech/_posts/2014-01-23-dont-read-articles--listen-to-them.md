@@ -1,7 +1,7 @@
 ---
 title: Don't read articles, listen to them
 tags: tts pocket android lifehacks tech
-description: "This morning I pottered around the kitchen. I made toast and coffee, I washed the dishes, I sorted my groceries. I also read a lengthy article on AIDS in China at the same time.  In fact, I've been reading more than ever now that I've given up on actually reading."
+description: "This morning I pottered around the kitchen. I made toast and coffee, I washed the dishes. I also read a lengthy article on AIDS in China at the same time. In fact, I've been reading more than ever now that I've given up on actually reading."
 ---
 
 This morning I pottered around the kitchen. I made toast and coffee, I washed
