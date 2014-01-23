@@ -1165,7 +1165,7 @@
 			#sidebar section:before,
 			#sidebar nav:before
 			{
-				height: 0.5em;
+				/* height: 0.5em; */
 				margin: 0 0 2em 0;
 			}
 		
