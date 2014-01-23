@@ -33,6 +33,10 @@ exclude:
     - 'Rakefile.rb'
     - 'README.md'
 
+search:
+    google:
+        cx: 'partner-pub-5040518412301671:2427815553'
+
 addthis:
   publisher: ra-52daa5464f2c1c4b
 
