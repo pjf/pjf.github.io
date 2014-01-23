@@ -20,7 +20,7 @@ Pebble watch, because I can.
 Everything in this guide needs to be done as root, so we might as well
 start a root-shell now:
 
-    $ sudo su
+    $ sudo -i
 
 ### Preparing our disk
 
@@ -133,3 +133,8 @@ under the hood we fork a daemon to do the heavy lifting for us.
 you're welcome to adapt it to your own purposes if you like.
 
 You can [find snapback on github][snapback].
+
+### Credits
+
+Thanks to {% t jeremyvisser Jeremy Visser %} for pointing out `sudo -i` as a
+more comfortable way to get a root shell.
