@@ -21,7 +21,7 @@ risk) has genetic influences. Environmental influences (eg, you were in a
 Romanian orphanage), can result in marked neurological differences (lower
 amounts of white and grey matter).
 
-My favourite parts of he brain—responsible for memory (the hippocampus) and
+My favourite parts of the brain—responsible for memory (the hippocampus) and
 executive function (the frontal cortex)—are the parts most easily damaged, and
 atrophy the most quickly. It's worse—in some cases much worse—if you're
 stressed. Congratulations if you're 25; your executive function only goes
