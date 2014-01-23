@@ -8,11 +8,14 @@ TODO: Allow articles to specify this in top-matter.
 
 {% endcomment %}
 
-<link rel="image_src"        href="{{site.url}}/images/{{site.avatar}}"  />
+{% if page.wide_image %}
+    <meta property="og:image" content="{{site.url}}{{ page.wide_image }}" />
+    <link rel="image_src"        href="{{site.url}}{{ page.wide_image }}" />
+{% else %}
+    <meta property="og:image" content="{{site.url}}/images/{{site.avatar}}"  />
+    <link rel="image_src"        href="{{site.url}}/images/{{site.avatar}}"  />
+{% endif %}
 
-<!-- These four properties are mandatory -->
-
-<meta property="og:image" content="{{site.url}}/images/{{site.avatar}}"  />
 <meta property="og:title" content="{{page.title | escape}}"  />
 <meta property="og:url"   content="{{site.url}}{{page.url}}" />
 

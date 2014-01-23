@@ -1,17 +1,19 @@
 <div class="info">
+    {% comment %}
     <!--
-            Note: The date should be formatted exactly as it's shown below. In particular, the
-            "least significant" characters of the month should be encapsulated in a <span>
-            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
-            Oh, and if you don't need a date for a particular page or post you can simply delete
-            the entire "date" element.
-            
+            Note: The date should be formatted exactly as it's shown below. In
+            particular, the "least significant" characters of the month should
+            be encapsulated in a <span> element to denote what gets dropped in
+            1200px mode (eg. the "uary" in "January").  Oh, and if you
+            don't need a date for a particular page or post you can simply
+            delete the entire "date" element.
     -->
-    <!-- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span> -->
-    <span class="date">
-        <span class="month">{{ post.date | date: "%b" }}</span>
-        <span class="day">{{ post.date | date: "%e" }}</span>
-        <span class="year"><span>,</span> {{ post.date | date: "%Y" }}</span>
+    <!-- <span class="date"><span class="month">Jan<span>uary</span></span>
+        <span class="day">14</span><span class="year">, 2013</span></span> -->
+    {% endcomment %}
+    <span class="date"> <span class="month">{{ post.date | date: "%b" }}</span>
+        <span class="day">{{ post.date | date: "%e" }}</span> <span
+            class="year"><span>,</span> {{ post.date | date: "%Y" }}</span>
     </span>
 
 
