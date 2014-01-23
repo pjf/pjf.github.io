@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<!--
+    Based upon Striped 2.5 by HTML5 Up!
+    html5up.net | @n33co
+    Updated for Jekyll by Paul Fenwick | @pjf
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+    <head prefix="og: http://ogp.me/ns#">
+        <title>Automated backups with udev and btrfs</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+        
+
+
+    <meta property="og:image" content="http://pjf.id.au/images/tech/backup-starting.jpg" />
+    <link rel="image_src"        href="http://pjf.id.au/images/tech/backup-starting.jpg" />
+
+
+<meta property="og:title" content="Automated backups with udev and btrfs"  />
+<meta property="og:url"   content="http://pjf.id.au/tech/2014/01/23/automated-backups-with-udev-and-btrfs.html" />
+
+<!-- This should be expanded to allow for 'article' types -->
+<meta property="og:type"  content="website" />
+
+
+
+    <meta name="description"        content="I just want my backups to happen whenever I plug-in my drive. Also, I want notifications to go to my watch. So I've done just that." />
+    <meta property="og:description" content="I just want my backups to happen whenever I plug-in my drive. Also, I want notifications to go to my watch. So I've done just that." />
+
+
+
+
+
+
+    <meta name="keywords" content="linux, udev, sysadmin, usb, rsync, btrfs, snapback, pebble, pushover" />
+
+
+
+        <link rel="icon" type="image/png" href="/images/favicon.png" />
+        <link rel="alternative" type="application/rss+xml" title="RSS" href="/feed.xml"/>
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Open+Sans+Condensed:300,700" rel="stylesheet" />
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/skel.min.js"></script>
+        <script src="/js/skel-panels.min.js"></script>
+        <script src="/js/init.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="/css/skel-noscript.css" />
+            <link rel="stylesheet" href="/css/style.css" />
+            <link rel="stylesheet" href="/css/style-desktop.css" />
+            <link rel="stylesheet" href="/css/style-wide.css" />
+        </noscript>
+        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+        <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+        <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
+
+        <link rel="stylesheet" href="/css/pjf.css" />
+
+    </head>
+    <!--
+        Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
+        Set it to "right-sidebar" to, you guessed it, position it on the right.
+    -->
+    <body class="left-sidebar">
+    
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-47199716-1']);
+  _gaq.push(['_gat._anonymizeIp']); // Better user privacy
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+        <div id="wrapper">
+            <div id="content">
+                <div id="content-inner">
+                    
+    
+
+
+<article class="is-post">
+    <header>
+    <h2>Automated backups with udev and btrfs</h2>
+    
+    <p class="edit-post">
+(You can <a href="https://github.com/pjf/pjf.github.io/edit/build/tech/_posts/2014-01-23-automated-backups-with-udev-and-btrfs.md">suggest changes</a>
+to this post.)
+</p>
+
+
+</header>
+
+    <div class="info">
+    
+    <span class="date"> <span class="month">Jan</span>
+        <span class="day">23</span> <span
+            class="year"><span>,</span> 2014</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+    
+        <img src="/images/tech/backup-starting.jpg" alt="" />
+    
+
+    <p>I’m incredibly lazy. My preferred way of making backups is to plug in an external drive, and have my laptop automatically do the rest.</p>
+
+<p>In order to facilitate this laziness, I’m going to be using two tools: btrfs (an amazing filesystem with snapshot support), and udev (which can detect when a device has been inserted or removed). I’m also going to send notifcations directly to my Pebble watch, because I can.</p>
+<!--more-->
+<p>Everything in this guide needs to be done as root, so we might as well start a root-shell now:</p>
+
+<pre><code>$ sudo su</code></pre>
+
+<h3 id="preparing_our_disk">Preparing our disk</h3>
+
+<p>I use <a href="http://arstechnica.com/information-technology/2014/01/bitrot-and-atomic-cows-inside-next-gen-filesystems/" title="Bitrot and atomic COWs: Inside next-gen filesystems">btrfs</a> for external backups. It’s able to detect when data has gone bad, it has wicked-cool snapshot capabilities, and if I’m backing up an existing btrfs filesystem I can do very quickly and efficiently by sending incremental snapshots. However most of this guide will still work even if you’re using a different filesystem type.</p>
+
+<p>Our first step is to prepare the disk where our backups are going to live. under Linux we can have volumes with <em>labels</em>. They’re awesome, because they’re human readable, but still provide a way to identify a device regardless of where it gets mounted. In theory one could have a number of drives with the same label, and we could trigger a backup automatically whenever <em>any</em> of them are plugged in.</p>
+
+<p>With btrfs, we can set the label when we format the disk, but I always forget to do that. It’s okay, because changing the label is easy:</p>
+
+<pre><code>$ btrfs filesystem label /dev/sdc1 backup</code></pre>
+
+<p>If you’re using <code>ext2</code> or above, you can do the same with <code>tune2fs</code>:</p>
+
+<pre><code>$ tune2fs -L backup /dev/sdc1</code></pre>
+
+<p>My actual disks have more descriptive labels, indicating both the machine and filesystem they’re responsible for.</p>
+
+<p>I like to mount my backups in a consistent location, so I’m going to create that now:</p>
+
+<pre><code>$ mkdir /mnt/backup</code></pre>
+
+<p>We also need to tell linux that when it sees a disk with the <code>backup</code> label, it needs to go on the mount-point specified. We do this by adding a line to <code>/etc/fstab</code>, and we can also specify other options in here as well For example, I use btrfs’ compression option:</p>
+
+<pre><code>$ echo &quot;LABEL=backup /mnt/backup btrfs compress 0 2&quot; &gt;&gt; /etc/fstab</code></pre>
+
+<p>On other filesystems, you can safely use <code>defaults</code> rather than <code>compress</code> in the line above.</p>
+
+<h3 id="udev">udev</h3>
+
+<p>Now for the bit which caused me pain, <code>udev</code>, a system for triggering events when devices change on your system. I don’t know if there are versions of <code>udev</code> with different keywords, or which care differently about capitalisation, but it took a <em>lot</em> of tweaking around until I managed to get a udev rule that would automatically mount my disk:</p>
+
+<pre><code>$ cat &gt; /etc/udev/rules.d/99-backup.rules
+
+SUBSYSTEM==&quot;block&quot;, ENV{ID_FS_LABEL}==&quot;backup&quot;, ACTION==&quot;add&quot;, \
+    RUN+=&quot;/bin/mount /mnt/backup&quot;</code></pre>
+
+<p>Udev is also supposed to automatically pick up new rules, but my system didn’t the first time. We can nudge it with:</p>
+
+<pre><code>$ udevadm control --reload-rules</code></pre>
+
+<h3 id="backups">Backups</h3>
+
+<p>To make backups I’m using rsync. I use both <code>ionice</code> and <code>nice</code> to have our command yield both io and cpu resources to other processes, so we don’t lose system responsiveness during the backup.</p>
+
+<p>I also use the <code>-vHAaxX</code> switches to <code>rsync</code>. This backups up <code>v</code>erbosely, <code>H</code>ard links, <code>A</code>CLs, <code>a</code>ll, <code>X</code>tended attributions, and sticking to one filesystem (<code>-x</code>). I also pass in <code>--delete</code> to remove files from the backup drive that are no longer on my machine’s disk.</p>
+
+<pre><code>$ ionice -c3 nice rsync -vHAaxX --delete / /mnt/backup/</code></pre>
+
+<p>Once this is done (it can take some time), I take a read-only btrfs snapshot on my backup drive with the current date in UTC:</p>
+
+<pre><code>$ btrfs subvolume snapshot -r /mnt/backup \
+    /mnt/backup/SNAPSHOT-`date -u +%Y-%m-%d`</code></pre>
+
+<p>One of the joys of btrfs is the top-level filesystem on my backup drive is arranged exactly the same way as the filesystem I’m backing up. In a pinch I could use it a a drop-in replacement. If a file doesn’t change between snapshots, then btrfs requires no additional storage space to store it, and with <a href="https://github.com/g2p/bedup" title="bedup: btrfs de-duplication">bedup</a> we can even de-duplicate files across filesystems and subvolumes.</p>
+
+<p>Each snapshot is also a complete backup in its own right; I never have to worry about whether I have a base filesystem upon which to apply an incremental backup on to.</p>
+
+<h3 id="automating_everything_with_snapback">Automating everything with snapback</h3>
+
+<p><code>Snapback</code> is some code I wrote because anything more than plugging in a USB drive to my laptop is just too much work. It uses <a href="https://pushover.net/" title="Pushover: Simple mobile notifications">Pushover</a> to send notifications to my pebble watch, so there’s no need to look through <code>/var/log</code> to see what’s happening, and I’m immediately notified when the backup is complete.</p>
+
+<p>It ties all the above together into a script that’s triggered from udev. Because udev kills any process that’s running too long, under the hood we fork a daemon to do the heavy lifting for us.</p>
+
+<p><code>Snapback</code> is pretty heavily customised to work on my laptop, but you’re welcome to adapt it to your own purposes if you like.</p>
+
+<p>You can <a href="https://github.com/pjf/snapback" title="Snapback: Automatically backup your machine to btrfs when a disk is plugged in (GitHub)">find snapback on github</a>.</p>
+
+    
+
+<div class="addthis_container">
+    <p>Share this:</p>
+    <div class="addthis addthis_toolbox addthis_default_style addthis_32x32_style">
+        <a class="addthis_button_preferred_1"></a>
+        <a class="addthis_button_preferred_2"></a>
+        <a class="addthis_button_preferred_3"></a>
+        <a class="addthis_button_preferred_4"></a>
+        <a class="addthis_button_compact"></a>
+        <a class="addthis_counter addthis_bubble_style"></a>
+    </div>
+</div>
+
+<script>
+var addthis_config = {
+    /* services_compact: 'facebook, twitter, reddit', */
+    services_exclude: 'print, email' 
+} 
+</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52daa5464f2c1c4b"></script>
+
+
+
+
+    
+<div class="tip-box">
+    <p>
+        <a href="https://gittip.com/pjf"><i class="fa fa-gittip fa-3x pull-left"></i></a>
+        This content is available for you to use for free,
+        even commercially, under a <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 license</a>.
+    </p><p>
+        If you wish to support my work, please tip me on <a href="https://gittip.com/pjf">gittip</a>
+        or <a href="https://flattr.com/submit/auto?user_id=_pjf&amp;url=http://pjf.id.au/tech/2014/01/23/automated-backups-with-udev-and-btrfs.html&amp;title=Automated backups with udev and btrfs">flattr</a>.
+    </p>
+</div>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+    var disqus_shortname  = "pjf"; 
+    var disqus_identifier = "/tech/2014/01/23/automated-backups-with-udev-and-btrfs.html";
+    var disqus_title      = "Automated backups with udev and btrfs";
+
+    /* Make sure that once disqus renders, we trigger any events that
+     * need to happen on page resize. Otherwise our left-bar looks funny. */
+
+    function disqus_config() {
+        this.callbacks.onReady = [function() {
+            var $sc = $('#sidebar, #content');
+
+if (skel.isActive('mobile') || skel.isActive('narrower'))
+    $sc.css('min-height', '0').css('height', 'auto');
+else
+    $sc.css('min-height', $(window).height()).css('height', $(document).height());
+
+
+        }];
+
+        this.callbacks.onNewComment = [function() {
+            var $sc = $('#sidebar, #content');
+
+if (skel.isActive('mobile') || skel.isActive('narrower'))
+    $sc.css('min-height', '0').css('height', 'auto');
+else
+    $sc.css('min-height', $(window).height()).css('height', $(document).height());
+
+
+        }];
+    }
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+</article>
+
+
+                    
+
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+<div id="sidebar">
+    <!-- Logo -->
+    <div id="logo"><h1><a href="/">pjf</a></h1></div>
+
+    <section class="find_me">
+    
+        <a href="http://twitter.com/pjf"><i class="fa fa-twitter-square  fa-3x"  ></i></a>
+    
+    
+        <a href="http://facebook.com/paul.fenwick"><i class="fa fa-facebook-square fa-3x"  ></i></a>
+    
+    
+    
+        <a href="https://github.com/pjf"><i class="fa fa-github-square   fa-3x"  ></i></a>
+    
+    </section>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul>
+            <!-- <li class="current_page_item"><a href="/"></a></li> -->
+            <li><a href="/">Latest Posts</a></li>
+        
+            <li><a href="/talks">Talks</a></li>
+        
+            <li><a href="/ethics">Ethics</a></li>
+        
+            <li><a href="/depression">Depression</a></li>
+        
+            <li><a href="/df">Dwarf Fortress</a></li>
+        
+            <li><a href="/advogato">Older Posts</a></li>
+        
+        </ul>
+    </nav>
+
+    
+        <section class="is-search">
+            <form id="cse-search-box" action="http://google.com/cse">
+            <input type="hidden" name="cx" value="partner-pub-5040518412301671:2427815553" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <input class="text" type="text" name="q" placeholder="Search" />
+        </form>
+        Search powered by Google.
+        </section>
+    
+
+    <!-- Text -->
+    <section class="is-text-style1">
+        <div class="inner">
+            <p>
+            
+                <a href="https://gittip.com/pjf">
+                    <i class="fa fa-gittip fa-3x pull-left"></i>
+                </a>
+            
+                Everything on this site is free for you to use
+                under the <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a> license.
+            </p>
+        </div>
+    </section>
+
+    <!-- Recent Posts -->
+    <section class="is-recent-posts">
+        <header>
+            <h2>Recent Posts</h2>
+        </header>
+
+        <ul>
+        
+            <li><a href="/tech/2014/01/23/dont-read-articles--listen-to-them.html">Don't read articles, listen to them</a>
+        
+            <li><a href="/tech/2014/01/23/automated-backups-with-udev-and-btrfs.html">Automated backups with udev and btrfs</a>
+        
+            <li><a href="/tech/2014/01/22/website-privacy-and-you.html">Website Privacy and You</a>
+        
+            <li><a href="/tech/2014/01/21/a-new-website-a-new-philosophy.html">A new website, a new philosophy</a>
+        
+            <li><a href="/tech/2014/01/16/use-markdown-rather-than-bbcode-with-vimperator.html">Use Markdown Instead Of BBCode With Vimperator</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/11/jaxys-greatest-wish.html">Jaxy's Greatest Wish</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/11/a-quiet-trade.html">A Quiet Trade</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/11/a-place-to-settle.html">A Place To Settle</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/07/the-fickleness-of-warlocks.html">The Fickleness Of Warlocks</a>
+        
+            <li><a href="/df/unholinesssparked/2014/01/07/a-family-reunion.html">A Family Reunion</a>
+        
+        </ul>
+    </section>
+
+    <!-- Recent Comments -->
+    <!-- <section class="is-recent-comments">
+        <header>
+            <h2>Recent Comments</h2>
+        </header>
+        <ul>
+            <li>case on <a href="#">Now Full Cyborg</a></li>
+            <li>molly on <a href="#">Untitled Post</a></li>
+            <li>case on <a href="#">Temporal Flux</a></li>
+        </ul>
+    </section> -->
+
+    <!-- Calendar -->
+
+    <!-- <section class="is-calendar">
+        <div class="inner">
+            <table>
+                <caption>February 2013</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" title="Monday">M</th>
+                        <th scope="col" title="Tuesday">T</th>
+                        <th scope="col" title="Wednesday">W</th>
+                        <th scope="col" title="Thursday">T</th>
+                        <th scope="col" title="Friday">F</th>
+                        <th scope="col" title="Saturday">S</th>
+                        <th scope="col" title="Sunday">S</th>
+                    </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td colspan="4" class="pad"><span>&nbsp;</span></td>
+                        <td><span>1</span></td>
+                        <td><span>2</span></td>
+                        <td><span>3</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>4</span></td>
+                        <td><span>5</span></td>
+                        <td><a href="#">6</a></td>
+                        <td><span>7</span></td>
+                        <td><span>8</span></td>
+                        <td><span>9</span></td>
+                        <td><a href="#">10</a></td>
+                    </tr>
+                    <tr>
+                        <td><span>11</span></td>
+                        <td><span>12</span></td>
+                        <td><span>13</span></td>
+                        <td class="today"><a href="#">14</a></td>
+                        <td><span>15</span></td>
+                        <td><span>16</span></td>
+                        <td><span>17</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>18</span></td>
+                        <td><span>19</span></td>
+                        <td><span>20</span></td>
+                        <td><span>21</span></td>
+                        <td><span>22</span></td>
+                        <td><a href="#">23</a></td>
+                        <td><span>24</span></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">25</a></td>
+                        <td><span>26</span></td>
+                        <td><span>27</span></td>
+                        <td><span>28</span></td>
+                        <td class="pad" colspan="3"><span>&nbsp;</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section> -->
+
+    <!-- Copyright -->
+    <div id="copyright">
+        <p>
+            &copy; 2014 Paul Fenwick<br />
+            Design: <a href="http://html5up.net/">HTML5 UP</a><br />
+            Site Based On: <a href="https://github.com/pjf/pjf.github.io">pjf.github.io</a>
+        </p>
+    </div>
+</div>
+
+            
+        </div>
+    </body>
+</html>
+

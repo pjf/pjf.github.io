@@ -41,6 +41,91 @@
                     
 
 			<item>
+				<title>Automated backups with udev and btrfs</title>
+				<description>&lt;p&gt;I’m incredibly lazy. My preferred way of making backups is to plug in an external drive, and have my laptop automatically do the rest.&lt;/p&gt;
+
+&lt;p&gt;In order to facilitate this laziness, I’m going to be using two tools: btrfs (an amazing filesystem with snapshot support), and udev (which can detect when a device has been inserted or removed). I’m also going to send notifcations directly to my Pebble watch, because I can.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;Everything in this guide needs to be done as root, so we might as well start a root-shell now:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo su&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;preparing_our_disk&quot;&gt;Preparing our disk&lt;/h3&gt;
+
+&lt;p&gt;I use &lt;a href=&quot;http://arstechnica.com/information-technology/2014/01/bitrot-and-atomic-cows-inside-next-gen-filesystems/&quot; title=&quot;Bitrot and atomic COWs: Inside next-gen filesystems&quot;&gt;btrfs&lt;/a&gt; for external backups. It’s able to detect when data has gone bad, it has wicked-cool snapshot capabilities, and if I’m backing up an existing btrfs filesystem I can do very quickly and efficiently by sending incremental snapshots. However most of this guide will still work even if you’re using a different filesystem type.&lt;/p&gt;
+
+&lt;p&gt;Our first step is to prepare the disk where our backups are going to live. under Linux we can have volumes with &lt;em&gt;labels&lt;/em&gt;. They’re awesome, because they’re human readable, but still provide a way to identify a device regardless of where it gets mounted. In theory one could have a number of drives with the same label, and we could trigger a backup automatically whenever &lt;em&gt;any&lt;/em&gt; of them are plugged in.&lt;/p&gt;
+
+&lt;p&gt;With btrfs, we can set the label when we format the disk, but I always forget to do that. It’s okay, because changing the label is easy:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ btrfs filesystem label /dev/sdc1 backup&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you’re using &lt;code&gt;ext2&lt;/code&gt; or above, you can do the same with &lt;code&gt;tune2fs&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ tune2fs -L backup /dev/sdc1&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;My actual disks have more descriptive labels, indicating both the machine and filesystem they’re responsible for.&lt;/p&gt;
+
+&lt;p&gt;I like to mount my backups in a consistent location, so I’m going to create that now:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ mkdir /mnt/backup&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We also need to tell linux that when it sees a disk with the &lt;code&gt;backup&lt;/code&gt; label, it needs to go on the mount-point specified. We do this by adding a line to &lt;code&gt;/etc/fstab&lt;/code&gt;, and we can also specify other options in here as well For example, I use btrfs’ compression option:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ echo &amp;quot;LABEL=backup /mnt/backup btrfs compress 0 2&amp;quot; &amp;gt;&amp;gt; /etc/fstab&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On other filesystems, you can safely use &lt;code&gt;defaults&lt;/code&gt; rather than &lt;code&gt;compress&lt;/code&gt; in the line above.&lt;/p&gt;
+
+&lt;h3 id=&quot;udev&quot;&gt;udev&lt;/h3&gt;
+
+&lt;p&gt;Now for the bit which caused me pain, &lt;code&gt;udev&lt;/code&gt;, a system for triggering events when devices change on your system. I don’t know if there are versions of &lt;code&gt;udev&lt;/code&gt; with different keywords, or which care differently about capitalisation, but it took a &lt;em&gt;lot&lt;/em&gt; of tweaking around until I managed to get a udev rule that would automatically mount my disk:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cat &amp;gt; /etc/udev/rules.d/99-backup.rules
+
+SUBSYSTEM==&amp;quot;block&amp;quot;, ENV{ID_FS_LABEL}==&amp;quot;backup&amp;quot;, ACTION==&amp;quot;add&amp;quot;, \
+    RUN+=&amp;quot;/bin/mount /mnt/backup&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Udev is also supposed to automatically pick up new rules, but my system didn’t the first time. We can nudge it with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ udevadm control --reload-rules&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;backups&quot;&gt;Backups&lt;/h3&gt;
+
+&lt;p&gt;To make backups I’m using rsync. I use both &lt;code&gt;ionice&lt;/code&gt; and &lt;code&gt;nice&lt;/code&gt; to have our command yield both io and cpu resources to other processes, so we don’t lose system responsiveness during the backup.&lt;/p&gt;
+
+&lt;p&gt;I also use the &lt;code&gt;-vHAaxX&lt;/code&gt; switches to &lt;code&gt;rsync&lt;/code&gt;. This backups up &lt;code&gt;v&lt;/code&gt;erbosely, &lt;code&gt;H&lt;/code&gt;ard links, &lt;code&gt;A&lt;/code&gt;CLs, &lt;code&gt;a&lt;/code&gt;ll, &lt;code&gt;X&lt;/code&gt;tended attributions, and sticking to one filesystem (&lt;code&gt;-x&lt;/code&gt;). I also pass in &lt;code&gt;--delete&lt;/code&gt; to remove files from the backup drive that are no longer on my machine’s disk.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ionice -c3 nice rsync -vHAaxX --delete / /mnt/backup/&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once this is done (it can take some time), I take a read-only btrfs snapshot on my backup drive with the current date in UTC:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ btrfs subvolume snapshot -r /mnt/backup \
+    /mnt/backup/SNAPSHOT-`date -u +%Y-%m-%d`&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;One of the joys of btrfs is the top-level filesystem on my backup drive is arranged exactly the same way as the filesystem I’m backing up. In a pinch I could use it a a drop-in replacement. If a file doesn’t change between snapshots, then btrfs requires no additional storage space to store it, and with &lt;a href=&quot;https://github.com/g2p/bedup&quot; title=&quot;bedup: btrfs de-duplication&quot;&gt;bedup&lt;/a&gt; we can even de-duplicate files across filesystems and subvolumes.&lt;/p&gt;
+
+&lt;p&gt;Each snapshot is also a complete backup in its own right; I never have to worry about whether I have a base filesystem upon which to apply an incremental backup on to.&lt;/p&gt;
+
+&lt;h3 id=&quot;automating_everything_with_snapback&quot;&gt;Automating everything with snapback&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;Snapback&lt;/code&gt; is some code I wrote because anything more than plugging in a USB drive to my laptop is just too much work. It uses &lt;a href=&quot;https://pushover.net/&quot; title=&quot;Pushover: Simple mobile notifications&quot;&gt;Pushover&lt;/a&gt; to send notifications to my pebble watch, so there’s no need to look through &lt;code&gt;/var/log&lt;/code&gt; to see what’s happening, and I’m immediately notified when the backup is complete.&lt;/p&gt;
+
+&lt;p&gt;It ties all the above together into a script that’s triggered from udev. Because udev kills any process that’s running too long, under the hood we fork a daemon to do the heavy lifting for us.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Snapback&lt;/code&gt; is pretty heavily customised to work on my laptop, but you’re welcome to adapt it to your own purposes if you like.&lt;/p&gt;
+
+&lt;p&gt;You can &lt;a href=&quot;https://github.com/pjf/snapback&quot; title=&quot;Snapback: Automatically backup your machine to btrfs when a disk is plugged in (GitHub)&quot;&gt;find snapback on github&lt;/a&gt;.&lt;/p&gt;</description>
+				<pubDate>Thu, 23 Jan 2014 00:00:00 +1100</pubDate>
+				<link>http://pjf.id.au//tech/2014/01/23/automated-backups-with-udev-and-btrfs.html</link>
+				<guid isPermaLink="true">http://pjf.id.au//tech/2014/01/23/automated-backups-with-udev-and-btrfs.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>Website Privacy and You</title>
 				<description>&lt;p&gt;Too many entities want to know too much about you, and one of the sneakiest ways they do this is to get website author to add third-party tracking information to their own site. The value to the website operator is often a service, feature, or even revenue, but that doesn’t change the fact that having third parties track your information sure &lt;em&gt;feels&lt;/em&gt; skeezy to me.&lt;/p&gt;
 &lt;!--more--&gt;
@@ -346,29 +431,6 @@ $ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt
 				<pubDate>Tue, 29 Oct 2013 00:00:00 +1100</pubDate>
 				<link>http://pjf.id.au//ethics/2013/10/29/obviously-theyre-a-jerk.html</link>
 				<guid isPermaLink="true">http://pjf.id.au//ethics/2013/10/29/obviously-theyre-a-jerk.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>Remembering better times</title>
-				<description>&lt;p&gt;One of the most frustrating thing about humans is that we’ll feel a particular way—happy, sad, angry, annoyed—and then we’ll find excuses as to &lt;em&gt;why&lt;/em&gt; we’re feeling that way. If we’re feeling sad, it’s &lt;em&gt;really&lt;/em&gt; hard to remember times when you were happy. If we’re feeling annoyed, then the most minor things can cause us to lose our cool, even if they’re things we’d hardly notice on better days.&lt;/p&gt;
-
-&lt;p&gt;It’s pretty clear that for whatever you’re feeling, that’s what you’ll be good at remembering. If you’re having a great time, you’ll be better at remembering similar happy memories. If you’re hitting a particular difficulty, it’s much too easy to remember all the other times you’ve hit the same difficulty.&lt;/p&gt;
-&lt;!--more--&gt;
-&lt;p&gt;Sometimes we recognise our feelings are transient. When we’re feeling hungry, we know that’s a temporary state, even if it causes us to buy half the supermarket when we go shopping. But if we’re feeling sad or lonely, then it’s way too easy to think those are somehow permanent, because all the other similar occasions are what easily spring to mind.&lt;/p&gt;
-
-&lt;p&gt;One of the real struggles here is that there’s an actual block in being able to conjure up those other feelings. You might say, “I know I was feeling happy last Thursday”, but if you’re feeling rotten right now, then you’re just stuck with “knowing”, rather than “feeling”. That abstract knowledge might not make you feel any better—in fact unless you’ve actually sat down to honestly remember how you felt each day—you might not even remember that you were happy last Thursday in the first place.&lt;/p&gt;
-
-&lt;p&gt;This, more than anything else, is why I track my moods. It’s why I journal my experiences. My memory is biased, and records and journals are one of the few ways of seeing how I actually felt at any given time. My challenge is to keep them up to date; if I’m having a great time—and sometimes if I’m having an awful time—then often they don’t get recorded, and I miss what are arguably some of my most important records.&lt;/p&gt;
-
-&lt;p&gt;But even if you don’t track your moods and experiences, then at least remember that if you’re feeling down, or angry, or frustrated, then your brain—and your memory in particular—is going to actively mess with you. You may not be able to stop that from happening, but having knowledge and insight may at least help you make better choices than what you may have otherwise made.&lt;/p&gt;</description>
-				<pubDate>Tue, 29 Oct 2013 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au//depression/2013/10/29/feels-influence-perception.html</link>
-				<guid isPermaLink="true">http://pjf.id.au//depression/2013/10/29/feels-influence-perception.html</guid>
 			</item>
 		
 
