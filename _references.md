@@ -4,6 +4,11 @@
 
 # Misc
 
+[anki]: http://ankisrs.net/ "Anki: Powerful, intelligent flashcards"
+[coursera]: https://coursera.org/ "Coursera: Take free online classes from 80+ top universities and organisations"
+[pocket]: http://getpocket.com/ "Pocket: Save for later. Put articles, videos or pretty much anything into Pocket."
+[ivona]: http://ivona.com/ "IVONA: Award winning, natural text-to-speech for desktop, mobile, server and web."
+[exobrain]: http://github.com/pjf/exobrain "Exobrain: A collection of agents which collect, classify, and act upon data"
 [laputa]: http://en.wikipedia.org/wiki/Castle_in_the_Sky "Laputa: Castle in the Sky (Wikipedia)"
 [old-pjf]: https://web.archive.org/web/20110216060633/http://www.pjf.id.au/ "pjf.id.au in 2011"
 [cc-by]: https://creativecommons.org/licenses/by/3.0/ "Creative Commons Attribution 3.0 License"
