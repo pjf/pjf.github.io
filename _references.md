@@ -2,6 +2,12 @@
 [ethics]: /ethics "Paul Fenwick's writings on ethics and philosophy"
 [pjf]: http://pjf.id.au/ "Paul Fenwick's personal website"
 
+# Tech
+[btrfs]: http://arstechnica.com/information-technology/2014/01/bitrot-and-atomic-cows-inside-next-gen-filesystems/ "Bitrot and atomic COWs: Inside next-gen filesystems"
+[pushover]: https://pushover.net/ "Pushover: Simple mobile notifications"
+[snapback]: https://github.com/pjf/snapback "Snapback: Automatically backup your machine to btrfs when a disk is plugged in (GitHub)"
+[bedup]: https://github.com/g2p/bedup "bedup: btrfs de-duplication"
+
 # Misc
 
 [anki]: http://ankisrs.net/ "Anki: Powerful, intelligent flashcards"
