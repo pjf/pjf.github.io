@@ -85,3 +85,8 @@ Recommendations for other browsers are welcome.
 
 The [Tor Project](https://www.torproject.org/) also provides pretty
 serious anonymity functionality that works with any browser.
+
+**Edit:** Unfortunately, the search box on my site may give you ads.
+Google doesn't let you disable that unless you're a registered non-profit,
+which I'm currently not. The search box does not interact with
+Google in any way unless you submit a search using it.
