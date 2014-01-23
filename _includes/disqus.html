@@ -6,18 +6,19 @@
     var disqus_shortname  = "{{ site.disqus.shortname | escape }}"; 
     var disqus_identifier = "{{ post.url              | escape }}";
     var disqus_title      = "{{ post.title            | escape }}";
+    var disqus_url        = "{{ site.url | escape}}{{ post.url | escape }}";
 
     /* Make sure that once disqus renders, we trigger any events that
      * need to happen on page resize. Otherwise our left-bar looks funny. */
 
     function disqus_config() {
-        this.callbacks.onReady = [function() {
+        this.callbacks.onReady.push(function() {
             {% include on_resize.js %}
-        }];
+        });
 
-        this.callbacks.onNewComment = [function() {
+        this.callbacks.onNewComment.push(function() {
             {% include on_resize.js %}
-        }];
+        });
     }
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
