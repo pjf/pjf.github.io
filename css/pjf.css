@@ -129,15 +129,21 @@ img.me {
 
 /* AddThis */
 
-div.addthis_container {
+div.addthis_container, .share-container {
     padding-top:    1em;
     padding-bottom: 1em;
 }
 
-.addthis_container p {
+.addthis_container p, .share-container p {
     float: left;
     font-weight: bold;
+    color: black;
     padding-right: 1em;
+    margin-top: 0.5ex;
+}
+
+.share-container a {
+    color: inherit;
 }
 
 /* Rounded corners on the buttons, please */
