@@ -105,6 +105,227 @@
     <article class="is-post is-post-excerpt">
 
         <header>
+            <h2><a href="/advogato/2005/07/14/the-most-wonderful-breakfast.html">The most wonderful breakfast</a></h2>
+            
+        </header>
+
+        <div class="info">
+    
+    <span class="date"> <span class="month">Jul</span>
+        <span class="day">14</span> <span
+            class="year"><span>,</span> 2005</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+
+        
+            <p><b>The most wonderful breakfast</b><br/>
+Okay, I know what you're thinking.  Paul has finally lost the last shreds of sanity: he's starting to post what he had for breakfast in his blog.
+<p>
+This morning I slept in, and then for breakfast I had my favourite breakfast: two soft-boiled eggs (from our own chickens, 4.5 minutes at a simmer), hot-buttered toast cut into strips, and a cafe latte.
+<p>
+What's important is what this breakfast signifies.  For the last three days I've been waking at 6am and them travelling to spend the remainder of the day teaching Perl.  In the evenings I'd been working on <a href="http://www.sage-au.org.au/conf/sage-au2005/speakers.html#fenwickabs">my talk</a>.  I've been missing sleep, and feeling very time poor.
+<p>
+My favourite breakfast takes a little time to prepare (I have to grind the coffee, the chickens have to lay the eggs), as well as coordination to ensure the eggs, toast, and coffee are all ready at the same time.  A few weeks ago I would have a practically zero chance of completing this without interruption, especially during business hours after being away from my desk for three days.  Today, I could practically rely upon having the time to cook.
+<p>
+The significance is not that I've run out of work; instead I have mountains to complete, and I'll teaching or on-site four out of five days next week.  The significance is that finally I am the master of my work, and not the other way around.  At least that's something I can pretend to myself until the phone begins to ring.
+
+
+
+        
+
+        <a href="/advogato/2005/07/14/the-most-wonderful-breakfast.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2005/07/06/the-most-frustrating-work.html">The most frustrating work</a></h2>
+            
+        </header>
+
+        <div class="info">
+    
+    <span class="date"> <span class="month">Jul</span>
+        <span class="day"> 6</span> <span
+            class="year"><span>,</span> 2005</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+
+        
+            <p><b>The most frustrating work</b><br/>
+Running a small business exposes one to a wide range of hurdles.  Work can range from the very good (presenting at conferences/user groups) to the downright awful (being recalled from holidays to fix critically dead machines at 2am).  The main compenstation is that the bad work tends to pay extremely well.
+<p>
+Throw into that a whole lot of conflict resolution, government regulation, taxation requirements, travel, and plenty of human interaction, and you have a pretty good range of learning experiences.  Some people hate their jobs, but I love mine.  I just hate certain particular aspects of it.
+<p>
+Recently, one of our office desktops started developing bad sectors on the hard-drive.  This isn't a big deal, all the important data is stored on a central server with RAID and tape backups.  We also have a drawer full of hard-drives (somehow we keep winning these, or getting them back under warrantee), so replacing the failing drive should be easy, right?
+<p>
+Well, for Linux it is.  Fire up <a href="http://www.knoppix.org/">Knoppix</a>, and use <a href="http://www.gnu.org/software/parted/">parted</a> to copy the old partitions across.  A little bit of magic with your choice of bootloader, and you have a transferred Linux system onto a fresh, new, bigger hard-drive.
+<p>
+If you've got bad sectors involved, then parted may not be able to do the deeds, as it tries a block-for-block copy.  However for an ext2/ext3 filesystem, you can simply partition, make a new filesystem (mke2fs), and use one of the hundreds of different ways of copying an ext2 filesystem, in my case <tt>cd /path/to/new/filesystem; dump -0 /dev/hdXX | restore -r</tt>.  Easy
+<p>
+Now comes the most frustrating part of all.  This machine also occasionally runs Windows 2000.  We don't actually use Windows for anything except for games, but I'm very fond of my games, and unfortunately there are still a couple that only run under Windows.  Unfortunately, transferring Windows across was not quite as easy.
+<p>
+Parted would happily copy and extend the partition, great!  However upon trying to boot Windows, I get a whole lot of nothing.  After going round-and-round with recovery consoles and boot records, it still won't boot.  Hmmm...
+<p>
+I decide to see if I can get a fresh install of Windows to boot.  If that fails, I know my other attempts are hopeless.  If it succeeds, then I know as a worst-case I can simply re-install Windows and the games.
+<p>
+The fresh install, onto a freshly partitioned hard-drive, fails.  It chugs along quite happily until it needs its first reboot, and then then issues the dreaded words <tt>"Error Loading Operating System"</tt>.
+<p>
+A quick search reveals a <a href="http://support.microsoft.com/?kbid=326676&sd=RMVP">fix from Microsoft</a> for the problem.  Upgrade your machine's BIOS &mdash;  not <i>quite</i> what I had in mind.  Given that Google reveals about <a href="http://www.google.com/search?q=%22Error+Loading+Operating+System%22">11,000</a> other pages which contain this exact phrase, and given most seem to recommend fiddling the disk geometery from CHS to LBA, I'm not going to try and flash a working BIOS just yet.
+<p>
+It looks like the problem is fundamentally with windows installing onto large partitions on big drives.  This isn't unique to windows, due to some real legacy reasons most machines have troubles booting something that isn't close to the start of the disk.  It's also been solved in a variety of ways, including itty-bitty boot partitions for Linux, and intermediate stages for <a href="http://www.gnu.org/software/grub/">grub</a>.  Those systems also give much more precise errors when something goes wrong.
+<p>
+So, for this machine I know the master boot record is fine, and because the Windows partition is right at the start of the disk, I know that its boot-sector can be reached, but things go wrong from there.  Perhaps I can start with an installation onto a small partition, and then try growing things from there.  Clearly I have an exciting time in repartitioning and re-installing ahead of me.
+<p>
+The ironic thing is isn't my workstation, and Windows is completely unrequired for our business.  Fundamentally its costing only $0.50/day in opportunity costs in not being able to play a MMROPG, yet it's the most frustrating issue that I've encountered in the last month.  Damn my strong beliefs that if you have a computer you should be using it to provide the maximum entertainment value.
+<p>
+On reflection, if I consider <i>this</i> to be my most troublesome problem, then I really don't have that much to complain about, do I?
+
+
+
+        
+
+        <a href="/advogato/2005/07/06/the-most-frustrating-work.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2005/07/06/ariel-miyu-golembo-born--2pm--6th-july-2005.html">Ariel Miyu Golembo born, 2pm, 6th July 2005</a></h2>
+            
+        </header>
+
+        <div class="info">
+    
+    <span class="date"> <span class="month">Jul</span>
+        <span class="day"> 6</span> <span
+            class="year"><span>,</span> 2005</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+
+        
+            <p>
+<b>Ariel Miyu Golembo born, 2pm, 6th July 2005</b><br/>
+I'm very pleased to have received a phonecall from Daniel and Tomoko to
+say that Ariel Miyu Golembo was born without any complications at 2pm
+today.  Ariel is 40cm long, weighs in at 2.4kg, and is apparently very
+loud when she's awake.  Tomoko and Ariel will be returning home in four
+days time.
+<p>
+Congratulations Tomoko and Daniel!
+
+
+
+        
+
+        <a href="/advogato/2005/07/06/ariel-miyu-golembo-born--2pm--6th-july-2005.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
             <h2><a href="/advogato/2005/07/05/finance--quote-1-10.html">Finance::Quote 1.10</a></h2>
             
         </header>
@@ -214,202 +435,6 @@ Of course, there's a good possibility that despite the hints we keep getting fro
         
 
         <a href="/advogato/2005/07/05/perl-certifications.html">(read more...)</a>
-
-    </article>
-
-
-    
-
-    
-
-    
-
-
-    
-
-    
-
-
-
-    
-
-    
-
-    <article class="is-post is-post-excerpt">
-
-        <header>
-            <h2><a href="/advogato/2005/07/04/sage-au-2005--so-you-want-to-start-a-business-.html">SAGE-AU 2005: So you want to start a business?</a></h2>
-            
-        </header>
-
-        <div class="info">
-    
-    <span class="date"> <span class="month">Jul</span>
-        <span class="day"> 4</span> <span
-            class="year"><span>,</span> 2005</span>
-    </span>
-
-
-    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
-
-    <!--
-        <ul class="stats">
-            <li><a href="#" class="fa fa-comment">16</a></li>
-            <li><a href="#" class="fa fa-heart">32</a></li>
-            <li><a href="#" class="fa fa-twitter">64</a></li>
-            <li><a href="#" class="fa fa-facebook">128</a></li>
-        </ul>
-    -->
-</div>
-
-
-        
-
-        
-            <p><b>SAGE-AU 2005: So you want to start a business?</b><br/>
-<blockquote>
-Paul Fenwick has always had an entrepreneurial bent. At the age of six he went into retail, setting up a street-side stall to sell four-leaf clovers from a mutant plant in the family garden. Two years later Paul's attempts to market mutant funnel-webs failed disastrously, and after returning from hospital he discovered that his all his Spiderman comics had been burnt. This was Paul's first lesson that the world of small business is not always an easy one.
-</blockquote>
-<p>
-That's my biography for my <a href="http://www.sage-au.org.au/conf/sage-au2005/speakers.html#fenwickabs">Small Business Talk</a> to be held at <a href="http://www.sage-au.org.au/conf/sage-au2005/">SAGE-AU 2005</a> which runs from the 5th&mdash;9th September in Perth this year.
-<p>
-I've got oodles of other interesting news (interesting to me, anyway) which has to go through all the appropriate channels before I can write about it publicly.  That's why I'm writing blatent advertisements for SAGE-AU 2005 instead.
-
-
-
-        
-
-        <a href="/advogato/2005/07/04/sage-au-2005--so-you-want-to-start-a-business-.html">(read more...)</a>
-
-    </article>
-
-
-    
-
-    
-
-    
-
-
-    
-
-    
-
-
-
-    
-
-    
-
-    <article class="is-post is-post-excerpt">
-
-        <header>
-            <h2><a href="/advogato/2005/06/30/end-of-financial-year.html">End of financial year</a></h2>
-            
-        </header>
-
-        <div class="info">
-    
-    <span class="date"> <span class="month">Jun</span>
-        <span class="day">30</span> <span
-            class="year"><span>,</span> 2005</span>
-    </span>
-
-
-    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
-
-    <!--
-        <ul class="stats">
-            <li><a href="#" class="fa fa-comment">16</a></li>
-            <li><a href="#" class="fa fa-heart">32</a></li>
-            <li><a href="#" class="fa fa-twitter">64</a></li>
-            <li><a href="#" class="fa fa-facebook">128</a></li>
-        </ul>
-    -->
-</div>
-
-
-        
-
-        
-            <p><b>End of financial year</b><br/>
-It's the end of financial year, and everyone and everything is just a little more hectic because of it.  I have a ton of deadlines: negotiations with our bank, taxation matters, a stupidly big pile of paperwork, and a number of conference and magazine-article related matters.
-<p>
-However my real task for the day is clearing my desk, and making sure that there isn't anything that we really want to take advantage of in the 2004-05 financial year.  Any spare time will be spent catching up on accounting and tax matters.
-<p>
-The good news is that despite the busy time was year, I was still able to go out to dinner last night with about a dozen very good friends, and I was still able to sleep until the gloriously late time of 10am.  One of the distinct advantages of running one's own business is flexibility of hours.
-<p>
-On the matter of running a business, I'll be presenting a short yet amusing talk on starting a business at the <a href="http://www.osdc.com.au/osdclub/">Open Source Developers Club</a> on the 13th July, 2005.  This will be a sneak-preview of my paper and presentation for the <a href="http://www.sage-au.org.au/conf/sage-au2005/">Australian System Administrators Conference</a> in Perth later this year.
-
-
-
-        
-
-        <a href="/advogato/2005/06/30/end-of-financial-year.html">(read more...)</a>
-
-    </article>
-
-
-    
-
-    
-
-    
-
-
-    
-
-    
-
-
-
-    
-
-    
-
-    <article class="is-post is-post-excerpt">
-
-        <header>
-            <h2><a href="/advogato/2005/06/27/nigel-mcfarlane--rip.html">Nigel McFarlane, RIP</a></h2>
-            
-        </header>
-
-        <div class="info">
-    
-    <span class="date"> <span class="month">Jun</span>
-        <span class="day">27</span> <span
-            class="year"><span>,</span> 2005</span>
-    </span>
-
-
-    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
-
-    <!--
-        <ul class="stats">
-            <li><a href="#" class="fa fa-comment">16</a></li>
-            <li><a href="#" class="fa fa-heart">32</a></li>
-            <li><a href="#" class="fa fa-twitter">64</a></li>
-            <li><a href="#" class="fa fa-facebook">128</a></li>
-        </ul>
-    -->
-</div>
-
-
-        
-
-        
-            <p><b>Nigel McFarlane, RIP</b><br/>
-I was shocked to read <a href="http://www.theinquirer.net/?article=24171">this article</a>.  Nigel McFarlane was an active and vibrant member of the Australian open source community.  Our first real encounter with Nigel was when he called wanting to interview Jacinta for a newspaper feature-article on Melbourne's successful open source businesses.  The interview resulted in a discussion of <a href="http://perltraining.com.au/">Perl Training Australia</a> in one of Australia's most widely-read newspapers.  After that it seemed that I was bumping into Nigel everywhere &mdash; industry functions, user groups, conferences, and an almost endless number of mailing lists.
-<p>
-Nigel was an author of numerous books, a strong supporter and active member of the Mozilla/Firefox project, a regular speaker at conferences, and even drew crowds for 2600 meetings.
-<p>
-Nigel's insight, talent, and enthusiasm will be sorely missed.
-
-
-
-        
-
-        <a href="/advogato/2005/06/27/nigel-mcfarlane--rip.html">(read more...)</a>
 
     </article>
 

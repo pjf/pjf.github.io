@@ -105,6 +105,215 @@
     <article class="is-post is-post-excerpt">
 
         <header>
+            <h2><a href="/advogato/2003/03/28/such-a-busy-week.html">Such a busy week</a></h2>
+            
+        </header>
+
+        <div class="info">
+    
+    <span class="date"> <span class="month">Mar</span>
+        <span class="day">28</span> <span
+            class="year"><span>,</span> 2003</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+
+        
+            <B>Such a busy week</b><BR>
+My goodness, this last week has certainly been busy.  Much of my work involved working for a client with a tight deadline.  They had the usual problems involved with a large project, but also had their technical lead relapse with gandular half-way through.
+<p>
+Yesterday was my last day there -- already well past the project deadline.  Hardly what one would call a relaxing final day at work.
+<p>
+<B>SCSI Pain</b><BR>
+I learnt far too much about SCSI this week.  I recommended to a client they order in a SCSI card for their server, so it could talk to the appropriate SCSI tape drive.  I rather foolishly <i>did not</i> check the drive to see if it was using narrow SCSI, or wide SCSI.  It uses wide SCSI, and we got a narrow controller.
+<P>
+While apparently all wide SCSI devices are supposed to be able to drop back into narrow SCSI mode, it needs odd cabling and special termination.  I was once told that a ritual sacrifice will improve many SCSI problems, but unfortunately I had left all my chickens at home that day.
+<P>
+In any case, I'm eating humble pie for a bit, and have arranged for an appropriate wide, dual-channel, SCSI controller, since it's cheaper than the special high-line terminators.
+<P>
+<B>Busy week, continued</b><BR>
+Met with a new client today, 9:30am meeting, went for about three hours.  They want a whole lot of software development work done.  Still at the quotation stage, but they seem very eager.  That will keep both Jacinta and myself very busy for a while.
+<P>
+Yesterday, I discovered from <a href="/person/scottp/">scottp</a> that the big Melbourne user's group convention is on <i>tomorrow</i>, and <a href="http://melbourne.pm.org/">Melb.pm</a> is short on people.  I'd been missing the mails about it because I wasn't subscribed to the regular mailing list, and is there any chance that I could possibly help out?  So, that's what I'm doing tomorrow, instead of watching movies with Jacinta and <a href="/person/jenni/">jenni</a>.
+<p>
+Oh, and just then I had a call from the client with the tight deadlines, asking if I felt that coming in to debug code in Sunday was more enjoyable than sleeping.  They were very understanding when I declined.  I'll probably still be visiting them on Tuesday, though.
+<p>
+<b>Backup weirdness</b><br>
+I appear to have one client where the presence of a directory named backtick (`) is interfering with dump(8).  The directory itself gets stored fine, but not anything after it (in asciibetical order).  We're not doing anything odd with passing in a list of files to dump -- just good ol' regular, "here's a filesystem, put it on the tape".  It may actually be that it's dumping fine, but restore can't handle it.
+<p>
+In any case, I'd expect such weirdness from fancy new backup software, but when your program states that "A dump command appeared in Version 6 AT&amp;T UNIX", you'd expect it to be pretty stable by now.
+<p>
+We're running a series of tests to try and locate where the problem is occuring (in either dump or restore), and the smallest case needed to reproduce it.  Very disturbing stuff.  Luckily, it only seems to be affecting one directory, and we found the problem before anything in that directory was needed, but it's still disturbing nonetheless.
+
+
+
+        
+
+        <a href="/advogato/2003/03/28/such-a-busy-week.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2003/03/19/e-mail-and-privacy.html">E-mail and privacy</a></h2>
+            
+        </header>
+
+        <div class="info">
+    
+    <span class="date"> <span class="month">Mar</span>
+        <span class="day">19</span> <span
+            class="year"><span>,</span> 2003</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+
+        
+            <B>E-mail and privacy</b><BR>
+I still find it incredible how many people believe that e-mail is somehow inheritantly private.  I have clients, they have PGP installed (some for many years), and they have my keys.  Yet somehow the effort of hitting the "encrypt" button is too much for them, even if the e-mail contains sensitive or confidential information.  People don't write credit card details, medical history, or other private information on postcards, yet people do the electronic equivalent every day.
+<p>
+What's even more disturbing is the number of "e-commerce" systems which are little more than a copy of formmail running on a SSL server.  The results are then dropped into a plain-text e-mail, transmitted in the clear over SMTP, stored unencrypted on a hard-drive somewhere, and then again grabbed using clear POP/IMAP (with passwords easily sniffable), and again stored on what's often a frighteningly insecure workstation or home machine.
+<p>
+People are big on using SSL for websites, but seem completely ignorant that the same level of security needs to be used from end-to-end to make an entire process secure.  I blame much of this on the fact that Certificate Authorities (and indirectly, browser manufacturers) can make money from people purchasing signatures on their SSL certs, but nobody makes money when you generate a PGP key, or pick up your mail using APOP.
+<p>
+Unfortunately the matter of securing communications is not  a technical one, but rather a social one.  I fear that the public in general will only become aware of how insecure their communications are once someone finds a way of making money by securing them.
+
+
+        
+
+        <a href="/advogato/2003/03/19/e-mail-and-privacy.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
+            <h2><a href="/advogato/2003/03/07/hangover.html">Hangover</a></h2>
+            
+        </header>
+
+        <div class="info">
+    
+    <span class="date"> <span class="month">Mar</span>
+        <span class="day"> 7</span> <span
+            class="year"><span>,</span> 2003</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+
+        
+            <B>Hangover</b><BR>
+David (my future brother-in-law-in-law) had his Buck's night last evening.  Tremendous fun, and a great way to relax after a hard working week, but with only one flaw.  Today's Friday, so the working week isn't over.  While I don't have a real hangover per se (drank plenty of water during the evening), I'm certainly functioning far below my usual mental capacity.
+<p>
+For some reason, my desire to listen to loud and repetitive techno is reduced.
+
+
+        
+
+        <a href="/advogato/2003/03/07/hangover.html">(read more...)</a>
+
+    </article>
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        <header>
             <h2><a href="/advogato/2003/02/27/interesting-polls.html">Interesting Polls</a></h2>
             
         </header>
@@ -231,194 +440,6 @@ The nice thing about the phone is that it has a vibrate function.  That's a good
         
 
         <a href="/advogato/2003/02/25/business.html">(read more...)</a>
-
-    </article>
-
-
-    
-
-    
-
-    
-
-
-    
-
-    
-
-
-
-    
-
-    
-
-    <article class="is-post is-post-excerpt">
-
-        <header>
-            <h2><a href="/advogato/2003/02/03/the-week-of-woe.html">The Week of Woe</a></h2>
-            
-        </header>
-
-        <div class="info">
-    
-    <span class="date"> <span class="month">Feb</span>
-        <span class="day"> 3</span> <span
-            class="year"><span>,</span> 2003</span>
-    </span>
-
-
-    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
-
-    <!--
-        <ul class="stats">
-            <li><a href="#" class="fa fa-comment">16</a></li>
-            <li><a href="#" class="fa fa-heart">32</a></li>
-            <li><a href="#" class="fa fa-twitter">64</a></li>
-            <li><a href="#" class="fa fa-facebook">128</a></li>
-        </ul>
-    -->
-</div>
-
-
-        
-
-        
-            <B>The Week of Woe</b><BR>
-Last week was one of those weeks that started off well, and then rapidly slid downhill.  It went a little like this:
-
-
-        
-
-        <a href="/advogato/2003/02/03/the-week-of-woe.html">(read more...)</a>
-
-    </article>
-
-
-    
-
-    
-
-    
-
-
-    
-
-    
-
-
-
-    
-
-    
-
-    <article class="is-post is-post-excerpt">
-
-        <header>
-            <h2><a href="/advogato/2003/01/14/australian-copyright-infringements.html">Australian Copyright Infringements</a></h2>
-            
-        </header>
-
-        <div class="info">
-    
-    <span class="date"> <span class="month">Jan</span>
-        <span class="day">14</span> <span
-            class="year"><span>,</span> 2003</span>
-    </span>
-
-
-    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
-
-    <!--
-        <ul class="stats">
-            <li><a href="#" class="fa fa-comment">16</a></li>
-            <li><a href="#" class="fa fa-heart">32</a></li>
-            <li><a href="#" class="fa fa-twitter">64</a></li>
-            <li><a href="#" class="fa fa-facebook">128</a></li>
-        </ul>
-    -->
-</div>
-
-
-        
-
-        
-            <B>Australian Copyright Infringements</b><BR>
-If you're reading this from Australia, then you better make sure that you don't use your VCR to tape shows from television.  Most people don't realise that <a href="http://www.copyright.org.au/PDF/InfoSheets/G025.pdf">doing so is illegal in Australia</a>.
-<p>
-In other news, I've managed to use my Palm Pilot to transfer music from my computer to my/Ian's mobile phone, and I have far too big a backlog of work and invoices to catch up upon.
-
-
-        
-
-        <a href="/advogato/2003/01/14/australian-copyright-infringements.html">(read more...)</a>
-
-    </article>
-
-
-    
-
-    
-
-    
-
-
-    
-
-    
-
-
-
-    
-
-    
-
-    <article class="is-post is-post-excerpt">
-
-        <header>
-            <h2><a href="/advogato/2003/01/13/rain.html">Rain</a></h2>
-            
-        </header>
-
-        <div class="info">
-    
-    <span class="date"> <span class="month">Jan</span>
-        <span class="day">13</span> <span
-            class="year"><span>,</span> 2003</span>
-    </span>
-
-
-    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
-
-    <!--
-        <ul class="stats">
-            <li><a href="#" class="fa fa-comment">16</a></li>
-            <li><a href="#" class="fa fa-heart">32</a></li>
-            <li><a href="#" class="fa fa-twitter">64</a></li>
-            <li><a href="#" class="fa fa-facebook">128</a></li>
-        </ul>
-    -->
-</div>
-
-
-        
-
-        
-            <B>Rain</b><BR>
-None. Nil.  Nada.  Zero.  Zilch.  Victoria is in heavy drought right now.  Water restrictions are in place, and there's no indication they'll stop anytime soon.  We have a 1000 litre rainwater tank for gardening and livestock, so keeping our trees alive doesn't place any additional burdens on our resevoirs.  Unfortunately, the tank is becoming rather empty, and the days are <i>very</i> hot and dry.  I'm really hoping we get some rain soon, but the <a href="http://www.bom.gov.au/">BOM</a> doesn't thik that's likely in the next week.
-<p>
-<b>Cereal Toys</b><br>
-Once upon a time, when you opened your box of corn flakes, you might get a little plastic truck or aircraft.  Yesterday I got a <i>Age of Empires</i> complete game on CD in the cereal box.  There was a huge shelf of them.  Looks like the cereal manufacturer thinks they can sell more boxes if they put games in them, and the whole box and game intro pushes hard about how good the game expansion is, and why you should buy it.
-<p>
-Mind you, I'll admit the game's been more fun than a plastic truck.
-<p>
-<b>Toys</b><br>
-Lots of toys arrived today.  I now have much more desk space, and a <i>huge</i> bed with a 15 year warranty.
-
-
-
-        
-
-        <a href="/advogato/2003/01/13/rain.html">(read more...)</a>
 
     </article>
 
