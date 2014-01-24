@@ -5,9 +5,9 @@ keywords: ethics intelligence longpost learning citations science cognition
 description: "Here's a graph showing the performance of children after they've been praised for their intelligence versus their effort, and then given a series of problems to try and solve. The praised for effort increase in the number of problems they can solve. Those praised for intelligence show a frightening decrease."
 ---
 
-This. Right here. Look at it.
-
 {% image right /images/ethics/praise-fail.png %}
+
+This. Right here. Look at it.
 
 It's a graph showing the performance of children after they've been praised for
 their intelligence ("you must be smart") versus their effort ("you must have
