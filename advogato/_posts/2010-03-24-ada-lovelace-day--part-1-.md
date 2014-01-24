@@ -2,7 +2,7 @@
 title: "Ada Lovelace Day (Part 1)"
 date: 2010-03-24 11:59:55 +0000
 orig_url: http://advogato.org/person/pjf/diary/597.html
-tags: ada-lovelace-day community gratitude
+tags: ada-lovelace-day community gratitude advogato
 ---
 
 Today is <a href="http://findingada.com/">Ada Lovelace day</a>; a day for

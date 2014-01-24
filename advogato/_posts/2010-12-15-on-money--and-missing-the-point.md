@@ -2,7 +2,7 @@
 title: "On money, and missing the point"
 date: 2010-12-15 01:21:34 +0000
 orig_url: http://advogato.org/person/pjf/diary/600.html
-tags: money ethics 
+tags: money ethics advogato
 ---
 
 There are oftentimes when I talk enthusiastically about sharing my skills,
@@ -26,7 +26,7 @@ of living.
 <!--more-->
 
 Without boring you with technical terms, the whole point of living isn't money,
-it's *appiness*.  Money certainly has utility in providing hhappiness,
+it's *happiness*.  Money certainly has utility in providing hhappiness,
 but it's not the exclusive source.  In fact we've got plenty of studies that
 show us that money isn't what makes us happy, it's just that being poor makes
 us unhappy.  After a point, the utility of money drops off very sharply indeed.

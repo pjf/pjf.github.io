@@ -2,7 +2,7 @@
 title: "Ada Lovelace Day (Part 2)"
 date: 2010-03-25 14:34:03 +0000
 orig_url: http://advogato.org/person/pjf/diary/598.html
-tags: ada-lovelace-day community gratitude
+tags: ada-lovelace-day community gratitude advogato
 ---
 
 Today is Ada Lovelace continuation day; a day for continuing blog posts
