@@ -72,9 +72,9 @@
 
 &lt;p&gt;We also need to tell linux that when it sees a disk with the &lt;code&gt;backup&lt;/code&gt; label, it needs to go on the mount-point specified. We do this by adding a line to &lt;code&gt;/etc/fstab&lt;/code&gt;, and we can also specify other options in here as well For example, I use btrfs’ compression option:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ echo &amp;quot;LABEL=backup /mnt/backup btrfs compress 0 2&amp;quot; &amp;gt;&amp;gt; /etc/fstab&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;$ echo &amp;quot;LABEL=backup /mnt/backup btrfs noauto,compress 0 2&amp;quot; &amp;gt;&amp;gt; /etc/fstab&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;On other filesystems, you can safely use &lt;code&gt;defaults&lt;/code&gt; rather than &lt;code&gt;compress&lt;/code&gt; in the line above.&lt;/p&gt;
+&lt;p&gt;On other filesystems, you should leave out ‘compress’ on the line above. The ‘noauto’ option tells Linux not to try and mount the drive when booting; as a removable backup drive, it’s unlikely to be there.&lt;/p&gt;
 
 &lt;h3 id=&quot;udev&quot;&gt;udev&lt;/h3&gt;
 

@@ -153,9 +153,9 @@ to this post.)
 
 <p>We also need to tell linux that when it sees a disk with the <code>backup</code> label, it needs to go on the mount-point specified. We do this by adding a line to <code>/etc/fstab</code>, and we can also specify other options in here as well For example, I use btrfs’ compression option:</p>
 
-<pre><code>$ echo &quot;LABEL=backup /mnt/backup btrfs compress 0 2&quot; &gt;&gt; /etc/fstab</code></pre>
+<pre><code>$ echo &quot;LABEL=backup /mnt/backup btrfs noauto,compress 0 2&quot; &gt;&gt; /etc/fstab</code></pre>
 
-<p>On other filesystems, you can safely use <code>defaults</code> rather than <code>compress</code> in the line above.</p>
+<p>On other filesystems, you should leave out ‘compress’ on the line above. The ‘noauto’ option tells Linux not to try and mount the drive when booting; as a removable backup drive, it’s unlikely to be there.</p>
 
 <h3 id="udev">udev</h3>
 
