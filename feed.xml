@@ -181,6 +181,8 @@ SUBSYSTEM==&amp;quot;block&amp;quot;, ENV{ID_FS_LABEL}==&amp;quot;backup&amp;quo
 
 &lt;p&gt;AddThis provide a simple &lt;a href=&quot;http://www.addthis.com/privacy/opt-out&quot; title=&quot;AddThis opt-out&quot;&gt;opt-out button&lt;/a&gt; to prevent them from collecting and sharing information about you. Opting-out doesn’t stop you from using the share buttons, it just protects your privacy. I recommend you use it.&lt;/p&gt;
 
+&lt;p&gt;&lt;em&gt;Edit:&lt;/em&gt; On January 25th 2014 I removed AddThis in favour of a static, tracking-free set of share buttons.&lt;/p&gt;
+
 &lt;h3 id=&quot;google_analytics&quot;&gt;Google Analytics&lt;/h3&gt;
 
 &lt;p&gt;I use Google Analytics to get an overview of who’s visiting my site. By default, Analytics receives your entire IP address, but I feel that Google already knows too much about you, so I ask them to collect &lt;a href=&quot;https://support.google.com/analytics/answer/2763052?hl=en&amp;ref_topic=2919631&quot;&gt;less information&lt;/a&gt; by partially anonymising your IP address.&lt;/p&gt;
