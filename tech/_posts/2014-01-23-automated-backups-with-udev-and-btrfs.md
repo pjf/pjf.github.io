@@ -62,7 +62,8 @@ by adding a line to `/etc/fstab`, and we can also specify other
 options in here as well For example, I use btrfs' compression
 option:
 
-    $ echo "LABEL=backup /mnt/backup btrfs noauto,compress 0 2" >> /etc/fstab
+    $ echo "LABEL=backup /mnt/backup btrfs noauto,compress 0 2" \
+        >> /etc/fstab
 
 On other filesystems, you should leave out 'compress' on the line
 above. The 'noauto' option tells Linux not to try and mount the
@@ -100,7 +101,13 @@ and sticking to one filesystem (`-x`). I also pass in `--delete`
 to remove files from the backup drive that are no longer on my
 machine's disk.
 
-    $ ionice -c3 nice rsync -vHAaxX --delete / /mnt/backup/
+In addition, I also pass `--filter 'P SNAPSHOT-*`, to tell rsync
+to protect any file at the destination which starts with `SNAPSHOT-`.
+As we'll see in a moment, these are my btrfs snapshots; we don't
+want rsync to try and remove them.
+
+    $ ionice -c3 nice rsync -vHAaxX --delete \
+        --filter 'P SNAPSHOT-*' / /mnt/backup/
 
 Once this is done (it can take some time), I take a read-only
 btrfs snapshot on my backup drive with the current date in UTC:
