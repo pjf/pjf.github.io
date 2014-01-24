@@ -148,3 +148,11 @@ div.addthis_container {
 article header {
     clear: right;
 }
+
+/* H3-6 is often used in articles. Stop them from appearing
+ * so cramped when they display.
+ */
+
+h3, h4, h5, h6 {
+    padding-bottom: 1em;
+}
