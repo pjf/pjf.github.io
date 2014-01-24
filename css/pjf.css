@@ -64,6 +64,7 @@ img.me {
 /* Tip box */
 
 .tip-box {
+    clear: left;
     border-top:    1px solid #bbb;
     border-bottom: 1px solid #bbb;
     padding-top:    2em;
@@ -142,4 +143,8 @@ div.addthis_container {
 /* Rounded corners on the buttons, please */
 .addthis_32x32_style span {
     border-radius: 10%;
+}
+
+article header {
+    clear: right;
 }
