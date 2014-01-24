@@ -153,7 +153,8 @@ to this post.)
 
 <p>We also need to tell linux that when it sees a disk with the <code>backup</code> label, it needs to go on the mount-point specified. We do this by adding a line to <code>/etc/fstab</code>, and we can also specify other options in here as well For example, I use btrfs’ compression option:</p>
 
-<pre><code>$ echo &quot;LABEL=backup /mnt/backup btrfs noauto,compress 0 2&quot; &gt;&gt; /etc/fstab</code></pre>
+<pre><code>$ echo &quot;LABEL=backup /mnt/backup btrfs noauto,compress 0 2&quot; \
+    &gt;&gt; /etc/fstab</code></pre>
 
 <p>On other filesystems, you should leave out ‘compress’ on the line above. The ‘noauto’ option tells Linux not to try and mount the drive when booting; as a removable backup drive, it’s unlikely to be there.</p>
 
@@ -176,7 +177,10 @@ SUBSYSTEM==&quot;block&quot;, ENV{ID_FS_LABEL}==&quot;backup&quot;, ACTION==&quo
 
 <p>I also use the <code>-vHAaxX</code> switches to <code>rsync</code>. This backups up <code>v</code>erbosely, <code>H</code>ard links, <code>A</code>CLs, <code>a</code>ll, <code>X</code>tended attributions, and sticking to one filesystem (<code>-x</code>). I also pass in <code>--delete</code> to remove files from the backup drive that are no longer on my machine’s disk.</p>
 
-<pre><code>$ ionice -c3 nice rsync -vHAaxX --delete / /mnt/backup/</code></pre>
+<p>In addition, I also pass <code>--filter 'P SNAPSHOT-*</code>, to tell rsync to protect any file at the destination which starts with <code>SNAPSHOT-</code>. As we’ll see in a moment, these are my btrfs snapshots; we don’t want rsync to try and remove them.</p>
+
+<pre><code>$ ionice -c3 nice rsync -vHAaxX --delete \
+    --filter 'P SNAPSHOT-*' / /mnt/backup/</code></pre>
 
 <p>Once this is done (it can take some time), I take a read-only btrfs snapshot on my backup drive with the current date in UTC:</p>
 

@@ -72,7 +72,8 @@
 
 &lt;p&gt;We also need to tell linux that when it sees a disk with the &lt;code&gt;backup&lt;/code&gt; label, it needs to go on the mount-point specified. We do this by adding a line to &lt;code&gt;/etc/fstab&lt;/code&gt;, and we can also specify other options in here as well For example, I use btrfs’ compression option:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ echo &amp;quot;LABEL=backup /mnt/backup btrfs noauto,compress 0 2&amp;quot; &amp;gt;&amp;gt; /etc/fstab&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;$ echo &amp;quot;LABEL=backup /mnt/backup btrfs noauto,compress 0 2&amp;quot; \
+    &amp;gt;&amp;gt; /etc/fstab&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;On other filesystems, you should leave out ‘compress’ on the line above. The ‘noauto’ option tells Linux not to try and mount the drive when booting; as a removable backup drive, it’s unlikely to be there.&lt;/p&gt;
 
@@ -95,7 +96,10 @@ SUBSYSTEM==&amp;quot;block&amp;quot;, ENV{ID_FS_LABEL}==&amp;quot;backup&amp;quo
 
 &lt;p&gt;I also use the &lt;code&gt;-vHAaxX&lt;/code&gt; switches to &lt;code&gt;rsync&lt;/code&gt;. This backups up &lt;code&gt;v&lt;/code&gt;erbosely, &lt;code&gt;H&lt;/code&gt;ard links, &lt;code&gt;A&lt;/code&gt;CLs, &lt;code&gt;a&lt;/code&gt;ll, &lt;code&gt;X&lt;/code&gt;tended attributions, and sticking to one filesystem (&lt;code&gt;-x&lt;/code&gt;). I also pass in &lt;code&gt;--delete&lt;/code&gt; to remove files from the backup drive that are no longer on my machine’s disk.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ ionice -c3 nice rsync -vHAaxX --delete / /mnt/backup/&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In addition, I also pass &lt;code&gt;--filter 'P SNAPSHOT-*&lt;/code&gt;, to tell rsync to protect any file at the destination which starts with &lt;code&gt;SNAPSHOT-&lt;/code&gt;. As we’ll see in a moment, these are my btrfs snapshots; we don’t want rsync to try and remove them.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ionice -c3 nice rsync -vHAaxX --delete \
+    --filter 'P SNAPSHOT-*' / /mnt/backup/&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Once this is done (it can take some time), I take a read-only btrfs snapshot on my backup drive with the current date in UTC:&lt;/p&gt;
 
