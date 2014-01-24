@@ -1,5 +1,6 @@
 ---
 title: How to screw learning with one simple belief
+image: /images/ethics/praise-fail.png
 keywords: ethics intelligence longpost learning citations science cognition
 description: "Here's a graph showing the performance of children after they've been praised for their intelligence versus their effort, and then given a series of problems to try and solve. The praised for effort increase in the number of problems they can solve. Those praised for intelligence show a frightening decrease."
 ---
