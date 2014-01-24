@@ -62,10 +62,12 @@ by adding a line to `/etc/fstab`, and we can also specify other
 options in here as well For example, I use btrfs' compression
 option:
 
-    $ echo "LABEL=backup /mnt/backup btrfs compress 0 2" >> /etc/fstab
+    $ echo "LABEL=backup /mnt/backup btrfs noauto,compress 0 2" >> /etc/fstab
 
-On other filesystems, you can safely use `defaults` rather than
-`compress` in the line above.
+On other filesystems, you should leave out 'compress' on the line
+above. The 'noauto' option tells Linux not to try and mount the
+drive when booting; as a removable backup drive, it's unlikely
+to be there.
 
 ### udev
 
