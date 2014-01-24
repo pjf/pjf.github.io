@@ -43,3 +43,6 @@ TODO: Allow articles to specify this in top-matter.
 {% if page.tags %}
     <meta name="keywords" content="{{ page.tags | join: ', ' | escape }}" />
 {% endif %}
+
+{% comment %} This should come from _config.yml {% endcomment %}
+<meta property="fb:admins" content="549169610" />
