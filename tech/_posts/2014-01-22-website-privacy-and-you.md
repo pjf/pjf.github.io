@@ -29,6 +29,9 @@ them from collecting and sharing information about you. Opting-out
 doesn't stop you from using the share buttons, it just protects your
 privacy. I recommend you use it.
 
+*Edit:* On January 25th 2014 I removed AddThis in favour of a static,
+tracking-free set of share buttons.
+
 ### Google Analytics
 
 I use Google Analytics to get an overview of who's visiting my site.
