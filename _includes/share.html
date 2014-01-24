@@ -1,0 +1,10 @@
+<div class="share-container">
+    <p>Share:</p>
+    <div class="share-buttons">
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url | url_param_escape}}{{page.url | url_param_escape }}" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+        <a href="https://twitter.com/intent/tweet?text={{ post.title | url_param_escape }}{{ ' (by @pjf):' | url_param_escape }}&amp;url={{ site.url | url_param_escape }}{{ page.url | url_param_escape }}" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+        <a href="https://www.linkedin.com/shareArticle?url={{ site.url | url_param_escape }}{{ page.url | url_param_escape }}" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+        <a href="https://plus.google.com/share?url={{ site.url | url_param_escape }}{{ page.url | url_param_escape }}&amp;hl=en-GB" target="_blank"><i class="fa fa-google-plus-square fa-2x"></i></a>
+        <a href="http://pinterest.com/pin/create/button/?url={{ site.url | url_param_escape }}{{ page.url | url_param_escape }}&amp;description={{ post.description | url_param_escape }}&amp;media={{ site.url | url_param_escape}}{{ post.image | url_param_escape }}" target="_blank"><i class="fa fa-pinterest-square fa-2x"></i></a>
+    </div>
+</div>
