@@ -7,6 +7,7 @@
 [pushover]: https://pushover.net/ "Pushover: Simple mobile notifications"
 [snapback]: https://github.com/pjf/snapback "Snapback: Automatically backup your machine to btrfs when a disk is plugged in (GitHub)"
 [bedup]: https://github.com/g2p/bedup "bedup: btrfs de-duplication"
+[rsnapshot]: http://www.rsnapshot.org/ "rsnapshot: A remote filesystem snapshot utility, based on rsync"
 
 # Misc
 
