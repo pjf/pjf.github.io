@@ -57,6 +57,7 @@ growth; learning is hard, but it's *definitely* worth it.
 
 ### References
 
-¹ Levy, Sheri R., and Carol S. Dweck. “The Impact of Children’s Static versus Dynamic Conceptions of People on Stereotype Formation.” Child Development 70, no. 5 (1999): 1163–1180.
+¹ Mueller, Claudia M., and Carol S. Dweck. “Praise for Intelligence Can Undermine Children’s Motivation and Performance.” Journal of Personality and Social Psychology 75, no. 1 (1998): 33.
 
-² Mueller, Claudia M., and Carol S. Dweck. “Praise for Intelligence Can Undermine Children’s Motivation and Performance.” Journal of Personality and Social Psychology 75, no. 1 (1998): 33.
+² Levy, Sheri R., and Carol S. Dweck. “The Impact of Children’s Static versus Dynamic Conceptions of People on Stereotype Formation.” Child Development 70, no. 5 (1999): 1163–1180.
+
