@@ -146,7 +146,7 @@ SUBSYSTEM==&amp;quot;block&amp;quot;, ENV{ID_FS_LABEL}==&amp;quot;backup&amp;quo
 
 &lt;p&gt;Each snapshot is also a complete backup in its own right; I never have to worry about whether I have a base filesystem upon which to apply an incremental backup on to.&lt;/p&gt;
 
-&lt;p&gt;If you’re not btrfs or a similar snapshotting filesystem, you might find &lt;a href=&quot;http://www.rsnapshot.org/&quot; title=&quot;rsnapshot: A remote filesystem snapshot utility, based on rsync&quot;&gt;rsnapshot&lt;/a&gt; preferable to straight rsync. It basically makes rolling snapshots where unchanged files are hard linked to conserve space, but looks like a complete backup each time.&lt;/p&gt;
+&lt;p&gt;If you’re not using btrfs or a similar snapshotting filesystem, you might find &lt;a href=&quot;http://www.rsnapshot.org/&quot; title=&quot;rsnapshot: A remote filesystem snapshot utility, based on rsync&quot;&gt;rsnapshot&lt;/a&gt; preferable to straight rsync. It makes rolling snapshots where unchanged files are hard linked to conserve space, but looks like a complete backup each time.&lt;/p&gt;
 
 &lt;h3 id=&quot;automating_everything_with_snapback&quot;&gt;Automating everything with snapback&lt;/h3&gt;
 
@@ -160,7 +160,9 @@ SUBSYSTEM==&amp;quot;block&amp;quot;, ENV{ID_FS_LABEL}==&amp;quot;backup&amp;quo
 
 &lt;h3 id=&quot;credits&quot;&gt;Credits&lt;/h3&gt;
 
-&lt;p&gt;Thanks to &lt;a class='social-link' href='https://twitter.com/jeremyvisser'&gt;Jeremy Visser&lt;/a&gt; for pointing out &lt;code&gt;sudo -i&lt;/code&gt; as a more comfortable way to get a root shell.&lt;/p&gt;</description>
+&lt;p&gt;Thanks to &lt;a class='social-link' href='https://twitter.com/jeremyvisser'&gt;Jeremy Visser&lt;/a&gt; for pointing out &lt;code&gt;sudo -i&lt;/code&gt; as a more comfortable way to get a root shell.&lt;/p&gt;
+
+&lt;p&gt;Thanks to &lt;a class='social-link' href='https://twitter.com/evmcl'&gt;Evan&lt;/a&gt; for reminding me of rsnapshot, and providing a &lt;a href=&quot;https://github.com/evmcl/pjf.github.io/commit/fa400560eb9aabf14b9d324b462ea58ddba3ddc4&quot;&gt;content patch&lt;/a&gt; to this article! :)&lt;/p&gt;</description>
 				<pubDate>Thu, 23 Jan 2014 00:00:00 +1100</pubDate>
 				<link>http://pjf.id.au//tech/2014/01/23/automated-backups-with-udev-and-btrfs.html</link>
 				<guid isPermaLink="true">http://pjf.id.au//tech/2014/01/23/automated-backups-with-udev-and-btrfs.html</guid>

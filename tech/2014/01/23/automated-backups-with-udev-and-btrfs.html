@@ -195,7 +195,7 @@ SUBSYSTEM==&quot;block&quot;, ENV{ID_FS_LABEL}==&quot;backup&quot;, ACTION==&quo
 
 <p>Each snapshot is also a complete backup in its own right; I never have to worry about whether I have a base filesystem upon which to apply an incremental backup on to.</p>
 
-<p>If you’re not btrfs or a similar snapshotting filesystem, you might find <a href="http://www.rsnapshot.org/" title="rsnapshot: A remote filesystem snapshot utility, based on rsync">rsnapshot</a> preferable to straight rsync. It basically makes rolling snapshots where unchanged files are hard linked to conserve space, but looks like a complete backup each time.</p>
+<p>If you’re not using btrfs or a similar snapshotting filesystem, you might find <a href="http://www.rsnapshot.org/" title="rsnapshot: A remote filesystem snapshot utility, based on rsync">rsnapshot</a> preferable to straight rsync. It makes rolling snapshots where unchanged files are hard linked to conserve space, but looks like a complete backup each time.</p>
 
 <h3 id="automating_everything_with_snapback">Automating everything with snapback</h3>
 
@@ -210,6 +210,8 @@ SUBSYSTEM==&quot;block&quot;, ENV{ID_FS_LABEL}==&quot;backup&quot;, ACTION==&quo
 <h3 id="credits">Credits</h3>
 
 <p>Thanks to <a class='social-link' href='https://twitter.com/jeremyvisser'>Jeremy Visser</a> for pointing out <code>sudo -i</code> as a more comfortable way to get a root shell.</p>
+
+<p>Thanks to <a class='social-link' href='https://twitter.com/evmcl'>Evan</a> for reminding me of rsnapshot, and providing a <a href="https://github.com/evmcl/pjf.github.io/commit/fa400560eb9aabf14b9d324b462ea58ddba3ddc4">content patch</a> to this article! :)</p>
 
     <div class="share-container">
     <p>Share:</p>
