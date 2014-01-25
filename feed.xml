@@ -146,6 +146,8 @@ SUBSYSTEM==&amp;quot;block&amp;quot;, ENV{ID_FS_LABEL}==&amp;quot;backup&amp;quo
 
 &lt;p&gt;Each snapshot is also a complete backup in its own right; I never have to worry about whether I have a base filesystem upon which to apply an incremental backup on to.&lt;/p&gt;
 
+&lt;p&gt;If you’re not btrfs or a similar snapshotting filesystem, you might find &lt;a href=&quot;http://www.rsnapshot.org/&quot; title=&quot;rsnapshot: A remote filesystem snapshot utility, based on rsync&quot;&gt;rsnapshot&lt;/a&gt; preferable to straight rsync. It basically makes rolling snapshots where unchanged files are hard linked to conserve space, but looks like a complete backup each time.&lt;/p&gt;
+
 &lt;h3 id=&quot;automating_everything_with_snapback&quot;&gt;Automating everything with snapback&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;Snapback&lt;/code&gt; is some code I wrote because anything more than plugging in a USB drive to my laptop is just too much work. It uses &lt;a href=&quot;https://pushover.net/&quot; title=&quot;Pushover: Simple mobile notifications&quot;&gt;Pushover&lt;/a&gt; to send notifications to my pebble watch, so there’s no need to look through &lt;code&gt;/var/log&lt;/code&gt; to see what’s happening, and I’m immediately notified when the backup is complete.&lt;/p&gt;
