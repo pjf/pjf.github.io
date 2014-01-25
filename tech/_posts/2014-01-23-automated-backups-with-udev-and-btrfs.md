@@ -126,6 +126,11 @@ Each snapshot is also a complete backup in its own right; I
 never have to worry about whether I have a base filesystem upon which
 to apply an incremental backup on to.
 
+If you're not btrfs or a similar snapshotting filesystem, you might
+find [rsnapshot][rsnapshot] preferable to straight rsync. It
+basically makes rolling snapshots where unchanged files are hard
+linked to conserve space, but looks like a complete backup each time.
+
 ### Automating everything with snapback
 
 `Snapback` is some code I wrote because anything more than plugging
