@@ -126,10 +126,10 @@ Each snapshot is also a complete backup in its own right; I
 never have to worry about whether I have a base filesystem upon which
 to apply an incremental backup on to.
 
-If you're not btrfs or a similar snapshotting filesystem, you might
-find [rsnapshot][rsnapshot] preferable to straight rsync. It
-basically makes rolling snapshots where unchanged files are hard
-linked to conserve space, but looks like a complete backup each time.
+If you're not using btrfs or a similar snapshotting filesystem, you might find
+[rsnapshot][rsnapshot] preferable to straight rsync. It makes rolling snapshots
+where unchanged files are hard linked to conserve space, but looks like a
+complete backup each time.
 
 ### Automating everything with snapback
 
@@ -152,3 +152,7 @@ You can [find snapback on github][snapback].
 
 Thanks to {% t jeremyvisser Jeremy Visser %} for pointing out `sudo -i` as a
 more comfortable way to get a root shell.
+
+Thanks to {% t evmcl Evan %} for reminding me of rsnapshot, and providing
+a [content patch](https://github.com/evmcl/pjf.github.io/commit/fa400560eb9aabf14b9d324b462ea58ddba3ddc4)
+to this article! :)
