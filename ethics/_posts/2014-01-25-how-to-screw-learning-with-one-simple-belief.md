@@ -4,9 +4,10 @@ image: /images/ethics/og-praise-fail.png
 keywords: ethics intelligence longpost learning citations science cognition
 description: "Here's a graph showing the performance of children after they've been praised for their intelligence versus their effort, and given a series of problems to solve. The praised for effort show an increase in performance. Those praised for intelligence show a frightening decrease."
 footer: "If you enjoyed this article, you may also like my video on how [All Your Brains Suck](http://pjf.id.au/talks/2011/07/29/all-your-brains-suck.html)."
+fancybox: true
 ---
 
-{% image right /images/ethics/praise-fail.png %}
+{% fancybox right /images/ethics/praise-fail.png %}
 
 This. Right here. Look at it.
 
@@ -25,7 +26,7 @@ you're not very good at that, and you should try something else. Kids taught
 that results are based on effort see the hard puzzles as something they can
 *learn* to do, and then they do so¹.
 
-{% image right /images/ethics/praise-preference.png %}
+{% fancybox right /images/ethics/praise-preference.png %}
 
 This is shown really clearly in the second graph. Children are asked what type
 of puzzles they'd like to solve, and are given four options. The first three
