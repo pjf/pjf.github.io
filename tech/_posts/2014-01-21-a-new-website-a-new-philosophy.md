@@ -1,6 +1,6 @@
 ---
 title: "A new website, a new philosophy"
-tags: open-source pjf.id.au gratitude ethics jekyll github octopress html5up
+tags: open-source pjf.id.au gratitude ethics jekyll github octopress html5up tech
 description: "I'm very glad to say I've resurrected over ten years worth of writing from my old website. However what I'm really excited about is the technology and philosophy of how the new site is constructed."
 ---
 

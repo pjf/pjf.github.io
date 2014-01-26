@@ -54,6 +54,9 @@ sidebar:
   - ethics:
     title: "Ethics"
     url: "/ethics"
+  - tech:
+    title: "Technology"
+    url: "/tech"
   - depression:
     title: "Depression"
     url: "/depression"

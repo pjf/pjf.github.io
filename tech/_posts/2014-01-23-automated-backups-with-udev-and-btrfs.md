@@ -1,6 +1,6 @@
 ---
 title: Automated backups with udev and btrfs
-tags: linux udev sysadmin usb rsync btrfs snapback pebble pushover
+tags: linux udev sysadmin usb rsync btrfs snapback pebble pushover tech
 description: "I just want my backups to happen whenever I plug in my drive. Also, I want notifications to go to my watch. So I've done just that."
 wide_image: /images/tech/backup-starting.jpg
 ---

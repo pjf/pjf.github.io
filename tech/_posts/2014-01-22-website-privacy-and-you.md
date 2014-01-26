@@ -1,7 +1,7 @@
 ---
 title: Website Privacy and You
 byline: Opt-out of everything, please.
-tags: privacy security opt-out google addthis disqus
+tags: privacy security opt-out google addthis disqus tech
 description: "Website operators often add third-party tracking information to their own sites. The value to the website operator is often a service, feature, or even revenue, but that doesn't change the fact that having third parties track your information sure *feels* skeezy to me."
 ---
 
