@@ -18,6 +18,11 @@ layout: default
 
     {% include addthis.html %}
 
+    {% if post.footer %}
+        <hr />
+        {{ post.footer | markdownify }}
+    {% endif %}
+
     {% include tip-box.html %}
 
     {% include disqus.html %}
