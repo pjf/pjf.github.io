@@ -162,3 +162,8 @@ article header {
 h3, h4, h5, h6 {
     padding-bottom: 1em;
 }
+
+.bitcoin {
+    max-height: 17ex;
+    margin-left 0.5em;
+}
