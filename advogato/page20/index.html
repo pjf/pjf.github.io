@@ -53,6 +53,11 @@
         <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
         <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
 
+        <!-- TODO: Only load on fancybox pages -->
+<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
         <link rel="stylesheet" href="/css/pjf.css" />
 
     </head>
@@ -744,6 +749,18 @@ For further reading, see <a href="http://perlmonks.org/?node_id=625392">$? set t
 
             
         </div>
+    <!-- TODO: Only load on fancybos pages -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".fancybox").fancybox({
+            closeClick: true,
+            closeBtn: false,
+            arrows: false,
+            mouseWheel: false,
+        });
+    });
+</script>
+
     </body>
 </html>
 

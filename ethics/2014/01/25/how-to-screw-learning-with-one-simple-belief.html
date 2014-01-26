@@ -62,6 +62,11 @@
         <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
         <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
 
+        <!-- TODO: Only load on fancybox pages -->
+<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
         <link rel="stylesheet" href="/css/pjf.css" />
 
     </head>
@@ -129,13 +134,13 @@ to this post.)
 
     
 
-    <figure class='right'><img src='/images/ethics/praise-fail.png' /></figure>
+    <figure class='right'><a class='fancybox' href='/images/ethics/praise-fail.png' rel='group'><img src='/images/ethics/praise-fail.png' /></a></figure>
 <p>This. Right here. Look at it.</p>
 
 <p>It’s a graph showing the performance of children after they’ve been praised for their intelligence (“you must be smart”) versus their effort (“you must have put a lot of effort into that”), and then given a series of hard problems to try and solve. The kids who are taught that effort count <em>increase</em> in the number of problems they can solve. Those who are told that they’re smart show a frightening decrease.</p>
 <!--more-->
 <p>What’s the difference? Those being told that they’re smart are taught that abilities are fixed. If you’re finding a puzzle hard, then it must be because you’re not very good at that, and you should try something else. Kids taught that results are based on effort see the hard puzzles as something they can <em>learn</em> to do, and then they do so¹.</p>
-<figure class='right'><img src='/images/ethics/praise-preference.png' /></figure>
+<figure class='right'><a class='fancybox' href='/images/ethics/praise-preference.png' rel='group'><img src='/images/ethics/praise-preference.png' /></a></figure>
 <p>This is shown really clearly in the second graph. Children are asked what type of puzzles they’d like to solve, and are given four options. The first three are pretty similar: “problems that aren’t too hard, so I don’t get many wrong,” “problems that are pretty easy, so I’ll do well,” and “problems that I’m pretty good at, so I can show that I’m smart.” However the last option is different: “problems that I’ll learn a lot from, even if I won’t look so smart.”</p>
 
 <p>The first three options are “performance” options, they’re all about looking good, or getting things right. The last option is a “learning” option, and it values knowledge and growth over performance.</p>
@@ -437,6 +442,18 @@ else
 
             
         </div>
+    <!-- TODO: Only load on fancybos pages -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".fancybox").fancybox({
+            closeClick: true,
+            closeBtn: false,
+            arrows: false,
+            mouseWheel: false,
+        });
+    });
+</script>
+
     </body>
 </html>
 

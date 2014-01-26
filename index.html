@@ -53,6 +53,11 @@
         <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
         <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
 
+        <!-- TODO: Only load on fancybox pages -->
+<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
         <link rel="stylesheet" href="/css/pjf.css" />
 
     </head>
@@ -162,7 +167,7 @@
         
 
         
-            <figure class='right'><img src='/images/ethics/praise-fail.png' /></figure>
+            <figure class='right'><a class='fancybox' href='/images/ethics/praise-fail.png' rel='group'><img src='/images/ethics/praise-fail.png' /></a></figure>
 <p>This. Right here. Look at it.</p>
 
 <p>It’s a graph showing the performance of children after they’ve been praised for their intelligence (“you must be smart”) versus their effort (“you must have put a lot of effort into that”), and then given a series of hard problems to try and solve. The kids who are taught that effort count <em>increase</em> in the number of problems they can solve. Those who are told that they’re smart show a frightening decrease.</p>
@@ -652,6 +657,18 @@
 
             
         </div>
+    <!-- TODO: Only load on fancybos pages -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".fancybox").fancybox({
+            closeClick: true,
+            closeBtn: false,
+            arrows: false,
+            mouseWheel: false,
+        });
+    });
+</script>
+
     </body>
 </html>
 
