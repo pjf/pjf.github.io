@@ -57,7 +57,7 @@ growth; learning is hard, but it's *definitely* worth it.
 
 ### References
 
-¹ Mueller, Claudia M., and Carol S. Dweck. “Praise for Intelligence Can Undermine Children’s Motivation and Performance.” Journal of Personality and Social Psychology 75, no. 1 (1998): 33.
+¹ Mueller, Claudia M., and Carol S. Dweck. “Praise for Intelligence Can Undermine Children’s Motivation and Performance.” Journal of Personality and Social Psychology 75, no. 1 (1998): 33. \[[pdf](http://www.uky.edu/~eushe2/mrg/MuellerDweck1998.pdf)\]
 
-² Levy, Sheri R., and Carol S. Dweck. “The Impact of Children’s Static versus Dynamic Conceptions of People on Stereotype Formation.” Child Development 70, no. 5 (1999): 1163–1180.
+² Levy, Sheri R., and Carol S. Dweck. “The Impact of Children’s Static versus Dynamic Conceptions of People on Stereotype Formation.” Child Development 70, no. 5 (1999): 1163–1180. \[[pdf](http://www.stanford-knowledgebase.org/dept/psychology/cgi-bin/drupalm/system/files/Children%27s%20static%20vs%20dynamic%20person%20conceptions%20as%20predictors%20of%20their%20stereotype%20information.pdf)\]
 
