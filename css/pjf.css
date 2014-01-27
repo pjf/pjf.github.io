@@ -28,6 +28,10 @@ figure.right {
     max-width: 50%;
 }
 
+figure.smaller {
+    max-width: 25%;
+}
+
 /* Stop images/ from being too big */
 
 img {

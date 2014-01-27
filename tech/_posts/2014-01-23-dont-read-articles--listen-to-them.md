@@ -4,12 +4,12 @@ tags: tts pocket android lifehacks tech
 description: "This morning I pottered around the kitchen. I made toast and coffee, I washed the dishes. I also read a lengthy article on AIDS in China at the same time. In fact, I've been reading more than ever now that I've given up on actually reading."
 ---
 
+{% fancybox right smaller /images/tech/pocket.png %}
+
 This morning I pottered around the kitchen. I made toast and coffee, I washed
 the dishes, I sorted my groceries. I also read a lengthy article on AIDS in
 China at the same time.  In fact, I've been reading more than ever now that
 I've given up on actually *reading*.
-
-<!--more-->
 
 I don't hide the fact that I want to learn everything. I have
 [flashcards][anki] that I practice every day, I'm enrolled in more
@@ -17,6 +17,8 @@ I don't hide the fact that I want to learn everything. I have
 thing in the world is to find someone with specialised knowledge and
 enthusiasm and talk to them about it in depth. Consequently, I do a lot of
 thinking about how to learn efficiently.
+
+<!--more-->
 
 One thing which is very apparent to me is that I have limited resources when
 it comes to concentration. If I'm having a conversation, or writing an
