@@ -14,7 +14,7 @@ This. Right here. Look at it.
 It's a graph showing the performance of children after they've been praised for
 their intelligence ("you must be smart") versus their effort ("you must have
 put a lot of effort into that"), and then given a series of hard problems to
-try and solve. The kids who are taught that effort count *increase* in the
+try to solve. The kids who are taught that effort count *increase* in the
 number of problems they can solve. Those who are told that they're smart show a
 frightening decrease.
 
