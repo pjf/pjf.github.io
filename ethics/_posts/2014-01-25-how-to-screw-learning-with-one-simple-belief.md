@@ -7,7 +7,7 @@ footer: "If you enjoyed this article, you may also like my video on how [All You
 fancybox: true
 ---
 
-{% fancybox right /images/ethics/praise-fail.png %}
+{% fancybox right /images/ethics/praise-fail.png "Source: Mueller and Dweck¹" %}
 
 This. Right here. Look at it.
 
@@ -26,7 +26,7 @@ you're not very good at that, and you should try something else. Kids taught
 that results are based on effort see the hard puzzles as something they can
 *learn* to do, and then they do so¹.
 
-{% fancybox right /images/ethics/praise-preference.png %}
+{% fancybox right /images/ethics/praise-preference.png "Source: Mueller and Dweck¹" %}
 
 This is shown really clearly in the second graph. Children are asked what type
 of puzzles they'd like to solve, and are given four options. The first three
