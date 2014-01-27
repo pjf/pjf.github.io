@@ -1,7 +1,9 @@
 ---
-tags: open-source foss community freedom creativity longpost ethics tech
+title: Do not stifle innovation.
+tags: open-source foss community freedom creativity longpost ethics tech innovation
 orig_url: https://www.facebook.com/paul.fenwick/posts/10151900792149611
-alias: /longpost/2013/12/28/on-open-source-software-and-communities.html
+alias: [ "/longpost/2013/12/28/on-open-source-software-and-communities.html", "/ethics/2013/12/28/on-open-source-software-and-communities.html" ]
+description: "The majority of talented people want to make the world a better place, and yet we put tremendous barriers up to stop them."
 ---
 
 Open source software is great. You don't have to worry about the owner deciding
