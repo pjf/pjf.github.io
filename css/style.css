@@ -31,7 +31,7 @@
 	body
 	{
 		background-color: #e8e8e8;
-		background-image: url('images/bg2.png');
+		background-image: url('/css/images/bg2.png');
 	}
 
 	a
@@ -261,7 +261,7 @@
 	.button
 	{
 		background-color: #c94663;
-		background-image: url('images/bg1.png');
+		background-image: url('/css/images/bg1.png');
 		border-radius: 0.4em;
 		text-align: center;
 		box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,0.15);
@@ -298,7 +298,7 @@
 		.button-alt
 		{
 			background-color: #364050;
-			background-image: url('images/bg1.png');
+			background-image: url('/css/images/bg1.png');
 		}
 
 			a.button-alt:hover,
@@ -374,7 +374,7 @@
 				text-decoration: none;
 				color: inherit;
 				background-color: #e8e8e8;
-				background-image: url('images/bg2.png');
+				background-image: url('/css/images/bg2.png');
 				color: #565656;
 				margin: 0 0.4em 0 0;
 				border-radius: 0.4em;
@@ -394,7 +394,7 @@
 			.pager .pages a.active
 			{
 				background-color: #364050;
-				background-image: url('images/bg1.png');
+				background-image: url('/css/images/bg1.png');
 				color: #fff;
 				box-shadow: none;
 				text-shadow: -1px -1px 0px rgba(0,0,0,0.5);
@@ -910,7 +910,7 @@
 		.is-calendar td.today a
 		{
 			background-color: #c94663;
-			background-image: url('images/bg1.png');
+			background-image: url('/css/images/bg1.png');
 			box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,0.15), 0 0.025em 0.15em 0em rgba(0,0,0,0.25);
 			color: #fff !important;
 		}
@@ -1188,7 +1188,7 @@
 			top: 0;
 			width: 100%;
 			height: 100%;
-			background-image: url('images/bg2.png');
+			background-image: url('/css/images/bg2.png');
 			opacity: 0.5;
 		}
 	
