@@ -1,6 +1,7 @@
 # Internal links
 [ethics]: /ethics "Paul Fenwick's writings on ethics and philosophy"
 [pjf]: http://pjf.id.au/ "Paul Fenwick's personal website"
+[pjf-pocket]: http://pjf.id.au/tech/2014/01/23/dont-read-articles--listen-to-them.html "Don't read articles, listen to them (pjf.id.au)"
 
 # Tech
 [btrfs]: http://arstechnica.com/information-technology/2014/01/bitrot-and-atomic-cows-inside-next-gen-filesystems/ "Bitrot and atomic COWs: Inside next-gen filesystems"
@@ -12,6 +13,8 @@
 # Misc
 
 [anki]: http://ankisrs.net/ "Anki: Powerful, intelligent flashcards"
+[spoken-wikipedia]: https://en.wikipedia.org/wiki/Wikipedia:Spoken_articles "Spoken Wikipedia"
+[duolingo]: http://duolingo.com/ "Duolingo: Learn languages for free"
 [coursera]: https://coursera.org/ "Coursera: Take free online classes from 80+ top universities and organisations"
 [pocket]: http://getpocket.com/ "Pocket: Save for later. Put articles, videos or pretty much anything into Pocket."
 [ivona]: http://ivona.com/ "IVONA: Award winning, natural text-to-speech for desktop, mobile, server and web."
