@@ -1,11 +1,12 @@
 ---
 ---
 
-What if I told you there's a system, which is free, has strong
-evidence-based support for its effectiveness, and allows you to
-acquire large amounts of knowledge and *retain it indefinitely*?
+What if I told you there's an app which runs on all your devicesq, is
+free, has strong evidence-based support for its effectiveness, and
+allows you to acquire large amounts of knowledge and
+*retain it indefinitely*?
 
-What if I told you that 
+
 
 Recently I posted a rant to Facebook encouraging people to do things
 *other* than look at social media while they're bored. A few people had
@@ -22,14 +23,24 @@ of my learning done.
 
 There are two amazing tools which I use during those odd chunks of time.
 The first [reads me articles I've saved][], and requires only that I
-have headphones. The second is anki; it's like having cheat-codes for
-knowledge.
+have headphones. But the second, and more exciting, is [anki][anki];
+it's like having cheat-codes for knowledge.
 
-Anki is a flash-card system that employs [spaced reptition][], which
-exploits how our memory operates. We remember things most *efficiently*
-when we're tested infrequently over a longer time span. If you've
-ever crammed for an exam, you'll know that often you've forgotten much
-of that knowledge a week or two later. Anki gives us *anti-cramming*.
+Anki is a flash-card system that employs [spaced reptition][],
+which exploits our understanding of human memory to allow you to
+obtain a large amount of knowledge, and then
+*retain that knowledge indefinitely*. 
 
-Spaced repetition is tailored to allow you to obtain a large amount
-of knowledge, and then *retain that knowledge indefinitely*. 
+We know from research that we remember things most *efficiently* when
+we're tested infrequently over a longer time span.  If you've ever
+crammed for an exam, you'll know that often you've forgotten much of
+that knowledge a week or two later. Anki and spaced repitition
+gives us *anti-cramming*, letting you do a minimum of work to memorise
+information over a long period of times.
+
+The working behind spaced reptition is simple. Every time you
+successfully remember a piece of knowledge, there's a longer delay
+until you're tested on it again.  The idea is to get you to recall
+knowledge just before you're about to forget it.
+
+
