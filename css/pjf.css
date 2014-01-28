@@ -28,7 +28,7 @@ figure.right {
     max-width: 50%;
 }
 
-/* Stop images from being too big */
+/* Stop images/ from being too big */
 
 img {
     max-width: 100%;
@@ -64,6 +64,7 @@ img.me {
 /* Tip box */
 
 .tip-box {
+    clear: left;
     border-top:    1px solid #bbb;
     border-bottom: 1px solid #bbb;
     padding-top:    2em;
@@ -142,4 +143,16 @@ div.addthis_container {
 /* Rounded corners on the buttons, please */
 .addthis_32x32_style span {
     border-radius: 10%;
+}
+
+article header {
+    clear: right;
+}
+
+/* H3-6 is often used in articles. Stop them from appearing
+ * so cramped when they display.
+ */
+
+h3, h4, h5, h6 {
+    padding-bottom: 1em;
 }

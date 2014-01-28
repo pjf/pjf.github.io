@@ -13,7 +13,12 @@
         {% include metainfo.html %}
 
         <link rel="icon" type="image/png" href="/images/favicon.png" />
-        <link rel="alternative" type="application/rss+xml" title="RSS" href="/feed.xml"/>
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml"/>
+
+        {% if site.disqus.shortname %}
+            <link rel="alternate" type="application/rss+xml" title="All Comments" href="http://{{site.disqus.shortname}}.disqus.com/latest.rss"/>
+        {% endif %}
+
         <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Open+Sans+Condensed:300,700" rel="stylesheet" />
         <script src="/js/jquery.min.js"></script>
         <script src="/js/skel.min.js"></script>
@@ -28,6 +33,8 @@
         <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
         <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
         <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
+
+        {% include fancybox.html %}
 
         <link rel="stylesheet" href="/css/pjf.css" />
 
@@ -51,6 +58,7 @@
             {%include sidebar.html %}
             
         </div>
+    {% include end.html %}
     </body>
 </html>
 

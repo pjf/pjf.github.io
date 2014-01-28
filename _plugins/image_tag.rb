@@ -2,7 +2,9 @@
 #
 # From https://github.com/stewart/blog/blob/master/plugins/image_tag.rb
 #
-# Easily put an image into a Jekyll page or blog post
+# Easily put an image into a Jekyll page or blog post.
+# Supports the 'image' keyword, and the 'fancybox' keyword for a
+# zoomable image with fancybox.
 #
 # In pjf's repo, the 'right' class makes really good looking figures.
 #
@@ -41,10 +43,11 @@ module Jekyll
     @url = nil
     @caption = nil
     @class = nil
+    @fancybox = false
 
-    IMAGE_URL_WITH_CLASS_AND_CAPTION = /(\w+)(\s+)((https?:\/\/|\/)(\S+))(\s+)"(.*?)"/i
+    IMAGE_URL_WITH_CLASS_AND_CAPTION = /([\w\s]+)(\s+)((https?:\/\/|\/)(\S+))(\s+)"(.*?)"/i
     IMAGE_URL_WITH_CAPTION = /((https?:\/\/|\/)(\S+))(\s+)"(.*?)"/i
-    IMAGE_URL_WITH_CLASS = /(\w+)(\s+)((https?:\/\/|\/)(\S+))/i
+    IMAGE_URL_WITH_CLASS = /([\w\s]+)(\s+)((https?:\/\/|\/)(\S+))/i
     IMAGE_URL = /((https?:\/\/|\/)(\S+))/i
 
     def initialize(tag_name, markup, tokens)
@@ -63,11 +66,21 @@ module Jekyll
       elsif markup =~ IMAGE_URL
         @url = $1
       end
+
+      if tag_name == 'fancybox'
+        @fancybox = true
+      end
+
     end
 
     def render(context)
       source = @class ? "<figure class='#{@class}'>" : "<figure>"
-      source += "<img src=\"#{@url}\">"
+      if @fancybox
+        source += "<a class=\"fancybox\" rel=\"group\" href=\"#{@url}\">"
+        source += "<img src=\"#{@url}\"></a>"
+      else
+        source += "<img src=\"#{@url}\">"
+      end
       source += "<figcaption>#{@caption}</figcaption>" if @caption
       source += "</figure>"
 
@@ -76,4 +89,5 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag('image', Jekyll::ImageTag)
+Liquid::Template.register_tag('image',    Jekyll::ImageTag)
+Liquid::Template.register_tag('fancybox', Jekyll::ImageTag)
