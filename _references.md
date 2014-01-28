@@ -12,6 +12,11 @@
 
 # Misc
 
+[written-kitten]: http://writtenkitten.net/ "Written? Kitten!"
+[HPMOR]: http://hpmor.com/ "Harry Potter and the Methods of Rationality"
+[fitocracy]: https://www.fitocracy.com/ "Fitocracy: The fitness social network to level up in real life"
+[code-academy]: http://www.codecademy.com/ "CodeAcademy: Learn to code"
+[gutenberg]: http://www.gutenberg.org/ "Project Gutenberg: Over 42,000 free ebooks"
 [anki]: http://ankisrs.net/ "Anki: Powerful, intelligent flashcards"
 [spoken-wikipedia]: https://en.wikipedia.org/wiki/Wikipedia:Spoken_articles "Spoken Wikipedia"
 [duolingo]: http://duolingo.com/ "Duolingo: Learn languages for free"

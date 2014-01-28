@@ -11,10 +11,11 @@ minutes listlessly flicking through posts, then stop that. Stop it right now.
 You're not making yourself any happier.
 
 You know how you've got that thing you enjoy, but which takes more time and
-effort? Go do that instead. I don't care if it's reading, or painting, or
-coding, or writing, or [learning a language][duolingo], or
-[studying][coursera], or exercise, or whatever. Go do that now. If your brain
-is fried, then go [listen to articles][pjf-pocket], discover
+effort? Go do that instead. I don't care if it's [reading][gutenberg],
+or painting, or [coding][code-academy], or [writing][written-kitten],
+or [learning a language][duolingo], or [studying][coursera], or
+[exercise][fitocracy], or [whatever][HPMOR]. Go do that now. If your
+brain is fried, then go [listen to articles][pjf-pocket], discover
 [spoken wikipedia][spoken-wikipedia], or y'know, actually sleep.
 
 But please—unless you have [anhedonia][anhedonia]—don't spend your time bored
