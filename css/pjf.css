@@ -150,6 +150,10 @@ div.addthis_container, .share-container {
     color: #2d3643;
 }
 
+div.share-buttons {
+    display: inline-block;
+}
+
 /* Rounded corners on the buttons, please */
 .addthis_32x32_style span {
     border-radius: 10%;

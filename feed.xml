@@ -12,6 +12,49 @@
                     
 
 			<item>
+				<title>How to learn everything, without spending any time.</title>
+				<description>&lt;p&gt;What if I told you there’s an app which runs on all your devices, is free, has strong evidence-based support for its effectiveness, and allows you to acquire large amounts of knowledge and &lt;em&gt;retain it indefinitely&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;What if I told you it wasn’t even going to take any time out of your day?&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;Recently I posted a rant to Facebook encouraging people to do things &lt;em&gt;other&lt;/em&gt; than look at social media while they’re bored. However a few friends rightly pointed out that there are times during the day when there’s not much else you can do:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;What else can I do in 10-minute chunks while I wait for coffee to become coffee?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Those odd chunks of time, while making coffee, waiting for the train, standing in yet another queue at the airport. That’s when I get most of my learning done.&lt;/p&gt;
+&lt;figure class='right'&gt;&lt;a class='fancybox' href='/images/tech/anki.png' rel='group'&gt;&lt;img src='/images/tech/anki.png' /&gt;&lt;/a&gt;&lt;figcaption&gt;Anki: It's like having cheat-codes for knowledge.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;There are two amazing tools which I use during those odd chunks of time. The first &lt;a href=&quot;http://pjf.id.au/tech/2014/01/23/dont-read-articles--listen-to-them.html&quot; title=&quot;Don't read articles, listen to them (pjf.id.au)&quot;&gt;reads me articles I’ve saved&lt;/a&gt;, and requires only that I have headphones. But the second, and more exciting, is &lt;a href=&quot;http://ankisrs.net/&quot; title=&quot;Anki: Powerful, intelligent flashcards&quot;&gt;Anki&lt;/a&gt;; it’s like having cheat-codes for knowledge.&lt;/p&gt;
+
+&lt;p&gt;Anki is a flash-card system that employs &lt;a href=&quot;https://en.wikipedia.org/wiki/Spacing_effect&quot; title=&quot;Spacing Effect (Wikipedia)&quot;&gt;spaced reptition&lt;/a&gt;, which exploits our understanding of human memory to allow you to obtain a large amount of knowledge, and then &lt;em&gt;retain that knowledge indefinitely&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;We know from research that we remember things most &lt;em&gt;efficiently&lt;/em&gt; when we’re tested infrequently over a longer time span. If you’ve ever crammed for an exam, you’ve probably discovered you’ve lost that knowledge a week or two later. Anki and spaced repitition gives us &lt;em&gt;anti-cramming&lt;/em&gt;, letting you do a minimum of work to memorise information over a long period of times.&lt;/p&gt;
+
+&lt;p&gt;The working behind spaced reptition is simple. As long as you’re able to keep remembering, the time between sucessive tests gradually increases. New knowledge may be tested multiple times per week, but things you know really well will may come up every couple of years. The idea is to get you to recall knowledge just before you’re about to forget it.&lt;/p&gt;
+
+&lt;p&gt;Provided you practice regularly, it’s possible to learn and retain a tremendous amount of information. Regular practice sounds like it’s going to be hard, but I’ve discovered it’s actually the easiest part.&lt;/p&gt;
+
+&lt;p&gt;My day is full of odd bits of time that aren’t typically useful. Waiting for a tram, coffee to brew, the line at the airport, whatever. These chunks aren’t long enough to do much with, but they’re &lt;em&gt;perfect&lt;/em&gt; for Anki cards. Each card takes only a few seconds, and if you reach your learning goals for the day there are always options to review ahead. Because you’re recycling time that would otherwise be wasted, using Anki comes with practically no opportunity costs whatsoever!&lt;/p&gt;
+
+&lt;p&gt;The Anki phone app comes with the ability to configure notifications if you have cards due. &lt;em&gt;Switch that on&lt;/em&gt;. Simply having an icon on your toolbar provides a reminder you’ve got cards to complete, and can help act as a visual cue for whenever you open up your phone and wonder what you were meant to be doing.&lt;/p&gt;
+
+&lt;p&gt;Anki lets you make your own decks in the desktop client. I have decks for words I frequently misspell, dietary intolerences of my friends, people I’ve met, subjects I’ve learning, and anthing else that I know I’ll easily forget. However Anki also has a rich number of &lt;a href=&quot;https://ankiweb.net/shared/decks/&quot; title=&quot;Anki Shared Decks&quot;&gt;shared decks&lt;/a&gt;. For me personally, both &lt;a href=&quot;https://ankiweb.net/shared/info/970971960&quot;&gt;cognitive biases&lt;/a&gt; and &lt;a href=&quot;https://ankiweb.net/shared/info/1530243698&quot;&gt;hiragana/katakana&lt;/a&gt; (Japanese characters) feature heavily in my learning schedule.&lt;/p&gt;
+
+&lt;p&gt;Anki has clients for Windows, Mac, Linux/BSD, iOS, and Android; as well as a mobile-friendly web interface. While the iOS client the others are both free and open source.&lt;/p&gt;
+
+&lt;p&gt;So what are you waiting for? &lt;a href=&quot;http://ankisrs.net/&quot; title=&quot;Anki: Powerful, intelligent flashcards&quot;&gt;Download Anki&lt;/a&gt; and start learning!&lt;/p&gt;</description>
+				<pubDate>Wed, 29 Jan 2014 00:00:00 +1100</pubDate>
+				<link>http://pjf.id.au//tech/2014/01/29/learn-everything-without-spending-time.html</link>
+				<guid isPermaLink="true">http://pjf.id.au//tech/2014/01/29/learn-everything-without-spending-time.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>Don't read social media</title>
 				<description>&lt;p&gt;My advice for you today is &lt;em&gt;don’t&lt;/em&gt; read social media. Most of it is rubbish, and there’s a good chance you’re only reading it because you’re bored. If you’re actively engaged, then fine, but if you’ve just spent the last 30 minutes listlessly flicking through posts, then stop that. Stop it right now. You’re not making yourself any happier.&lt;/p&gt;
 
@@ -412,33 +455,6 @@ $ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt
 				<pubDate>Sat, 28 Dec 2013 00:00:00 +1100</pubDate>
 				<link>http://pjf.id.au//ethics/2013/12/28/do-not-stifle-innovation.html</link>
 				<guid isPermaLink="true">http://pjf.id.au//ethics/2013/12/28/do-not-stifle-innovation.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>Admission: I'm a hypocrite</title>
-				<description>&lt;p&gt;I’m going to admit something awful. I’m a hypocrite. I don’t try to hide that. I advocate using one’s resources to make the world a better place, and yet I do a poor job of that myself. I think that raising animals for food is wrong, and yet I still eat meat. I cannot justify these actions in any way that I feel comfortable about.&lt;/p&gt;
-
-&lt;p&gt;And really, that’s the point.&lt;/p&gt;
-&lt;!--more--&gt;
-&lt;p&gt;It would be simple for me to find a reason why I don’t care about the suffering of others. Overpopulation is an easy excuse, and it’s one I’ve reached for in the past. There are an endless number of excuses I can reach for to justify eating meat. I have no doubt that I could make a show of defending these positions if I chose to take them.&lt;/p&gt;
-
-&lt;p&gt;However if I give myself excuses, then I &lt;em&gt;will&lt;/em&gt; hide behind them. And if I believe my own excuses, then I won’t even &lt;em&gt;try&lt;/em&gt; to change my behaviour. What’s worse, I may even try to justify the behaviour of others who adopt the same behaviour as myself.&lt;/p&gt;
-
-&lt;p&gt;Despite the stigma associated with being a hypocrite, and despite the cognitive dissonance it causes, being a hypocrite provides me with something very valuable: it still allows me to improve myself, and the world, for the better. That social and mental discomfort pushes me towards more ethical choices, and it allows me to support others who are improving in the same way.&lt;/p&gt;
-
-&lt;p&gt;If you really want me to challenge your beliefs, then I will, but I would rather welcome you to join me in my hypocrisy. Admit that the suffering of others &lt;em&gt;is&lt;/em&gt; important—on a global scale—but that we both personally have a lot left to be done to improve our own responses to that.&lt;/p&gt;
-
-&lt;p&gt;~ Paul&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;This post was originally made as a comment on &lt;a href=&quot;https://www.facebook.com/paul.fenwick/posts/10151875254259611&quot;&gt;another thread regarding ethics&lt;/a&gt;. I’ve posted it here—with minor edits—for a wider audience.&lt;/p&gt;</description>
-				<pubDate>Mon, 16 Dec 2013 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au//ethics/2013/12/16/im-a-hypocrite.html</link>
-				<guid isPermaLink="true">http://pjf.id.au//ethics/2013/12/16/im-a-hypocrite.html</guid>
 			</item>
 		
 
