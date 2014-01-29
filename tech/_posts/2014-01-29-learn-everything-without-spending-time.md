@@ -22,19 +22,19 @@ only that I have headphones. The second is
 [Anki][anki], and it's like having cheat-codes for knowledge.
 
 Anki is a flash-card system that employs
-[spaced reptition][spaced-repetition], which exploits our
+[spaced repetition][spaced-repetition], which exploits our
 understanding of human memory to allow you to obtain a large amount of
 knowledge, and then *retain that knowledge indefinitely*. 
 
 We know from research that we remember things most *efficiently* when
 we're tested infrequently over a longer time span.  If you've ever
 crammed for an exam, you've probably discovered you've lost that
-knowledge a week or two later. Anki and spaced repitition gives us
-*anti-cramming*, letting you do a minimum of work to memorise
+knowledge a week or two later. Anki and spaced repetition gives us
+*anti-cramming*, letting you do a minimum of work to memorize
 information over a long period of time.
 
-The working behind spaced reptition is simple. As long as you're able
-to keep remembering, the time between sucessive tests gradually
+The working behind spaced repetition is simple. As long as you're able
+to keep remembering, the time between successive tests gradually
 increases. New knowledge may be tested multiple times per
 week, but things you know really well will may come up every couple
 of years.  The idea is to get you to recall knowledge just before you're
@@ -61,9 +61,9 @@ and wonder what you were meant to be doing.
 
 Anki lets you make your own decks in the desktop client.
 I have decks for words I frequently
-misspell, dietary intolerences of my friends, people I've met,
+misspell, dietary intolerances of my friends, people I've met,
 [subjects I've learning][coursera], [languages][duolingo], and
-anthing else that I know I'll easily
+anything else that I know I'll easily
 forget. However Anki also has a rich number of
 [shared decks][anki-shared-decks]. For me personally, both
 [cognitive biases](https://ankiweb.net/shared/info/970971960) and
