@@ -1,5 +1,5 @@
 ---
-title: How to learn everything, without spending any time.
+title: How to learn everything, without spending any time
 tags: anki learning open-source knowledge tech
 description: "What if I told you there's an app which runs on all your devices, is free, has strong evidence-based support for its effectiveness, and allows you to acquire large amounts of knowledge and retain it indefinitely?"
 ---
