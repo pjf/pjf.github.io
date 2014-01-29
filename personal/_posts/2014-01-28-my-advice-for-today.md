@@ -2,6 +2,7 @@
 title: Don't read social media
 tags: personal facebook social-media advice short
 description: "My advice for you today is don't read social media. Most of it is rubbish, and there's a good chance you're only reading it because you're bored."
+footer: "Wondering what do to do instead of social media? How about [learning everything, without spending any time](/tech/2014/01/29/learn-everything-without-spending-time.html)"
 ---
 
 My advice for you today is *don't* read social media. Most of it is rubbish,
