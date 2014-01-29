@@ -31,7 +31,7 @@ we're tested infrequently over a longer time span.  If you've ever
 crammed for an exam, you've probably discovered you've lost that
 knowledge a week or two later. Anki and spaced repitition gives us
 *anti-cramming*, letting you do a minimum of work to memorise
-information over a long period of times.
+information over a long period of time.
 
 The working behind spaced reptition is simple. As long as you're able
 to keep remembering, the time between sucessive tests gradually
