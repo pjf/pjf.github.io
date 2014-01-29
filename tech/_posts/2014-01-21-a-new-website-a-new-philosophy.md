@@ -82,7 +82,7 @@ below.
 
 ~ Paul
 
-*Edit*: Within a couple of ours of posting this, the amazing
+*Edit*: Within a couple of hours of posting this, the amazing
 {% gh rhunter Rob Hunter %}
 [supplied a patch](https://github.com/pjf/pjf.github.io/pull/14)
 adding edit links to the top of all articles! Thanks Rob, you totally rock! ;)
