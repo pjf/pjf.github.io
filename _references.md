@@ -18,6 +18,8 @@
 [code-academy]: http://www.codecademy.com/ "CodeAcademy: Learn to code"
 [gutenberg]: http://www.gutenberg.org/ "Project Gutenberg: Over 42,000 free ebooks"
 [anki]: http://ankisrs.net/ "Anki: Powerful, intelligent flashcards"
+[anki-shared-decks]: https://ankiweb.net/shared/decks/ "Anki Shared Decks"
+[spaced-repetition]: https://en.wikipedia.org/wiki/Spacing_effect "Spacing Effect (Wikipedia)"
 [spoken-wikipedia]: https://en.wikipedia.org/wiki/Wikipedia:Spoken_articles "Spoken Wikipedia"
 [duolingo]: http://duolingo.com/ "Duolingo: Learn languages for free"
 [coursera]: https://coursera.org/ "Coursera: Take free online classes from 80+ top universities and organisations"
