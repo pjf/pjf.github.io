@@ -27,6 +27,7 @@ exclude:
     - 'Gemfile.lock'
     - 'Rakefile.rb'
     - 'README.md'
+    - 'CUSTOMISATIONS.md'
     - 'personal_example'
     - 'youtube_example'
 
