@@ -14,24 +14,12 @@ day?
 
 <!--more-->
 
-Recently I posted a rant to Facebook encouraging people to do things
-*other* than look at social media while they're bored. However a few
-friends rightly pointed out that there are times during the day when
-there's not much else you can do:
-
-> What else can I do in 10-minute chunks while I wait for coffee to become
-> coffee?
-
-Those odd chunks of time, while making coffee, waiting for the train,
-standing in yet another queue at the airport. That's when I get most
-of my learning done.
-
 {% fancybox pull-right /images/tech/anki.png "Anki: It's like having cheat-codes for knowledge." %}
 
 There are two amazing tools which I use during those odd chunks of time.
 The first [reads me articles I've saved][pjf-pocket], and requires
-only that I have headphones. But the second, and more exciting, is
-[Anki][anki]; it's like having cheat-codes for knowledge.
+only that I have headphones. The second is
+[Anki][anki], and it's like having cheat-codes for knowledge.
 
 Anki is a flash-card system that employs
 [spaced reptition][spaced-repetition], which exploits our
@@ -58,7 +46,7 @@ it's going to be hard, but I've discovered it's actually the easiest
 part.
 
 My day is full of odd bits of time that aren't typically useful.
-Waiting for a tram, coffee to brew, the line at the airport, whatever.
+Waiting for a tram, for my coffee to brew, standing in line at the airport.
 These chunks aren't long enough to do much with, but they're
 *perfect* for Anki cards. Each card takes only a few seconds, and
 if you reach your learning goals for the day there are always options
@@ -74,7 +62,8 @@ and wonder what you were meant to be doing.
 Anki lets you make your own decks in the desktop client.
 I have decks for words I frequently
 misspell, dietary intolerences of my friends, people I've met,
-subjects I've learning, and anthing else that I know I'll easily
+[subjects I've learning][coursera], [languages][duolingo], and
+anthing else that I know I'll easily
 forget. However Anki also has a rich number of
 [shared decks][anki-shared-decks]. For me personally, both
 [cognitive biases](https://ankiweb.net/shared/info/970971960) and
@@ -83,6 +72,6 @@ forget. However Anki also has a rich number of
 
 Anki has clients for Windows, Mac, Linux/BSD, iOS, and Android;
 as well as a mobile-friendly web interface. While the iOS client
-the others are both free and open source.
+requires payment, the others are free and open source.
 
 So what are you waiting for? [Download Anki][anki] and start learning!
