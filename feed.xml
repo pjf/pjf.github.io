@@ -12,6 +12,31 @@
                     
 
 			<item>
+				<title>I have a favour to ask.</title>
+				<description>&lt;p&gt;Dear everyone, I have a favour to ask…&lt;/p&gt;
+
+&lt;p&gt;Imagine the future. Not as it is next week, next year, or even in a hundred years hence. Imagine the future as it exists in &lt;em&gt;ten thousand&lt;/em&gt; years time; and imagine that’s a future where things have gone &lt;em&gt;right&lt;/em&gt;.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;It’s not a dystopia; humanity has gone beyond its roots and has colonised the stars. We’ve outgrown our humble beginnings, we’ve overcome the flaws in our brain: anger, jealousy, selfishness; but we’ve kept the things which are important. We have compassion, and foresight. We have understanding, and ethics. I want you to imagine the &lt;em&gt;best possible future&lt;/em&gt; that you can; one that’s not just best for humanity, but also best for any being that may be able to think or feel.&lt;/p&gt;
+
+&lt;p&gt;That’s a big leap of imagination, but I want you to try.&lt;/p&gt;
+
+&lt;p&gt;Then I want you to do something in the next 24 hours—purposefully and consciously, regardless of how big or small—which would make our future selves &lt;em&gt;proud&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can share that here if you like. You can keep it to yourself. It can be a tiny tiny thing, or it can be the crowning achievement of your existence. But it’s human nature to think about the here-and-now, and I so dearly, dearly wish we’d spend more time working towards how things &lt;em&gt;should&lt;/em&gt; be.&lt;/p&gt;
+
+&lt;p&gt;Thank you.&lt;/p&gt;</description>
+				<pubDate>Thu, 30 Jan 2014 00:00:00 +1100</pubDate>
+				<link>http://pjf.id.au//ethics/2014/01/30/one-favour.html</link>
+				<guid isPermaLink="true">http://pjf.id.au//ethics/2014/01/30/one-favour.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>How to learn everything, without spending any time</title>
 				<description>&lt;p&gt;What if I told you there’s an app which runs on all your devices, is free, has strong evidence-based support for its effectiveness, and allows you to acquire large amounts of knowledge and &lt;em&gt;retain it indefinitely&lt;/em&gt;?&lt;/p&gt;
 
@@ -414,39 +439,6 @@ $ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt
 				<pubDate>Thu, 02 Jan 2014 00:00:00 +1100</pubDate>
 				<link>http://pjf.id.au//depression/2014/01/02/personal-depression-an-update.html</link>
 				<guid isPermaLink="true">http://pjf.id.au//depression/2014/01/02/personal-depression-an-update.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>Do not stifle innovation.</title>
-				<description>&lt;p&gt;Open source software is great. You don’t have to worry about the owner deciding to discontinue it, because someone else can always take over. If there’s a bug that really annoys you—or a feature you really want—you can add it. If you’re concerned about what the software might be doing, you can open it up and take a look. And even if you don’t have the skills or inclination to do all these things, other people will.&lt;/p&gt;
-
-&lt;p&gt;While I’ve always known open source software is great, I’m increasingly starting to appreciate that open source &lt;em&gt;developers&lt;/em&gt; are also great. Many people in open source not only have a tremendous amount of experience with software, but also community management. They’ve seen a lot of the same problems arise many times, and so they have a good idea on how to get code, and people, to work together productively.&lt;/p&gt;
-&lt;!--more--&gt;
-&lt;p&gt;One thing that we see, again and again, in both software and the community, is that giving people agency and discretion is fundamental in having a highly successful project. Wikis lowered the barrier to contribution immensely when it came to collating knowledge, Wikipedia wouldn’t exist if it wasn’t so easy to edit. Many of the most successful software projects have been extremely generous with their commit bits, and with distributed version control, the barriers to contribution have been lowered even further.&lt;/p&gt;
-
-&lt;p&gt;The reason this is so essential for success is simple. The vast majority of intelligent, motivated people &lt;em&gt;want&lt;/em&gt; to make the world a better place; putting barriers in their way simply means they’ll go elsewhere. Every permission form that needs to be filled in, every registration process that needs to be jumped through, every legal framework that encumbers creation, every strict power hierarchy that needs to be worked through, they all run the risk of taking someone who may done something great instead deciding it was “too hard”.&lt;/p&gt;
-
-&lt;p&gt;That’s not to say that we won’t need a way to deal with mishaps; even if nobody is malevolent, some people will still be learning, and everyone will make mistakes. Wikis and distributed version control strike a good balance here, they’re designed around the ability to undo changes, or revert to previous revisions if need be. Much of the software that lower the barriers to contribution also lower the risks associated with it.&lt;/p&gt;
-
-&lt;p&gt;And that’s the key here. If you can give people a way of doing something, and that process comes with low or negligible risks, then &lt;em&gt;let them do it&lt;/em&gt;. Even if you think nobody will care, even if you think it’s a terrible idea, &lt;em&gt;let them&lt;/em&gt;. Many great ideas start as terrible ones that are refined over time, and you may be surprised at just how popular some ideas can be.&lt;/p&gt;
-
-&lt;p&gt;But this doesn’t just apply to your software, or your documentation; this applies to the your culture, and the society in which you live.&lt;/p&gt;
-
-&lt;p&gt;Encourage others to be bold. Be generous in what you accept.&lt;/p&gt;
-
-&lt;p&gt;Do not stifle innovation. Do not get in the way of people being great.&lt;/p&gt;
-
-&lt;p&gt;And I know that sometimes it can feel like two steps forward, and one step back; but please, please, don’t stop contributing.&lt;/p&gt;
-
-&lt;p&gt;Thank you.&lt;/p&gt;</description>
-				<pubDate>Sat, 28 Dec 2013 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au//ethics/2013/12/28/do-not-stifle-innovation.html</link>
-				<guid isPermaLink="true">http://pjf.id.au//ethics/2013/12/28/do-not-stifle-innovation.html</guid>
 			</item>
 		
 
