@@ -125,6 +125,7 @@ img.me {
     font-size: smaller;
     opacity: .5;
     float: right;
+    clear: right;
 }
 
 .edit-post:hover {
@@ -176,6 +177,7 @@ h3, h4, h5, h6 {
     float: right;
     border-radius: 10%;
     max-width: 20%;
+    margin-left: 2em;
 }
 
 .clear_right {
