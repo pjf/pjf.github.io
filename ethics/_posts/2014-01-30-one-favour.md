@@ -5,6 +5,7 @@ description: "Imagine the future. Not as it is next week, next year, or even in 
 image: /images/ethics/galaxy.jpg
 attract_image: /images/ethics/galaxy.jpg
 footer: "Galaxy image courtesy NASA / [HubbleSite](http://hubblesite.org/newscenter/archive/releases/2007/41/image/a/)"
+tags: ethics future request space
 ---
 
 Dear everyone, I have a favour to ask…
