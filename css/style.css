@@ -1031,7 +1031,7 @@
 	}
 
 /*********************************************************************************/
-/* Nav                                                                           */
+/* Nav and recent posts                                                          */
 /*********************************************************************************/
 
 	#nav
@@ -1043,31 +1043,31 @@
 			display: none;
 		}
 
-		#nav ul
+		#nav ul, .is-recent-posts ul
 		{
 			margin: 0;
 		}
 
-		#nav li
+		#nav li, .is-recent-posts li
 		{
 			border-top: solid 1px rgba(0,0,0,0.25);
 			box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.075);
 			padding: 0.5em 0 0.5em 0;
 		}
 		
-		#nav li:first-child
+		#nav li:first-child, .is-recent-posts li:first-child
 		{
 			border: 0;
 			box-shadow: none;
 			padding-top: 0;
 		}
 
-		#nav li:last-child
+		#nav li:last-child, .is-recent-posts li:last-child
 		{
 			padding-bottom: 0;
 		}
 
-		#nav li a
+		#nav li a, .is-recent-posts li a
 		{
 			display: block;
 			padding: 0.4em 1em 0.4em 1em;
@@ -1081,7 +1081,7 @@
 			transition: background-color .25s ease-in-out, color .25s ease-in-out;
 		}
 
-		#nav li.current_page_item a
+		#nav li.current_page_item a, .is-recent-posts li.current_page_item a,
 		{
 			background-color: #272E39 !important;
 			background-color: rgba(0,0,0,0.15) !important;
@@ -1090,7 +1090,7 @@
 			color: #fff;
 		}
 
-		#nav li:hover a
+		#nav li:hover a, .is-recent-posts li:hover a
 		{
 			background-color: rgba(200,225,255,0.1);
 			color: #fff;
