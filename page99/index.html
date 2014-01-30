@@ -142,6 +142,112 @@
 
 
         <header>
+            <h2><a href="/advogato/2002/04/13/massive-filesystem-corruption.html">Massive Filesystem Corruption</a></h2>
+            
+        </header>
+
+        <div class="info">
+    
+    <span class="date"> <span class="month">Apr</span>
+        <span class="day">13</span> <span
+            class="year"><span>,</span> 2002</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+
+        
+            <B>Massive Filesystem Corruption</b><BR>
+At about 10am this morning, the power supply on the main
+server failed.  This has happened once before, and to be
+honest the novelty of fitting a not-quite-the-same power
+supply into the case was wearing a bit thin.  I did it
+nonetheless, using an old supply from a 386 that had been
+hanging around just waiting to be made useful again.
+<p>
+With the new power-supply in place, it was discovered that
+only two of the three disks were responding.  Hmm, very odd.
+ Locate faulty disk, remove, check over...
+<p>
+Oh my.  Chips on the drive controller aren't supposed to
+bubble like that, are they?  And boy does it smell bad! 
+That's okay, that drive was just /var, and I can live
+without my log files and proxy cache.  After all, that's why
+I've made backups of the other two disks but not this one.
+<p>
+Except that /var contains the all-important /var/spool/mail,
+/var/cvs, Debian package information, and some databases.  A
+bit of an ouch there.
+<p>
+It was only later that I discovered that I had my last six
+years worth of mail also on said hard-drive, since it had
+more space than the other disks.  That was the crushing blow.
+<p>
+As it happens, the blowing power-supply also managed to
+cause damage to the motherboard/CPU/RAM as well, since init
+would segfault upon startup.  Changing the Mobo/CPU/RAM
+fixed the problem.  I'll be testing sticks of memory to see
+which ones can be recovered.
+<p>
+Moral of the story, backup everything, even the stuff you
+don't care about, in case there's some stuff you do care
+about in there as well.
+<p>
+It looks like the drive's controller is dead, but the
+platters and mechanism inside are still okay.  Tried
+replacing the controller with a similar model from a drive
+that has busted insides, but to no avail.  It *tries* to
+spin the drive up and all, but is obviously expecting
+something else.  I think if I can find an identical
+controller (old-ish Qantum fireball) I should be fine.  I'm
+hoping that one of these professional data recovery joints
+has a big box of them.
+
+
+        
+
+        <a href="/advogato/2002/04/13/massive-filesystem-corruption.html">(read more...)</a>
+
+    </article>
+    <div class="clear_right"></div> <!-- Stop image overflows -->
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        
+
+
+        <header>
             <h2><a href="/advogato/2002/03/18/chooks.html">Chooks</a></h2>
             
         </header>
@@ -558,84 +664,6 @@ Make sure that you use your powers for good and not evil.
 
     </article>
     <div class="clear_right"></div> <!-- Stop image overflows -->
-
-
-    
-
-    
-
-    
-
-
-    
-
-    
-
-
-
-    
-
-    
-
-    <article class="is-post is-post-excerpt">
-
-        
-
-
-        <header>
-            <h2><a href="/advogato/2002/02/24/cube.html">Cube</a></h2>
-            
-        </header>
-
-        <div class="info">
-    
-    <span class="date"> <span class="month">Feb</span>
-        <span class="day">24</span> <span
-            class="year"><span>,</span> 2002</span>
-    </span>
-
-
-    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
-
-    <!--
-        <ul class="stats">
-            <li><a href="#" class="fa fa-comment">16</a></li>
-            <li><a href="#" class="fa fa-heart">32</a></li>
-            <li><a href="#" class="fa fa-twitter">64</a></li>
-            <li><a href="#" class="fa fa-facebook">128</a></li>
-        </ul>
-    -->
-</div>
-
-
-        
-
-        
-            <B>Cube</b><BR>
-The new machine has been dubbed cube, due to its shape,
-although it's more shoebox than cube proportioned.  Sound
-under Windows was a right pain to get working, and involved
-an upgrade from Win98SE to Win2K in order to get a peep out
-of the darn thing.  Sound under Linux worked a treat, first
-time.  Those people who are curious, it's an FV24 VIA
-motherboard with on-board sound.
-<p>
-The machine is currently sitting in the lounge-room, and has
-a TV connection, but no connection to the sound system yet.
- Considering the purchase of a Creative Extigy and a bunch
-of high quality surround speakers, but I'm sure that would
-be excessive at this stage.
-<p>
-Again, many many thanks to Ian for providing his wealth of
-knowledge regarding hardware and drivers.
-
-
-        
-
-        <a href="/advogato/2002/02/24/cube.html">(read more...)</a>
-
-    </article>
-    <div class="clear_right"></div> <!-- Stop image overflows -->
     
 
 
@@ -770,6 +798,8 @@ knowledge regarding hardware and drivers.
 
         <ul>
         
+            <li><a href="/ethics/2014/01/31/one-thing-can-make-the-world-a-better-place.html">One Thing Can Make The World A Better Place</a>
+        
             <li><a href="/ethics/2014/01/30/one-favour.html">I have a favour to ask.</a>
         
             <li><a href="/tech/2014/01/29/learn-everything-without-spending-time.html">How to learn everything, without spending any time</a>
@@ -787,8 +817,6 @@ knowledge regarding hardware and drivers.
             <li><a href="/tech/2014/01/21/a-new-website-a-new-philosophy.html">A new website, a new philosophy</a>
         
             <li><a href="/tech/2014/01/16/use-markdown-rather-than-bbcode-with-vimperator.html">Use Markdown Instead Of BBCode With Vimperator</a>
-        
-            <li><a href="/df/unholinesssparked/2014/01/11/jaxys-greatest-wish.html">Jaxy's Greatest Wish</a>
         
         </ul>
     </section>
