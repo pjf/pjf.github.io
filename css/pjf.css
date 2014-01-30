@@ -159,10 +159,6 @@ div.share-buttons {
     border-radius: 10%;
 }
 
-article header {
-    clear: right;
-}
-
 /* H3-6 is often used in articles. Stop them from appearing
  * so cramped when they display.
  */
@@ -174,4 +170,14 @@ h3, h4, h5, h6 {
 .bitcoin {
     max-height: 17ex;
     margin-left 0.5em;
+}
+
+.attract-right {
+    float: right;
+    border-radius: 10%;
+    max-width: 20%;
+}
+
+.clear_right {
+    clear: right;
 }
