@@ -1,0 +1,17 @@
+The following special fields may be used in top-matter in your posts:
+
+image: Path to an image to embedded in open-graph meta-data. Used by
+       facebook and others.
+
+attract_image: Image to be displayed as an 'attract' logo on the right,
+               of an article title, with rounded corners.
+
+wide_image: Displayed as a 100% wide banner below the image title.
+            Also sets `image` for social media.
+
+tags: A space-separated list of tags.
+
+description: A string to be used as the page meta-data description and
+             open-graph description.
+
+byline: The byline shown. Defaults to "By <your name>".
