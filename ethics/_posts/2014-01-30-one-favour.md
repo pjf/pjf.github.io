@@ -3,12 +3,11 @@ title: I have a favour to ask.
 orig_url: https://www.facebook.com/paul.fenwick/posts/10151544387484611
 description: "Imagine the future. Not as it is next week, next year, or even in a hundred years hence. Imagine the future as it exists in ten thousand years, and a future that has gone *right*."
 image: /images/ethics/galaxy.jpg
+attract_image: /images/ethics/galaxy.jpg
 footer: "Galaxy image courtesy NASA / [HubbleSite](http://hubblesite.org/newscenter/archive/releases/2007/41/image/a/)"
 ---
 
-<img class="attract-right" src="/images/ethics/galaxy.jpg" alt="Galaxy" />
-
-Dear everyone, I have a favour to ask...
+Dear everyone, I have a favour to ask…
 
 Imagine the future. Not as it is next week, next year, or even in a
 hundred years hence. Imagine the future as it exists in *ten thousand* years
