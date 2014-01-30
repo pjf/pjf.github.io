@@ -183,3 +183,23 @@ h3, h4, h5, h6 {
 .clear_right {
     clear: right;
 }
+
+div.amplify {
+    border: 1px solid #bbb;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em 0.5em 0.0em #888;
+    padding: 1em;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2ex;
+}
+
+a.plain {
+    text-decoration: none;
+    color: inherit;
+}
+
+.darker {
+    color: #2d3643;
+}
