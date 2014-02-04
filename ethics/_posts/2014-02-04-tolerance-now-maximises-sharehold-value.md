@@ -2,6 +2,7 @@
 title: Tolerance, not bigotry, now maximises sharehold value
 tags: diversity coke coca-cola longpost superbowl ethics
 footer: "Want to learn more about how we're getting better? Here's [why 2013 was the best year in human history](http://bit.ly/1fCGce8)."
+description: "Coca-Cola knew its 2014 Superbowl advertisement would revealed bigotry and hatred, but they screened it anyway. Why?"
 ---
 
 Yesterday Coca-Cola showed an advertisement as part of the superbowl coverage.
