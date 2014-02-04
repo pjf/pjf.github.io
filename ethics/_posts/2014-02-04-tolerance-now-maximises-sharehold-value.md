@@ -20,7 +20,7 @@ more ethical population who believes that diversity and tolerance are good,
 rather than the shrinking percentage of people who do not.
 
 We, as a society, are getting better. Yes, you can pick apart Coke's motives
-here in all sorts of ways, but the fact remains that we're now in a society
+here, but the fact remains that we're now in a society
 where promoting diversity and tolerance are seen as winning strategies. That's
 not something we would have seen fifty years ago, and I doubt it's even
 something we would have seen ten years back.
