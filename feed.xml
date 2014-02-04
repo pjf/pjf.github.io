@@ -12,6 +12,27 @@
                     
 
 			<item>
+				<title>Tolerance, not bigotry, now maximises sharehold value</title>
+				<description>&lt;p&gt;Yesterday Coca-Cola showed an advertisement as part of the superbowl coverage. It featured Americans doing American things; except those Americans were racially diverse, and the song—America Is Beautiful—was sung in multiple languages other than English.&lt;/p&gt;
+
+&lt;p&gt;There’s a big deal on the Internet right now about the bigotry and hatred which this advertisement has revealed. Of course Coke knew this would happen, and yet they screened the advertisement anyway.&lt;/p&gt;
+
+&lt;p&gt;The reason is simple. As a society, we’re becoming &lt;em&gt;more&lt;/em&gt; tolerant every year, and Coca-Cola knows that. It’s firmly directing its ad towards the growing and more ethical population who believes that diversity and tolerance are good, rather than the shrinking percentage of people who do not.&lt;/p&gt;
+
+&lt;p&gt;We, as a society, are getting better. Yes, you can pick apart Coke’s motives here in all sorts of ways, but the fact remains that we’re now in a society where promoting diversity and tolerance are seen as winning strategies. That’s not something we would have seen fifty years ago, and I doubt it’s even something we would have seen ten years back.&lt;/p&gt;
+
+&lt;p&gt;We still have a long way to go, but we’re getting there. Thank you, humanity.&lt;/p&gt;</description>
+				<pubDate>Tue, 04 Feb 2014 00:00:00 +1100</pubDate>
+				<link>http://pjf.id.au//ethics/2014/02/04/tolerance-now-maximises-sharehold-value.html</link>
+				<guid isPermaLink="true">http://pjf.id.au//ethics/2014/02/04/tolerance-now-maximises-sharehold-value.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>One Thing Can Make The World A Better Place</title>
 				<description>&lt;p&gt;Many people have the dream of being a successful writer. There’s an allure with having one’s work read by others, but the business of writing has changed. One no longer seeks a publisher, but instead traffic and results on search engines. One no longer expects royalties, instead revenue is generated from advertisements and affiliate links.&lt;/p&gt;
 
@@ -375,56 +396,6 @@ SUBSYSTEM==&amp;quot;block&amp;quot;, ENV{ID_FS_LABEL}==&amp;quot;backup&amp;quo
 				<guid isPermaLink="true">http://pjf.id.au//tech/2014/01/21/a-new-website-a-new-philosophy.html</guid>
 			</item>
 		
-
-                    
-                    
-                    
-
-			<item>
-				<title>Use Markdown Instead Of BBCode With Vimperator</title>
-				<description>&lt;p&gt;I really love the Dwarf Fortress community, and a lot of it is centred around the &lt;a href=&quot;http://www.bay12forums.com/smf/index.php&quot;&gt;bay12 forums&lt;/a&gt;. Unfortunately, I don’t love BBCode (aka phpBB syntax), which is what the bay12 forums require me to write posts in. I’d much rather use &lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;markdown&lt;/a&gt;. So I decided to fix that with the help of vimperator, and by writing my own markdown to BBcode parser.&lt;/p&gt;
-&lt;!--more--&gt;
-&lt;p&gt;If you install the &lt;a href=&quot;https://metacpan.org/pod/Markdown::phpBB&quot;&gt;Markdown::phpBB&lt;/a&gt; module from the CPAN, you’ll find a nifty little program named &lt;code&gt;md2phpbb&lt;/code&gt;. This is a filter; it takes input in markdown, and emits output in BBcode.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ cpanm Markdown::phpBB     # install using cpanm
-$ cpan  Markdown::phpBB     # install using classic cpan&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you’re editing in vim, you can run &lt;code&gt;:%!md2phpbb&lt;/code&gt; to replace your current buffer (written in markdown) with the equivalent text in BBcode. You can even bind it to a key, as I’ve done in my &lt;code&gt;~/.vimrc&lt;/code&gt; file:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;:nmap &amp;lt;F5&amp;gt; :%!md2phpbb&amp;lt;CR&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you’ve installed md2phpbb into a user (rather than system) directory, then you may find that vimperator won’t have your perl-specific environment variables in place. In that case you can use full paths in your &lt;code&gt;~/.vimrc&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;:nmap &amp;lt;F5&amp;gt; :%!perl -I/home/pjf/perl5/lib/perl5 /home/pjf/perl5/bin/md2phpbb&amp;lt;CR&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you’re using &lt;a href=&quot;http://www.vimperator.org/vimperator&quot;&gt;vimperator&lt;/a&gt; then you can already invoke vim from any textarea by pressing &lt;code&gt;ctrl-i&lt;/code&gt;. However BBcode websites usually bind this to &lt;em&gt;italics&lt;/em&gt;, so you’ll probably want to add an additional key for editing to your &lt;code&gt;~/.vimperatorrc&lt;/code&gt; file. I use &lt;code&gt;ctrl-e&lt;/code&gt;, for edit:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;:inoremap &amp;lt;C-e&amp;gt; &amp;lt;C-i&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now you can use &lt;code&gt;ctrl-e&lt;/code&gt; to open a vim window, write your response in markdown, and then just hit &lt;code&gt;F5&lt;/code&gt; to turn it into BBCode. Best of all, the filter doesn’t change existing BBCode at all, so you can hit &lt;code&gt;F5&lt;/code&gt; as many times as you like, to refresh your text after edits.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;md2phpbb&lt;/code&gt; and supporting libraries are completely free and open source, and can be found on &lt;a href=&quot;https://github.com/pjf/Markdown-phpBB&quot;&gt;github&lt;/a&gt;.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;See also: &lt;a href=&quot;http://privacygeek.blogspot.com.au/2013/03/the-worlds-easiest-guide-to-installing.html&quot;&gt;The world’s easiest guide to installing cpanm&lt;/a&gt;&lt;/p&gt;</description>
-				<pubDate>Thu, 16 Jan 2014 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au//tech/2014/01/16/use-markdown-rather-than-bbcode-with-vimperator.html</link>
-				<guid isPermaLink="true">http://pjf.id.au//tech/2014/01/16/use-markdown-rather-than-bbcode-with-vimperator.html</guid>
-			</item>
-		
-
-                     
-
-                     
-
-                     
-
-                     
-
-                     
-
-                     
-
-                     
 
                     
                     
