@@ -7,7 +7,7 @@ description: "Coca-Cola knew its 2014 Superbowl advertisement would reveal bigot
 
 Yesterday Coca-Cola showed an advertisement as part of the superbowl coverage.
 It featured Americans doing American things; except those Americans were
-racially diverse, and the song—America Is Beautiful—was sung in multiple
+racially diverse, and the song—America The Beautiful—was sung in multiple
 languages other than English.
 
 There's a big deal on the Internet right now about the bigotry and hatred which
