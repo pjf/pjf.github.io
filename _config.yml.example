@@ -27,6 +27,7 @@ thedaywefightback:
     enable: false
     testing: false
 
+# These are files jekyll should never touch.
 exclude: 
     - '_assets'
     - 'bin'
