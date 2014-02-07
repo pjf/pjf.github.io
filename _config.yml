@@ -22,7 +22,7 @@ flickr: https://flickr.com/photos/pfenwick
 # The 'testing' option will enable the banner, even if it not Feb 11th
 
 thedaywefightback:
-    enable: false
+    enable: true
     testing: false
 
 # Flattr username
