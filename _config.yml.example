@@ -12,6 +12,9 @@ intro: Welcome to my home on the internet! Everything here is free
 # Site URL
 url: http://example.com/
 
+# Custom css - copy custom.css.example to custom.css and uncomment this
+#customcss: custom.css
+
 # Comment out if not wanted, change if wanted.
 twitter: http://twitter.com/
 facebook: http://facebook.com/
