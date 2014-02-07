@@ -1,0 +1,41 @@
+/* change color scheme
+
+  #logo
+  {
+    background-color: #0062A3;
+  }
+
+  #titleBar .toggle:before
+  {
+    background: #0062A3 url('/css/images/bg1.png');
+  }
+
+  #titleBar .toggle:active:before
+  {
+    background-color: #0071bd;
+  }
+
+  #titleBarNarrower .toggle:before
+  {
+    background: #0062A3 url('/css/images/bg1.png');
+  }
+
+  a
+  {
+    color: #0062A3;
+  }
+
+  form textarea:focus
+  {
+    box-shadow: 0px 0px 2px 2px #0062A3;
+  }
+
+  .button
+  {
+    background-color: #0062A3;
+  }
+
+  .is-calendar td.today a
+  {
+    background-color: #0062A3;
+  }
