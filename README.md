@@ -38,6 +38,12 @@ by github.
 Run `jekyll build` to build, or `jekyll serve` to start a test
 server on `localhost:4000`.
 
+#### CUSTOMISE
+
+See the contents of the include `_doc` directory for ways in
+which you can customise the site. Contributions to this documentation
+are very welcome!
+
 #### Deploying
 
 Run `bin/deploy.pl` to deploy. *Make sure you have all your changes

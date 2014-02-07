@@ -1,0 +1,5 @@
+{% if post.attract_image %}
+    {% if include.url %}<a href="{{ include.url }}">{% endif %}
+    <img src="{{ post.attract_image }}" class="attract-right" alt="" />
+    {% if include.url %}</a>{% endif %}
+{% endif %}

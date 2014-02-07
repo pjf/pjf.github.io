@@ -19,6 +19,15 @@ googleplus: https://plus.google.com/
 github: https://github.com/
 gittip: https://www.gittip.com
 
+# February 11th, 2014 campaign.
+# See https://thedaywefightback.org for details.
+# The 'testing' option will enable the banner, even if it not Feb 11th
+
+thedaywefightback:
+    enable: false
+    testing: false
+
+# These are files jekyll should never touch.
 exclude: 
     - '_assets'
     - 'bin'
