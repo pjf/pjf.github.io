@@ -12,6 +12,27 @@
                     
 
 			<item>
+				<title>Remembering Aaron Swartz</title>
+				<description>&lt;p&gt;It’s been a little over a year since Aaron Swartz passed by taking his own life. Aaron was a hero of the Internet. He believed strongly in freedom and privacy. He was instrumental in helping retain freedom and privacy on the Internet. He fought for civil liberties and social justice. He made the world a better place.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;I know that for many people, the thought of mass surveillance, of warrantless wiretapping, seems abstract and remote. That’s one of the reasons why it’s so insidious; by its very nature we don’t see it happening.&lt;/p&gt;
+
+&lt;p&gt;The following video is part of a campaign that I believe strongly about. Whether you choose to participate, or learn more, is entirely up to you. But the video itself is a beautiful testament to Aaron’s life, and changes for good that he made in the world.&lt;/p&gt;
+
+&lt;p&gt;~ Paul&lt;/p&gt;
+&lt;div class='video-container'&gt;&lt;iframe height='420' src='http://www.youtube.com/embed/RJ194S7KjRg?html5=1' width='560'&gt; &lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&lt;a href='http://www.youtube.com/watch?v=RJ194S7KjRg'&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Learn more at &lt;a href=&quot;https://thedaywefightback.org/&quot;&gt;The Day We Fight Back&lt;/a&gt;.&lt;/p&gt;</description>
+				<pubDate>Fri, 07 Feb 2014 00:00:00 +1100</pubDate>
+				<link>http://pjf.id.au//personal/2014/02/07/remembering-aaron-swartz.html</link>
+				<guid isPermaLink="true">http://pjf.id.au//personal/2014/02/07/remembering-aaron-swartz.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>Tolerance, not bigotry, now maximises shareholder value</title>
 				<description>&lt;p&gt;Yesterday Coca-Cola showed an advertisement as part of the superbowl coverage. It featured Americans doing American things; except those Americans were racially diverse, and the song—America The Beautiful—was sung in multiple languages other than English.&lt;/p&gt;
 
@@ -351,49 +372,6 @@ SUBSYSTEM==&amp;quot;block&amp;quot;, ENV{ID_FS_LABEL}==&amp;quot;backup&amp;quo
 				<pubDate>Wed, 22 Jan 2014 00:00:00 +1100</pubDate>
 				<link>http://pjf.id.au//tech/2014/01/22/website-privacy-and-you.html</link>
 				<guid isPermaLink="true">http://pjf.id.au//tech/2014/01/22/website-privacy-and-you.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>A new website, a new philosophy</title>
-				<description>&lt;p&gt;A few years ago, the server on which I hosted my personal website suffered a hardware failure and died. It had been running for over a decade and the design had &lt;a href=&quot;https://web.archive.org/web/20110216060633/http://www.pjf.id.au/&quot;&gt;not changed once&lt;/a&gt; during that time.&lt;/p&gt;
-
-&lt;p&gt;I’m very glad to say that I’ve now resurrected the site, along with the over ten years worth of writing I had there. However what I’m really excited about is the technology and philosophy of how the new site is constructed.&lt;/p&gt;
-&lt;!--more--&gt;
-&lt;p&gt;I do a &lt;a href=&quot;/ethics&quot; title=&quot;Paul Fenwick's writings on ethics and philosophy&quot;&gt;lot of writing&lt;/a&gt; on how I feel the world could be a better place, and much of that comes down to changing the way in which we think. Our society teaches us odd values; we’re told sharing and generosity are good, and they are &lt;em&gt;exceptional&lt;/em&gt; traits to have. Literally; they are something which is an exception or deviation from expected behaviour.&lt;/p&gt;
-
-&lt;p&gt;We teach people to share, but then we expect them not to.&lt;/p&gt;
-
-&lt;p&gt;I want to change that. It costs me nothing to share my digital works; the value for me is in making the world a better place, and I want to make it easy for others to do the same. That’s the philosophy behind pjf.id.au.&lt;/p&gt;
-
-&lt;p&gt;So first of all, this is a website built on respect for one’s audience. There are no advertisements; I have no hosting costs to defray. There are no tricks, I want to be honest in what I’m presenting. The website looks good at any resolution, and on any browser that respects standards. I use a few third-party tools to make it easier to share and comment on posts, or for me to see how the site is being used, but wherever possible I’ve disabled any functionality they may have which tracks individual users, or shares information with others.&lt;/p&gt;
-
-&lt;p&gt;Most importantly to me, I’m making all my writing available under a &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot; title=&quot;Creative Commons Attribution 3.0 License&quot;&gt;Creative Commons Attribution&lt;/a&gt; license. In short, you can use, modify, and redistribute it—even commercially—as long as you provide attribution and facilitate others doing the same. There’s almost 700 pieces of work, stretching back over a decade, and I’m still importing much of my work that’s been scattered across the net.&lt;/p&gt;
-
-&lt;p&gt;I want to make it easy for you to re-use my work, so everything, including content and underlying infrastructure, is &lt;a href=&quot;https://github.com/pjf/pjf.github.io&quot;&gt;available on github&lt;/a&gt;. You can fork and clone the entire website, and try to do a better job of being me if you like. More importantly, you can use the &lt;code&gt;base&lt;/code&gt; branch to have a website with all the features and design I enjoy, but with configuration and content you supply. If this excites you, then you may also wish to look at &lt;a href=&quot;http://octopress.org/&quot; title=&quot;Octopress: A blogging framework for hackers&quot;&gt;Octopress&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Equally important, you can modify my work in-place, in case you find errors or omissions, or you wish to help with the tagging and classification of older pieces of writing. Right now that requires you to be comfortable with git, but I plan to &lt;a href=&quot;https://github.com/pjf/pjf.github.io/issues/11&quot;&gt;add edit buttons&lt;/a&gt; directly on to each article.&lt;/p&gt;
-
-&lt;p&gt;None of what I’m doing here would be possible without the generosity of others doing the same, and so there are a number of thank yous that are very well deserved.&lt;/p&gt;
-
-&lt;p&gt;The design of pjf.id.au is by the amazing &lt;a class='social-link' href='https://twitter.com/n33co'&gt;@n33co&lt;/a&gt; of &lt;a href=&quot;http://html5up.net/&quot; title=&quot;HTML5 UP! Responsive HTML5 and CSS3 Site Templates&quot;&gt;html5up&lt;/a&gt;, who makes beautiful, responsive, and standards-compliant web designs available for free, also under Creative Commons licensing. They are all incredible, and I cannot recommend them enough. If you’re looking at starting your own website, and are in need of a beautiful design, please do visit &lt;a href=&quot;http://html5up.net/&quot; title=&quot;HTML5 UP! Responsive HTML5 and CSS3 Site Templates&quot;&gt;html5up&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;pjf.id.au is powered by &lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll: Simple, blog aware, static sites&quot;&gt;jekyll&lt;/a&gt;, a free, open-source infrastructure engine written in &lt;a href=&quot;https://www.ruby-lang.org/&quot; title=&quot;Ruby Programming Language&quot;&gt;Ruby&lt;/a&gt;. It’s hosted—for free—by &lt;a href=&quot;https://github.com/&quot; title=&quot;GitHub: Build software better, together&quot;&gt;github&lt;/a&gt;, who continuously amaze me with the support and services they provide to the open source community.&lt;/p&gt;
-
-&lt;p&gt;Finally, I want to give a special thanks to &lt;a class='social-link' href='https://github.com/techman83'&gt;Leon Wright&lt;/a&gt;, who has not only created &lt;a href=&quot;http://techman83.me/&quot; title=&quot;techman83: Leon Wright&quot;&gt;his own website&lt;/a&gt; based upon my design, but also sent me numerous patches and features to not only improve my own website, but to allow others to re-use our collective works.&lt;/p&gt;
-
-&lt;p&gt;So please, share and enjoy, and if you like my work I’d love to hear about it below.&lt;/p&gt;
-
-&lt;p&gt;~ Paul&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Edit&lt;/em&gt;: Within a couple of hours of posting this, the amazing &lt;a class='social-link' href='https://github.com/rhunter'&gt;Rob Hunter&lt;/a&gt; &lt;a href=&quot;https://github.com/pjf/pjf.github.io/pull/14&quot;&gt;supplied a patch&lt;/a&gt; adding edit links to the top of all articles! Thanks Rob, you totally rock! ;)&lt;/p&gt;</description>
-				<pubDate>Tue, 21 Jan 2014 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au//tech/2014/01/21/a-new-website-a-new-philosophy.html</link>
-				<guid isPermaLink="true">http://pjf.id.au//tech/2014/01/21/a-new-website-a-new-philosophy.html</guid>
 			</item>
 		
 
