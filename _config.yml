@@ -17,6 +17,14 @@ github: https://github.com/pjf
 gittip: https://gittip.com/pjf
 flickr: https://flickr.com/photos/pfenwick
 
+# February 11th, 2014 campaign.
+# See https://thedaywefightback.org for details.
+# The 'testing' option will enable the banner, even if it not Feb 11th
+
+thedaywefightback:
+    enable: false
+    testing: false
+
 # Flattr username
 flattr: _pjf
 
@@ -38,8 +46,8 @@ search:
     google:
         cx: 'partner-pub-5040518412301671:2427815553'
 
-addthis:
-  publisher: ra-52daa5464f2c1c4b
+# addthis:
+#  publisher: ra-52daa5464f2c1c4b
 
 analytics:
   id: UA-47199716-1
