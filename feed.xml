@@ -12,6 +12,65 @@
                     
 
 			<item>
+				<title>Automate Your Life With Exobrain</title>
+				<description>&lt;p&gt;Services such as If-This-Then-That (IFTTT) and Zapier make it easy to connect apps and automate tedious tasks. However they all require you trust your personal data with a third party. Enter &lt;a href=&quot;http://github.com/pjf/exobrain&quot; title=&quot;Exobrain: A collection of agents which collect, classify, and act upon data&quot;&gt;Exobrain&lt;/a&gt;.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;Exobrain is a free and open source framework for extending everything. It’s like IFTTT and Zapier, but you don’t have to reveal your credentials to anyone.&lt;/p&gt;
+
+&lt;p&gt;At the time of writing, Exobrain directly supports the following services:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://beeminder.com&quot; title=&quot;Quantify your goals with Beeminder&quot;&gt;Beeminder&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;Email/&lt;a href=&quot;https://gmail.com/&quot;&gt;Gmail&lt;/a&gt; (via IMAP)&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;https://facebook.com/&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;https://foursquare.com/&quot;&gt;Foursquare&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;https://habitrpg.com/&quot; title=&quot;Level up your life with HabitRPG&quot;&gt;HabitRPG&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;https://idonethis.com/&quot; title=&quot;Measure your progress with iDoneThis&quot;&gt;iDoneThis&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;https://pushover.net/&quot; title=&quot;Pushover: Simple mobile notifications&quot;&gt;Pushover&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;https://rememberthemilk.com/&quot; title=&quot;RememberTheMilk task tracker&quot;&gt;RememberTheMilk&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you’re a quantified-selfer, you can automatically record your activities to your log. If you need some extra motivation, you can automatically gain experience points on HabitRPG for achieving your goals. You can back-up all of your activity from third-party websites in real-time, or even allow people to add to your TODO list by tweeting at you with a #todo tag!&lt;/p&gt;
+
+&lt;p&gt;You can utilize existing actions, or you can write your own. Best of all, Exobrain is completely free, open source, and extensible. Because it uses a shared message bus, you can update components on the fly, without having to restart the whole system.&lt;/p&gt;
+
+&lt;p&gt;If you are a Pushover user, then you can send notifications directly to your Pebble watch. Writing extensions for Exobrain is easy; here’s the entire code to send all tweets that mention you to your preferred notify service:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='perl'&gt;    &lt;span class='c1'&gt;#!/usr/bin/env perl&lt;/span&gt;
+    &lt;span class='k'&gt;use&lt;/span&gt; &lt;span class='n'&gt;Exobrain&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+
+    &lt;span class='nv'&gt;$exobrain&lt;/span&gt;&lt;span class='o'&gt;-&amp;gt;&lt;/span&gt;&lt;span class='n'&gt;watch_loop&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;
+        &lt;span class='n'&gt;class&lt;/span&gt;  &lt;span class='o'&gt;=&amp;gt;&lt;/span&gt; &lt;span class='s'&gt;&amp;#39;Measurement::Tweet&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt;
+        &lt;span class='n'&gt;filter&lt;/span&gt; &lt;span class='o'&gt;=&amp;gt;&lt;/span&gt; &lt;span class='k'&gt;sub &lt;/span&gt;&lt;span class='p'&gt;{&lt;/span&gt; &lt;span class='nv'&gt;$_&lt;/span&gt;&lt;span class='o'&gt;-&amp;gt;&lt;/span&gt;&lt;span class='n'&gt;to_me&lt;/span&gt; &lt;span class='p'&gt;},&lt;/span&gt;
+        &lt;span class='k'&gt;then&lt;/span&gt;   &lt;span class='o'&gt;=&amp;gt;&lt;/span&gt; &lt;span class='k'&gt;sub &lt;/span&gt;&lt;span class='p'&gt;{&lt;/span&gt;
+            &lt;span class='nv'&gt;$exobrain&lt;/span&gt;&lt;span class='o'&gt;-&amp;gt;&lt;/span&gt;&lt;span class='n'&gt;notify&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt; &lt;span class='nv'&gt;$_&lt;/span&gt;&lt;span class='o'&gt;-&amp;gt;&lt;/span&gt;&lt;span class='n'&gt;summary&lt;/span&gt; &lt;span class='p'&gt;);&lt;/span&gt;
+        &lt;span class='p'&gt;},&lt;/span&gt;
+    &lt;span class='p'&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For Beeminder users, Exobrain also supports call-backs. This means you can chain events off anything that Beeminder can measure, including Withings scales, Runkeeper, fitbit, Trello, RescueTime, github, duolingo, and more.&lt;/p&gt;
+
+&lt;p&gt;Exobrain is written in Perl, but at its core it uses an extensible, language-independent messaging format utilizing 0MQ and JSON.&lt;/p&gt;
+
+&lt;p&gt;Exobrain is very much a work-in-progress, and we would love your contributions and feedback. You can find &lt;a href=&quot;https://github.com/pjf/exobrain&quot;&gt;Exobrain on github&lt;/a&gt;. Contributions to our &lt;a href=&quot;https://github.com/pjf/exobrain/issues&quot;&gt;issues list&lt;/a&gt; are especially appreciated!&lt;/p&gt;</description>
+				<pubDate>Sun, 09 Feb 2014 00:00:00 +1100</pubDate>
+				<link>http://pjf.id.au//tech/2014/02/09/automate-your-life-with-exobrain.html</link>
+				<guid isPermaLink="true">http://pjf.id.au//tech/2014/02/09/automate-your-life-with-exobrain.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>Remembering Aaron Swartz</title>
 				<description>&lt;p&gt;It’s been a little over a year since Aaron Swartz passed by taking his own life. Aaron was a hero of the Internet. He believed strongly in freedom and privacy. He was instrumental in helping retain freedom and privacy on the Internet. He fought for civil liberties and social justice. He made the world a better place.&lt;/p&gt;
 &lt;!--more--&gt;
@@ -317,61 +376,6 @@ SUBSYSTEM==&amp;quot;block&amp;quot;, ENV{ID_FS_LABEL}==&amp;quot;backup&amp;quo
 				<pubDate>Thu, 23 Jan 2014 00:00:00 +1100</pubDate>
 				<link>http://pjf.id.au//tech/2014/01/23/automated-backups-with-udev-and-btrfs.html</link>
 				<guid isPermaLink="true">http://pjf.id.au//tech/2014/01/23/automated-backups-with-udev-and-btrfs.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>Website Privacy and You</title>
-				<description>&lt;p&gt;Too many entities want to know too much about you, and one of the sneakiest ways they do this is to get website author to add third-party tracking information to their own site. The value to the website operator is often a service, feature, or even revenue, but that doesn’t change the fact that having third parties track your information sure &lt;em&gt;feels&lt;/em&gt; skeezy to me.&lt;/p&gt;
-&lt;!--more--&gt;
-&lt;p&gt;On &lt;a href=&quot;http://pjf.id.au/&quot; title=&quot;Paul Fenwick's personal website&quot;&gt;pjf.id.au&lt;/a&gt; I use three third-party services: AddThis, Google Analytics, and Disqus.&lt;/p&gt;
-
-&lt;h3 id=&quot;addthis&quot;&gt;AddThis&lt;/h3&gt;
-
-&lt;p&gt;AddThis provides an easy way to add sharing links to content. They integrate with just about everything, and they provide the content author with information as to how content is being shared, and how many views are because of that sharing.&lt;/p&gt;
-
-&lt;p&gt;AddThis provide a simple &lt;a href=&quot;http://www.addthis.com/privacy/opt-out&quot; title=&quot;AddThis opt-out&quot;&gt;opt-out button&lt;/a&gt; to prevent them from collecting and sharing information about you. Opting-out doesn’t stop you from using the share buttons, it just protects your privacy. I recommend you use it.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Edit:&lt;/em&gt; On January 25th 2014 I removed AddThis in favour of a static, tracking-free set of share buttons.&lt;/p&gt;
-
-&lt;h3 id=&quot;google_analytics&quot;&gt;Google Analytics&lt;/h3&gt;
-
-&lt;p&gt;I use Google Analytics to get an overview of who’s visiting my site. By default, Analytics receives your entire IP address, but I feel that Google already knows too much about you, so I ask them to collect &lt;a href=&quot;https://support.google.com/analytics/answer/2763052?hl=en&amp;ref_topic=2919631&quot;&gt;less information&lt;/a&gt; by partially anonymising your IP address.&lt;/p&gt;
-
-&lt;p&gt;Google would also love to &lt;a href=&quot;https://support.google.com/analytics/answer/2700409&quot;&gt;cross-reference your data&lt;/a&gt; with existing advertising cookies to determine demographics such as age, gender and intrests. I have that firmly turned off, but you can be pretty sure most everywhere else on the web has it turned on.&lt;/p&gt;
-
-&lt;p&gt;Google gives you a way to &lt;a href=&quot;https://support.google.com/analytics/answer/181881&quot;&gt;permanently opting out of analytics&lt;/a&gt; by using an open-source browser add-on.&lt;/p&gt;
-
-&lt;p&gt;Google also provides a way to &lt;a href=&quot;https://www.google.com/settings/ads/plugin&quot;&gt;permanently opt-out of targetted advertising&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;disqus&quot;&gt;Disqus&lt;/h3&gt;
-
-&lt;p&gt;Disqus provides a pretty excellent way of adding comments and discussions to articles. However they also make their money from advertising, and have no opt-out button when it comes to collecting your information.&lt;/p&gt;
-
-&lt;p&gt;I don’t want to require that you identify yourself to a third party to comment on my writings, so I’ve enabled anonymous comments This is also likely to increase the number of spam and junk comments a little, so I’d appreciate you flagging those if you see them.&lt;/p&gt;
-
-&lt;h3 id=&quot;opting_out_of_everything_at_aboutads&quot;&gt;Opting out of everything at AboutAds&lt;/h3&gt;
-
-&lt;p&gt;There are hundreds of advertising agencies out there who keep personalised information about you. Some of them participate in a self-regulatory program to make it easier for users to opt-out.&lt;/p&gt;
-
-&lt;p&gt;I &lt;em&gt;strongly&lt;/em&gt; recommend you visit the &lt;a href=&quot;http://www.aboutads.info/choices/&quot;&gt;Opt Out page&lt;/a&gt; at AboutAds, which provides an interface to opt-out from over a hundred advertising services.&lt;/p&gt;
-
-&lt;h3 id=&quot;fixing_everything_with_noscript&quot;&gt;Fixing everything with NoScript&lt;/h3&gt;
-
-&lt;p&gt;One excellent solution to opt-out of &lt;em&gt;everything&lt;/em&gt; is to use the &lt;a href=&quot;http://noscript.net/&quot; title=&quot;NoScript: JavaScript/Java/Flash blocker for a safer Firefox experience&quot;&gt;NoScript&lt;/a&gt; extension for Firefox. While modestly inconvenient to use at first, NoScript makes it very easy to temporarily or permanently block domains and features you don’t want, which results in a much cleaner, faster, and more private web experience.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately, NoScript only exists for Firefox-based browsers. Recommendations for other browsers are welcome.&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&quot;https://www.torproject.org/&quot;&gt;Tor Project&lt;/a&gt; also provides pretty serious anonymity functionality that works with any browser.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Edit:&lt;/strong&gt; Unfortunately, the search box on my site may give you ads. Google doesn’t let you disable that unless you’re a registered non-profit, which I’m currently not. The search box does not interact with Google in any way unless you submit a search using it.&lt;/p&gt;</description>
-				<pubDate>Wed, 22 Jan 2014 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au//tech/2014/01/22/website-privacy-and-you.html</link>
-				<guid isPermaLink="true">http://pjf.id.au//tech/2014/01/22/website-privacy-and-you.html</guid>
 			</item>
 		
 
