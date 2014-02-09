@@ -1,6 +1,7 @@
 ---
 title: Automate Your Life With Exobrain
 tags: exobrain perl tech qs quantified-self
+wide_image: /images/tech/backup-starting.jpg
 description: "Services such as If-This-Then-That (IFTTT) and Zapier make it easy to connect apps and automate tedious tasks. However they require you trust your data with a third party. Enter Exobrain."
 ---
 
