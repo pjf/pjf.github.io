@@ -64,3 +64,14 @@
 
 # Privacy
 [addthis-optout]: http://www.addthis.com/privacy/opt-out "AddThis opt-out"
+
+# Exobrain
+[Beeminder]: https://beeminder.com "Quantify your goals with Beeminder"
+[Gmail]: https://gmail.com/
+[Facebook]: https://facebook.com/
+[4SQ]: https://foursquare.com/
+[HabitRPG]: https://habitrpg.com/ "Level up your life with HabitRPG"
+[Pushover]: https://pushover.net/ "Pushover: Simple mobile notifications"
+[RememberTheMilk]: https://rememberthemilk.com/ "RememberTheMilk task tracker"
+[Twitter]: https://twitter.com/
+[iDoneThis]: https://idonethis.com/ "Measure your progress with iDoneThis"
