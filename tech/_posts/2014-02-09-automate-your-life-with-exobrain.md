@@ -31,25 +31,38 @@ services:
 
 For Beeminder users, Exobrain also supports call-backs. This
 means you can chain events off anything that Beeminder can measure,
-including Withings scales, Runkeeper, fitbit, Trello, RescueTime,
-github, duolingo, and more.
+including
+[Withings](http://www.withings.com/en/scales/) scales,
+[Runkeeper](http://runkeeper.com/),
+[fitbit](http://www.fitbit.com/),
+[Trello](https://trello.com/),
+[RescueTime](https://www.rescuetime.com/),
+[github](https://github.com/),
+[duolingo](https://www.duolingo.com/), and more.
 
 If you're a quantified-selfer, you can automatically record your
 activities to your log. If you need some extra motivation, you
-can automatically gain experience points on HabitRPG for achieving
+can automatically gain experience points on [HabitRPG](https://habitrpg.com/)
+for achieving
 your goals. You can back-up all of your activity from third-party
 websites in real-time, or even allow people to add to your TODO
-list by tweeting at you with a #todo tag!
-
-You can utilize existing actions, or you can write your own.
-Best of all, Exobrain is completely free, open source, and
-extensible. Because it uses a shared message bus, you can
-update components on the fly, without having to restart
-the whole system.
+list by tweeting at you with a `#todo` tag!
 
 If you own a [Pepple watch](https://getpebble.com/)
 and are a Pushover user, then you can send notifications
-directly to your watch. Writing extensions for
+directly to your watch.
+
+You can use pre-written Exobrain actions or you can write your own.
+Exobrain is completely free, open source, and
+extensible. Because it uses a shared message bus, you can even
+update components on the fly, without having to restart
+the whole system.
+
+Exobrain is written in Perl and at its core uses an extensible,
+language-independent, messaging format based on [0MQ](http://zeromq.org/)
+and [JSON](http://www.json.org/).
+
+Writing extensions for
 Exobrain is easy; here's the entire code to send all tweets
 that mention you to your preferred notify service:
 
@@ -67,9 +80,6 @@ that mention you to your preferred notify service:
     );
 
 {% endhighlight %}
-
-Exobrain is written in Perl, but at its core it uses an extensible,
-language-independent messaging format utilizing 0MQ and JSON.
 
 Exobrain is very much a work-in-progress, and we would love your
 contributions and feedback. You can find
