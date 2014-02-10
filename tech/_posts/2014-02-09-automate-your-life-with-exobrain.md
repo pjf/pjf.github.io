@@ -5,7 +5,8 @@ wide_image: /images/tech/backup-starting.jpg
 description: "Services such as If-This-Then-That (IFTTT) and Zapier make it easy to connect apps and automate tedious tasks. However they require you trust your data with a third party. Enter Exobrain."
 ---
 
-Services such as If-This-Then-That (IFTTT) and Zapier make it easy
+Services such as [If-This-Then-That](https://ifttt.com/) (IFTTT) and
+[Zapier](https://zapier.com/) make it easy
 to connect apps and automate tedious tasks. However they all require
 you trust your personal data with a third party. Enter [Exobrain][exobrain].
 
@@ -28,6 +29,11 @@ services:
 * [RememberTheMilk][RTM]
 * [Twitter][Twitter]
 
+For Beeminder users, Exobrain also supports call-backs. This
+means you can chain events off anything that Beeminder can measure,
+including Withings scales, Runkeeper, fitbit, Trello, RescueTime,
+github, duolingo, and more.
+
 If you're a quantified-selfer, you can automatically record your
 activities to your log. If you need some extra motivation, you
 can automatically gain experience points on HabitRPG for achieving
@@ -41,8 +47,9 @@ extensible. Because it uses a shared message bus, you can
 update components on the fly, without having to restart
 the whole system.
 
-If you are a Pushover user, then you can send notifications
-directly to your Pebble watch. Writing extensions for
+If you own a [Pepple watch](https://getpebble.com/)
+and are a Pushover user, then you can send notifications
+directly to your watch. Writing extensions for
 Exobrain is easy; here's the entire code to send all tweets
 that mention you to your preferred notify service:
 
@@ -60,11 +67,6 @@ that mention you to your preferred notify service:
     );
 
 {% endhighlight %}
-
-For Beeminder users, Exobrain also supports call-backs. This
-means you can chain events off anything that Beeminder can measure,
-including Withings scales, Runkeeper, fitbit, Trello, RescueTime,
-github, duolingo, and more.
 
 Exobrain is written in Perl, but at its core it uses an extensible,
 language-independent messaging format utilizing 0MQ and JSON.
