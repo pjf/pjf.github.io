@@ -48,7 +48,7 @@ your goals. You can back-up all of your activity from third-party
 websites in real-time, or even allow people to add to your TODO
 list by tweeting at you with a `#todo` tag!
 
-If you own a [Pepple watch](https://getpebble.com/)
+If you own a [Pebble watch](https://getpebble.com/)
 and are a Pushover user, then you can send notifications
 directly to your watch.
 
