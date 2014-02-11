@@ -43,7 +43,7 @@
 
 &lt;p&gt;If you’re a quantified-selfer, you can automatically record your activities to your log. If you need some extra motivation, you can automatically gain experience points on &lt;a href=&quot;https://habitrpg.com/&quot;&gt;HabitRPG&lt;/a&gt; for achieving your goals. You can back-up all of your activity from third-party websites in real-time, or even allow people to add to your TODO list by tweeting at you with a &lt;code&gt;#todo&lt;/code&gt; tag!&lt;/p&gt;
 
-&lt;p&gt;If you own a &lt;a href=&quot;https://getpebble.com/&quot;&gt;Pepple watch&lt;/a&gt; and are a Pushover user, then you can send notifications directly to your watch.&lt;/p&gt;
+&lt;p&gt;If you own a &lt;a href=&quot;https://getpebble.com/&quot;&gt;Pebble watch&lt;/a&gt; and are a Pushover user, then you can send notifications directly to your watch.&lt;/p&gt;
 
 &lt;p&gt;You can use pre-written Exobrain actions or you can write your own. Exobrain is completely free, open source, and extensible. Because it uses a shared message bus, you can even update components on the fly, without having to restart the whole system.&lt;/p&gt;
 
