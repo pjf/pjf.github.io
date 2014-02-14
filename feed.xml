@@ -12,6 +12,35 @@
                     
 
 			<item>
+				<title>Bag Trashed By Airport Staff</title>
+				<description>&lt;p&gt;Yesterday I travelled from Melbourne to Portland (Oregon), a trip that I have done many, many times before. And like many times before, it was clear that my checked luggage had been ‘inspected’. But I’d never had it inspected like this.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;Normally one is informed of a bag inspection because there’s a note from the TSA saying that one’s bag had been opened and inspected. In the past, this has been the &lt;em&gt;only&lt;/em&gt; way I’d known my bag was inspected, because usually the contents had been nicely replaced the way they had been found.&lt;/p&gt;
+
+&lt;p&gt;But not this time.&lt;/p&gt;
+
+&lt;p&gt;I’ve begun to start packing an ‘arrival bag’ in my checked luggage, which is everything I expect that I’ll need once I land after twenty-something hours of travel with extreme jetlag. It has a couple of changes of clothes, toiletries, pajamas, chargers, a book or two, and anything else I think I might need in the first couple of days after arrival.&lt;/p&gt;
+
+&lt;p&gt;But when I opened my bag upon arriving in Portland, everything in my arrival bag had been removed, and was strewn around my suitcase. My spare shoes had been removed from their plastic bag, so they could sully my other clothes. My books, underwear, and shirts were floating freely. My cables were out and tangled with things. My socks had been unpaired. &lt;em&gt;All of them&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Who the hell unpairs socks?&lt;/p&gt;
+
+&lt;p&gt;And that’s the thing, I don’t know. This &lt;em&gt;didn’t&lt;/em&gt; come with a note from the TSA, although if I were leaving someone else’s possessions in that state, I wouldn’t leave a note either. I didn’t inspect my bag between arriving in LAX and continuing on to Portland, so I don’t know if it was rummaged through before or after I entered the USA. Combined with discovering that one &lt;a href=&quot;http://www.gizmodo.com.au/2012/02/australian-airports-to-get-compulsory-body-scans/&quot;&gt;can’t opt out of body-scanners in Australia&lt;/a&gt; I’m feeling that air travel comes with an even greater violation of privacy than I had previously come to expect.&lt;/p&gt;
+
+&lt;p&gt;As far as I can tell, nothing had gone missing, but to be honest I don’t keep a manifest of my possessions when travelling. But then again I’m not usually worried about airport staff stealing things, or trashing the contents of my bags.&lt;/p&gt;
+
+&lt;p&gt;Maybe I should be&lt;/p&gt;</description>
+				<pubDate>Fri, 14 Feb 2014 00:00:00 +1100</pubDate>
+				<link>http://pjf.id.au//personal/2014/02/14/bag-trashed-by-airport-staff.html</link>
+				<guid isPermaLink="true">http://pjf.id.au//personal/2014/02/14/bag-trashed-by-airport-staff.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>Automate Your Life With Exobrain</title>
 				<description>&lt;p&gt;Services such as &lt;a href=&quot;https://ifttt.com/&quot;&gt;If-This-Then-That&lt;/a&gt; (IFTTT) and &lt;a href=&quot;https://zapier.com/&quot;&gt;Zapier&lt;/a&gt; make it easy to connect apps and automate tedious tasks. However they all require you trust your personal data with a third party. Enter &lt;a href=&quot;http://github.com/pjf/exobrain&quot; title=&quot;Exobrain: A collection of agents which collect, classify, and act upon data&quot;&gt;Exobrain&lt;/a&gt;.&lt;/p&gt;
 &lt;!--more--&gt;
@@ -281,103 +310,6 @@
 				<pubDate>Thu, 23 Jan 2014 00:00:00 +1100</pubDate>
 				<link>http://pjf.id.au//tech/2014/01/23/dont-read-articles--listen-to-them.html</link>
 				<guid isPermaLink="true">http://pjf.id.au//tech/2014/01/23/dont-read-articles--listen-to-them.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>Automated backups with udev and btrfs</title>
-				<description>&lt;p&gt;I’m incredibly lazy. My preferred way of making backups is to plug in an external drive, and have my laptop automatically do the rest.&lt;/p&gt;
-
-&lt;p&gt;In order to facilitate this laziness, I’m going to be using two tools: btrfs (an amazing filesystem with snapshot support), and udev (which can detect when a device has been inserted or removed). I’m also going to send notifcations directly to my Pebble watch, because I can.&lt;/p&gt;
-&lt;!--more--&gt;
-&lt;p&gt;Everything in this guide needs to be done as root, so we might as well start a root-shell now:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ sudo -i&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;preparing_our_disk&quot;&gt;Preparing our disk&lt;/h3&gt;
-
-&lt;p&gt;I use &lt;a href=&quot;http://arstechnica.com/information-technology/2014/01/bitrot-and-atomic-cows-inside-next-gen-filesystems/&quot; title=&quot;Bitrot and atomic COWs: Inside next-gen filesystems&quot;&gt;btrfs&lt;/a&gt; for external backups. It’s able to detect when data has gone bad, it has wicked-cool snapshot capabilities, and if I’m backing up an existing btrfs filesystem I can do very quickly and efficiently by sending incremental snapshots. However most of this guide will still work even if you’re using a different filesystem type.&lt;/p&gt;
-
-&lt;p&gt;Our first step is to prepare the disk where our backups are going to live. under Linux we can have volumes with &lt;em&gt;labels&lt;/em&gt;. They’re awesome, because they’re human readable, but still provide a way to identify a device regardless of where it gets mounted. In theory one could have a number of drives with the same label, and we could trigger a backup automatically whenever &lt;em&gt;any&lt;/em&gt; of them are plugged in.&lt;/p&gt;
-
-&lt;p&gt;With btrfs, we can set the label when we format the disk, but I always forget to do that. It’s okay, because changing the label is easy:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ btrfs filesystem label /dev/sdc1 backup&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you’re using &lt;code&gt;ext2&lt;/code&gt; or above, you can do the same with &lt;code&gt;tune2fs&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ tune2fs -L backup /dev/sdc1&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;My actual disks have more descriptive labels, indicating both the machine and filesystem they’re responsible for.&lt;/p&gt;
-
-&lt;p&gt;I like to mount my backups in a consistent location, so I’m going to create that now:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ mkdir /mnt/backup&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;We also need to tell linux that when it sees a disk with the &lt;code&gt;backup&lt;/code&gt; label, it needs to go on the mount-point specified. We do this by adding a line to &lt;code&gt;/etc/fstab&lt;/code&gt;, and we can also specify other options in here as well For example, I use btrfs’ compression option:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ echo &amp;quot;LABEL=backup /mnt/backup btrfs noauto,compress 0 2&amp;quot; \
-    &amp;gt;&amp;gt; /etc/fstab&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;On other filesystems, you should leave out ‘compress’ on the line above. The ‘noauto’ option tells Linux not to try and mount the drive when booting; as a removable backup drive, it’s unlikely to be there.&lt;/p&gt;
-
-&lt;h3 id=&quot;udev&quot;&gt;udev&lt;/h3&gt;
-
-&lt;p&gt;Now for the bit which caused me pain, &lt;code&gt;udev&lt;/code&gt;, a system for triggering events when devices change on your system. I don’t know if there are versions of &lt;code&gt;udev&lt;/code&gt; with different keywords, or which care differently about capitalisation, but it took a &lt;em&gt;lot&lt;/em&gt; of tweaking around until I managed to get a udev rule that would automatically mount my disk:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ cat &amp;gt; /etc/udev/rules.d/99-backup.rules
-
-SUBSYSTEM==&amp;quot;block&amp;quot;, ENV{ID_FS_LABEL}==&amp;quot;backup&amp;quot;, ACTION==&amp;quot;add&amp;quot;, \
-    RUN+=&amp;quot;/bin/mount /mnt/backup&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Udev is also supposed to automatically pick up new rules, but my system didn’t the first time. We can nudge it with:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ udevadm control --reload-rules&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;backups&quot;&gt;Backups&lt;/h3&gt;
-
-&lt;p&gt;To make backups I’m using rsync. I use both &lt;code&gt;ionice&lt;/code&gt; and &lt;code&gt;nice&lt;/code&gt; to have our command yield both io and cpu resources to other processes, so we don’t lose system responsiveness during the backup.&lt;/p&gt;
-
-&lt;p&gt;I also use the &lt;code&gt;-vHAaxX&lt;/code&gt; switches to &lt;code&gt;rsync&lt;/code&gt;. This backups up &lt;code&gt;v&lt;/code&gt;erbosely, &lt;code&gt;H&lt;/code&gt;ard links, &lt;code&gt;A&lt;/code&gt;CLs, &lt;code&gt;a&lt;/code&gt;ll, &lt;code&gt;X&lt;/code&gt;tended attributions, and sticking to one filesystem (&lt;code&gt;-x&lt;/code&gt;). I also pass in &lt;code&gt;--delete&lt;/code&gt; to remove files from the backup drive that are no longer on my machine’s disk.&lt;/p&gt;
-
-&lt;p&gt;In addition, I also pass &lt;code&gt;--filter 'P SNAPSHOT-*&lt;/code&gt;, to tell rsync to protect any file at the destination which starts with &lt;code&gt;SNAPSHOT-&lt;/code&gt;. As we’ll see in a moment, these are my btrfs snapshots; we don’t want rsync to try and remove them.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ ionice -c3 nice rsync -vHAaxX --delete \
-    --filter 'P SNAPSHOT-*' / /mnt/backup/&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Once this is done (it can take some time), I take a read-only btrfs snapshot on my backup drive with the current date in UTC:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ btrfs subvolume snapshot -r /mnt/backup \
-    /mnt/backup/SNAPSHOT-`date -u +%Y-%m-%d`&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;One of the joys of btrfs is the top-level filesystem on my backup drive is arranged exactly the same way as the filesystem I’m backing up. In a pinch I could use it a a drop-in replacement. If a file doesn’t change between snapshots, then btrfs requires no additional storage space to store it, and with &lt;a href=&quot;https://github.com/g2p/bedup&quot; title=&quot;bedup: btrfs de-duplication&quot;&gt;bedup&lt;/a&gt; we can even de-duplicate files across filesystems and subvolumes.&lt;/p&gt;
-
-&lt;p&gt;Each snapshot is also a complete backup in its own right; I never have to worry about whether I have a base filesystem upon which to apply an incremental backup on to.&lt;/p&gt;
-
-&lt;p&gt;If you’re not using btrfs or a similar snapshotting filesystem, you might find &lt;a href=&quot;http://www.rsnapshot.org/&quot; title=&quot;rsnapshot: A remote filesystem snapshot utility, based on rsync&quot;&gt;rsnapshot&lt;/a&gt; preferable to straight rsync. It makes rolling snapshots where unchanged files are hard linked to conserve space, but looks like a complete backup each time.&lt;/p&gt;
-
-&lt;h3 id=&quot;automating_everything_with_snapback&quot;&gt;Automating everything with snapback&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;Snapback&lt;/code&gt; is some code I wrote because anything more than plugging in a USB drive to my laptop is just too much work. It uses &lt;a href=&quot;https://pushover.net/&quot; title=&quot;Pushover: Simple mobile notifications&quot;&gt;Pushover&lt;/a&gt; to send notifications to my pebble watch, so there’s no need to look through &lt;code&gt;/var/log&lt;/code&gt; to see what’s happening, and I’m immediately notified when the backup is complete.&lt;/p&gt;
-
-&lt;p&gt;It ties all the above together into a script that’s triggered from udev. Because udev kills any process that’s running too long, under the hood we fork a daemon to do the heavy lifting for us.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;Snapback&lt;/code&gt; is pretty heavily customised to work on my laptop, but you’re welcome to adapt it to your own purposes if you like.&lt;/p&gt;
-
-&lt;p&gt;You can &lt;a href=&quot;https://github.com/pjf/snapback&quot; title=&quot;Snapback: Automatically backup your machine to btrfs when a disk is plugged in (GitHub)&quot;&gt;find snapback on github&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;credits&quot;&gt;Credits&lt;/h3&gt;
-
-&lt;p&gt;Thanks to &lt;a class='social-link' href='https://twitter.com/jeremyvisser'&gt;Jeremy Visser&lt;/a&gt; for pointing out &lt;code&gt;sudo -i&lt;/code&gt; as a more comfortable way to get a root shell.&lt;/p&gt;
-
-&lt;p&gt;Thanks to &lt;a class='social-link' href='https://twitter.com/evmcl'&gt;Evan&lt;/a&gt; for reminding me of rsnapshot, and providing a &lt;a href=&quot;https://github.com/evmcl/pjf.github.io/commit/fa400560eb9aabf14b9d324b462ea58ddba3ddc4&quot;&gt;content patch&lt;/a&gt; to this article! :)&lt;/p&gt;</description>
-				<pubDate>Thu, 23 Jan 2014 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au//tech/2014/01/23/automated-backups-with-udev-and-btrfs.html</link>
-				<guid isPermaLink="true">http://pjf.id.au//tech/2014/01/23/automated-backups-with-udev-and-btrfs.html</guid>
 			</item>
 		
 

@@ -150,6 +150,106 @@
 
 
         <header>
+            <h2><a href="/advogato/2008/06/12/autodie-1-10-beta-released---it-s-fatal-2-0-.html">autodie 1.10 beta released - It's Fatal 2.0!</a></h2>
+            
+        </header>
+
+        <div class="info">
+    
+    <span class="date"> <span class="month">Jun</span>
+        <span class="day">12</span> <span
+            class="year"><span>,</span> 2008</span>
+    </span>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+
+        
+            <p>
+<b>autodie 1.10 beta released - It's Fatal 2.0!</b><br>
+After much hacking, I'm very glad to say that I've got a version of Fatal/autodie that I'm willing to foist upon the world for beta testing. It's not a release candidate, but all the important things that should work, do work (I hope).
+<p>
+For those who haven't seen my previous discussions, you can think of autodie as a Fatal 2.0.  It provides lexical scope, exception objects, and much nicer error messages.  It even lets you make system() fatal[1].
+<p>
+You can find the distribution at:
+<blockquote>
+    <a href="http://perltraining.com.au/~pjf/autodie/">http://perltraining.com.au/~pjf/autodie/</a>
+</blockquote><p>
+It's currently not on the CPAN because I don't want innocent bystanders replacing their Fatal.pm by accident.
+<p>
+Currently it only works on Perl 5.10 and above.  Support for 5.8 is on my <a href="http://github.com/pfenwick/autodie/tree/master/TODO ">TODO list</a>.
+<p>
+I'm specifically after feedback on the following points:
+<ul>
+<li>Do any tests fail on your system?
+<li>If you use the new Fatal.pm module, does any of your existing code break?  (It should be 100% backwards compatible.)
+<li>If you s/Fatal/autodie/; in your code, does it do what you expect?  Are the error messages nicer?  Are there any gotchas I've missed?
+</ul><p>
+If you really want to get your hands dirty, feel free to look at the <a href="http://github.com/pfenwick/autodie/tree/master/TODO">TODO file</a>, the <a href="http://github.com/pfenwick/autodie/tree/master/DESIGN.pod">DESIGN.pod</a> file, or the source code in general.  Suggestions and patches are very much appreciated.  If you've got a github account, I'm happy to give you commit access, or you can just fork the repository.
+<p>
+If you want to see my five minute talk about what this is about, see <a href="http://pjf.id.au/blog/?position=540">the video in my blog</a>.
+<p>
+If you want to track my repository of changes, you can find them at:
+<blockquote>
+    <a href="http://github.com/pfenwick/autodie/tree/master">http://github.com/pfenwick/autodie/tree/master</a>
+</blockquote><p>
+I also want to say a special thank-you to Aristotle, who has provided invaluable feedback while I've been working on the project.
+<p>
+Any questions, feedback, criticisms, patches, or ideas are welcome.
+<p>
+Many thanks,
+<blockquote>
+    Paul
+</blockquote>
+<p>
+[1] To fatalise system() you'll also need to install <a href="http://search.cpan.org/perldoc?IPC::System::Simple">IPC::System::Simple</a>.
+
+
+
+        
+
+        <a href="/advogato/2008/06/12/autodie-1-10-beta-released---it-s-fatal-2-0-.html">(read more...)</a>
+
+    </article>
+    <div class="clear_right"></div> <!-- Stop image overflows -->
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt">
+
+        
+
+
+        <header>
             <h2><a href="/advogato/2008/06/11/slideshare.html">Slideshare</a></h2>
             
         </header>
@@ -402,72 +502,6 @@ For those interesting in getting our tips when they come out, there's both a <a 
 
     </article>
     <div class="clear_right"></div> <!-- Stop image overflows -->
-
-
-    
-
-    
-
-    
-
-
-    
-
-    
-
-
-
-    
-
-    
-
-    <article class="is-post is-post-excerpt">
-
-        
-
-
-        <header>
-            <h2><a href="/advogato/2008/05/19/sweeperbot---play-minesweeper-automatically-.html">SweeperBot - Play MineSweeper Automatically!</a></h2>
-            
-        </header>
-
-        <div class="info">
-    
-    <span class="date"> <span class="month">May</span>
-        <span class="day">19</span> <span
-            class="year"><span>,</span> 2008</span>
-    </span>
-
-
-    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
-
-    <!--
-        <ul class="stats">
-            <li><a href="#" class="fa fa-comment">16</a></li>
-            <li><a href="#" class="fa fa-heart">32</a></li>
-            <li><a href="#" class="fa fa-twitter">64</a></li>
-            <li><a href="#" class="fa fa-facebook">128</a></li>
-        </ul>
-    -->
-</div>
-
-
-        
-
-        
-            <p><b>SweeperBot - Play MineSweeper Automatically!</b><br>
-My latest project has finally been launched.  See <a href="http://sweeperbot.org/">SweeperBot.org</a> for the latest in Windows productivity software.  Even if you don't use Windows, do watch the 50 second video on the site; it represents a whole day of my life spent poorly, and I think it's hilarious. ;)
-<p>
-For anyone wondering, yes, it's written in Perl.  It uses PAR/PP to package the whole thing up into a single Windows executable.  Yes, it plays MineSweeper acceptably well, thanks to Audrey Tang showing me the cheat codes at OSDC a few years back. ;)
-
-
-
-        
-
-        <a href="/advogato/2008/05/19/sweeperbot---play-minesweeper-automatically-.html">(read more...)</a>
-
-    </article>
-    <div class="clear_right"></div> <!-- Stop image overflows -->
     
 
 
@@ -600,6 +634,8 @@ For anyone wondering, yes, it's written in Perl.  It uses PAR/PP to package the 
 
         <ul>
         
+            <li><a href="/personal/2014/02/14/bag-trashed-by-airport-staff.html">Bag Trashed By Airport Staff</a>
+        
             <li><a href="/tech/2014/02/09/automate-your-life-with-exobrain.html">Automate Your Life With Exobrain</a>
         
             <li><a href="/personal/2014/02/07/remembering-aaron-swartz.html">Remembering Aaron Swartz</a>
@@ -617,8 +653,6 @@ For anyone wondering, yes, it's written in Perl.  It uses PAR/PP to package the 
             <li><a href="/ethics/2014/01/25/how-to-screw-learning-with-one-simple-belief.html">How to screw learning with one simple belief</a>
         
             <li><a href="/tech/2014/01/23/dont-read-articles--listen-to-them.html">Don't read articles, listen to them</a>
-        
-            <li><a href="/tech/2014/01/23/automated-backups-with-udev-and-btrfs.html">Automated backups with udev and btrfs</a>
         
         </ul>
     </section>
@@ -722,15 +756,6 @@ For anyone wondering, yes, it's written in Perl.  It uses PAR/PP to package the 
     });
 </script>
 
-
-<!--[if !(lte IE 8)]><!--> 
-<script type="text/javascript"> 
-
-    
-
-    (function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src=document.location.protocol+"//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
-</script>
-<!--<![endif]-->
 
 
 
