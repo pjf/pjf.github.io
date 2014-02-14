@@ -29,8 +29,6 @@ of changes of clothes, toiletries, pajamas, chargers, a book or two,
 and anything else I think I might need in the first couple of days after
 arrival.
 
-{% pullquote Who the hell unpairs socks? %}
- 
 But when I opened my bag upon arriving in Portland, everything in my arrival
 bag had been removed, and was strewn around my suitcase. My spare shoes
 had been removed from their plastic bag, so they could sully my other
