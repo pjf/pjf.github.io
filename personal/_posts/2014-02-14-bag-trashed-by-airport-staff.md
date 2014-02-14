@@ -5,7 +5,7 @@ that I have done many, many times before. And like many times before,
 it was clear that my checked luggage had been 'inspected'. But I'd
 never had it inspected like this."
 wide_image: /images/personal/airplane.jpg
-footer: "Airplane image by [Vox Efx](https://secure.flickr.com/photos/vox_efx/3578322709), CC-BY 2.0"
+footer: "Airplane image by [Vox Efx](https://secure.flickr.com/photos/vox_efx/3578322709), CC-BY 2.0."
 ---
 Yesterday I travelled from Melbourne to Portland (Oregon), a trip
 that I have done many, many times before. And like many times before,
@@ -24,7 +24,7 @@ But not this time.
 
 I've begun to start packing an 'arrival bag' in my checked luggage,
 which is everything I expect that I'll need once I land after
-twenty-something hours of travel with extreme jetlag. It has a couple
+twenty-something hours of travel with extreme jet-lag. It has a couple
 of changes of clothes, toiletries, pajamas, chargers, a book or two,
 and anything else I think I might need in the first couple of days after
 arrival.
@@ -33,7 +33,11 @@ But when I opened my bag upon arriving in Portland, everything in my arrival
 bag had been removed, and was strewn around my suitcase. My spare shoes
 had been removed from their plastic bag, so they could sully my other
 clothes. My books, underwear, and shirts were floating freely. My cables
-were out and tangled with things. My socks had been unpaired. *All of them*.
+were out and tangled with the rest of my possessions..
+
+My socks had been unpaired.
+
+*All of them*.
 
 Who the hell unpairs socks?
 
@@ -47,8 +51,8 @@ I'm feeling that air travel comes with an even greater violation of privacy
 than I had previously come to expect.
 
 As far as I can tell, nothing had gone missing, but to be honest I
-don't keep a manifest of my possessions when travelling. But then
+don't keep a manifest of my possessions when travelling. Then
 again I'm not usually worried about airport staff stealing things, or trashing
 the contents of my bags.
 
-Maybe I should be...
+Maybe I should be…
