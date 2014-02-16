@@ -93,6 +93,13 @@
 </script>
 
 
+    
+
+<p class="h-card hidden">
+    <img class="u-photo" src="/images/pjf_square.jpg" alt=""/>
+    <a class="p-name u-url" href="http://pjf.id.au">paul.j.fenwick</a>
+</p>
+
         <div id="wrapper">
             <div id="content">
                 <div id="content-inner">
@@ -100,11 +107,11 @@
     
 
 
-<article class="is-post">
+<article class="is-post h-entry">
     <header>
     
 
-    <h2>Automated backups with udev and btrfs</h2>
+    <h2 class="p-name">Automated backups with udev and btrfs</h2>
     
         <!-- This makes G+ bots happy -->
         <span class="byline">By Paul Fenwick</span>
@@ -119,10 +126,12 @@ to this post.)
 
     <div class="info">
     
-    <span class="date"> <span class="month">Jan</span>
-        <span class="day">23</span> <span
-            class="year"><span>,</span> 2014</span>
-    </span>
+    <a href="http://pjf.id.au/tech/2014/01/23/automated-backups-with-udev-and-btrfs.html" class="u-url nodecorate">
+        <time class="date dt-published" datetime="2014-01-23 00:00:00"> <span class="month">Jan</span>
+            <span class="day">23</span>
+            <span class="year"><span>,</span> 2014</span>
+        </time>
+    </a>
 
 
     <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
@@ -142,7 +151,8 @@ to this post.)
         <img src="/images/tech/backup-starting.jpg" alt="" />
     
 
-    <p>I’m incredibly lazy. My preferred way of making backups is to plug in an external drive, and have my laptop automatically do the rest.</p>
+    <div class="e-content">
+        <p>I’m incredibly lazy. My preferred way of making backups is to plug in an external drive, and have my laptop automatically do the rest.</p>
 
 <p>In order to facilitate this laziness, I’m going to be using two tools: btrfs (an amazing filesystem with snapshot support), and udev (which can detect when a device has been inserted or removed). I’m also going to send notifcations directly to my Pebble watch, because I can.</p>
 <!--more-->
@@ -227,6 +237,7 @@ SUBSYSTEM==&quot;block&quot;, ENV{ID_FS_LABEL}==&quot;backup&quot;, ACTION==&quo
 <p>Thanks to <a class='social-link' href='https://twitter.com/jeremyvisser'>Jeremy Visser</a> for pointing out <code>sudo -i</code> as a more comfortable way to get a root shell.</p>
 
 <p>Thanks to <a class='social-link' href='https://twitter.com/evmcl'>Evan</a> for reminding me of rsnapshot, and providing a <a href="https://github.com/evmcl/pjf.github.io/commit/fa400560eb9aabf14b9d324b462ea58ddba3ddc4">content patch</a> to this article! :)</p>
+    </div>
 
     <div class="share-container">
     <div class="share-buttons">

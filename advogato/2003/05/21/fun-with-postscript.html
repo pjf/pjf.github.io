@@ -86,6 +86,13 @@
 </script>
 
 
+    
+
+<p class="h-card hidden">
+    <img class="u-photo" src="/images/pjf_square.jpg" alt=""/>
+    <a class="p-name u-url" href="http://pjf.id.au">paul.j.fenwick</a>
+</p>
+
         <div id="wrapper">
             <div id="content">
                 <div id="content-inner">
@@ -93,11 +100,11 @@
     
 
 
-<article class="is-post">
+<article class="is-post h-entry">
     <header>
     
 
-    <h2>Fun with postscript</h2>
+    <h2 class="p-name">Fun with postscript</h2>
     
         <!-- This makes G+ bots happy -->
         <span class="byline">By Paul Fenwick</span>
@@ -112,10 +119,12 @@ to this post.)
 
     <div class="info">
     
-    <span class="date"> <span class="month">May</span>
-        <span class="day">21</span> <span
-            class="year"><span>,</span> 2003</span>
-    </span>
+    <a href="http://pjf.id.au/advogato/2003/05/21/fun-with-postscript.html" class="u-url nodecorate">
+        <time class="date dt-published" datetime="2003-05-21 11:44:47"> <span class="month">May</span>
+            <span class="day">21</span>
+            <span class="year"><span>,</span> 2003</span>
+        </time>
+    </a>
 
 
     <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
@@ -133,7 +142,8 @@ to this post.)
 
     
 
-    <B>Fun with postscript</b><BR>
+    <div class="e-content">
+        <B>Fun with postscript</b><BR>
 Had the joy of converting a CR delimited (rather than CRLF or LF) encapsulated postscript file with some weirdo proprietary colour-scheme into a flexible, compact, usable file.
 <p>
 A huge thumbs up goes to eps2eps (and it's sibling, ps2ps).  What's that, you say?  Utilities to convert postscript into postscript?  Why, I can do that using cat, and I bet it runs faster.
@@ -144,6 +154,7 @@ No, it's not that bad, really.  You grab the image in gimp and using the colour-
 <p>
 Actually, not everything is an RGB triplet.  Sometimes there are just Red/Non-Red duplets (don't ask me why), but provided that you understand that postscript is a stack-based language (where function calls come after their arguments), then it's all okay.  If you don't realise it's stack based, well, you're probably screwed from the beginning.
 
+    </div>
 
     <div class="share-container">
     <div class="share-buttons">

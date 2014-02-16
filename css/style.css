@@ -1226,3 +1226,13 @@
 			box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.075), 0px 1px 0px 0px rgba(255,255,255,0.075);
 			display: block;
 		}
+
+/* Utility classes */
+
+.nodecorate {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}

@@ -86,6 +86,13 @@
 </script>
 
 
+    
+
+<p class="h-card hidden">
+    <img class="u-photo" src="/images/pjf_square.jpg" alt=""/>
+    <a class="p-name u-url" href="http://pjf.id.au">paul.j.fenwick</a>
+</p>
+
         <div id="wrapper">
             <div id="content">
                 <div id="content-inner">
@@ -93,11 +100,11 @@
     
 
 
-<article class="is-post">
+<article class="is-post h-entry">
     <header>
     
 
-    <h2>Intruder Alert - Tracking down a rogue connection</h2>
+    <h2 class="p-name">Intruder Alert - Tracking down a rogue connection</h2>
     
         <!-- This makes G+ bots happy -->
         <span class="byline">By Paul Fenwick</span>
@@ -112,10 +119,12 @@ to this post.)
 
     <div class="info">
     
-    <span class="date"> <span class="month">Nov</span>
-        <span class="day">21</span> <span
-            class="year"><span>,</span> 2007</span>
-    </span>
+    <a href="http://pjf.id.au/advogato/2007/11/21/intruder-alert---tracking-down-a-rogue-connection.html" class="u-url nodecorate">
+        <time class="date dt-published" datetime="2007-11-21 11:39:07"> <span class="month">Nov</span>
+            <span class="day">21</span>
+            <span class="year"><span>,</span> 2007</span>
+        </time>
+    </a>
 
 
     <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
@@ -133,7 +142,8 @@ to this post.)
 
     
 
-    <p><b>Intruder Alert - Tracking down a rogue connection</b><br />
+    <div class="e-content">
+        <p><b>Intruder Alert - Tracking down a rogue connection</b><br />
 The hosts I administer look through their logfiles each hour, looking for things that are out of the ordinary, and mailing them to me.  This is where my uncanny ability to remember leap-seconds comes from; it's not because I actually <i>care</i> about things, but because I'll get an e-mail saying that a host suddenly found itself a <i>whole second</i> out of sync with some incredibly accurate clock somewhere.  Lucky me.
 <p>
 Most things <i>don't</i> end up in my log digests, because most things are boring.  The things I do see are things that I either care about, or have never seen before.
@@ -172,6 +182,7 @@ The reason it wasn't showing up when I first searched is that squid only records
 <p>
 This is good for me, since it means that the odd connections really are what I thought they would be, and not a sign of unwanted activity on one of my machines.  I'm doubly glad because it would be especially embarrassing to find a rootkit that's so badly written that it tries connecting to a completely unroutable address.
 
+    </div>
 
     <div class="share-container">
     <div class="share-buttons">

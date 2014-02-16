@@ -86,6 +86,13 @@
 </script>
 
 
+    
+
+<p class="h-card hidden">
+    <img class="u-photo" src="/images/pjf_square.jpg" alt=""/>
+    <a class="p-name u-url" href="http://pjf.id.au">paul.j.fenwick</a>
+</p>
+
         <div id="wrapper">
             <div id="content">
                 <div id="content-inner">
@@ -93,11 +100,11 @@
     
 
 
-<article class="is-post">
+<article class="is-post h-entry">
     <header>
     
 
-    <h2>autodie status update</h2>
+    <h2 class="p-name">autodie status update</h2>
     
         <!-- This makes G+ bots happy -->
         <span class="byline">By Paul Fenwick</span>
@@ -112,10 +119,12 @@ to this post.)
 
     <div class="info">
     
-    <span class="date"> <span class="month">May</span>
-        <span class="day"> 1</span> <span
-            class="year"><span>,</span> 2009</span>
-    </span>
+    <a href="http://pjf.id.au/advogato/2009/05/01/autodie-status-update.html" class="u-url nodecorate">
+        <time class="date dt-published" datetime="2009-05-01 07:33:17"> <span class="month">May</span>
+            <span class="day"> 1</span>
+            <span class="year"><span>,</span> 2009</span>
+        </time>
+    </a>
 
 
     <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
@@ -133,7 +142,8 @@ to this post.)
 
     
 
-    <p><b>autodie status update</b><br>
+    <div class="e-content">
+        <p><b>autodie status update</b><br>
 I just looked through my blog history, and discovered the last release of <a href="http://search.cpan.org/perldoc?autodie">autodie</a>, I've blogged about was version 1.99!  Since then, there's been nine releases!  For those of you new to my blog, autodie is a lexical pragma that allows Perl's built-ins to throw exceptions on failure, which can take your error-handling from cumbersome to simple.
 <p>
 There's been a lot of changes in those nine releases, and the <a href="http://github.com/pfenwick/autodie/tree/master/Changes">Changes</a> file documents all the significant ones.  There are nicer error messages, better coverage of Perl's core functions, fewer rough edges, and lots more tests.  If you're not one to go reading Changes files, I can assure you that upgrading to 1.999 is pleasant and surprise-free.
@@ -187,6 +197,7 @@ The only thing I have to do now is finish writing the code, although there's a b
 <p>
 [1]<i>Actually, on Windows, File::Copy sometimes returns an empty string to signal failure, which makes things not only wrong, but inconsistently wrong!  I've written <a href="http://www.xray.mpe.mpg.de/mailing-lists/perl5-porters/2009-04/msg00471.html">a patch for this</a>, but as I suspect I'm the only person this century to have noticed or cared, it hasn't been applied.</i>
 
+    </div>
 
     <div class="share-container">
     <div class="share-buttons">

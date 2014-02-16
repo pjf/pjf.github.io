@@ -86,6 +86,13 @@
 </script>
 
 
+    
+
+<p class="h-card hidden">
+    <img class="u-photo" src="/images/pjf_square.jpg" alt=""/>
+    <a class="p-name u-url" href="http://pjf.id.au">paul.j.fenwick</a>
+</p>
+
         <div id="wrapper">
             <div id="content">
                 <div id="content-inner">
@@ -93,11 +100,11 @@
     
 
 
-<article class="is-post">
+<article class="is-post h-entry">
     <header>
     
 
-    <h2>Use Markdown Instead Of BBCode With Vimperator</h2>
+    <h2 class="p-name">Use Markdown Instead Of BBCode With Vimperator</h2>
     
         <!-- This makes G+ bots happy -->
         <span class="byline">By Paul Fenwick</span>
@@ -112,10 +119,12 @@ to this post.)
 
     <div class="info">
     
-    <span class="date"> <span class="month">Jan</span>
-        <span class="day">16</span> <span
-            class="year"><span>,</span> 2014</span>
-    </span>
+    <a href="http://pjf.id.au/tech/2014/01/16/use-markdown-rather-than-bbcode-with-vimperator.html" class="u-url nodecorate">
+        <time class="date dt-published" datetime="2014-01-16 00:00:00"> <span class="month">Jan</span>
+            <span class="day">16</span>
+            <span class="year"><span>,</span> 2014</span>
+        </time>
+    </a>
 
 
     <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
@@ -133,7 +142,8 @@ to this post.)
 
     
 
-    <p>I really love the Dwarf Fortress community, and a lot of it is centred around the <a href="http://www.bay12forums.com/smf/index.php">bay12 forums</a>. Unfortunately, I don’t love BBCode (aka phpBB syntax), which is what the bay12 forums require me to write posts in. I’d much rather use <a href="http://daringfireball.net/projects/markdown/syntax">markdown</a>. So I decided to fix that with the help of vimperator, and by writing my own markdown to BBcode parser.</p>
+    <div class="e-content">
+        <p>I really love the Dwarf Fortress community, and a lot of it is centred around the <a href="http://www.bay12forums.com/smf/index.php">bay12 forums</a>. Unfortunately, I don’t love BBCode (aka phpBB syntax), which is what the bay12 forums require me to write posts in. I’d much rather use <a href="http://daringfireball.net/projects/markdown/syntax">markdown</a>. So I decided to fix that with the help of vimperator, and by writing my own markdown to BBcode parser.</p>
 <!--more-->
 <p>If you install the <a href="https://metacpan.org/pod/Markdown::phpBB">Markdown::phpBB</a> module from the CPAN, you’ll find a nifty little program named <code>md2phpbb</code>. This is a filter; it takes input in markdown, and emits output in BBcode.</p>
 
@@ -157,6 +167,7 @@ $ cpan  Markdown::phpBB     # install using classic cpan</code></pre>
 <p><code>md2phpbb</code> and supporting libraries are completely free and open source, and can be found on <a href="https://github.com/pjf/Markdown-phpBB">github</a>.</p>
 <hr />
 <p>See also: <a href="http://privacygeek.blogspot.com.au/2013/03/the-worlds-easiest-guide-to-installing.html">The world’s easiest guide to installing cpanm</a></p>
+    </div>
 
     <div class="share-container">
     <div class="share-buttons">

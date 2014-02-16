@@ -86,6 +86,13 @@
 </script>
 
 
+    
+
+<p class="h-card hidden">
+    <img class="u-photo" src="/images/pjf_square.jpg" alt=""/>
+    <a class="p-name u-url" href="http://pjf.id.au">paul.j.fenwick</a>
+</p>
+
         <div id="wrapper">
             <div id="content">
                 <div id="content-inner">
@@ -93,11 +100,11 @@
     
 
 
-<article class="is-post">
+<article class="is-post h-entry">
     <header>
     
 
-    <h2>Happy New Rootkit</h2>
+    <h2 class="p-name">Happy New Rootkit</h2>
     
         <!-- This makes G+ bots happy -->
         <span class="byline">By Paul Fenwick</span>
@@ -112,10 +119,12 @@ to this post.)
 
     <div class="info">
     
-    <span class="date"> <span class="month">Jan</span>
-        <span class="day"> 4</span> <span
-            class="year"><span>,</span> 2005</span>
-    </span>
+    <a href="http://pjf.id.au/advogato/2005/01/04/happy-new-rootkit.html" class="u-url nodecorate">
+        <time class="date dt-published" datetime="2005-01-04 08:16:27"> <span class="month">Jan</span>
+            <span class="day"> 4</span>
+            <span class="year"><span>,</span> 2005</span>
+        </time>
+    </a>
 
 
     <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
@@ -133,13 +142,15 @@ to this post.)
 
     
 
-    <p><b>Happy New Rootkit</b><br/>
+    <div class="e-content">
+        <p><b>Happy New Rootkit</b><br/>
 I'm back from holidays, and had intended to write about all the interesting diving I had managed to get done.
 <p>
 Unfortunately, the machine of one of our clients was compromised this afternoon, so instead I'm currently in the process of cleaning things up.  I know how the attackers got in, and I have clean backups that verify without an issue.  The main thing now is gaining physical access to the machine and the dull dull task of cleaning the disks and initiating a restore.  There's reason to believe that the kernel has been modified by a direct write to /dev/kmem, so <i>nothing</i> the machine tells me can possibly be trusted.
 <p>
 This particular compromise falls into the "What?  I didn't know we had that installed (outside of the packaging system)" category.
 
+    </div>
 
     <div class="share-container">
     <div class="share-buttons">

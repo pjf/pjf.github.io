@@ -86,6 +86,13 @@
 </script>
 
 
+    
+
+<p class="h-card hidden">
+    <img class="u-photo" src="/images/pjf_square.jpg" alt=""/>
+    <a class="p-name u-url" href="http://pjf.id.au">paul.j.fenwick</a>
+</p>
+
         <div id="wrapper">
             <div id="content">
                 <div id="content-inner">
@@ -93,11 +100,11 @@
     
 
 
-<article class="is-post">
+<article class="is-post h-entry">
     <header>
     
 
-    <h2>Reimplementing the iDoneThis Memory Service</h2>
+    <h2 class="p-name">Reimplementing the iDoneThis Memory Service</h2>
     
         <!-- This makes G+ bots happy -->
         <span class="byline">By Paul Fenwick</span>
@@ -112,10 +119,12 @@ to this post.)
 
     <div class="info">
     
-    <span class="date"> <span class="month">Feb</span>
-        <span class="day">10</span> <span
-            class="year"><span>,</span> 2013</span>
-    </span>
+    <a href="http://pjf.id.au/privacygeek/2013/02/10/reimplementing-the-idonethis-memory-service.html" class="u-url nodecorate">
+        <time class="date dt-published" datetime="2013-02-10 04:31:00"> <span class="month">Feb</span>
+            <span class="day">10</span>
+            <span class="year"><span>,</span> 2013</span>
+        </time>
+    </a>
 
 
     <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
@@ -133,7 +142,8 @@ to this post.)
 
     
 
-    <p>There’s an excellent website called <a href="http://idonethis.com/">iDoneThis.com</a> which implements the most simple yet brilliant of services. Every day, you record the list of things you’ve done, and it gives you a check-mark for that day. This was motivating in two ways: firstly, the desire to keep that chain of check-marks running (what’s known as a ‘chain calendar’ or a ‘Seinfeld calendar’), and secondly by emailing you your memories of what you were doing a year (or a week, or a month) ago.</p>
+    <div class="e-content">
+        <p>There’s an excellent website called <a href="http://idonethis.com/">iDoneThis.com</a> which implements the most simple yet brilliant of services. Every day, you record the list of things you’ve done, and it gives you a check-mark for that day. This was motivating in two ways: firstly, the desire to keep that chain of check-marks running (what’s known as a ‘chain calendar’ or a ‘Seinfeld calendar’), and secondly by emailing you your memories of what you were doing a year (or a week, or a month) ago.</p>
 
 <p>For me, knowing what I was doing a year ago was <em>really</em> good. I loved waking up each morning to be reminding of something I might otherwise not think of again. The good memories I was emailed would make me feel good again, and bad memories? Well, they’d often make me feel good that I wasn’t going through <em>that</em> anymore, or they’d be <em>insightful</em> if I was encountering similar issues now.</p>
 
@@ -183,6 +193,7 @@ Here's what you were doing on 2012-02-11:
 <p>If you’re handy with Perl, or just want to look at the code, there’s a <a href="https://github.com/pjf/idonethis-perl">github repository</a>. Patches are extremely welcome!</p>
 
 <p>Edit: As of v0.08, the <code>idone -lc</code> command is the best thing ever. It will list the things you’ve done today, and allow you to add new things by entering them on stdin. It also has less than one third of the previous dependencies.</p>
+    </div>
 
     <div class="share-container">
     <div class="share-buttons">

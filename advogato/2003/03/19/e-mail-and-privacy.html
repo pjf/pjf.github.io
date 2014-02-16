@@ -86,6 +86,13 @@
 </script>
 
 
+    
+
+<p class="h-card hidden">
+    <img class="u-photo" src="/images/pjf_square.jpg" alt=""/>
+    <a class="p-name u-url" href="http://pjf.id.au">paul.j.fenwick</a>
+</p>
+
         <div id="wrapper">
             <div id="content">
                 <div id="content-inner">
@@ -93,11 +100,11 @@
     
 
 
-<article class="is-post">
+<article class="is-post h-entry">
     <header>
     
 
-    <h2>E-mail and privacy</h2>
+    <h2 class="p-name">E-mail and privacy</h2>
     
         <!-- This makes G+ bots happy -->
         <span class="byline">By Paul Fenwick</span>
@@ -112,10 +119,12 @@ to this post.)
 
     <div class="info">
     
-    <span class="date"> <span class="month">Mar</span>
-        <span class="day">19</span> <span
-            class="year"><span>,</span> 2003</span>
-    </span>
+    <a href="http://pjf.id.au/advogato/2003/03/19/e-mail-and-privacy.html" class="u-url nodecorate">
+        <time class="date dt-published" datetime="2003-03-19 01:54:11"> <span class="month">Mar</span>
+            <span class="day">19</span>
+            <span class="year"><span>,</span> 2003</span>
+        </time>
+    </a>
 
 
     <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
@@ -133,7 +142,8 @@ to this post.)
 
     
 
-    <B>E-mail and privacy</b><BR>
+    <div class="e-content">
+        <B>E-mail and privacy</b><BR>
 I still find it incredible how many people believe that e-mail is somehow inheritantly private.  I have clients, they have PGP installed (some for many years), and they have my keys.  Yet somehow the effort of hitting the "encrypt" button is too much for them, even if the e-mail contains sensitive or confidential information.  People don't write credit card details, medical history, or other private information on postcards, yet people do the electronic equivalent every day.
 <p>
 What's even more disturbing is the number of "e-commerce" systems which are little more than a copy of formmail running on a SSL server.  The results are then dropped into a plain-text e-mail, transmitted in the clear over SMTP, stored unencrypted on a hard-drive somewhere, and then again grabbed using clear POP/IMAP (with passwords easily sniffable), and again stored on what's often a frighteningly insecure workstation or home machine.
@@ -141,6 +151,7 @@ What's even more disturbing is the number of "e-commerce" systems which are litt
 People are big on using SSL for websites, but seem completely ignorant that the same level of security needs to be used from end-to-end to make an entire process secure.  I blame much of this on the fact that Certificate Authorities (and indirectly, browser manufacturers) can make money from people purchasing signatures on their SSL certs, but nobody makes money when you generate a PGP key, or pick up your mail using APOP.
 <p>
 Unfortunately the matter of securing communications is not  a technical one, but rather a social one.  I fear that the public in general will only become aware of how insecure their communications are once someone finds a way of making money by securing them.
+    </div>
 
     <div class="share-container">
     <div class="share-buttons">
