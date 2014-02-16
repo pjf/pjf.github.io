@@ -1,0 +1,10 @@
+{% comment %}
+Currently this is not displayed at all, but is needed for microformats
+compatibility. It would also make sense to drop this into the sidebar in
+some way. Improvements welcome!
+{% endcomment %}
+
+<p class="h-card hidden">
+    <img class="u-photo" src="/images/{{ site.avatar }}" alt=""/>
+    <a class="p-name u-url" href="{{site.url}}">{{ site.name }}</a>
+</p>
