@@ -57,12 +57,12 @@ Parameters:
         {% break %}
     {% endif %}
 
-    <article class="is-post is-post-excerpt">
+    <article class="is-post is-post-excerpt h-entry">
 
         {% include attract_image.html url=post.url %}
 
         <header>
-            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <h2 class="p-name"><a href="{{ post.url }}">{{ post.title }}</a></h2>
             {% if post.byline %}
                 <span class="byline">{{ post.byline }}</span>
             {% endif %}
@@ -76,11 +76,13 @@ Parameters:
         </a>
         {% endif %}
 
-        {% if post.content contains '<!--more-->' %}
-            {{ post.content | split:'<!--more-->' | first }}
-        {% else %}
-            {{ post.excerpt }}
-        {% endif %}
+        <div class="p-summary">
+            {% if post.content contains '<!--more-->' %}
+                {{ post.content | split:'<!--more-->' | first }}
+            {% else %}
+                {{ post.excerpt }}
+            {% endif %}
+        </div>
 
         <a href="{{ post.url }}">(read more...)</a>
 
