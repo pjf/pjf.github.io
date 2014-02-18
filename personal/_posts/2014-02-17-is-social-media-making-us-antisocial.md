@@ -16,14 +16,14 @@ health.
 <!--more-->
 
 This is a long post, and it's going to help if we start with a brief
-reivew of communication over the ages, beginning with face-to-face
+review of communication over the ages, beginning with face-to-face
 interactions. These provide plenty of *non-verbal* signals, such as
 body language and vocal tone. It's often clear when interacting with
 someone if they're paying attention or distracted; if they're angry,
 joking, happy, or just bored. (Although even face-to-face, we're
 still good at [getting things wrong][hostility-bias]).
 
-At some point we learnt how to read and write, and while letters were
+At some point we learned how to read and write, and while letters were
 an important stage in our development, I'm restricting myself to looking
 at direct and instantaneous communication in this article.
 
@@ -50,8 +50,8 @@ different from what we've experienced in the past: social media.
 The dominant mode of communication with social media is the
 *undirected broadcast*, what I call "post-and-hope". You post on your
 wall, or tweet to the world, and people may respond, or they may
-not. When they do respond, the responses are more emphermeal. It's
-harder to have a personal converstaion when all six-hundred of your
+not. When they do respond, the responses are more ephemeral. It's
+harder to have a personal conversation when all six-hundred of your
 friends are watching it, or you're limited to 140 characters.
 
 Social media doesn't preclude more directed conversations,
@@ -75,7 +75,7 @@ even though I viewed that as exceptionally good for my social and intellectual
 development.
 
 While the scientific literature shows that spending time on instant
-messanger is *protective* of mental health if one is feeling socially
+messenger is *protective* of mental health if one is feeling socially
 isolated¹, studies into social media itself seem to be less clear,
 and I'm still trying to make sense of them. I've included references
 at the bottom of the article, in case you wish to do some reading
@@ -97,7 +97,7 @@ close friends to fall back on.
 
 Now, things feel different. My close friends are still my friends,
 but communicate with them less. When I do communicate,
-the conversaions are more shallow. I've noticed that's often
+the conversations are more shallow. I've noticed that's often
 *my* fault; I'm less likely to have an on-line conversation as a
 dedicated activity, and they seem to more often start as side-effects from
 other social media use, and dry up just as quickly.
@@ -113,7 +113,7 @@ people suffering from mental health issues due to that isolation.
 
 I'm sure part of the reason for these changes is the sheer number
 of people with whom I interact with on-line. If you were to go back
-a decade ago, I had *dozens* of people in my instant messanger contact
+a decade ago, I had *dozens* of people in my instant messenger contact
 list. Today, my Facebook friends number in the *hundreds*.
 
 I don't yet have enough evidence to say that this is becoming an
@@ -124,9 +124,9 @@ feeling isolated may be using social media more as a means of
 support. That's certainly something I've done in the past.
 
 What's just as concerning for me—if not more so—is that that systems like
-Facebook are inreasingly taking the choice of which stories to display on one's
+Facebook are increasingly taking the choice of which stories to display on one's
 feed out of the user's control, and are instead selecting what they
-feel will provide you with the best 'personalised feed'. That's generally
+feel will provide you with the best 'personalized feed'. That's generally
 understood to be whatever causes you to continue to interact with Facebook,
 since that means you'll view the most ads. However it opens the possibly of
 *algorithmic isolation*, simply because your important posts may not be shown to
