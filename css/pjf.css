@@ -219,3 +219,6 @@ div.pullquote {
     max-width: 50%;
 }
 
+.pullquote p {
+    font-size: 120%;
+}
