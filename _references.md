@@ -12,6 +12,7 @@
 
 # Misc
 
+[hostility-bias]: http://not-a-jerk.blogspot.com/2012/03/fighting-for-no-reasonhow-were-hard.html "Fighting for no reason, how we're hard-hired to be hostile"
 [written-kitten]: http://writtenkitten.net/ "Written? Kitten!"
 [HPMOR]: http://hpmor.com/ "Harry Potter and the Methods of Rationality"
 [fitocracy]: https://www.fitocracy.com/ "Fitocracy: The fitness social network to level up in real life"
