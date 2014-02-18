@@ -169,3 +169,17 @@ h3, h4, h5, h6 {
 .clear_right {
     clear: right;
 }
+
+div.pullquote {
+    clear: right;
+    float: right;
+    border: 1px solid #bbb;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em 0.5em 0.0em #888;
+    padding: 1em;
+    padding-bottom: 0;
+    margin-top: 2ex;
+    margin-bottom: 2ex;
+    margin-left: 2em;
+    max-width: 50%;
+}
