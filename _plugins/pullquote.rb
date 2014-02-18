@@ -16,9 +16,7 @@ module Jekyll
     end
 
     def render(context)
-      markup = "<div class=\"pullquote\"> <p> <i class=\"fa fa-quote-left fa-2x pull-left\"> </i> #{@quote} </p> </div>"
-      puts(markup)
-      markup
+      "<div class=\"pullquote\"> <p> <i class=\"fa fa-quote-left fa-2x pull-left\"> </i> #{@quote} </p> </div>"
     end
   end
 end
