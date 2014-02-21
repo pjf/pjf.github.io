@@ -90,6 +90,8 @@ module Jekyll
 
       if tag_name == 'fancybox'
         @fancybox = true
+      elsif tag_name == 'gallery'
+        @gallery = true
       end
 
     end
@@ -98,14 +100,18 @@ module Jekyll
       source = @class ? "<figure class='#{@class}'>" : "<figure>"
       if @fancybox
         source += "<a class=\"fancybox\" rel=\"group\" href=\"#{@url}\">"
-        if @alt 
-          source += "<img src=\"#{@alt}\"></a>"
-        else
-          source += "<img src=\"#{@url}\"></a>"
-        end
+      elsif @gallery
+        source += "<a class=\"fancybox fancybox_gallery\" rel=\"group\" href=\"#{@url}\">"
       else
         source += "<img src=\"#{@url}\">"
       end
+      
+      if (@fancybox || @gallery) && @alt 
+        source += "<img src=\"#{@alt}\"></a>"
+      else
+        source += "<img src=\"#{@url}\"></a>"
+      end
+
       source += "<figcaption>#{@caption}</figcaption>" if @caption
       source += "</figure>"
 
@@ -116,3 +122,4 @@ end
 
 Liquid::Template.register_tag('image',    Jekyll::ImageTag)
 Liquid::Template.register_tag('fancybox', Jekyll::ImageTag)
+Liquid::Template.register_tag('gallery', Jekyll::ImageTag)
