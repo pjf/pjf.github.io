@@ -222,3 +222,7 @@ div.pullquote {
 .pullquote p {
     font-size: 120%;
 }
+
+.wide-image {
+    padding-bottom: 2em;
+}
