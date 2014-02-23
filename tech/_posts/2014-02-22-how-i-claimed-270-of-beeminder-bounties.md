@@ -1,7 +1,8 @@
 ---
-title:
+title: "How I Claimed $270 of Beeminder Bounties"
 description: "Last Tuesday I paid Beeminder $5 because I didn't floss my teeth when I promised that I would. That evening, I was the one collecting $270 from Beeminder…"
 tags: tech, personal, beeminder, akrasia
+wide_image: /images/tech/beeminder.png
 ---
 
 Last Tuesday I paid [Beeminder][Beeminder] $5 because I didn't floss my teeth
