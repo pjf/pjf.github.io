@@ -12,6 +12,47 @@
                     
 
 			<item>
+				<title>How I Claimed $270 of Beeminder Bounties</title>
+				<description>&lt;p&gt;Last Tuesday I paid &lt;a href=&quot;https://beeminder.com&quot; title=&quot;Quantify your goals with Beeminder&quot;&gt;Beeminder&lt;/a&gt; $5 because I didn’t floss my teeth when I promised that I would. That evening, &lt;em&gt;I&lt;/em&gt; was the one collecting $270 from Beeminder…&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;In case you’re not familiar with me, I’m outstandingly lazy. I really dislike &lt;em&gt;having&lt;/em&gt; to do anything at all. I’m totally fine with &lt;em&gt;choosing&lt;/em&gt; to do things, but I push back pretty hard against the universe when something &lt;em&gt;has&lt;/em&gt; to be done. This is why I’m so big on automation, it reduces the things to have to be done by me, and allows me to practice &lt;em&gt;efficient laziness&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;But there are some things one simply can’t automate; flossing your teeth, running a business, doing one’s taxes, getting some exercise. While I might be able to write digital agents that can &lt;em&gt;assist&lt;/em&gt; me with those tasks, fundamentally they’re things that I have to do. The problem is, left to my own devices, I rarely will.&lt;/p&gt;
+
+&lt;p&gt;However, there is one time when I’ll take action, and that’s when presented with the threat of imminent failure. If you’re read WBW’s &lt;a href=&quot;http://waitbutwhy.com/2013/10/why-procrastinators-procrastinate.html&quot;&gt;excellent article on procrastination&lt;/a&gt; then you’ll understand that the panic monster is one of the few things that will get chronic procrastinators to actually move.&lt;/p&gt;
+
+&lt;p&gt;For tasks with big, looming deadlines such as &lt;a href=&quot;/talks&quot;&gt;my talks&lt;/a&gt;, there’s a very clear, and visceral threat of failure. They’re even worse than most deadlines, because they’re &lt;em&gt;public speaking&lt;/em&gt;, which is already flat out terrifying, and most of my talks are given in Australia, where everything is trying to kill you.&lt;/p&gt;
+
+&lt;p&gt;Generally, if I need to get something done, I’ll promise to present a talk on it, safe in the knowledge that the fear of public ridicule and the thought of my audience &lt;a href=&quot;http://en.wikipedia.org/wiki/Saltwater_Crocodile&quot;&gt;taking&lt;/a&gt; &lt;a href=&quot;http://en.wikipedia.org/wiki/Stone_fish&quot;&gt;me&lt;/a&gt; &lt;a href=&quot;http://en.wikipedia.org/wiki/Great_White_Shark&quot;&gt;to&lt;/a&gt; &lt;a href=&quot;http://en.wikipedia.org/wiki/Box_jellyfish&quot;&gt;the&lt;/a&gt; &lt;a href=&quot;http://en.wikipedia.org/wiki/Blue_ringed_octopus&quot;&gt;beach&lt;/a&gt; will be enough to terrify me into action.&lt;/p&gt;
+
+&lt;p&gt;Yet there’s a problem. Small things which I should be doing regularly, like flossing my teeth, or doing exercise, come with with no dramatic failure cliffs. And let’s face it, planning to live one’s life by only doing the most terrifying things at the last possible moment isn’t exactly the most optimal way to live. This is where Beeminder comes in handy.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://beeminder.com&quot; title=&quot;Quantify your goals with Beeminder&quot;&gt;Beeminder&lt;/a&gt; provides the ability to establish &lt;em&gt;commitment devices&lt;/em&gt;. In the same way that I’ll promise to give a talk on software I would &lt;em&gt;like&lt;/em&gt; to write, I can use Beeminder to promise to do something that I would &lt;em&gt;like&lt;/em&gt; to do, but which I know future me will be unlikely to achieve.&lt;/p&gt;
+
+&lt;p&gt;Beeminder is exceptionally good at taking large or ongoing tasks, and splitting them into smaller, more achievable goals. It then draws the most friggin’ nerdtastic graphs ever, with rolling averages, goal lines, predictive curves, and all sorts of goodies, so you can see just how well you’re doing. The most important of these is the ‘yellow brick road’. If you’re on that, then you’re on track.&lt;/p&gt;
+
+&lt;p&gt;So I might achieve my long-term task of good dental hygiene by having a goal to floss three times each week. Or I might turn my goal of writing a 5,000 word essay into the task of writing 250 words per day for 20 days. Beeminder makes it very easy to see if I’m achieving my goal, or if I’m at risk of falling behind. And if I over-perform (maybe by writing 1000 words one day), then Beeminder will cut me some slack.&lt;/p&gt;
+
+&lt;p&gt;However the real power of Beeminder is that you can pledge an amount of money against your goal. Promising that I’m going to floss my teeth thrice weekly may not be very motivating, but knowing that I’ll lose $5 if I don’t make my flossing deadline is enough to have me stumble into the bathroom before bed, rather than promising to myself that I will do it later. And while I can change my goals at any time, I have to do it at least a week in advance, so I can’t weasel out of something just because I don’t want to do it right now.&lt;/p&gt;
+
+&lt;p&gt;While I pay out on the occasional pledge, those amounts have been absolutely worth it. Overall I’m paying about $0.20/week for good dental health, and maybe $0.08/day to keep my inbox under control. A Beeminder pledge has also kept me attending my last 30 dance lessons, by giving me just enough of a nudge to not come up with excuses as to why I’m too busy to go, and I’ve not paid a penny to Beeminder for that goal, as I’ve never got behind in my dance lessons when I’ve promised to be there.&lt;/p&gt;
+
+&lt;p&gt;There’s a lot of cool &lt;a href=&quot;http://blog.beeminder.com/akrasia/&quot;&gt;cognitive science behind Beeminder&lt;/a&gt;, but one of the neat things is they’re &lt;em&gt;very&lt;/em&gt; committed to using their own system to ensure that important tasks like user-visible improvements, blog-posts, and general support get done. And by very committed, I mean that the Beeminder team &lt;a href=&quot;http://blog.beeminder.com/blogdog/&quot;&gt;will pay out pledges&lt;/a&gt; to users that call them out if they fall behind on one of their goals.&lt;/p&gt;
+
+&lt;p&gt;And that’s what happened last Tuesday. One of the founders of hadn’t spent enough hours on Beeminder that week, and I ended up $270 richer as a result, and that was one of the smaller pledges they have on the line.&lt;/p&gt;
+
+&lt;p&gt;Of course, being me, I don’t want to feel I &lt;em&gt;have&lt;/em&gt; to check if any bounties are payable, so I’ve &lt;a href=&quot;https://github.com/pjf/exobrain/blob/master/bin/source/beeminder-bounties&quot;&gt;written some code&lt;/a&gt; to check for me. I’ve got no qualms about being efficiently lazy when it comes to motivating others. ;)&lt;/p&gt;</description>
+				<pubDate>Sat, 22 Feb 2014 00:00:00 +1100</pubDate>
+				<link>http://pjf.id.au/tech/2014/02/22/how-i-claimed-270-of-beeminder-bounties.html</link>
+				<guid isPermaLink="true">http://pjf.id.au/tech/2014/02/22/how-i-claimed-270-of-beeminder-bounties.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>Is social media making us antisocial?</title>
 				<description>&lt;p&gt;I’ve noticed a concerning trend over the last few years, and I’m not exactly sure what to do about it. As a culture, our communication habits are changing, and the results may be terrible for our mental health.&lt;/p&gt;
 &lt;!--more--&gt;
@@ -311,42 +352,6 @@
 				<pubDate>Tue, 28 Jan 2014 00:00:00 +1100</pubDate>
 				<link>http://pjf.id.au/personal/2014/01/28/my-advice-for-today.html</link>
 				<guid isPermaLink="true">http://pjf.id.au/personal/2014/01/28/my-advice-for-today.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>How to screw learning with one simple belief</title>
-				<description>&lt;figure class='right'&gt;&lt;a class='fancybox' href='/images/ethics/praise-fail.png' rel='group'&gt;&lt;img src='/images/ethics/praise-fail.png' /&gt;&lt;/a&gt;&lt;figcaption&gt;Source: Mueller and Dweck¹&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;p&gt;This. Right here. Look at it.&lt;/p&gt;
-
-&lt;p&gt;It’s a graph showing the performance of children after they’ve been praised for their intelligence (“you must be smart”) versus their effort (“you must have put a lot of effort into that”), and then given a series of hard problems to try to solve. The kids who are taught that effort count &lt;em&gt;increase&lt;/em&gt; in the number of problems they can solve. Those who are told that they’re smart show a frightening decrease.&lt;/p&gt;
-&lt;!--more--&gt;
-&lt;p&gt;What’s the difference? Those being told that they’re smart are taught that abilities are fixed. If you’re finding a puzzle hard, then it must be because you’re not very good at that, and you should try something else. Kids taught that results are based on effort see the hard puzzles as something they can &lt;em&gt;learn&lt;/em&gt; to do, and then they do so¹.&lt;/p&gt;
-&lt;figure class='right'&gt;&lt;a class='fancybox' href='/images/ethics/praise-preference.png' rel='group'&gt;&lt;img src='/images/ethics/praise-preference.png' /&gt;&lt;/a&gt;&lt;figcaption&gt;Source: Mueller and Dweck¹&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;p&gt;This is shown really clearly in the second graph. Children are asked what type of puzzles they’d like to solve, and are given four options. The first three are pretty similar: “problems that aren’t too hard, so I don’t get many wrong,” “problems that are pretty easy, so I’ll do well,” and “problems that I’m pretty good at, so I can show that I’m smart.” However the last option is different: “problems that I’ll learn a lot from, even if I won’t look so smart.”&lt;/p&gt;
-
-&lt;p&gt;The first three options are “performance” options, they’re all about looking good, or getting things right. The last option is a “learning” option, and it values knowledge and growth over performance.&lt;/p&gt;
-
-&lt;p&gt;The second graph shows how often children selected performance options based upon the type of praise they were given. Children praised for their intelligence choose tasks which are easy and make them look good; children praised for their effort choose tasks which are hard, and which will teach them more.&lt;/p&gt;
-
-&lt;p&gt;This is important enough, but there are social ramifications as well. People with more fixed views of ability are more likely to adopt stereotypes, and are less likely to develop to higher levels of ethical reasoning than those with dynamic views of ability². And this doesn’t seem to have a damn thing to do with cognitive abilities; it’s all about outlook.&lt;/p&gt;
-
-&lt;p&gt;Do not go through life believing that you lack a talent, and do not allow others to believe that about themselves. Humans have an amazing capacity for growth; learning is hard, but it’s &lt;em&gt;definitely&lt;/em&gt; worth it.&lt;/p&gt;
-
-&lt;p&gt;~ Paul&lt;/p&gt;
-
-&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
-
-&lt;p&gt;¹ Mueller, Claudia M., and Carol S. Dweck. “Praise for Intelligence Can Undermine Children’s Motivation and Performance.” Journal of Personality and Social Psychology 75, no. 1 (1998): 33. [&lt;a href=&quot;http://www.uky.edu/~eushe2/mrg/MuellerDweck1998.pdf&quot;&gt;pdf&lt;/a&gt;]&lt;/p&gt;
-
-&lt;p&gt;² Levy, Sheri R., and Carol S. Dweck. “The Impact of Children’s Static versus Dynamic Conceptions of People on Stereotype Formation.” Child Development 70, no. 5 (1999): 1163–1180. [&lt;a href=&quot;http://www.stanford-knowledgebase.org/dept/psychology/cgi-bin/drupalm/system/files/Children%27s%20static%20vs%20dynamic%20person%20conceptions%20as%20predictors%20of%20their%20stereotype%20information.pdf&quot;&gt;pdf&lt;/a&gt;]&lt;/p&gt;</description>
-				<pubDate>Sat, 25 Jan 2014 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au/ethics/2014/01/25/how-to-screw-learning-with-one-simple-belief.html</link>
-				<guid isPermaLink="true">http://pjf.id.au/ethics/2014/01/25/how-to-screw-learning-with-one-simple-belief.html</guid>
 			</item>
 		
 
