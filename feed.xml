@@ -19,7 +19,7 @@
 
 &lt;p&gt;But there are some things one simply can’t automate; flossing your teeth, running a business, doing one’s taxes, getting some exercise. While I might be able to write digital agents that can &lt;em&gt;assist&lt;/em&gt; me with those tasks, fundamentally they’re things that I have to do. The problem is, left to my own devices, I rarely will.&lt;/p&gt;
 
-&lt;p&gt;However, there is one time when I’ll take action, and that’s when presented with the threat of imminent failure. If you’re read WBW’s &lt;a href=&quot;http://waitbutwhy.com/2013/10/why-procrastinators-procrastinate.html&quot;&gt;excellent article on procrastination&lt;/a&gt; then you’ll understand that the panic monster is one of the few things that will get chronic procrastinators to actually move.&lt;/p&gt;
+&lt;p&gt;However, there is one time when I’ll take action, and that’s when presented with the threat of imminent failure. If you’ve read WBW’s &lt;a href=&quot;http://waitbutwhy.com/2013/10/why-procrastinators-procrastinate.html&quot;&gt;excellent article on procrastination&lt;/a&gt; then you’ll understand that the panic monster is one of the few things that will get chronic procrastinators to actually move.&lt;/p&gt;
 
 &lt;p&gt;For tasks with big, looming deadlines such as &lt;a href=&quot;/talks&quot;&gt;my talks&lt;/a&gt;, there’s a very clear, and visceral threat of failure. They’re even worse than most deadlines, because they’re &lt;em&gt;public speaking&lt;/em&gt;, which is already flat out terrifying, and most of my talks are given in Australia, where everything is trying to kill you.&lt;/p&gt;
 
@@ -39,7 +39,7 @@
 
 &lt;p&gt;There’s a lot of cool &lt;a href=&quot;http://blog.beeminder.com/akrasia/&quot;&gt;cognitive science behind Beeminder&lt;/a&gt;, but one of the neat things is they’re &lt;em&gt;very&lt;/em&gt; committed to using their own system to ensure that important tasks like user-visible improvements, blog-posts, and general support get done. And by very committed, I mean that the Beeminder team &lt;a href=&quot;http://blog.beeminder.com/blogdog/&quot;&gt;will pay out pledges&lt;/a&gt; to users that call them out if they fall behind on one of their goals.&lt;/p&gt;
 
-&lt;p&gt;And that’s what happened last Tuesday. One of the founders of hadn’t spent enough hours on Beeminder that week, and I ended up $270 richer as a result, and that was one of the smaller pledges they have on the line.&lt;/p&gt;
+&lt;p&gt;And that’s what happened last Tuesday. One of the founders hadn’t spent enough hours on Beeminder that week, and I ended up $270 richer as a result, and that was one of the smaller pledges they have on the line.&lt;/p&gt;
 
 &lt;p&gt;Of course, being me, I don’t want to feel I &lt;em&gt;have&lt;/em&gt; to check if any bounties are payable, so I’ve &lt;a href=&quot;https://github.com/pjf/exobrain/blob/master/bin/source/beeminder-bounties&quot;&gt;written some code&lt;/a&gt; to check for me. I’ve got no qualms about being efficiently lazy when it comes to motivating others. ;)&lt;/p&gt;</description>
 				<pubDate>Sat, 22 Feb 2014 00:00:00 +1100</pubDate>
