@@ -12,7 +12,7 @@ from Beeminder…
 <!--more-->
 
 In case you're not familiar with me, I'm outstandingly lazy. I really
-dislike *having* to do anything at all.  I'm totally fine with
+dislike *having* to do anything at all. I'm totally fine with
 *choosing* to do things, but I push back pretty hard against the
 universe when something *has* to be done. This is why I'm so big
 on automation, it reduces the things to have to be done by me,
@@ -25,7 +25,7 @@ can *assist* me with those tasks, fundamentally they're things that
 I have to do. The problem is, left to my own devices, I rarely will.
 
 However, there is one time when I'll take action, and that's when
-presented with the threat of imminent failure. If you're read
+presented with the threat of imminent failure. If you've read
 WBW's [excellent article on procrastination](http://waitbutwhy.com/2013/10/why-procrastinators-procrastinate.html)
 then you'll understand that the panic monster is one of the few things
 that will get chronic procrastinators to actually move. 
@@ -106,7 +106,7 @@ mean that the Beeminder team
 to users that call them out if they fall behind on one of their
 goals.
 
-And that's what happened last Tuesday. One of the founders of
+And that's what happened last Tuesday. One of the founders
 hadn't spent enough hours on Beeminder that week, and I ended up
 $270 richer as a result, and that was one of the smaller
 pledges they have on the line.
