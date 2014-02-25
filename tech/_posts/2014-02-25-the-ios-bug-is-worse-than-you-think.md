@@ -11,6 +11,8 @@ In fact, if you're already logged into a website, I may even be able to steal yo
 
 Two-factor auth will mitigate some, but not *all* of the damage here. The only way to close this hole is to upgrade your vulnerable apple devices now. Please do this. Seriously.
 
+**Edit:** What am I saying? Two factor auth isn't going to help you one damn bit. If you've just typed in your account number and password to your bank, *of course* you're going to supply me with your one-time password as well, *because you think it's your bank asking for it*, and your browser isn't going to tell you otherwise. You're going to supply it even if the bank texts it to your phone; in fact, that just makes the whole thing feel *more* legitimate. So please, really, *really* upgrade. Right now.
+
 * [Gizmodo article](http://gizmodo.com/why-apples-huge-security-flaw-is-so-scary-1529041062). 
 * [Code with discussion](https://www.imperialviolet.org/2014/02/22/applebug.html)
 
