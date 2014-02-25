@@ -12,6 +12,31 @@
                     
 
 			<item>
+				<title>The iOS SSL/TLS bug is worse than you think</title>
+				<description>&lt;p&gt;Holy smokes. So having looked at the &lt;a href=&quot;https://www.imperialviolet.org/2014/02/22/applebug.html&quot;&gt;actual code&lt;/a&gt; for this, the bug in iOS / OSX is &lt;em&gt;way&lt;/em&gt; worse than described &lt;a href=&quot;http://gizmodo.com/why-apples-huge-security-flaw-is-so-scary-1529041062&quot;&gt;on gizmodo&lt;/a&gt;. The article is misleading when it says your home network is safe, it’s &lt;em&gt;not&lt;/em&gt;. If I poison your DNS queries, compromise your home router (they’re &lt;em&gt;very&lt;/em&gt; exploitable), have privileged access to the network infrastructure between you and what you’re connecting to, or all manner of other things, then I &lt;em&gt;own&lt;/em&gt; your connection, and whatever data you send across it; credit card details, bank account logins, facebook passwords, all of it. If I hijack anything that’s doing a software update, then I may potentially own your device.&lt;/p&gt;
+
+&lt;p&gt;In fact, if you’re already logged into a website, I may even be able to steal your cookies and act as you without you even needing to enter a username and password at all. Seriously, this exploit really is about as bad as it gets.&lt;/p&gt;
+
+&lt;p&gt;Two-factor auth will mitigate some, but not &lt;em&gt;all&lt;/em&gt; of the damage here. The only way to close this hole is to upgrade your vulnerable apple devices now. Please do this. Seriously.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://gizmodo.com/why-apples-huge-security-flaw-is-so-scary-1529041062&quot;&gt;Gizmodo article&lt;/a&gt;.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;https://www.imperialviolet.org/2014/02/22/applebug.html&quot;&gt;Code with discussion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;CVE-2014-1266&lt;/p&gt;</description>
+				<pubDate>Tue, 25 Feb 2014 00:00:00 +1100</pubDate>
+				<link>http://pjf.id.au/tech/2014/02/25/the-ios-bug-is-worse-than-you-think.html</link>
+				<guid isPermaLink="true">http://pjf.id.au/tech/2014/02/25/the-ios-bug-is-worse-than-you-think.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>How I Claimed $270 of Beeminder Bounties</title>
 				<description>&lt;p&gt;Last Tuesday I paid &lt;a href=&quot;https://beeminder.com&quot; title=&quot;Quantify your goals with Beeminder&quot;&gt;Beeminder&lt;/a&gt; $5 because I didn’t floss my teeth when I promised that I would. That evening, &lt;em&gt;I&lt;/em&gt; was the one collecting $270 from Beeminder…&lt;/p&gt;
 &lt;!--more--&gt;
@@ -333,25 +358,6 @@
 				<pubDate>Wed, 29 Jan 2014 00:00:00 +1100</pubDate>
 				<link>http://pjf.id.au/tech/2014/01/29/learn-everything-without-spending-time.html</link>
 				<guid isPermaLink="true">http://pjf.id.au/tech/2014/01/29/learn-everything-without-spending-time.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>Don't read social media</title>
-				<description>&lt;p&gt;My advice for you today is &lt;em&gt;don’t&lt;/em&gt; read social media. Most of it is rubbish, and there’s a good chance you’re only reading it because you’re bored. If you’re actively engaged, then fine, but if you’ve just spent the last 30 minutes listlessly flicking through posts, then stop that. Stop it right now. You’re not making yourself any happier.&lt;/p&gt;
-
-&lt;p&gt;You know how you’ve got that thing you enjoy, but which takes more time and effort? Go do that instead. I don’t care if it’s &lt;a href=&quot;http://www.gutenberg.org/&quot; title=&quot;Project Gutenberg: Over 42,000 free ebooks&quot;&gt;reading&lt;/a&gt;, or painting, or &lt;a href=&quot;http://www.codecademy.com/&quot; title=&quot;CodeAcademy: Learn to code&quot;&gt;coding&lt;/a&gt;, or &lt;a href=&quot;http://writtenkitten.net/&quot; title=&quot;Written? Kitten!&quot;&gt;writing&lt;/a&gt;, or &lt;a href=&quot;http://duolingo.com/&quot; title=&quot;Duolingo: Learn languages for free&quot;&gt;learning a language&lt;/a&gt;, or &lt;a href=&quot;https://coursera.org/&quot; title=&quot;Coursera: Take free online classes from 80+ top universities and organisations&quot;&gt;studying&lt;/a&gt;, or &lt;a href=&quot;https://www.fitocracy.com/&quot; title=&quot;Fitocracy: The fitness social network to level up in real life&quot;&gt;exercise&lt;/a&gt;, or &lt;a href=&quot;http://hpmor.com/&quot; title=&quot;Harry Potter and the Methods of Rationality&quot;&gt;whatever&lt;/a&gt;. Go do that now. If your brain is fried, then go &lt;a href=&quot;http://pjf.id.au/tech/2014/01/23/dont-read-articles--listen-to-them.html&quot; title=&quot;Don't read articles, listen to them (pjf.id.au)&quot;&gt;listen to articles&lt;/a&gt;, discover &lt;a href=&quot;https://en.wikipedia.org/wiki/Wikipedia:Spoken_articles&quot; title=&quot;Spoken Wikipedia&quot;&gt;spoken wikipedia&lt;/a&gt;, or y’know, actually sleep.&lt;/p&gt;
-
-&lt;p&gt;But please—unless you have &lt;a href=&quot;https://en.wikipedia.org/wiki/Anhedonia&quot; title=&quot;Anhedonia (Wikipedia)&quot;&gt;anhedonia&lt;/a&gt;—don’t spend your time bored and listlessly scrolling through posts on social media. There’s so much more you could be doing instead.&lt;/p&gt;
-
-&lt;p&gt;~ Paul&lt;/p&gt;</description>
-				<pubDate>Tue, 28 Jan 2014 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au/personal/2014/01/28/my-advice-for-today.html</link>
-				<guid isPermaLink="true">http://pjf.id.au/personal/2014/01/28/my-advice-for-today.html</guid>
 			</item>
 		
 
