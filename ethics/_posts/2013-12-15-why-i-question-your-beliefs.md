@@ -3,7 +3,7 @@ title: Why I question your beliefs
 alias: [ "/ethics/2013/12/15/the-ethics-of-everyday-people.html" ]
 tags: ethics truth morality longpost
 orig_post: https://www.facebook.com/paul.fenwick/posts/10151875254259611
-description: "Most people are concerned with what happens nearby, both. So many of our thoughts are about what happens in our suburb, our country, our circle of friends, our lifetimes. That's odd if we claim that we care about the welfare of others..."
+description: "Most people are concerned with what happens nearby. So many of our thoughts are about what happens in our suburb, our country, our circle of friends, our lifetimes. But that's an odd way to think if we claim that we care about the welfare of others..."
 ---
 
 Most people are concerned with what happens nearby, both geographically and
