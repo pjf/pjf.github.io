@@ -12,6 +12,47 @@
                     
 
 			<item>
+				<title>Exobrain setup is now even easier!</title>
+				<description>&lt;p&gt;Exobrain is my collection of digital minions which help me run my life. They know my goals, my location, my to-do list, and help me best plan what I’m doing, both personally and professionally. Best of all, none of my data is revealed to third parties, because I control all my agents, and all the code is open source.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;I’ve previously written about how to &lt;a href=&quot;/tech/2014/02/09/automate-your-life-with-exobrain.html&quot;&gt;automate your life with exobrain&lt;/a&gt;. Today, I’m going to talk more about how to get started with an exobrain install. I want to thank everyone who attended my talk at &lt;a href=&quot;http://confoo.ca/&quot; title=&quot;ConFoo conference&quot;&gt;Confoo.ca&lt;/a&gt; for their feedback and suggestions, and especially everyone who attended the install-fest on Friday.&lt;/p&gt;
+
+&lt;p&gt;If you’ve previously tried to get Exobrain installed, you would have known it had a &lt;em&gt;lot&lt;/em&gt; of dependencies. I’m very glad to say that we’re moving towards a system where instead of getting &lt;em&gt;everything&lt;/em&gt; with Exobrain, you now only get the parts you need.&lt;/p&gt;
+
+&lt;p&gt;Rather than one huge distribution, we now have the Exobrain &lt;em&gt;core&lt;/em&gt;, which contains the framework and supporting infrastructure, and &lt;em&gt;components&lt;/em&gt;, which allow you to hook into individual services. Installing the core still requires you to walk through the &lt;a href=&quot;https://github.com/pjf/exobrain/#installation&quot;&gt;Exobrain install guide&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Individual components now only require a couple of commands to get up and running. For example, you may install &lt;code&gt;Exobrain::Twitter&lt;/code&gt; or &lt;code&gt;Exobrain::Beeminder&lt;/code&gt; to communicate with Twitter or &lt;a href=&quot;https://beeminder.com&quot; title=&quot;Quantify your goals with Beeminder&quot;&gt;Beeminder&lt;/a&gt; respectively.&lt;/p&gt;
+
+&lt;p&gt;Components come with their own configuration code, which means there’s no more digging through &lt;code&gt;.exobrainrc&lt;/code&gt; files. Here’s how you’d get started with Beeminder:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cpanm Exobrain::Beeminder
+$ exobrain setup Beeminder&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will launch an interactive process that will walk you through obtaining an API key, and will even test to make sure it’s working. Once complete, the Beeminder services show up as their own service group:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ubic status
+
+exobrain.beeminder
+    exobrain.beeminder.source       running (pid 30359)
+    exobrain.beeminder.notify       running (pid 30378)
+    exobrain.beeminder.sink         running (pid 30389)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here we can see that the Beeminder component comes with three parts. For any component, the “source” reads from that data source and emits measurement packets onto the Exobrain bus. The “sink” reads intents from the bus, and transmits them to the external service. In the case of the Beeminder component, it also comes with a “notify” agent, which generates notifications whenever a Beeminder data-point is updated (provided we have Beeminder call-backs configured correctly).&lt;/p&gt;
+
+&lt;p&gt;Because each component is in their own status group, you can enable or disable them easily with &lt;code&gt;ubic start exobrain.beeminder&lt;/code&gt; or &lt;code&gt;ubic stop exobrain.beeminder&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Under the hood, components provide a much cleaner way of writing agents, with many components supplying roles which allow automatically handle connection and configuration to services. They also open the door to writing your own private components which can be updated inpdependently to the rest of Exobrain, or which you can distribute to others!&lt;/p&gt;</description>
+				<pubDate>Thu, 06 Mar 2014 00:00:00 +1100</pubDate>
+				<link>http://pjf.id.au/tech/2014/03/06/exobrain-setup-is-now-even-easier.html</link>
+				<guid isPermaLink="true">http://pjf.id.au/tech/2014/03/06/exobrain-setup-is-now-even-easier.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>The iOS SSL/TLS bug is worse than you think</title>
 				<description>&lt;p&gt;Holy smokes. So having looked at the &lt;a href=&quot;https://www.imperialviolet.org/2014/02/22/applebug.html&quot;&gt;actual code&lt;/a&gt; for this, the bug in iOS / OSX is &lt;em&gt;way&lt;/em&gt; worse than described &lt;a href=&quot;http://gizmodo.com/why-apples-huge-security-flaw-is-so-scary-1529041062&quot;&gt;on gizmodo&lt;/a&gt;. The article is misleading when it says your home network is safe, it’s &lt;em&gt;not&lt;/em&gt;. If I poison your DNS queries, compromise your home router (they’re &lt;em&gt;very&lt;/em&gt; exploitable), have privileged access to the network infrastructure between you and what you’re connecting to, or all manner of other things, then I &lt;em&gt;own&lt;/em&gt; your connection, and whatever data you send across it; credit card details, bank account logins, facebook passwords, all of it. If I hijack anything that’s doing a software update, then I may potentially own your device.&lt;/p&gt;
 
@@ -325,41 +366,6 @@
 				<pubDate>Thu, 30 Jan 2014 00:00:00 +1100</pubDate>
 				<link>http://pjf.id.au/ethics/2014/01/30/one-favour.html</link>
 				<guid isPermaLink="true">http://pjf.id.au/ethics/2014/01/30/one-favour.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>How to learn everything, without spending any time</title>
-				<description>&lt;p&gt;What if I told you there’s an app which runs on all your devices, is free, has strong evidence-based support for its effectiveness, and allows you to acquire large amounts of knowledge and &lt;em&gt;retain it indefinitely&lt;/em&gt;?&lt;/p&gt;
-
-&lt;p&gt;What if I told you it wasn’t even going to take any time out of your day?&lt;/p&gt;
-&lt;!--more--&gt;&lt;figure class='right'&gt;&lt;a class='fancybox' href='/images/tech/anki.png' rel='group'&gt;&lt;img src='/images/tech/anki.png' /&gt;&lt;/a&gt;&lt;figcaption&gt;Anki: It's like having cheat-codes for knowledge.&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;p&gt;There are two amazing tools which I use during those odd chunks of time. The first &lt;a href=&quot;http://pjf.id.au/tech/2014/01/23/dont-read-articles--listen-to-them.html&quot; title=&quot;Don't read articles, listen to them (pjf.id.au)&quot;&gt;reads me articles I’ve saved&lt;/a&gt;, and requires only that I have headphones. The second is &lt;a href=&quot;http://ankisrs.net/&quot; title=&quot;Anki: Powerful, intelligent flashcards&quot;&gt;Anki&lt;/a&gt;, and it’s like having cheat-codes for knowledge.&lt;/p&gt;
-
-&lt;p&gt;Anki is a flash-card system that employs &lt;a href=&quot;https://en.wikipedia.org/wiki/Spacing_effect&quot; title=&quot;Spacing Effect (Wikipedia)&quot;&gt;spaced repetition&lt;/a&gt;, which exploits our understanding of human memory to allow you to obtain a large amount of knowledge, and then &lt;em&gt;retain that knowledge indefinitely&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;We know from research that we remember things most &lt;em&gt;efficiently&lt;/em&gt; when we’re tested infrequently over a longer time span. If you’ve ever crammed for an exam, you’ve probably discovered you’ve lost that knowledge a week or two later. Anki and spaced repetition gives us &lt;em&gt;anti-cramming&lt;/em&gt;, letting you do a minimum of work to memorize information over a long period of time.&lt;/p&gt;
-
-&lt;p&gt;The working behind spaced repetition is simple. As long as you’re able to keep remembering, the time between successive tests gradually increases. New knowledge may be tested multiple times per week, but things you know really well will may come up every couple of years. The idea is to get you to recall knowledge just before you’re about to forget it.&lt;/p&gt;
-
-&lt;p&gt;Provided you practice regularly, it’s possible to learn and retain a tremendous amount of information. Regular practice sounds like it’s going to be hard, but I’ve discovered it’s actually the easiest part.&lt;/p&gt;
-
-&lt;p&gt;My day is full of odd bits of time that aren’t typically useful. Waiting for a tram, for my coffee to brew, standing in line at the airport. These chunks aren’t long enough to do much with, but they’re &lt;em&gt;perfect&lt;/em&gt; for Anki cards. Each card takes only a few seconds, and if you reach your learning goals for the day there are always options to review ahead. Because you’re recycling time that would otherwise be wasted, using Anki comes with practically no opportunity costs whatsoever!&lt;/p&gt;
-
-&lt;p&gt;The Anki phone app comes with the ability to configure notifications if you have cards due. &lt;em&gt;Switch that on&lt;/em&gt;. Simply having an icon on your toolbar provides a reminder you’ve got cards to complete, and can help act as a visual cue for whenever you open up your phone and wonder what you were meant to be doing.&lt;/p&gt;
-
-&lt;p&gt;Anki lets you make your own decks in the desktop client. I have decks for words I frequently misspell, dietary intolerances of my friends, people I’ve met, &lt;a href=&quot;https://coursera.org/&quot; title=&quot;Coursera: Take free online classes from 80+ top universities and organisations&quot;&gt;subjects I’ve learning&lt;/a&gt;, &lt;a href=&quot;http://duolingo.com/&quot; title=&quot;Duolingo: Learn languages for free&quot;&gt;languages&lt;/a&gt;, and anything else that I know I’ll easily forget. However Anki also has a rich number of &lt;a href=&quot;https://ankiweb.net/shared/decks/&quot; title=&quot;Anki Shared Decks&quot;&gt;shared decks&lt;/a&gt;. For me personally, both &lt;a href=&quot;https://ankiweb.net/shared/info/970971960&quot;&gt;cognitive biases&lt;/a&gt; and &lt;a href=&quot;https://ankiweb.net/shared/info/1530243698&quot;&gt;hiragana/katakana&lt;/a&gt; (Japanese characters) feature heavily in my learning schedule.&lt;/p&gt;
-
-&lt;p&gt;Anki has clients for Windows, Mac, Linux/BSD, iOS, and Android; as well as a mobile-friendly web interface. While the iOS client requires payment, the others are free and open source.&lt;/p&gt;
-
-&lt;p&gt;So what are you waiting for? &lt;a href=&quot;http://ankisrs.net/&quot; title=&quot;Anki: Powerful, intelligent flashcards&quot;&gt;Download Anki&lt;/a&gt; and start learning!&lt;/p&gt;</description>
-				<pubDate>Wed, 29 Jan 2014 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au/tech/2014/01/29/learn-everything-without-spending-time.html</link>
-				<guid isPermaLink="true">http://pjf.id.au/tech/2014/01/29/learn-everything-without-spending-time.html</guid>
 			</item>
 		
 
