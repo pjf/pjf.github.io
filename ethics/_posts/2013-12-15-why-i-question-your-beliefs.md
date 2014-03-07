@@ -1,12 +1,10 @@
 ---
-title: The ethics of everyday people
+title: Why I question your beliefs
+alias: [ "/ethics/2013/12/15/the-ethics-of-everyday-people.html" ]
 tags: ethics truth morality longpost
 orig_post: https://www.facebook.com/paul.fenwick/posts/10151875254259611
+description: "Most people are concerned with what happens nearby, both. So many of our thoughts are about what happens in our suburb, our country, our circle of friends, our lifetimes. That's odd if we claim that we care about the welfare of others..."
 ---
-I seem to regularly find myself horrified by the ethics of everyday people.
-That's not to say that most people are bad, but we adopt the ethics of the
-society in which we're raised, and very few people think about things in any
-other way.
 
 Most people are concerned with what happens nearby, both geographically and
 temporally. So many of our thoughts are about what happens in our suburb, our
