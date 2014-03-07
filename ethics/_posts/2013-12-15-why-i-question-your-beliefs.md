@@ -36,7 +36,7 @@ we shouldn't be so quick to dismiss projects simply because they won't come to
 fruition in our lifetimes. Nor should we dismiss a suggestion just because it
 "feels wrong". In the past, organ transplants, pacemakers, and even
 [washing your surgical instruments after performing an autopsy][semmelweis-conflict]
-"felt wrong". For many people today, the thought same-sex intercourse *still*
+"felt wrong". For many people today, the thought of same-sex intercourse *still*
 "feels wrong". The human brain is apt to *feel* disgust and unease at things
 which are ethically very *right*.
 
@@ -44,12 +44,12 @@ I would like more people to think how they can make the world—and the future�
 better place. To do that, I need them to think about—and often question—their
 own beliefs. I delight when I find someone who supports their beliefs with
 evidence, and who accepts counter-evidence that may falsify their beliefs.
-These are people who are interested in the truth; and the truth is real whether
+These are people who are interested in the truth, and the truth is real whether
 you "believe" in it or not. These are the same people with whom discussing
 ethics is a delight, since they're apt to establish a method of analysis that
 asks "what harm does this cause, and what benefits does it bring?" rather than
 to simply declare "it feels wrong" or "it feels right". These are the people
-that most often have me question and change my own beliefs, and I love them
+who most often have me question and change my own beliefs, and I love them
 dearly for it.
 
 Unfortunately, our default wiring isn't set that way, and it's not hard to see
@@ -60,17 +60,16 @@ clearly saving the lives of a hundred children is superior to saving just one,
 even if we feel deeply uncomfortable with the scenario posed.
 
 And this brings me to my problem. I would like others to think about things
-rationally; in terms of harm and benefit, in terms of what overall good can be
+rationally, in terms of harm and benefit, in terms of what overall good can be
 achieved in the world. I would like people to think about their ethical
 beliefs, and to question *why* they feel that way, and whether that's actually
 for the best.
 
 In short, I would like for people to be more *aware*.
 
-That, in itself, is a hard problem. Ignorance is not only comforting, but it's
+That, in itself, is a hard problem. Ignorance is not only comforting, it's
 strengthening. If a person believes that same-sex marriage is wrong, or that we
-should turn refugees away from our borders, or that people with different
-coloured skin are inferior, then that person is unlikely to wish to consider
+should turn refugees away from our borders, or that people with different-coloured skin are inferior, then that person is unlikely to wish to consider
 evidence. A naive attempt to present them with evidence may even cause them to
 [*strengthen* their beliefs][reactance].
 
@@ -91,7 +90,7 @@ place—but insists on doing the reverse—then I will argue to the limits of wh
 I consider ethical to try and change that.
 
 So if you find me questioning your beliefs—if you find me trying to change your
-mind—it means that I feel that you have both the intelligence to change, and
+mind—it means that I feel that you have both the intelligence to change and
 the capacity to make the world a better place if you do so. If I'm trying to
 convince you that you're wrong, then I'm most assuredly paying you a
 compliment. And if you're able to change my own beliefs in the process, then I
