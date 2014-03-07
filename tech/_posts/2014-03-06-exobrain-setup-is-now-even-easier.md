@@ -1,12 +1,17 @@
 ---
+title: Exobrain setup is now even easier!
+description: "Exobrain is my collection of digital minions which help me run my life. They know my goals, my location, my to-do list, and help me best plan what I'm doing, both personally and professionally. Best of all, none of my data is revealed to third parties, because I control all my agents, and all the code is open source."
+tags: tech exobrain perl confoo
 ---
 
 Exobrain is my collection of digital minions which help me run my life. They know
-my goals, my location, my to-do list, and help me best plan what I'm doing, but
+my goals, my location, my to-do list, and help me best plan what I'm doing, both
 personally and professionally. Best of all, none of my data is revealed to third
 parties, because I control all my agents, and all the code is open source.
 
-I've previously written about how to [automate your life with exobrain](). Today,
+<!--more-->
+
+I've previously written about how to [automate your life with exobrain](/tech/2014/02/09/automate-your-life-with-exobrain.html). Today,
 I'm going to talk more about how to get started with an exobrain install. I want to
 thank everyone who attended my talk at [Confoo.ca][Confoo] for their feedback
 and suggestions, and especially everyone who attended the install-fest on Friday.
@@ -55,5 +60,6 @@ them easily with `ubic start exobrain.beeminder` or `ubic stop exobrain.beeminde
 
 Under the hood, components provide a much cleaner way of writing agents,
 with many components supplying roles which allow automatically handle connection
-and configuration to services.
-
+and configuration to services. They also open the door to writing your own
+private components which can be updated inpdependently to the rest of Exobrain,
+or which you can distribute to others!

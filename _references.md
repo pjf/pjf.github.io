@@ -11,7 +11,7 @@
 [rsnapshot]: http://www.rsnapshot.org/ "rsnapshot: A remote filesystem snapshot utility, based on rsync"
 
 # Misc
-
+[Confoo]: http://confoo.ca/ "ConFoo conference"
 [hostility-bias]: http://not-a-jerk.blogspot.com/2012/03/fighting-for-no-reasonhow-were-hard.html "Fighting for no reason, how we're hard-hired to be hostile"
 [written-kitten]: http://writtenkitten.net/ "Written? Kitten!"
 [HPMOR]: http://hpmor.com/ "Harry Potter and the Methods of Rationality"
