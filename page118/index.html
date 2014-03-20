@@ -157,6 +157,112 @@
 
 
         <header>
+            <h2 class="p-name"><a href="/advogato/2000/06/21/finance--quote.html">Finance::Quote</a></h2>
+            
+        </header>
+
+        <div class="info">
+    
+    <a href="http://pjf.id.au/advogato/2000/06/21/finance--quote.html" class="u-url nodecorate">
+        <time class="date dt-published" datetime="2000-06-21 13:32:26"> <span class="month">Jun</span>
+            <span class="day">21</span>
+            <span class="year"><span>,</span> 2000</span>
+        </time>
+    </a>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+
+        <div class="p-summary">
+            
+                <B>Finance::Quote</b><BR>
+Had a good night of hacking, and fixed a number of items I
+had outstanding on my list of jobs.
+<P>
+One thing that had me stumped for a while was with the
+Yahoo::Europe module.  Xose had provided me with a working
+set of code which rolls all the hard parts of Yahoo lookups
+into a common base, and even squeezes out a bunch of
+complexity to boot.  However, the code Xose provided me
+with, and the code that Yahoo::Europe used, didn't make use 
+of all the data available from Yahoo.  I was pretty certain
+there wasn't much difference between the European Yahoo
+stock scripts and those from Yahoo USA, so I figured that it
+should be easy to have them both fetch the same data.
+<P>
+Unfortunately, while the idea was simple in theory, it
+proved to be a bit more of a challenge in practice.  The
+data I got back on the European stocks had field mismatches
+and data corruption.  Very odd, especially considering I was
+getting the same information fine through the webpage.
+<P>
+I eventually found the problem.  F::Q was fetching the
+information from Yahoo's French site, and the French
+apparently use commas rather than periods as their decimal
+point.  This is fine, except when exporting decimal
+information into a comma-delimited file.  Fetching the
+information from Yahoo UK fixed the problem immediately.
+<P>
+<B>Diplomacy</b><BR>
+The third game has started, and I've been watching some of
+the politics going on as the impartial arbitrator.  I'm
+having a ball watching how everyone's trying to make things
+work for them.
+<P>
+The game I'm playing in has just got very interesting. 
+Junwei got stabbed by Phil, so the next year or so should be
+very interesting.  I have to admit, Phil has guts.  He
+wasn't happy just to stab the largest power in the game, he
+also sent out an attack force against the second largest
+power as well.  It will be interesting to see how this all
+turns out.
+
+
+            
+        </div>
+
+        <a href="/advogato/2000/06/21/finance--quote.html">(read more...)</a>
+
+    </article>
+    <div class="clear_right"></div> <!-- Stop image overflows -->
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt h-entry">
+
+        
+
+
+        <header>
             <h2 class="p-name"><a href="/advogato/2000/06/20/grinding.html">Grinding</a></h2>
             
         </header>
@@ -510,130 +616,6 @@ than I want.  This is probably a good thing.
 
     </article>
     <div class="clear_right"></div> <!-- Stop image overflows -->
-
-
-    
-
-    
-
-    
-
-
-    
-
-    
-
-
-
-    
-
-    
-
-    <article class="is-post is-post-excerpt h-entry">
-
-        
-
-
-        <header>
-            <h2 class="p-name"><a href="/advogato/2000/06/13/work.html">Work</a></h2>
-            
-        </header>
-
-        <div class="info">
-    
-    <a href="http://pjf.id.au/advogato/2000/06/13/work.html" class="u-url nodecorate">
-        <time class="date dt-published" datetime="2000-06-13 09:37:22"> <span class="month">Jun</span>
-            <span class="day">13</span>
-            <span class="year"><span>,</span> 2000</span>
-        </time>
-    </a>
-
-
-    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
-
-    <!--
-        <ul class="stats">
-            <li><a href="#" class="fa fa-comment">16</a></li>
-            <li><a href="#" class="fa fa-heart">32</a></li>
-            <li><a href="#" class="fa fa-twitter">64</a></li>
-            <li><a href="#" class="fa fa-facebook">128</a></li>
-        </ul>
-    -->
-</div>
-
-
-        
-
-        <div class="p-summary">
-            
-                <B>Work</b><BR>
-Dan has returned, and with a beard no less.  As expected,
-Dan is showing himself to be a pretty busy guy, and had
-requested that we speak to him about nothing but code for
-today.  Tomorrow I get to tell Dan about all the fun things
-that have been going on while he was away.
-<P>
-I did a bit of a Dan last Friday, it seems.  When purchasing
-things for myself, I almost religiously get receipts.  When
-purchasing $100 worth of pizza on behalf of the company, I
-forget to get a receipt.  This is going to make getting the
-money back a little interesting.  Mind you, I do have a
-bunch of witnesses who can personally verify that I came
-back with a large tower of pizza which they then proceeded
-to consume, so I'm sure I can work something out.
-<P>
-The Building Committee also elected to have the meeting room
-near the dev/systems/support area called the "Daniel
-Ingvarson Memorial Lost Article Room" (DIMLAR), in memory of
-all the keys/watches/credit cards/wallets/stuff that Dan has
-lost in his travels.
-<P>
-<B>Bad debts</b><BR>
-Ghassan Matar, of Hexapods, seems to have completely
-dissapeared, along with the money that he owes me.  Luckily
-I made him pay for a large sum of the money up front, so I'm
-not much out of pocket, and most of the work I did was on
-Finance::Quote and which I would have done sooner or later
-anyway.
-<P>
-<B>House-hunting</b><BR>
-I have to admit, I really like the house that we've been
-looking at.  Jacinta checked with the council, and yes we
-can run chickens there.  I've been talking to various banks
-and other financial institutions about getting a home loan. 
-This is all very exciting, and very scary.  I'm also now
-quite aware how much money I have, how much I'm spending,
-and how much I'm saving.  Overall that stuff is looking
-pretty healthy, although stamp duty and the legal costs of
-transferring a house can be quite high.
-<P>
-<B>Diplomacy</b><BR>
-Getting very interesting.  Junwei and I are very good
-friends, which is why I've been kicking his butt out of
-neighbouring provences.  Phil and I are also good friends,
-which is why he tried to invade me last turn.  I'm also good
-friends with England, so good friends that he's letting my
-troops stay in his capital city.  Everyone's my friend.
-<P>
-<B>Finance::Quote</b><BR>
-Been doing absolutely nothing recently, which sucks.  Been
-spending all my time looking at houses, looking at home
-loans, cooking dinner, and defending France from the Italian
-hordes.
-<P>
-<B>Chickens</b><BR>
-Chickens are way cool.  If we move to Preston, I can keep
-six of them, but I'll probably start with five.  I've
-decided to call them Ben, Tara, Ian, Sofie, and Daniel.
-
-
-            
-        </div>
-
-        <a href="/advogato/2000/06/13/work.html">(read more...)</a>
-
-    </article>
-    <div class="clear_right"></div> <!-- Stop image overflows -->
     
 
 
@@ -766,6 +748,8 @@ decided to call them Ben, Tara, Ian, Sofie, and Daniel.
 
         <ul>
         
+            <li><a href="/tech/2014/03/21/why-diversity-is-hard-to-achieve.html">Why diversity in tech is so hard to achieve</a>
+        
             <li><a href="/tech/2014/03/06/exobrain-setup-is-now-even-easier.html">Exobrain setup is now even easier!</a>
         
             <li><a href="/tech/2014/02/25/the-ios-bug-is-worse-than-you-think.html">The iOS SSL/TLS bug is worse than you think</a>
@@ -783,8 +767,6 @@ decided to call them Ben, Tara, Ian, Sofie, and Daniel.
             <li><a href="/ethics/2014/02/04/tolerance-now-maximises-sharehold-value.html">Tolerance, not bigotry, now maximises shareholder value</a>
         
             <li><a href="/ethics/2014/01/31/one-thing-can-make-the-world-a-better-place.html">One Thing Can Make The World A Better Place</a>
-        
-            <li><a href="/ethics/2014/01/30/one-favour.html">I have a favour to ask.</a>
         
         </ul>
     </section>
