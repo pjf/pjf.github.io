@@ -16,7 +16,7 @@ However I am perfectly happy to comment on things that I've personally observed,
 
 <!--more-->
 
-On the 7th March (give or take a timezone) you publicly posted¹ about a conference that catered specifically to a group that is under-represented in both IT and FOSS. Since I gave OSCON 2013 closing keynote on the processes by which marginalised groups in tech remain marginalised (even when there's absolutely no hostility or ill intent) I'd normally be delighted with any post that promotes diversity and outreach.
+On the 7th March (give or take a timezone) you publicly posted¹ about a conference that catered specifically to a group that is under-represented in both IT and FOSS. Since I gave the OSCON 2013 closing keynote on the processes by which marginalised groups in tech remain marginalised (even when there's absolutely no hostility or ill intent) I'd normally be delighted with any post that promotes diversity and outreach.
 
 Unfortunately, that's not what your post was about.
 
