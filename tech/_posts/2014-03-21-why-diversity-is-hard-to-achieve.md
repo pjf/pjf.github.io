@@ -1,7 +1,7 @@
 ---
 title: Why diversity in tech is so hard to achieve
 keywords: confoo feminism diversity tech foss
-description: "Speaking at a conference *should* be about the tech. It *shouldn't* be about worrying if you're going to be harassed, belittled, shunned, stared at, made fun of, or worse. Outreach is not playing favourites; outreach is simply saying: "Hey, there's are others like you. That lack of diversity you see isn't because the people here suck, that's just a historical artefact."
+description: "Speaking at a conference *should* be about the tech. It *shouldn't* be about worrying if you're going to be harassed, belittled, shunned, stared at, made fun of, or worse. Outreach is not playing favourites; outreach is simply saying: Hey, there's are others like you. That lack of diversity you see isn't because the people here suck, that's just a historical artefact."
 ---
 
 {% fancybox right /images/tech/anna-facebook-post.png %}
@@ -34,8 +34,8 @@ Anna, I know that you want it to just be about the tech³. I want exactly the sa
 
 ---
 
-¹ https://www.facebook.com/afilina/posts/10153848420540234 . A screenshot of the public post is also attached.
+¹ A screenshot of the public post is attached.
 
-² My material was drawn from the excellent explanations by Greta Christina: http://gretachristina.typepad.com/greta_christinas_weblog/2009/09/race-sex-atheism.html
+² My material was drawn from the [excellent explanations by Greta Christina](http://gretachristina.typepad.com/greta_christinas_weblog/2009/09/race-sex-atheism.html)
 
-³ http://afilina.com/it-is-not-about-gender/
+³ Blog post: [It is not about gender.](http://afilina.com/it-is-not-about-gender/)
