@@ -157,6 +157,179 @@
 
 
         <header>
+            <h2 class="p-name"><a href="/advogato/2008/05/13/ipc-system-simple-released-cross-platform-multi-args-backticks.html">IPC::System::Simple released - Cross-platform, multi-arg backticks</a></h2>
+            
+        </header>
+
+        <div class="info">
+    
+    <a href="http://pjf.id.au/advogato/2008/05/13/ipc-system-simple-released-cross-platform-multi-args-backticks.html" class="u-url nodecorate">
+        <time class="date dt-published" datetime="2008-05-13 00:58:42"> <span class="month">May</span>
+            <span class="day">13</span>
+            <span class="year"><span>,</span> 2008</span>
+        </time>
+    </a>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+
+        <div class="p-summary">
+            
+                <p><b><a href="http://search.cpan.org/perldoc?IPC::System::Simple">IPC::System::Simple</a>
+released - Cross-platform, multi-arg backticks</b><br>
+One of my greatest itches with Perl is the difficultly in
+doing things correctly with the <tt>system()</tt> command,
+which allows one to run a process and wait for it to finish,
+and backticks (aka <tt>qx()</tt>), which allows one to run a
+process and capture its output.
+<p>
+It's not that these commands are hard to use. 
+<tt>system("mount /dev/backup")</tt> and I've got my backup
+media mounted.  <tt>my $config = qx(ipconfig)</tt> and I've
+got my Windows IP configuration.  They're dead easy to use,
+they're just a pain to tell if they <i>worked</i>.
+<p>
+After running, these commands set a special variable named
+<tt>$?</tt>, or <tt>$CHILD_ERROR</tt> if you've told perl to
+<tt>use English</tt>.  This variable is designed to be
+"friendly" to "C programmers", who are familiar with the
+return value of the <tt>wait()</tt> system call.  But who on
+earth <i>wants</i> to be familiar with the return value of
+<tt>wait()</tt>?  After teaching <i>thousands</i> of people
+Perl over the last seven years, I've only had <i>two</i>
+people admit to know what the <tt>wait()</tt> return value
+looks like, and both of them needed therapy afterwards. 
+It's a packed bit-string, and is grossly unfriendly for
+anyone to use in any language.
+<p>
+So, the usual state of affairs for many developers is they
+go through their day using <tt>system()</tt> and backticks
+and completely ignoring <tt>$?</tt>, because it's too hard.
+ Then one day a disaster happens where they discover that
+all their backups are empty, or all their files are
+corrupted, or all their furniture has been repossessed,
+because their calls to <tt>system()</tt> have been failing
+for years, but nobody noticed because <tt>$?</tt> was too
+ugly to contemplate.
+<p>
+Those developers who have been through this process, or seen
+other people's lives ruined usually try to take a little
+more care.  They recall that <tt>$?</tt> will be exactly
+zero if the process ran to completion and returned a zero
+exit status, which usually indicates success.  Their code
+becomes littered with statements like <tt>$? and die $?</tt>
+or <tt>system(...) and die $?</tt>.  That makes them feel
+warm and fuzzy until they discover it doesn't work.  Their
+command may legitimately return a range of statuses to
+indicate success, and a whole bunch of things to indicate
+failure.  Worse still, printing the contents of <tt>$?</tt>
+as an error message is worse than useless.  Nobody
+understands what the hell it means; if you did, you wouldn't
+be printing it.
+<p>
+The end result of all this is that Perl sucks at something
+it's <i>supposed</i> to be good at; namely firing off system
+commands and being awesome for system administrators.  It is
+this problem that <a href="http://search.cpan.org/perldoc?IPC::System::Simple">IPC::System::Simple</a>
+solves.
+<p>
+Put simply, if you're using <tt>IPC::System::Simple</tt>,
+you can replace all your calls to <tt>system()</tt> with
+<tt>run()</tt>, and all your calls to backticks with
+<tt>capture()</tt>, and it will all work the same way,
+except that you'll get incredibly useful messages on error.
+ Got a funny exit status?  It'll tell you what it is, and
+the command that caused it.  Killed by a signal?  You'll get
+not just the number, but its <i>name</i>, as well a whether
+it dumped core.  Passed in tainted data?  You'll get told
+what was tainted.  And it gets better.
+<p>
+Let's say that you're using <a href="http://www.samba.org/rsync/">rsync</a> to backup your
+files from an active filesystem.  It exits with 0 for good,
+and 24 for "files went missing".  On an active filesystem,
+files disappearing can be considered normal, so we'd like
+both of these to be considered 'fine'.  Anything else, we'd
+like to get told.  Can we do this with
+<tt>IPC::System::Simple</tt>?  We sure can!  Just provide
+the list of acceptable exit statuses as the first argument:
+<blockquote><tt>run( [0,24], "rsync ....")</tt></blockquote>
+<p>
+<tt>IPC::System::Simple</tt>'s <tt>run</tt> command also
+works the way that <a href="http://search.cpan.org/perldoc?perlsec">the Perl
+security pages</a> say that <tt>system()</tt> should run. 
+That is, when called with multiple arguments, it bypasses
+the shell.  Perl's regular <tt>system()</tt> when called
+with multiple arguments will go and use the shell
+<i>anyway</i> when on a Windows system, which is bad if you
+were trying to avoid shell meta-characters.
+<p>
+You can get the same shell-bypassing behaviour with
+<tt>capture()</tt>; just pass it in multiple arguments and
+you're done.  This even works under Windows, which normally
+doesn't even support shell-bypassing pipes, let alone
+checking your command's return values and formatting your
+errors afterwards.  You even get the full 16-bit Windows
+exit value made available to you, which is something
+<tt>$?</tt> and its dark terrors will never give you.
+<p>
+Best of all, installing <a href="http://search.cpan.org/perldoc?IPC::System::Simple">IPC::System::Simple</a>
+is a breeze.  It's pure perl, with <i>no</i> dependencies on
+non-core modules.  Even if you have no other way of
+installing modules, you can just copy the <tt>.pm</tt> file
+into an appropriate directory and you're done.
+<p>
+Don't put up with the tragedies and uncertain futures that
+<tt>system()</tt> and backticks can bring.  Use <a href="http://search.cpan.org/perldoc?IPC::System::Simple">IPC::System::Simple</a>
+and make handling your system interactions correctly a
+painless experience.
+
+
+
+            
+        </div>
+
+        <a href="/advogato/2008/05/13/ipc-system-simple-released-cross-platform-multi-args-backticks.html">(read more...)</a>
+
+    </article>
+    <div class="clear_right"></div> <!-- Stop image overflows -->
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt h-entry">
+
+        
+
+
+        <header>
             <h2 class="p-name"><a href="/advogato/2008/04/23/beating-up-banks---a-tale-of-success.html">Beating up banks - A tale of success</a></h2>
             
         </header>
@@ -446,78 +619,6 @@ I've got a bunch of other talks I've been meaning to put on-line for a while now
 
     </article>
     <div class="clear_right"></div> <!-- Stop image overflows -->
-
-
-    
-
-    
-
-    
-
-
-    
-
-    
-
-
-
-    
-
-    
-
-    <article class="is-post is-post-excerpt h-entry">
-
-        
-
-
-        <header>
-            <h2 class="p-name"><a href="/advogato/2008/03/09/rfc--lethal---lexical-exceptions-for-perl.html">RFC: lethal - lexical exceptions for Perl</a></h2>
-            
-        </header>
-
-        <div class="info">
-    
-    <a href="http://pjf.id.au/advogato/2008/03/09/rfc--lethal---lexical-exceptions-for-perl.html" class="u-url nodecorate">
-        <time class="date dt-published" datetime="2008-03-09 13:50:23"> <span class="month">Mar</span>
-            <span class="day"> 9</span>
-            <span class="year"><span>,</span> 2008</span>
-        </time>
-    </a>
-
-
-    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
-
-    <!--
-        <ul class="stats">
-            <li><a href="#" class="fa fa-comment">16</a></li>
-            <li><a href="#" class="fa fa-heart">32</a></li>
-            <li><a href="#" class="fa fa-twitter">64</a></li>
-            <li><a href="#" class="fa fa-facebook">128</a></li>
-        </ul>
-    -->
-</div>
-
-
-        
-
-        <div class="p-summary">
-            
-                <p><b>RFC: lethal - lexical exceptions for Perl</b><br>
-I've been scratching a long-time itch of mine, which is that while Perl allows me to use <tt><a href="http://search.cpan.org/perldoc?Fatal">Fatal</a></tt> to get subroutines and built-ins to throw exceptions on failure, such a change was always done on a package-wide, rather than lexical (block) basis.
-<p>
-However with Perl 5.10 we have the ability to fix that, and I've put together a proof-of-concept module that enables exception-throwing subroutines on a lexical basis.
-<p>
-I'm looking for input into its naming, interface, and concept in general.  Rather than filling up a blog post with it, you can <a href="http://perlmonks.org/?node_id=673060">read the node on PerlMonks</a>.
-
-
-
-            
-        </div>
-
-        <a href="/advogato/2008/03/09/rfc--lethal---lexical-exceptions-for-perl.html">(read more...)</a>
-
-    </article>
-    <div class="clear_right"></div> <!-- Stop image overflows -->
     
 
 
@@ -652,6 +753,8 @@ I'm looking for input into its naming, interface, and concept in general.  Rathe
         
             <li><a href="/personal/2014/04/14/reality-distortion-field.html">Reality distortion field</a>
         
+            <li><a href="/personal/2014/04/14/gendered-toilets-at-conferences.html">On gendered toilets at conferences</a>
+        
             <li><a href="/personal/2014/04/13/tanya-and-danjite-are-awesome.html">Tanya and Danjite are awesome</a>
         
             <li><a href="/tech/2014/03/21/why-diversity-is-hard-to-achieve.html">Why diversity in tech is so hard to achieve</a>
@@ -667,8 +770,6 @@ I'm looking for input into its naming, interface, and concept in general.  Rathe
             <li><a href="/personal/2014/02/14/bag-trashed-by-airport-staff.html">Bag Trashed By Airport Staff</a>
         
             <li><a href="/tech/2014/02/09/automate-your-life-with-exobrain.html">Automate Your Life With Exobrain</a>
-        
-            <li><a href="/personal/2014/02/07/remembering-aaron-swartz.html">Remembering Aaron Swartz</a>
         
         </ul>
     </section>
