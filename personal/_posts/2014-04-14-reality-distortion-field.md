@@ -50,7 +50,7 @@ lot of things running.
 
 While was was on TWO phones and a radio (one in the hand, one on the desk, and
 one under the shoulder) he indicated with his remaining hand that he'd like to
-see my travel documents. Because this guy who multitask like a boss.
+see my travel documents. Because this is a guy who multitasks like a boss.
 
 When the phones quietened again, he smiled at me and said: "Hey, thanks for
 being so patient. Today's been pretty busy. I've moved you onto tonight's
