@@ -10,7 +10,7 @@ I'd like to explain why.
 
 <!--more-->
 
-For the longest time, we've lived in a world where we've put people in
+For the longest time, we've lived in a world where we put people in
 boxes, and the most common of those boxes is a thing called "gender". The
 traditional thinking has been that there are two genders, and *everyone*
 fits into one or the other.
