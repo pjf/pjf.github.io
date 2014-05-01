@@ -12,6 +12,24 @@
                     
 
 			<item>
+				<title>Build Your Own Exobrain</title>
+				<description>&lt;div class='video-container'&gt;&lt;iframe height='420' src='http://www.youtube.com/embed/Zvoli4SiRxI?html5=1' width='560'&gt; &lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&lt;a href='http://www.youtube.com/watch?v=Zvoli4SiRxI'&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Online services like “If This Then That” (IFTTT) are great for automating your life. However they provide few ways for the end-user to add their own services, and not everyone is comfortable with sharing their credentials. I’ll be discussing the ‘Exobrain’ project, which allows for service integration and extension on a machine &lt;em&gt;you&lt;/em&gt; control. We’ll discuss philosophy, installation, and writing your own extensions and classifiers.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;This presentation was given at the Perth Linux Users’ Group. I am very thank for them taking the time and effort to record and encode this video.&lt;/p&gt;
+
+&lt;p&gt;You can learn more about the exobrain project &lt;a href=&quot;https://github.com/pjf/exobrain&quot;&gt;on github&lt;/a&gt;.&lt;/p&gt;</description>
+				<pubDate>Wed, 30 Apr 2014 00:00:00 +1000</pubDate>
+				<link>http://pjf.id.au/talks/2014/04/30/build-your-own-exobrain.html</link>
+				<guid isPermaLink="true">http://pjf.id.au/talks/2014/04/30/build-your-own-exobrain.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>Reality distortion field</title>
 				<description>&lt;p&gt;Sometimes I’m accused of having a “reality distortion field”, which warps the universe in such a way that it makes my life better. Today’s arrival at the airport was an amazing example of that in action.&lt;/p&gt;
 &lt;!--more--&gt;
@@ -344,67 +362,6 @@ exobrain.beeminder
 				<pubDate>Fri, 14 Feb 2014 00:00:00 +1100</pubDate>
 				<link>http://pjf.id.au/personal/2014/02/14/bag-trashed-by-airport-staff.html</link>
 				<guid isPermaLink="true">http://pjf.id.au/personal/2014/02/14/bag-trashed-by-airport-staff.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>Automate Your Life With Exobrain</title>
-				<description>&lt;p&gt;Services such as &lt;a href=&quot;https://ifttt.com/&quot;&gt;If-This-Then-That&lt;/a&gt; (IFTTT) and &lt;a href=&quot;https://zapier.com/&quot;&gt;Zapier&lt;/a&gt; make it easy to connect apps and automate tedious tasks. However they all require you trust your personal data with a third party. Enter &lt;a href=&quot;http://github.com/pjf/exobrain&quot; title=&quot;Exobrain: A collection of agents which collect, classify, and act upon data&quot;&gt;Exobrain&lt;/a&gt;.&lt;/p&gt;
-&lt;!--more--&gt;
-&lt;p&gt;Exobrain is a free and open source framework for extending everything. It’s like IFTTT and Zapier, but you don’t have to reveal your credentials to anyone.&lt;/p&gt;
-
-&lt;p&gt;At the time of writing, Exobrain directly supports the following services:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://beeminder.com&quot; title=&quot;Quantify your goals with Beeminder&quot;&gt;Beeminder&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;Email/&lt;a href=&quot;https://gmail.com/&quot;&gt;Gmail&lt;/a&gt; (via IMAP)&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=&quot;https://facebook.com/&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=&quot;https://foursquare.com/&quot;&gt;Foursquare&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=&quot;https://habitrpg.com/&quot; title=&quot;Level up your life with HabitRPG&quot;&gt;HabitRPG&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=&quot;https://idonethis.com/&quot; title=&quot;Measure your progress with iDoneThis&quot;&gt;iDoneThis&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=&quot;https://pushover.net/&quot; title=&quot;Pushover: Simple mobile notifications&quot;&gt;Pushover&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=&quot;https://rememberthemilk.com/&quot; title=&quot;RememberTheMilk task tracker&quot;&gt;RememberTheMilk&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=&quot;https://twitter.com/&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;For Beeminder users, Exobrain also supports call-backs. This means you can chain events off anything that Beeminder can measure, including &lt;a href=&quot;http://www.withings.com/en/scales/&quot;&gt;Withings&lt;/a&gt; scales, &lt;a href=&quot;http://runkeeper.com/&quot;&gt;Runkeeper&lt;/a&gt;, &lt;a href=&quot;http://www.fitbit.com/&quot;&gt;fitbit&lt;/a&gt;, &lt;a href=&quot;https://trello.com/&quot;&gt;Trello&lt;/a&gt;, &lt;a href=&quot;https://www.rescuetime.com/&quot;&gt;RescueTime&lt;/a&gt;, &lt;a href=&quot;https://github.com/&quot;&gt;github&lt;/a&gt;, &lt;a href=&quot;https://www.duolingo.com/&quot;&gt;duolingo&lt;/a&gt;, and more.&lt;/p&gt;
-
-&lt;p&gt;If you’re a quantified-selfer, you can automatically record your activities to your log. If you need some extra motivation, you can automatically gain experience points on &lt;a href=&quot;https://habitrpg.com/&quot;&gt;HabitRPG&lt;/a&gt; for achieving your goals. You can back-up all of your activity from third-party websites in real-time, or even allow people to add to your TODO list by tweeting at you with a &lt;code&gt;#todo&lt;/code&gt; tag!&lt;/p&gt;
-
-&lt;p&gt;If you own a &lt;a href=&quot;https://getpebble.com/&quot;&gt;Pebble watch&lt;/a&gt; and are a Pushover user, then you can send notifications directly to your watch.&lt;/p&gt;
-
-&lt;p&gt;You can use pre-written Exobrain actions or you can write your own. Exobrain is completely free, open source, and extensible. Because it uses a shared message bus, you can even update components on the fly, without having to restart the whole system.&lt;/p&gt;
-
-&lt;p&gt;Exobrain is written in Perl and at its core uses an extensible, language-independent, messaging format based on &lt;a href=&quot;http://zeromq.org/&quot;&gt;0MQ&lt;/a&gt; and &lt;a href=&quot;http://www.json.org/&quot;&gt;JSON&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Writing extensions for Exobrain is easy; here’s the entire code to send all tweets that mention you to your preferred notify service:&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='perl'&gt;    &lt;span class='c1'&gt;#!/usr/bin/env perl&lt;/span&gt;
-    &lt;span class='k'&gt;use&lt;/span&gt; &lt;span class='n'&gt;Exobrain&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
-
-    &lt;span class='nv'&gt;$exobrain&lt;/span&gt;&lt;span class='o'&gt;-&amp;gt;&lt;/span&gt;&lt;span class='n'&gt;watch_loop&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;
-        &lt;span class='n'&gt;class&lt;/span&gt;  &lt;span class='o'&gt;=&amp;gt;&lt;/span&gt; &lt;span class='s'&gt;&amp;#39;Measurement::Tweet&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt;
-        &lt;span class='n'&gt;filter&lt;/span&gt; &lt;span class='o'&gt;=&amp;gt;&lt;/span&gt; &lt;span class='k'&gt;sub &lt;/span&gt;&lt;span class='p'&gt;{&lt;/span&gt; &lt;span class='nv'&gt;$_&lt;/span&gt;&lt;span class='o'&gt;-&amp;gt;&lt;/span&gt;&lt;span class='n'&gt;to_me&lt;/span&gt; &lt;span class='p'&gt;},&lt;/span&gt;
-        &lt;span class='k'&gt;then&lt;/span&gt;   &lt;span class='o'&gt;=&amp;gt;&lt;/span&gt; &lt;span class='k'&gt;sub &lt;/span&gt;&lt;span class='p'&gt;{&lt;/span&gt;
-            &lt;span class='nv'&gt;$exobrain&lt;/span&gt;&lt;span class='o'&gt;-&amp;gt;&lt;/span&gt;&lt;span class='n'&gt;notify&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt; &lt;span class='nv'&gt;$_&lt;/span&gt;&lt;span class='o'&gt;-&amp;gt;&lt;/span&gt;&lt;span class='n'&gt;summary&lt;/span&gt; &lt;span class='p'&gt;);&lt;/span&gt;
-        &lt;span class='p'&gt;},&lt;/span&gt;
-    &lt;span class='p'&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Exobrain is very much a work-in-progress, and we would love your contributions and feedback. You can find &lt;a href=&quot;https://github.com/pjf/exobrain&quot;&gt;Exobrain on github&lt;/a&gt;. Contributions to our &lt;a href=&quot;https://github.com/pjf/exobrain/issues&quot;&gt;issues list&lt;/a&gt; are especially appreciated!&lt;/p&gt;</description>
-				<pubDate>Sun, 09 Feb 2014 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au/tech/2014/02/09/automate-your-life-with-exobrain.html</link>
-				<guid isPermaLink="true">http://pjf.id.au/tech/2014/02/09/automate-your-life-with-exobrain.html</guid>
 			</item>
 		
 
