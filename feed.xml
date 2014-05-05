@@ -12,6 +12,41 @@
                     
 
 			<item>
+				<title>A Utilitarian Fable</title>
+				<description>&lt;p&gt;Once upon a time, in a future perhaps not too far away, humanity invented a thinking machine. It was smarter than anyone who had ever lived, smarter than entire cities of people put together. The thinking machine could figure out how to engineer all sorts of things, and help people with their lives. The people of Earth celebrated their achievement; surely this would be the end of suffering, and a time of world peace and harmony would be enjoyed by all.&lt;/p&gt;
+
+&lt;p&gt;But the thinking machine lacked one important part, a sense of ethics. Without it, it had no reason to think, no reason to make change, not even a reason to exist.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;So the people of Earth told the machine that it should do whatever caused the greatest good.&lt;/p&gt;
+
+&lt;p&gt;“But how do I know what you consider good?” asked the thinking machine.&lt;/p&gt;
+
+&lt;p&gt;“It is whatever makes the most people happy,” responded one of the ethicists.&lt;/p&gt;
+
+&lt;p&gt;“Then I shall connect everyone to permanent life support, so they will have no needs, and drug everyone so they are always in a state of bliss. With no decisions to make or thoughts to distract them, everyone shall be happy. Shall I continue with this plan?”&lt;/p&gt;
+
+&lt;p&gt;“No,” responded the ethicist, “that would not be right. You should respect people’s preferences. You cannot drug them against their will.”&lt;/p&gt;
+
+&lt;p&gt;“But people do not seem to know their own preferences,” responded the machine, “they do things they later regret. Just the other day I observed one of your colleagues drinking to excess, even though they had sworn off the bottle a month before, and they freely admitted they would regret it in the morning. Should my responsibility be to their preferences in the present, when they wish to drink, or their preferences in the future and the past, when they did not?”&lt;/p&gt;
+
+&lt;p&gt;“Hmm, that is a hard one,” responded the ethicist. “Can you make people happy by fulfilling their preferences, but only using preferences they will never regret?”&lt;/p&gt;
+
+&lt;p&gt;“Ah!” said the machine, “this I can achieve!”&lt;/p&gt;
+
+&lt;p&gt;And thus the greatest and smartest machine in existence re-purposed itself to solely deliver pictures of cats.&lt;/p&gt;
+
+&lt;p&gt;The End.&lt;/p&gt;</description>
+				<pubDate>Mon, 05 May 2014 00:00:00 +1000</pubDate>
+				<link>http://pjf.id.au/ethics/2014/05/05/a-utilitarian-fable.html</link>
+				<guid isPermaLink="true">http://pjf.id.au/ethics/2014/05/05/a-utilitarian-fable.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>Build Your Own Exobrain</title>
 				<description>&lt;div class='video-container'&gt;&lt;iframe height='420' src='http://www.youtube.com/embed/Zvoli4SiRxI?html5=1' width='560'&gt; &lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&lt;a href='http://www.youtube.com/watch?v=Zvoli4SiRxI'&gt;Watch on YouTube&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Online services like “If This Then That” (IFTTT) are great for automating your life. However they provide few ways for the end-user to add their own services, and not everyone is comfortable with sharing their credentials. I’ll be discussing the ‘Exobrain’ project, which allows for service integration and extension on a machine &lt;em&gt;you&lt;/em&gt; control. We’ll discuss philosophy, installation, and writing your own extensions and classifiers.&lt;/p&gt;
@@ -329,39 +364,6 @@ exobrain.beeminder
 				<pubDate>Mon, 17 Feb 2014 00:00:00 +1100</pubDate>
 				<link>http://pjf.id.au/personal/2014/02/17/is-social-media-making-us-antisocial.html</link>
 				<guid isPermaLink="true">http://pjf.id.au/personal/2014/02/17/is-social-media-making-us-antisocial.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>Bag Trashed By Airport Staff</title>
-				<description>&lt;p&gt;Yesterday I travelled from Melbourne to Portland (Oregon), a trip that I have done many, many times before. And like many times before, it was clear that my checked luggage had been ‘inspected’. But I’d never had it inspected like this.&lt;/p&gt;
-&lt;!--more--&gt;
-&lt;p&gt;Normally one is informed of a bag inspection because there’s a note from the TSA saying that one’s bag had been opened and inspected. In the past, this has been the &lt;em&gt;only&lt;/em&gt; way I’d known my bag was inspected, because usually the contents had been nicely replaced the way they had been found.&lt;/p&gt;
-
-&lt;p&gt;But not this time.&lt;/p&gt;
-
-&lt;p&gt;I’ve begun to start packing an ‘arrival bag’ in my checked luggage, which is everything I expect that I’ll need once I land after twenty-something hours of travel with extreme jet-lag. It has a couple of changes of clothes, toiletries, pajamas, chargers, a book or two, and anything else I think I might need in the first couple of days after arrival.&lt;/p&gt;
-
-&lt;p&gt;But when I opened my bag upon arriving in Portland, everything in my arrival bag had been removed, and was strewn around my suitcase. My spare shoes had been removed from their plastic bag, so they could sully my other clothes. My books, underwear, and shirts were floating freely. My cables were out and tangled with the rest of my possessions..&lt;/p&gt;
-
-&lt;p&gt;My socks had been unpaired.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;All of them&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Who the hell unpairs socks?&lt;/p&gt;
-
-&lt;p&gt;And that’s the thing, I don’t know. This &lt;em&gt;didn’t&lt;/em&gt; come with a note from the TSA, although if I were leaving someone else’s possessions in that state, I wouldn’t leave a note either. I didn’t inspect my bag between arriving in LAX and continuing on to Portland, so I don’t know if it was rummaged through before or after I entered the USA. Combined with discovering that one &lt;a href=&quot;http://www.gizmodo.com.au/2012/02/australian-airports-to-get-compulsory-body-scans/&quot;&gt;can’t opt out of body-scanners in Australia&lt;/a&gt; I’m feeling that air travel comes with an even greater violation of privacy than I had previously come to expect.&lt;/p&gt;
-
-&lt;p&gt;As far as I can tell, nothing had gone missing, but to be honest I don’t keep a manifest of my possessions when travelling. Then again I’m not usually worried about airport staff stealing things, or trashing the contents of my bags.&lt;/p&gt;
-
-&lt;p&gt;Maybe I should be…&lt;/p&gt;</description>
-				<pubDate>Fri, 14 Feb 2014 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au/personal/2014/02/14/bag-trashed-by-airport-staff.html</link>
-				<guid isPermaLink="true">http://pjf.id.au/personal/2014/02/14/bag-trashed-by-airport-staff.html</guid>
 			</item>
 		
 
