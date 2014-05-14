@@ -1,6 +1,6 @@
 ---
 title: A Utilitarian Fable
-keywords: ethics utilitarianism fable story
+tags: ethics utilitarianism fable story
 orig_url: https://www.facebook.com/paul.fenwick/posts/10152150711484611
 description: "Once upon a time, in a future perhaps not too far away, humanity invented a thinking machine. It was smarter than anyone who had ever lived, smarter than entire cities of people put together. The thinking machine could figure out how to engineer all sorts of things, and help people with their lives. The people of Earth celebrated their achievement; surely this would be the end of suffering, and a time of world peace and harmony would be enjoyed by all."
 ---
