@@ -1,6 +1,6 @@
 ---
 title: Why diversity in tech is so hard to achieve
-keywords: confoo feminism diversity tech foss
+tags: confoo feminism diversity tech foss ethics
 description: "Speaking at a conference *should* be about the tech. It *shouldn't* be about worrying if you're going to be harassed, belittled, shunned, stared at, made fun of, or worse. Outreach is not playing favourites; outreach is simply saying: Hey, there's are others like you. That lack of diversity you see isn't because the people here suck, that's just a historical artefact."
 ---
 
