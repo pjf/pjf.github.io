@@ -120,7 +120,7 @@ to this post.)
     <div class="info">
     
     <a href="http://pjf.id.au/privacygeek/2013/03/23/gamify-your-command-line-with-HabitRPG.html" class="u-url nodecorate">
-        <time class="date dt-published" datetime="2013-03-23 05:22:00"> <span class="month">Mar</span>
+        <time class="date dt-published" datetime="2013-03-23 16:22:00"> <span class="month">Mar</span>
             <span class="day">23</span>
             <span class="year"><span>,</span> 2013</span>
         </time>
@@ -145,31 +145,51 @@ to this post.)
     <div class="e-content">
         <p><img src="/images/privacygeek/hrpg-screenshot.png" alt="" /></p>
 
-<p>So, you’re using <a href="http://habitrpg.com">HabitRPG</a> to gamify your life, right? You should be; what could be better than collecting XP and gold for fixing bugs and doing chores and flossing your teeth, and developing a totally kick-arse character you’d want to show off to all your friends?</p>
+<p>So, you’re using <a href="http://habitrpg.com">HabitRPG</a> to gamify your life, right?
+You should be; what could be better than collecting XP and gold for fixing bugs
+and doing chores and flossing your teeth, and developing a totally kick-arse
+character you’d want to show off to all your friends?</p>
 
 <p>Oh yeah, doing all that <em>from the command-line</em>. ;)</p>
 
-<p>So, I present to you <code><a href='https://metacpan.org/module/hrpg'>hrpg</a></code>, a command-line tool to integrate with HabitRPG. It’s still new, but it’s very full featured.</p>
+<p>So, I present to you <code>[hrpg](https://metacpan.org/module/hrpg)</code>, a command-line
+tool to integrate with HabitRPG. It’s still new, but it’s very full
+featured.</p>
+
 <!--more-->
+
 <h2 id="setup">Setup</h2>
 
-<p>To begin with, you’ll need a HabitRPG account. Just head over to <a href="http://habitrpg.com/">HabitRPG</a> and make an account using whatever method you like. If you’ve already got a HabitRPG account, that’s excellent!</p>
+<p>To begin with, you’ll need a HabitRPG account. Just head over to
+<a href="http://habitrpg.com/">HabitRPG</a> and make an account using whatever method you like. If
+you’ve already got a HabitRPG account, that’s excellent!</p>
 
-<p>You’ll also need to install <a href="https://metacpan.org/module/WebService::HabitRPG">WebService::HabitRPG</a> which the <code>hrpg</code> client is bundled with. The easiest way to do this is with <a href="http://cpanmin.us">cpanm</a>. If you don’t have <code>cpanm</code> installed, I have a <a href="http://privacygeek.blogspot.com.au/2013/03/the-worlds-easiest-guide-to-installing.html">super-easy guide for you</a>.</p>
+<p>You’ll also need to install
+<a href="https://metacpan.org/module/WebService::HabitRPG">WebService::HabitRPG</a>
+which the <code>hrpg</code> client is bundled with. The easiest way to do this is with
+<a href="http://cpanmin.us">cpanm</a>. If you don’t have <code>cpanm</code> installed, I have a
+<a href="http://privacygeek.blogspot.com.au/2013/03/the-worlds-easiest-guide-to-installing.html">super-easy guide for
+you</a>.</p>
 
-<pre><code>cpanm WebService::HabitRPG</code></pre>
+<pre><code>cpanm WebService::HabitRPG
+</code></pre>
 
-<p>On HabitRPG, head over to Settings, and navigate to the API tab. There’ll be a user-id and an API-key here. Use your favourite editor to open a <code>.habitrpgrc</code> file in your home directory with the following format:</p>
+<p>On HabitRPG, head over to Settings, and navigate to the API tab. There’ll be a
+user-id and an API-key here. Use your favourite editor to open a
+<code>.habitrpgrc</code> file in your home directory with the following format:</p>
 
 <pre><code>[auth]
 user_id   = xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-api_token = xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&lt;/pre&gt;</code></pre>
+api_token = xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&lt;/pre&gt;
+</code></pre>
 
-<p>Replace the long strings of ‘x’s with your user id and API token from the HabitRPG website, and we’re ready to go!</p>
+<p>Replace the long strings of ‘x’s with your user id and API token from the
+HabitRPG website, and we’re ready to go!</p>
 
-<h3 id="using_hrpg">Using hrpg</h3>
+<h3 id="using-hrpg">Using hrpg</h3>
 
-<p>The easiest way to get started with hrpg is to run it with no arguments. This will provide you with a help display:</p>
+<p>The easiest way to get started with hrpg is to run it with no arguments. This
+will provide you with a help display:</p>
 
 <pre><code>$ hrpg
 
@@ -184,9 +204,11 @@ hrpg [+-] task               : Increment/decrement a task or habit
 Debugging commands:
 
 hrpg dump                    : Dump entire user info
-hrpg dump tasks              : Dump task info</code></pre>
+hrpg dump tasks              : Dump task info
+</code></pre>
 
-<p>Most of these commands are pretty straightforward. For example, if I type hrpg status I’ll get some basic info about my character:</p>
+<p>Most of these commands are pretty straightforward. For example, if I type hrpg
+status I’ll get some basic info about my character:</p>
 
 <pre><code>$ hrpg status
 
@@ -194,36 +216,58 @@ Hark, Paul Fenwick! (Lv 3)
 
 HP: 45.7 / 50
 XP: 25 / 170
-GP: 30 | SP: 54 | CP: 18</code></pre>
+GP: 30 | SP: 54 | CP: 18
+</code></pre>
 
-<p>However there are a few things which require a little more explanation, and will make your HabitRPG experience much nicer! Firstly, let’s find out how to make a task:</p>
+<p>However there are a few things which require a little more explanation, and
+will make your HabitRPG experience much nicer! Firstly, let’s find out
+how to make a task:</p>
 
 <pre><code>$ hrpg new
 
-Usage: hrpg new [habit|todo|daily] +- &quot;name&quot; [&quot;note&quot;]</code></pre>
+Usage: hrpg new [habit|todo|daily] +- "name" ["note"]
+</code></pre>
 
-<p>There are three different tasks we can make. Daily tasks are things we want to do every day, like brush our teeth, practice our anki cards, or fill in our idonethis log. They give us XP and coins when we complete them, and will damage our HP if we neglect them.</p>
+<p>There are three different tasks we can make. Daily tasks are things we want to
+do every day, like brush our teeth, practice our anki cards, or fill in our
+idonethis log. They give us XP and coins when we complete them, and will
+damage our HP if we neglect them.</p>
 
-<p>Todo items are things which need to be done, but only once. Something like paying a bill, or booking a flight.</p>
+<p>Todo items are things which need to be done, but only once. Something like
+paying a bill, or booking a flight.</p>
 
-<p>Habits are things which we want to get into—or out of—the habit of doing. For example, we might want to get penalised whenever we eat junk food or smoke a cigarette, or rewarded whenever we exercise or respond to a client email. Habits can be triggered multiple times per day.</p>
+<p>Habits are things which we want to get into—or out of—the habit of doing. For
+example, we might want to get penalised whenever we eat junk food or smoke a
+cigarette, or rewarded whenever we exercise or respond to a client email.
+Habits can be triggered multiple times per day.</p>
 
-<p>The <code>+</code> and <code>-</code> modifiers tell HabitRPG if something is good, bad, or potentially both. For example, you might have a ‘pomodoro’ habit which rewards you for working solidly for a period of time, or penalises you if you get distracted when you’re supposed to be working solidly.</p>
+<p>The <code>+</code> and <code>-</code> modifiers tell HabitRPG if something is good, bad, or
+potentially both. For example, you might have a ‘pomodoro’ habit which rewards
+you for working solidly for a period of time, or penalises you if you get
+distracted when you’re supposed to be working solidly.</p>
 
-<p>Finally, all tasks need a name. This is what shows up in the web interface, but most importantly for us any unique abbreviation of this name is how we’ll refer to our tasks in hrpg.</p>
+<p>Finally, all tasks need a name. This is what shows up in the web interface, but
+most importantly for us any unique abbreviation of this name is how we’ll refer
+to our tasks in hrpg.</p>
 
-<p>Notes are entirely optional, and will show up as tool-tips in the web interface if you use it.</p>
+<p>Notes are entirely optional, and will show up as tool-tips in the web interface
+if you use it.</p>
 
-<p>So, let’s make a few tasks. We’ll have one that rewards us for drinking water, and penalises us for drinking unhealthy drinks. We’ll have another one for responding to email (something I personally suck at), and another daily goal to floss our teeth.</p>
+<p>So, let’s make a few tasks. We’ll have one that rewards us for drinking water,
+and penalises us for drinking unhealthy drinks. We’ll have another one for
+responding to email (something I personally suck at), and another daily goal to
+floss our teeth.</p>
 
-<pre><code>hrpg new habit +- &quot;Drink healthily&quot;
-hrpg new habit + &quot;Respond to email&quot;
-hrpg new daily + &quot;Floss teeth&quot;</code></pre>
+<pre><code>hrpg new habit +- "Drink healthily"
+hrpg new habit + "Respond to email"
+hrpg new daily + "Floss teeth"
+</code></pre>
 
 <p>Once we’ve set up tasks, we can tell HabitRPG that we’ve completed them. For example, if we drank a refreshing but unhealthy drink, and then flossed our teeth, we could use:</p>
 
 <pre><code>$ hrpg - drink
-$ hrpg + floss</code></pre>
+$ hrpg + floss
+</code></pre>
 
 <p>Note that any unique abbreviation of our task name is acceptable. If we try an abbreviation that isn’t unique, hrpg will provide us with a list of options, along with their unique task IDs:</p>
 
@@ -232,17 +276,29 @@ $ hrpg + floss</code></pre>
 Did you mean...
 
 * Pomodoro of paid work (12fb2922-74be-45d3-b9ed-11e2fa1721c9)
-* Pomodoro of anything useful (424e327c-9738-4743-ac74-b9f5c528b555)</code></pre>
+* Pomodoro of anything useful (424e327c-9738-4743-ac74-b9f5c528b555)
+</code></pre>
 
-<p>As an added bonus, if you’re already a user for the <a href="http://pjf.id.au/privacygeek/2013/02/10/reimplementing-the-idonethis-memory-service.html">idone command line client</a> for <a href="http://idonethis.com/">http://idonethis.com/</a>, then you can mark a habit as done, and record a note in idonethis <em>at the same time</em>:</p>
+<p>As an added bonus, if you’re already a user for the <a href="http://pjf.id.au/privacygeek/2013/02/10/reimplementing-the-idonethis-memory-service.html">idone command line
+client</a>
+for <a href="http://idonethis.com/">http://idonethis.com/</a>, then you can mark a habit as done, and record a note in
+idonethis <em>at the same time</em>:</p>
 
-<pre><code>hrpg + email &quot;Sent quote on flux capacitors to Dr Brown&quot;</code></pre>
+<pre><code>hrpg + email "Sent quote on flux capacitors to Dr Brown"
+</code></pre>
 
-<p>In the future, if HabitRPG supports logging tasks with notes, these will also be appended to your HabitRPG log.</p>
+<p>In the future, if HabitRPG supports logging tasks with notes, these will also
+be appended to your HabitRPG log.</p>
 
-<h2 id="under_the_hood">Under the hood</h2>
+<h2 id="under-the-hood">Under the hood</h2>
 
-<p>hrpg sits on top of the <a href="https://metacpan.org/module/WebService::HabitRPG">WebService::HabitRPG</a> module for <a href="http://perl.org">Perl</a>. If you’re interested in reporting bugs, suggesting features, improving the docs, or even contributing code yourself, you can find the <a href="https://github.com/pjf/WebService-HabitRPG">repository on github</a>.</p>
+<p>hrpg sits on top of the
+<a href="https://metacpan.org/module/WebService::HabitRPG">WebService::HabitRPG</a> module
+for <a href="http://perl.org">Perl</a>. If you’re interested in reporting bugs, suggesting
+features, improving the docs, or even contributing code yourself, you can find
+the <a href="https://github.com/pjf/WebService-HabitRPG">repository on github</a>.</p>
+
+
     </div>
 
     <div class="share-container">
@@ -436,6 +492,8 @@ else
 
         <ul>
         
+            <li><a href="/personal/2014/05/27/on-privilege.html">On privilege</a>
+        
             <li><a href="/ethics/2014/05/05/a-utilitarian-fable.html">A Utilitarian Fable</a>
         
             <li><a href="/talks/2014/04/30/build-your-own-exobrain.html">Build Your Own Exobrain</a>
@@ -453,8 +511,6 @@ else
             <li><a href="/tech/2014/02/25/the-ios-bug-is-worse-than-you-think.html">The iOS SSL/TLS bug is worse than you think</a>
         
             <li><a href="/tech/2014/02/22/how-i-claimed-270-of-beeminder-bounties.html">How I Claimed $270 of Beeminder Bounties</a>
-        
-            <li><a href="/personal/2014/02/17/is-social-media-making-us-antisocial.html">Is social media making us antisocial?</a>
         
         </ul>
     </section>

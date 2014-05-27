@@ -150,35 +150,69 @@ to this post.)
     
 
     <div class="e-content">
-        <p>Exobrain is my collection of digital minions which help me run my life. They know my goals, my location, my to-do list, and help me best plan what I’m doing, both personally and professionally. Best of all, none of my data is revealed to third parties, because I control all my agents, and all the code is open source.</p>
+        <p>Exobrain is my collection of digital minions which help me run my life. They know
+my goals, my location, my to-do list, and help me best plan what I’m doing, both
+personally and professionally. Best of all, none of my data is revealed to third
+parties, because I control all my agents, and all the code is open source.</p>
+
 <!--more-->
-<p>I’ve previously written about how to <a href="/tech/2014/02/09/automate-your-life-with-exobrain.html">automate your life with exobrain</a>. Today, I’m going to talk more about how to get started with an exobrain install. I want to thank everyone who attended my talk at <a href="http://confoo.ca/" title="ConFoo conference">Confoo.ca</a> for their feedback and suggestions, and especially everyone who attended the install-fest on Friday.</p>
 
-<p>If you’ve previously tried to get Exobrain installed, you would have known it had a <em>lot</em> of dependencies. I’m very glad to say that we’re moving towards a system where instead of getting <em>everything</em> with Exobrain, you now only get the parts you need.</p>
+<p>I’ve previously written about how to <a href="/tech/2014/02/09/automate-your-life-with-exobrain.html">automate your life with exobrain</a>. Today,
+I’m going to talk more about how to get started with an exobrain install. I want to
+thank everyone who attended my talk at <a href="http://confoo.ca/" title="ConFoo conference">Confoo.ca</a> for their feedback
+and suggestions, and especially everyone who attended the install-fest on Friday.</p>
 
-<p>Rather than one huge distribution, we now have the Exobrain <em>core</em>, which contains the framework and supporting infrastructure, and <em>components</em>, which allow you to hook into individual services. Installing the core still requires you to walk through the <a href="https://github.com/pjf/exobrain/#installation">Exobrain install guide</a>.</p>
+<p>If you’ve previously tried to get Exobrain installed, you would have known it had
+a <em>lot</em> of dependencies. I’m very glad to say that we’re moving towards a system
+where instead of getting <em>everything</em> with Exobrain, you now only get the parts
+you need.</p>
 
-<p>Individual components now only require a couple of commands to get up and running. For example, you may install <code>Exobrain::Twitter</code> or <code>Exobrain::Beeminder</code> to communicate with Twitter or <a href="https://beeminder.com" title="Quantify your goals with Beeminder">Beeminder</a> respectively.</p>
+<p>Rather than one huge distribution, we now have the Exobrain <em>core</em>, which contains
+the framework and supporting infrastructure, and <em>components</em>, which allow you to
+hook into individual services. Installing the core still requires you to walk
+through the <a href="https://github.com/pjf/exobrain/#installation">Exobrain install guide</a>.</p>
 
-<p>Components come with their own configuration code, which means there’s no more digging through <code>.exobrainrc</code> files. Here’s how you’d get started with Beeminder:</p>
+<p>Individual components now only require a couple of commands to get up and running.
+For example, you may install <code>Exobrain::Twitter</code> or <code>Exobrain::Beeminder</code> to
+communicate with Twitter or <a href="https://beeminder.com" title="Quantify your goals with Beeminder">Beeminder</a> respectively.</p>
+
+<p>Components come with their own configuration code, which means there’s no more
+digging through <code>.exobrainrc</code> files. Here’s how you’d get started with Beeminder:</p>
 
 <pre><code>$ cpanm Exobrain::Beeminder
-$ exobrain setup Beeminder</code></pre>
+$ exobrain setup Beeminder
+</code></pre>
 
-<p>This will launch an interactive process that will walk you through obtaining an API key, and will even test to make sure it’s working. Once complete, the Beeminder services show up as their own service group:</p>
+<p>This will launch an interactive process that will walk you through obtaining an
+API key, and will even test to make sure it’s working. Once complete, the Beeminder
+services show up as their own service group:</p>
 
 <pre><code>$ ubic status
 
 exobrain.beeminder
     exobrain.beeminder.source       running (pid 30359)
     exobrain.beeminder.notify       running (pid 30378)
-    exobrain.beeminder.sink         running (pid 30389)</code></pre>
+    exobrain.beeminder.sink         running (pid 30389)
+</code></pre>
 
-<p>Here we can see that the Beeminder component comes with three parts. For any component, the “source” reads from that data source and emits measurement packets onto the Exobrain bus. The “sink” reads intents from the bus, and transmits them to the external service. In the case of the Beeminder component, it also comes with a “notify” agent, which generates notifications whenever a Beeminder data-point is updated (provided we have Beeminder call-backs configured correctly).</p>
+<p>Here we can see that the Beeminder component comes with three parts. For
+any component, the “source” reads from that data source and emits measurement
+packets onto the Exobrain bus. The “sink” reads intents from the bus,
+and transmits them to the external service. In the case of the Beeminder
+component, it also comes with a “notify” agent, which generates notifications
+whenever a Beeminder data-point is updated (provided we have Beeminder
+call-backs configured correctly).</p>
 
-<p>Because each component is in their own status group, you can enable or disable them easily with <code>ubic start exobrain.beeminder</code> or <code>ubic stop exobrain.beeminder</code>.</p>
+<p>Because each component is in their own status group, you can enable or disable
+them easily with <code>ubic start exobrain.beeminder</code> or <code>ubic stop exobrain.beeminder</code>.</p>
 
-<p>Under the hood, components provide a much cleaner way of writing agents, with many components supplying roles which allow automatically handle connection and configuration to services. They also open the door to writing your own private components which can be updated inpdependently to the rest of Exobrain, or which you can distribute to others!</p>
+<p>Under the hood, components provide a much cleaner way of writing agents,
+with many components supplying roles which allow automatically handle connection
+and configuration to services. They also open the door to writing your own
+private components which can be updated inpdependently to the rest of Exobrain,
+or which you can distribute to others!</p>
+
+
     </div>
 
     <div class="share-container">
@@ -372,6 +406,8 @@ else
 
         <ul>
         
+            <li><a href="/personal/2014/05/27/on-privilege.html">On privilege</a>
+        
             <li><a href="/ethics/2014/05/05/a-utilitarian-fable.html">A Utilitarian Fable</a>
         
             <li><a href="/talks/2014/04/30/build-your-own-exobrain.html">Build Your Own Exobrain</a>
@@ -389,8 +425,6 @@ else
             <li><a href="/tech/2014/02/25/the-ios-bug-is-worse-than-you-think.html">The iOS SSL/TLS bug is worse than you think</a>
         
             <li><a href="/tech/2014/02/22/how-i-claimed-270-of-beeminder-bounties.html">How I Claimed $270 of Beeminder Bounties</a>
-        
-            <li><a href="/personal/2014/02/17/is-social-media-making-us-antisocial.html">Is social media making us antisocial?</a>
         
         </ul>
     </section>

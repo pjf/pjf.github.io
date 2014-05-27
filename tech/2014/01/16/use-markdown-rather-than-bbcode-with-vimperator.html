@@ -143,30 +143,61 @@ to this post.)
     
 
     <div class="e-content">
-        <p>I really love the Dwarf Fortress community, and a lot of it is centred around the <a href="http://www.bay12forums.com/smf/index.php">bay12 forums</a>. Unfortunately, I don’t love BBCode (aka phpBB syntax), which is what the bay12 forums require me to write posts in. I’d much rather use <a href="http://daringfireball.net/projects/markdown/syntax">markdown</a>. So I decided to fix that with the help of vimperator, and by writing my own markdown to BBcode parser.</p>
+        <p>I really love the Dwarf Fortress community, and a lot of it is centred
+around the <a href="http://www.bay12forums.com/smf/index.php">bay12 forums</a>.
+Unfortunately, I don’t love BBCode (aka phpBB syntax), which is what the
+bay12 forums require me to write posts in. I’d much rather use
+<a href="http://daringfireball.net/projects/markdown/syntax">markdown</a>. So
+I decided to fix that with the help of vimperator, and by writing my own
+markdown to BBcode parser.</p>
+
 <!--more-->
-<p>If you install the <a href="https://metacpan.org/pod/Markdown::phpBB">Markdown::phpBB</a> module from the CPAN, you’ll find a nifty little program named <code>md2phpbb</code>. This is a filter; it takes input in markdown, and emits output in BBcode.</p>
+
+<p>If you install the <a href="https://metacpan.org/pod/Markdown::phpBB">Markdown::phpBB</a>
+module from the CPAN, you’ll find a nifty little program named <code>md2phpbb</code>.
+This is a filter; it takes input in markdown, and emits output in BBcode.</p>
 
 <pre><code>$ cpanm Markdown::phpBB     # install using cpanm
-$ cpan  Markdown::phpBB     # install using classic cpan</code></pre>
+$ cpan  Markdown::phpBB     # install using classic cpan
+</code></pre>
 
-<p>If you’re editing in vim, you can run <code>:%!md2phpbb</code> to replace your current buffer (written in markdown) with the equivalent text in BBcode. You can even bind it to a key, as I’ve done in my <code>~/.vimrc</code> file:</p>
+<p>If you’re editing in vim, you can run <code>:%!md2phpbb</code> to replace your
+current buffer (written in markdown) with the equivalent text in BBcode.
+You can even bind it to a key, as I’ve done in my <code>~/.vimrc</code> file:</p>
 
-<pre><code>:nmap &lt;F5&gt; :%!md2phpbb&lt;CR&gt;</code></pre>
+<pre><code>:nmap &lt;F5&gt; :%!md2phpbb&lt;CR&gt;
+</code></pre>
 
-<p>If you’ve installed md2phpbb into a user (rather than system) directory, then you may find that vimperator won’t have your perl-specific environment variables in place. In that case you can use full paths in your <code>~/.vimrc</code>:</p>
+<p>If you’ve installed md2phpbb into a user (rather than system)
+directory, then you may find that vimperator won’t have your perl-specific
+environment variables in place. In that case you can use full paths
+in your <code>~/.vimrc</code>:</p>
 
-<pre><code>:nmap &lt;F5&gt; :%!perl -I/home/pjf/perl5/lib/perl5 /home/pjf/perl5/bin/md2phpbb&lt;CR&gt;</code></pre>
+<pre><code>:nmap &lt;F5&gt; :%!perl -I/home/pjf/perl5/lib/perl5 /home/pjf/perl5/bin/md2phpbb&lt;CR&gt;
+</code></pre>
 
-<p>If you’re using <a href="http://www.vimperator.org/vimperator">vimperator</a> then you can already invoke vim from any textarea by pressing <code>ctrl-i</code>. However BBcode websites usually bind this to <em>italics</em>, so you’ll probably want to add an additional key for editing to your <code>~/.vimperatorrc</code> file. I use <code>ctrl-e</code>, for edit:</p>
+<p>If you’re using <a href="http://www.vimperator.org/vimperator">vimperator</a> then you
+can already invoke vim from any textarea by pressing <code>ctrl-i</code>. However
+BBcode websites usually bind this to <em>italics</em>, so you’ll probably want to
+add an additional key for editing to your <code>~/.vimperatorrc</code> file. I use
+<code>ctrl-e</code>, for edit:</p>
 
-<pre><code>:inoremap &lt;C-e&gt; &lt;C-i&gt;</code></pre>
+<pre><code>:inoremap &lt;C-e&gt; &lt;C-i&gt;
+</code></pre>
 
-<p>Now you can use <code>ctrl-e</code> to open a vim window, write your response in markdown, and then just hit <code>F5</code> to turn it into BBCode. Best of all, the filter doesn’t change existing BBCode at all, so you can hit <code>F5</code> as many times as you like, to refresh your text after edits.</p>
+<p>Now you can use <code>ctrl-e</code> to open a vim window, write your response in
+markdown, and then just hit <code>F5</code> to turn it into BBCode. Best of all,
+the filter doesn’t change existing BBCode at all, so you can hit <code>F5</code>
+as many times as you like, to refresh your text after edits.</p>
 
-<p><code>md2phpbb</code> and supporting libraries are completely free and open source, and can be found on <a href="https://github.com/pjf/Markdown-phpBB">github</a>.</p>
+<p><code>md2phpbb</code> and supporting libraries are completely free and open source,
+and can be found on <a href="https://github.com/pjf/Markdown-phpBB">github</a>.</p>
+
 <hr />
+
 <p>See also: <a href="http://privacygeek.blogspot.com.au/2013/03/the-worlds-easiest-guide-to-installing.html">The world’s easiest guide to installing cpanm</a></p>
+
+
     </div>
 
     <div class="share-container">
@@ -360,6 +391,8 @@ else
 
         <ul>
         
+            <li><a href="/personal/2014/05/27/on-privilege.html">On privilege</a>
+        
             <li><a href="/ethics/2014/05/05/a-utilitarian-fable.html">A Utilitarian Fable</a>
         
             <li><a href="/talks/2014/04/30/build-your-own-exobrain.html">Build Your Own Exobrain</a>
@@ -377,8 +410,6 @@ else
             <li><a href="/tech/2014/02/25/the-ios-bug-is-worse-than-you-think.html">The iOS SSL/TLS bug is worse than you think</a>
         
             <li><a href="/tech/2014/02/22/how-i-claimed-270-of-beeminder-bounties.html">How I Claimed $270 of Beeminder Bounties</a>
-        
-            <li><a href="/personal/2014/02/17/is-social-media-making-us-antisocial.html">Is social media making us antisocial?</a>
         
         </ul>
     </section>

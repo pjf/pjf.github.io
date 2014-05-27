@@ -152,91 +152,168 @@ to this post.)
     
 
     <div class="e-content">
-        <p>I’m incredibly lazy. My preferred way of making backups is to plug in an external drive, and have my laptop automatically do the rest.</p>
+        <p>I’m incredibly lazy. My preferred way of making backups is to
+plug in an external drive, and have my laptop automatically do the
+rest.</p>
 
-<p>In order to facilitate this laziness, I’m going to be using two tools: btrfs (an amazing filesystem with snapshot support), and udev (which can detect when a device has been inserted or removed). I’m also going to send notifcations directly to my Pebble watch, because I can.</p>
+<p>In order to facilitate this laziness, I’m going to be using
+two tools: btrfs (an amazing filesystem with snapshot support),
+and udev (which can detect when a device has been inserted or
+removed). I’m also going to send notifcations directly to my
+Pebble watch, because I can.</p>
+
 <!--more-->
-<p>Everything in this guide needs to be done as root, so we might as well start a root-shell now:</p>
 
-<pre><code>$ sudo -i</code></pre>
+<p>Everything in this guide needs to be done as root, so we might as well
+start a root-shell now:</p>
 
-<h3 id="preparing_our_disk">Preparing our disk</h3>
+<pre><code>$ sudo -i
+</code></pre>
 
-<p>I use <a href="http://arstechnica.com/information-technology/2014/01/bitrot-and-atomic-cows-inside-next-gen-filesystems/" title="Bitrot and atomic COWs: Inside next-gen filesystems">btrfs</a> for external backups. It’s able to detect when data has gone bad, it has wicked-cool snapshot capabilities, and if I’m backing up an existing btrfs filesystem I can do very quickly and efficiently by sending incremental snapshots. However most of this guide will still work even if you’re using a different filesystem type.</p>
+<h3 id="preparing-our-disk">Preparing our disk</h3>
 
-<p>Our first step is to prepare the disk where our backups are going to live. under Linux we can have volumes with <em>labels</em>. They’re awesome, because they’re human readable, but still provide a way to identify a device regardless of where it gets mounted. In theory one could have a number of drives with the same label, and we could trigger a backup automatically whenever <em>any</em> of them are plugged in.</p>
+<p>I use <a href="http://arstechnica.com/information-technology/2014/01/bitrot-and-atomic-cows-inside-next-gen-filesystems/" title="Bitrot and atomic COWs: Inside next-gen filesystems">btrfs</a> for external backups. It’s able to detect when
+data has gone bad, it has wicked-cool snapshot capabilities, and if
+I’m backing up an existing btrfs filesystem I can do very quickly and
+efficiently  by sending incremental snapshots. However most of this
+guide will still work even if you’re using a different filesystem
+type.</p>
 
-<p>With btrfs, we can set the label when we format the disk, but I always forget to do that. It’s okay, because changing the label is easy:</p>
+<p>Our first step is to prepare the disk where our backups are going to
+live. under Linux we can have volumes with <em>labels</em>. They’re awesome,
+because they’re human readable, but still provide a way to identify a
+device regardless of where it gets mounted. In theory one could
+have a number of drives with the same label, and we could trigger
+a backup automatically whenever <em>any</em> of them are plugged in.</p>
 
-<pre><code>$ btrfs filesystem label /dev/sdc1 backup</code></pre>
+<p>With btrfs, we can set the label when we format the disk, but I
+always forget to do that. It’s okay, because changing the label is
+easy:</p>
+
+<pre><code>$ btrfs filesystem label /dev/sdc1 backup
+</code></pre>
 
 <p>If you’re using <code>ext2</code> or above, you can do the same with <code>tune2fs</code>:</p>
 
-<pre><code>$ tune2fs -L backup /dev/sdc1</code></pre>
+<pre><code>$ tune2fs -L backup /dev/sdc1
+</code></pre>
 
-<p>My actual disks have more descriptive labels, indicating both the machine and filesystem they’re responsible for.</p>
+<p>My actual disks have more descriptive labels, indicating both the
+machine and filesystem they’re responsible for.</p>
 
-<p>I like to mount my backups in a consistent location, so I’m going to create that now:</p>
+<p>I like to mount my backups in a consistent location, so I’m going to
+create that now:</p>
 
-<pre><code>$ mkdir /mnt/backup</code></pre>
+<pre><code>$ mkdir /mnt/backup
+</code></pre>
 
-<p>We also need to tell linux that when it sees a disk with the <code>backup</code> label, it needs to go on the mount-point specified. We do this by adding a line to <code>/etc/fstab</code>, and we can also specify other options in here as well For example, I use btrfs’ compression option:</p>
+<p>We also need to tell linux that when it sees a disk with the <code>backup</code>
+label, it needs to go on the mount-point specified.  We do this
+by adding a line to <code>/etc/fstab</code>, and we can also specify other
+options in here as well For example, I use btrfs’ compression
+option:</p>
 
-<pre><code>$ echo &quot;LABEL=backup /mnt/backup btrfs noauto,compress 0 2&quot; \
-    &gt;&gt; /etc/fstab</code></pre>
+<pre><code>$ echo "LABEL=backup /mnt/backup btrfs noauto,compress 0 2" \
+    &gt;&gt; /etc/fstab
+</code></pre>
 
-<p>On other filesystems, you should leave out ‘compress’ on the line above. The ‘noauto’ option tells Linux not to try and mount the drive when booting; as a removable backup drive, it’s unlikely to be there.</p>
+<p>On other filesystems, you should leave out ‘compress’ on the line
+above. The ‘noauto’ option tells Linux not to try and mount the
+drive when booting; as a removable backup drive, it’s unlikely
+to be there.</p>
 
 <h3 id="udev">udev</h3>
 
-<p>Now for the bit which caused me pain, <code>udev</code>, a system for triggering events when devices change on your system. I don’t know if there are versions of <code>udev</code> with different keywords, or which care differently about capitalisation, but it took a <em>lot</em> of tweaking around until I managed to get a udev rule that would automatically mount my disk:</p>
+<p>Now for the bit which caused me pain, <code>udev</code>, a system for triggering
+events when devices change on your system. I don’t know if there
+are versions of <code>udev</code> with different keywords, or which care
+differently about capitalisation, but it took a <em>lot</em> of tweaking
+around until I managed to get a udev rule that would automatically
+mount my disk:</p>
 
 <pre><code>$ cat &gt; /etc/udev/rules.d/99-backup.rules
 
-SUBSYSTEM==&quot;block&quot;, ENV{ID_FS_LABEL}==&quot;backup&quot;, ACTION==&quot;add&quot;, \
-    RUN+=&quot;/bin/mount /mnt/backup&quot;</code></pre>
+SUBSYSTEM=="block", ENV{ID_FS_LABEL}=="backup", ACTION=="add", \
+    RUN+="/bin/mount /mnt/backup"
+</code></pre>
 
-<p>Udev is also supposed to automatically pick up new rules, but my system didn’t the first time. We can nudge it with:</p>
+<p>Udev is also supposed to automatically pick up new rules, but my
+system didn’t the first time. We can nudge it with:</p>
 
-<pre><code>$ udevadm control --reload-rules</code></pre>
+<pre><code>$ udevadm control --reload-rules
+</code></pre>
 
 <h3 id="backups">Backups</h3>
 
-<p>To make backups I’m using rsync. I use both <code>ionice</code> and <code>nice</code> to have our command yield both io and cpu resources to other processes, so we don’t lose system responsiveness during the backup.</p>
+<p>To make backups I’m using rsync. I use both <code>ionice</code> and <code>nice</code>
+to have our command yield both io and cpu resources to other processes,
+so we don’t lose system responsiveness during the backup.</p>
 
-<p>I also use the <code>-vHAaxX</code> switches to <code>rsync</code>. This backups up <code>v</code>erbosely, <code>H</code>ard links, <code>A</code>CLs, <code>a</code>ll, <code>X</code>tended attributions, and sticking to one filesystem (<code>-x</code>). I also pass in <code>--delete</code> to remove files from the backup drive that are no longer on my machine’s disk.</p>
+<p>I also use the <code>-vHAaxX</code> switches to <code>rsync</code>. This backups
+up <code>v</code>erbosely, <code>H</code>ard links, <code>A</code>CLs, <code>a</code>ll, <code>X</code>tended attributions,
+and sticking to one filesystem (<code>-x</code>). I also pass in <code>--delete</code>
+to remove files from the backup drive that are no longer on my
+machine’s disk.</p>
 
-<p>In addition, I also pass <code>--filter 'P SNAPSHOT-*</code>, to tell rsync to protect any file at the destination which starts with <code>SNAPSHOT-</code>. As we’ll see in a moment, these are my btrfs snapshots; we don’t want rsync to try and remove them.</p>
+<p>In addition, I also pass <code>--filter 'P SNAPSHOT-*</code>, to tell rsync
+to protect any file at the destination which starts with <code>SNAPSHOT-</code>.
+As we’ll see in a moment, these are my btrfs snapshots; we don’t
+want rsync to try and remove them.</p>
 
 <pre><code>$ ionice -c3 nice rsync -vHAaxX --delete \
-    --filter 'P SNAPSHOT-*' / /mnt/backup/</code></pre>
+    --filter 'P SNAPSHOT-*' / /mnt/backup/
+</code></pre>
 
-<p>Once this is done (it can take some time), I take a read-only btrfs snapshot on my backup drive with the current date in UTC:</p>
+<p>Once this is done (it can take some time), I take a read-only
+btrfs snapshot on my backup drive with the current date in UTC:</p>
 
 <pre><code>$ btrfs subvolume snapshot -r /mnt/backup \
-    /mnt/backup/SNAPSHOT-`date -u +%Y-%m-%d`</code></pre>
+    /mnt/backup/SNAPSHOT-`date -u +%Y-%m-%d`
+</code></pre>
 
-<p>One of the joys of btrfs is the top-level filesystem on my backup drive is arranged exactly the same way as the filesystem I’m backing up. In a pinch I could use it a a drop-in replacement. If a file doesn’t change between snapshots, then btrfs requires no additional storage space to store it, and with <a href="https://github.com/g2p/bedup" title="bedup: btrfs de-duplication">bedup</a> we can even de-duplicate files across filesystems and subvolumes.</p>
+<p>One of the joys of btrfs is the top-level filesystem on my backup
+drive is arranged exactly the same way as the filesystem I’m backing
+up. In a pinch I could use it a a drop-in replacement. If a file
+doesn’t change between snapshots, then btrfs requires no additional
+storage space to store it, and with <a href="https://github.com/g2p/bedup" title="bedup: btrfs de-duplication">bedup</a> we can even
+de-duplicate files across filesystems and subvolumes.</p>
 
-<p>Each snapshot is also a complete backup in its own right; I never have to worry about whether I have a base filesystem upon which to apply an incremental backup on to.</p>
+<p>Each snapshot is also a complete backup in its own right; I
+never have to worry about whether I have a base filesystem upon which
+to apply an incremental backup on to.</p>
 
-<p>If you’re not using btrfs or a similar snapshotting filesystem, you might find <a href="http://www.rsnapshot.org/" title="rsnapshot: A remote filesystem snapshot utility, based on rsync">rsnapshot</a> preferable to straight rsync. It makes rolling snapshots where unchanged files are hard linked to conserve space, but looks like a complete backup each time.</p>
+<p>If you’re not using btrfs or a similar snapshotting filesystem, you might find
+<a href="http://www.rsnapshot.org/" title="rsnapshot: A remote filesystem snapshot utility, based on rsync">rsnapshot</a> preferable to straight rsync. It makes rolling snapshots
+where unchanged files are hard linked to conserve space, but looks like a
+complete backup each time.</p>
 
-<h3 id="automating_everything_with_snapback">Automating everything with snapback</h3>
+<h3 id="automating-everything-with-snapback">Automating everything with snapback</h3>
 
-<p><code>Snapback</code> is some code I wrote because anything more than plugging in a USB drive to my laptop is just too much work. It uses <a href="https://pushover.net/" title="Pushover: Simple mobile notifications">Pushover</a> to send notifications to my pebble watch, so there’s no need to look through <code>/var/log</code> to see what’s happening, and I’m immediately notified when the backup is complete.</p>
+<p><code>Snapback</code> is some code I wrote because anything more than plugging
+in a USB drive to my laptop is just too much work. It uses
+<a href="https://pushover.net/" title="Pushover: Simple mobile notifications">Pushover</a> to send notifications to my pebble watch, so
+there’s no need to look through <code>/var/log</code> to see what’s happening,
+and I’m immediately notified when the backup is complete.</p>
 
-<p>It ties all the above together into a script that’s triggered from udev. Because udev kills any process that’s running too long, under the hood we fork a daemon to do the heavy lifting for us.</p>
+<p>It ties all the above together into a script that’s triggered
+from udev.  Because udev kills any process that’s running too long,
+under the hood we fork a daemon to do the heavy lifting for us.</p>
 
-<p><code>Snapback</code> is pretty heavily customised to work on my laptop, but you’re welcome to adapt it to your own purposes if you like.</p>
+<p><code>Snapback</code> is pretty heavily customised to work on my laptop, but
+you’re welcome to adapt it to your own purposes if you like.</p>
 
 <p>You can <a href="https://github.com/pjf/snapback" title="Snapback: Automatically backup your machine to btrfs when a disk is plugged in (GitHub)">find snapback on github</a>.</p>
 
 <h3 id="credits">Credits</h3>
 
-<p>Thanks to <a class='social-link' href='https://twitter.com/jeremyvisser'>Jeremy Visser</a> for pointing out <code>sudo -i</code> as a more comfortable way to get a root shell.</p>
+<p>Thanks to <a href="https://twitter.com/jeremyvisser" class="social-link">Jeremy Visser</a> for pointing out <code>sudo -i</code> as a
+more comfortable way to get a root shell.</p>
 
-<p>Thanks to <a class='social-link' href='https://twitter.com/evmcl'>Evan</a> for reminding me of rsnapshot, and providing a <a href="https://github.com/evmcl/pjf.github.io/commit/fa400560eb9aabf14b9d324b462ea58ddba3ddc4">content patch</a> to this article! :)</p>
+<p>Thanks to <a href="https://twitter.com/evmcl" class="social-link">Evan</a> for reminding me of rsnapshot, and providing
+a <a href="https://github.com/evmcl/pjf.github.io/commit/fa400560eb9aabf14b9d324b462ea58ddba3ddc4">content patch</a>
+to this article! :)</p>
+
+
     </div>
 
     <div class="share-container">
@@ -430,6 +507,8 @@ else
 
         <ul>
         
+            <li><a href="/personal/2014/05/27/on-privilege.html">On privilege</a>
+        
             <li><a href="/ethics/2014/05/05/a-utilitarian-fable.html">A Utilitarian Fable</a>
         
             <li><a href="/talks/2014/04/30/build-your-own-exobrain.html">Build Your Own Exobrain</a>
@@ -447,8 +526,6 @@ else
             <li><a href="/tech/2014/02/25/the-ios-bug-is-worse-than-you-think.html">The iOS SSL/TLS bug is worse than you think</a>
         
             <li><a href="/tech/2014/02/22/how-i-claimed-270-of-beeminder-bounties.html">How I Claimed $270 of Beeminder Bounties</a>
-        
-            <li><a href="/personal/2014/02/17/is-social-media-making-us-antisocial.html">Is social media making us antisocial?</a>
         
         </ul>
     </section>

@@ -152,55 +152,87 @@ to this post.)
     
 
     <div class="e-content">
-        <p>Services such as <a href="https://ifttt.com/">If-This-Then-That</a> (IFTTT) and <a href="https://zapier.com/">Zapier</a> make it easy to connect apps and automate tedious tasks. However they all require you trust your personal data with a third party. Enter <a href="http://github.com/pjf/exobrain" title="Exobrain: A collection of agents which collect, classify, and act upon data">Exobrain</a>.</p>
-<!--more-->
-<p>Exobrain is a free and open source framework for extending everything. It’s like IFTTT and Zapier, but you don’t have to reveal your credentials to anyone.</p>
+        <p>Services such as <a href="https://ifttt.com/">If-This-Then-That</a> (IFTTT) and
+<a href="https://zapier.com/">Zapier</a> make it easy
+to connect apps and automate tedious tasks. However they all require
+you trust your personal data with a third party. Enter <a href="http://github.com/pjf/exobrain" title="Exobrain: A collection of agents which collect, classify, and act upon data">Exobrain</a>.</p>
 
-<p>At the time of writing, Exobrain directly supports the following services:</p>
+<!--more-->
+
+<p>Exobrain is a free and open source framework for extending
+everything. It’s like IFTTT and Zapier, but you don’t have to reveal your
+credentials to anyone.</p>
+
+<p>At the time of writing, Exobrain directly supports the following
+services:</p>
 
 <ul>
-<li><a href="https://beeminder.com" title="Quantify your goals with Beeminder">Beeminder</a></li>
-
-<li>Email/<a href="https://gmail.com/">Gmail</a> (via IMAP)</li>
-
-<li><a href="https://facebook.com/">Facebook</a></li>
-
-<li><a href="https://foursquare.com/">Foursquare</a></li>
-
-<li><a href="https://habitrpg.com/" title="Level up your life with HabitRPG">HabitRPG</a></li>
-
-<li><a href="https://idonethis.com/" title="Measure your progress with iDoneThis">iDoneThis</a></li>
-
-<li><a href="https://pushover.net/" title="Pushover: Simple mobile notifications">Pushover</a></li>
-
-<li><a href="https://rememberthemilk.com/" title="RememberTheMilk task tracker">RememberTheMilk</a></li>
-
-<li><a href="https://twitter.com/">Twitter</a></li>
+  <li><a href="https://beeminder.com" title="Quantify your goals with Beeminder">Beeminder</a></li>
+  <li>Email/<a href="https://gmail.com/">Gmail</a> (via IMAP)</li>
+  <li><a href="https://facebook.com/">Facebook</a></li>
+  <li><a href="https://foursquare.com/">Foursquare</a></li>
+  <li><a href="https://habitrpg.com/" title="Level up your life with HabitRPG">HabitRPG</a></li>
+  <li><a href="https://idonethis.com/" title="Measure your progress with iDoneThis">iDoneThis</a></li>
+  <li><a href="https://pushover.net/" title="Pushover: Simple mobile notifications">Pushover</a></li>
+  <li>[RememberTheMilk][RTM]</li>
+  <li><a href="https://twitter.com/">Twitter</a></li>
 </ul>
 
-<p>For Beeminder users, Exobrain also supports call-backs. This means you can chain events off anything that Beeminder can measure, including <a href="http://www.withings.com/en/scales/">Withings</a> scales, <a href="http://runkeeper.com/">Runkeeper</a>, <a href="http://www.fitbit.com/">fitbit</a>, <a href="https://trello.com/">Trello</a>, <a href="https://www.rescuetime.com/">RescueTime</a>, <a href="https://github.com/">github</a>, <a href="https://www.duolingo.com/">duolingo</a>, and more.</p>
+<p>For Beeminder users, Exobrain also supports call-backs. This
+means you can chain events off anything that Beeminder can measure,
+including
+<a href="http://www.withings.com/en/scales/">Withings</a> scales,
+<a href="http://runkeeper.com/">Runkeeper</a>,
+<a href="http://www.fitbit.com/">fitbit</a>,
+<a href="https://trello.com/">Trello</a>,
+<a href="https://www.rescuetime.com/">RescueTime</a>,
+<a href="https://github.com/">github</a>,
+<a href="https://www.duolingo.com/">duolingo</a>, and more.</p>
 
-<p>If you’re a quantified-selfer, you can automatically record your activities to your log. If you need some extra motivation, you can automatically gain experience points on <a href="https://habitrpg.com/">HabitRPG</a> for achieving your goals. You can back-up all of your activity from third-party websites in real-time, or even allow people to add to your TODO list by tweeting at you with a <code>#todo</code> tag!</p>
+<p>If you’re a quantified-selfer, you can automatically record your
+activities to your log. If you need some extra motivation, you
+can automatically gain experience points on <a href="https://habitrpg.com/">HabitRPG</a>
+for achieving
+your goals. You can back-up all of your activity from third-party
+websites in real-time, or even allow people to add to your TODO
+list by tweeting at you with a <code>#todo</code> tag!</p>
 
-<p>If you own a <a href="https://getpebble.com/">Pebble watch</a> and are a Pushover user, then you can send notifications directly to your watch.</p>
+<p>If you own a <a href="https://getpebble.com/">Pebble watch</a>
+and are a Pushover user, then you can send notifications
+directly to your watch.</p>
 
-<p>You can use pre-written Exobrain actions or you can write your own. Exobrain is completely free, open source, and extensible. Because it uses a shared message bus, you can even update components on the fly, without having to restart the whole system.</p>
+<p>You can use pre-written Exobrain actions or you can write your own.
+Exobrain is completely free, open source, and
+extensible. Because it uses a shared message bus, you can even
+update components on the fly, without having to restart
+the whole system.</p>
 
-<p>Exobrain is written in Perl and at its core uses an extensible, language-independent, messaging format based on <a href="http://zeromq.org/">0MQ</a> and <a href="http://www.json.org/">JSON</a>.</p>
+<p>Exobrain is written in Perl and at its core uses an extensible,
+language-independent, messaging format based on <a href="http://zeromq.org/">0MQ</a>
+and <a href="http://www.json.org/">JSON</a>.</p>
 
-<p>Writing extensions for Exobrain is easy; here’s the entire code to send all tweets that mention you to your preferred notify service:</p>
-<div class='highlight'><pre><code class='perl'>    <span class='c1'>#!/usr/bin/env perl</span>
-    <span class='k'>use</span> <span class='n'>Exobrain</span><span class='p'>;</span>
+<p>Writing extensions for
+Exobrain is easy; here’s the entire code to send all tweets
+that mention you to your preferred notify service:</p>
 
-    <span class='nv'>$exobrain</span><span class='o'>-&gt;</span><span class='n'>watch_loop</span><span class='p'>(</span>
-        <span class='n'>class</span>  <span class='o'>=&gt;</span> <span class='s'>&#39;Measurement::Tweet&#39;</span><span class='p'>,</span>
-        <span class='n'>filter</span> <span class='o'>=&gt;</span> <span class='k'>sub </span><span class='p'>{</span> <span class='nv'>$_</span><span class='o'>-&gt;</span><span class='n'>to_me</span> <span class='p'>},</span>
-        <span class='k'>then</span>   <span class='o'>=&gt;</span> <span class='k'>sub </span><span class='p'>{</span>
-            <span class='nv'>$exobrain</span><span class='o'>-&gt;</span><span class='n'>notify</span><span class='p'>(</span> <span class='nv'>$_</span><span class='o'>-&gt;</span><span class='n'>summary</span> <span class='p'>);</span>
-        <span class='p'>},</span>
-    <span class='p'>);</span>
-</code></pre></div>
-<p>Exobrain is very much a work-in-progress, and we would love your contributions and feedback. You can find <a href="https://github.com/pjf/exobrain">Exobrain on github</a>. Contributions to our <a href="https://github.com/pjf/exobrain/issues">issues list</a> are especially appreciated!</p>
+<div class="highlight"><pre><code class="perl"><span class="c1">#!/usr/bin/env perl</span>
+    <span class="k">use</span> <span class="n">Exobrain</span><span class="p">;</span>
+
+    <span class="nv">$exobrain</span><span class="o">-&gt;</span><span class="n">watch_loop</span><span class="p">(</span>
+        <span class="n">class</span>  <span class="o">=&gt;</span> <span class="s">&#39;Measurement::Tweet&#39;</span><span class="p">,</span>
+        <span class="n">filter</span> <span class="o">=&gt;</span> <span class="k">sub </span><span class="p">{</span> <span class="nv">$_</span><span class="o">-&gt;</span><span class="n">to_me</span> <span class="p">},</span>
+        <span class="k">then</span>   <span class="o">=&gt;</span> <span class="k">sub </span><span class="p">{</span>
+            <span class="nv">$exobrain</span><span class="o">-&gt;</span><span class="n">notify</span><span class="p">(</span> <span class="nv">$_</span><span class="o">-&gt;</span><span class="n">summary</span> <span class="p">);</span>
+        <span class="p">},</span>
+    <span class="p">);</span></code></pre></div>
+
+<p>Exobrain is very much a work-in-progress, and we would love your
+contributions and feedback. You can find
+<a href="https://github.com/pjf/exobrain">Exobrain on github</a>. Contributions
+to our <a href="https://github.com/pjf/exobrain/issues">issues list</a> are
+especially appreciated!</p>
+
+
     </div>
 
     <div class="share-container">
@@ -394,6 +426,8 @@ else
 
         <ul>
         
+            <li><a href="/personal/2014/05/27/on-privilege.html">On privilege</a>
+        
             <li><a href="/ethics/2014/05/05/a-utilitarian-fable.html">A Utilitarian Fable</a>
         
             <li><a href="/talks/2014/04/30/build-your-own-exobrain.html">Build Your Own Exobrain</a>
@@ -411,8 +445,6 @@ else
             <li><a href="/tech/2014/02/25/the-ios-bug-is-worse-than-you-think.html">The iOS SSL/TLS bug is worse than you think</a>
         
             <li><a href="/tech/2014/02/22/how-i-claimed-270-of-beeminder-bounties.html">How I Claimed $270 of Beeminder Bounties</a>
-        
-            <li><a href="/personal/2014/02/17/is-social-media-making-us-antisocial.html">Is social media making us antisocial?</a>
         
         </ul>
     </section>
