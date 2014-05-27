@@ -34,3 +34,4 @@ acknowledging the truth. But more importantly, it's acknowledging that things
 you're wrong, it isn't saying you're a bad person... it's the very first step
 in making things better, and that is very, very right.
 
+&#x5b;This was originally posted as a comment on a friend's facebook wall.&#x5d;
