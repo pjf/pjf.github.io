@@ -66,7 +66,7 @@ module Jekyll
     def process_yaml
       file_path = @site.source + "/_redirects.yml"
       if File.exists?(file_path)
-        YAML.load_file(file_path, :safe => true).each do | new_url, old_url |
+        YAML.load_file(file_path).each do | new_url, old_url |
           generate_aliases( old_url, new_url )
         end
       end
@@ -92,8 +92,8 @@ module Jekyll
       if File.exists?(file_path)
         file = File.new(file_path, "r")
         content = JSON.parse(file.read)
-        content.each do |a, b|
-            generate_aliases(a, b)
+        content.each do |new_url, old_url|
+            generate_aliases(old_url, new_url)
         end
         file.close
       end
