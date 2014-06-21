@@ -1,5 +1,7 @@
 ---
 title: On Gittip and Diversity
+description: "Yesterday, the founder of Gittip made a post regarding his resentment at the style in which a lot of criticism had been levelled at Gittip. The result was a schism where a number of the most prominent Gittip users closed their accounts, citing that Gittip was no longer a safe place for minority users."
+tags: diversity, gittip, feminism
 ---
 
 For those who aren't aware, Gittip is a platform for *sustainable giving*.
@@ -33,7 +35,7 @@ minority users.
 
 I want to discuss all of that, but I want to start with a request:
 
-## Be compassionate
+### Be compassionate
 
 Seriously. This sucks for everyone right now. It's shit. I know
 some of you are going to want to beat up on Chad, and I ask you
@@ -47,7 +49,7 @@ the people involved. Vilifiying people just makes you a jerk.
 If you *have* closed your account, or if you are about to do so, then
 I would ask you to please continue to support the people you believe in.
 
-## My viewpoint
+### My viewpoint
 
 I know that making a post like this without giving my own take on
 things will just result in people asking me anyway, so I'll state
@@ -85,7 +87,7 @@ everyone will continue to learn about the issues involved.
 
 Of course, things run deeper than this, and this brings me to...
 
-## My talk
+### My talk
 
 Next week I'm giving a talk about Gittip at Open Source Bridge. Up until
 recently, I had a pretty good idea how that was going to play out.
@@ -124,12 +126,12 @@ you can still contact me at paul.j.fenwick (gmail), or if you
 wish to comment publicly, you can do so below. In both cases
 you can be anonymous.
 
-## Further reading
+### Further reading
 
 * [Gittip Crisis](http://geekfeminism.wikia.com/wiki/Gittip_crisis)
 on the Geek Feminism Wiki.
 
-## Disclosure
+### Disclosure
 
 I'm a casual member of the support team at Gittip. I've tried to
 be involved with policy decisions where I can, including those related
