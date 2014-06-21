@@ -67,7 +67,7 @@ those changes have been made slowly.
 Gittip was founded on a culture of radical transparency and openness.
 Everything would be out in the open; source code, meetings, IRC logs,
 discussions, decissions, source code, all of it. I think that
-transparency is good, but in a world where your gender may mean
+transparency is good, but in a world where one's gender may mean
 threats of extreme violence over
 [one's opinion of a comic book cover](http://www.doctornerdlove.com/2014/04/ending-sexual-harassment-geek-culture/),
 radical transparency does *not* mean safety. There are good reasons
@@ -101,21 +101,21 @@ I would very much like to hear from those who have been
 involved.
 
 AdaCamp is this weekend, and I am sure it will include much discussion
-about Gittip. I'm really glad for that, AdaCamp is an *excellent*
+about Gittip. I'm really glad for that; AdaCamp is an *excellent*
 place for these discussions to be happening. There's also been
 a lot of discussion on IRC on #atunit on Freenode. If you're
 interested in participating, I suggest you head over there.
 
 If you've been involved in those discussions, either at AdaCamp
-or elsewhere, and would like to co-present at OS Bridge then
+or elsewhere, and would like to co-present at OS Bridge, then
 I would invite you to contact me. You need to be at the conference,
 and you need to be willing to sit down with me earlier in the
 week to flesh things out, to make sure that what's going to be
 said is going to be constructive and helpful.
 
 In case there's any question, I will absolutely be discussing the
-issues of radical transparency versus safety and consent, particuarly
-in the context of gittip itself. I will also be encouraging
+issues of radical transparency versus safety and consent, particularly
+in the context of Gittip itself. I will also be encouraging
 discussion from the audience.
 
 If you can't be at the conference, or don't feel comfortable
@@ -131,7 +131,7 @@ on the Geek Feminism Wiki.
 
 ## Disclosure
 
-I'm a casual for handling support requests at Gittip. I've tried to
+I'm a casual member of the support team at Gittip. I've tried to
 be involved with policy decisions where I can, including those related
-support, code of conduct, and expectations of privacy. I've received
+to support, code of conduct, and expectations of privacy. I've received
 money from the Gittip payroll.
