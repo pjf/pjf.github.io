@@ -12,6 +12,155 @@
                     
 
 			<item>
+				<title>On Gittip and Diversity</title>
+				<description>&lt;p&gt;For those who aren’t aware, Gittip is a platform for &lt;em&gt;sustainable giving&lt;/em&gt;.
+It provides a way to make contributions to people who you think are
+making the world a better place, and in such a way that those contributions
+are mostly predictable and dependable. It’s an idea that I’m really
+excited about, and to see it working in practice has been wonderful.&lt;/p&gt;
+
+&lt;p&gt;Gittip has found itself to be a popular funding platform for those 
+from marginalised groups, and those working towards
+social justice and diversity. It’s hands-down
+my &lt;em&gt;favourite thing about the platform&lt;/em&gt;. Being a diversity advocate isn’t
+something that normally pays the bills, and so the fact that many of
+the top receivers on Gittip are working on social justice issues makes
+me feel that Gittip is doubly worthwhile.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, it’s not all hypo-allergenic kittens and roses.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Yesterday, Chad—the founder of Gittip—made a post regarding his
+resentment at the style in which a lot of
+criticism (much of which relates to diversity, safety, and
+consent) had been levelled at Gittip. I don’t think Chad denies
+that the criticism itself is valid, but that’s almost
+irrelevant right now. The end result was a schism where a number
+of the most prominent Gittip users closed their accounts,
+or stated their intent to do once a suitable alternative
+could be found, citing that Gittip was no longer a safe place for
+minority users.&lt;/p&gt;
+
+&lt;p&gt;I want to discuss all of that, but I want to start with a request:&lt;/p&gt;
+
+&lt;h3 id=&quot;be-compassionate&quot;&gt;Be compassionate&lt;/h3&gt;
+
+&lt;p&gt;Seriously. This sucks for everyone right now. It’s shit. I know
+some of you are going to want to beat up on Chad, and I ask you
+&lt;em&gt;please don’t&lt;/em&gt;. Vilifying Chad, or Shanley, or &lt;em&gt;anyone else&lt;/em&gt; isn’t
+going to make the world a better place. It’s not going to make anyone
+feel safer about using Gittip. It’s not going to give us
+alternatives. It’s not going to heal Gittip’s culture. It’s not
+going to change society for the better. I don’t care what you think of
+the people involved. Vilifiying people just makes you a jerk.&lt;/p&gt;
+
+&lt;p&gt;If you &lt;em&gt;have&lt;/em&gt; closed your account, or if you are about to do so, then
+I would ask you to please continue to support the people you believe in.&lt;/p&gt;
+
+&lt;h3 id=&quot;my-viewpoint&quot;&gt;My viewpoint&lt;/h3&gt;
+
+&lt;p&gt;I know that making a post like this without giving my own take on
+things will just result in people asking me anyway, so I’ll state
+what I think here briefly and precisely.&lt;/p&gt;
+
+&lt;p&gt;I think it’s critically important to have a funding platform that
+not just caters for, but is &lt;em&gt;actively friendly towards&lt;/em&gt; minorities.
+I will freely admit that Gittip has struggled on the second of those
+two points.&lt;/p&gt;
+
+&lt;p&gt;A lot of people have been trying to improve Gittip and its culture for
+minorities, both inside and outside the organisation. I am deeply
+appreciative of their efforts, and while they &lt;em&gt;have&lt;/em&gt; resulted in
+change for the better, I know there’s been a lot of frustration that
+those changes have been made slowly.&lt;/p&gt;
+
+&lt;p&gt;Gittip was founded on a culture of radical transparency and openness.
+Everything would be out in the open; source code, meetings, IRC logs,
+discussions, decissions, source code, all of it. I think that
+transparency is good, but in a world where one’s gender may mean
+threats of extreme violence over
+&lt;a href=&quot;http://www.doctornerdlove.com/2014/04/ending-sexual-harassment-geek-culture/&quot;&gt;one’s opinion of a comic book cover&lt;/a&gt;,
+radical transparency does &lt;em&gt;not&lt;/em&gt; mean safety. There are good reasons
+why users and contributors may wish to do things in private.
+There are people who &lt;em&gt;can’t&lt;/em&gt; safely appear in televised meetings
+for all the world to see. And it’s not the role of Gittip to
+decide what’s safe for a person and what’s not; that’s up to the
+person themselves.&lt;/p&gt;
+
+&lt;p&gt;For me, the fact that radical transparency can be actively harmful
+to safety and consent has been what I’ve witnessed Gittip’s culture
+struggle with the most. For some members of the team, that has been
+a learning experience. I hope that no matter what comes of this,
+everyone will continue to learn about the issues involved.&lt;/p&gt;
+
+&lt;p&gt;Of course, things run deeper than this, and this brings me to…&lt;/p&gt;
+
+&lt;h3 id=&quot;my-talk&quot;&gt;My talk&lt;/h3&gt;
+
+&lt;p&gt;Next week I’m giving a talk about Gittip at Open Source Bridge. Up until
+recently, I had a pretty good idea how that was going to play out.
+In the last couple of days I’ve had to re-think things.&lt;/p&gt;
+
+&lt;p&gt;I will still be running my talk, however I both hope and anticipate it
+will be much more a discussion rather than the traditional
+presentation I had planned. I want my session to be a place where
+we can facilitate understanding, and find real ways of making
+progress. I anticipate that a lot of this will have
+already happened by the time my talk is scheduled to run, and
+I would very much like to hear from those who have been
+involved.&lt;/p&gt;
+
+&lt;p&gt;AdaCamp is this weekend, and I am sure it will include much discussion
+about Gittip. I’m really glad for that; AdaCamp is an &lt;em&gt;excellent&lt;/em&gt;
+place for these discussions to be happening. There’s also been
+a lot of discussion on IRC on #atunit on Freenode. If you’re
+interested in participating, I suggest you head over there.&lt;/p&gt;
+
+&lt;p&gt;If you’ve been involved in those discussions, either at AdaCamp
+or elsewhere, and would like to co-present at OS Bridge, then
+I would invite you to contact me. You need to be at the conference,
+and you need to be willing to sit down with me earlier in the
+week to flesh things out, to make sure that what’s going to be
+said is going to be constructive and helpful.&lt;/p&gt;
+
+&lt;p&gt;In case there’s any question, I will absolutely be discussing the
+issues of radical transparency versus safety and consent, particularly
+in the context of Gittip itself. I will also be encouraging
+discussion from the audience.&lt;/p&gt;
+
+&lt;p&gt;If you can’t be at the conference, or don’t feel comfortable
+getting on stage or participating in the audience discussion,
+you can still contact me at paul.j.fenwick (gmail), or if you
+wish to comment publicly, you can do so below. In both cases
+you can be anonymous.&lt;/p&gt;
+
+&lt;h3 id=&quot;further-reading&quot;&gt;Further reading&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://geekfeminism.wikia.com/wiki/Gittip_crisis&quot;&gt;Gittip Crisis&lt;/a&gt;
+on the Geek Feminism Wiki.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;disclosure&quot;&gt;Disclosure&lt;/h3&gt;
+
+&lt;p&gt;I’m a casual member of the support team at Gittip. I’ve tried to
+be involved with policy decisions where I can, including those related
+to support, code of conduct, and expectations of privacy. I’ve received
+money from the Gittip payroll.&lt;/p&gt;
+
+</description>
+				<pubDate>Sat, 21 Jun 2014 00:00:00 +1000</pubDate>
+				<link>http://pjf.id.au/tech/2014/06/21/gittip-and-diversity.html</link>
+				<guid isPermaLink="true">http://pjf.id.au/tech/2014/06/21/gittip-and-diversity.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>On privilege</title>
 				<description>&lt;p&gt;I’m a man.&lt;/p&gt;
 
@@ -478,131 +627,6 @@ or which you can distribute to others!&lt;/p&gt;
 				<pubDate>Tue, 25 Feb 2014 00:00:00 +1100</pubDate>
 				<link>http://pjf.id.au/tech/2014/02/25/the-ios-bug-is-worse-than-you-think.html</link>
 				<guid isPermaLink="true">http://pjf.id.au/tech/2014/02/25/the-ios-bug-is-worse-than-you-think.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>How I Claimed $270 of Beeminder Bounties</title>
-				<description>&lt;p&gt;Last Tuesday I paid &lt;a href=&quot;https://beeminder.com&quot; title=&quot;Quantify your goals with Beeminder&quot;&gt;Beeminder&lt;/a&gt; $5 because I didn’t floss my teeth
-when I promised that I would. That evening, &lt;em&gt;I&lt;/em&gt; was the one collecting $270
-from Beeminder…&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;In case you’re not familiar with me, I’m outstandingly lazy. I really
-dislike &lt;em&gt;having&lt;/em&gt; to do anything at all. I’m totally fine with
-&lt;em&gt;choosing&lt;/em&gt; to do things, but I push back pretty hard against the
-universe when something &lt;em&gt;has&lt;/em&gt; to be done. This is why I’m so big
-on automation, it reduces the things to have to be done by me,
-and allows me to practice &lt;em&gt;efficient laziness&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;But there are some things one simply can’t automate;
-flossing your teeth, running a business, doing one’s taxes, getting
-some exercise. While I might be able to write digital agents that
-can &lt;em&gt;assist&lt;/em&gt; me with those tasks, fundamentally they’re things that
-I have to do. The problem is, left to my own devices, I rarely will.&lt;/p&gt;
-
-&lt;p&gt;However, there is one time when I’ll take action, and that’s when
-presented with the threat of imminent failure. If you’ve read
-WBW’s &lt;a href=&quot;http://waitbutwhy.com/2013/10/why-procrastinators-procrastinate.html&quot;&gt;excellent article on procrastination&lt;/a&gt;
-then you’ll understand that the panic monster is one of the few things
-that will get chronic procrastinators to actually move. &lt;/p&gt;
-
-&lt;p&gt;For tasks with big, looming deadlines such as &lt;a href=&quot;/talks&quot;&gt;my talks&lt;/a&gt;,
-there’s a very clear, and visceral threat of failure. They’re even
-worse than most deadlines, because they’re &lt;em&gt;public speaking&lt;/em&gt;, which
-is already flat out terrifying, and most of my talks are given in
-Australia, where everything is trying to kill you.&lt;/p&gt;
-
-&lt;p&gt;Generally, if I need to get something done, I’ll promise to present
-a talk on it, safe in the knowledge that the fear of public
-ridicule and the thought of my audience
-&lt;a href=&quot;http://en.wikipedia.org/wiki/Saltwater_Crocodile&quot;&gt;taking&lt;/a&gt;
-&lt;a href=&quot;http://en.wikipedia.org/wiki/Stone_fish&quot;&gt;me&lt;/a&gt;
-&lt;a href=&quot;http://en.wikipedia.org/wiki/Great_White_Shark&quot;&gt;to&lt;/a&gt;
-&lt;a href=&quot;http://en.wikipedia.org/wiki/Box_jellyfish&quot;&gt;the&lt;/a&gt;
-&lt;a href=&quot;http://en.wikipedia.org/wiki/Blue_ringed_octopus&quot;&gt;beach&lt;/a&gt;
-will be enough to terrify me into action.&lt;/p&gt;
-
-&lt;p&gt;Yet there’s a problem. Small things which I should be doing regularly,
-like flossing my teeth, or doing exercise, come with with no
-dramatic failure cliffs. And let’s face it, planning to live one’s
-life by only doing the most terrifying things at the last possible
-moment isn’t exactly the most optimal way to live. This is
-where Beeminder comes in handy.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://beeminder.com&quot; title=&quot;Quantify your goals with Beeminder&quot;&gt;Beeminder&lt;/a&gt; provides the ability to establish
-&lt;em&gt;commitment devices&lt;/em&gt;. In the same way that I’ll promise to give
-a talk on software I would &lt;em&gt;like&lt;/em&gt; to write, I can use Beeminder
-to promise to do something that I would &lt;em&gt;like&lt;/em&gt; to do, but which
-I know future me will be unlikely to achieve.&lt;/p&gt;
-
-&lt;p&gt;Beeminder is exceptionally good at taking large or ongoing tasks,
-and splitting them into smaller, more achievable goals. It then
-draws the most friggin’ nerdtastic graphs ever, with rolling
-averages, goal lines, predictive curves, and all sorts of goodies,
-so you can see just how well you’re doing. The most important of
-these is the ‘yellow brick road’. If you’re on that, then you’re
-on track.&lt;/p&gt;
-
-&lt;p&gt;So I might achieve my long-term task of good dental hygiene by having
-a goal to floss three times each week. Or I might turn my goal of
-writing a 5,000 word essay into the task of writing 250 words per day
-for 20 days. Beeminder makes it very easy to see if I’m achieving
-my goal, or if I’m at risk of falling behind. And if I over-perform
-(maybe by writing 1000 words one day), then Beeminder will cut me
-some slack.&lt;/p&gt;
-
-&lt;p&gt;However the real power of Beeminder is that you can pledge an amount
-of money against your goal. Promising that I’m going to floss my
-teeth thrice weekly may not be very motivating, but knowing that
-I’ll lose $5 if I don’t make my flossing deadline is enough to
-have me stumble into the bathroom before bed, rather than promising
-to myself that I will do it later. And while I can change my
-goals at any time, I have to do it at least a week in advance, so
-I can’t weasel out of something just because I don’t want to
-do it right now.&lt;/p&gt;
-
-&lt;p&gt;While I pay out on the occasional pledge, those amounts
-have been absolutely worth it. Overall I’m paying about $0.20/week
-for good dental health, and maybe $0.08/day to keep my inbox
-under control. A Beeminder pledge has also kept me
-attending my last 30 dance lessons, by giving me just enough of
-a nudge to not come up with excuses as to why I’m too busy to
-go, and I’ve not paid a penny to Beeminder for that goal, as
-I’ve never got behind in my dance lessons when I’ve promised to
-be there.&lt;/p&gt;
-
-&lt;p&gt;There’s a lot of cool
-&lt;a href=&quot;http://blog.beeminder.com/akrasia/&quot;&gt;cognitive science behind Beeminder&lt;/a&gt;,
-but one of the neat things is they’re
-&lt;em&gt;very&lt;/em&gt; committed to using their own system
-to ensure that important tasks like user-visible improvements,
-blog-posts, and general support get done. And by very committed, I
-mean that the Beeminder team
-&lt;a href=&quot;http://blog.beeminder.com/blogdog/&quot;&gt;will pay out pledges&lt;/a&gt;
-to users that call them out if they fall behind on one of their
-goals.&lt;/p&gt;
-
-&lt;p&gt;And that’s what happened last Tuesday. One of the founders
-hadn’t spent enough hours on Beeminder that week, and I ended up
-$270 richer as a result, and that was one of the smaller
-pledges they have on the line.&lt;/p&gt;
-
-&lt;p&gt;Of course, being me, I don’t want to feel I &lt;em&gt;have&lt;/em&gt; to check if any
-bounties are payable, so I’ve
-&lt;a href=&quot;https://github.com/pjf/exobrain/blob/master/bin/source/beeminder-bounties&quot;&gt;written some code&lt;/a&gt;
-to check for me. I’ve got no qualms about being efficiently lazy when
-it comes to motivating others. ;)&lt;/p&gt;
-
-</description>
-				<pubDate>Sat, 22 Feb 2014 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au/tech/2014/02/22/how-i-claimed-270-of-beeminder-bounties.html</link>
-				<guid isPermaLink="true">http://pjf.id.au/tech/2014/02/22/how-i-claimed-270-of-beeminder-bounties.html</guid>
 			</item>
 		
 
