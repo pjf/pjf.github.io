@@ -1,6 +1,6 @@
 ---
 title: On Gittip and Diversity
-description: "Yesterday, the founder of Gittip made a post regarding his resentment at the style in which a lot of criticism had been levelled at Gittip. The result was a schism where a number of the most prominent Gittip users closed their accounts, citing that Gittip was no longer a safe place for minority users."
+description: "Yesterday, the founder of Gittip made a post regarding his resentment at the style in which a lot of criticism had been levelled at Gittip. This resulted in a schism where a number of prominent Gittip users closed their accounts, citing that Gittip was no longer a safe place for minority users."
 tags: diversity, gittip, feminism
 ---
 
