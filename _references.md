@@ -2,6 +2,7 @@
 [ethics]: /ethics "Paul Fenwick's writings on ethics and philosophy"
 [pjf]: http://pjf.id.au/ "Paul Fenwick's personal website"
 [pjf-pocket]: http://pjf.id.au/tech/2014/01/23/dont-read-articles--listen-to-them.html "Don't read articles, listen to them (pjf.id.au)"
+[gittiposb1]: http://pjf.id.au/tech/2014/06/21/gittip-and-diversity.html "On Gittip and Diversity (pjf.id.au)"
 
 # Tech
 [btrfs]: http://arstechnica.com/information-technology/2014/01/bitrot-and-atomic-cows-inside-next-gen-filesystems/ "Bitrot and atomic COWs: Inside next-gen filesystems"
