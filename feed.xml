@@ -12,6 +12,73 @@
                     
 
 			<item>
+				<title>Gittip and Open Source Bridge</title>
+				<description>&lt;p&gt;In a few days time I’ll be discussing Gittip at OS Bridge. That’s been
+a sensitive topic, and I’ve &lt;a href=&quot;http://pjf.id.au/tech/2014/06/21/gittip-and-diversity.html&quot; title=&quot;On Gittip and Diversity (pjf.id.au)&quot;&gt;already written about it a little&lt;/a&gt;.
+It’s going to be a particularly sensitive topic for some attendees
+at OS Bridge, and so I have a few requests for you as an attendee,
+and regarding my session in general.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;The Gittip crisis has affected many OS Bridge attendees directly
+and personally. Many of them have stated very publicly that they
+&lt;em&gt;do not&lt;/em&gt; wish to discuss Gittip at OS Bridge. I ask you to please
+respect these wishes; if you know if someone’s been impacted by
+this personally (or if you’re not sure), then please don’t discuss
+recent Gittip events with them.&lt;/p&gt;
+
+&lt;p&gt;During my session we &lt;em&gt;will&lt;/em&gt; be discussing Gittip. Of course, I’ll
+be talking about funding platforms for open source and
+social justice &lt;em&gt;in general&lt;/em&gt;, but Gittip has been the dominant
+platform for that, and I doubt we could avoid discussing it
+even if we tried.  You should not take anyone’s attendance at this
+session as their consent to discuss Gittip outside of the session. You
+can talk to &lt;em&gt;me&lt;/em&gt; about Gittip at any time, but do ask first. I may
+need a break from discussing Gittip, or we could be in company of
+others who would rather not observe Gittip discussions.&lt;/p&gt;
+
+&lt;p&gt;Also, to make this absolutely clear:
+&lt;strong&gt;If you feel that your safety is threatened by me running a talk on Gittip, I will be withdrawing my talk.&lt;/strong&gt;
+It’s not for me to decide what’s safe for you, nor will I be asking how
+your safety is being threatened. I’m an experienced public speaker, and
+I can fill the slot with something else if required. If
+you do not feel comfortable raising matters of safety with me (email to
+paul.j.fenwick at gmail), then I encourage you to talk to one of the
+organisers.&lt;/p&gt;
+
+&lt;p&gt;The OS Bridge organisers have assured me they’ll have extra moderators
+at the session, but even so I want to make it very clear that I’ll be
+focusing on constructive discussion. The conference code of conduct will be
+rigorously enforced. I would like to focus on discussing ways of
+funding people making the world a better place, with a focus on
+sustainable funding for marginalised groups in particular. As
+mentioned in my &lt;a href=&quot;http://pjf.id.au/tech/2014/06/21/gittip-and-diversity.html&quot; title=&quot;On Gittip and Diversity (pjf.id.au)&quot;&gt;previous post&lt;/a&gt;, I’d like to give a voice to
+anyone who’s been involved in discussing alternatives. Please
+contact me if you’d like to be involved.&lt;/p&gt;
+
+&lt;p&gt;Gittip is still a volatile topic, and many people are personally
+affected by recent events. I only want to run a session if I feel
+that it will do more good than harm, and right now I’m not sure that
+will be the case. If my talk does get withdrawn or replaced, then
+I appreciate your understanding in me doing so.&lt;/p&gt;
+
+&lt;p&gt;Yours sincerely,&lt;/p&gt;
+
+&lt;p&gt;~ Paul&lt;/p&gt;
+
+</description>
+				<pubDate>Sun, 22 Jun 2014 00:00:00 +1000</pubDate>
+				<link>http://pjf.id.au/tech/2014/06/22/gittip-and-osbridge.html</link>
+				<guid isPermaLink="true">http://pjf.id.au/tech/2014/06/22/gittip-and-osbridge.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>On Gittip and Diversity</title>
 				<description>&lt;p&gt;For those who aren’t aware, Gittip is a platform for &lt;em&gt;sustainable giving&lt;/em&gt;.
 It provides a way to make contributions to people who you think are
@@ -599,34 +666,6 @@ or which you can distribute to others!&lt;/p&gt;
 				<pubDate>Thu, 06 Mar 2014 00:00:00 +1100</pubDate>
 				<link>http://pjf.id.au/tech/2014/03/06/exobrain-setup-is-now-even-easier.html</link>
 				<guid isPermaLink="true">http://pjf.id.au/tech/2014/03/06/exobrain-setup-is-now-even-easier.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>The iOS SSL/TLS bug is worse than you think</title>
-				<description>&lt;p&gt;Holy smokes. So having looked at the &lt;a href=&quot;https://www.imperialviolet.org/2014/02/22/applebug.html&quot;&gt;actual code&lt;/a&gt; for this, the bug in iOS / OSX is &lt;em&gt;way&lt;/em&gt; worse than described &lt;a href=&quot;http://gizmodo.com/why-apples-huge-security-flaw-is-so-scary-1529041062&quot;&gt;on gizmodo&lt;/a&gt;. The article is misleading when it says your home network is safe, it’s &lt;em&gt;not&lt;/em&gt;. If I poison your DNS queries, compromise your home router (they’re &lt;em&gt;very&lt;/em&gt; exploitable), have privileged access to the network infrastructure between you and what you’re connecting to, or all manner of other things, then I &lt;em&gt;own&lt;/em&gt; your connection, and whatever data you send across it; credit card details, bank account logins, facebook passwords, all of it. If I hijack anything that’s doing a software update, then I may potentially own your device.&lt;/p&gt;
-
-&lt;p&gt;In fact, if you’re already logged into a website, I may even be able to steal your cookies and act as you without you even needing to enter a username and password at all. Seriously, this exploit really is about as bad as it gets.&lt;/p&gt;
-
-&lt;p&gt;Two-factor auth will mitigate some, but not &lt;em&gt;all&lt;/em&gt; of the damage here. The only way to close this hole is to upgrade your vulnerable apple devices now. Please do this. Seriously.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Edit:&lt;/strong&gt; What am I saying? Two factor auth isn’t going to help you one damn bit. If you’ve just typed in your account number and password to your bank, &lt;em&gt;of course&lt;/em&gt; you’re going to supply me with your one-time password as well, &lt;em&gt;because you think it’s your bank asking for it&lt;/em&gt;, and your browser isn’t going to tell you otherwise. You’re going to supply it even if the bank texts it to your phone; in fact, that just makes the whole thing feel &lt;em&gt;more&lt;/em&gt; legitimate. So please, really, &lt;em&gt;really&lt;/em&gt; upgrade. Right now.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://gizmodo.com/why-apples-huge-security-flaw-is-so-scary-1529041062&quot;&gt;Gizmodo article&lt;/a&gt;. &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.imperialviolet.org/2014/02/22/applebug.html&quot;&gt;Code with discussion&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;CVE-2014-1266&lt;/p&gt;
-
-</description>
-				<pubDate>Tue, 25 Feb 2014 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au/tech/2014/02/25/the-ios-bug-is-worse-than-you-think.html</link>
-				<guid isPermaLink="true">http://pjf.id.au/tech/2014/02/25/the-ios-bug-is-worse-than-you-think.html</guid>
 			</item>
 		
 
