@@ -59,7 +59,7 @@ Because each component is in their own status group, you can enable or disable
 them easily with `ubic start exobrain.beeminder` or `ubic stop exobrain.beeminder`.
 
 Under the hood, components provide a much cleaner way of writing agents,
-with many components supplying roles which allow automatically handle connection
+with many components supplying roles which automatically handle connection
 and configuration to services. They also open the door to writing your own
 private components which can be updated inpdependently to the rest of Exobrain,
 or which you can distribute to others!
