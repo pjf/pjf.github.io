@@ -11,7 +11,7 @@ Online services like "If This Then That" (IFTTT) are great for automating your l
 <!--more-->
 
 This presentation was given at the Perth Linux Users' Group. I am very
-thank for them taking the time and effort to record and encode this
+thankful for them taking the time and effort to record and encode this
 video.
 
 You can learn more about the exobrain project

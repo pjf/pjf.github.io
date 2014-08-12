@@ -45,9 +45,9 @@ suck, and [Ivona][ivona] immediately springs to mind here, then you have a
 *much* easier way of "reading" articles.
 
 The combination is so nice that I read articles almost exclusively via Pocket
-and Ivona now. I'm even adding [exobrain][exobrain] capabilities sending me an
-article on social media will automatically add it to my reading queues. Of
-course, all my writing on [pjf.id.au][pjf] sounds great in Pocket, too!
+and Ivona now. I'm even adding [exobrain][exobrain] capabilities where sending 
+me an article on social media will automatically add it to my reading queues. 
+Of course, all my writing on [pjf.id.au][pjf] sounds great in Pocket, too!
 
 Alas, Pocket for iOS lacks the built-in TTS capabilities; I've been told
 iOS lacks an easy-to-use speech interface for developers. However many

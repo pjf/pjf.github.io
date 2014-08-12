@@ -30,8 +30,8 @@ cancelled out just because someone else has a different type.
 
 Acknowledging privilege is acknowledging that some things are unfair, it's
 acknowledging the truth. But more importantly, it's acknowledging that things
-*don't have to be that way*. Acknowledging that you have isn't admitting that
-you're wrong, it isn't saying you're a bad person... it's the very first step
-in making things better, and that is very, very right.
+*don't have to be that way*. Acknowledging that you have priviledge isn't 
+admitting that you're wrong, it isn't saying you're a bad person... it's the 
+very first step in making things better, and that is very, very right.
 
 &#x5b;This was originally posted as a comment on a friend's facebook wall.&#x5d;
