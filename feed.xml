@@ -255,9 +255,9 @@ cancelled out just because someone else has a different type.&lt;/p&gt;
 
 &lt;p&gt;Acknowledging privilege is acknowledging that some things are unfair, it’s
 acknowledging the truth. But more importantly, it’s acknowledging that things
-&lt;em&gt;don’t have to be that way&lt;/em&gt;. Acknowledging that you have isn’t admitting that
-you’re wrong, it isn’t saying you’re a bad person… it’s the very first step
-in making things better, and that is very, very right.&lt;/p&gt;
+&lt;em&gt;don’t have to be that way&lt;/em&gt;. Acknowledging that you have privilege isn’t 
+admitting that you’re wrong, it isn’t saying you’re a bad person… it’s the 
+very first step in making things better, and that is very, very right.&lt;/p&gt;
 
 &lt;p&gt;[This was originally posted as a comment on a friend’s facebook wall.]&lt;/p&gt;
 
@@ -341,7 +341,7 @@ solely deliver pictures of cats.&lt;/p&gt;
 &lt;!--more--&gt;
 
 &lt;p&gt;This presentation was given at the Perth Linux Users’ Group. I am very
-thank for them taking the time and effort to record and encode this
+thankful for them taking the time and effort to record and encode this
 video.&lt;/p&gt;
 
 &lt;p&gt;You can learn more about the exobrain project
@@ -657,7 +657,7 @@ call-backs configured correctly).&lt;/p&gt;
 them easily with &lt;code&gt;ubic start exobrain.beeminder&lt;/code&gt; or &lt;code&gt;ubic stop exobrain.beeminder&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Under the hood, components provide a much cleaner way of writing agents,
-with many components supplying roles which allow automatically handle connection
+with many components supplying roles which automatically handle connection
 and configuration to services. They also open the door to writing your own
 private components which can be updated inpdependently to the rest of Exobrain,
 or which you can distribute to others!&lt;/p&gt;
