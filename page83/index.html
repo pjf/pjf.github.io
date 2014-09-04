@@ -157,6 +157,80 @@
 
 
         <header>
+            <h2 class="p-name"><a href="/advogato/2003/12/23/hardware.html">Hardware</a></h2>
+            
+        </header>
+
+        <div class="info">
+    
+    <a href="http://pjf.id.au/advogato/2003/12/23/hardware.html" class="u-url nodecorate">
+        <time class="date dt-published" datetime="2003-12-23 19:08:40"> <span class="month">Dec</span>
+            <span class="day">23</span>
+            <span class="year"><span>,</span> 2003</span>
+        </time>
+    </a>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+
+        <div class="p-summary">
+            
+                <B>Hardware</b><BR>
+Found the problem with the scanner.  It had changed from /dev/sg1 to /dev/sg0, and apparently the snapscan driver wants the device mentioned explicitly in it's own special config file in order to work.  *shrug*
+<p>
+<B>Trademarks</b><BR>
+Found on the back of a candy wrapper (capitalisation adjusted):
+<blockquote>
+Cadbury, dairy milk, the glass and a half device, magical elves and the colour purple are Cadbury Ltd trademarks and used under license in Australia by Cadbury Schweppes Pty Ltd.
+</blockquote>
+A trademark on the colour purple?  I wonder what the magical elves(TM) have been handing out to the trademark office?
+
+
+            
+        </div>
+
+        <a href="/advogato/2003/12/23/hardware.html">(read more...)</a>
+
+    </article>
+    <div class="clear_right"></div> <!-- Stop image overflows -->
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt h-entry">
+
+        
+
+
+        <header>
             <h2 class="p-name"><a href="/advogato/2003/12/21/hardware.html">Hardware</a></h2>
             
         </header>
@@ -498,97 +572,6 @@ My mother will be sorely missed, and fondly remembered.
 
     </article>
     <div class="clear_right"></div> <!-- Stop image overflows -->
-
-
-    
-
-    
-
-    
-
-
-    
-
-    
-
-
-
-    
-
-    
-
-    <article class="is-post is-post-excerpt h-entry">
-
-        
-
-
-        <header>
-            <h2 class="p-name"><a href="/advogato/2003/12/03/it-s-3am---.html">It's 3am...</a></h2>
-            
-        </header>
-
-        <div class="info">
-    
-    <a href="http://pjf.id.au/advogato/2003/12/03/it-s-3am---.html" class="u-url nodecorate">
-        <time class="date dt-published" datetime="2003-12-03 03:29:59"> <span class="month">Dec</span>
-            <span class="day"> 3</span>
-            <span class="year"><span>,</span> 2003</span>
-        </time>
-    </a>
-
-
-    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
-
-    <!--
-        <ul class="stats">
-            <li><a href="#" class="fa fa-comment">16</a></li>
-            <li><a href="#" class="fa fa-heart">32</a></li>
-            <li><a href="#" class="fa fa-twitter">64</a></li>
-            <li><a href="#" class="fa fa-facebook">128</a></li>
-        </ul>
-    -->
-</div>
-
-
-        
-
-        <div class="p-summary">
-            
-                <B>It's 3am...</b><BR>
-And I've learnt a new scenario to add to the diaster recovery plan.  What if it rains?  What if it rains a <i>lot</i>?
-<p>
-We just discovered that when we have <i>huge</i> amounts of rain, combined with big fat hailstones, that <i>something</i> goes wrong in the roof adjoining the office and water gets in.  Quite a lot of water.  This could just be because the top of the gutters is flush with the bottom of the roof, and so if they overflow, water can get into the roof cavity.  This area happens to be about the only area that doesn't have any eaves, so rather than the water running away or down the exterior walls, it gets onto the ceiling -- which in this area is lower than the rest of the house as well.
-<P>
-Other possibilities include broken tiles, bad valleys, or the solar hot-water service somehow making it easier to flood.
-<p>
-In any case, at 1am we performed an emergency removal of all gear from the area, which was mainly used for storage.  Some books got damp, some old ISA network cards were sodden, and a couple of pentium-90s that should have been tossed years ago were drenched.  Otherwise, no significant damage that we're aware of.
-<p>
-However, water in the roof cavity had another danger.  Electrical problems.  Something, somewhere, tripped the safety switch (earth leakage detector), disabling all appliances.
-<p>
-Our server dutifully switched to UPS, and then ate the battery and died while we were trying to locate the fault.  That's very bad -- it's supposed to prepare itself for an emergency shutdown, and proceed with it if power is not restored in a timely fashion, or if the battery goes low.
-<p>
-We discovered that isolating the front-half of the property allowed us to restore power to the office.  We also discovered that a light fitting in the watery area was shorting, producing a distinctive smell of ozone and a very disturbing noise.
-<p>
-Cut the lights at the circuit-breaker, tested the light to see if it was hot (temperature or current), tested a few times in different places (using the <i>back</i> of one's hand), and proceeded to remove the light.  We're going to wait until everything dries out before we try to turn it back on.
-<p>
-Powered back on our server, it grumbled but started.  One of the drives complained hugely during RAID re-sync.  I dropped a job into RT that it should be removed from the array and the fresh reserve drive (already sitting in the machine) added in.
-<p>
-Sure enough, 70% into the reconstruction, the flakey drive reported a bad sector and was dropped from the array.  I checked our backups were good, and initiated reconstruction with the fresh drive installed for this purpose.
-<p>
-Throughout this, there was much cursing of IDE drive manufacturers who produce such poor quality drives.  It's a real shame when a '3 year warranty' means it can be almost guaranteed I'll be returning the drive to them after 18 months.
-<p>
-I really should be moving to SCSI.  Sure, they're much more expensive, but the reliability is worth it.  I've got much better things to do with my time than monkey around with poor hardware.
-<p>
-Drive reconstruction ends in about an hour.  Hopefully we won't see any more issues.
-
-
-            
-        </div>
-
-        <a href="/advogato/2003/12/03/it-s-3am---.html">(read more...)</a>
-
-    </article>
-    <div class="clear_right"></div> <!-- Stop image overflows -->
     
 
 
@@ -721,6 +704,8 @@ Drive reconstruction ends in about an hour.  Hopefully we won't see any more iss
 
         <ul>
         
+            <li><a href="/personal/2014/09/03/do-what-you-love.html">Thoughts from Burning Man: Do what you love.</a>
+        
             <li><a href="/tech/2014/06/22/gittip-and-osbridge.html">Gittip and Open Source Bridge</a>
         
             <li><a href="/tech/2014/06/21/gittip-and-diversity.html">On Gittip and Diversity</a>
@@ -738,8 +723,6 @@ Drive reconstruction ends in about an hour.  Hopefully we won't see any more iss
             <li><a href="/personal/2014/04/13/tanya-and-danjite-are-awesome.html">Tanya and Danjite are awesome</a>
         
             <li><a href="/tech/2014/03/21/why-diversity-is-hard-to-achieve.html">Why diversity in tech is so hard to achieve</a>
-        
-            <li><a href="/tech/2014/03/06/exobrain-setup-is-now-even-easier.html">Exobrain setup is now even easier!</a>
         
         </ul>
     </section>
