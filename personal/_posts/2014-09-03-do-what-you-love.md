@@ -85,8 +85,8 @@ consciousness. I ignored all the things one's "supposed" to do at burning man,
 and instead did all the things *I* wanted to do. And it was glorious.
 
 What's more, this experience reaffirmed something I'd just been starting
-to figure out about myself. I do a lot of things that seem exceptional, but I'm
-not doing many of those because while I enjoyed them once, they're now part of
+to figure out about myself. I do a lot of things that seem exceptional,
+and while I may have enjoyed them once, they've now become part of
 my routine. Travel is the obvious one here; right now I so very much want to be
 at home, and so I'm going to do exactly that. Yes, I'm missing some
 conferences. Yes, I'm going to miss some opportunities. But I don't care,
