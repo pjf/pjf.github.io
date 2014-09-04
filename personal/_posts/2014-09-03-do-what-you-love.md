@@ -50,7 +50,7 @@ thirsty work. God was good on beer, and gave me advice could be summed up simply
 as "love".
 
 I didn't properly understand God's message until I sought out my friend
-{% t geekstar1337 Claire %}, who has many more burns under her belt, and always gives great advice.
+{% fb GeekStarCostuming Claire %}, who has many more burns under her belt, and always gives great advice.
 We met one year in the Muggle world, when she snuck me into a Harry Potter
 convention in Portland. I found Claire sitting on a dusty street corner,
 alternatively applying her face painting talents, and heckling passers-by to
