@@ -22,7 +22,7 @@ long term planning and worry that I would normally experience.
 This sounds like a lovely, stress-free experience, but as we'll see it wasn't
 the best way for me to approach the burn.
 
-When I finally arrived on playa, and I was already terribly
+When I finally arrived on playa, I was already terribly
 homesick. Because I had dropped into the burn after so much continuous
 travel, I hadn't given much thought as to what I'd like to get out of
 the burn. While those plans *never* go as expected, I usually enter with
@@ -33,7 +33,7 @@ Consequently, I fell into my old routine. I went to the same
 places as previous burns. I did the same things. Seeking out experiences and
 events that one enjoyed in the past is very human behaviour, and in the
 absence of anything better usually works pretty well. However because these
-were things I had experiencedbefore, my routine ended up *feeling* routine. I
+were things I had experienced before, my routine ended up *feeling* routine. I
 wasn't appreciating things, I wasn't connecting with people, and I continued to
 feel homesick. This was amplified by the fact that some of my favourite
 campmates weren't at the burn this year.
@@ -46,7 +46,7 @@ Luckily, there was a telephone booth with a direct line to God just across the
 street from our camp. Being able to call God directly for advice is certainly one
 of the advantages of Burning Man. We had a nice chat, I checked to make
 sure God didn't need a beer delivery, because I know being God is sometimes
-thirsty work. God was good on beer, and gave me advice could be summed up simply
+thirsty work. God was good on beer, and gave me advice which could be summed up simply
 as "love".
 
 I didn't properly understand God's message until I sought out my friend
@@ -69,7 +69,7 @@ direct and insightful:
 > Don't care about what anyone else says. Don't worry if you're doing it
 > wrong, or even if you're doing it right. Just *do what you fucking love*."
 
-Up until this point, I had been trying to do *Burning Man* things, like art of
+Up until this point, I had been trying to do *Burning Man* things, like art or
 interaction, and I wasn't really feeling it. So I resolved to do what I loved.
 And that's knowledge. I sought out scientists, and science talks, and people
 who have a love of learning.  Rather than watching things burn on the playa, I
