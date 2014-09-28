@@ -12,6 +12,31 @@
                     
 
 			<item>
+				<title>Australian Terrorism Deaths in the Last 20 Years</title>
+				<description>&lt;p&gt;I’ve discovered the &lt;a href=&quot;http://www.start.umd.edu/gtd&quot;&gt;Global Terrorism Database&lt;/a&gt;.
+It records over 125,000 terrorist incidents since 1970. It’s easy to
+search by country, sort by fatalities, and find more information about
+incidents.&lt;/p&gt;
+
+&lt;p&gt;Today I discovered that the total number of deaths from terrorism in
+Australia in the last twenty years is &lt;em&gt;three&lt;/em&gt;, and none of them were
+Australian citizens.
+They were &lt;a href=&quot;http://www.start.umd.edu/gtd/search/IncidentSummary.aspx?gtdid=200904160031&quot;&gt;asylum seekers&lt;/a&gt;, heading to Australia.&lt;/p&gt;
+
+&lt;p&gt;I honestly don’t know what to say.&lt;/p&gt;
+
+</description>
+				<pubDate>Sun, 28 Sep 2014 00:00:00 +1000</pubDate>
+				<link>http://pjf.id.au/ethics/2014/09/28/australian-terrorism-deaths-in-the-last-20-years.html</link>
+				<guid isPermaLink="true">http://pjf.id.au/ethics/2014/09/28/australian-terrorism-deaths-in-the-last-20-years.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>Thoughts from Burning Man: Do what you love.</title>
 				<description>&lt;p&gt;Every year burning man is a new experience, and every year I discover new
 things about both others and myself. This year has been no exception.&lt;/p&gt;
@@ -647,55 +672,6 @@ amazing people, and some truly, truly awful puns. I adore him to bits.&lt;/p&gt;
 				<pubDate>Sun, 13 Apr 2014 00:00:00 +1000</pubDate>
 				<link>http://pjf.id.au/personal/2014/04/13/tanya-and-danjite-are-awesome.html</link>
 				<guid isPermaLink="true">http://pjf.id.au/personal/2014/04/13/tanya-and-danjite-are-awesome.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>Why diversity in tech is so hard to achieve</title>
-				<description>&lt;figure class=&quot;right&quot;&gt;&lt;a class=&quot;fancybox&quot; rel=&quot;group&quot; href=&quot;/images/tech/anna-facebook-post.png&quot;&gt;&lt;img src=&quot;/images/tech/anna-facebook-post.png&quot; /&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;i&gt;This was originally made as a response to a
-&lt;a href=&quot;https://www.facebook.com/paul.fenwick/posts/10152061360984611&quot;&gt;Facebook post&lt;/a&gt;
-discussing diversity issues in tech.&lt;/i&gt;&lt;/p&gt;
-
-&lt;p&gt;Anna: I am a feminist who has attended and spoken at your events. I’m not familiar with the experiences which you’ve had in the past; I’ve not been involved with them, and so I am in no position to comment. I have absolutely no desire to ruin your reputation or spread rumours. &lt;/p&gt;
-
-&lt;p&gt;However I am perfectly happy to comment on things that I’ve personally observed, and to call you out when I feel that you’re being actively harmful to diversity, especially diversity in open source.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;On the 7th March (give or take a timezone) you publicly posted¹ about a conference that catered specifically to a group that is under-represented in both IT and FOSS. Since I gave the OSCON 2013 closing keynote on the processes by which marginalised groups in tech remain marginalised (even when there’s absolutely no hostility or ill intent) I’d normally be delighted with any post that promotes diversity and outreach.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately, that’s not what your post was about.&lt;/p&gt;
-
-&lt;p&gt;Instead, it was a post that belittled an already minority group. I’m not really fond of belittling anyone, but I’m especially not fond of it when it comes from a person in a position of power, such as a conference organiser. It’s even worse when &lt;em&gt;another&lt;/em&gt; conference organiser joins in, which is exactly what happened here.&lt;/p&gt;
-
-&lt;p&gt;I’m not a member of that minority group going to ConFoo, but if I was, then after seeing your post I would be thinking twice. Given the public behaviour I’d seen of the conference organisers, I wouldn’t feel comfortable discussing my non-mainstream sexuality. I certainly wouldn’t feel comfortable discussing any work I’d done in promoting diversity. If I was working on technology that helped with issues specific to the minority in which I belonged, I’d be concerned that this too would somehow be belittled… and none of this has anything to do with any &lt;em&gt;actual&lt;/em&gt; hostility at the conference; all that’s needed is the perception that hostility will arise for someone to be silenced.&lt;/p&gt;
-
-&lt;p&gt;And that’s one of the biggest reasons why diversity is so hard to achieve. Speaking at a conference &lt;em&gt;should&lt;/em&gt; be about the tech. It &lt;em&gt;shouldn’t&lt;/em&gt; be about worrying if you’re going to be harassed, belittled, shunned, stared at, made fun of, or worse. Outreach is not playing favourites; outreach is simply saying: “Hey, there are others like you. That lack of diversity you see isn’t because the people here suck, that’s just a historical artefact.”&lt;/p&gt;
-
-&lt;p&gt;Outreach programmes are a &lt;em&gt;compliment&lt;/em&gt; to the communities from which they grow. If there’s an outreach programme for a certain technology, then enough of a minority group in that technology think that it’s worthwhile to introduces others to it. Toxic communities rarely result in outreach; their members just leave instead. But healthy, active communities result in healthy, active outreach programmes. That’s something that should be celebrated, not something that should be the butt of a joke.&lt;/p&gt;
-
-&lt;p&gt;Anna, I know that you want it to just be about the tech³. I want exactly the same thing. I’m not going to ask you to go promoting outreach programmes, but if you &lt;em&gt;do&lt;/em&gt; want tech conferences to be about the tech, then I am going to ask you to stop making fun of the people and communities who are running those programmes. By all means, criticise conferences on their technical merits; but please don’t criticise a conference just because of the gender or sexuality of the people who attend them.&lt;/p&gt;
-
-&lt;p&gt;~ Paul &lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;¹ A screenshot of the public post is attached.&lt;/p&gt;
-
-&lt;p&gt;² My material was drawn from the &lt;a href=&quot;http://gretachristina.typepad.com/greta_christinas_weblog/2009/09/race-sex-atheism.html&quot;&gt;excellent explanations by Greta Christina&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;³ Blog post: &lt;a href=&quot;http://afilina.com/it-is-not-about-gender/&quot;&gt;It is not about gender.&lt;/a&gt;&lt;/p&gt;
-
-</description>
-				<pubDate>Fri, 21 Mar 2014 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au/tech/2014/03/21/why-diversity-is-hard-to-achieve.html</link>
-				<guid isPermaLink="true">http://pjf.id.au/tech/2014/03/21/why-diversity-is-hard-to-achieve.html</guid>
 			</item>
 		
 
