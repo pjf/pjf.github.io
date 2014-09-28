@@ -12,6 +12,7 @@ incidents.
 Today I discovered that the total number of deaths from terrorism in
 Australia in the last twenty years is *three*, and none of them were
 Australian citizens.
+
 They were [asylum seekers](http://www.start.umd.edu/gtd/search/IncidentSummary.aspx?gtdid=200904160031), heading to Australia.
 
 I honestly don't know what to say.
