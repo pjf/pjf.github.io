@@ -13,6 +13,8 @@ discouraged because it oppresses women.
 I'm not interested in debating whether or not it oppresses women or not; but I
 can tell you that calling for its ban *is* harming Australian women, right now.
 
+<!--more-->
+
 You've probably noticed there's been quite a bit of Islamophobia recently. Of
 course, *you* believe in religious freedom, and you're definitely not a racist.
 Your stance on the burqa is only because you believe in gender equality, right?
