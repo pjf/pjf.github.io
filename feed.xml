@@ -12,6 +12,49 @@
                     
 
 			<item>
+				<title>Why non-code contributions matter</title>
+				<description>&lt;p&gt;Contributing to open source projects is often considered to be a good career move. Unlike doing work behind the closed doors of a proprietary business, contributions to open source provides visible proof of your skill and accomplishments.&lt;/p&gt;
+
+&lt;p&gt;Except that’s not always the case.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Often the most visible contributions are &lt;em&gt;code&lt;/em&gt;. There’s an endless number of tools to graph, visualise, plot, and examine &lt;em&gt;code&lt;/em&gt; contributions. But software projects are not just code. The people who are doing user experience design and feedback isn’t coding. The people who are building a thriving community isn’t coding. The people triaging bugs, supporting the users, organising events, brainstorming ideas, acting as liaisons, and writing documentation are not coding. The people who notice when someone’s burning out and provide support; the people reminding contributors that they’re valued and doing a good job; the very people who are critical for the long term health of the project aren’t coding.&lt;/p&gt;
+
+&lt;p&gt;And often, they’re forgotten.&lt;/p&gt;
+
+&lt;p&gt;This is a poor situation for everyone involved. A lack of recognition means these vital people may leave the project, much to its detriment. The same lack of recognition means open source is not always a good career move, even when the work has been outstanding. It’s easy to see code metrics, but it’s much harder to point to non-code contributions.&lt;/p&gt;
+
+&lt;p&gt;This is something we need to fix. Non-code contributions come from a diverse range of backgrounds, much more diverse than code contributions. This means a lack of recognition is doubly bad for open source, not only are we failing to support vital contributions, but we’re also impeding diversity.&lt;/p&gt;
+
+&lt;p&gt;Leslie Hawthorn has written a brilliant piece on this¹, that goes into more detail, with better explanations than what I’ve written here. If you’re at all involved in open source, you should read it now. Most importantly, Leslie also provides a solution, and one that really should be obvious.&lt;/p&gt;
+
+&lt;p&gt;Acknowledge non-code contributions. Not just on mailing lists and support trackers, but in employer-visible locations such as LinkedIn, and across wider audiences such as social media. Leslie calls this “building the hat-rack”, although you’ll need to &lt;a href=&quot;http://hawthornlandings.org/2015/02/13/a-place-to-hang-your-hat/&quot;&gt;read her post&lt;/a&gt; to understand why.&lt;/p&gt;
+
+&lt;p&gt;And so, I’m doing to do that right now.&lt;/p&gt;
+
+&lt;p&gt;I wish to say a very public thank you to Michele Ippolito, better known as “Ippo” in the Kerbal modding community. As some of you know, I started the CKAN project, a mod manager for Kebal Space Program. The CKAN has dozens of contributors, and has been a great success, and Ippo has been absolutely instrumental as part of that.&lt;/p&gt;
+
+&lt;p&gt;While Ippo has a coding background, he’s been the linchpin of the CKAN &lt;em&gt;community&lt;/em&gt;. Ippo has spent countless hours liaising with mod authors, answering user queries, triaging bugs, writing documentation, maintaining the wiki, and making releases. If it were not for Ippo’s efforts, the CKAN simply wouldn’t be the resounding success that it is today.&lt;/p&gt;
+
+&lt;p&gt;If you’re involved in open source, or any field where contributions may go unacknowledged, I urge you to read Leslie’s post now and help acknowledge the amazing work that’s going on about you.&lt;/p&gt;
+
+&lt;p&gt;With many thanks to everyone who’s building the future,&lt;/p&gt;
+
+&lt;p&gt;~ Paul #&lt;a href=&quot;https://twitter.com/search?q=%23LABHR&quot;&gt;LABHR&lt;/a&gt;&lt;/p&gt;
+
+</description>
+				<pubDate>Sun, 15 Feb 2015 00:00:00 +1100</pubDate>
+				<link>http://pjf.id.au/tech/2015/02/15/why-non-code-contributions-matter.html</link>
+				<guid isPermaLink="true">http://pjf.id.au/tech/2015/02/15/why-non-code-contributions-matter.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>Why &quot;Ban the Burqa&quot; Doesn't Hold</title>
 				<description>&lt;p&gt;[TW: Discusses religious intolerance, and violence against women.]&lt;/p&gt;
 
@@ -677,44 +720,6 @@ gender, rather than a place which unconsciously suppresses it.&lt;/p&gt;
 				<pubDate>Mon, 14 Apr 2014 00:00:00 +1000</pubDate>
 				<link>http://pjf.id.au/personal/2014/04/14/gendered-toilets-at-conferences.html</link>
 				<guid isPermaLink="true">http://pjf.id.au/personal/2014/04/14/gendered-toilets-at-conferences.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>Tanya and Danjite are awesome</title>
-				<description>&lt;p&gt;I’m in Auckland after KiwiFoo, which was pretty darn awesome, and well worth a
-hectic travel schedule to attend. And while I have a lot of good things to say
-about my contributions at the conference, I instead want publicly say a few
-words of thanks to two people who have consistently made made my life better,
-and whom I deeply appreciate.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/tanya&quot; class=&quot;social-link&quot;&gt;Tanya Gray&lt;/a&gt; I had the pleasure of meeting at Codemania last year, and has consistently blown me away with her generosity and desire to help others. She’s dedicated to teaching programming and technology at schools, and is doing an amazing job of encouraging diversity and participation. But for me personally, Tanya consistently and proactively steps forward to make sure I’m okay any time I might possibly be near Auckland. I have Tanya to thank for adventures through awesome underground rivers, for a place to stay, for helping me get around, and even for smoothly run conferences.&lt;/p&gt;
-
-&lt;p&gt;On Friday, Tanya drove all the way from KiwiFoo back to Auckland, picked me up
-at midnight, and drove all the way back again to arrive around 1:30am. She
-furnished me with one of her own sleeping bags. She’d already staked out a
-sleeping area for me a Foo. In other words, Tanya enabled me to have the best
-time possible this weekend, and I am deeply, deeply thankful to her, not only
-for this, but for all the good she is doing in the world.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/danjite&quot; class=&quot;social-link&quot;&gt;Daniel Spector&lt;/a&gt;, whom I met many years ago at a Linux conference, has been an absolute rock, even when we’ve been separated by great distances. Daniel has checked if I’ve been okay when I’ve been feeling down.  He’s encouraged me to chase my dreams when I’ve been feeling up. He’s had endless patience when I’ve needed advice, and endless generosity and hospitality whenever I’ve been anywhere nearby. Daniel believes in me even when I don’t believe in myself, and that has made an enormous difference to my life.&lt;/p&gt;
-
-&lt;p&gt;Daniel has been responsible for amazing adventures, for providing me with food
-and shelter, for fascinating conversations, excellent referrals, meeting
-amazing people, and some truly, truly awful puns. I adore him to bits.&lt;/p&gt;
-
-&lt;p&gt;~ Paul &lt;/p&gt;
-
-</description>
-				<pubDate>Sun, 13 Apr 2014 00:00:00 +1000</pubDate>
-				<link>http://pjf.id.au/personal/2014/04/13/tanya-and-danjite-are-awesome.html</link>
-				<guid isPermaLink="true">http://pjf.id.au/personal/2014/04/13/tanya-and-danjite-are-awesome.html</guid>
 			</item>
 		
 
