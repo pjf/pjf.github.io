@@ -12,6 +12,45 @@
                     
 
 			<item>
+				<title>CKAN needs an infrastructure sponsor!</title>
+				<description>&lt;p&gt;About six months ago I had this crazy idea that one of my favourite games, Kerbal Space Program, needed a mod manager that did everything &lt;em&gt;right&lt;/em&gt;, and an &lt;em&gt;amazing&lt;/em&gt; team of volunteers, including myself, set about to make that happen. The result has been the Comprehensive Kerbal Archive Network (CKAN). Tens of thousands of people have downloaded the CKAN client, and we index hundreds of mods to make sure our users can install and upgrade mods with the click of a button.&lt;/p&gt;
+
+&lt;p&gt;CKAN has been an &lt;em&gt;overwhelming&lt;/em&gt; success. All our code is free, all our metadata is free, and all the work has been done by unpaid volunteers who wanted to contribute to something awesome.&lt;/p&gt;
+
+&lt;p&gt;However, the CKAN requires infrastructure to run… and that’s not free.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;One of the services provided by the CKAN is the hosting of dedicated mirrors. These protect our users from outages, and ensure that mods which allow redistribution don’t suddenly cease-to-be if the site hosting them disappears. In December, each mirror required about 5GB of space. Now, due to our continued success, it’s about 20GB. However that’s only mirroring the latest version of each mod; we’d &lt;em&gt;like&lt;/em&gt; to mirror older versions as well, for players running on older versions of KSP, or players who need to backgrade because they’ve encountered a bug in a new mod release. We also have much more modest requirements for our build and continuous-integration server.&lt;/p&gt;
+
+&lt;p&gt;Right now, those infrastructure costs are being borne by the same volunteers who contribute to the CKAN, in particular Alexander Dzhoganov (aka nlight) who has been managing the infrastructure, as well as being project lead for much of 2015. Alexander is an &lt;em&gt;absolute hero&lt;/em&gt; for doing this, but the growing popularity of the project is rapidly making this unsustainable.&lt;/p&gt;
+
+&lt;p&gt;And so this is where you &lt;em&gt;might&lt;/em&gt; come in. If you happen to work for a company that can provision us an instance with some 400GB of storage on a fast pipe, the potential for a few hundred gigabytes of traffic each month, and the willingness to grow with our needs, then we’ll think you’re &lt;em&gt;amazing&lt;/em&gt;, and you’ll have saved the CKAN mirror.&lt;/p&gt;
+
+&lt;p&gt;For our first mirror and most important mirror we need an instance we can configure and run ourselves. We have bots that index all the mods, test everything installs, watches the git repo for changes, and provide amazing continuous integration tests. That instance is our main automation workhorse, it simply can’t work unless we can control it.&lt;/p&gt;
+
+&lt;p&gt;Once the first mirror is re-homed, we can establish more traditional mirrors, and I’m thankful for everyone who’s offered to help out with these thus far. Those offers really do help, and I’ll be following up with everyone who’s made them, but the first mirror that lets us run our own virtual machine is most vital to our immediate needs.&lt;/p&gt;
+
+&lt;p&gt;If your company &lt;em&gt;can&lt;/em&gt; help, then please drop me an email at paul.j.fenwick at gmail, or you can tweet to me &lt;a href=&quot;https://twitter.com/pjf&quot; class=&quot;social-link&quot;&gt;@pjf&lt;/a&gt;. We would &lt;em&gt;love&lt;/em&gt; to hear from you.&lt;/p&gt;
+
+&lt;p&gt;Thank you all so very much, and thank you in particular to all our amazing CKAN volunteers who have contributed to this success.&lt;/p&gt;
+
+&lt;p&gt;~ Paul&lt;/p&gt;
+
+&lt;p&gt;(CKAN Project Founder)&lt;/p&gt;
+
+</description>
+				<pubDate>Thu, 12 Mar 2015 00:00:00 +1100</pubDate>
+				<link>http://pjf.id.au/tech/2015/03/12/ckan-infrastructure-sponsor-needed.html</link>
+				<guid isPermaLink="true">http://pjf.id.au/tech/2015/03/12/ckan-infrastructure-sponsor-needed.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>Why non-code contributions matter</title>
 				<description>&lt;p&gt;Contributing to open source projects is often considered to be a good career move. Unlike doing work behind the closed doors of a proprietary business, contributions to open source provides visible proof of your skill and accomplishments.&lt;/p&gt;
 
@@ -664,62 +703,6 @@ opportunity in a fortnight to seriously right down and hack some code. :)&lt;/p&
 				<pubDate>Mon, 14 Apr 2014 00:00:00 +1000</pubDate>
 				<link>http://pjf.id.au/personal/2014/04/14/reality-distortion-field.html</link>
 				<guid isPermaLink="true">http://pjf.id.au/personal/2014/04/14/reality-distortion-field.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>On gendered toilets at conferences</title>
-				<description>&lt;p&gt;If you’re reading this, it may be because I suggested that the world would
-be a better place if we saw fewer gendered toilets at your conference.
-I’d like to explain why.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;For the longest time, we’ve lived in a world where we put people in
-boxes, and the most common of those boxes is a thing called “gender”. The
-traditional thinking has been that there are two genders, and &lt;em&gt;everyone&lt;/em&gt;
-fits into one or the other.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately, the traditional thinking is pretty darn awful; it makes the
-world significantly more uncomfortable for anyone who doesn’t fit clearly
-fall into our ideas of binary gender. That can include anyone born with
-genitals that don’t match the traditional thinking, anyone who isn’t happy
-with the gender they were assigned at birth, anyone who doesn’t fit our
-gender stereotypes, anyone who doesn’t want a gender, anyone who’s gender is
-fluid or ambiguous… It includes an awful lot of people.&lt;/p&gt;
-
-&lt;p&gt;Living in a world that enforces a gender binary is uncomfortable if you
-don’t fit neatly into it, and gendered toilets go a long way to contributing
-to that. If you’re currently transitioning, which facilities do you use? How
-will other people react to that choice? Will you even be safe? That’s
-something a lot of people never have to worry about, but if you’re
-trans, fluid, agendered, or queer, then it’s something you might have to
-worry about. Every. Single. Day.&lt;/p&gt;
-
-&lt;p&gt;And it sucks.&lt;/p&gt;
-
-&lt;p&gt;Gendered toilets are a form of discrimination against anyone who doesn’t fit
-the traditional views of gender. Often they exist not because any harm is
-intended, but just because there was no thought of arranging things any
-other way. I dearly hope that your conference is a place where people can
-feel comfortable being themselves, where they can exchange ideas, where they
-can be creative, where they can do great things and make the world a better
-place.&lt;/p&gt;
-
-&lt;p&gt;By all means, indicate if sanitary disposal facilities are available; but
-please help your conference be a place where we can celebrate diversity of
-gender, rather than a place which unconsciously suppresses it.&lt;/p&gt;
-
-&lt;p&gt;~ Paul&lt;/p&gt;
-
-</description>
-				<pubDate>Mon, 14 Apr 2014 00:00:00 +1000</pubDate>
-				<link>http://pjf.id.au/personal/2014/04/14/gendered-toilets-at-conferences.html</link>
-				<guid isPermaLink="true">http://pjf.id.au/personal/2014/04/14/gendered-toilets-at-conferences.html</guid>
 			</item>
 		
 
