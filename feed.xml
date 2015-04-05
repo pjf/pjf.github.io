@@ -12,6 +12,76 @@
                     
 
 			<item>
+				<title>The Past and Future CKAN</title>
+				<description>&lt;p&gt;It’s been almost five months since the first version of the Comprehensive
+Kerbal Archive Network (CKAN) was released. What started as a desire to
+make it easier to install and manage Kerbal mods has now turned into a
+system that’s used by tens of thousands of users, along with hundreds
+of contributors to our metadata and code. The CKAN has been a &lt;em&gt;huge&lt;/em&gt;
+success.&lt;/p&gt;
+
+&lt;p&gt;Last month, I posted saying that we were 
+&lt;a href=&quot;http://pjf.id.au/tech/2015/03/12/ckan-infrastructure-sponsor-needed.html&quot;&gt;looking for an infrastructure sponsor&lt;/a&gt;
+to help us with our growing needs, and I’m delighted to say that
+search has been successful. We’re very grateful to 
+&lt;a href=&quot;https://aws.amazon.com/&quot;&gt;Amazon Web Services&lt;/a&gt; for their ongoing support.
+With the help of AWS, we’re not only ensuring that mods are indexed
+quickly and our code is continuously tested, but we’re also mirroring
+thousands of past and present mod releases. We’re looking forward to
+future clients being faster and more reliable than ever before.&lt;/p&gt;
+
+&lt;p&gt;Our biggest challenges at the moment are not technical, but instead
+time pressures faced by many of our key contributors. All the CKAN
+devlopers work on the project in their spare time, and we have some
+outstandingly talented people on the project. However that means they’re
+also starting companies, running successful businesses, jumping out
+of airplanes, or having rich and varied lives that compete for their
+time.&lt;/p&gt;
+
+&lt;p&gt;In order to ensure the continued development and support of the CKAN,
+I’d like to move it out of the things I do when I have spare time,
+and instead into the things I do as part of my job, with regular code
+sprints, scheduled work days, progress reports, and accountability.&lt;/p&gt;
+
+&lt;p&gt;I run my own software consultancy, so having the CKAN as part of my
+job is entirely possible, but it means turning down other projects to
+make time for it. To see if this is possible, I’ve created a
+&lt;a href=&quot;https://patreon.com/pjf0&quot;&gt;patreon page&lt;/a&gt; to support my CKAN
+development efforts. I’ve already got co-working space and a huge
+amount of coffee booked for the 12th April, so if we hit our first
+funding milestone by that time, it will be the first CKAN sprint.&lt;/p&gt;
+
+&lt;p&gt;Regardless of whether we make the funding goals or not, I still intend
+to work on the CKAN during my spare time as I always have. However if
+successful I’m looking forward to being able to devote more and
+regular hours to CKAN development and support.&lt;/p&gt;
+
+&lt;p&gt;For everyone who has contributed to the project, &lt;em&gt;thank you&lt;/em&gt; for
+helping make it the incredible success that it is today. It’s been
+a pleasure working with you, and I look forward to doing even more of
+the same in the future.&lt;/p&gt;
+
+&lt;p&gt;If you’d like to support me in developing the CKAN, or simply learn
+more about my plans, please visit my
+&lt;a href=&quot;https://patreon.com/pjf0&quot;&gt;patreon page&lt;/a&gt; for more information.&lt;/p&gt;
+
+&lt;p&gt;Many thanks,&lt;/p&gt;
+
+&lt;p&gt;~ Paul
+(CKAN project founder)&lt;/p&gt;
+
+</description>
+				<pubDate>Tue, 14 Apr 2015 00:00:00 +1000</pubDate>
+				<link>http://pjf.id.au/tech/2015/04/14/the-past-and-future-ckan.html</link>
+				<guid isPermaLink="true">http://pjf.id.au/tech/2015/04/14/the-past-and-future-ckan.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>CKAN needs an infrastructure sponsor!</title>
 				<description>&lt;p&gt;About six months ago I had this crazy idea that one of my favourite games, Kerbal Space Program, needed a mod manager that did everything &lt;em&gt;right&lt;/em&gt;, and an &lt;em&gt;amazing&lt;/em&gt; team of volunteers, including myself, set about to make that happen. The result has been the Comprehensive Kerbal Archive Network (CKAN). Tens of thousands of people have downloaded the CKAN client, and we index hundreds of mods to make sure our users can install and upgrade mods with the click of a button.&lt;/p&gt;
 
@@ -606,103 +676,6 @@ video.&lt;/p&gt;
 				<pubDate>Wed, 30 Apr 2014 00:00:00 +1000</pubDate>
 				<link>http://pjf.id.au/talks/2014/04/30/build-your-own-exobrain.html</link>
 				<guid isPermaLink="true">http://pjf.id.au/talks/2014/04/30/build-your-own-exobrain.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>Reality distortion field</title>
-				<description>&lt;p&gt;Sometimes I’m accused of having a “reality distortion field”, which warps the
-universe in such a way that it makes my life better. Today’s arrival at the
-airport was an amazing example of that in action.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;I’m flying back to Australia today on a reasonably late flight; at least, I
-thought that I was. Upon arriving at the airport, and presenting myself for
-check-in, I was informed that my flight was tomorrow. I had arrived a day
-early.&lt;/p&gt;
-
-&lt;p&gt;I felt a little foolish, but overall my reaction to this discovery was
-amusement. I’d been jetsetting about so much, and really having such a great
-time at KiwiFoo and my friends, that I hadn’t actually noticed the off-by-one
-error when it came to my flight date. In the worst case scenario I head back
-into Auckland,do some exploring, and find myself a cheap hostel or backpackers
-to stay in.&lt;/p&gt;
-
-&lt;p&gt;But since I was already at the airport, and I’m very much looking forward to
-getting back home, I thought I’d ask to see if I could be transferred to
-today’s flight. If it ends up being too expensive for my tastes then I can
-always decline, and asking is a relatively quick task.&lt;/p&gt;
-
-&lt;p&gt;So I headed over to the ticketing desk. There was one man, with &lt;em&gt;three&lt;/em&gt; phones
-and a radio, clearly having a bad time. The phones wouldn’t stop ringing, the
-radio needed constant attention, and he seemed to be terribly overworked. As I
-was to discover, he was effectively doing the job of two people today. He
-looked stressed.&lt;/p&gt;
-
-&lt;p&gt;And this is where I reveal to you how the reality distortion field works. You
-be extremely nice to people; if you can, you try to make their day awesome. I
-made it very clear with my body language and my smile that I was totally fine
-waiting.&lt;/p&gt;
-
-&lt;p&gt;When the phones stopped ringing for a few minutes, I noted that he looked very
-popular (which actually elicited a smile), and that I really didn’t want to
-bother him. He thanked me for my patience, asked how he could help, and then
-apologised when the phone rang again.&lt;/p&gt;
-
-&lt;p&gt;A few minutes later, again between calls, I explained my situation. He consoled
-in me about how his day was going, and explained how all the phones worked, and
-what sort of emergencies they represented. Holy smokes this guy was keeping a
-lot of things running.&lt;/p&gt;
-
-&lt;p&gt;While was was on TWO phones and a radio (one in the hand, one on the desk, and
-one under the shoulder) he indicated with his remaining hand that he’d like to
-see my travel documents. Because this is a guy who multitasks like a boss.&lt;/p&gt;
-
-&lt;p&gt;When the phones quietened again, he smiled at me and said: “Hey, thanks for
-being so patient. Today’s been pretty busy. I’ve moved you onto tonight’s
-flight, and put you in an exit row so you’ve got extra legroom. Does that work
-for you?”&lt;/p&gt;
-
-&lt;p&gt;I explain that it most definitely does, and I ask if there’s a transfer fee or
-anything that I’d have to pay. I’ve got an economy ticket, and I know that
-normally to change flights is going to be rather pricey. But I ask this mainly
-as a formality, it’s pretty clear by this stage that reality had been
-distorted.&lt;/p&gt;
-
-&lt;p&gt;“Oh no, you’ve been so patient I can’t charge you for that. You have a nice day.”&lt;/p&gt;
-
-&lt;p&gt;I comment that he’s just &lt;em&gt;made&lt;/em&gt; my day, and he comments that this is the second
-time he’s heard that today. I grin, and tell him that this must be because he’s
-making the world a better place. He directs me over to &lt;em&gt;priority&lt;/em&gt; check-in
-(even though I don’t qualify on this flight), and I thank him again while all
-the phones start to ring once more.&lt;/p&gt;
-
-&lt;p&gt;The story continues with priority check-in making sure that I’ve got
-pre-clearance for immigration and customs (because they can), and making sure
-I’m actually happy with my seat because it has limited recline capabilities. I
-assure them that really, it’s fine (I don’t like reclining my seat because it
-feels rude to whoever’s behind me), and wish everyone a fantastic day.&lt;/p&gt;
-
-&lt;p&gt;Of course, the reason everyone was so lovely to me is because I was so lovely
-to them. Of course, the irony is that being lovely to others comes most easily
-when I’ve been having a great day myself. The reality distortion field is most
-likely to take a great day and make it better.&lt;/p&gt;
-
-&lt;p&gt;But either way, I’m still pretty happy. I’ve got a flight a day early, I’ve got
-a quick route through customs, and after I post this entry, I have my first
-opportunity in a fortnight to seriously right down and hack some code. :)&lt;/p&gt;
-
-&lt;p&gt;~ Paul &lt;/p&gt;
-
-</description>
-				<pubDate>Mon, 14 Apr 2014 00:00:00 +1000</pubDate>
-				<link>http://pjf.id.au/personal/2014/04/14/reality-distortion-field.html</link>
-				<guid isPermaLink="true">http://pjf.id.au/personal/2014/04/14/reality-distortion-field.html</guid>
 			</item>
 		
 
