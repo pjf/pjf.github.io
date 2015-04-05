@@ -22,7 +22,7 @@ future clients being faster and more reliable than ever before.
 
 Our biggest challenges at the moment are not technical, but instead
 time pressures faced by many of our key contributors. All the CKAN
-devlopers work on the project in their spare time, and we have some
+developers work on the project in their spare time, and we have some
 outstandingly talented people on the project. However that means they're
 also starting companies, running successful businesses, jumping out
 of airplanes, or having rich and varied lives that compete for their
