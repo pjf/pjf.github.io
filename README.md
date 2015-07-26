@@ -14,10 +14,12 @@ Fork and clone the repository
 
 * Create a new build branch off `base`
 
+```
     $ git checkout base
     $ git branch -m build old_build
     $ git checkout -b build
     $ git push origin build --force
+```
 
 (You can delete the `old_build` branch if you like)
 
