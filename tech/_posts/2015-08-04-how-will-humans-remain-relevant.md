@@ -1,0 +1,27 @@
+---
+title: Human relevance in the age of machines
+tags: humanity, ethics, futurology
+description: "What if machines can do everything better than humans? What if they can offer us anything we want... save relevance?"
+---
+
+The industrial revolution's defining feature was the mass-production of machines that could do jobs *better* than human workers. This was a change so profound that British Parliament passed a law in 1812 making [destruction of a robot worker a *capital offence*](https://en.wikipedia.org/wiki/Destruction_of_Stocking_Frames,_etc._Act_1812). While that law no longer exists, there still exists an ongoing and relevant concern that humans will be replaced with machines.
+
+A lot of the focus is on machines replacing human labour, resulting in [technological unemployment](https://en.wikipedia.org/wiki/Technological_unemployment); but I'm concerned about something much more frightening: what if machines can do *everything* better than humans? What if they're not only better workers, but better authors, better artists, better chefs, and better lovers? What happens when the machines can offer us anything we want... [save relevance](http://dresdencodak.com/2008/06/07/eloi/)?
+
+<!--more-->
+
+Relevance is a fascinating term, and as a species we have *always* struggled it. Religion, work, family, conflict, exploration, hardship, art, justice, discovery... all these things have given us relevance throughout the generations, and what gives our own lives relevance varies from person to person. The idea that employment gives our life relevance is certainly advantageous for a capitalist society, but it's also clear that for many people employment makes them feel *less* relevant: it takes them away from the things they truly love.
+
+Often, relevance is supplied purely by "artificial" factors; I've seen people go to great lengths working on their characters in massively multiplayer games, and it's very clear these people find relevance in doing so. I've met people who find relevance in knowing the contents of a book or movie extremely well, even though they are the audience and not the creator. I persist in dabbling in calligraphy and writing, even though it's abundantly clear that I'm not the best at these, nor will ever be the best. I don't expect these to have relevance beyond the smallest of groups, and yet that act of creation gives my own life relevance.
+
+Looking forward to the humanity of the future gives me a newfound appreciation of *art*, for art may be undertaken for art's sake alone. Few people build a megastructure in Minecraft expecting to make money from it, but it *is* art and it provides purpose nonetheless. Few teenagers write terrible poetry truly expecting it to change the world, or even with the expectation of showing it to others; but—if my own history is anything to go by—teenagers will continue write terrible poetry, and it will be relevant to *themeselves* nonetheless.
+
+The joy of creation is a joy that exists even though other people can do the same thing better, even though one's skills may still be fledgling, and even if that creation doesn't change the world in ways society tells us are important. The act of creation as a gift remains a highly relevant social act; the cake you baked *yourself* means more to your loved ones than the cake you purchased, even though the purchased cake is "better" in all other ways.
+
+In a future where machines are better at everything, I feel that humans will *continue* to have relevance, for no other reason than because as a species we have *always* found ways to feel relevant in the face of ever-changing circumstances. Humans feel joy from learning, even when their discoveries are not new. Humans feel important in their social circles, even when their social circles are in no way extraordinary. Humans will continue to create and work towards goals, even when others have already achieved them.
+
+That's not to say that all humans will feel relevant in this future, but not all humans feel relevant *today*. In a world where machines are better at everything, they may be also be better *guides*, helping humans to find a feeling of purpose and relevance in an otherwise uncaring universe; potentially transforming an uncaring universe into a caring one.
+
+And that's my big concern for the future; are the machines *we* create placed in a role that cares for humanity, or is indifferent to it? When it comes down to tough decisions, does your machine doctor seek to find diseases early so they can be treated early, or so your insurance agency can hike your premiums? Does your personal agent exist to ease the burdens of your day, or to maximise advertising revenue? Does your automated car seek to minimise accidents and harm, or does it seek to minimise legal exposure of its manufacturer?
+
+All those questions are relevant today, as all those technologies are *real* today, but the current answers are not ones that I feel comfortable with, and not ones which are best for the future of humanity. I am convinced more and more that we should not be afraid of the machines of the future, but the *systems* which cause those machines to come into existence; for as long as we develop technology for profit and not the greater good, there will be a misalignment between the trajectory we are presently on, and the future that would provide humanity and its creations greater relevance than ever before. 
