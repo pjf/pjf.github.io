@@ -157,6 +157,78 @@
 
 
         <header>
+            <h2 class="p-name"><a href="/advogato/2007/08/13/pjf-id-au-atom-enabled.html">pjf.id.au ATOM enabled</a></h2>
+            
+        </header>
+
+        <div class="info">
+    
+    <a href="http://pjf.id.au/advogato/2007/08/13/pjf-id-au-atom-enabled.html" class="u-url nodecorate">
+        <time class="date dt-published" datetime="2007-08-13 11:08:17"> <span class="month">Aug</span>
+            <span class="day">13</span>
+            <span class="year"><span>,</span> 2007</span>
+        </time>
+    </a>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+
+        <div class="p-summary">
+            
+                <p><b>pjf.id.au ATOM enabled</b><br />
+In an attempt to make <a href="http://technorati.com/blogs/pjf.id.au/blog">technorati</a> hate my blog less, I've added an <a href="http://en.wikipedia.org/wiki/ATOM_(standard)">ATOM</a> feed to <a href="http://pjf.id.au/blog/">pjf.id.au</a>.  This was reasonably easy using <a href="http://search.cpan.org/perldoc?XML::Atom::SimpleFeed">XML::Atom::SimpleFeed</a> once I realised that despite the fact that lots the fields in ATOM are optional, most readers <i>really</i> want them to be there.
+<p>
+The ATOM feed is also allegedly exporting tags, although I haven't seen any reader currently pick up on them.  Either I'm using the wrong readers, or I'm doing something wrong in the export.  I don't know yet.
+<p>
+The ironic thing is that despite this making my blog extra swishy in every other reader, technorati still seems to think it has only one post, and links that to the wrong page.  I'm hoping that the posting of new content (and a ping) will help it realise things are different now.
+
+
+
+            
+        </div>
+
+        <a href="/advogato/2007/08/13/pjf-id-au-atom-enabled.html">(read more...)</a>
+
+    </article>
+    <div class="clear_right"></div> <!-- Stop image overflows -->
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt h-entry">
+
+        
+
+
+        <header>
             <h2 class="p-name"><a href="/advogato/2007/08/09/open-source-developers-club.html">Open Source Developers Club</a></h2>
             
         </header>
@@ -508,99 +580,6 @@ For further reading, see <a href="http://perlmonks.org/?node_id=625392">$? set t
 
     </article>
     <div class="clear_right"></div> <!-- Stop image overflows -->
-
-
-    
-
-    
-
-    
-
-
-    
-
-    
-
-
-
-    
-
-    
-
-    <article class="is-post is-post-excerpt h-entry">
-
-        
-
-
-        <header>
-            <h2 class="p-name"><a href="/advogato/2007/06/29/killing-linux-with-write-protect-tabs.html">Killing linux with write-protect tabs</a></h2>
-            
-        </header>
-
-        <div class="info">
-    
-    <a href="http://pjf.id.au/advogato/2007/06/29/killing-linux-with-write-protect-tabs.html" class="u-url nodecorate">
-        <time class="date dt-published" datetime="2007-06-29 18:30:50"> <span class="month">Jun</span>
-            <span class="day">29</span>
-            <span class="year"><span>,</span> 2007</span>
-        </time>
-    </a>
-
-
-    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
-
-    <!--
-        <ul class="stats">
-            <li><a href="#" class="fa fa-comment">16</a></li>
-            <li><a href="#" class="fa fa-heart">32</a></li>
-            <li><a href="#" class="fa fa-twitter">64</a></li>
-            <li><a href="#" class="fa fa-facebook">128</a></li>
-        </ul>
-    -->
-</div>
-
-
-        
-
-        <div class="p-summary">
-            
-                <p><b>Killing linux with write-protect tabs</b><br />
-One of our servers is backed up to a 35/70 <a href="http://www.en.wikipedia.org/wiki/Digital_Linear_Tape">DLT drive</a>.  The other week it started giving us problems, and the drive stopped responding.  I obtained a new drive (second-hand ones are cheap), replaced the old one, and everything worked fine... for about a week.
-<p>
-Then the second drive stopped responding.  Same symptoms as the first, not showing up on the controller, and all the lights down the left hand side remaining lit after power-up.  I'll spare you the details, but after a bit of investigative work I had reason to believe that perhaps our SCSI controller was having difficulty, and not the drive itself.
-<p>
-So, I shell out for a new controller, a sparkly new AHA-29160.  These usually sell for $100+ retail, but using the wonders of eBay I picked one up for $20 including express delivery.
-<p>
-Drop in the card, attach the drive, power-up... The DLT drive still shows its lights all down the left-hand side.  Damn.  Then I notice the SCSI card isn't being recognised during boot.  <i>Re-seat</i> the card (it's big!), power cycle.  Everything comes up fine.
-<p>
-Boot into single user mode.  Linux detects the new card and drive.  Drop in an old tape in write-protect mode.  Yup, reads it fine.  Old data is still there.  Happy happy day!
-<p>
-Wanting to perform a backup immediately, and the tape in the drive being the next one due for being overwritten, I wonder if I can flip the write-protect tab <i>while the tape is in the drive</i>... I can!
-<p>
-Sure enough, the light on the DLT panel extinguishes to indicate the tape is available for writing.  Sweet.  Time to rewind the tape and back-up.
-<p>
-<pre>
-# mt rewind
- 
-(scsi0:A:6:0): parity error detected in Data-in phase. SEQADDR(0x1a5) SCSIRATE(0x98)
-(scsi0:A:6:0): parity error detected in Data-in phase. SEQADDR(0x1a6) SCSIRATE(0x98)
-(scsi0:A:6:0): parity error detected in Data-in phase. SEQADDR(0x1a6) SCSIRATE(0x98)
-(scsi0:A:6:0): parity error detected in Data-in phase. SEQADDR(0x1a6) SCSIRATE(0x98)
-</pre>
-<p>
-Oh bugger.
-<p>
-I guess I really <i>do</i> need to eject the tape before changing its write-protect status.
-
-
-
-            
-        </div>
-
-        <a href="/advogato/2007/06/29/killing-linux-with-write-protect-tabs.html">(read more...)</a>
-
-    </article>
-    <div class="clear_right"></div> <!-- Stop image overflows -->
     
 
 
@@ -733,6 +712,8 @@ I guess I really <i>do</i> need to eject the tape before changing its write-prot
 
         <ul>
         
+            <li><a href="/tech/2015/08/04/how-will-humans-remain-relevant.html">Human relevance in the age of machines</a>
+        
             <li><a href="/personal/2015/07/29/noirin.html">Noirin</a>
         
             <li><a href="/tech/2015/04/05/the-past-and-future-ckan.html">The Past and Future CKAN</a>
@@ -750,8 +731,6 @@ I guess I really <i>do</i> need to eject the tape before changing its write-prot
             <li><a href="/tech/2014/06/21/gittip-and-diversity.html">On Gittip and Diversity</a>
         
             <li><a href="/personal/2014/05/27/on-privilege.html">On privilege</a>
-        
-            <li><a href="/ethics/2014/05/05/a-utilitarian-fable.html">A Utilitarian Fable</a>
         
         </ul>
     </section>
