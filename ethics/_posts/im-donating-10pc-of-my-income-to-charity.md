@@ -10,7 +10,7 @@ But it is. It's totally my fault.
 
 <!--more-->
 
-The food I eat is transported and grown with petroleum products which [support corrupt regiemes][equatorial-guinea] that keep people in poverty. The electricity that powers my laptop, the trains that I catch, and the public lighting I enjoy, comes from environmental destruction and greenhouse gas emission. The animal products I use are the result of cruelty and suffering.
+The food I eat is transported and grown with petroleum products which [support corrupt regimes][equatorial-guinea] that keep people in poverty. The electricity that powers my laptop, the trains that I catch, and the public lighting I enjoy, comes from environmental destruction and greenhouse gas emission. The animal products I use are the result of cruelty and suffering.
 
 My personal choices can lessen the negative impact I make on the world, but no amount of being car-free or using green energy will eliminate the damage I'm causing. But there is something I *can* do. I can take responsibility. I can try to make amends.
 
