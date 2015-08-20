@@ -24,7 +24,7 @@ The cost of distributing a net in the DRC—one of the most difficult places in 
 
 The cost-per-life-saved is a little higher than one may get from naive calculations; not every net is used effectively, nets need to be replaced over time, and there are other factors at play. [GiveWell][] estimates a cost of [just under $3,500 USD per life saved][life-saved]. Through lifelong giving I have the opportunity to impact *many* lives, and to do genuine good in the world.
 
-To make sure I remain committed to this pledge, Thomas Hendrey has taken the pledge with me, and we'll be checking on each other each year. But I would also like *you* to join me in doing good. Even if you [pledge just 1%][1pc] of your income for a year, that's a real diffence that can be made.
+To make sure I remain committed to this pledge, Thomas Hendrey has pledged with me, and we'll be checking each other's progress each year. But I would also like *you* to join me in doing good. Even if you [pledge just 1%][1pc] of your income for a year, that's a real diffence that can be made. I've chosen to do this in conjunction with [Giving What We Can][], as they provide tracking and support for pledgers, but I am also personally willing to provide social support in helping you keep that pledge. One of my biggest psychological barriers was finding other people to join me in doing good.
 
 ---
 
@@ -37,3 +37,4 @@ To make sure I remain committed to this pledge, Thomas Hendrey has taken the ple
 [GiveWell]: http://givewell.org/
 [life-saved]: http://www.givewell.org/international/top-charities/AMF#Costperlifesaved
 [1pc]: https://www.givingwhatwecan.org/try-giving
+[Giving What We Can]: https://givingwhatwecan.org/
