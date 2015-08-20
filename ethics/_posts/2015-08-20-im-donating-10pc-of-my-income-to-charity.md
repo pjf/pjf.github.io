@@ -1,5 +1,6 @@
 ---
 title: "I've pledged to give 10% of my income to causes that do the most good"
+description: "On Sunday, 16th August I made a pledge. A lifelong pledge to give 10% of my income to causes that do the most good. This is something I should have done a long time ago, and for years I told myself it wasn't my fault injustice and hardship existed in the world. But it is."
 ---
 
 On Sunday, 16th August I made a [pledge][]. A lifelong pledge to give 10% of my income to causes that do the most good.
