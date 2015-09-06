@@ -1,6 +1,7 @@
 ---
 title: It's time we spoke about loneliness
 tags: depression loneliness personal longpost
+description: "An estimated 20% of the United States population experiences loneliness.  But if there's one thing we don't like to admit, it's that we're the one who's lonely."
 ---
 
 Okay folks, it's time to talk about mental health again. Today we're going to be discussing one of the most common and yet stigma-laden topics of all: loneliness.
