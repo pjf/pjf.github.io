@@ -55,4 +55,4 @@ Wilson, C., and B. Moulton. “Loneliness among Older Adults: A National Survey 
 [cacioppo]: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4021390/
 [fry]: http://www.stephenfry.com/2013/06/24/only-the-lonely/
 [hawkley]: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3874845/
-[olien]: http://www.slate.com/articles/health_and_science/medical_examiner/2013/08/dangers_of_loneliness_social_isolation_is_deadlier_than_obesity.html)
+[olien]: http://www.slate.com/articles/health_and_science/medical_examiner/2013/08/dangers_of_loneliness_social_isolation_is_deadlier_than_obesity.html
