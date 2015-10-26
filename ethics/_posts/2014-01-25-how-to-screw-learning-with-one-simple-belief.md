@@ -14,7 +14,7 @@ This. Right here. Look at it.
 It's a graph showing the performance of children after they've been praised for
 their intelligence ("you must be smart") versus their effort ("you must have
 put a lot of effort into that"), and then given a series of hard problems to
-try to solve. The kids who are taught that effort count *increase* in the
+try to solve. The kids who are taught that effort is important *increase* in the
 number of problems they can solve. Those who are told that they're smart show a
 frightening decrease.
 
@@ -22,7 +22,7 @@ frightening decrease.
 
 What's the difference? Those being told that they're smart are taught that
 abilities are fixed. If you're finding a puzzle hard, then it must be because
-you're not very good at that, and you should try something else. Kids taught
+you're not very good at it, and you should try something else. Kids taught
 that results are based on effort see the hard puzzles as something they can
 *learn* to do, and then they do so¹.
 
