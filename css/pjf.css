@@ -173,6 +173,11 @@ h3, h4, h5, h6 {
     margin-left 0.5em;
 }
 
+.patreon {
+    max-height: 17ex;
+    margin-right: 0.5em;
+}
+
 .attract-right {
     float: right;
     border-radius: 10%;
