@@ -2,7 +2,7 @@
 title: BuzzConf Was Awesome
 tags: buzzconf tech
 byline: And what you can do about it
-description: "I've just come back from buzzconf, a unique blend of conference of festival. It was good. *Really* good."
+description: "I've just come back from buzzconf, a unique blend of conference and festival, with talks, bands, a hackathon, and WiFi to my tent. It was good. *Really* good."
 image: /images/tech/BFR.jpg
 ---
 
