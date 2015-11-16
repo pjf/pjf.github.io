@@ -17,7 +17,7 @@ The talks were also nothing short of amazing. I was honoured to give an opening 
 
 In the evenings we had [live music](https://buzzconf.io/the-music/), starting with blues and roots with the likes of [Lisa Spykers](http://www.lisaspykers.com/), and ending with the amazing high-energy [Big Fucking Robots](https://soundcloud.com/bigfuckingrobots/) that *really* got people dancing. I've seen lots of tech conferences *try* to get people to dance, but BuzzConf and BFR actually pulled it off.
 
-BuzzConf was an intentionally kids-friendly event, with lots of maker-focused activities for both kids and adults alike, and free attendence for children aged sixteen or under. This is something I'd *hugely* supportive of, as it's a big step up for inclusiveness and diversity, and all the kids I saw seemed to be having the *best time ever*.
+BuzzConf was an intentionally kids-friendly event, with lots of maker-focused activities for both kids and adults alike, and free attendence for children aged sixteen or under. This is something I'm *hugely* supportive of, as it's a big step up for inclusiveness and diversity, and all the kids I saw seemed to be having the *best time ever*.
 
 So I hope you get the idea that *BuzzConf was incredible*, which is why I am delighted that it will be happening again next year, and why I'd like to share some of my own thoughts on how to make it *even better*.
 
