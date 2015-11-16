@@ -1,6 +1,7 @@
 ---
-title: BuzzConf Was Awesome (and what you can do about it)
+title: BuzzConf Was Awesome
 tags: buzzconf tech
+byline: And what you can do about it
 ---
 
 I've just come back from [BuzzConf](https://buzzconf.io/), and I'm so excited by it that I've started writing about it even before my first coffee in the morning.
@@ -9,13 +10,35 @@ As a unique blend of conference and festival, BuzzConf was good. *Really* good.
 
 <!--more-->
 
-Set at the [Phoenix Park](http://phoenixparkballan.com.au/) campgrounds, BuzzConf had a sunny and cheerful location that wasn't too far out of Melbourne, and had pretty darn great facilities. A number of big tents had been erected to act as lecture theatres and provide space for the hackathon. There was a well-equipped stage for musicians and announcements. My tent had both WiFi and power, and there were on-site dorms for those who didn't wish to camp.
+### Atmosphere
+
+<div class="pullquote">
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Great location for <a href="https://twitter.com/hashtag/buzzconf?src=hash">#buzzconf</a> at Pheonix Park, Ballan and awesome talk line up <a href="https://t.co/GpGiFNxaeo">pic.twitter.com/GpGiFNxaeo</a></p>&mdash; alexjmackey (@alexjmackey) <a href="https://twitter.com/alexjmackey/status/665312803054448640">November 13, 2015</a></blockquote>
+</div>
+
+Set at the [Phoenix Park](http://phoenixparkballan.com.au/) campgrounds, BuzzConf had a sunny and cheerful location that wasn't too far out of Melbourne, and with pretty darn great facilities. A number of big tents had been erected to act as lecture theatres, as well as providing space for the hackathon. There was a well-equipped stage for musicians and announcements. My tent had both WiFi and power, and there were on-site dorms for those who didn't wish to camp.
 
 The environment of BuzzConf was a huge factor in making it a success. There was lots of natural light. There was a common outdoor area that was perfect for meeting, dancing, warming oneself by the fire, eating, and everything else. It was easy to *not* worry about day-to-day things and be in the moment, and because everyone was staying on-site there was a much greater feel of community.
 
-The talks were also nothing short of amazing. I was honoured to give an opening on [future and emerging technologies](https://www.youtube.com/watch?v=0op6Wucdv7E) ([slides](https://github.com/pjf/future-is-awesome)), and we had outstanding talks by {%t kathyreid %} on [the human body as a development platform](http://buzzconf.io/sessions/the-human-body-as-a-development-platform/) ([slides](https://github.com/KathyReid/buzzconf-2015-presentation)), {%t auastro %} on [machine learning](http://andy.kitchen/buzz-conf/), and {%t ErikHallander %} on [disruptive technologies in medicine](https://buzzconf.io/sessions/disruption_that_has_genuine_impact/). I have been to [a lot](http://lanyrd.com/profile/pjf/past/) of conferences, and I can say hands down that the talks at BuzzConf were *outstanding*. In particular, the talks *really* succeeded in setting a theme. Everywhere I went, people were talking about the future, and—most pleasing for me—*many* of these conversations had a core theme of what's the best we can achieve for humanity.
+### Talks
+
+<div class="pullquote">
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">So excited to hear <a href="https://twitter.com/KathyReid">@KathyReid</a> talk about the convergence of computing &amp; biomedical industry <a href="https://twitter.com/hashtag/BuzzConf?src=hash">#BuzzConf</a> <a href="https://t.co/ylWsOdXoq8">pic.twitter.com/ylWsOdXoq8</a></p>&mdash; Ruth Ellison (@RuthEllison) <a href="https://twitter.com/RuthEllison/status/665667186883596288">November 14, 2015</a></blockquote>
+</div>
+
+The scheduled talks were also nothing short of amazing. I was honoured to give an opening on [future and emerging technologies](https://www.youtube.com/watch?v=0op6Wucdv7E) ([slides](https://github.com/pjf/future-is-awesome)), and we had outstanding talks by {%t kathyreid %} on [the human body as a development platform](http://buzzconf.io/sessions/the-human-body-as-a-development-platform/) ([slides](https://github.com/KathyReid/buzzconf-2015-presentation)), {%t auastro %} on [machine learning](http://andy.kitchen/buzz-conf/), and {%t ErikHallander %} on [disruptive technologies in medicine](https://buzzconf.io/sessions/disruption_that_has_genuine_impact/). I have been to [a lot](http://lanyrd.com/profile/pjf/past/) of conferences, and I can say hands down that the talks at BuzzConf were *outstanding*. In particular, the talks *really* succeeded in setting a theme. Everywhere I went, people were talking about the future, and—most pleasing for me—*many* of these conversations had a core theme of what's the best we can achieve for humanity.
+
+### Entertainment 
+
+{% fancybox right /images/tech/BFR.jpg "Big Fucking Robots seriously win at stage presence." %}
 
 In the evenings we had [live music](https://buzzconf.io/the-music/), starting with blues and roots with the likes of [Lisa Spykers](http://www.lisaspykers.com/), and ending with the amazing high-energy [Big Fucking Robots](https://soundcloud.com/bigfuckingrobots/) that *really* got people dancing. I've seen lots of tech conferences *try* to get people to dance, but BuzzConf and BFR actually pulled it off.
+
+### Family
+
+<div class="pullquote">
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I have a new toy via nodebot workshop at <a href="https://twitter.com/hashtag/buzzconf?src=hash">#buzzconf</a> <a href="https://t.co/Mmnw4HMCTQ">pic.twitter.com/Mmnw4HMCTQ</a></p>&mdash; Stephen Edmonds (@popcorncx) <a href="https://twitter.com/popcorncx/status/665371058090852352">November 14, 2015</a></blockquote>
+</div>
 
 BuzzConf was an intentionally kids-friendly event, with lots of maker-focused activities for both kids and adults alike, and free attendence for children aged sixteen or under. This is something I'm *hugely* supportive of, as it's a big step up for inclusiveness and diversity, and all the kids I saw seemed to be having the *best time ever*.
 
@@ -31,7 +54,7 @@ By all means, charge extra for alcohol and fancy coffee, but unless participants
 
 ### Hackathon
 
-<div class="pull-right">
+<div class="pullquote">
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Dear <a href="https://twitter.com/hashtag/Buzzconf?src=hash">#Buzzconf</a> hackathon participants, I know there&#39;s a judging round, but this is how I feel about you all. &lt;3 <a href="https://t.co/dE8nLtQNsf">pic.twitter.com/dE8nLtQNsf</a></p>&mdash; Paul Fenwick (@pjf) <a href="https://twitter.com/pjf/status/665755789378760704">November 15, 2015</a></blockquote>
 </div>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -57,3 +80,7 @@ I'd be very much in favour of dropping the unconference section of BuzzConf if i
 There are so many things I think would work well at BuzzConf, and almost all of them are oriented around participation. A dedicated (uncontested) slot for lightning talks would be amazing. Encouraging many of the best aspects of Burning Man culture like sharing, theme camps, art, and costumes. Giant writing spaces for people to leave notes and thoughts, decorate, and use as they think best. Extending free or discounted tickets (even if just day passes) to the residents of Ballan, so the local community is able to experience and participate in the event.
 
 But one thing is for sure, I'm very, *very* impressed with [BuzzConf 2015](https://buzzconf.io), and I'll be sure to come back next year! (Tickets are [already on sale](https://buzzconf.io/register/)!)
+
+---
+
+**If you liked this article, or my talks at BuzzConf and other conferences, consider supporting me [on patreon](https://patreon.com/_pjf).**
