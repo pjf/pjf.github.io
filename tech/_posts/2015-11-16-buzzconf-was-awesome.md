@@ -81,7 +81,7 @@ I'd be very much in favour of dropping the unconference section of BuzzConf if i
 
 There are so many things I think would work well at BuzzConf, and almost all of them are oriented around participation. A dedicated (uncontested) slot for lightning talks would be amazing. Encouraging many of the best aspects of Burning Man culture like sharing, theme camps, art, and costumes. Giant writing spaces for people to leave notes and thoughts, decorate, and use as they think best. Extending free or discounted tickets (even if just day passes) to the residents of Ballan, so the local community is able to experience and participate in the event.
 
-But one thing is for sure, I'm very, *very* impressed with [BuzzConf 2015](https://buzzconf.io), and I'll be sure to come back next year! (Tickets are [already on sale](https://buzzconf.io/register/)!)
+But one thing is for sure, I'm very, *very* impressed with [BuzzConf 2015](https://buzzconf.io), and I'll be sure to come back next year!
 
 ---
 
