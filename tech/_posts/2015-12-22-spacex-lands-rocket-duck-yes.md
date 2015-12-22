@@ -17,7 +17,7 @@ And you're right, the orbiter was reusable, that was its primary role. The boost
 
 The Space Shuttle was also breathtakingly expensive. It cost $450 million to $1.5 billion dollars *per launch*. The system from SpaceX, the Falcon 9, costs a mere $61.2 million per launch, and it has a comparable payload to the Space Shuttle.. In terms of putting things into space, it's cheap.
 
-And here's why a successful Falcon 9 landing is such a huge step-forward. It's a system that can return itself from orbit and land on a floating pad *by itself*. Rather than having to build a new rocket *every time*, or clean and test something that's landed in the ocean (salt-water is not good for spacecraft), you instead have something you can test, service, and re-use.
+And here's why a successful Falcon 9 landing is such a huge step-forward. It's a system that can return itself from orbit and land on a pad *by itself*. Rather than having to build a new rocket *every time*, or clean and test something that's landed in the ocean (salt-water is not good for spacecraft), you instead have something you can test, service, and re-use.
 
 It should be noted that it's just the first (lower) stage which is able to self-land at the moment. The second stage (which delivers the payload) isn't re-usable yet, but that's the next step, and I'm quite certain we'll see it self-landing before long.
 
