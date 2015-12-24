@@ -27,5 +27,5 @@ Thank you.
 
 Cover image [CC-BY-4.0 T-Orange](http://www.torange.us/Holidays/valentines-day/Inscription-I-love-you-17591.html).
 
-[love]: http://polyamorydiaries.com/im-madly-in-love-with-you-but-…/ "I'm madly in love with you, but don't worry, it's not a big deal"
+[love]: http://polyamorydiaries.com/im-madly-in-love-with-you-but-dont-worry-its-not-a-big-deal/ "I'm madly in love with you, but don't worry, it's not a big deal"
 [attraction]: http://www.asexuality.org/wiki/index.php?title=Attraction "AVEN Wiki on attraction"
