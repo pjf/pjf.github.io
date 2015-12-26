@@ -1,6 +1,8 @@
 ---
 title: Just Love Each Other
 wide_image: /images/personal/love.jpg
+description: Not all humans, and not all relationships, fall into neat boxes. There so many more forms of love than that.
+tags: personal, ethics
 ---
 
 I've seen an [article on love doing the rounds][love] recently, and I'm really glad to see this. People fall in love all the time, but society keeps telling us there's only one type of love that counts, and we have an unhealthy societal expectation that we shouldn't tell people that we love them unless they are "the one".
