@@ -77,3 +77,6 @@
 [RememberTheMilk]: https://rememberthemilk.com/ "RememberTheMilk task tracker"
 [Twitter]: https://twitter.com/
 [iDoneThis]: https://idonethis.com/ "Measure your progress with iDoneThis"
+
+# User groups
+[PLUG]: https://plug.org.au/ "Perth Linux Users Group"
