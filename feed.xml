@@ -12,6 +12,39 @@
                     
 
 			<item>
+				<title>Fact Check: Will Pap Smears Still Be Covered by Medicare?</title>
+				<description>&lt;p&gt;It’s fact checking time! Today, the claim that pap smears will no longer be free in Australia!&lt;/p&gt;
+
+&lt;p&gt;That claim is false.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;I won’t link to the article in question here, because it’s misleading clickbait, but the claim that pap smears and other pathology services will no longer be covered by Medicare is scaremongering, or at least a pretty big stretch from the truth.&lt;/p&gt;
+
+&lt;p&gt;The change which is happening is that pathology providers will no longer be given an &lt;em&gt;additional&lt;/em&gt; payment for bulk-billed tests. The cost of the procedure itself is still covered by Medicare.&lt;/p&gt;
+
+&lt;p&gt;The article is &lt;em&gt;extremely&lt;/em&gt; misleading when it claims that “Medicare rebates for pathology and diagnostic imaging services haven’t increased for over a decade, and now they are being cut”. The incentive payment which is being cut was introduced in 2009-2010 (much less than ten years ago) to encourage providers to bulk-bill, and was a payment to providers &lt;em&gt;in addition&lt;/em&gt; to that provided by Medicare. However since its introduction there’s been only a small increase in bulk-billing (1-3%), but a relatively large cost in incentive payments (about $1.3b over five years). It’s this additional payment that is being cut.&lt;/p&gt;
+
+&lt;p&gt;The incentive payments which are being cut range from $1.60–$4.00 per test, although additional incentives for are provided for children, concession card holders, and services in certain regional areas.&lt;/p&gt;
+
+&lt;p&gt;In response it’s conceivable that some pathology providers may choose not to no longer bulk-bill for pap smears, and if those providers charge more than the Medicare rebate then patients will see out-of-pocket costs; a situation which we already see with some GPs and specialists. However we still expect to see plenty of practices continuing to bulk-bill, because bulk-billing is extremely popular with patients and guarantees a larger customer base. I would speculate that bulk-billed pap smears will still be easy to obtain, as in 2014-15 a whopping 98.7% of out-of-hospital pathology services were at no cost to the patient.&lt;/p&gt;
+
+&lt;p&gt;For detailed, primary information about the changes, you can read the &lt;a href=&quot;http://www.aph.gov.au/About_Parliament/Parliamentary_Departments/Parliamentary_Library/FlagPost/2015/December/Changes_to_bulk_billing_incentives&quot;&gt;Australian Parliament post on the subject&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Much thanks goes to Kat McGee and Daniel Reeders who did the original research, and Linda Kirkman for bringing it to my attention. I’ve just double-checked the facts, made a graphic on Facebook, and put them into my own words.&lt;/p&gt;
+
+</description>
+				<pubDate>Wed, 06 Jan 2016 00:00:00 +1100</pubDate>
+				<link>http://pjf.id.au/personal/2016/01/06/will-pap-smears-no-longer-be-free.html</link>
+				<guid isPermaLink="true">http://pjf.id.au/personal/2016/01/06/will-pap-smears-no-longer-be-free.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>Best of Paul Fenwick 2015</title>
 				<description>&lt;p&gt;Hi everyone! I give talks, write articles, and frequently share my thoughts and opinions. Here I’ve tried to summarise my “best of” output for 2015.&lt;/p&gt;
 
@@ -495,45 +528,6 @@ more about my plans, please visit my
 				<pubDate>Sun, 05 Apr 2015 00:00:00 +1100</pubDate>
 				<link>http://pjf.id.au/tech/2015/04/05/the-past-and-future-ckan.html</link>
 				<guid isPermaLink="true">http://pjf.id.au/tech/2015/04/05/the-past-and-future-ckan.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>CKAN needs an infrastructure sponsor!</title>
-				<description>&lt;p&gt;About six months ago I had this crazy idea that one of my favourite games, Kerbal Space Program, needed a mod manager that did everything &lt;em&gt;right&lt;/em&gt;, and an &lt;em&gt;amazing&lt;/em&gt; team of volunteers, including myself, set about to make that happen. The result has been the Comprehensive Kerbal Archive Network (CKAN). Tens of thousands of people have downloaded the CKAN client, and we index hundreds of mods to make sure our users can install and upgrade mods with the click of a button.&lt;/p&gt;
-
-&lt;p&gt;CKAN has been an &lt;em&gt;overwhelming&lt;/em&gt; success. All our code is free, all our metadata is free, and all the work has been done by unpaid volunteers who wanted to contribute to something awesome.&lt;/p&gt;
-
-&lt;p&gt;However, the CKAN requires infrastructure to run… and that’s not free.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;One of the services provided by the CKAN is the hosting of dedicated mirrors. These protect our users from outages, and ensure that mods which allow redistribution don’t suddenly cease-to-be if the site hosting them disappears. In December, each mirror required about 5GB of space. Now, due to our continued success, it’s about 20GB. However that’s only mirroring the latest version of each mod; we’d &lt;em&gt;like&lt;/em&gt; to mirror older versions as well, for players running on older versions of KSP, or players who need to backgrade because they’ve encountered a bug in a new mod release. We also have much more modest requirements for our build and continuous-integration server.&lt;/p&gt;
-
-&lt;p&gt;Right now, those infrastructure costs are being borne by the same volunteers who contribute to the CKAN, in particular Alexander Dzhoganov (aka nlight) who has been managing the infrastructure, as well as being project lead for much of 2015. Alexander is an &lt;em&gt;absolute hero&lt;/em&gt; for doing this, but the growing popularity of the project is rapidly making this unsustainable.&lt;/p&gt;
-
-&lt;p&gt;And so this is where you &lt;em&gt;might&lt;/em&gt; come in. If you happen to work for a company that can provision us an instance with some 400GB of storage on a fast pipe, the potential for a few hundred gigabytes of traffic each month, and the willingness to grow with our needs, then we’ll think you’re &lt;em&gt;amazing&lt;/em&gt;, and you’ll have saved the CKAN mirror.&lt;/p&gt;
-
-&lt;p&gt;For our first mirror and most important mirror we need an instance we can configure and run ourselves. We have bots that index all the mods, test everything installs, watches the git repo for changes, and provide amazing continuous integration tests. That instance is our main automation workhorse, it simply can’t work unless we can control it.&lt;/p&gt;
-
-&lt;p&gt;Once the first mirror is re-homed, we can establish more traditional mirrors, and I’m thankful for everyone who’s offered to help out with these thus far. Those offers really do help, and I’ll be following up with everyone who’s made them, but the first mirror that lets us run our own virtual machine is most vital to our immediate needs.&lt;/p&gt;
-
-&lt;p&gt;If your company &lt;em&gt;can&lt;/em&gt; help, then please drop me an email at paul.j.fenwick at gmail, or you can tweet to me &lt;a href=&quot;https://twitter.com/pjf&quot; class=&quot;social-link&quot;&gt;@pjf&lt;/a&gt;. We would &lt;em&gt;love&lt;/em&gt; to hear from you.&lt;/p&gt;
-
-&lt;p&gt;Thank you all so very much, and thank you in particular to all our amazing CKAN volunteers who have contributed to this success.&lt;/p&gt;
-
-&lt;p&gt;~ Paul&lt;/p&gt;
-
-&lt;p&gt;(CKAN Project Founder)&lt;/p&gt;
-
-</description>
-				<pubDate>Thu, 12 Mar 2015 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au/tech/2015/03/12/ckan-infrastructure-sponsor-needed.html</link>
-				<guid isPermaLink="true">http://pjf.id.au/tech/2015/03/12/ckan-infrastructure-sponsor-needed.html</guid>
 			</item>
 		
 
