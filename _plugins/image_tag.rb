@@ -43,32 +43,55 @@ module Jekyll
     @url = nil
     @caption = nil
     @class = nil
+    @alt = nil
     @fancybox = false
 
+    IMAGE_URL_WITH_CLASS_CAPTION_AND_ALT = /([\w\s]+)(\s+)((https?:\/\/|\/)(\S+))(\s+)"(.*?)"(\s+)((https?:\/\/|\/)(\S+))/i
     IMAGE_URL_WITH_CLASS_AND_CAPTION = /([\w\s]+)(\s+)((https?:\/\/|\/)(\S+))(\s+)"(.*?)"/i
+    IMAGE_URL_WITH_CAPTION_AND_ALT = /((https?:\/\/|\/)(\S+))(\s+)"(.*?)"(\s+)((https?:\/\/|\/)(\S+))/i
     IMAGE_URL_WITH_CAPTION = /((https?:\/\/|\/)(\S+))(\s+)"(.*?)"/i
+    IMAGE_URL_WITH_CLASS_AND_ALT = /([\w\s]+)(\s+)((https?:\/\/|\/)(\S+))(\s+)((https?:\/\/|\/)(\S+))/i
     IMAGE_URL_WITH_CLASS = /([\w\s]+)(\s+)((https?:\/\/|\/)(\S+))/i
+    IMAGE_URL_WITH_ALT = /((https?:\/\/|\/)(\S+))(\s+)((https?:\/\/|\/)(\S+))/i
     IMAGE_URL = /((https?:\/\/|\/)(\S+))/i
 
     def initialize(tag_name, markup, tokens)
       super
 
-      if markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION
+      if markup =~ IMAGE_URL_WITH_CLASS_CAPTION_AND_ALT
         @class   = $1
         @url     = $3
         @caption = $7
+        @alt     = $9
+      elsif markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION
+        @class   = $1
+        @url     = $3
+        @caption = $7
+      elsif markup =~ IMAGE_URL_WITH_CAPTION_AND_ALT
+        @url     = $1
+        @caption = $5
+        @alt     = $7
       elsif markup =~ IMAGE_URL_WITH_CAPTION
         @url     = $1
         @caption = $5
+      elsif markup =~ IMAGE_URL_WITH_CLASS_AND_ALT
+        @class = $1
+        @url   = $3
+        @alt     = $7
       elsif markup =~ IMAGE_URL_WITH_CLASS
         @class = $1
         @url   = $3
+      elsif markup =~ IMAGE_URL_WITH_ALT
+        @url = $1
+        @alt = $5
       elsif markup =~ IMAGE_URL
         @url = $1
       end
 
       if tag_name == 'fancybox'
         @fancybox = true
+      elsif tag_name == 'gallery'
+        @gallery = true
       end
 
     end
@@ -77,10 +100,18 @@ module Jekyll
       source = @class ? "<figure class='#{@class}'>" : "<figure>"
       if @fancybox
         source += "<a class=\"fancybox\" rel=\"group\" href=\"#{@url}\">"
-        source += "<img src=\"#{@url}\"></a>"
+      elsif @gallery
+        source += "<a class=\"fancybox fancybox_gallery\" rel=\"group\" href=\"#{@url}\">"
       else
         source += "<img src=\"#{@url}\">"
       end
+      
+      if (@fancybox || @gallery) && @alt 
+        source += "<img src=\"#{@alt}\"></a>"
+      else
+        source += "<img src=\"#{@url}\"></a>"
+      end
+
       source += "<figcaption>#{@caption}</figcaption>" if @caption
       source += "</figure>"
 
@@ -91,3 +122,4 @@ end
 
 Liquid::Template.register_tag('image',    Jekyll::ImageTag)
 Liquid::Template.register_tag('fancybox', Jekyll::ImageTag)
+Liquid::Template.register_tag('gallery', Jekyll::ImageTag)
