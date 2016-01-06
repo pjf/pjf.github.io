@@ -39,6 +39,10 @@
         <link rel="stylesheet" href="/css/pygments.css" />
         <link rel="stylesheet" href="/css/pjf.css" />
 
+        {% if site.customcss %}
+            <link rel="stylesheet" href="/css/{{site.customcss}}" />
+        {% endif %}
+
     </head>
     <!--
         Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
