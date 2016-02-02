@@ -157,6 +157,74 @@
 
 
         <header>
+            <h2 class="p-name"><a href="/advogato/2009/10/08/fun-with-qr-codes-and-perl.html">Fun with QR Codes and Perl</a></h2>
+            
+        </header>
+
+        <div class="info">
+    
+    <a href="http://pjf.id.au/advogato/2009/10/08/fun-with-qr-codes-and-perl.html" class="u-url nodecorate">
+        <time class="date dt-published" datetime="2009-10-08 16:13:10"> <span class="month">Oct</span>
+            <span class="day"> 8</span>
+            <span class="year"><span>,</span> 2009</span>
+        </time>
+    </a>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+
+        <div class="p-summary">
+            
+                <p><b>Fun with QR Codes and Perl</b><br>
+Short blog today, but cool tech.  I've been playing around with 2D barcodes recently, and have just pushed a <a href="http://perltraining.com.au/tips/">Perl Tip</a> on <a href="http://perltraining.com.au/tips/2009-10-08.html">generating QR Codes with Perl</a>.  Given how incredibly easy this is, I'm tempted to generate huge numbers of these and go sticking them around town for my own nefarious purposes. ;)
+
+
+
+            
+        </div>
+
+        <a href="/advogato/2009/10/08/fun-with-qr-codes-and-perl.html">(read more...)</a>
+
+    </article>
+    <div class="clear_right"></div> <!-- Stop image overflows -->
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt h-entry">
+
+        
+
+
+        <header>
             <h2 class="p-name"><a href="/advogato/2009/09/30/today-i-broke-a-world-record--and-got-on-tv.html">Today I broke a world record, and got on TV</a></h2>
             
         </header>
@@ -446,102 +514,6 @@ This weekend at <a href="http://barcampmelbourne.org/">BarCampMelbourne</a> I ga
 
     </article>
     <div class="clear_right"></div> <!-- Stop image overflows -->
-
-
-    
-
-    
-
-    
-
-
-    
-
-    
-
-
-
-    
-
-    
-
-    <article class="is-post is-post-excerpt h-entry">
-
-        
-
-
-        <header>
-            <h2 class="p-name"><a href="/advogato/2009/09/10/dark-stalking-on-facebook.html">Dark Stalking on Facebook</a></h2>
-            
-        </header>
-
-        <div class="info">
-    
-    <a href="http://pjf.id.au/advogato/2009/09/10/dark-stalking-on-facebook.html" class="u-url nodecorate">
-        <time class="date dt-published" datetime="2009-09-10 23:15:45"> <span class="month">Sep</span>
-            <span class="day">10</span>
-            <span class="year"><span>,</span> 2009</span>
-        </time>
-    </a>
-
-
-    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
-
-    <!--
-        <ul class="stats">
-            <li><a href="#" class="fa fa-comment">16</a></li>
-            <li><a href="#" class="fa fa-heart">32</a></li>
-            <li><a href="#" class="fa fa-twitter">64</a></li>
-            <li><a href="#" class="fa fa-facebook">128</a></li>
-        </ul>
-    -->
-</div>
-
-
-        
-
-        <div class="p-summary">
-            
-                <p><b>Dark Stalking on Facebook</b><br>
-For a while I've been using Facebook's API and <a href="http://wiki.developers.facebook.com/index.php/FQL">Facebook Query Language</a> (FQL) via Perl's <a href="http://search.cpan.org/perldoc?WWW::Facebook::API">WWW::Facebook::API</a> module to run fairly innocent queries on my friends.  If I visit a town, I'd like a reminder of who lives there.  If I want to go rock-climbing, it helps if I can easily search to see which of my friends share that hobby.  This is good, innocent stuff, and makes me glad to be a developer.
-<p>
-Last week I decided to play with event searches.  If a large number of my friends are attending an event, there's a good chance I'll find it interesting, and I'd like to know about it.  FQL makes this sort of thing really easy; in fact, finding all your friends' events is on their <a href="http://wiki.developers.facebook.com/index.php/Sample_FQL_Queries">Sample FQL Queries</a> page.
-<p>
-Using the example provided by Facebook, I dropped the query into my sandbox, and looked at the results which came back.  The results were disturbing.  I didn't just get back future events my friends were attending.  I got <i>everything</i> they had been invited to: past and present, attending or not.
-<p>
-I didn't sleep well that night.  I didn't expect Facebook to share past event info.  I didn't expect it to share info when people had <i>declined</i> those events.  I haven't found any way of retrieving friends' past events using Facebook's website, but using FQL made it easy.  Somehow, implicitly, I thought old events would fade away, only viewable to those who already knew about them.  I didn't expect them to stick around for my code to harvest, potentially years into the future.
-<p>
-Finding my friends' old events crossed a moral boundary I honestly didn't expect to encounter.  Without intending, I really felt like I was snooping.  It didn't matter that these friends had agreed to share this information under the Facebook <a href="http://www.facebook.com/terms.php">terms and conditions</a>.  <i>I</i> would personally feel uncomfortable with this much information being so readily available, and assume my friends would feel the same.
-<p>
-However my accidental crossing of moral boundaries wasn't the only thing that kept me awake last night.  I was also kept awake by wondering just <i>how much</i> information could I tease out of the Facebook API.  What could I discover?  What if I were evil?
-<p>
-However I'm <i>not</i> evil, so I put my code on hold for a while and made a call for volunteers.  I'd be restricting myself to just using the Facebook API, and without them installing any additional applications.  I wouldn't share their data in any way, but I'd be able to inspect and use it, and would try to provide them with a copy when I was done.  To be honest, I was surprised by the response; I now have almost two dozen people who have agreed to participate, covering a wide range of lifestyles and privacy settings.
-<p>
-The results have been very interesting.  I expected to be able to obtain personal information, including things like events, photographs, and friends; it doesn't take much imagination with the <a href="http://wiki.developers.facebook.com/index.php/Category:FQL_Tables">FQL tables</a> to find those.  What was most interesting are some of the more creative queries I was able to run.
-<p>
-Most recently, I've been able to obtain status feeds, even for users who have <i>very</i> tight privacy settings, although I had to tweak my own application's privileges to do so.  I don't know how far into the past these go, but they also come with <i>likes</i> information, and <i>comments</i>.  This gives me a wealth of information on the strength and types of relationships people have.  A person who comments a lot on another user's posts probably finds that user interesting.  If I descended into keyword and text analysis, I may even be able to determine <i>how</i> they find that user interesting.
-<p>
-But by far the most interesting part of all of this have been <i>dark users</i>.  Like <a href="http://en.wikipedia.org/wiki/Dark_matter">dark matter</a>, these users are not directly observable, usually because they've completely disabled API access.  In fact, some of these users are <i>completely</i> dark unless you're a friend.  They don't show up in search results.  They don't show up on friends' lists.  You can't send them messages.  If you try to navigate to their user page (assuming you know it exists), you get redirected back to your homepage.  These users have their privacy settings turned up real high, and are <i>supposed</i> to be hard to find.
-<p>
-However like dark matter, dark users <i>are</i> observable due to their effects on the rest of the universe.  If a dark user comments on a stream entry, I can see that comment.  More importantly, I can <i>see their user-ID</i>, and I can generate a URL to a page that will contain their name.  I can then watch for their activities elsewhere.  Granted, I can't <i>directly</i> search for their activity, but I can observe their effects on my friends.  For want of a better term, I've been calling this "dark stalking".
-<p>
-What makes this all rather chilling is that I'm doing all of this via the application API.  If your <i>friend</i> has installed an application, then it can access quite a lot of information about you, <a href="http://www.facebook.com/privacy/?view=platform&tab=other">unless you turn it off</a>.  If your <i>friend</i> has granted the application the <tt>read_stream</tt> privilege, then it can read <i>your</i> status stream.  Even if a <i>friend of a friend</i> has done this, and you comment on your friend's status entries, it's possible to infer your existence and retrieve those discussions through dark stalking.
-<p>
-While I've always considered people's own carelessness to be the biggest threats to their own privacy, in the social 2.0 world it seems we need to be increasingly worried about our friends, too!
-<p>
-I'm preparing a detailed paper with the results of my research (which is still ongoing), but I will be presenting my preliminary findings at <a href="http://barcampmelbourne.org/">BarCampMelbourne</a>, this weekend (11-12th September 2009), with a further update at the <a href="http://www.tucs.org.au/">University of Tasmania Computing Society (TUCS)</a> on the 2nd October.  A conference talk will invariably follow.
-<p>
-If you want to keep track of my research, then you can <a href="http://www.facebook.com/group.php?gid=145076327240">join the facebook group</a>, or the <a href="http://groups.google.com/group/facebook-privacy">facebook privacy group</a>.  I prefer comments and questions to directly to the <a href="http://groups.google.com/group/facebook-privacy">facebook privacy group</a>, or <a href="mailto:pjf@perltraining.com.au">to me directly</a>.
-
-
-
-            
-        </div>
-
-        <a href="/advogato/2009/09/10/dark-stalking-on-facebook.html">(read more...)</a>
-
-    </article>
-    <div class="clear_right"></div> <!-- Stop image overflows -->
     
 
 
@@ -682,6 +654,8 @@ If you want to keep track of my research, then you can <a href="http://www.faceb
 
         <ul>
         
+            <li><a href="/tech/2016/02/02/win-my-hat-at-lca2016.html">Win my hat at linux.conf.au 2016</a>
+        
             <li><a href="/personal/2016/01/06/will-pap-smears-no-longer-be-free.html">Fact Check: Will Pap Smears Still Be Covered by Medicare?</a>
         
             <li><a href="/personal/2015/12/29/best-of-pjf-2015.html">Best of Paul Fenwick 2015</a>
@@ -699,8 +673,6 @@ If you want to keep track of my research, then you can <a href="http://www.faceb
             <li><a href="/tech/2015/08/04/how-will-humans-remain-relevant.html">Human relevance in the age of machines</a>
         
             <li><a href="/personal/2015/07/29/noirin.html">Noirin</a>
-        
-            <li><a href="/tech/2015/04/05/the-past-and-future-ckan.html">The Past and Future CKAN</a>
         
         </ul>
     </section>

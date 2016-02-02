@@ -157,6 +157,86 @@
 
 
         <header>
+            <h2 class="p-name"><a href="/advogato/2008/07/21/autodie-1-99--i-stable--i--released---codename-jarich.html">autodie 1.99 <i>stable</i> released - codename jarich</a></h2>
+            
+        </header>
+
+        <div class="info">
+    
+    <a href="http://pjf.id.au/advogato/2008/07/21/autodie-1-99--i-stable--i--released---codename-jarich.html" class="u-url nodecorate">
+        <time class="date dt-published" datetime="2008-07-21 19:44:28"> <span class="month">Jul</span>
+            <span class="day">21</span>
+            <span class="year"><span>,</span> 2008</span>
+        </time>
+    </a>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+
+        <div class="p-summary">
+            
+                <p><b>autodie 1.99 <i>stable</i> released - codename jarich</b><br>
+I said that I'd get a stable release of <a href="http://search.cpan.org/perldoc?autodie">autodie</a> out before OSCON.  Since OSCON starts in 5 hours, and I intend to use all that time for sleeping, that means it's being released right now.
+<p>
+After 243 commits since project inception, and three and a half months of work, the first <i>stable</i> release of autodie is making its way to the CPAN.  This is not marked as a developer release, so you'll be able to install it using the regular CPAN installer, or <i>dh-make-perl</i>, or whatever other tools you prefer to use to manage your modules.
+<p>
+The observant reader will notice this is a 1.99 release, but I've occasionally bandied around the phrase <i>"autodie - It's Fatal 2.0"</i>.  The 1.99 release is because I expect to get feedback, patches, and bug-swatting done over OSCON, so the hallowed 2.0 version will appear after the 1.99 release has run the gauntlet of being (ab)used by my peers.
+<p>
+That's not to say the 1.99 release isn't good.  It's awesome.  autodie has already gone through <i>eight</i> dev releases, as well as being used on my own systems.  Go and use it.
+<p>
+Note that autodie <i>does</i> overpower (and on some systems, overwrite) the version of <tt>Fatal.pm</tt> that comes with Perl.  Some of the <i>internal</i> interfaces of <tt>Fatal</tt> have changed to support new functionality.  If you've been calling <i>internal</i> Fatal subroutines (ie, things <i>not</i> documented in <tt>perldoc Fatal</tt>), then you may wish to hold off until the 2.00 release.
+<p>
+The 1.99 release codename is "jarich", after Jacinta "jarich" Richardson, who pretty much gave up an entire week of her time assisting me with talk preparations for OSCON, and doing practically nothing else.  Jacinta, you rock.
+<p>
+For those of you at OSCON, I'll be doing a short talk on autodie at the Perl lightning talks, including showing off some of the cool features like building your own language packs and exception systems.
+
+
+
+            
+        </div>
+
+        <a href="/advogato/2008/07/21/autodie-1-99--i-stable--i--released---codename-jarich.html">(read more...)</a>
+
+    </article>
+    <div class="clear_right"></div> <!-- Stop image overflows -->
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt h-entry">
+
+        
+
+
+        <header>
             <h2 class="p-name"><a href="/advogato/2008/07/19/journey-to-oscon---module-releases.html">Journey to OSCON / Module releases</a></h2>
             
         </header>
@@ -447,84 +527,6 @@ Even if you don't want to help with the project per se, I am very interested in 
 
     </article>
     <div class="clear_right"></div> <!-- Stop image overflows -->
-
-
-    
-
-    
-
-    
-
-
-    
-
-    
-
-
-
-    
-
-    
-
-    <article class="is-post is-post-excerpt h-entry">
-
-        
-
-
-        <header>
-            <h2 class="p-name"><a href="/advogato/2008/06/23/be-cool-and-join-ohloh.html">Be cool and join ohloh</a></h2>
-            
-        </header>
-
-        <div class="info">
-    
-    <a href="http://pjf.id.au/advogato/2008/06/23/be-cool-and-join-ohloh.html" class="u-url nodecorate">
-        <time class="date dt-published" datetime="2008-06-23 22:01:53"> <span class="month">Jun</span>
-            <span class="day">23</span>
-            <span class="year"><span>,</span> 2008</span>
-        </time>
-    </a>
-
-
-    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
-
-    <!--
-        <ul class="stats">
-            <li><a href="#" class="fa fa-comment">16</a></li>
-            <li><a href="#" class="fa fa-heart">32</a></li>
-            <li><a href="#" class="fa fa-twitter">64</a></li>
-            <li><a href="#" class="fa fa-facebook">128</a></li>
-        </ul>
-    -->
-</div>
-
-
-        
-
-        <div class="p-summary">
-            
-                <p><b>Be cool and join ohloh</b><br>
-<a href="http://www.ohloh.net/">Ohloh</a> is a website that tracks open source projects.  It looks at source code, prepares metrics, and draws lots of pretty graphs.  It's great if you want to <a href="http://www.ohloh.net/languages/compare?commit=Update&l0=perl&l1=ruby&l2=haskell&l3=-1&measure=commits">compare your favourite languages</a>, or <a href="http://www.ohloh.net/projects/perl/analyses/latest">see how a codebase changes over time</a>, or <a href="http://www.ohloh.net/accounts/pjf">see how often you commit to various projects</a>.  Like anything web 2.0 these days, it has ways of making friends and rating people and projects.
-<p>
-However, like most things I write about, ohloh has a serious problem.  Put simply, it has me listed as the <a href="http://www.ohloh.net/languages/8">seventh highest committer in the open source world</a> for projects written in Perl this quarter.
-<p>
-This, of course, is complete bollocks.  Sure, I write a lot of Perl, but only when I'm at work, travelling, at a Perl conference, at home, or waiting for a bus.  There are lots of people out there who write <i>way</i> more code than I do, but they're not listed on ohloh.
-<p>
-So, how can you correct this terrible state of affairs?  Well, firstly you can get yourself an ohloh account.  Go poking around and claim all the commits you've made on various projects; you may be surprised how many you have, and instead of ohloh thinking of you has half-a-dozen cool people, it'll think of you as one amazing person.  Once you've done that, you won't be happy with your score, so go and add any projects to which you've done anything at all to ohloh.  Claim those commits.  Rinse, repeat.
-<p>
-Before long, you'll have a massive kudos score, and you can show off to all the kids on <a href="irc://irc.perl.org#moose">#moose</a> about how amazing you are.  The Moose folk are really impressed by ohloh statistics; that's why so many <a href="http://moose.perl.org/">Moose</a> contributors are in the <a href="http://www.ohloh.net/languages/8">Perl top contributors</a> list.
-<p>
-And yes, <a href="http://www.ohloh.net/accounts/pjf">I've already got an account</a>.
-
-
-
-            
-        </div>
-
-        <a href="/advogato/2008/06/23/be-cool-and-join-ohloh.html">(read more...)</a>
-
-    </article>
-    <div class="clear_right"></div> <!-- Stop image overflows -->
     
 
 
@@ -665,6 +667,8 @@ And yes, <a href="http://www.ohloh.net/accounts/pjf">I've already got an account
 
         <ul>
         
+            <li><a href="/tech/2016/02/02/win-my-hat-at-lca2016.html">Win my hat at linux.conf.au 2016</a>
+        
             <li><a href="/personal/2016/01/06/will-pap-smears-no-longer-be-free.html">Fact Check: Will Pap Smears Still Be Covered by Medicare?</a>
         
             <li><a href="/personal/2015/12/29/best-of-pjf-2015.html">Best of Paul Fenwick 2015</a>
@@ -682,8 +686,6 @@ And yes, <a href="http://www.ohloh.net/accounts/pjf">I've already got an account
             <li><a href="/tech/2015/08/04/how-will-humans-remain-relevant.html">Human relevance in the age of machines</a>
         
             <li><a href="/personal/2015/07/29/noirin.html">Noirin</a>
-        
-            <li><a href="/tech/2015/04/05/the-past-and-future-ckan.html">The Past and Future CKAN</a>
         
         </ul>
     </section>

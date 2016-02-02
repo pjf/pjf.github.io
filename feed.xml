@@ -12,6 +12,39 @@
                     
 
 			<item>
+				<title>Win my hat at linux.conf.au 2016</title>
+				<description>&lt;p&gt;For almost a decade, I’ve been presenting conference talks wearing a black top-hat.
+Indeed, this has become one of the most recognisable parts of my stage-persona. So I’m
+very pleased to say that you can win my original conference hat as part of the
+&lt;a href=&quot;https://linux.conf.au/&quot;&gt;linux.conf.au&lt;/a&gt; charity raffle, raising money for &lt;a href=&quot;https://givewhereyoulive.com.au/&quot;&gt;Give Where You Live&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;figure class=&quot;right smaller&quot;&gt;&lt;a class=&quot;fancybox&quot; rel=&quot;group&quot; href=&quot;/images/tech/hat-raffle.jpg&quot;&gt;&lt;img src=&quot;/images/tech/hat-raffle.jpg&quot; /&gt;&lt;/a&gt;&lt;figcaption&gt;Photography by Erin Walsh&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;The hat comes with a beautiful note of authenticity—written by me—certifying
+that it is indeed my conference hat. The hat-band, flower, and pins on my hat
+all have great sentimental value to me, and are not incldued as part of the
+raffle, but if you’ve attended the bioinformatics miniconfs you can probably
+recover my genetic material. You should be aware the the hat has seen almost a
+decade of regular use, and so also has significant signs of wear.&lt;/p&gt;
+
+&lt;p&gt;For those wondering, I’m not giving up the wearing of hats at conferences; instead
+I’m replacing my hat substrate, and I’m delighted that the hat that I’ve
+worn at so many &lt;a href=&quot;https://linux.conf.au/&quot;&gt;linux.conf.au&lt;/a&gt; events can be donated back to the community.&lt;/p&gt;
+
+</description>
+				<pubDate>Tue, 02 Feb 2016 00:00:00 +1100</pubDate>
+				<link>http://pjf.id.au/tech/2016/02/02/win-my-hat-at-lca2016.html</link>
+				<guid isPermaLink="true">http://pjf.id.au/tech/2016/02/02/win-my-hat-at-lca2016.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>Fact Check: Will Pap Smears Still Be Covered by Medicare?</title>
 				<description>&lt;p&gt;It’s fact checking time! Today, the claim that pap smears will no longer be free in Australia!&lt;/p&gt;
 
@@ -458,76 +491,6 @@ it to the rest of the internet yet:&lt;/p&gt;
 				<pubDate>Wed, 29 Jul 2015 00:00:00 +1000</pubDate>
 				<link>http://pjf.id.au/personal/2015/07/29/noirin.html</link>
 				<guid isPermaLink="true">http://pjf.id.au/personal/2015/07/29/noirin.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>The Past and Future CKAN</title>
-				<description>&lt;p&gt;It’s been almost five months since the first version of the Comprehensive
-Kerbal Archive Network (CKAN) was released. What started as a desire to
-make it easier to install and manage Kerbal mods has now turned into a
-system that’s used by tens of thousands of users, along with hundreds
-of contributors to our metadata and code. The CKAN has been a &lt;em&gt;huge&lt;/em&gt;
-success.&lt;/p&gt;
-
-&lt;p&gt;Last month, I posted saying that we were 
-&lt;a href=&quot;http://pjf.id.au/tech/2015/03/12/ckan-infrastructure-sponsor-needed.html&quot;&gt;looking for an infrastructure sponsor&lt;/a&gt;
-to help us with our growing needs, and I’m delighted to say that
-search has been successful. We’re very grateful to 
-&lt;a href=&quot;https://aws.amazon.com/&quot;&gt;Amazon Web Services&lt;/a&gt; for their ongoing support.
-With the help of AWS, we’re not only ensuring that mods are indexed
-quickly and our code is continuously tested, but we’re also mirroring
-thousands of past and present mod releases. We’re looking forward to
-future CKAN clients being faster and more reliable than ever before.&lt;/p&gt;
-
-&lt;p&gt;Our biggest challenges at the moment are not technical, but instead
-time pressures faced by many of our key contributors. All the CKAN
-developers work on the project in their spare time, and we have some
-outstandingly talented people. However that means they’re
-also starting companies, running successful businesses, jumping out
-of airplanes, or having rich and varied lives that compete for their
-time.&lt;/p&gt;
-
-&lt;p&gt;In order to ensure the continued development and support of the CKAN,
-I’d like to move it out of the things I do when I have spare time,
-and instead into the things I do as part of my job, with regular code
-sprints, scheduled work days, progress reports, and accountability.&lt;/p&gt;
-
-&lt;p&gt;I run my own software consultancy, so having the CKAN as part of my
-job is entirely possible, but it means turning down other projects to
-make time for it. To see if this is possible, I’ve created a
-&lt;a href=&quot;https://patreon.com/pjf0&quot;&gt;patreon page&lt;/a&gt; to support my CKAN
-development efforts. I’ve already got co-working space and a huge
-amount of coffee booked for the 12th April, so if we hit our first
-funding milestone by that time, it will be the first CKAN sprint.&lt;/p&gt;
-
-&lt;p&gt;Regardless of whether we make the funding goals or not, I still intend
-to work on the CKAN during my spare time as I always have. However if
-successful I’m looking forward to being able to devote more and
-regular hours to CKAN development and support.&lt;/p&gt;
-
-&lt;p&gt;For everyone who has contributed to the project, &lt;em&gt;thank you&lt;/em&gt; for
-helping make it the incredible success that it is today. It’s been
-a pleasure working with you, and I look forward to doing even more of
-the same in the future.&lt;/p&gt;
-
-&lt;p&gt;If you’d like to support me in developing the CKAN, or simply learn
-more about my plans, please visit my
-&lt;a href=&quot;https://patreon.com/pjf0&quot;&gt;patreon page&lt;/a&gt; for more information.&lt;/p&gt;
-
-&lt;p&gt;Many thanks,&lt;/p&gt;
-
-&lt;p&gt;~ Paul
-(CKAN project founder)&lt;/p&gt;
-
-</description>
-				<pubDate>Sun, 05 Apr 2015 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au/tech/2015/04/05/the-past-and-future-ckan.html</link>
-				<guid isPermaLink="true">http://pjf.id.au/tech/2015/04/05/the-past-and-future-ckan.html</guid>
 			</item>
 		
 
