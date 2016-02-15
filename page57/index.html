@@ -157,6 +157,100 @@
 
 
         <header>
+            <h2 class="p-name"><a href="/advogato/2005/06/07/machine--recovery-.html">Machine "Recovery"</a></h2>
+            
+        </header>
+
+        <div class="info">
+    
+    <a href="http://pjf.id.au/advogato/2005/06/07/machine--recovery-.html" class="u-url nodecorate">
+        <time class="date dt-published" datetime="2005-06-07 19:12:25"> <span class="month">Jun</span>
+            <span class="day"> 7</span>
+            <span class="year"><span>,</span> 2005</span>
+        </time>
+    </a>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+
+        <div class="p-summary">
+            
+                <p><b>Machine "Recovery"</b><br/>
+Machines should be designed with consideration for when things go wrong.  Now, let's pretend that you have an "appliance".  It has an LCD screen, rather than a keyboard and monitor.  If you're lucky, console on serial has been enabled.  It has "no user servicable parts inside", and while it runs Linux underneath, it's primarily marketed at non-Linux gurus.
+<p>
+You're picking a filesystem to place on one of these "appliances".  Do you choose a filesystem like ext2/ext3, which is used by practically every Linux system worldwide, has good stability, and excellent recovery tools?  Or do you choose something else?
+<p>
+For these appliances, a different filesystem was used.  This filesystem is a fast journaling filesystem, but it has some problems when things go wrong.  It doesn't have a real fsck program, it just assumes that it's always good, all the time.  So when there is a problem and corruption does occur for whatever reason, finding and repairing that can be difficult.
+<p>
+This brings me to my situation.  There was corruption on the root filesystem.  There was also a repair tool, on the root filesystem.  The repair tool <i>will not</i> execute on a mounted filesystem, not even one mounted read-only.  Normally this is fine, boot from external media and repair, but these appliances have no option to boot from external media.  There's nowhere for that external media to go.
+<p>
+So, my options are to get a new copy of the filesystem tools (which can allegedly repair a read-only mounted filesystem), or to pull the disks (RAID-1) from the machine, get them mounted in another machine, get the tools on that, get them working properly as a RAID, repair the filesystem, and put them all back into the appliance that contains no user-servicable parts.  
+<p>
+I decide to try the newer version of the tools.
+<p>
+Being a rather cautious person, I take an image of the root filesystem first, and ask the new tools what they would do with it.  Well, they'd make some pretty big changes to the superblock that look very suspicious; then they'd tweak a few bitmaps here and there; and then they'd segfault.
+<p>
+Having your filesystem repair tool segfault on step two of seven in the repair process is <i>not</i> a way to fill your system administrator with confidence.  It's very, very bad.  Some people have nightmares where they're drowning, or speaking naked, or their house burns down.  Sysadmins have nightmares that their filesystem tools segfault part-way through changing a filesystem.
+<p>
+Now the tools <i>do</i> say they could potentially segfault if run in no-write mode, since they can't repair the things which later parts of the tools expect to use, but my faith is still quite shaken.    Okay, let's try the tools again on the image in write mode...
+<p>
+The tool walks through the image, makes a number of changes, and says all-done.  I'm not convinced that relocating the entire superblock to a totally different location was a good idea, so I try to mount the file using a loopback device.  No joy here, the kernel on these appliances can't handle a loopback image of more than 2Gb.  Welcome to 32-bit limit land.
+<p>
+At this point I'm pretty much decided that running the repair on the real filesystem is a Bad Idea, but I decide to continue a few more tests on my image.  I mean, it should contain a perfectly good filesystem now, right?  So if I run the repair tools again, it should come up all clean?  Wrong!
+<p>
+Running the repair tools again claims there are still errors (different ones, and much less) on the system.  It also claims that they're fixed, but running it again reveals the same errors in the same places, right where I feel the superblock <i>should</i> be sitting.
+<p>
+Needless to say, I'm recommending that data and services me migrated off this appliance and the entire thing rebuilt/reinstalled from scratch.
+<p>
+I'm only glad that these machines looks like they're going to be retired before the end of the year, and replaced with new servers running ext2/3, with ports for a keyboard and monitor as well as a serial console, and the most blessed ability to boot into single-user mode.
+
+
+
+            
+        </div>
+
+        <a href="/advogato/2005/06/07/machine--recovery-.html">(read more...)</a>
+
+    </article>
+    <div class="clear_right"></div> <!-- Stop image overflows -->
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt h-entry">
+
+        
+
+
+        <header>
             <h2 class="p-name"><a href="/advogato/2005/06/01/luxury-.html">Luxury!</a></h2>
             
         </header>
@@ -437,205 +531,6 @@ live in Canberra.
 
     </article>
     <div class="clear_right"></div> <!-- Stop image overflows -->
-
-
-    
-
-    
-
-    
-
-
-    
-
-    
-
-
-
-    
-
-    
-
-    <article class="is-post is-post-excerpt h-entry">
-
-        
-
-
-        <header>
-            <h2 class="p-name"><a href="/advogato/2005/05/14/measuring-happiness.html">Measuring happiness</a></h2>
-            
-        </header>
-
-        <div class="info">
-    
-    <a href="http://pjf.id.au/advogato/2005/05/14/measuring-happiness.html" class="u-url nodecorate">
-        <time class="date dt-published" datetime="2005-05-14 09:18:21"> <span class="month">May</span>
-            <span class="day">14</span>
-            <span class="year"><span>,</span> 2005</span>
-        </time>
-    </a>
-
-
-    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
-
-    <!--
-        <ul class="stats">
-            <li><a href="#" class="fa fa-comment">16</a></li>
-            <li><a href="#" class="fa fa-heart">32</a></li>
-            <li><a href="#" class="fa fa-twitter">64</a></li>
-            <li><a href="#" class="fa fa-facebook">128</a></li>
-        </ul>
-    -->
-</div>
-
-
-        
-
-        <div class="p-summary">
-            
-                <p><b>Measuring happiness</b>
-<p><i>Warning: Long waffling entry with little amusement value follows.</i>
-In my <a href="http://pjf.id.au/blog/?position=398&count=1">last journal entry</a> I considered that when all of one's work is
-completely unenjoyable, the best way to maximize happiness is to work
-hard and invest in order to gain an early retirement.  However, this
-simple solution does not hold when one's work does hold some enjoyment
-value.  A person with an extremely enjoyable job has little motivation
-to retire.
-<p>
-I'm in a position where I have a range of work options available.
-Some are more enjoyable than others, and some are more profitable
-than others.  I'm wondering if my overall quality of life (taken
-from a long-term perspective) can be improved by dropping some of my
-less enjoyable tasks.
-<p>
-Last journal I discovered to answer this question properly, I need a
-way to measure happiness or enjoyment in a meaningful fashion.  On a
-fundamental level I still don't have an answer to this.  How does
-one put attach a meaningful metric to enjoyment?
-<p>
-Even though I can't put enjoyment into quantitative terms, it's still
-easy to order activities in terms of happiness (X is more enjoyable
-than Y), and it's possible to describe other factors that directly
-influence enjoyment.  One of the strongest factors is <i>freedom</i>.
-<p>
-It's readily apparent that people value large blocks of free time
-more more than the same time broken into smaller pieces.  Instead of
-taking their annual leave in the middle of the week and as soon as
-it's been accured, individuals will instead save their annual leave to
-go on a large holiday. People are more likely to take extra leave
-adjacent to weekends and public holidays.  An old employer used to
-require a doctor's certificate for any sick-leave taken on a Monday
-or Friday, since a more people were 'sick' on these days, in
-gross disproportion to the rest of the week.
-<p>
-It's easy to see why contiguous time is so valuable.  Given a large
-block of time one can do everything that's possible in a smaller block
-of time, but one also has the option to participate in many activities
-that have a significant setup required.  If I have an hour I can go
-for a nice ride on my bike, but given six ten-minute breaks I'll have
-to start turning my bike around by the time I get it out the door.
-The most enjoyable activities &mdash; such as diving, writing, coding,
-and many games &mdash; require a significant and contiguous time
-investment, usually because they have a large set-up time, or take
-time to get 'in-the-zone' and become productive.
-<p>
-If the aggregation of 'free-time' into larger periods is more valuable,
-then one needs to consider not only how much time is saved or lost by
-dropping a particular line of work, but also what effect that has on
-overall free-time distribution.  A new job that requires 10 minutes
-every hour for six hours is more disruptive than a job that requires a
-single sixty-minute block.  This is why it's so hard to get employees
-to go 'on-call': it's so disruptive to the range of activities
-they can perform.
-<p>
-One of the interesting things that falls out of the value of consolodated
-free-time is the efficient planning of work.  Taking on disruptive (eg,
-on-call) work has a large impact on enjoyment, but increasing the amount
-of disruptive work has progressively less effect.  If you're already
-on-call for a business, then deciding to go on-call for a second business
-may double your income, but will have a much less dramatic effect on your
-free-time distribution.  This suggests that when considering taking
-on disruptive work, an all-or-nothing approach is preferable.
-Performing disruptive work in moderation provides neither maximum
-enjoyment, nor maximum income.
-<p>
-The other aspect which falls under the 'freedom' category is that
-individuals value free-time more highly when they can choose when to
-take it.  A break is often more valuable if corresponds with the
-breaks of friends, family, or important events (sporting, conferences,
-a dive boat, or whatever takes one's fancy).  So large blocks of time
-are good, and being able to choose when to take that time is also
-good.  "Retirement" (having sufficient savings and passive income to
-never work again) is the ideal, with close to maximum flexibility and
-contiguous free-time.
-<p>
-Now, let's consider my personal situation.  My income is 70% training,
-which is enjoyable, has excellent pay, comes in blocks, and is often
-flexible.  17.5% of my income is in the form of "block-consulting";
-it's less enjoyable, has acceptable pay, comes in blocks, but is
-rarely flexible.  The remaining 12.5% is from on-call work; it's
-rarely enjoyable, has slightly better pay than block-consulting,
-is highly disruptive and never flexible.  The disruption from the
-on-call work makes it seem like more effort and time than it really
-is, because it so frequently interrupts other work and activities.
-<p>
-I'm considering dropping that on-call work entirely.  This will have a
-very strong positive effect on flexibility and contiguous free-time,
-but has the down-side of pushing out my retirement plans.  Since only
-money after living expenses is available for investment, losing that
-12.5% has a disproprotionately large impact on my savings plan.
-<p>
-If we make the assumption that large blocks of contiguous, flexible
-free-time have maximum enjoyment value, and that broken, unflexible
-blocks during on-call work have minimal enjoyment, then the problem
-becomes simple enough to examine mathematically.  If dropping
-'zero-enjoyment' work pushes out my retirements plans by a certain
-factor, then it's worthwhile providing that my overall enjoyment
-(approximated by contiguous, flexible time) is increased proportionately.
-<p>
-As an example, if dropping work were to double my required
-time until retirement &mdash; say from 1 years to 2 years &mdash;
-then this would only be worthwhile if it generated a full year of
-contiguous, flexible free-time in the process.  Note that's different
-from generating a year's worth of free-time.  One could have the
-free-time already, but have low-quality free-time because it's
-regularly interrupted.
-<p>
-The work I'm proposing to drop is not going to double my time
-to retirement, so it only needs to make a more modest contribution
-to my time distribution.  It presently looks as if it will be
-worthwile to let the work go, but closer scrutiny of how I currently
-spend my time will be needed to say for certain.
-<p>
-Of course, it's easy to poke holes in all of my arguments above.
-After a point one can encounter diminishing returns on enjoyment for
-large blocks of free time.  When busy and stressed, <i>any</i> amount
-of free time is disproprortionately valuable, regardless of its
-duration.  Enjoyment of time is not binary value.  While dropping
-non-essential work in the short-term will have a negative impact on
-income, it may actually be beneficial in the long-term as it provides
-the opportunity for more fundamental changes to work practices, and a
-greater focus on the more profitable core work of a business.
-<p>
-All these arguments can be used to argue both for and against a given
-plan.  This may be why many individuals never try to quantify
-happiness, they simply move on gut instinct.  That's probably going to
-be a large deciding factor here, but I value the opportunity to
-carefully weigh my decision before making it.
-<p>
-Unfortunately, due to numerous timing issues, I can't even begin to
-implement any decision I make until the end of financial year.  As
-such, I have a little time to think and plan &mash; provided I can
-find a long enough break in work, that is.
-
-
-            
-        </div>
-
-        <a href="/advogato/2005/05/14/measuring-happiness.html">(read more...)</a>
-
-    </article>
-    <div class="clear_right"></div> <!-- Stop image overflows -->
     
 
 
@@ -776,6 +671,8 @@ find a long enough break in work, that is.
 
         <ul>
         
+            <li><a href="/ethics/2016/02/14/changing-the-world-is-done-in-small-steps.html">Changing The World Is Done In Small Steps</a>
+        
             <li><a href="/tech/2016/02/02/win-my-hat-at-lca2016.html">Win my hat at linux.conf.au 2016</a>
         
             <li><a href="/personal/2016/01/06/will-pap-smears-no-longer-be-free.html">Fact Check: Will Pap Smears Still Be Covered by Medicare?</a>
@@ -793,8 +690,6 @@ find a long enough break in work, that is.
             <li><a href="/ethics/2015/08/20/im-donating-10pc-of-my-income-to-charity.html">I've pledged to give 10% of my income to causes that do the most good</a>
         
             <li><a href="/tech/2015/08/04/how-will-humans-remain-relevant.html">Human relevance in the age of machines</a>
-        
-            <li><a href="/personal/2015/07/29/noirin.html">Noirin</a>
         
         </ul>
     </section>
