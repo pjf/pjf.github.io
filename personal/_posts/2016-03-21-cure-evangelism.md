@@ -2,6 +2,7 @@
 title: Cure Evangelism
 tags: cure evangelism, chronic illness
 orig_url: https://www.facebook.com/paul.fenwick/posts/10153594961004611
+description: Sometimes you'll have friends who aren't doing too well, and they post to social media. Believe it or not, there are correct and incorrect ways to respond.
 ---
 
 Okay Internet, we need to talk about cure evangelism.
