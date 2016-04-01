@@ -1,3 +1,6 @@
+
+# The above line must remain blank for formatting to work in footers.
+
 # Internal links
 [ethics]: /ethics "Paul Fenwick's writings on ethics and philosophy"
 [pjf]: http://pjf.id.au/ "Paul Fenwick's personal website"
