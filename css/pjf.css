@@ -160,11 +160,11 @@ div.share-buttons {
     border-radius: 10%;
 }
 
-/* H3-6 is often used in articles. Stop them from appearing
+/* H4-6 is often used in articles. Stop them from appearing
  * so cramped when they display.
  */
 
-h3, h4, h5, h6 {
+h4, h5, h6 {
     padding-bottom: 1em;
 }
 
@@ -230,4 +230,12 @@ div.pullquote {
 
 .wide-image {
     padding-bottom: 2em;
+}
+
+/* Make h3 bigger than h4 */
+
+.is-post h3 {
+    font-size: 2.5em;
+    line-height: 1.25em;
+    padding-bottom: 0.5em;
 }
