@@ -157,6 +157,85 @@
 
 
         <header>
+            <h2 class="p-name"><a href="/advogato/2007/11/21/intruder-alert---tracking-down-a-rogue-connection.html">Intruder Alert - Tracking down a rogue connection</a></h2>
+            
+        </header>
+
+        <div class="info">
+    
+    <a href="http://pjf.id.au/advogato/2007/11/21/intruder-alert---tracking-down-a-rogue-connection.html" class="u-url nodecorate">
+        <time class="date dt-published" datetime="2007-11-21 22:39:07"> <span class="month">Nov</span>
+            <span class="day">21</span>
+            <span class="year"><span>,</span> 2007</span>
+        </time>
+    </a>
+
+
+    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
+
+    <!--
+        <ul class="stats">
+            <li><a href="#" class="fa fa-comment">16</a></li>
+            <li><a href="#" class="fa fa-heart">32</a></li>
+            <li><a href="#" class="fa fa-twitter">64</a></li>
+            <li><a href="#" class="fa fa-facebook">128</a></li>
+        </ul>
+    -->
+</div>
+
+
+        
+
+        <div class="p-summary">
+            
+                <p><b>Intruder Alert - Tracking down a rogue connection</b><br />
+The hosts I administer look through their logfiles each hour, looking for things that are out of the ordinary, and mailing them to me.  This is where my uncanny ability to remember leap-seconds comes from; it's not because I actually <i>care</i> about things, but because I'll get an e-mail saying that a host suddenly found itself a <i>whole second</i> out of sync with some incredibly accurate clock somewhere.  Lucky me.
+<p>
+Most things <i>don't</i> end up in my log digests, because most things are boring.  The things I do see are things that I either care about, or have never seen before.
+<p>
+A few days ago I got an e-mail that one machine was trying to contact a particular address, 172.16.45.35.  What made this noteworthy is that address is <i>unroutable</i>.  It's a reserved, private address space.  It doesn't go <i>anywhere</i> on the Internet, and it's not used by us internally, so there should be no reason to try and contact it.  The connection indicated it would have been an outgoing web request, and since I was busy working on other things, I assumed that some other fool had set up <i>their</i> system incorrectly, and thought nothing of it.  People leave references to their own internal sites in documents all the time.
+<p>
+A few days later I got another e-mail, same result.  And then another, the next day, and another.  Each time I looked a little closer.  About the same time each day, a few attempts to contact this address, and then nothing.
+<p>
+Today, this bothered me.  What if we're seeing these packets because there's something running on this machine that shouldn't be?  So I go to my proxy logs, and do a search for the address.  Nothing matches.
+<p>
+Hmm, that's odd.  Let's see what's in our name-server cache, since the address is probably the result of a name lookup.  <tt>kill -INT</tt> on your <tt>named</tt> will let you see its memory cache, a great trick to remember.  Nothing in here, either, but it's now been hours since I got the mail, so the record may well have expired.
+<p>
+What's odd about this connection is that it seems to happen around lunchtime, but not every day, and not always exactly the same time, and sometimes it misses days, so I don't really know if or when I'll ever see it again.  Rather than trying to futilely trying to find it <i>minutes</i> after it occurs, I figure that I'll set something running to catch it in the act:
+
+
+            
+        </div>
+
+        <a href="/advogato/2007/11/21/intruder-alert---tracking-down-a-rogue-connection.html">(read more...)</a>
+
+    </article>
+    <div class="clear_right"></div> <!-- Stop image overflows -->
+
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    <article class="is-post is-post-excerpt h-entry">
+
+        
+
+
+        <header>
             <h2 class="p-name"><a href="/advogato/2007/10/25/effective-procrastination-with-hiveminder.html">Slidecast - Effective Procrastination with HiveMinder</a></h2>
             
         </header>
@@ -454,74 +533,6 @@ For all those people who'd prefer <i>yet-another-feed</i> over <i>yet-another-ma
 
     </article>
     <div class="clear_right"></div> <!-- Stop image overflows -->
-
-
-    
-
-    
-
-    
-
-
-    
-
-    
-
-
-
-    
-
-    
-
-    <article class="is-post is-post-excerpt h-entry">
-
-        
-
-
-        <header>
-            <h2 class="p-name"><a href="/advogato/2007/09/13/twitter.html">Twitter</a></h2>
-            
-        </header>
-
-        <div class="info">
-    
-    <a href="http://pjf.id.au/advogato/2007/09/13/twitter.html" class="u-url nodecorate">
-        <time class="date dt-published" datetime="2007-09-13 15:01:05"> <span class="month">Sep</span>
-            <span class="day">13</span>
-            <span class="year"><span>,</span> 2007</span>
-        </time>
-    </a>
-
-
-    <!-- Note: You can change the number of list items in "stats" to whatever you want. -->
-
-    <!--
-        <ul class="stats">
-            <li><a href="#" class="fa fa-comment">16</a></li>
-            <li><a href="#" class="fa fa-heart">32</a></li>
-            <li><a href="#" class="fa fa-twitter">64</a></li>
-            <li><a href="#" class="fa fa-facebook">128</a></li>
-        </ul>
-    -->
-</div>
-
-
-        
-
-        <div class="p-summary">
-            
-                <p><b>Twitter</b><br />
-I now have a <a href="http://twitter.com/pjf">twitter profile</a>.  Feel free to track me if that's your thing.
-
-
-
-            
-        </div>
-
-        <a href="/advogato/2007/09/13/twitter.html">(read more...)</a>
-
-    </article>
-    <div class="clear_right"></div> <!-- Stop image overflows -->
     
 
 
@@ -662,6 +673,8 @@ I now have a <a href="http://twitter.com/pjf">twitter profile</a>.  Feel free to
 
         <ul>
         
+            <li><a href="/ethics/2016/07/26/dystopian-oxygen-security.html">A Dystopian Future From Climate Change</a>
+        
             <li><a href="/tech/2016/05/18/oscon-contribute.html">Visit OSCON Contribute 2016</a>
         
             <li><a href="/depression/2016/04/12/honest-conversation-about-mental-health.html">An honest conversation about my mental health</a>
@@ -679,8 +692,6 @@ I now have a <a href="http://twitter.com/pjf">twitter profile</a>.  Feel free to
             <li><a href="/personal/2015/12/29/best-of-pjf-2015.html">Best of Paul Fenwick 2015</a>
         
             <li><a href="/personal/2015/12/25/just-love-each-other.html">Just Love Each Other</a>
-        
-            <li><a href="/tech/2015/12/22/spacex-lands-rocket-duck-yes.html">Duck Yes! SpaceX lands their Falcon 9!</a>
         
         </ul>
     </section>
