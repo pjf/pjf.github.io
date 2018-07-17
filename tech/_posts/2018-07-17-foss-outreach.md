@@ -14,6 +14,6 @@ I've a lot that would qualify me for this role. I've been writing and speaking a
 
 Of course such a role would not be without its challenges. Structuring a project to maximise contributions and community growth often involves using different tools and methodologies than would be used for an internal project. My schedule tends to be choppy, as I travel a lot for conferences, but this also means I'm able to do more outreach as I go. I'm based in Australia, which can present its own time coordination challenges.
 
-My ideal role would be be half to three-quarter time, based in Melbourne or remotely, and would have me developing—and most importantly helping others develop—open source tools in the humanitarian sector.
+My ideal role would be be half to three-quarter time, based in Melbourne or remotely, and would have me developing—and most importantly helping others develop—open source tools in the humanitarian sector. I'd be particularly happy with a system that involves scalable programmable voice, as I've been working with that a lot recently, but I'm well suited to any automation or back-end development project. I'm particularly experienced in Perl, Git, C#, C++, and Python, with a smattering of JavaScript, Ruby and other open source languages.
 
 If you think that you've got something that's up my alley, then drop me an email at paul.j.fenwick@gmail.com, or catch me at OSCON this year, I'd love to hear from you! My resume is available upon request.
