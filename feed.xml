@@ -12,6 +12,45 @@
                     
 
 			<item>
+				<title>Adding ADHD to my character sheet</title>
+				<description>&lt;p&gt;This year has been a big one for my mental health. Early in 2018 I was &lt;a href=&quot;http://pjf.id.au/depression/2018/06/09/bipolar.html&quot;&gt;diagnosed with Bipolar II&lt;/a&gt;. The treatment helped, although I still found myself struggling with motivation and concentration. While I could barely look at my taxes for more than a minute without needing to get up and make yet another cup of tea, somehow my brain was fine at learning how to transpile C# code at 2am.&lt;/p&gt;
+
+&lt;p&gt;After many jokes about how it was funny that bipolar came with so many of the aspects of ADHD, I came to realise that maybe it &lt;em&gt;wasn’t&lt;/em&gt; just bipolar that was responsible for these peculiarities with my brain.&lt;/p&gt;
+
+&lt;!-- read more --&gt;
+
+&lt;p&gt;A visit to my psychiatrist confirmed my suspicions. I had signs of ADHD in childhood, with my kindergarten wanting to keep me back because I didn’t seem to pay attention to the teachers. There was a probable genetic link, with my late mother always losing track of time and forgetting to turn off lights, yet being &lt;em&gt;incredibly&lt;/em&gt; focused on the things that she was interested in. The fact that I have systems for &lt;em&gt;everything&lt;/em&gt; fills the gaps my brain has for keeping track of things naturally. And of course when we did a diagnostic questionnaire, my psychiatrist said that he didn’t even need to score it to see the result.&lt;/p&gt;
+
+&lt;p&gt;So &lt;a href=&quot;https://en.wikipedia.org/wiki/Adult_attention_deficit_hyperactivity_disorder&quot;&gt;ADHD&lt;/a&gt; is now firmly on my character sheet, in addition to &lt;a href=&quot;https://en.wikipedia.org/wiki/Bipolar_II_disorder&quot;&gt;Bipolar II&lt;/a&gt;. Apparently having both is not unusual, but it presents a difficulty when it comes to treatment. The most common ADHD treatments in Australia (&lt;a href=&quot;https://en.wikipedia.org/wiki/Methylphenidate&quot;&gt;methylphenidate&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/Dextroamphetamine&quot;&gt;dextroamphetamine&lt;/a&gt;) are stimulants, and can risk of triggering a manic episode. I knew there’d be concerns about treatment options.&lt;/p&gt;
+
+&lt;p&gt;At this point I have to reveal just how incredibly fortunate I feel about my psychiatrist, and how I feel both considered and involved with my own treatment. He agreed that while there were risks involved, well-managed treatment for ADHD can be life-changing. Between my own self-monitoring, and my weekly therapy sessions, he felt that it was definitely worth seeing how I’d go with treatment.&lt;/p&gt;
+
+&lt;p&gt;I was prescribed methylphenidate (Ritalin), and it’s been &lt;em&gt;amazing&lt;/em&gt;. It feels like I have my cognition back!&lt;/p&gt;
+
+&lt;p&gt;I’m not sure I can properly express how big a deal this is for me. Being able to think and reason has always been pivotal to my life, and the fact that my brain would sometimes refuse to cooperate has been something I’ve had to constantly manage. Everything is harder when I can’t concentrate, but &lt;em&gt;especially&lt;/em&gt; emotions, self-reflection, and clear communication.&lt;/p&gt;
+
+&lt;p&gt;One of the possible side-effects of methylphenidate is increased anxiety, and I’m pleased to say that it’s had the complete opposite effect on me. I deal with anxiety by analysing the situation: what am I anxious about, what risks exist, how can I mitigate them, and so on. My medications helping me think clearer has made me much less anxious, more resilient, and of course much more productive as well.&lt;/p&gt;
+
+&lt;p&gt;I’m also learning that mornings can exist without being hellish. I was used to my brain feeling incredibly foggy for hours after I’d wake up, and the Ritalin has dramatically reduced this. While I’m still not a morning person by any stretch of the imagination, mornings are now quite tolerable.&lt;/p&gt;
+
+&lt;p&gt;Reading other people’s experiences with ADHD has been tremendously interesting; I’ve &lt;em&gt;always&lt;/em&gt; struggled with feeling a sense of accomplishment when completing tasks, and reading &lt;a href=&quot;https://mobile.twitter.com/ErynnBrook/status/1074033858251698176&quot;&gt;Erynn Brook’s tweet&lt;/a&gt; that this can be from ADHD was both eye-opening and profoundly relieving. All of &lt;a href=&quot;https://twitter.com/i/moments/1057678650206605312&quot;&gt;Erynn’s content on ADHD&lt;/a&gt; has been fascinating, and is well worth a read.&lt;/p&gt;
+
+&lt;p&gt;Of course, any new diagnosis also means revisiting old ones. While ADHD can sometimes be misdiagnosed as bipolar, my history still very much shows signs of both. I’m really pleased that during my Ritalin trial the one time when I showed warning signs of hypomania (racing thoughts, irritability, reduced need for sleep), I very much did &lt;em&gt;not&lt;/em&gt; want to take Ritalin, and an extra dose of mood stabilisers did an excellent job. Both myself and my pschiatrist are very pleased with this.&lt;/p&gt;
+
+&lt;p&gt;I really feel like I now have both an excellent toolkit and professional partners in managing my brain chemistry, and for that I’m extremely grateful.&lt;/p&gt;
+
+</description>
+				<pubDate>Sun, 23 Dec 2018 00:00:00 +1100</pubDate>
+				<link>http://pjf.id.au/depression/2018/12/23/adhd.html</link>
+				<guid isPermaLink="true">http://pjf.id.au/depression/2018/12/23/adhd.html</guid>
+			</item>
+		
+
+                    
+                    
+                    
+
+			<item>
 				<title>Seeking a humanitarian FOSS outreach position</title>
 				<description>&lt;p&gt;In 2017 I spent some time working with the United Nations Office for the Coordination of Humanitarian Affairs (UN-OCHA). While I developed a number of software tools in that role, what made me &lt;em&gt;truly&lt;/em&gt; effective was the fact that I could develop everything open source. The amount of advice, pull requests, and feedback that I enthusiastically received from public experts was tremendous, and I’m sure that this was helped in no small part by the fact that I was working for a high-profile humanitarian organisation.&lt;/p&gt;
 
@@ -362,39 +401,6 @@ worn at so many &lt;a href=&quot;https://linux.conf.au/&quot;&gt;linux.conf.au&l
 				<pubDate>Tue, 02 Feb 2016 00:00:00 +1100</pubDate>
 				<link>http://pjf.id.au/tech/2016/02/02/win-my-hat-at-lca2016.html</link>
 				<guid isPermaLink="true">http://pjf.id.au/tech/2016/02/02/win-my-hat-at-lca2016.html</guid>
-			</item>
-		
-
-                    
-                    
-                    
-
-			<item>
-				<title>Fact Check: Will Pap Smears Still Be Covered by Medicare?</title>
-				<description>&lt;p&gt;It’s fact checking time! Today, the claim that pap smears will no longer be free in Australia!&lt;/p&gt;
-
-&lt;p&gt;That claim is false.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;I won’t link to the article in question here, because it’s misleading clickbait, but the claim that pap smears and other pathology services will no longer be covered by Medicare is scaremongering, or at least a pretty big stretch from the truth.&lt;/p&gt;
-
-&lt;p&gt;The change which is happening is that pathology providers will no longer be given an &lt;em&gt;additional&lt;/em&gt; payment for bulk-billed tests. The cost of the procedure itself is still covered by Medicare.&lt;/p&gt;
-
-&lt;p&gt;The article is &lt;em&gt;extremely&lt;/em&gt; misleading when it claims that “Medicare rebates for pathology and diagnostic imaging services haven’t increased for over a decade, and now they are being cut”. The incentive payment which is being cut was introduced in 2009-2010 (much less than ten years ago) to encourage providers to bulk-bill, and was a payment to providers &lt;em&gt;in addition&lt;/em&gt; to that provided by Medicare. However since its introduction there’s been only a small increase in bulk-billing (1-3%), but a relatively large cost in incentive payments (about $1.3b over five years). It’s this additional payment that is being cut.&lt;/p&gt;
-
-&lt;p&gt;The incentive payments which are being cut range from $1.60–$4.00 per test, although additional incentives for are provided for children, concession card holders, and services in certain regional areas.&lt;/p&gt;
-
-&lt;p&gt;In response it’s conceivable that some pathology providers may choose not to no longer bulk-bill for pap smears, and if those providers charge more than the Medicare rebate then patients will see out-of-pocket costs; a situation which we already see with some GPs and specialists. However we still expect to see plenty of practices continuing to bulk-bill, because bulk-billing is extremely popular with patients and guarantees a larger customer base. I would speculate that bulk-billed pap smears will still be easy to obtain, as in 2014-15 a whopping 98.7% of out-of-hospital pathology services were at no cost to the patient.&lt;/p&gt;
-
-&lt;p&gt;For detailed, primary information about the changes, you can read the &lt;a href=&quot;http://www.aph.gov.au/About_Parliament/Parliamentary_Departments/Parliamentary_Library/FlagPost/2015/December/Changes_to_bulk_billing_incentives&quot;&gt;Australian Parliament post on the subject&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Much thanks goes to Kat McGee and Daniel Reeders who did the original research, and Linda Kirkman for bringing it to my attention. I’ve just double-checked the facts, made a graphic on Facebook, and put them into my own words.&lt;/p&gt;
-
-</description>
-				<pubDate>Wed, 06 Jan 2016 00:00:00 +1100</pubDate>
-				<link>http://pjf.id.au/personal/2016/01/06/will-pap-smears-no-longer-be-free.html</link>
-				<guid isPermaLink="true">http://pjf.id.au/personal/2016/01/06/will-pap-smears-no-longer-be-free.html</guid>
 			</item>
 		
 
